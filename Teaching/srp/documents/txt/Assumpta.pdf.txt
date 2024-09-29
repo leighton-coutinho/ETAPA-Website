@@ -1,0 +1,1654 @@
+Accessibility: a performance measure for land-use and transportation planning in the Montral Metropolitan Region
+Assumpta Cerd
+Supervised Research Project Report Submitted to Ahmed El-Geneidy in partial fulfillment of the Masters of Urban Planning degree School of Urban Planning McGill University September 1st 2009
+I
+
+I
+
+Abstract
+Accessibility is a comprehensive performance measure of the interaction between the land-use and transportation systems. In this research project, a variety of location-based and individual accessibility measures are described and applied to the Montral Metropolitan Region for the first time. Accessibility to jobs, workers and retail is measured using location-based accessibility measures, some including competition factors and based on commute-flow data. The results illustrate the complex relationships between Montral's employment centers and residential neighborhoods and help understand the influence of Montral's major transportation infrastructures, which are the highway network and the metro and commuter rail systems. Accessibility measures are useful as complements, and eventually as alternatives to traditional mobility measures. Accessibility is valued by individuals and has an impact on home sale values and household travel behavior. A hedonic regression shows that in the Montral region a premium is paid for increased levels of regional accessibility to jobs and retail. An analysis of household activity spaces establishes a relationship between high levels of regional accessibility and shorter, smaller and more local travel patterns. This study provides planners and decision makers with a wealth of information on accessibility in Montral and an explanation of a variety of measures of accessibility as well as a demonstration of their application to plan making.
+II
+
+III
+
+Rsum
+L'accessibilit est une mesure de la qualit de l'interaction entre l'utilisation du sol et le systme de transport. Dans ce projet de recherche, plusieurs mesures d'accessibilit sont dcrites et appliques  la rgion mtropolitaine de Montral pour la premire fois. L'accessibilit  l'emploi, aux travailleurs et aux commerces est mesure  l'aide de mesures d'accessibilit bases sur le lieu, dont certaines tiennent compte de la concurrence et de donnes de navettage. Les rsultats illustrent les liens complexes entre les centres d'emplois de la rgion mtropolitaine et les quartiers rsidentiels, et aident  mieux comprendre l'influence des infrastructures de transport majeures que sont le rseau d'autoroutes et le rseau de mtro et de train de banlieue. Les mesures d'accessibilit sont complmentaires aux mesures de la mobilit prsentement en usage. L'accessibilit est prise par les individus et  un impact sur les valeurs immobilires et les comportements de dplacement des mnages. Une rgression hdonique montre que des niveaux plus levs d'accessibilit  l'emploi et aux commerces augmentent le prix de vente d'un logement. Une analyse des comportements de dplacement des mnages tablit un lien entre des niveaux levs d'accessibilit rgionale  l'emploi et des dplacements plus courts, dans des aires plus petites et concentres localement. Cette tude fournit aux planificateurs et aux dcideurs une mine d'information sur l'accessibilit  Montral ainsi que des exemples de leur application  la planification urbaine.
+IV
+
+V
+
+Acknowledgements
+I would like to thank my supervisor Professor Ahmed El-Geneidy for his support and guidance throughout the duration of this project. From problem solving to moral support, his help has been continued and invaluable. I would also like to acknowledge him for developing and generating the activity space polygons and the spatial dispersal factor. I am grateful to the Ministre des Transports du Qubec for providing funding and data for this project and especially to Pierre Tremblay, Souhila Djiar, and Sylvie Arbour for their interest and feedback at various stages of the research project. I would like to thank Professor Raphael Fischler who read earlier drafts of this report and provided insightful comments and helpful advice. Finally, I extend special thanks to Daniel Gillenwater for his math skills and sense of humor.
+VI
+
+VII
+
+CONTENTS 1  INTRODUCTION .............................................................................................................. 1
+1.1 Definitions................................................................................................................... 1 1.2 Components............................................................................................................... 2 1.3 Importance ................................................................................................................. 3 2 LITERATURE REVIEW ....................................................................................................... 6 2.1 Location-based Accessibility Measures .................................................................... 6
+2.1.1 Cumulative Opportunity Measure ..................................................................... 7 2.1.2 Gravity Model .................................................................................................... 8 2.1.3 Competition Factors........................................................................................ 10 2.1.5 Inverse Balancing Factors............................................................................... 12 2.1.6 Place Rank ...................................................................................................... 13 2.2 Individual Accessibility Measures ............................................................................ 15 2.2.1 Space-time Framework & Measures .............................................................. 15 2.2.2 Household Activity Spaces ............................................................................. 18 2.3 Utility-Based Measure .............................................................................................. 19 2.3.1 Activity-Based Measure................................................................................... 21 2.3.2 Composite Measure........................................................................................ 22 2.4 Summary of Accessibility Measures ........................................................................ 24 2.5 Selecting an Accessibility Measure.......................................................................... 25 3  APPLYING LOCATION-BASED ACCESSIBILITY MEASURES IN MONTRAL.............. 31 3.1 Data and Assumptions............................................................................................. 31 3.2 Cumulative Opportunity ........................................................................................... 34 3.2.1 Cumulative Opportunity to Jobs by Car.......................................................... 34 3.2.2 Cumulative Opportunity to Jobs by Transit..................................................... 37 3.2.3 Cumulative Opportunity to Workers by Car .................................................... 40
+VIII
+
+3.2.4 Cumulative Opportunity to Workers by Transit ............................................... 43 3.2.5 Cumulative Opportunity to Retail by Car and by Transit ................................ 45 3.3 Gravity Model ........................................................................................................... 50 3.4 Correlations .............................................................................................................. 53 4  COMPETITIVE ACCESSIBILITY TO JOBS AND WORKERS IN MONTRAL................. 55 4.1Competition Factors.................................................................................................. 55 4.1.1 Competitive accessibility by Industry.............................................................. 57 4.1.2 Competitive Accessibility by Education Requirements .................................. 70 4.1.3 Discussion ....................................................................................................... 76 4.2 Inverse Balancing Factors........................................................................................ 78 4.3 Place Rank ............................................................................................................... 84 5  ACCESSIBLITY INDICATORS ........................................................................................ 87 5.1 Change Indicators .................................................................................................... 87 5.2 Normalized Borough Accessibility ........................................................................... 90 6  INDIVIDUAL ACCESSIBILITY: HOUSEHOLD ACTIVITY SPACES ................................. 92 6.2 Data and Assumptions............................................................................................. 96 6.3 Relationship between Regional and Household Accessibility................................. 97 6.3.1 Spatial Dispersal of the Activity Space ........................................................... 98 6.3.2 The Influence of Accessibility on Spatial Dispersal ........................................ 99 6.3.3 Discussion ..................................................................................................... 100 7THE VALUE OF ACCESSIBILITY.................................................................................... 103 7.1Data and Assumptions............................................................................................ 104 7.2 Hedonic Model ....................................................................................................... 104 7.2.1 The Impact of Accessibility ........................................................................... 107 7.2.2 Discussion ..................................................................................................... 108 8CONCLUSIONS ............................................................................................................. 110
+IX
+
+REFERENCES .................................................................................................................... 118 APPENDIX I ........................................................................................................................ 123
+I.I The Montral Metropolitan Region ........................................................................... 123 I.II Major Transportation Infrastructure ......................................................................... 126 I.III. Spatial Distribution of Opportunities...................................................................... 128 APPENDIX II........................................................................................................................ 131 II.I Cumulative Opportunity Accessibility to Jobs by Automobile ................................ 131 II.II Cumulative Opportunity Accessibility to Jobs by Transit ....................................... 138 II.III Cumulative Opportunity Accessibility to Workers by Automobile ......................... 145 II.IV. Cumulative Opportunity Accessibility to Workers by Transit ............................... 152 II.V. Cumulative Opportunity Accessibility to Big Box Retail by Automobile ............... 159 II.VI. Cumulative Opportunity Accessibility to Food Stores by Automobile ................. 161 II.VII. Cumulative Opportunity Accessibility to Food Stores by Transit........................ 163 II.XII. Cumulative Opportunity Accessibility to Restaurants by Automobile................. 165 II.XII. Cumulative Opportunity Accessibility to Restaurants by Transit ........................ 167
+X
+
+FIGURES
+Figure 1. Travel time decay curve ........................................................................................ 32 Figure 2. Jobs in 15 minutes by car..................................................................................... 34 Figure 3. Jobs in 30 minutes by car..................................................................................... 35 Figure 4. Jobs in 45 minutes by car..................................................................................... 36 Figure 5. Jobs in 60 minutes by car..................................................................................... 36 Figure 6. Jobs in 15 minutes by transit ................................................................................ 37 Figure 7. Jobs in 30 minutes by transit ................................................................................ 38 Figure 8. Jobs in 45 minutes by transit ................................................................................ 39 Figure 9. Jobs in 60 minutes by transit ................................................................................ 39 Figure 10. Workers in 15 minutes by car ............................................................................. 41 Figure 11. Workers in 30 minutes by car ............................................................................. 41 Figure 12. Workers in 45 minutes by car ............................................................................. 42 Figure 13. Workers in 60 minutes by car ............................................................................. 42 Figure 14. Workers in 15 minutes by transit......................................................................... 43 Figure 15. Workers in 30 minutes by transit........................................................................ 44 Figure 16. Workers in 45 minutes by transit......................................................................... 44 Figure 17. Workers in 60 minutes by transit......................................................................... 45 Figure 18. Big box stores in 10 minutes by car .................................................................. 46 Figure 19. Food stores in 10 minutes by car ....................................................................... 47 Figure 20. Restaurants in 10 minutes by car ....................................................................... 47 Figure 21. Food stores in 25 minutes by transit .................................................................. 48 Figure 22. Restaurants in 25 minutes by transit .................................................................. 48 Figure 23. Gravity accessibility to jobs by car ..................................................................... 51 Figure 24. Gravity accessibility to jobs by transit................................................................. 51 Figure 25. Gravity accessibility to workers by car................................................................ 52 Figure 26. Gravity accessibility to workers by transit........................................................... 53 Figure 27. Correlation between cumulative and gravity accessibility.................................. 54 Figure 28. Competitive accessibility to jobs ....................................................................... 55 Figure 29. Competitive accessibility to workers................................................................... 56 Figure 30. Competitive accessibility to the agriculture, forestry, fishing and hunting
+industries ....................................................................................................................... 58 Figure 31. Competitive accessibility to the mining, quarrying, and oil and gas extraction
+industries ....................................................................................................................... 58 Figure 32. Competitive accessibility to the utilities industry ................................................ 59 Figure 33. Competitive accessibility to the construction industry ....................................... 61 Figure 34. Competitive accessibility to the manufacturing industry .................................... 61
+XI
+
+Figure 35. Competitive accessibility to the wholesale trade industry.................................. 62 Figure 36. Competitive accessibility to the retail trade industry .......................................... 62 Figure 37. Competitive accessibility to the transportation and warehousing industries..... 63 Figure 38. Competitive accessibility to the information and culture industries ................... 64 Figure 39. Competitive accessibility to the finance and insurance industries..................... 65 Figure 40. Competitive accessibility to the real estate, and rental and leasing industries . 65 Figure 41. Competitive accessibility to the professional, scientific and technical services
+industries ....................................................................................................................... 66 Figure 42. Competitive accessibility to the management of companies and enterprises
+industry .......................................................................................................................... 66 Figure 43. Competitive accessibility to the administrative and support and waste
+management and remediation services industries....................................................... 67 Figure 44. Competitive accessibility to the educational services industry .......................... 67 Figure 45. Competitive accessibility to the health care and social assistance industries .. 68 Figure 46. Competitive accessibility to the health accommodation and food services
+industries ....................................................................................................................... 68 Figure 47. Competitive accessibility to the arts, entertainment and recreation industries.. 69 Figure 48. Competitive accessibility to the services industries other than public
+administration ................................................................................................................ 69 Figure 49. Competitive accessibility to the public administration industries....................... 70 Figure 50. Competitive accessibility to jobs corresponding to secondary education or less
+....................................................................................................................................... 72 Figure 51. Competitive accessibility to jobs corresponding to Cegep education .............. 72 Figure 52. Competitive accessibility to jobs corresponding to university education .......... 73 Figure 53. Competitive accessibility to workers with secondary education or less ............ 74 Figure 54. Competitive accessibility to workers with Cegep education .............................. 74 Figure 55. Competitive accessibility to workers with university education.......................... 75 Figure 56. Balanced accessibility to all jobs........................................................................ 78 Figure 57. Balanced accessibility to all workers .................................................................. 79 Figure 58. Balanced accessibility to jobs requiring secondary education or less .............. 81 Figure 59. Balanced accessibility to jobs requiring post-secondary education ................. 82 Figure 60. Balanced accessibility to workers with secondary education............................ 82 Figure 61. Balanced accessibility to workers with post-secondary education ................... 83 Figure 62. Rank of work locations........................................................................................ 84 Figure 63 Rank of home locations ....................................................................................... 85 Figure 64. Jobs in 30 minutes by car using current travel times ......................................... 88 Figure 65. Jobs in 30 minutes by car using 2011 travel time projections ........................... 88 Figure 66. Change in the number of jobs in 30 minutes by car between 2003 and 2011 .. 89
+XII
+
+Figure 677. Normalized accessibility to jobs ....................................................................... 91 Figure 688. Normalized accessibility to workers ................................................................. 92 Figure 69 Comparisons between different measures of activity spaces ........................... 95
+XIII
+
+TABLES Table 1- MTQ and simulation comparison model ............................................................... 33 Table 2- North American Industry Classification Codes..................................................... 57 Table 3- Categories of jobs by generally required schooling.............................................. 71 Table 4- Variable names and summary statistics ................................................................ 98 Table 5- Statistical models measuring the relationship between personal and regional
+accessibility ................................................................................................................. 102 Table 6 Variable names and summary statistics ............................................................... 106 Table 7 Hedonic analysis ................................................................................................... 108 
+XIV
+
+XV
+
+1  INTRODUCTION
+1.1 Definitions
+Accessibility has been defined in a variety of manners by different researchers. Accessibility can be seen as the potential for interaction (Hansen, 1959), the benefits of the transportation and land-use systems (Ben-Akiva & Lerman, 1979), and/or ease of reaching valued opportunities (Morris, Dumble, & Wigan, 1979). Accessibility is often defined in contrast with mobility (Handy, 2002). Mobility represents the ease of travelling along a network, the ability to move from one place to another (Handy, 1994; Hansen, 1959), while accessibility is the ease of reaching destinations. Mobility is a measure of the transport system, while accessibility measures the interaction between the land-use and transportation systems.
+Travel is a derived demand; we do not travel for pleasure but rather to participate in spatially distributed activities. Travel represents one of the costs of participating in activities in the urban environment (Wachs & Kumagai, 1973). This cost will depend on a variety of factors, for example owning a car will give an individual access to a certain range of opportunities not available to another who must rely on transit.
+Accessibility was first modeled in the late fifties (Hansen, 1959), and many researchers have further developed the concept since. A number of review studies classify and evaluate the measures according to various criteria (Baradaran & Ramjerdi, 2001; El-Geneidy & Levinson, 2006; Geurs, 2006a; Geurs & Ritsema van Eck, 2001; Handy & Niemeier, 1997). There are various approaches to measuring accessibility; the simplest consists of a count of available opportunities, for instance jobs or parks, from a point i within a certain travel time or distance. More elaborate measures include utility-based measures, which are related to traditional microeconomic theories, and individual accessibility measures, which stem from the space-time geography framework developed by Hagerstand (1970).
+In research project, accessibility has been used in a variety of contexts: to evaluate the vulnerability of infrastructures, measure access to public services such as hospitals, elementary schools, polling stations, or
+1
+
+grocery stores (Kwan, Murray, O'kelly, & Tiefelsdorf, 2003; Kwan & Weber, 2003). It has been compared by gender, and for minority or disadvantaged populations, to a variety of destinations (Kwan, 1999; Leck, Bekhor, & Gat, 2008; Scott & Horner, 2008), to evaluate potential land-use policies or design integrated land-use and transportation plans (Bertolini, Le Clerq, & Kapoen, 2005; Geurs, 2006b), measure transit coverage (Murray & Wu, 2003) or the impact of information and communication technologies (ICT) and telecommuting on job accessibility (Muhammad, De Jong, & Ottens, 2008).
+Accessibility is also a part of most transportation plans today, even if is not always explicitly defined and addressed (Handy, 2002). Handy (2005) evaluated the specific accessibility-enhancing goals, strategies and performance-measures in four transportation plans in the US. All plans had integrated the concept of accessibility to some degree, although it was not aimed to replace mobility but rather complement it. Most of the plans contained performance-measures based on both mobility and accessibility and a variety of accessibility-enhancing strategies.
+1.2 Components
+All accessibility measures are built with essentially the same basic components: an activity component and a transportation component (Handy & Niemeier, 1997; Koenig, 1980). The activity component is a measure of the land-use system, represented by destinations or opportunities, which can be jobs, hospitals, daycares, etc. These opportunities can be weighted to account for their attractiveness or for competition effects. The transportation component consists of a measure of the transportation system, such as travel time or travel distance; this can be calculated using the street network and congested or uncongested travel times, for different modes of transportation (automobiles, transit, pedestrians or bicycles). A measure of the cost of travel (the impedance) to the users is also included in the transportation component. This is usually a negative exponential function that has been calculated especially for the study area, but it can also be a generalized transport costs function that incorporates time and monetary costs.
+Two other aspects that should ideally be included in accessibility measures are the temporal component and the individual component
+2
+
+(Geurs & Ritsema van Eck, 2001). Temporal aspects of accessibility can be represented very basically by calculating accessibility within a predetermined travel-time or for a specific time of day (e.g. the morning peak), or by including time-based constraints in the calculations (e.g. store operating hours). The individual component of accessibility reflects individual needs and abilities. Research in geography, for example, aims to identify the accessibility levels of people by gender, ethnicity or education level to ascertain if these subgroups have equal access to opportunities such as jobs or healthcare (Kwan, 1999; Scott & Horner, 2008; Shen, 1998). The individual component of accessibility can be measured by disaggregating the data according to specific characteristics such as education or income, or by measuring accessibility at the individual level using data such as travel diaries.
+1.3 Importance
+Transportation plans aim at increasing accessibility (Handy, 2002) but usually focus on increasing mobility, taking the land-use aspect as a given (Levinson, Krizek, & Gillen, 2005). Mobility measures are simple to use and easy to interpret for planners and the general public (Geurs & Ritsema van Eck, 2001). Congestion levels and average travel speeds on the network are often quoted however they are misleading and do not correctly represent how well the transportation and land-use systems interact in a region. Congestion, in particular, can represent the attractiveness or economic health of a city (Cervero, 1998; Downs, 2004) and is therefore not an appropriate indicator of how well the transportation and land-use systems provide individuals with access to opportunities. In contrast, accessibility measures can be used to evaluate land-use and transportation plans and policies, measure the social equity of the network, identify underserved areas or populations, and better understand the constraints faced by individual users. Accessibility measures can be applied to several modes of transportation, at every stage of the planning and implementation process.
+Accessibility can also be valuable for community-based planning or public participation exercises. The concept of accessibility can be intuitively grasped and it makes the interaction between the land-use
+3
+
+and transportation systems visible and part of a public discussion (Bertolini, Le Clerq, and Kapoen 2005).
+Accessibility is an important measure for the Ministre des Transports (MTQ) and other departments of transportation to measure their performance in connecting origins and destinations in a region. The goal of the current research project is to develop and demonstrate a variety of performance-based accessibility measures that can be used to understand how accessibility to jobs, workers and retail is distributed in the Montral Metropolitan Region. These measures are useful to evaluate how investments, transportation strategies, and land-use policies affect the performance of the transportation and land-use system. They can be used to guide decision-making in a more realistic and responsive manner than standard indicators of mobility. However, it must be noted that planning is a political process, and that performance-measures are meant to support decision-making, they should not be seen as a way to replace political vision (Carmona and Sieh 2008).
+The first part of the report, chapter 2, presents an extensive literature review of various accessibility measures. The differences between the measures, their specific applications, and their advantages and disadvantages are summarized. The second part of the report presents a demonstration of accessibility measures using the Montral Metropolitan Region as a case study. In chapter 3 the more traditional location-based cumulative opportunity and gravity measures are applied and compared. Accessibility to jobs, workers and retail outlets is measured. In Chapter 4, two measures accounting for competition, the competition factors model and the inverse balancing factors measure are used to analyze job accessibility. The place rank measure is also presented in this chapter. In chapter 5, two accessibility indicators illustrate how accessibility can be applied to plan making. The third part of the report presents a statistical analysis and is divided into two chapters. Chapter 6 presents an individual accessibility measure: the actual activity space. The results of linear regression model analyzing the relationships between travel patterns and regional accessibility levels are described. Chapter 7 presents the results of a hedonic regression model predicting the effect of accessibility to jobs and retail on home sale values. Chapter 8 presents the conclusions of this report,
+4
+
+highlighting the key findings and the main differences between the results of each accessibility measure.
+5
+
+2 LITERATURE REVIEW
+The literature review will provide an overview of current accessibility measures and new research developments in this field. Accessibility is a term that has been around for five decades; accordingly the literature involving the measurements of accessibility is rich. Accessibility can be measured for a place, and involve measurements of spatial separation of individuals and certain activities, or for individuals, for example people-based accessibility measures have been proposed in the literature (Miller, 2005). Baradaran and Ramjerdi (2001) identify five different ways of measuring accessibility, while Handy and Niemeier (1997) identify three of these five as potential measures for planners to use. Accessibility measures can be classified into three broad approaches: location-based, individual and utility-based.
+2.1 Location-based Accessibility Measures
+The first accessibility measures to be developed were locationbased; these measure the accessibility of a zone or a neighborhood. This type of measure is useful to compare the accessibility levels of one zone to another, or to the regional accessibility level, to measure changes in levels of accessibility brought about by new transportation or land-use projects, and to easily identify the regional winners and losers in terms of gains (or losses) in accessibility. Accessibility is measured using a single transportation mode. The same equation can be applied several times, using different transportation modes, and then a comparison can be conducted. For example, accessibility to jobs can be measured using automobiles, public transit and bicycling. The findings can then be compared to identify underserved areas or locations that need more attention in terms of accessibility using a certain mode.
+6
+
+2.1.1 Cumulative Opportunity Measure
+The isochronic or cumulative opportunity measure is one of the simplest accessibility measures to calculate and one of the earliest to have been developed (Vickerman, 1974; Wachs & Kumagai, 1973). It counts the number of opportunities available from a predetermined point within a certain travel time or travel distance. The model is formulated as:
+J
+Ai  B j O j j 1
+where Ai is accessibility measured at point i to potential activities in zone j, Oj is the opportunities in zone j, and Bj is a binary value equal to 1 if zone j is within the predetermined threshold and 0 otherwise.
+For instance, this measure can be used to identify the number of parks within 400 meters (zone j) of a residential location i. The distance can be measured using a network in GIS, which is more realistic than using Euclidean distance, or a predetermined travel time can be used, e.g. the number of parks within a 10 minute walk from a residential location. Also designated as the covering model or coverage, this measure has often been used in the literature as a simple, straightforward manner of evaluating equity in accessibility to public goods or changes in accessibility brought about by transportation infrastructure (Gutierrez, 2001; Gutierrez & Gomez, 1999; Gutierrez & Urbano, 1996; Handy & Niemeier, 1997; Talen, 1996, 1998)
+Advantages/disadvantages of the measure
+This measure is simple to calculate, uses readily available data and is easy to understand and communicate. It is widely used in hedonic modeling to control for access to neighborhood amenities and has been extensively studied. It also takes into account both the transportation component and the land-use component without any implicit assumptions on the value of these to the users (Geurs & Ritsema van Eck, 2001).
+7
+
+The main disadvantages of this measure are that it does not account for the impedance of reaching the facility, so all opportunities are considered equal. As such it does not accurately represent how users perceive and value particular destinations. Furthermore, the travel time or distance (zone j) are set arbitrarily and changing this parameter can affect the results greatly; this creates an artificial distinction between opportunities at 399 meters (considered valuable), and those at 401 meters (which have no value) (Ben-Akiva & Lerman, 1979).
+2.1.2 Gravity Model
+The gravity model is the most popular method to calculate accessibility, it was first developed by Hansen (1959) and has been adapted in many ways since. Contrary to the cumulative opportunity method where all destinations are considered equivalent, the gravity measure proposes a balance between the utility of a destination and its required travel cost from a given origin (Miller, 2005). The measure can be expressed as:
+     Aim  O j f Cijm or Aim  O j exp Cijm
+jj
+where Aim is the accessibility at point i to potential activity at point j using mode m, Oj is the opportunities at point j, (Cijm) is the impedance or cost function to travel between i and j using mode
+ m, and exp Cijm is a negative exponential function to travel between
+i and j using mode m.
+The cost of moving between an origin and a destination impacts the attractiveness of an opportunity. The further an opportunity is from the origin, in terms of time or distance or generalized cost, the lower its accessibility. The choice of the impedance factor in the accessibility measure can play a decisive role; the impedance factor determines the relationship between accessibility and travel costs in time or distance. Much of the literature defines impedance using a negative exponential function. Estimating travel impedance is complex, especially for transit and multimodal trips (Miller, 2005); the form of the function should be selected with caution, using the most recent data available (Geurs & Ritsema van Eck, 2001).
+8
+
+Replacing the impedance function by a generalized measure of travel costs including time, distance, fares and waiting times should improve the realism of the measures (Bruinsma & Rietveld, 1998). However, any impedance function will give more weight to the center than the periphery, which may underestimate accessibility levels in peripheral areas (Gutirrez, Monzn, & Piero, 1998) or place emphasis on closer destinations over more attractive further ones (Gutierrez & Urbano, 1996).
+Advantages/disadvantages of the measure
+Although it is more complex to calculate than the cumulative opportunity measure, the gravity measure is still relatively straightforward to calculate, using readily available data, and is easy to interpret. Furthermore, it corresponds to an intuitive view of the transportation system, in that more opportunities offer a better chance of finding a desired destination, and the that further away an opportunity is the less desirable it is (Koenig, 1980). This is significant, since accessibility measures must be consistent with the way individuals perceive and evaluate their environment to be used as performance measures (Handy & Niemeier, 1997).
+A major disadvantage of this accessibility measure is the need to develop an impedance factor (though coefficients from destination choice or trip distribution models for regional transportation planning models are often used). As stated previously, estimating impedance factors can be complex and should use recent data. Caution should be used when empirically derived decay functions are used to evaluate alternative scenarios with a very different spatial distribution of activities or different travel patterns (Geurs & Ritsema van Eck, 2001).
+Gravity accessibility assesses the accessibility of a location and does not account for individual accessibility. All individuals within a zone are attributed the same level of accessibility (Ben-Akiva & Lerman, 1979). Within a given zone individuals may have different levels of accessibility due to personal constraints, such as a disability, or not owning a car. A location may offer a high level of accessibility to jobs, but an individual without the qualifications for the type of jobs available may still have a low level of accessibility
+9
+
+to employment. One way of accounting for this is to disaggregate the data using socio-economic factors, such as measuring accessibility to jobs by degree of education. Calculating accessibility for smaller zones and differentiating households or individuals by socio-demographic characteristics should result in more accurate measures (Handy & Niemeier, 1997).
+The gravity measure accounts for the spatial distribution of the supply of opportunities (e.g. jobs), but does not account for the demand, the competition for available opportunities (e.g. workers). It assumes that demand for opportunities does not affect their level of attractiveness. If the spatial distribution of the demand is uneven, an accessibility measure that does not account for competition effects will be false or misleading (Shen, 1998).
+Finally, although the gravity measure is relatively straightforward and relates well to common sense, the results can be difficult to interpret because they provide a measure of accessibility defined as a gauge of potential interaction; as such absolute levels of accessibility have little meaning. A solution is to compare relative levels, by calculating the ratio of accessibility for one zone compared to the region and by ranking locations, or to measure changes in levels of accessibility produced by changes in the transportation system or land-use patterns (Baradaran & Ramjerdi, 2001; Handy & Niemeier, 1997).
+2.1.3 Competition Factors
+Several variations of the original gravity model have been developed to account for competition factors when measuring access to opportunities where competition plays an important role at origin and/or at destination. As noted previously, the gravity measure accounts for the supply side of the land-use and transportation system, but not for the demand side. It is valid when at least one of these two conditions is met: the demand for available opportunities is uniformly distributed across space, and these opportunities have no capacity limitations (Shen, 1998). The first condition is seldom met in cities which are characterized by an uneven spatial distribution of people and land uses. In practice, the
+10
+
+second may be met in some circumstances, but can never apply to employment since every job is only for one worker at any moment in time. Furthermore, several considerations are essential when measuring employment accessibility, such as taking jobmatching into account (using only the relevant amount of job seekers and job opportunities) and including socio-demographic characteristics such as education or income (Shen, 1998).
+One approach to accounting for competition, first applied by Shen (1998), involves incorporating the demand potential (e.g. the amount of people seeking a given opportunity) to the calculation by dividing the supply (e.g. jobs) located in destination zone j by the demand potential (job seekers) within reach of that zone j. In this model, accessibility is equal to the ratio of the total number of opportunities to the total number of opportunity seekers in zone j. The measure is formulated as:
+
+Ai
+
+
+
+n 1 j
+
+Oj
+
+f (Cij ) Dj
+
+,
+
+n
+Dj  Pj f (Cij ) 1 j
+
+where Ai is the accessibility of people living in location i, Oj is the opportunities at point j, (Cij) is the impedance or cost function to travel between i and j , Dj is the demand for the opportunities, Pj is the number of people in location j seeking the opportunities, and
+(Cij) is the impedance function measuring the spatial separation between i and j.
+
+Shen (1998) applied this model to measure the employment accessibility of low-wage workers in the Boston Metropolitan area. Accounting for job competition among workers travelling by different modes helped to highlight the importance of location in job accessibility, especially the relative location advantage of innercity neighborhoods over the suburbs. However, auto-ownership was shown to be much more important than location in job accessibility.
+
+Advantages/disadvantages of the measure
+
+Although accounting for competition improves the realism of the gravity measure it also makes it more difficult to interpret and
+11
+
+communicate. Also, the gravity model with competition factors accounts for competition only at the destination. For example, it accounts for the number of potential job seekers on accessibility to jobs, but does not take into account the impact of other jobs in other zones.
+
+2.1.5 Inverse Balancing Factors
+The third approach used to account for competition is using the inverse balancing factors of the doubly constrained spatial interaction model (Wilson, 1971) as an accessibility measure. In Wilson's interaction model the balancing factors ensure that the magnitude of flow originating from and destined to each zone equals the actual number of activities in the zone. With this measure the supply and demand potential for all the zones is calculated iteratively, ensuring that the amount of trips to and from each zone is equal to the number of opportunities (Geurs & Ritsema van Eck, 2003). In other words, the measure calculates all the potential job-seekers (Oi) for the area as well as all the potential jobs (Dj) and balances the numbers until the model is stable. The equation is defined as:
+
+n
+Ai 
+j 1
+
+1 Bj
+
+Oj
+
+f
+
+(Cij ),
+
+(1)
+
+n
+Bj 
+i1
+
+1 Ai
+
+Di f (Cij )
+
+(2)
+
+where Ai is the accessibility to jobs of people living in location i and Bj is the accessibility to workers at zone j; Oi is the number of opportunities in zone j, Dj the number of people in location i seeking the opportunities, and (Cij) the impedance function measuring the spatial separation between i and j.
+
+The first step to operationalize the measure is to calculate the accessibility to jobs for all zones, making the balancing factor Bj equal to 1 (Equation 1). This amounts to calculating a gravity measure for all zones. The result of this operation (Ai) is incorporated to the calculation of the second factor (Equation 2).
+That result is then incorporated back into to the first factor
+(Equation 1) and so on until a balance is reached. The model converges when the results of two consecutive Ai factors are
+
+12
+
+identical. In order to map the results or apply them as variables in a linear regression, it is better to scale them by multiplying the Ai factor and dividing the Bj factor by a constant.
+In a study in the Netherlands measuring job accessibility, the method of the inverse balancing factors proved to be the best measure of competition effects, resulting in complex patterns of local accessibility changes (Geurs & Ritsema van Eck, 2003).
+Advantages/disadvantages of the measure
+The main disadvantage of the using the inverse balancing factors as an accessibility measure is that it is more difficult to calculate and interpret than other measures because of the iterative process that incorporates both the locations of supply and demand. However, its interpretability can be improved by separately estimating the impacts of land-use changes, infrastructure projects, and congestion on accessibility (Geurs & Ritsema van Eck, 2003).
+
+2.1.6 Place Rank
+The place rank accessibility method, presented by El-Geneidy and Levinson (2006), is based on the methods used by search engines such as Google to rank Web pages. Web pages are ranked according to the links connecting to them, which in turn are valued according to their host's rank. This translates into an accessibility measure that ranks each location based on the number of people commuting to it to reach an opportunity; each person's contribution is ranked according to the attractiveness of their origin zone as a final destination. This measure is based on the flows between origins and destinations and it accounts for the number of opportunities that an individual foregoes in a zone to reach an opportunity in another zone (El-Geneidy & Levinson, 2006). The mathematical formulation of the model is as follows:
+
+I
+
+R j,t 
+
+Eij * pit1
+
+it
+
+Pi ,t 1
+
+
+
+ E j
+
+*
+
+R 
+
+j
+
+,t 1
+
+Ei
+
+ 
+
+13
+
+where R j,t is the place rank of j in iteration t, I is the total number of i zones that are linked to zone j, Eij is the number of people leaving i to reach an activity in j, Pi,t-1 is the power of each person leaving i in the previous iteration, Ej is the original number of people destined for j and Ei is the original number of people residing in zone i.
+The place rank measure takes the total number of people participating in a given activity (workers, for example) and redistributes them between the zones. Each zone is weighted according to its attractiveness and the strength of its links to other zones. It must be calculated iteratively until the difference between each two consecutive ranking calculations equals zero.
+This measure requires origins and destinations data, which is available from a variety of studies. The advantage of using OD data is that since people's actual origin and destination choices are known, the impedance function that is used in the traditional gravity model is embedded in the origin and destination matrix.
+Advantages/disadvantages of the measure
+Since it is based on people's actual origin and destination choices the place rank measure can help understand land-use and transportation interactions in a region by ranking the attractiveness of various zones within it. This ranking can help highlight underserved zones and can help direct planning efforts towards them.
+Its main advantage is that it uses readily available data, and that the impedance and travel times are embedded in the calculations, which is often a weakness of other accessibility measures such as the gravity model. It also takes into account both the supply and the demand for a given activity since it calculates both the population participating in the activity and the opportunities available to it.
+Important disadvantages are the complexity of the calculations and its difficulty in interpretation. Like the inverse balancing factors measure, it is calculated in several iterations, which makes it less
+14
+
+transparent. Also, further work is needed to determine the appropriate unit of spatial analysis that can be used to generate this measure.
+2.2 Individual Accessibility Measures
+The location-based accessibility measures described above account for the accessibility of a place, either a neighborhood or a region, and ascribe the same level of accessibility to all individuals living in that area. Location-based measures cannot account for non home-based trips and for trip-chaining, which are important parts of travel behavior and have been shown, in the case of women for example, to severely constrain accessibility levels through non-flexible stops chained in with the work commute, such as trips to the day-care or shopping (Kwan, 1999). In addition, location-based measures do not take into account space-time constraints which may make many opportunities unavailable to a particular individual (Kwan, 1998). Finally, location-based measures are not suitable to evaluate social inclusion or to measure the accessibility levels of low-income or minority populations (Kwan, et al., 2003). Another disadvantage of location-based measures is that they potentially overestimate accessibility by not including opening hours or business hours, this ignores that many opportunities will not be accessible during the evening (Kim & Kwan, 2003). Conventional accessibility measures are static since they do not take into account the ways in which behavior, activity patterns, and even population composition varies by the time of day (Kwan & Weber, 2003).
+2.2.1 Space-time Framework & Measures
+Individual accessibility measures, also known as people-based measures, are based on the space-time framework first proposed by Hagerstrand (1970) and further elaborated by Lenntorp (1976). The space-time framework accounts for the spatial and temporal dimensions of participating in a given activity. This means that activities take place at a given location at a given time, for a specific duration (Miller, 2007). The transportation system determines travel speeds and network constraints which affect the
+15
+
+amount of time available to participate in activities at dispersed locations (Miller, 1999).
+Hagerstrand (1970) identifies three types of constraints on participating in activities in space and time: capability constraints, the limits an individual may personally have in reaching destinations (e.g. not owning a car), coupling constraints, when and for how long an individual must be at a certain location for shared activities (such as the constraints of work hours), and authority constraints, which can be the regulations on private space (such as store opening hours). Hagerstrand also notes that some activities are fixed while others are flexible, work times may be fixed while shopping can be done at various moments of the day, fixed activities are seen as anchors during the day and must be worked around.
+The space-time prism is the area within which a person can move during the day considering the amount of time that must be spent on various activities at different locations, and the person's time constraints. For example, a certain amount of time must be spent at home (e.g. sleeping, eating) and at work. Arriving at work by 9 a.m. or at the day-care before 5 p.m. are examples of fixed anchors that will determine other activities during the day. In order to participate in all mandatory or desired activities during one day, a person can only travel so far, therefore maximum travel times and distances determine the area of the space-time prism. For a location to be visited by a person during a day it must be contained within the area of their space-time prism which contains all the destinations in space-time that are available to him (Miller, 2005, 2007).
+Mapping the space-time prism onto a two-dimensional geographic space creates the potential path area (PPA), which is the area containing all the activities an individual can participate in or all the locations an individual can be at given her space-time (Kwan, et al., 2003; Miller, 2007). As such, the space-time prism can be regarded as an accessibility measure, since it delimits the number of opportunities available to an individual within a bounded space-
+16
+
+time region (Djist & Vidakovic, 2000; Kwan, 1998, 1999; Weber & Kwan, 2002).
+Individual accessibility measures require extensive individual-level data. They are usually calculated using travel diary data (Kwan, 1998, 1999), Some disadvantages of travel diaries are the underreporting of short trips and the of number of stops during tripchaining (Miller, 2007). Travel diary data can also be difficult and time-consuming to acquire. Other data sources can be found in the use of new technologies such a GPS and LAT (Location Aware Technologies) systems. While these data collection methods eliminate human error and increase the speed and ease of collecting this type of information, they also raise some obvious confidentiality and protection of privacy issues.
+Space-time measures are derived from the space-time prism or potential path areas (PPA) as described previously. The first measures are geometric or mathematical calculations of accessibility. Lenntorp (1976) used the volume of the space-time prism and the area delimited by the PPA as the accessibility measure. However, these measures do not take into account the attractiveness, spatial distribution or availability of the opportunities, nor the varying travel speeds and network constraints associated with travel (Kim & Kwan, 2003).
+In order to overcome these limitations, several researchers developed various GIS operational methods that incorporate the spatial distribution of opportunities, varying travel speeds, the geometry of the transportation system and network distances in the model (Kim & Kwan, 2003; Kwan, 1998, 1999; Miller, 1999; Miller & Wu, 2000; Weber & Kwan, 2002).
+Advantages/disadvantages of the measure
+Space-time measures are still being refined, while the space-time framework is a comprehensive approach to measure individual accessibility, it is difficult to apply and operationalize (Geurs & Ritsema van Eck, 2001; Kim & Kwan, 2003). These measures require large quantities of individual-level data, which can be
+17
+
+difficult to acquire. As a result many studies using this approach were conducted on small numbers of individuals.
+In studies comparing the results of space-time measures to traditional location-based measures, the first revealed differences in the levels of accessibility that were not perceptible with the second, namely very strong gender differences (Kwan, 1998). These measures may be most appropriate to understand individual-level accessibility and evaluate social inclusion.
+2.2.2 Household Activity Spaces
+Another application of the space-time prism is to map actual (rather than potential) activity spaces using observed or reported travel behaviour. Several studies have used data acquired through travel diary surveys to analyse the spatial representation of individual travel behaviour (Djist, 1999b; Newsome, Walcott, & Smith, 1998). This usually involves mapping the trips reported by an individual or household and using various spatial analysis techniques to compare them. Ellipses, circles and polygons are the forms most frequently used to represent the activity space. The actual activity space does not represent, as with the potential activity space, an individual's maximum area within which to travel and participate in activities. Instead, the actual activity space is representative of reported travel behaviour and is equal to an individual's typical area within which to travel on a given day (Newsome, et al., 1998).
+The actual activity space has been used in the literature as a measure of travel behaviour to better understand travel demand (Newsome, et al., 1998), or more specifically the difference between single-worker household and dual-worker household travel patterns (Djist, 1999a, 1999b), and as an indicator of social exclusion (Axhausen & Garling, 1992).
+In this research study, we use the actual activity space as a proxy for individual accessibility. The actual activity space is expected to reflect the levels of regional accessibility available to households as well as individual space-time constraints. Consequently, the spatial dispersal factor of the activity space, a measure developed
+18
+
+for this research study, has personal constraints and regional opportunities embedded within it. This measure is not used to account for the potential for interaction, but for the accessibility that the household actually enjoys.
+Advantages/disadvantages of the measure
+The actual activity space is not per se a measure of accessibility. It cannot be forecasted and it would be difficult to apply as a potential measure of accessibility to a large number of cases. Its strengths and weaknesses will be discussed in more detail in section 4.
+
+2.3 Utility-Based Measure
+The utility-based measure is the most complex and data-intensive of the location-based accessibility measures. It was developed in order to provide a solid theoretical basis for the concept of accessibility (Ben-Akiva & Lerman, 1979). Hence, it is the most theoretically sound model of accessibility, it is directly linked to economic theory and adheres to travel behavior theories. It is based on random utility theory, in which the probability of an individual making a particular choice is relative to the utility of all choices. If it is assumed that an individual assigns a utility to each destination choice in some specified choice set C, and then selects the alternative maximizing his utility, accessibility can be defined as the denominator of the multinomial logit model, also known as the logsum (Ben-Akiva & Lerman, 1979, 1985). This model is consistent with the traditional microeconomic theory of consumer surplus: accessibility represents the benefits provided by transportation choices. The general specification of the measure is as follows:
+
+  Ani
+
+  1n 
+
+ exp Vn(c) 
+
+Cn
+
+
+
+where Ajn is the accessibility measured for individual n at location I,
+Vn(c) is the observable temporal and spatial component of indirect utility of choice c for person n, and Cn the choice set of person n.
+
+19
+
+Contrary to the gravity model, which implies that all people in zone i will experience the same level of accessibility, this measure incorporates individual traveler preferences as part of the accessibility measure.
+The utility model is based on two assumptions: first, people choose the alternative associated to the maximum utility for them as individuals. Second, it is not possible to evaluate all the factors that contribute to the utility of a destination for an individual, this utility can be represented as the sum of random and non-random (or stochastic) components (Koenig, 1980). If we assume that the unobserved utilities have the same spatial distribution and scale as the observed ones, we can derive the expected maximum utility measure from the nested logit choice model (Ben-Akiva & Lerman, 1979).
+There is a close correspondence between the expected maximum utility of a choice situation and the concept of consumer surplus in microeconomic theory (Ben-Akiva & Lerman, 1979; Miller, 2005). The consumer surplus measures the net benefit to an individual for a transaction at the prevailing market price, and is equal to the difference between the amount the consumer is willing to pay for a good and the actual price of the good. The utility function can be seen as a demand curve for a particular destination in which a change in the attributes could result in a change in the consumer surplus. For example, a change in the frequency of bus service could increase the accessibility of a grocery store and increase the consumer surplus of individuals taking that bus to access the store. In turn this can be converted into monetary terms.
+Advantages/disadvantages of the measure
+An important advantage of this method is its sound theoretical basis; it is directly linked to traditional microeconomic theories and follows travel behavior theories. That is, it imitates human choice by including the attractiveness of each destination and it is based on the economic benefits that people derive from having access to certain activities. In addition, it represents individual accessibility much better than gravity measures which only represent the accessibility of a place or a location.
+20
+
+A third advantage is that the results can be converted into monetary values; results in dollar amounts make it much simpler to compare different scenarios or regions. However, this must be interpreted using caution. It is uncertain that consumer surplus measured in this manner can be interpreted as willingness-to-pay; therefore monetary values do not necessarily represent what consumers are willing to pay for this accessibility (Miller, 1999).
+The main disadvantage of this model is that it is difficult to interpret by laymen because it is based on relatively complex theories. Also, it is difficult to compare different utility functions, between neighborhoods for example. Finally, this approach is very dataintensive and requires complex calculations, which may explain why it is seldom used in practice (Geurs & Ritsema van Eck, 2001).
+2.3.1 Activity-Based Measure
+The activity-based measure is different from other accessibility measures in that it is not trip-based, but based on all the activities and trips that are part of an individual's daily schedule. It is generated from the Day Activity Schedule model system, which is an activity-based travel demand model. Activity-based models are replacing conventional four-step models. These new models use tours instead of trips as the base unit of travel. Travel is generated from individuals' daily activity schedules, and they allow totally disaggregate calculations. By using routes and activity schedules instead of single-purpose trips, activity-based measures represent individual travel behavior much more realistically than measures based on only one trip, such as the trip to work. Chen (1997) developed an accessibility measure using activity-based models based on the space-time prism. Ben-Akiva and Bowman (1998) presented another activity-based measure derived from random utility theory, therefore part of the utility-based measure described above. Like the utility-based measure, it incorporates individuallevel accessibility, but it goes a step further by incorporating the impact of trip chaining, the full set of activities pursued in a day (and not just the home-work trip or home-shopping trip), and flexibility in the scheduling of activities (Dong, Ben-Akiva, Bowman, & Walker, 2006). The fundamental difference between the utility-
+21
+
+based measure and the activity-based one is that the choice set Cn is a set of activity schedules, each describing in detail one option for an entire day's scheduled activities and travel (Dong, et al., 2006).
+Advantages/disadvantages of the measure
+The activity-based measure reflects the individual aspect of accessibility by analyzing the impact of attributes such as car ownership, employment status, income, and household structure, as well as different modes and their travel times and costs. Also, it incorporates scheduling flexibility by covering multiple choices for multiple trips made at different time periods of a day. This makes it a good tool to analyze the potential impacts of policies on different groups of the population, and potentially very useful means to measure social exclusion or impacts on disadvantaged groups.
+Like the utility-based measure, it requires extensive individual-level data as well as the creation of or access to an activity-based model.. However, it has the same advantages as the utility-based measure: theoretical soundness and ease of interpretation when converted to monetary values.
+
+2.3.2 Composite Measure
+In order to remedy the shortcomings of the space-time measure, especially in regards to constant travel speed, and to increase its theoretical soundness, Miller (1999) and Wu and Miller (2002), developed a composite measure combining space-time and utilitybased measures. This approach introduces a higher level of complexity where time constraints are superimposed. It measures the utility of participating in a discretionary activity given mandatory activities with set start and finish times and travel costs. So, if a person is at work until 5 p.m. and must be home by 8 p.m., the set of activities she can participate in within that interval of time will be limited by travel costs and the duration of the activity. The model is expressed as:
+
+uij
+
+ak
+
+,Tk
+
+,tk
+
+
+
+
+
+a
+
+ k
+
+Tk
+
+exp
+
+tk
+
+
+
+22
+
+where: i is the first mandatory activity (home), j is the second
+mandatory activity (work), k is a discretionary activity (store), ak is the attractiveness of the discretionary activity, Tk is the available activity participation time, defined as:
+
+0t
+
+
+j
+
+
+
+ti
+
+
+
+tk
+
+
+
+0 else
+
+and ti ,tj are the stop time for mandatory activity i and start time for mandatory activity j (respectively).
+    tk  d xi , x j  d xk , x j  1
+where xi is the location vector for mandatory activity i, d (xi; xk) is the distance from activity location i to activity location k and, v is the constant velocity of travel (to be relaxed using a GIS network in other equations (Miller & Wu, 2000)).
+
+Advantages/disadvantages of the measure
+
+The composite accessibility measure requires more data than utility-based measures and it is even more complex in terms of calculations. Furthermore, it does not differentiate between the attractiveness of various opportunities, nor does it account for competition. It assumes travel speeds are constant; this is a major disadvantage which has been overcome in more recent methods that involve networks in GIS. Ettema and Timmermans (2007) further develop this model to account for several factors missing from the space-time model : the ability of individuals to adjust their schedule, uncertainty about travel times, variable travel times, and the influence of information on travel behavior. Their study found that penalties for delays and the opportunity to reschedule activities had an impact on accessibility, while information on travel times increased accessibility, especially if the activities involved penalties for delay. Also, utility increased by relieving scheduling constraints, such as fixed start times and durations. Such elements point to policies that could work to increase accessibility, such as flexible working hours and longer store opening hours.
+
+23
+
+2.4 Summary of Accessibility Measures
+As we have seen, accessibility measures can be classified into three groups, location-based measures, individual measures, and utility-based measures.
+Location-based measures are the most popular because they are relatively easy to calculate and interpret and they use readily available data. These measures evaluate accessibility for a location and ascribe the same level of accessibility to all the individuals at that location. They cannot account for trip-chaining, non homebased trips, individual differences, and scheduling flexibility. Particular attention must be paid to the choice of the impedance function and competition factors should be included if competition has an impact on the activity that is measured. They can be very efficient to measure changes in accessibility of a location due to infrastructure projects, and are generally used in hedonic modeling to evaluate consumers' willingness to pay. They are closely linked to the common-sense view of the transportation system, which makes them a valuable tool for communities or public participation.
+Individual measures are based on the concept of the space-time prism and are focused on the constraints individuals face on a daily basis. They require travel diary data or GPS data, which can be difficult to obtain. They are ideal in order to compare accessibility levels of different people in one area, by gender, ethnicity or income for example. They help understand some constraints on accessibility otherwise ignored by traditional measures and can help elaborate different policy approaches, such as promoting flexible work hours.
+Utility-based measures are the most theoretically sound. They are linked to microeconomic and travel behavior theories. However, this makes them difficult to interpret and calculate. They have the advantage of being convertible to monetary values which facilitates the comparison between different areas or plans, but the theories behind them are very complex. They are also very data-intensive. Activity-based measures are very promising. They incorporate several aspects of travel behavior not covered by traditional
+24
+
+measures, but they require data from an activity-based travel demand model. These measures are most appropriate to evaluate the impact of policies on different groups, such as the impact of a peak hour toll on employed and unemployed people, or the willingness to pay of travelers for such a toll.
+2.5 Selecting an Accessibility Measure
+As we have seen, there exist a number of accessibility measures, each with their own advantages and disadvantages. This section will describe the measures that are the most appropriate to use as indicators or as performance-based measures to evaluate plans.
+Different measures are used to evaluate transportation plans and projects depending on the goals and concerns of those conducting the analysis (Levinson, 2003). Accessibility is only one of the methods to evaluate plans and systems. Other types of measures that are used include mobility, cost benefit analysis (CBA), productivity and social equity. Some elements that are important in any measure of efficiency of the transportation system are:
+ different measures should be combinable into one overall measure;
+ scaling and aggregating to analyze the whole system, or disaggregating and analyzing system components should be uncomplicated;
+ measures should be easily understood by users and should correspond to their experience, they should be able to forecast travel behavior or demand and be useful in a regulatory context (Levinson, 2003).
+Four criteria have been found to be relevant in the choice of accessibility measures to evaluate plans : their theoretical basis, ease of communication and interpretation, the data requirements and their usability as social, economic or sustainability indicators (Geurs & Van Wee, 2004).
+25
+
+Theoretical Soundness
+The theoretical basis of accessibility measures refers to how closely the measure fits existing theory and how closely the results represent reality. Ideally, an accessibility measure should incorporate all the elements that compose travel behavior, and it should be sensitive to changes in the transportation network and in the land-use system, take into account supply and demand, measure accessibility at the individual level, taking personal constraints into account, and also factor temporal constraints, such as opening hours of stores. Geurs and van Wee (2004) define five rules accessibility measures should obey to be considered theoretically sound:
+1. any changes in the service levels (such as travel times) of a transport mode to an area should results in changes in accessibility levels in the area, in the same direction;
+2. any changes in the number of opportunities should result in changes in accessibility levels in the area, in the same direction;
+3. any changes in the demand for an opportunity with capacity limits should result in changes in accessibility levels, in the same direction;
+4. any increase in opportunities for an activity in an area should not change accessibility levels of individuals not able to participate in the activity because of temporal constraints;
+5. any transportation improvements or increase in opportunities for an activity in an area should not change accessibility levels for individuals not able to participate in the activity because of personal constraints (drivers license, education level).
+These five rules are a measure of how closely an accessibility measure represents reality. However, respecting all these rules will require extensive data and complex calculations; there is a tradeoff between theoretical soundness and simplicity.
+26
+
+Communication and Interpretability
+The ease of communication and interpretation of an accessibility measure will be determinant in how often the measure is actually used in practice and how useful it can be to planners, policymakers or residents of a community. An easily understood measure that corresponds to the common-sense view of the transportation system may be more valuable than a theoretically sound one that requires lengthy explanations (Koenig, 1980). The accessibility measure must be consistent with the perception that residents have of their environment and contain the elements that they perceive as important (Handy & Niemeier, 1997). Therefore it is important to find "the right balance between a measure that is theoretically and empirically sound and one that is sufficiently plain to be usefully employed in interactive, creative plan-making processes where participants typically have different degrees and types of expertise"(Bertolini, et al., 2005, p. 218).
+Another important consideration is the manner in which the accessibility level, or the result of the measure, is expressed. A ranking of local levels at the regional scale, a comparison of changes in accessibility, or a monetary value may be easier to communicate than potential values (Handy & Niemeier, 1997). However, there is no easy way to translate these measures from research to practice. Some level of public education about the measures and their value will be necessary. Accessibility must be a well-politicized issue before it can generate policies and planning objectives (Geurs & Van Wee, 2004).
+27
+
+Data Requirements
+The availability of the data required to calculate the accessibility measures will certainly play an important role in determining the choice of the one to use. As we have seen, individual accessibility measures are very interesting in terms of evaluating personal or temporal constraints faced by individuals; however, they are so data-intensive that most studies have only been conducted on a small number of individuals. The use of new activity-based models, access to large OD surveys like the one in Montral or to travel information captured through LAT or GPS technology may help overcome these barriers. The more popular location-based methods use data that is available or easy to acquire. The theoretical soundness of the models used to calculate the utilitybased measures will determine their accuracy, furthermore it is important to include the feedback mechanisms between land-use and travel demand, especially if analyzing mixed-use strategies (Geurs, Van Wee, & Rietveld, 2006).
+Economic Indicator
+Transportation or land-use projects can have two types of economic impacts: direct user benefits such as reduced travel times and increased capacity and speeds, and indirect benefits such as improved productivity and the general economic impact on a specific sector. Measures currently used are reduced travel times and congestion, increased capacity, and cost-benefit analysis such as the consumer surplus and productivity measures. To be used as an economic indicator, an accessibility measure must be tied to economic theory, by measuring consumer surplus as the utility-based model does, or serve as input to calculate the benefits derived from a project (Geurs & Van Wee, 2004). For example, accessibility levels are frequently used in hedonic analyses of the impacts of transportation projects on housing values. The economic potential of a project can also be estimated using simple location-based measures if access to employment or an increase in the catchment area is defined as an economic objective.
+Social Indicator
+The social impact of land-use and transportation projects can be varied, from increasing access to public services to deepening the divide
+28
+
+between the center and the periphery; plans can diminish or perpetuate social inequalities. While social equity in the provision of public facilities is often measured by per capita allocation, the patterns of accessibility to public services have been measured in a variety of contexts, including accessibility to elementary schools (Talen, 2001), playgrounds (Talen & Anselin, 1998), parks (Talen, 1996, 1998), and supermarkets (Apparicio, Cloutier, & Shearmur, 2007; Leck, et al., 2008). Accessibility as a social indicator should be measured at the individual level, using disaggregated data, and show levels of access to activities deemed of social need: education, public services, employment, etc. However it is generally measured at the census tract or neighborhood level and investigates the differences between low-income and high-income areas, or between primarily white and primarily ethnic minority areas. The resulting measure can be mapped to visually compare neighborhoods (Talen, 1998) or can be used in a statistical analysis to determine the relation between it and other factors, such as the relation between accessibility to schools and grades (Talen, 2001).
+Sustainability Indicator
+As important as sustainability is as a planning goal, it will always be accompanied by overarching economic and social goals, which is why solutions that serve several goals will have better chances of being implemented. Combining accessibility and sustainability "appears central to overcoming the current friction among major environmental issues, social aspirations and economic imperatives" (Bertolini, et al., 2005). By taking into account both the quality of the transportation system and of the land-use system, accessibility can help create more sustainable travel options and land-use conditions, such as promote active transportation modes, shorter trips, transit use and higher-density and mixed-use neighborhoods (ibid.). Current measures to evaluate environmental impact or sustainability include: energy consumption, CO2 emissions, air pollution, traffic noise, per-capita distance travelled by car, and changes in mode share. Accessibility as a sustainability indicator must be measured by all transport modes, including walking and cycling and emphasize shorter distances and increased access to destinations.
+29
+
+Selecting an Accessibility Measure The appropriate definition of the accessibility measure will depend on the intended application (Morris, et al., 1979), and the parameters of the selected model will influence the results. Therefore it is important to clearly set out the goal before selecting which measure to use and select the most appropriate description of access (Talen & Anselin, 1998), taking into account the type of activity and destination in the definition of distance. Each accessibility measure has its own points of strengths and weaknesses. For this reason several studies have used a combination of measures, either to highlight different aspects of a location's accessibility (Handy & Niemeier, 1997) or to reduce the weaknesses of each method through the strengths of the others (Primerano & Taylor, 2005). Maps of current accessibility levels can be useful for transportation planners to identify needs, rank different areas, and formulate goals. In order to use accessibility as a performance measure however, indicators must be developed that will correspond to the planning goals and objectives. These can be useful to evaluate the impacts of plans and prioritize projects.
+30
+
+3  CASE STUDY: APPLYING LOCATION-BASED ACCESSIBILITY MEASURES IN MONTRAL
+In this section we will apply some of the accessibility measures described previously to the Montral Metropolitan Region. The objective behind this is twofold. First, several accessibility measures will be tested for the same area and using the same data, enabling a comparison between their results. Second, analyzing land-use and travel-time data for Montral provides insight on the complex dynamics at play between the land-use and transportation networks in connecting origins with destinations and proving individuals with access to valued opportunities.
+Only location-based measures will be applied in this section. The next chapter will present an individual measure: the household activity space. Utility-based measures are not examined in this research project because they require access to travel-demand modeling software and are based on complex calculations and data-preparation. Future research could at directed at applying some of the more complex measures in order to evaluate projects with a direct economic effect, such as compare various tolling scenarios.
+3.1 Data and Assumptions
+Accessibility to jobs, workers and retail was calculated for the study area using several location-based accessibility measures described previously. These measures are generated at the level of the transportation analysis zone (TAZ), these were provided by the Ministre des transports du Qubec (MTQ). The MTQ also provided the research team with a congested automobile travel time matrix that was generated with travel demand modeling software. Employment and demographic information was obtained from the 2006 Census undertaken by Statistics Canada. Retail and business information was obtained from the Dun and Bradstreet commercial data base using the North American Industry Classification System (NAICS).
+31
+
+Frequency
+
+In order to generate an accurate impedance function, a travel time decay curve (figure 1) was calculated by combining travel times obtained from the MTQ with travel behavior data obtained from the 2003 Origin-Destination survey conducted by the Agence mtropolitaine de transports (AMT) (Agence mtropolitaine de transport, 2003). This decay curve is used to generate the gravity measures of accessibility, as well as the inverse balancing factors.
+Travel time decay curve for the  home work trip  by car
+0.8 0.7 y = 0.9242e0.171x
+R = 0.9254 0.6
+0.5
+0.4 0.3 percent
+Expon. (percent) 0.2
+0.1
+0 0 10 20 30 40 50 60
+Travel time
+Figure 1. Travel time decay curve
+Automobile travel times were obtained in the form of TAZ to TAZ travel time matrices from the MTQ for the years 1993, 2003 and 2011. These travel times are calculated using travel demand software and are partially based on results from the O-D survey. The 2011 travel time matrix includes the projected Highway 25 extension and bridge between Montral and Laval. Exceptionally, this matrix includes impedance to users of the new bridge to simulate a toll. The impedance takes the form of a six minutes additional delay for every user of the bridge. However, it is not possible in this matrix to determine which trips are subject to the impedance. Therefore, results of the accessibility measures for 2011 must be interpreted with caution, bearing this factor in mind.
+32
+
+Transit travel times were generated using a GIS network and adjusted using estimates of transit travel times for 11,000 individual trips from the Montral O-D survey which were provided to the research team by the MTQ. These travel times include walking time to the transit stop, waiting time at the stop, in-vehicle time, transfer time (if a transfer is necessary), and walking time to destination. Although the sample of trips obtained from the MTQ was important, there were not enough trips to fill in the TAZ to TAZ origin-destination matrix. In order to remedy this, trips were modeled from the origin to the destination by calculating access time at both the origin and destination to the closest stop (assuming an average walking speed of 5 km/h) and the shortest time on the transit network from the origin stop to the destination stop. Travel times on the transit network were estimated based on the average operating speed of each individual transit line. An O/D matrix was generated using each of the closest transit stops to each TAZ centroid (n=1552) as both origins and destinations. The travel time was calculated using the prepared transit network. This method assumes that there is no waiting time and does not penalize transfers, and so to correct this, a linear regression model (shown in table 1) comparing the simulated travel times to the travel times provided by the MTQ was generated. The travel time matrix generated using this model was then used for accessibility calculations.
+
+Table 1- MTQ and simulation comparison model
+
+Variable
+
+B t Sig.
+
+(Constant)
+
+10.727 59.14 0.000
+
+GIS Simulated
+
+Time
+
+1.276 190.12 0.000
+
+Dependent Variable: MTQ Travel Time
+
+Estimate
+
+R = 0.762
+
+N = 11,270
+
+33
+
+3.2 Cumulative Opportunity
+Accessibility to jobs, workers and retail opportunities (food stores, restaurants and big box stores) was calculated for the study area using the cumulative opportunity measure for travel time intervals of 5 minutes, going from 5 to 60 minutes travel time by both automobile and transit. The results for all travel times are shown in Appendix 2. Maps showing the spatial distribution of jobs, workers and retail outlets are shown in Appendix 1, in order to help in the interpretation of the results.
+3.2.1 Cumulative Opportunity to Jobs by Car
+Figure 2. Jobs in 15 minutes by car
+Figures 2 to 5 show the progression of cumulative accessibility to jobs in the region as travel times increase. Higher levels of accessibility to jobs quickly extend from the downtown core to the central island. Almost all the central island has a high access to jobs within 20 minutes by car. When travel times increase to 30 minutes, the center of the island has access to almost all the jobs in the region. This indicates that residents of central areas are very well located in regards to accessibility to a variety of employment opportunities. At 60 minutes travel time by car
+34
+
+almost all of the island of Montral, as well as large parts of the North and South shores have access to all the jobs in the region. This indicates that the Montral Metropolitan Region has a relatively compact development and that the road network is efficient. The eastern and western tips of the island lag behind with lower accessibility levels. IleBizard and Ile-Perrot have systematically lower accessibility levels than their surrounding areas. On Ile-Perrot, Highway 20 runs through the municipalities of Pincourt, Ile-Perrot and Terrasse-Vaudreuil enabling them to maintain the same levels of accessibility as the neighboring areas on the island of Montral. The rest of Ile-Perrot and most of IleBizard and Ste-Genevive may be poorly connected to the major highways, a situation which exacerbates their already poor job accessibility due to their suburban location away from major employment centers. Plans to extend Highway 440 through Ile-Bizard may have a major impact on this area's job accessibility in the future.
+Figure 3. Jobs in 30 minutes by car
+35
+
+Figure 4. Jobs in 45 minutes by car
+Figure 5. Jobs in 60 minutes by car 36
+
+3.2.2 Cumulative Opportunity to Jobs by Transit
+Accessibility to jobs using the transit network has a different spatial distribution than that using the road network. Figures 6 to 10 show cumulative opportunity accessibility to jobs using transit in Montral. Because the transit network was generated with different software and parameters than the roads network (e.g. the use of GIS versus travel demand modeling software) and the need to account for walking times and waiting times in the transit travel times, cumulative accessibility to jobs is limited to intra-TAZ jobs levels until 20 minutes travel time. This puts transit at a disadvantage when compared to the automobile, for which access times are not accounted for. Although interesting, modeling parking times for the automobile would be highly complex and not necessarily representative of users' perception. In contrast, access and waiting times are part of users' perceived transit travel times which are even more valued by users than in-vehicle travel times (Vuchic, 2005).
+Figure 6. Jobs in 15 minutes by transit
+37
+
+Once accessibility levels begin to increase (figure 7), they are clearly linked to the metro system and commuter rail lines, Montral's two major rapid-transit infrastructures. Accessibility increases first along the north-south axis. Parts of Laval and Longueuil that are closest to the island of Montral enjoy accessibility levels similar than those of central neighborhoods. Although the number of jobs that can be reached using transit is nowhere comparable to those that can be reached by automobile, most of the central island and part of the South Shore have relatively good accessibility to jobs within 45 minutes travel time. This accessibility spreads to parts of Laval and the eastern and western ends parts of central Montral when the travel time increases to 60 minutes. However, the eastern and western tips of the island still have very low levels of accessibility compared to the center at this travel time. This is due to a combination of poor transit availability in general and a lack of rapid-transit infrastructure in particular, and fewer of job opportunities in these predominantly residential areas.
+Figure 7. Jobs in 30 minutes by transit
+38
+
+Figure 8. Jobs in 45 minutes by transit
+Figure 9. Jobs in 60 minutes by transit 39
+
+3.2.3 Cumulative Opportunity to Workers by Car
+Cumulative accessibility to workers by car shows a similar spatial distribution as accessibility to jobs. Accessibility levels begin increasing in the densely populated central neighborhoods (figure 10) but rather than be concentrated in the CBD, it rapidly intensifies slightly to the west of downtown (figure11). This is due to the enviable position of these neighborhoods which are sandwiched between major employment centers and large residential areas, and are well served by major highway networks. At 45 minutes travel time, accessibility to workers spreads to most of the island of Montral and parts of the North Shore (figure 12). At 60 minutes, a clear pattern emerges where the island of Montral and the North Shore have high accessibility to workers and the South Shore lags behind (figure 13). This corresponds to population growth patterns as well as to urban development patterns. The municipalities with the highest population growth rates at the last census where located on the periphery of the island of Montral, in some cases close to major highways. Montral's two largest suburbs, Laval and Longueuil, have had very different growth patterns since 2001. Laval's' population increased by 7.5% since 2001, while Longueuil's also increased, but only by 1.6%. In fact, Laval had the highest growth rate of any census municipal area (CMA) in Qubec (Martel & Caron-Malenfant, 2009). It stands to reason that the island of Montral with its well developed road network and densely populated neighborhoods would have easy access to workers. The new rapidly growing residential neighborhoods in Laval could eventually attract employers looking for easy access to workers and create a better job-housing balance in those areas.
+40
+
+Figure 10. Workers in 15 minutes by car
+Figure 11. Workers in 30 minutes by car 41
+
+Figure 12. Workers in 45 minutes by car
+Figure 13. Workers in 60 minutes by car 42
+
+3.2.4 Cumulative Opportunity to Workers by Transit
+Cumulative accessibility to workers using transit is greatly influenced by major rapid-transit infrastructures. The first to have an impact on accessibility is the metro network in the central north-south axis and to a lesser extent the Delson-Candiac commuter rail line (figure 15). When travel times increase, parts of the South Shore near rail or metro stations gain accessibility to workers at the same rate as central neighborhoods on the island of Montral (figure 16). Cumulative accessibility increases slowly but steadily following a pattern that resembles previous results using transit (figures 6 to 9). This shows that in this case, the availability of infrastructure plays a determinant role, especially that of fixed, rapidtransit facilities. Businesses wishing to take advantage of the transit network to reach workers only have limited areas in which to locate (figures 16 and 17). A business that would like to trade in parking spaces for a new building for example would not necessarily benefit from doing so except in already dense central areas near stations.
+Figure 14. Workers in 15 minutes by transit
+43
+
+Figure 15. Workers in 30 minutes by transit
+Figure 16. Workers in 45 minutes by transit 44
+
+Figure 17. Workers in 60 minutes by transit
+3.2.5 Cumulative Opportunity to Retail by Car and by Transit
+Travel behavior to access retail is varied and difficult to predict. This is in part because it is rarely studied since the daily commute is what generates the largest share of traffic and peak-time congestion. Also, shopping is often chained within a commute trip, which makes it more difficult to isolate and predict. Many factors besides accessibility influence shopping behavior, such as personal preferences or attitudes, socio-cultural factors, spatial and economic factors (Handy & Yantis, 1996). For these reasons accessibility to retail was limited to three types of retail opportunities considered valuable: big box stores, restaurants and food stores. Travel times were also limited, since people are not willing to travel as far for shopping as for work.
+The results of these measures will be used later in the study to evaluate their impact on home sale prices through a hedonic regression analysis. They could eventually also be used to determine areas that are lacking in accessibility to basic amenities, such as grocery stores or health services. In this case, the choice of the transport mode and the travel time or distance would be particularly important in determining which degree of accessibility is considered acceptable, and which is
+45
+
+considered deficient. In terms of sustainable development, isochronic or cumulative opportunity maps of amenities available on foot or cycling could be a requirement for the design of any urban development project. Cumulative accessibility to the three types of retail opportunities by car is relatively constant across the central island of Montral, Laval and the South Shore. Again the eastern and western parts of the region have lower levels of accessibility. Cumulative accessibility to restaurants and food stores is highest in the downtown area (figures 19 and 20), while cumulative accessibility to big box stores (figure 18) is highest on the North and South Shores. This is representative of the urban form and types of development in these areas.
+Figure 18. Big box stores in 10 minutes by car
+46
+
+Figure 19. Food stores in 10 minutes by car
+Figure 20. Restaurants in 10 minutes by car 47
+
+Figure 21. Food stores in 25 minutes by transit
+Figure 22. Restaurants in 25 minutes by transit 48
+
+Once more, cumulative accessibility using the transit network is lower than by automobile and more concentrated around the rapid-transit infrastructures. It is particularly difficult for transit to compete with the automobile for this type of trip. Accessibility levels are dramatically higher within a 10 minute drive than within a 25 minutes transit trip (including walking and waiting times). Interestingly, however, the area around Longueuil metro station has better accessibility to restaurants using transit than the automobile, as do those areas located along the green metro line in downtown Montral (figure 22). In order for transit to gain a larger market share, it must be a convenient option for a variety of trips besides the home-work commute. Unfortunately, current development trends that encourage large big box type stores make this more difficult. It would also be interesting to compare accessibility to food stores and restaurants on foot in order to determine which locations may be lacking in convenience retailing opportunities.
+49
+
+3.3 Gravity Model
+The gravity measure of accessibility was applied using the impedance function derived from the travel time decay curve (figure 1) for automobile trips, and a negative exponential function for transit trips. A decay curve was generated for transit trips but did not give convincing results. This might be due to the smaller amount of data on simulated home-work transit trips available, or may also imply that many transit riders are captive users and the length of the trip does not influence the mode choice as much as the obligation to conduct it. Many negative exponential functions were tested; finally the one with the highest correlation with the cumulative opportunity measure was selected. The gravity model was applied only to jobs and workers. Since the gravity model attempts to simulate how users perceive the transportation system and the availability of opportunities, opportunities that are closer will have more weight than those that are farther. This does not apply as clearly to retail opportunities. Local opportunities may be the only ones that are considered by users and it is less important to live in an area with very high accessibility to restaurants or food stores; a handful is usually enough. If gravity accessibility to retail is calculated, a decay curve using data on retail trips should be generated. This curve should decline much faster than the work related curve.
+50
+
+Figure 23. Gravity accessibility to jobs by car
+Figure 24. Gravity accessibility to jobs by transit 51
+
+Applying the gravity measure of accessibility to jobs gives an almost monocentric distribution of higher levels that quickly fades as distance from the center increases. Although the CBD dominates as being the area with the highest gravity accessibility, the western part of central Montral also has very high levels (figure 23). The center is slightly shifted in the case of gravity accessibility using transit. Longueuil and the immediate South Shore compete with the CBD for higher levels (figure 24). Generally, most of the South Shore seems to suffer from low job accessibility as does most of Laval and the North Shore, except the central part along Highway 15 in the case of accessibility by car, and areas around metro and commuter rail stations in the case of transit.
+Figure 25. Gravity accessibility to workers by car
+52
+
+Figure 26. Gravity accessibility to workers by transit
+Gravity accessibility to workers is less evenly distributed than accessibility to jobs. The eastern and western parts of central Montral have the highest levels by car, as do parts of Laval (figure 25). Pockets of very high levels appear around major highways and arterial roads that cross the city, highlighting their importance in connecting origins and destinations. The highest levels using transit are again located near the major rapid-transit infrastructure and so are very central and oriented north-south rather than east-west (figure 26). Accessibility to workers using transit shows Longueuil and the immediate South Shore at par with Montral's central neighborhoods. The recently opened metro in Laval plays a similar role in increasing accessibility levels in its proximity.
+3.4 Correlations
+A high correlation was found between the results obtained using the gravity measure and cumulative opportunity measure for travel by car on the existing network, for trips varying from 20 to 45 minutes in duration, and by transit for trips between 30 and 45 minutes (figure 27). A similarly high correlation was found in previous research (El-Geneidy & Levinson, 2006).
+53
+
+This is highly pertinent because, although the gravity measure of accessibility is to be preferred over the cumulative opportunity measure because of its theoretical soundness, it is more complex to calculate and can be difficult to interpret and explain to the general public or to decision makers. The cumulative opportunity measure may be preferable in public discussions because it is more transparent and intuitive. This makes it possible to use the cumulative opportunity measure instead of the gravity measure for the travel times that are highly correlated.
+Figure 27. Correlation between cumulative and gravity accessibility
+54
+
+4  COMPETITIVE ACCESSIBILITY TO JOBS AND WORKERS IN MONTRAL
+4.1Competition Factors
+The first measure accounting for competition that was tested is the gravity model accounting for competition factors, which takes into account the accessibility to jobs and to workers at one location. Since it is based on the gravity model, this model gives a weighted result that cannot be interpreted as the number of jobs or workers, but rather as a level of accessibility. The interpretation of these maps will be limited to a visual scaling from low to high levels. An in-depth knowledge of each area and industry examined would be required to offer a comprehensive interpretation of the results.
+Figure 28. Competitive accessibility to jobs 55
+
+Figure 29. Competitive accessibility to workers
+Figures 28 and 29 show a representation of competitive accessibility to jobs and to workers that can be compared to the results of the cumulative opportunity and gravity models. When factoring for competition from workers, accessibility remains highest in the center of the island of Montral, but in these maps the two largest employment centers (the CBD and Ville St-Laurent/Dorval) emerge as areas where many jobs can be reached, without having as many workers in close range of them. Worker accessibility accounting for competition does not present a clear pattern. However, generally higher levels are found in pockets near major highways and away from the center. Interestingly, the denser central neighborhoods in Montral have low levels of competitive accessibility to workers, possibly because of the influence of the nearby CBD which is a large employment center. This may mean that these areas have more jobs than workers within a close range.
+56
+
+4.1.1Competitive accessibility by Industry
+In order to explore issues of social equity and social planning more in detail, the competition factors model was used to measure accessibility to jobs in different industries. Using the North American Industry Classification System (NAICS, detailed in table 2) and data from the 2006 census, accessibility to jobs corresponding to each industry category of was measured by accounting for competition from workers employed in that same category. This initial exploration can be a first step in planning for a particular type of clientele, or in jointly planning land-use and transportation projects linked to economic development strategies.
+
+Table 2- North American Industry Classification Codes
+
+NAICS Code
+11 21
+22 31-33
+41 44-45 48-49 51 52 53 54
+55 56
+61 62 71 72 81 91
+
+Description
+Agriculture, forestry, fishing and hunting Mining, quarrying, and oil and gas extraction Utilities Manufacturing
+Wholesale trade Retail trade Transportation and warehousing Information and culture Finance and insurance Real estate, and rental and leasing Professional, scientific, and technical services Management of companies and enterprises Administrative and support and waste management and remediation services Educational services Health care and social assistance Health accommodation and food services Arts, entertainment and recreation Services other than public administration Public administration
+
+57
+
+Figure 30. Competitive accessibility to the agriculture, forestry, fishing and hunting industries
+Figure 31. Competitive accessibility to the mining, quarrying, and oil and gas extraction industries
+58
+
+Figure 32. Competitive accessibility to the utilities industry
+Each figure shows interesting results that can be explored on their own with appropriate knowledge of the location of businesses and the socioeconomic composition of the neighborhoods near which they are located. Some industries, such as trade, services and social services have high competitive accessibility levels almost throughout the region, while others such as the finance and insurance industries, or the information and culture industries have generally low levels with highly concentrated peaks in some areas.
+On the whole, competitive accessibility levels are always relatively low for the South Shore; the only exception is the agriculture, forestry, fishing and hunting industry, where high levels of competitive accessibility can be found in most of the southwestern part of the region (figure 30). The Vaudreuil-Soulange area, which is part of the Montrgie region, has high and medium competitive accessibility to jobs in many industries, including natural resources processing and services (figures 30, 36, 40, 43-48). The junction of two major highways in the area certainly plays a role in this.
+59
+
+The North Shore and Laval offer at least pockets of high to medium competitive accessibility levels to all industry types. The influence of Highways 15 and 440 seem determinant in most maps. The natural resources processing industries (figure 30 and 31) are widely accessible across Laval and the North Shore. Competitive accessibility to jobs in the construction, manufacturing, wholesale and retail trade are very high in Laval in the area defined as its major employment center around the junction of those two highways (figures 33, 34,35, 36). Some areas in the Laurentides region have very good competitive accessibility to various jobs. Blainville has very good access to jobs in the utilities and educational services industries (figures 32 and 44). Boisbriand and Ste-Thrse also have high competitive access to jobs in educational services, as well as in the retail trade industry (figures 36 and 44). St-Jrme has high competitive accessibility to jobs in the finance and insurance, management of companies and enterprises, administrative and support and waste management and remediation services, educational services, health care and social assistance, and public administration industries (figures 39, 42-45, 49). La Plaine also has very high competitive accessibility to jobs in the public administration industries (figure 49).
+60
+
+Figure 33. Competitive accessibility to the construction industry
+Figure 34. Competitive accessibility to the manufacturing industry 61
+
+Figure 35. Competitive accessibility to the wholesale trade industry
+Figure 36. Competitive accessibility to the retail trade industry 62
+
+Figure 37. Competitive accessibility to the transportation and warehousing industries
+On the Island of Montral the CBD and Ville St-Laurent/ Dorval almost always emerge as areas with high job accessibility accounting for competition. The CBD is just about the only area with high competitive accessibility to jobs in the utilities and finance and insurance industries (figures 32 and 39). Jobs relating to natural resources processing (figures 30 and 31) are less accessible in the city center, as are those in the construction, manufacturing, wholesale trades, and transportation and warehousing industries (figures 32-34, 36). The western part of the center, however, comprising Ville St-Laurent and Dorval, stands out with its very high competitive accessibility to the manufacturing, wholesale trade, retail trade and transportation and warehousing industries (figures 34-36, 38).
+Levels of competitive accessibility to jobs in the retail trade, real estate, rental and leasing, professional, scientific and technical services, arts, entertainment and recreation, and services industries, other than public administration, are almost ubiquitously high across the center island of Montral and Laval (figures 36, 40, 41, 47, 48). In these cases the major
+63
+
+employment centers clearly emerge as having higher levels of competitive accessibility, but the surrounding areas also benefit from high to medium competitive job accessibility. This is the case for competitive accessibility to the retail trade, information and culture, real estate, and rental and leasing, professional, scientific, and technical services, health accommodation and food services, arts, entertainment and recreation, and services industries, other than public administration (figures 36, 38, 40, 46, and 48). These industries may be less spatially concentrated or the individuals occupying jobs in these industries may be less spatially concentrated.
+Figure 38. Competitive accessibility to the information and culture industries
+64
+
+Figure 39. Competitive accessibility to the finance and insurance industries
+Figure 40. Competitive accessibility to the real estate, and rental and leasing industries
+65
+
+Figure 41. Competitive accessibility to the professional, scientific and technical services industries
+Figure 42. Competitive accessibility to the management of companies and enterprises industry
+66
+
+Figure 43. Competitive accessibility to the administrative and support and waste management and remediation services industries
+Figure 44. Competitive accessibility to the educational services industry 67
+
+Figure 45. Competitive accessibility to the health care and social assistance industries
+Figure 46. Competitive accessibility to the health accommodation and food services industries
+68
+
+Figure 47. Competitive accessibility to the arts, entertainment and recreation industries
+Figure 48. Competitive accessibility to the services industries other than public administration
+69
+
+Figure 49. Competitive accessibility to the public administration industries
+4.1.2 Competitive Accessibility by Education Requirements
+In order to conduct a more in-depth analysis, jobs were grouped according to the corresponding level of schooling they generally require. Workers were also grouped according to the last degree of schooling completed. A competition factors model of accessibility was then calculated for jobs in each category accounting for competition from workers with corresponding level of schooling. The same was then done for workers. Table 3 shows which jobs were grouped together to correspond to certain education levels. Only one type of job is found in two categories, manufacturing, which can correspond to high school or university levels.
+70
+
+Table 3- Categories of jobs by generally required schooling
+
+Category
+
+NAICS Description
+
+Code
+
+High school, trade 11
+
+Agriculture, forestry, fishing and hunting
+
+certificate or less
+
+21
+
+Mining, quarrying, and oil and gas extraction
+
+31-33
+
+Manufacturing
+
+Cegep diploma
+
+41 44-45 48-49 72 22
+53 56
+
+University diploma
+
+71 81 31-33 51 52 54 55 61 62 91
+
+Wholesale trade Retail trade Transportation and warehousing Arts, entertainment and recreation Utilities
+Real estate, and rental and leasing Administrative support and waste management and remediation services Health accommodation and food services Services other than public administration Manufacturing Information and culture Finance and insurance Professional, scientific, and technical services Management of companies and enterprises Educational services Health care and social assistance Public administration
+
+71
+
+Figure 50. Competitive accessibility to jobs corresponding to secondary education or less
+Figure 51. Competitive accessibility to jobs corresponding to Cegep education 72
+
+High levels of competitive accessibility to jobs requiring secondary education or less are concentrated in the western part of Montral, especially in the Ville St-Laurent/Dorval employment center (figure 50). Surrounding areas, as well as the CBD and the Laval employment center also offer high levels of competitive job accessibility, and most of the island and the immediate South Shore have medium levels of competitive job accessibility. It is important to determine where individuals seeking jobs in this category reside to ensure that they benefit from these high levels of competitive accessibility. Also, this measure is taken using automobile travel times. If the objective is to measure the competitive job accessibility of poorer populations with less access to automobiles this same measure should be calculated using transit travel times for example. Competitive accessibility to jobs requiring a Cegep diploma is concentrated in the CBD but extends to most of the central Island of Montral, Laval and immediate parts of the South Shore (figure 51). Competitive accessibility to jobs requiring a university diploma is more widespread, with major peaks in the CBD, In Ville St-Laurent, Laval and the Laurentides region (figure 52).
+Figure 52. Competitive accessibility to jobs corresponding to university education
+73
+
+Figure 53. Competitive accessibility to workers with secondary education or less
+Figure 54. Competitive accessibility to workers with Cegep education 74
+
+Figure 55. Competitive accessibility to workers with university education
+The results for competitive accessibility to workers take into account the spatial concentration of jobs. In areas where there are few jobs and many workers competitive accessibility will be high, in areas with many jobs and few workers accessibility will be low. Figure 53 shows the results for competitive accessibility to workers with secondary education or less. Medium to high levels of competitive accessibility are generally spread out across the island of Montral, Laval, the Lanaudire region and the immediate South Shore. High levels tend to be concentrated in pockets along major highways.
+Competitive accessibility to workers with Cegep and university education has a similar spatial distribution, with higher levels in the Longueuil and Vaudreuil-Dorion areas (figures 54 and 55). This could indicate that many workers with post-secondary education reside near these areas but that few jobs that fit their requirements are in the immediate vicinity.
+75
+
+4.1.3 Discussion
+The results of the application of the competition factors model are numerous and provide a varied image of competitive job accessibility in the Montral Metropolitan Region. Generally, the South Shore has low levels of competitive accessibility to all types of jobs, except for the agriculture, fishing and hunting industries. This may imply the South Shore does not offer a higher than average job concentration in any specific sector. This may also imply that the transportation network is deficient on the South Shore, and that residents may need to travel longer times in order to reach job-rich areas on the island of Montral or in Laval. When analyzing competitive accessibility according to education requirements, the South Shore has medium to high levels of competitive accessibility to all three job categories, especially in areas along highway 15 and near the Jacques-Cartier Bridge. Longueuil's proximity to the center of Montral is highlighted here. Longueuil also ranks highest in terms of competitive accessibility to workers with postsecondary education, in particular in the area surrounding Longueuil's employment center. This may imply that although many workers with this degree of education are within close range of this area, there a very few jobs for them there. Clearly though, there is a potential to entice employers from specific sectors to establish themselves in this area.
+The island of Montral has generally good competitive accessibility to jobs in most sectors. The western part of the central island (where the Ville St-Laurent/Dorval employment center is located) has higher competitive accessibility to jobs in the manufacturing, wholesale and retail trade, transportation and warehousing industries. This corresponds in part to the high concentration of industrial jobs in this area and to its strategic location near the CBD and Laval employment centers and close to highways 20, 40 and 15. The Ville St-Laurent/Dorval area also has the highest competitive accessibility to jobs requiring a secondary education or less, which corresponds again to the high concentration of industrial jobs. The CBD is almost the only area with high competitive accessibility to jobs in the utilities, information and culture, management of companies, finance and insurance and public administration services industries. These sectors are typical of the CBD, where large banks, insurance companies, government offices, and company headquarters usually locate. The CBD also has the highest competitive accessibility
+76
+
+level to jobs requiring post-secondary education. This is also directly linked to the high concentration of white-collar jobs that can be found there. Laval and the North Shore have high competitive accessibility to jobs in the natural resources, construction, retail trade and health accommodation and food services industries. In part, Laval's rapid expansion can explain the higher level of access to construction jobs. In general, Laval's employment center always appears as the area with the highest accessibility levels. This area also has medium to high levels of competitive accessibility to jobs requiring secondary and post-secondary education, indicating it is well connected to the highway network. On the North Shore, a few areas stand out as exceptions that would be worthy of further research. St-Jerome, La Plaine, Boisbriand, Blainville, and Ste-Thrse all offer very high levels of competitive accessibility to some job sectors, which is surprising since these are mainly residential suburbs without very high concentrations of jobs. It would be interesting to study more in-depth the reasons that enable these areas to have such high levels of competitive accessibility and to study the travel behavior of their residents accordingly.
+77
+
+4.2 Inverse Balancing Factors
+The second model used to take into account competition to calculate job and worker accessibility is the inverse balancing factors of the doubly constrained spatial interaction model. As in the previous section, this model was applied to measure competitive accessibility to all jobs and workers in the Montral region, as well as to measure access to jobs and workers according to education requirements. The measure of the inverse balancing factors is more complex than any of the ones tested so far in this research project. Because it is calculated iteratively, the process is less transparent, making it difficult to interpret. The results are expressed as weighted levels of competitive accessibility. The results were scaled in order to make them similar to those of the other measures. The results of the first calculation (jobs) were multiplied by a constant, and the results of the second calculation (workers) were divided by the same constant. Although this model also provides a measure of competitive accessibility it will be referred to as balanced accessibility in order to keep the comparison between measures as simple as possible.
+Figure 56. Balanced accessibility to all jobs 78
+
+Figure 57. Balanced accessibility to all workers
+Balanced accessibility to jobs and to workers presents a relatively different spatial pattern than the results shown previously in this research study. High balanced accessibility to jobs is found in the CBD and Beauharnois-Valleyfield, with the second-highest areas being the central island of Montral and Longueuil and the immediate South Shore (figure 56). It is interesting to note that balanced accessibility results in a less monocentric representation of accessibility and that for the first time Longueuil's high job accessibility become apparent. In fact, Longueuil is only across a bridge from the CBD and also has a major employment center. Valleyfield also has a high concentration of employment and is located near major highways.
+Figure 57 shows the results of the second balancing factor (which is in fact the opposite of the first), balanced accessibility to workers. This second map helps understand the distribution of balanced accessibility to jobs. High balanced accessibility to workers is mostly located on the Northern and Eastern tips of the island of Montral, most of Laval and the Lanaudire region. The highest levels are found in the rapidly growing suburbs to the North. These areas offer good transportation
+79
+
+networks (they are built along the highway network) and are essentially residential. They would be the ideal location for a new employment center or for increased mixed-used development.
+Since each calculation accounts for the other and is balanced through the iterative process, each inverse balancing factors contains the other. For example, since the first factor (accessibility to jobs) accounts for competition from workers, it is not necessary to use the second factor (accessibility to workers) as a necessary complement in a statistical analysis.
+Figures 58 and 59 show the results for balanced accessibility to jobs corresponding to secondary and post-secondary education levels. In the post-secondary category are included all the workers holding a Cegep or a university degree, and all the jobs corresponding to those categories (see table 3). Balanced accessibility to jobs requiring secondary education is differently distributed in this map, compared to the map showing the results of the competition factors model (figure 53). High levels are concentrated in the major employment centers that are the CBD, Ville St-Laurent/Dorval and Longueil and extend from those areas towards most of the island of Montral and the South Shore. High levels of balanced accessibility to jobs requiring a post-secondary education spreads north along Highway 15 to the Laurentides region, a pattern that was already present in figure 55, but that is now very clear in this image. Balanced accessibility to jobs requiring post-secondary education increases with the distance from the island of Montral.
+The next two figures represent the opposite result: balanced accessibility to workers as expressed by the second balancing factor. Figure 60 shows high levels of balanced accessibility to workers with secondary education or less in the Lanaudire region and the Eastern part of Laval and Montral. This was also present in figure 50, which shows the results of the same measure using the competition factors model, but the pattern was not so clear. Accessibility to workers with a post-secondary education level is higher on the South Shore, gradually fading towards the north and very low in Laval and the North Shore.
+80
+
+It is important to note that the results of the competition factors model are identical to the results of the first iteration of the inverse balancing factors. It is normal that patterns that begin to appear in the first become more defined as the model reaches equilibrium. This also shows that although the inverse balancing factors model is more complex to calculate and interpret than the competition factors model, the results are smoother and show patterns that can be further investigated using other methods.
+Figure 58. Balanced accessibility to jobs requiring secondary education or less
+81
+
+Figure 59. Balanced accessibility to jobs requiring post-secondary education
+Figure 60. Balanced accessibility to workers with secondary education 82
+
+Figure 61. Balanced accessibility to workers with post-secondary education 83
+
+4.3 Place Rank
+The place rank measure of accessibility is very different from all the models used previously in this research project. A different dataset was used to calculate this measure. Rather than use the number of jobs and workers in each TAZ, the flow of trips made for work purposes was used. The data consists of the number of trips originating in a given census tract whose destination is another given census tract. The data was aggregated to the municipal and borough level. Montral, Longueuil and Laval were divided into their boroughs or neighborhoods, in order to compare them to the other smaller municipalities in the Montral Metropolitan Region. This flow data is representative of the home-work commute and is also available in the other direction. Similar to the inverse balancing factors, this measure is calculated iteratively, so it is more difficult to interpret.
+Figure 62. Rank of work locations
+The first measure was the rank of municipalities according to attractiveness for work purposes. This measure combines all transportation modes and has the impedance and attractiveness of the opportunities embedded within it since it is based on actual travel behavior. Since it is a measure of travel behavior and not potential
+84
+
+opportunities that can be reached, the place rank does not measure accessibility in the traditional sense implied by the previously discussed measures. It does, however, reflect accessibility since the areas that rank higher will be those that offer more and better opportunities, less competition from other workers, and better transportation options to reach them. Figure 62 shows the result of the place rank measure for work locations. The municipalities that rank highest correspond to the CBD and the Ville St-Laurent/Dorval employment centers. Other employment centers such as Laval, Longueuil and Anjou also have a high ranking. Two areas in the centre island of Montral have low rankings, Outremont and the Montral-Ouest, Hampstead, Cote St-Luc area. These areas are mainly residential, with some retail opportunities. Therefore many people leave them to work in another municipality, but few travel to them for work. This is also the case of the suburban areas in the eastern and western tips of the island of Montral and large parts of Laval and the North and South Shores.
+Figure 63 Rank of home locations
+85
+
+Figure 63 shows the same place rank measure applied to home locations. It clearly indicates that neighborhoods on the North Shore and in the Laurentides, Lanaudire and Montrgie regions are highly attractive residential areas. Most of the island of Montral, except for dense central boroughs such as the Plateau, Villeray, Rosemont, Ahuntsic, and Cartierville, rank poorly. Most of these areas rank medium to high for job locations, indicating that the majority of people who work in these municipalities do not live in the central island but in the suburbs.
+86
+
+5  ACCESSIBLITY INDICATORS
+5.1 Change Indicators
+Accessibility can be useful to evaluate the impacts of plans and prioritize projects. For example, future accessibility levels following the implementation of a plan can be projected and compared to current ones. In order to do this, future travel conditions including the proposed transportation projects must be modeled and a new travel time matrix obtained. This applies to any type of project that will measurably affect the transportation network by any mode.
+Figure 65 shows the results of a cumulative opportunity measure of accessibility to jobs using projected travel times for the year 2011. These travel times were modeled using travel demand software by the MTQ, and include the new Highway 25 extension and bridge to Laval. This new bridge is expected to be tolled, in order to simulate this in the model all trips using this bridge have a six minutes impedance added to their travel time. Caution must be used when interpreting the results because the manner in which the travel times were modeled does not allow discriminating between trips that are longer due to the impedance and those that may be longer for other reasons, such as increased congestion levels.
+Although interesting, this map alone is of little use to transportation planners. It needs to be compared to current accessibility levels in order to see how the proposed project will modify accessibility in Montral. Figure 64 shows current cumulative opportunity accessibility to jobs in 30 minutes.
+87
+
+Figure 64. Jobs in 30 minutes by car using current travel times
+Figure 65. Jobs in 30 minutes by car using 2011 travel time projections 88
+
+Figure 66. Change in the number of jobs in 30 minutes by car between 2003 and 2011
+Rather than visually compare both maps however, it is more pertinent to create a new one using the results of the previous two. Figure 66 shows the change in cumulative accessibility to jobs between current levels and projected 2011 levels. It is important to note that the only difference between the current and future measures is the travel times. Therefore accessibility is projected for 2011 using 2006 employment data. It is expected, however, that since congestion will most likely increase due in part to economic development, job opportunities will also increase and possibly have a different spatial distribution. These results are therefore to be used as an example of the type of indicator that can be created using accessibility and not directly as a measure of the Highway 25 extension and bridge.
+Figure 66 clearly shows the areas where change in cumulative accessibility is likely occur between now and 2011, if the projects included in the travel demand model are implemented. Most of the island of Montral sees its accessibility to jobs decline by 20,000 to 100,000 jobs, while the surrounding suburbs remain stable, standing to gain or lose access to around 20,000 jobs. In the center of the Island of Montral, areas between Anjou and Dorval will see their accessibility to
+89
+
+jobs decrease even more, with parts of Lasalle, Lachine, MontralOuest, Hampstead and Cote-St-Luc losing the most. This may be due to increased congestion on all the major highways. In Laval, areas around the new bridge have a sharp increase in their accessibility to jobs which extends along Highway 440 up to the junction with Highway 15.
+This map highlights two potential long-term accessibility trends; first, a possible decrease in accessibility to employment by car. This opens the door to projects and policies to counterbalance this by increasing overall accessibility levels and offering alternatives to the private car, such as policies to encourage ridesharing or carpooling, new rapid-transit infrastructure or more capacity in the existing transit offer.
+A second trend that is obvious from these maps is a clear increase in accessibility that is probably attributable to the new bridge and highway extension in Laval. As seen in the previous sections, this will influence home sale prices and land values in that area, and spur development. It should also influence the travel behavior of the individuals residing there, encouraging them to travel shorter distances and have more compact activity spaces. Of course, increased accessibility alone is not enough to strongly influence travel behavior. This is why a project like this that will create a demand for new residential and commercial development should be accompanied by policies to help foster sustainable travel practices.
+5.2 Normalized Borough Accessibility
+A second type of indicator that is simple, eloquent and takes competition from workers into account is normalized accessibility. For this research study, accessibility is measured at the TAZ level, which is the finest grain for analysis that is easy to operationalize. Comparing TAZ's to one another has little meaning for decision makers, urban planners and non-specialists in general. A solution is to normalize cumulative accessibility at a larger scale, such as the borough or municipality in order to enable comparisons between different areas.
+90
+
+The measure is formulated as:
+
+J
+
+ BjOj  Dj
+
+NAi  j1
+
+Di
+
+where NAi is the normalized accessibility in area i, Oj is the opportunities in zone j, Bj is a binary value equal to 1 if zone j is within the predetermined threshold and 0 otherwise, Dj is the workers in zone j, and Di the workers in area i.
+
+Figure 677. Normalized accessibility to jobs
+The results for the normalized accessibility show a similar spatial distribution as the traditional cumulative opportunity measure they are based on. Figure 67 shows normalized accessibility to jobs, by borough and municipality, in 30 minutes travel time by car. Taking into account the competition from workers living in the municipality itself, the lowest accessibility levels in the region are found in Ile-Bizard, SalaberryBeauharnois, Rousillon and les Jardins-de-Napierville. On the island of Montral, municipalities to the west of Dorval and to the east of
+91
+
+Montral-Est have lower accessibility levels which compare to those of the northern and western parts of Laval, and the North and the South Shores. Accessibility to workers (figure 68) is highest in the center of Montral, and extends across most of the island excluding Ile-Bizard, Pierrefonds, Roxboro, Senneville, Ste-Anne-de-Bellevue, Baie d'Urf and Beaconsfield, which have the lowest accessibility levels. Off the island, Salaberry-Beauharnois, Rousillon and Les- Jardins-de-Napierville have the lowest levels, along with municipalities in the Laurentides region on the North Shore.
+Figure 688. Normalized accessibility to workers
+Both these figures show that accessibility is not distributed evenly across the region, even when taking population density into account. The central island of Montral is better connected to jobs and workers through its proximity to major employment centers, densely populated central neighborhoods and an efficient road network. Accessibility to workers is much more spread out across the central island than accessibility to jobs, which may indicate opportunities for businesses in the northern part of the island of Montral. It would be interesting to
+92
+
+produce this type of map for a social equity analysis, such as accessibility to schools, or hospitals, or even for comparing accessibility to -rather than by- the transit network.
+93
+
+6  INDIVIDUAL ACCESSIBILITY: HOUSEHOLD ACTIVITY SPACES
+To include an individual accessibility measure in this research project, the concept of actual activity spaces was applied to the Montral Metropolitan Region and three measures representing individual travel patterns were generated using data provided by the 2003 OriginDestination survey.
+These measures are the total distance traveled by all members of the household, the area of the polygon representing household activity space and the spatial dispersal factor. Previous studies used the absolute area of the activity space and the total distance traveled to estimate how these are affected by urban form and neighbourhood characteristics (Fan & Khattak, 2008; Newsome, et al., 1998). These measures can be deficient to explain compact, local travel behaviour. The total distance traveled by a household does not account for the direction of travel or the resulting use of space. The area of the polygon can also be misleading. When comparing polygons, it becomes apparent that a small area does not indicate localized travel patterns. Figure 69 shows a comparison of polygons according to the generated measures. Polygons A-1 and A-2 have the same area but correspond to very different travel behaviours: A-1 has more trips close to the origin point, while A-2 has a very long trip, but only in one direction. A measure of compactness is used to differentiates these two travel behaviours (Selkirk, 1982). The measure of compactness is defined as
+where C is the compactness of the polygon, A is the area of the polygon and P is the perimeter of the polygon.
+This measure creates a ratio between the area of the polygon and the total distance traveled. This differentiates household's having similar areas with long travel distances from those with short ones. But as shown by polygons B-1 and B-2, this measure does not differentiate between a household with very local activity patterns and ones with more regional ones. In order to obtain a reliable measure of individual
+94
+
+travel activity, the measure of compactness is modified to account for spatial dispersal. The measure of spatial dispersal relies mainly on area ratios and compactness, creating a bridge between the above mentioned measures. The spatial dispersal of the activity space can be defined as:
+Spatial dispersal Where A is the area of the activity space of a household, Amax, is the area of the largest polygon in the sample, and is the compactness of the polygon measured earlier. As seen in figure 69, polygons C-1 and C-2 have the same level of spatial dispersal as well as a similar area and compactness.
+Figure 69 Comparisons between different measures of activity spaces 95
+
+The spatial dispersal factor is a new measure of the actual activity space. The spatial dispersal factor accounts for the compactness and the scale of the activity space by taking into account both the ratio between the area and the total distance traveled, and the scale of the area of the activity space at the regional level. The actual activity space can be used as a potential accessibility measure, by summing the number of opportunities contained within its boundaries. However, acquiring data for the availability of opportunities at such a fine scale is difficult, and issues relating to scale and compactness may arise.
+The actual activity space is a good measure to evaluate the impacts of regional accessibility levels on travel behavior. It can also be an interesting starting point to develop additional space-time measures of accessibility. Like the place rank, this measure is based on actual travel behavior and so does not represent accessibility in the traditional sense of potential for interactions. Rather, this measure has accessibility embedded within it. Therefore it can be used as a proxy for household and personal accessibility. For example, the spatial dispersal factor can be used to measure individual or location-based accessibility. A person with a low spatial dispersal factor is expected to live in an area with high levels of regional accessibility, while controlling for other sociodemographic characteristics. The spatial distribution of this measure at the regional scale could be used to determine planning needs or for a social equity analysis. In fact, this measure can have several applications in the planning field. In this research project it is used as a variable in a linear regression to predict regional accessibility levels obtained through traditional spatial interaction models such as the cumulative opportunity measure, the gravity model and the inverse balancing factors measure.
+6.2 Data and Assumptions
+Data from the AMT Origin-Destination survey (Agence mtropolitaine de transport, 2003) was used to calculate household activity spaces. The OD survey is conducted every five years and records the trips of every household member for one day. The OD data was aggregated to the household level to study household travel patterns. A sample of 22,930 households with at least three reported trips was used to generate the actual activity spaces. First household trips were mapped using the origin and destination X,Y coordinates of every trip in a GIS environment.
+96
+
+Then the Convex Hull application in GIS was used to generate the smallest polygon possible for each household. This polygon corresponds to the household's actual activity space.
+6.3 Relationship between Regional and Household Accessibility
+Five statistical models were developed to explore the relationship between small, localized activity spaces and accessibility to jobs, workers and retail. A series of variables is used to predict individual accessibility, represented by the spatial dispersal factor of the household activity space, the area of the polygon that corresponds to the household activity space and the combined total distance traveled by all members of the household. These variables include neighborhood characteristics, household characteristics and regional accessibility measures. The dependent variables are the natural log (ln) of the spatial dispersal factor, area, and the total distance traveled (km) of each polygon. Table 4 includes a list and description of the variables used in the analysis as well as summary statistics. The results of the models are described in table 5.
+97
+
+Table 4- Variable names and summary statistics
+
+Variable
+
+Description
+
+Ln(Sp. disper.) Natural log of activity space spatial dispersal
+
+Ln(Area)
+
+Natural log of area covered by activity space
+
+Total Distance Total distances traveled by household residents
+
+Vehicles Num People Avg. Age Income less 60K
+Num. Driver lic.
+Total Trips
+Num. Active Trips
+On Island
+Dist Employment center
+Num Retail
+Food Sto. 10min Num jobs 30 min Num workers 30 min
+
+The number of vehicles owned by the household
+The number of people in the household
+The average age of the household inhabitants A dummy variable if the household income is less than 60K The number of people with a driver licence in the household The total number of trips made that day in the household The total number of trips using active modes of transportation made that day in the household A dummy if the household is located on the island of Montral
+Network distance from the home to the nearest employment center
+Number of retail opportunities in a 1km buffer around the home Number of food stores within 10 minutes of travel time by car Number of jobs within 30 minutes travel time by car Number of workers within 30 minutes travel time by car
+
+Gravity jobs
+
+Gravity based measure of accessibility to jobs
+
+Gravity workers
+Competition jobs
+
+Gravity based measure of accessibility workers
+Balancing factor for accessibility to jobs
+
+to
+
+Mean -0.60 15.89 46413.0 2 1.31 2.44 38.49 0.62
+1.66
+7.24
+0.94
+0.64
+4157.82
+592.90
+180.50 728900. 39 700730. 48 43090.3 2 41332.7 2
+14.93
+
+STD. 1.76 2.07 40153. 22 0.88 1.15 14.79
+0.48
+0.82
+3.91
+1.96
+0.48
+3824.0 8
+812.80
+127.49 417179 .56 316293 .82 24660. 50 17648. 54
+11.83
+
+6.3.1 Spatial Dispersal of the Activity Space
+The model results show that total distance traveled has the best fit. The area and the spatial dispersal factor both have a similar and slightly lower R squared. This indicates that the variables in the model explain the length of trips made by a household better than the area covered by the household or the spatial concentration of the trips. The spatial dispersal factor, which is tested here for the first time, shows similarities in terms of behavior of the independent variables and their effect. A variable that increases the area or the total distance traveled also
+98
+
+increase the spatial dispersal factor. The main differences between the models are in the power of each dependent variable on the independent variable. This indicates the spatial dispersal factor can be used as a new measure of travel behavior since it accounts for the direction, compactness and scale of the activity space.
+The spatial dispersal of an activity space is expected to increase by 29% for every additional vehicle in the household. In addition, it is expected to increase by 6% for every additional person residing in the household. These two variables follow the expected theory that having more people in a household will lead to an increased area and more dispersed travel patterns. An annual household income of less than $60,000 decreases the spatial dispersal factor by around 44% compared to an income of more than $60,000. Accordingly, the level of income, a personal characteristic, is reflected in the spatial dispersal factor as well as in the activity space area. The total number of trips generated by a household is expected to increase the spatial dispersal factor by 4%, while the total number of trips made using an active transportation mode to decrease it by 20%. Finally, the spatial dispersal factor is expected to increase by 5% for every kilometer separating the home from the nearest employment center.
+6.3.2 The Influence of Accessibility on Spatial Dispersal
+Three models are developed to test the impact of accessibility on the spatial dispersal factor. The first includes cumulative opportunity measures to workers and to jobs, the second uses gravity measures to workers and to jobs and the third uses the inverse balancing factors measure for jobs. The highest R squared is associated with the inverse balancing factors. In the first model, the number of jobs within 30 minutes of travel time has a negative effect on the spatial dispersal of the activity area. Although the effect is minor in term of the magnitude in the model (0.0002%), the number of jobs in the region that can be reached within 30 minutes of travel time ranges from 7900 to 1,400,000. Therefore, the level of accessibility to jobs has a statistically significant powerful effect on reducing spatial dispersal. Similarly, an increase in the number of workers which can be reached within 30 minutes of travel time leads to an increase in the spatial dispersal factor. The gravity measure shows a similar sign and power. This implies that households
+99
+
+residing in areas with high accessibility to jobs are expected to have more spatially concentrated activity spaces, while those residing in areas with many competing workers may need to travel further to work. Finally, the inverse balancing factor measure accounts for accessibility to jobs after accounting for competition, rather than using two variables that may interact unpredictably. This model shows that the spatial dispersal factor is expected to decline by 2% for every unit increase in accessibility to jobs measured by the inverse balancing factors. This measure produces a relative unit of analysis, making the interpretation less transparent. That being said, the results can be interpreted as showing a decline in spatial dispersion, leading to more compact and/or smaller activity space areas, in zones with higher job opportunities and fewer competing workers.
+The last two models concentrate on the area and total distance traveled. The independent variables have similar effects on both these measures. This model only includes the inverse balancing factors measure of accessibility to jobs. The area of the activity space is expected to decline by 1.9% for every increase in the level of accessibility. Every unit of increase in accessibility levels is expected to decrease the total distance traveled by the household residents by 426 meters.
+These models clearly show that regional accessibility levels are linked to actual household travel behavior and accessibility levels. This effect is statistically significant using all three measures. The increase in the level of accessibility to jobs in general can have an effect on the total daily travel, the area covered by the household activity and/or the spatial concentration of the activity area.
+6.3.3 Discussion
+Two important points emerge from this statistical analysis. First, the inverse balancing factors of the doubly constrained spatial interaction model was used to represent regional accessibility in the models. This measure accounts for competition and gives a significantly more accurate spatial representation of accessibility. When incorporated into the models, it improved the fit of the models while maintaining the statistical significance of most variables more than the traditional cumulative opportunity and gravity measures did.
+100
+
+Second, regional accessibility was found to have a statistically significant effect on the spatial dispersal and the area of the activity space, as well as on the total distance traveled. This suggests that policies favoring regional accessibility to jobs and retail can lead to more compact and sustainable travel patterns. Finally, this analysis shows that regional accessibility measures need to be developed with an in-depth understanding of personal travel behavior and household activity space.
+101
+
+Table 5- Statistical models measuring the relationship between personal and regional accessibility
+
+Spatial dispersal
+
+Area
+
+Total distance
+
+Cumulative opportunity Gravity
+
+Balancing factors
+
+Num. Vehicles Num. People
+Avg Age
+
+B
+0.290327* 0.064325*
+-0.018686*
+
+Income less 60K
+
+-0.446888*
+
+Num. Driver lic. Total Trips
+
+0.208989* 0.043652*
+
+Num. Active Trips
+
+-0.229339*
+
+On Island Dist Employment center
+Num Retail
+
+-0.029100 -0.000050* -0.000365*
+
+Food Sto. 10min
+Num. Jobs 30 min Num. workers 30 min
+Gravity jobs
+
+-0.000863* -0.000002* 0.000002*
+-
+
+Gravity workers
+
+-
+
+Competition jobs
+
+-
+
+(Constant)
+
+-0.354551*
+
+t
+15.82 3.77
+-21.41
+
+B
+0.30090* 0.07060*
+-0.01878*
+
+-17.40 10.37 10.13 -35.85 -0.81 -13.73
+
+-0.44857* 0.20853* 0.04241* -0.23015* -0.02531 -0.00006*
+
+-21.77 -6.69 -14.61 14.83
+
+-0.00033* -0.00160* -
+
+- -0.00001* - 0.00002* --
+
+-4.505 -0.04069
+
+T
+16.34
+4.11 21.39 17.36 10.28
+9.79 35.78 -0.76 17.12 15.76 -6.72
+-
+-
+6.985 5.888
+-
+-.507
+
+B
+0.279666* 0.061199* -0.018830*
+-0.455481* 0.214503* 0.042726* -0.226116* -0.154316* -0.000071*
+-0.000311* -0.000387* -
+
+T
+15.31
+3.59 21.66 17.80 10.68
+9.95 35.44 -5.02 20.88 18.01 -3.38
+-
+-
+
+-0.020452*
+0.395543*
+
+-
+18.13
+5.51
+
+Dependent
+
+ln(Sp. disper.)
+
+ln(Sp. disper.) ln(Sp. disper.)
+
+R Squared
+
+0.359
+
+0.352
+
+0.363
+
+*Indicate statistical significant at the 99% confidence level
+
+B
+0.296421* 0.063404*
+-0.019429*
+
+t
+13.92 3.19
+-19.17
+
+-0.448193* 0.300551* 0.112362* -0.284790* -0.194310* -0.000084*
+
+-15.02 12.84 22.45 -38.29 -5.43 -21.29
+
+-0.000295* 0.000550* -
+
+-14.63 4.13 -
+
+-0.019060*
+
+-14.49
+
+16.170445*
+ln(Area) 0.369
+
+193.22
+
+B
+5587.2220* 2309.5596*
+-165.3502*
+
+t
+14.14 6.27
+-8.79
+
+-8239.7820* -14.88
+
+5009.7203* 3456.6742*
+
+11.53 37.22
+
+-4340.5774* -31.45
+
+-1122.4333 -1.69
+
+-1.2655*
+
+-17.20
+
+-1.6234* -30.2743* -
+
+-4.34 -12.26 -
+
+--
+
+--
+
+-426.6481
+
+-17.48
+
+34528.5519 *
+
+22.23
+
+Total Distance
+
+0.424
+
+102
+
+7THE VALUE OF ACCESSIBILITY
+Housing location in relation to certain amenities or to the transportation system plays an important role in the home buyer's decision-making process. Accessibility has long been considered an important factor in housing location and land prices (Adair, McGreal, Smyth, Cooper, & Ryley, 2000). In a residential property market part of the amount paid to purchase a home is directed towards accessibility to valued destinations. The value of access is capitalized into the home value and purchasers' willingness to pay can be interpreted as incorporating the accessibility of a location (Srour, Kockelman, & Dunn, 2002). Simply put, accessibility for a location can be measured through its value as an attribute in the housing package.
+In this section an analysis of actual market transactions is conducted to determine the value of accessibility in the residential property market. A hedonic regression is used to measure the value of the attributes that compose the housing package such as building and neighbourhood characteristics, as well as accessibility to valued destinations (Adair, et al., 2000).
+Hedonic models have been used in previous studies to help understand the monetary costs associated with accessibility (ElGeneidy & Levinson, 2006; Franklin & Waddell, 2003). Distance variables are usually used as a proxy for accessibility, such as distance to the CBD or to neighborhood amenities, like schools or shops. A large number of studies have also used hedonic regression modeling to evaluate the impact of new transportation infrastructure, usually transit and especially light rail, on housing prices (NEORail II Parsons Brinkerhoff, 2001; Sirmans & Macpherson, 2003; Smith & Ghiring, 2006). Most studies have found a positive, although variable, impact. Accessibility to jobs was proven to have a positive impact on land values in three separate studies (El-Geneidy & Levinson, 2006; Franklin & Waddell, 2003; Srour, et al., 2002). A recent study that used an accessibility index accounting for competition factors (Adair, et al., 2000) found
+103
+
+that accessibility has an important effect on home prices in central neighborhoods, but a much lower effect in suburban areas. This introduces the need to include more refined measures of accessibility in the models.
+7.1Data and Assumptions
+Data obtained from the Montral multiple listing services (MLS) is used to generate the hedonic model. A sample of 1961 transactions that occurred in 2006 was used. The MLS data includes detailed information regarding building characteristics. In addition, neighborhood characteristics for each house are calculated from various sources. Land-use is obtained from the CanMap dataset, retail opportunities are obtained from the Dun & Bradstreet database, and socio-demographic information from the 2006 census conducted by Statistics Canada.
+7.2 Hedonic Model
+A Hedonic regression is used to explore the relationship between housing prices and accessibility to jobs, workers and retail. The model predicts the home sale value using a series of variables that correspond to the building characteristics and neighborhood characteristics, including socio-demographic data on the features of the population and local amenities. The dependent variable is the sale price of the house in Canadian dollars. Table 6 includes a list and description of the variables used in the analysis as well as summary statistics. As it was shown earlier, the inverse balancing factors measure produced a better model when analyzing the activity space. Cumulative opportunity and gravity measures of accessibility to jobs and to workers were also tested and a similar result was found. Therefore, only the inverse balancing factors measure is used in the hedonic regression. Since it accounts for both job and worker accessibility in a single variable, it is expected to produce a better fit and disentangle job accessibility from the value of the central city. Higher levels of accessibility to jobs are expected to increase the value of the house, while higher levels of accessibility to workers to decrease it. This is often associated with high land values in the suburbs and lower values in the central city.
+104
+
+However, Montral's urban form has densely populated residential and mixed-use neighborhoods in its center, which are associated with high land values. Cumulative accessibility to workers can act as a proxy for these areas since it simply sums the number of people aged 15 to 64 that live in each TAZ.
+105
+
+Table 6- Variable names and summary statistics
+
+Coefficient Variable description
+
+Mean
+
+Sale Value
+Bedrooms Xtra Bathroom Num. Powder Room
+Num. Rooms
+
+Number of bedrooms Number of additional bathrooms
+Number of powder rooms Total number of rooms
+
+267340.84 2.81 0.50
+0.53 7.37
+
+Building Age Building Age squared Association Fees Living Area Log of Lot Area Semi Detached Attached
+Employees
+Neigh. Median Income
+Renovations
+Neigh University degree On the island
+Num. Retail Dist to Employment center Food Stores 10min Competition jobs
+
+Age of the house
+
+37.94
+
+Age of the house squared
+
+2241.96
+
+A dummy to indicate the presence of monthly fees Area of the living space in square meters Log of the lot area in square meters A dummy to indicate if the home type is semi-detached A dummy to indicate if the home type is attached Number of people in the labour force residing in the census tract of the home
+
+0.12 154.83 6.07 0.23 0.19
+2701.48
+
+Median income of the census tract
+
+59871.68
+
+Average amount in dollars spent by home owners on renovations in the census tract Percentage of persons holding a university degree residing in the census tract A dummy variable indicating if the home is on Montral island Number of retail opportunities within a 1km buffer of the home
+
+1000.63
+35.08 0.53 262.80
+
+Network distance to the nearest employment center
+
+8037.37
+
+Number of food stores within 10 minutes travel time by car
+
+99.80
+
+Inverse balancing factor for jobs 10.38
+
+STD 149663.71 0.81 0.70 0.56 2.12 28.34 3228.62 0.32 233.68 0.74 0.42 0.39
+1103.97
+22954.00
+188.34
+16.63
+0.50 380.36
+7096.09
+111.60 9.38
+
+106
+
+7.2.1 The Impact of Accessibility
+The results of the hedonic regression (table 7) show the expected signs and power for the building and neighborhood characteristics. In keeping with other studies (Adair, et al., 2000), accessibility increases the fit of the model by approximately 2%. For every unit of increase in the level of accessibility, home sale values increase by $1005.03. As it is shown in Table 6, the mean value of the accessibility measure was 10.38. Accordingly, a person purchasing a $250,000 house with a mean level of accessibility of 10.38, will be paying $10, 432 or 4.17% towards the level of accessibility to jobs offered by the house's location. The number of food stores within 10 minutes travel time by car is a better variable than the count of retail within a 1 km buffer of the house; every food store within 10 a minute drive increases the value of the house by 301.23$. Each meter between the house and the nearest employment center decreases the value by 1.55$, reinforcing again the high values associated with proximity to business centers.
+The inverse balancing factors gave better results in the model than the cumulative opportunity and gravity measures gave in previous tests. Accessibility to workers gave a positive sign in previous tests, indicating it might be acting as a proxy for highdensity central areas. The Employees variable, which corresponds to the number of people in the labor force living in the house's census tract, had the expected sign in both models. However, its power decreased when the inverse balancing factors was incorporated to the model, indicating competition is accounted for by this measure at the regional level.
+107
+
+Table 7- Hedonic analysis
+
+Coefficients
+Bedrooms Xtra Bathroom Num. Powder Room Num. Rooms Building Age Building Age squared Association Fees Living Area Log of Lot Area Semi Detached Attached Employees Neigh. Median Income Renovations Neigh University degree On the island Num. Retail Dist to Employment center Food Stores 10min Competition jobs
+(Constant)
+
+Base model
+
+Bt
+
+22144.96* 6.045
+
+57451.60* 15.296
+
+27797.39* 5.781
+
+6360.47* 4.135
+
+-1054.66* -3.987
+
+8.57*
+
+4.000
+
+-41774.66* -4.987
+
+43.80*
+
+4.397
+
+37788.12* 8.950
+
+15955.83** 2.371
+
+22533.01* 2.704
+
+-16.75*
+
+-6.663
+
+0.39**
+
+2.305
+
+196.90*
+
+9.335
+
+906.30*
+
+3.802
+
+23730.57* 3.414
+
+47.10*
+
+5.738
+
+-1.57*
+
+-3.466
+
+--
+
+322608.61
+
+-10.622
+
+Balancing factors
+
+Bt
+
+23193.17* 6.462
+
+53471.36* 14.458
+
+28941.35* 6.150
+
+6990.93*
+
+4.639
+
+-1232.83* -4.755
+
+8.74*
+
+4.166
+
+-41428.67* 45.12* 41343.74*
+
+-5.045 4.630 9.969
+
+8437.90
+
+1.272
+
+13243.01
+
+1.611
+
+-12.88*
+
+-5.162
+
+0.83*
+
+4.841
+
+170.56*
+
+8.150
+
+617.05*
+
+2.634
+
+26136.72* 3.622
+
+--
+
+-1.55*
+
+-3.497
+
+301.23*
+
+9.756
+
+1005.03*
+
+3.381
+
+-370280.97* -12.199
+
+R Squared
+
+0.558
+
+0.577
+
+*Significant at the 99% confidence level **Significant at the 95% Confidence level Dependent variable: sales price
+
+7.2.2 Discussion
+The Hedonic regression model (table 7) shows regional accessibility has a statistically significant effect on housing prices: accessibility to jobs and retail are capitalized in home sale values. This result highlights again the value of regional accessibility to individuals and households and opens the door for policies aiming to increase density and mixed land-use patterns. According to urban economic theory, increasing regional accessibility will increase the land bid areas, which will in turn increase land values.
+108
+
+This added-value effect could generate competition which could translate into higher-density development in accessibility-rich areas. Eventually this could lead to smaller, more concentrated activity spaces and shorter travel distances, favoring the use of active modes of transportation. Consequently, regional accessibility to opportunities such as jobs and retail has an important role to play in meeting the sustainability challenge.
+109
+
+8CONCLUSIONS
+This research project demonstrates the importance of accessibility as a measure of the quality of the interaction between the land-use and transportation systems. The literature on accessibility measures was synthesized. Three types of approaches were described: location-based measures, individual measures and utility-based measures, and included the most recent research development in the field. Accessibility measures were shown to be useful to transportation planners to determine needs, rank different areas according to a regional scale, evaluate the impacts of plans and projects and ascertain how policies and strategies can influence the performance of land-use and transportation systems. Location-based measures were found to be the most appropriate for planning, because they use readily available data and are easily understood by planners, decision-makers and the general public. However, measures that include competition factors and that are disaggregated to account for socio-economic factors are to be preferred when evaluating job accessibility or exploring the social equity aspects of accessibility.
+The goal of this research project was to present a variety of performance-based accessibility measures, as well as apply them to the Montral Metropolitan Region in order to understand the distribution of regional accessibility levels and extract trends for future research.
+It is important to note that the automobile travel times used in this project were obtained from a travel demand model, and not from directly measured transportation data. The transit travel times were obtained through a different modeling approach, but were also derived from the same travel demand model. However, walking and waiting times were added to transit travel times, while automobile travel times do not account any extra access or parking times. For this reason the automobile and transit measures should not be directly compared to one another except for general purposes.
+110
+
+More traditional cumulative opportunity and gravity measures were demonstrated first. High cumulative accessibility levels to jobs and to workers using the car are concentrated in the center of Montral and extend out in concentric rings towards the suburbs of the North and South Shore. Cumulative accessibility to big box stores by car was higher in Laval and the North Shore, and cumulative accessibility to restaurants and food stores was higher in the central island, which is typical of urban development trends in these areas. High cumulative accessibility levels by transit are concentrated around the metro and commuter rail lines, and slowly extend along the transit networks to the central island. Interestingly, parts of Longueuil are at par with the CBD and dense central neighborhoods in Montral in terms of cumulative accessibility to jobs, workers and retail because of the metro network.
+The gravity measure shows a similar picture, with higher levels of accessibility extending from the center towards the suburbs. However, high gravity accessibility levels by car are shared by the CBD and the Ville St-Laurent/Dorval area. With the cumulative opportunity measure the sheer number of jobs available in the CBD overpowers any other area. The impedance function contained in the gravity measure weighs the number of jobs available according to travel times, emphasizing shorter travel times. The proximity of highways 20, 40 and 15 to the Ville St-Laurent/Dorval area and the CBD is determinant in providing both these areas with high gravity accessibility to jobs.
+The cumulative opportunity and gravity measures were shown to be highly correlated at travel times of 30 minutes both by automobile and transit. This supports using the cumulative opportunity measure instead of the gravity measure, while still retaining the theoretical soundness of the gravity measure. The cumulative opportunity measure is more transparent and simpler to calculate and interpret than the gravity measure. It is more appropriate for use with non-specialists or during an interactive planning process.
+111
+
+Two measures accounting for competition were also tested: the competition factors model and the inverse balancing factors of the doubly-constrained spatial interaction model. The competition factors model is the simplest of the two to calculate and interpret, and was used to explore in-depth job competition in the Montral Metropolitan region. Accessibility to jobs according to the NAICS categories was calculated, accounting for competition from workers occupying a job in the same industry.
+Generally, the South Shore has low levels of competitive accessibility to almost all types of jobs. This may imply the South Shore does not offer a higher than average job concentration in any specific sector, even though it has a large employment center. This may also mean that the transportation network is deficient on the South Shore, and that residents may need to travel longer times in order to reach job-rich areas on the island of Montral or in Laval. Furthermore, Longueuil ranks highest in terms of accessibility to workers with post-secondary education, in particular in the area surrounding Longueuil's employment center. This may mean that although many workers with this degree of education are within close range of this area, there a very few jobs for them there. Clearly, though, there is a potential to entice employers from specific sectors to establish themselves in this area.
+The island of Montral has generally good competitive accessibility to jobs in most sectors. The western part of the central island has higher competitive accessibility to jobs in the manufacturing, wholesale and retail trade, transportation and warehousing industries. This corresponds in part to the high concentration of industrial jobs in the Ville St-Laurent /Dorval employment center and to its strategic location near the CBD and Laval employment centers and close to highways 20, 40 and 15. This area also has the highest competitive accessibility to jobs requiring a secondary education or less, which corresponds again to the high concentration of industrial jobs. The CBD has high competitive accessibility to jobs in the utilities, information and culture, management of companies, finance and insurance and public administration services industries. These sectors are typical of the
+112
+
+CBD. The CBD also has the highest competitive accessibility level to jobs requiring post-secondary education. This is also directly linked to the high concentration of white-collar jobs that can be found there.
+Laval and the North Shore have high competitive accessibility to jobs in the natural resources processing, construction, retail trade and health accommodation and food services industries. In part, Laval's rapid expansion can explain the higher level of access to construction jobs. In general, Laval's employment center always appears as the area with the highest competitive accessibility levels. This area also has medium to high levels of competitive accessibility to jobs requiring both secondary and post-secondary education, indicating it is well connected, through its road network, to all the major employment areas.
+On the North Shore, a few areas stand out as exceptions that would be worthy of further research. St-Jerome, Ste-Anne-de-laPlaine, Boisbriand, Blainville, and Ste-Thrse all offer very high levels of competitive accessibility to some job sectors, which is surprising since these are mainly residential suburbs without very high concentrations of jobs. It would be interesting to study in more depth the reasons that enable these areas to have such high levels of competitive accessibility and to study the travel behavior of their residents accordingly.
+Next the inverse balancing factors measure was applied to the study area. This measure provided smoother and more convincing results, highlighting trends that were difficult to extract from the results of the competition factors model. In particular, this measure resulted in a less monocentric representation of accessibility and for the first time Longueuil and Valleyfield appear as areas with high levels of balanced accessibility to jobs, while the rest of the South Shore shows levels similar to previous results. In fact, Longueuil is only across a bridge from the CBD and also has a major employment center, and Valleyfield also has a high concentration of employment and is located near major highways. Because the inverse balancing factors are calculated iteratively, they produce a measure of accessibility that balances the number
+113
+
+of jobs available with the number of workers within proximity. Areas with high levels of balanced accessibility should have more jobs than workers within a close range, but these areas are not necessarily those with the highest number of jobs.
+High levels of balanced accessibility to jobs requiring secondary education or less are concentrated in the major employment centers that are the CBD, Ville St-Laurent/Dorval and Longueuil. Balanced accessibility to jobs requiring a post-secondary education spreads north along Highway 15 to the Laurentides region, increasing with the distance from the island of Montral. The highest levels of balanced accessibility to workers are found in the rapidly growing suburbs to the North. These areas offer good transportation networks (they are built along the highway network) and are essentially residential. They would be the ideal location for a new employment center or for increased mixed-used development. Balanced accessibility to jobs and workers by education requirements has a similar distribution as the one found using the competition factors measure: high levels of balanced accessibility to workers with secondary education or less are concentrated in the Lanaudire region and the Eastern part of Laval and Montral. Balanced accessibility to workers with a postsecondary education level is higher on the South Shore, gradually fading towards the north and very low in Laval and the North Shore.
+New measures of accessibility were also explored. The place rank measure was applied to Montral. This measure, based on commuting flow data, resulted in an accurate representation of Montral's employment centers and residential areas, and did not overemphasize the CBD. An individual measure of accessibility was also demonstrated: the household activity space. It was generated using OD data. Three measures of the activity space were tested, the total distance traveled by all members of the household, the area of the activity space polygon, and the spatial dispersal of the activity space. The spatial dispersal factor is a new measure of the activity space which takes into account the compactness and direction of travel patterns. A statistical analysis showed that regional accessibility levels measured using
+114
+
+cumulative opportunity, gravity and the inverse balancing factors measures contributed to reducing the total distance traveled, the area and the spatial dispersal of the activity space. This analysis also showed that the inverse balancing factors gave the best fit.
+This finding was repeated in another statistical analysis; a hedonic regression was conducted to evaluate the impact of accessibility on home sale values. This model, in keeping with previous studies, showed that accessibility could increase the model fit by 2%. The home sale price increases by $1005.03 for every unit increase in balanced accessibility levels. These findings show the importance of regional accessibility to individuals. Accessibility is not only valued, as reflected by its impact on home sale prices, it influences travel behavior as reflected by its impact on household activity spaces. Hence, accessibility measures are central to transportation and land-use planning and will play an important role in generating more sustainable transport solutions.
+This introductory exploration helps us gain an understanding of the dynamics behind job accessibility in the region. Clearly the highway networks, in the case of automobile travel times, and the major rapid-transit infrastructures in the case of transit, play an important role in connecting people with opportunities. As could be expected, measures accounting for competition helped identify employment centers with very high concentrations of employment and low concentrations of residents as the areas with the highest competitive accessibility to jobs. However, some suburban areas located close to highway networks and far from densely populated neighborhoods also have high levels of competitive accessibility to jobs. The relative advantage of these areas over denser central neighborhoods would need to be explored in more detail. Finally, using a sophisticated measure of competition highlighted patterns of high accessibility to jobs in Longueuil and Valleyfield that were absent from previous results.
+Each accessibility measure tested in this study gave different results. Each measure contains its own definition of access and weighs the opportunities differently. When selecting an accessibility measure, several factors must be considered, such as
+115
+
+the type of opportunities and the transport mode or modes being studied, the scale of the analysis, the choice of an impedance function, and the inclusion of competition effects. However, the objective of the research and the intended public are the most important factors to consider when selecting an accessibility measure. The cumulative opportunity measure may the most appropriate for public discussions and plan making; the gravity and competition factors measures are suitable to evaluate the impact of transportation and land-use projects on accessibility; and the inverse balancing factors provide insight into trends and an accurate measure to include in a statistical analysis model.
+Accessibility fosters more sustainable travel behavior by favoring shorter travel distances and more local travel patterns. This is intuitively clear in the results. The areas with high job accessibility are generally denser central neighborhoods or employment centers. The areas with lower job accessibility levels are generally residential suburbs with few job opportunities. The transportation network also favors central areas, where several roads and highways converge and rapid-transit infrastructures are present, over suburban areas that are less well connected. In particular the impact of the metro stations in Laval and Longueuil clearly show that the metro network offers accessibility levels equal to those of the central island to the North and South shores. This finding helps make the case for extending the metro and commuter rail networks since they are the form of transit with the strongest influence on accessibility levels. In addition, this research shows that transit and automobile accessibility are not equivalent and that efforts are needed to increase accessibility by transit in order to influence individual modal choices.
+The projected accessibility levels for 2011 are clear on one point, congestion will increase and accessibility by automobile should decrease. In that case it is even more important to use the measures presented in this research project in order to maximize accessibility by automobile, while increasing it for other modes, including transit, walking and cycling. Increasing accessibility, rather than increasing road capacity for example, offers more diversified solutions. Finally, the application of accessibility
+116
+
+measures to the Montral Metropolitan Region shows the importance of concerted regional land-use planning. The creation of mainly residential suburbs and highly concentrated employment centers creates high accessibility levels to jobs and workers respectively in these areas. In order to benefit from these high levels though, individuals or business must be established in that zone. In fact, these areas are ideal zones in which to plan increased mixed-use development, in order to bring businesses and workers closer to one another. I hope the limited analysis presented here will have shown the importance of accessibility and its usefulness in transportation planning. Still, the study presented here would need to be complemented by further research on the effects of competition on job and worker accessibility in Montral. In particular, a more indepth analysis of specialized employment centers and their impact on accessibility would be pertinent, considering several new ones are currently being planned, such as the quartier de la sant by the new CHUM hospital. More work would also be required to perfect the comparison of transit and automobile accessibility. This would help identify areas with particular needs and define strategies to help transit be more competitive with the automobile. In addition, walking and cycling accessibility to retail amenities, parks and education facilities should also be measured in order to create benchmarks for Montral's new quartiers verts presently being planned.
+117
+
+REFERENCES
+Adair, A., McGreal, S., Smyth, A., Cooper, J., & Ryley, T. (2000). House Prices and accessibility: the testing of relationships within the Belfast urban area. Housing Studies, 15(5), 699-716.
+Agence mtropolitaine de transport (2003). Fichier de dplacements des personnes dans la rgion de Montral Enqute Origine-Destination 2003, version 03.b, priode automne. .
+Apparicio, P., Cloutier, M.-S., & Shearmur, R. (2007). The case of Montral's missing food deserts: Evaluation of accessibility to food supermarkets. International Journal of Health Geographics, 6(4).
+Axhausen, K. W., & Garling, T. (1992). Activity-based approaches to travel analysis: conceptual frameworks, models, and research problems. Transport Reviews, 12(4), 323-341.
+Baradaran, S., & Ramjerdi, F. (2001). Performance of accessibility measures in Europe. Journal of Transportation Statistics, 4(2/3), 3148.
+Ben-Akiva, M., & Bowman, J. (1998). Integration of an activity-based model system and a residential location model. 35(7), 1131-1153.
+Ben-Akiva, M., & Lerman, S. R. (1979). Disaggregate travel and mobilitychoice models and measures of accessibility In D. A. Hensher & P. R. Storper (Eds.), Behavioral Travel Modelling (pp. 654-679). London: Croom-Helm.
+Ben-Akiva, M., & Lerman, S. R. (1985). Discrete choice analysis: MIT Press.
+Bertolini, L., Le Clerq, F., & Kapoen, L. (2005). Sustainable accessibility: a conceptual framework to integrate transport and land use plan-making. Two test-applications in the Netherlands and a reflection on the way forward. Transport Policy 12, 201-220.
+Bruinsma, F., & Rietveld, P. (1998). The accessibility of European cities: theoretical framework and comparison approaches. Environment & Planning A, 30, 499-521.
+Cervero, R. (1998). The Transit Metropolis. Washington D.C. Chen, C., Recker, W., & McNally, M. G. (1997). An actvity-based
+approach to accessibility. Center for Activity Systems Analysis. Djist, M. (1999a). Action space as planning concept in spatial planning.
+Netherlands Journal of Housing an the Built Environment, 14(2), 163-182. Djist, M. (1999b). Two-earner families and their action spaces:A case study of two dutch communities. GeoJournal 48, 195-206. Djist, M., & Vidakovic, V. (2000). Travel time ratio: the key factor of spatial reach. Transportation 27(179-199). Dong, X., Ben-Akiva, M., Bowman, J. L., & Walker, J. (2006). Moving from trip-based to activity-based measures of accessibility. Transportation Research A 40(2), 163-180. Downs, A. (2004). Still Stuck in Traffic. Washington D.C.
+118
+
+El-Geneidy, A., & Levinson, D. (2006). Access to destinations: Development of accessibility measures. Minnesota: Minnesota Department of Transportation.
+Ettema, D., & Timmermans, H. (2007). Space-time accessibility under conditions of uncertain travel-times: theory and numerical simultations. Geographical Analysis, 39, 217-240.
+Fan, Y., & Khattak, A. (2008). Urban form, individual spatial footprints,and travel examination of space-use behavior. Transportation Research Record, 2082, 98-106.
+Franklin, J., & Waddell (2003). A hedonic regression of home prices in King County, Washington using activity-specific accessibility measures. Paper presented at the Transportation Research Board 82nd Annual Meeting, Washington DC.
+Geurs, K. T. (2006a). Accessibility, land-use and transport: Accessibility evaluations of land-use and transport developments and policy strategies Utrecht University.
+Geurs, K. T. (2006b). Job accessibility impacts of intensive and multiple land-use scenarios for the Netherlands' Randstad Area. Journal of Housing and the Built Environment 21, 51-67.
+Geurs, K. T., & Ritsema van Eck, J. (2001). Accessibility measures: review and applications. Evaluation of accessibility impacts of land-use transport scenarios, and related social and economic impacts: National Institute of Public Health and the Environment.
+Geurs, K. T., & Ritsema van Eck, J. (2003). Evaluation of accessibility impacts of land-use scenarios: The implications of job competition, land-use, and infrastructure developments for the Netherlands. Environment and Planning B: Planning and Design, 30, 69-87.
+Geurs, K. T., & Van Wee, B. (2004). Accessibility evaluation of land-use and transport strategies:review and research directions. Journal of Transport Geography, 12, 127-140.
+Gutierrez, J. (2001). Location, economic potential and daily accessibility: an analysis of the accessibility impact of the high-speed line Madrid-Barcelon-French border. Journal of Transport Geography, 9, 229-242.
+Gutierrez, J., & Gomez, G. (1999). The impact of orbital motorways on intra-metropolitan accessibility:the case of Madrid's M-40. Journal of Transport Geography, 7, 1-15.
+Gutirrez, J., Monzn, A., & Piero, J. M. (1998). Accessibility, network efficiency, and transport infrastructure planning. Environment & Planning A, 30, 1337-1350.
+Gutierrez, J., & Urbano, P. (1996). Accessibility in the European Union: the impact of the trans-European road network. Journal of Transport Geography, 4(1), 15-25.
+Hagerstrand, T. (1970). What about people in regional science? Papers of the Regional Science Association, 24, 7-21.
+Handy, S. (1994). Highway blues: Nothing a little accessibility can't cure. Access, 5, 3-7.
+119
+
+Handy, S. (2002). Accessibility- vs. mobility-enhancing strategies for addressing automobile dependence in the U.S. Paper presented at the European Conference of Ministers of Transport.
+Handy, S. (2005). Planning for accessibility: in theory and in practice. In D. Levinson & K. Krizek (Eds.), Access to Destinations (pp. 131-147): Elsevier Ltd.
+Handy, S., & Niemeier, D. (1997). Measuring accessibility: An exploration of issues and alternatives. Environment and Planning A, 29(7), 1175-1194.
+Handy, S., & Yantis, T. (1996). The Impacts of telecommunications technologies on Nonwork Travel Behavior. Research Report SWUTC/97/721927-1F: Southwest Region University Transportation Center.
+Hansen, W. (1959). How accessibility shape land use. Journal of the American Institute of Planners, 25(2), 73-76.
+Kim, H.-M., & Kwan, M.-P. (2003). Space-time accessibility measures: A geocomputational algorithm with a focus on the feasible opportunity set and possible activity duration. Journal of Geographical Systems, 5, 71-91.
+Koenig, J. G. (1980). Indicators of urban accessibility: Theory and application. Transportation, 9, 145-172.
+Kwan, M.-P. (1998). Space-time and integral measures of individual accessibility: A comparative analysis using a point-based framework. Geographical Analysis, 30(3), 191-212.
+Kwan, M.-P. (1999). Gender and individual access to urban opportunities: A study using space-time measures. Professional Geographer, 51(2), 210-227.
+Kwan, M.-P., Murray, A., O'kelly, M. E., & Tiefelsdorf, M. (2003). Recent advances in accessibility research: Representation, methodology and application. Journal of Geographic Systems, 5, 129-138.
+Kwan, M.-P., & Weber, W. (2003). Individual accessibility revisited: Implications for geographical analysis in the twenty-first century. Geographical Analysis, 35(4), 341-353.
+Leck, E., Bekhor, S., & Gat, D. (2008). Equity impacts of transportation improvements on core and peripheral cities. Journal of Transport and Land Use 2(1), 153-182.
+Lenntorp, B. (1976). Paths in space-time environment. Malmo: CWK Gleerup.
+Levinson, D. (2003). Perspectives in efficiency in transportation. International journal of Transportation Management, 1, 145-155.
+Levinson, D., Krizek, K., & Gillen, D. (2005). The machine for access. In D. Levinson & K. Krizek (Eds.), Access to Destinations (pp. 1-10). Netherlands: Elsevier Inc.
+Martel, L., & Caron-Malenfant, E. (2009). 2006 Census: Portrait of the Canadian Population in 2006: Findings Retrieved 2009/08/31. from http://www12.statcan.ca/census-recensement/2006/as-sa/97550/index-eng.cfm.
+120
+
+Miller, H. (1999). Measuring space-time accessibility benefits within transportation networks: Basic theory and computational procedures. Geographical Analysis, 31, 187-212.
+Miller, H. (2005). Place-based versus people-based accessibility. In D. Levinson & K. Krizek (Eds.), Access to Destinations (pp. 63-89). Netherlands: Elsevier Inc.
+Miller, H. (2007). Place-based versus people-based Geographic Information Science. Geography Compass, 1(3), 503-535.
+Miller, H., & Wu, Y.-H. (2000). GIS software for measuring space-time accessibility in transportation planning and analysis. GeoInformatica, 4(2), 141-159.
+Morris, J. M., Dumble, P. L., & Wigan, M. R. (1979). Accessibility indicators for transport planning. Transporation Research A, 13(A), 91-109.
+Muhammad, S., De Jong, T., & Ottens, H. F. L. (2008). Job accessibility under the influence of information and communication technologies, in the Netherlands. Journal of Transport Geography, 16, 203-216.
+Murray, A., & Wu, X. (2003). Accessibility tradeoffs in public transit planning. [Article]. Journal of Geographical Systems, 5(1), 93-107.
+Newsome, T. H., Walcott, W. A., & Smith, P. D. (1998). Urban activity spaces: Illustrations and application of a conceptual model for integrating the time and space dimensions. Transportation, 25, 357-377.
+Primerano, F., & Taylor, M. A. P. (2005). An accessibility framework for evaluating transport policies. In D. Levinson & K. Krizek (Eds.), Access to destinations (pp. 325-346): Elsevier Ltd.
+Scott, D. M., & Horner, M. W. (2008). The role of urban form in shaping access to opportunities.An exploratory spatial data analysis. Journal of Transport and Land Use, 1(2), 89-119.
+Selkirk, K. E. (1982). Pattern and place an introduction to the mathematics of geography. Cambridge.
+Shen, Q. (1998). Location characteristics of inner-city neighborhoods and employment accessibility of low-wage workers. Environment & Planning B : Planning and Design, 25, 345-365.
+Srour, I., Kockelman, K., & Dunn, T. (2002). Accessibility indices: Connection to residential land prices and location choices. Transportation Research Record(1805), 25-34.
+Talen, E. (1996). After the plans: Methods to evaluate the implementation success of plans. Journal of Planning Education and Research, 16(2), 79-91.
+Talen, E. (1998). Visualizing fairness: Equity maps for planners. Journal of the American Planning Association, 64(1), 22-38.
+Talen, E. (2001). School, community and spatial equity. An empirical investigation of access to elementary schools in West Virginia. Annals of the association of American geographers, 91(3), 465486.
+121
+
+Talen, E., & Anselin, L. (1998). Assessing spatial equity: an evaluation of measures of accessibility to public playgrounds. Environment & Planning A, 30, 595-313.
+Vickerman, R. W. (1974). Accessibility, attraction and potential: A review of some concepts and their use in determining mobility. Environment and Planning A, 6, 675-691.
+Vuchic, V. R. (Ed.). (2005). Urban Transit: Operations, Planning, and Economics. Hoboken, NJ: John Wiley and Sons.
+Wachs, M., & Kumagai, T. (1973). Physical accessibility as a social indicator. Socioeconomic Planning Science, 7, 327-456.
+Weber, J., & Kwan, M. P. (2002). Bringing time back in: A study on the influence of travel time variations and facility opening hours on individual accessibility. The Professional Geographer, 54(2), 226240.
+Wilson, A. G. (1971). A family of spatial interaction models, and associated developments. Environment & Planning A, 3(1), 1-32.
+Wu, Y., & Miller, H. (2002). Computational tools for measuring space-time accessibility within transportation networks with dynamic flow (special issue on accessibility). Journal of Transportation and Statistics, 4(2/3), 1-14.
+122
+
+APPENDIX I
+I.I The Montral Metropolitan Region
+Figure I The Montral Metropolitan Region
+123
+
+Figure II Montral's Major Employment centers
+Figure III Municipalities in the Montral Metropolitan Region 124
+
+Figure IV Regional County Municipalities 125
+
+I.II Major Transportation Infrastructure
+Figure V The highway network
+
+Figure VI The metro network
+
+126
+
+Figure VII The commuter rail network 127
+
+I.III. Spatial Distribution of Opportunities
+Figure IIX Number of job opportunities
+
+Figure IX Number of workers
+
+128
+
+Figure X Number of retail opportunities
+Figure XI Distribution of job density 129
+
+Figure XII Distribution of worker density
+Figure XIII Distribution of retail density 130
+
+APPENDIX II
+II.I Cumulative Opportunity Accessibility to Jobs by Automobile
+5 minutes
+131
+
+10 minutes
+
+15 minutes
+
+132
+
+20 minutes
+
+25 minutes
+
+133
+
+30 minutes
+
+35 minutes
+
+134
+
+40 minutes
+
+45 minutes
+
+135
+
+50 minutes
+
+55 minutes
+
+136
+
+60 minutes
+137
+
+II.II Cumulative Opportunity Accessibility to Jobs by Transit
+5 minutes
+138
+
+10 minutes
+
+15 minutes
+
+139
+
+20 minutes
+
+25 minutes
+
+140
+
+30 minutes
+
+35 minutes
+
+141
+
+40 minutes
+
+45 minutes
+
+142
+
+50 minutes
+
+55 minutes
+
+143
+
+60 minutes
+144
+
+II.III Cumulative Opportunity Accessibility to Workers by Automobile
+5 minutes
+145
+
+10 minutes
+
+15 minutes
+
+146
+
+20 minutes
+
+25 minutes
+
+147
+
+30 minutes
+
+35 minutes
+
+148
+
+40 minutes
+
+45 minutes
+
+149
+
+50 minutes
+
+55 minutes
+
+150
+
+60 minutes
+151
+
+II.IV. Cumulative Opportunity Accessibility to Workers by Transit
+5 minutes
+152
+
+10 minutes
+
+15 minutes
+
+153
+
+20 minutes
+
+25 minutes
+
+154
+
+30 minutes
+
+35 minutes
+
+155
+
+40 minutes
+
+45 minutes
+
+156
+
+50 minutes
+
+55 minutes
+
+157
+
+60 minutes
+158
+
+II.V. Cumulative Opportunity Accessibility to Big Box Retail by Automobile
+5 minutes
+159
+
+10 minutes
+
+15 minutes
+
+160
+
+II.VI. Cumulative Opportunity Accessibility to Food Stores by Automobile
+5 minutes
+
+10 minutes
+
+161
+
+15 minutes
+162
+
+II.VII. Cumulative Opportunity Accessibility to Food Stores by Transit
+20 minutes
+163
+
+25 minutes
+
+30 minutes
+
+164
+
+II.XII. Cumulative Opportunity Accessibility to Restaurants by Automobile
+5 minutes
+
+10 minutes
+
+165
+
+15 minutes
+166
+
+II.XII. Cumulative Opportunity Accessibility to Restaurants by Transit
+20 minutes
+167
+
+25 minutes
+
+30 minutes
+
+168
+
+169
+
+

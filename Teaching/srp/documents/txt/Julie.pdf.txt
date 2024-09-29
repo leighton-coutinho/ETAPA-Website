@@ -1,0 +1,943 @@
+         
+Innovations in utilitarian cycling: Analyzing 
+characteristics of users and factors influencing 
+their travel behavior 
+ 
+     
+ 
+A Supervised Research Project in two parts   
+Prepared by   
+Julie BachandMarleau         
+ In partial fulfillment of the requirements for the degree of a Master's of Urban  Planning    
+McGill School of Urban Planning   
+April 2011   
+Supervisor: Ahmed ElGeneidy 
+ 
+
+Acknowledgements 
+ 
+First, I would like to thank my supervisor, Prof. Ahmed ElGeneidy, for always being available for help  and guidance as well as for challenging me to work outside of my comfort zone and use a quantitative  approach to the research. Thanks also to Jacob Larsen, coauthor of the first chapter of this paper, for  his dedication and his advice. I would also like to thank Prof. Brian H. Y. Lee for his comments and  suggestions as second reader. 
+Special gratitude goes to the dedicated transit users and cyclists who participated in the 2010 TRAM  survey, without whom this research project would not have been possible.  I would also like to  acknowledge the feedback and comments provided on the questionnaire by the members of the TRAM  research group, as well as Prof. Lise Gauvin and Daniel Fuller from Universit de Montral. Finally, I  would like to thank Thomas for his patience and support throughout the redaction of this research  project. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+II
+
+Preface 
+ 
+A growing number of planning and transportation professionals are calling into question the car oriented development that has been prevailing in North America for many decades. The overreliance  on the automobile has major consequences in terms of air pollution, road accidents, and congestion.  The widespread car use is also linked to the adoption of a more sedentary lifestyle in the population,  which can have important negative impacts on public health. On the other hand, the mobility needs of  individuals keep on increasing. Transportation planners thus need to develop more sustainable and  efficient alternatives in order to fulfill these mobility needs without generating the negative  consequences associated with car use. 
+ 
+In this respect, cycling is considered as a particularly promising avenue as it offers a variety of  advantages to its users and to the community as a whole. This travel mode produces virtually no air  pollution, participates in reducing congestion, and yields health benefits to its users. Unfortunately,  cycling for utilitarian purposes remains a marginal practice in most North American cities. The use of the  term utilitarian cycling in this research paper refers to any form of cycling for transportation purposes  (as opposed to recreation). 
+  
+In order to attract new users, many measures were developed to make it easier for individuals to  integrate cycling into their routine. Given their recent implementation, little is known about the users of  these cycling innovations, or about the factors that influence their habits and frequency of use. The aim  of this research paper is to study more specifically two of these cycling innovations, namely cycling transit integration and shared bicycle programs, in order to maximize the potential of these new active  travel options. A distinct chapter will be devoted to each of those two forms of utilitarian cycling. The  first chapter was presented at the 90th Transportation Research Board Annual Meeting and will be  published in the Transportation Research Record Journal in 2011 as  
+BachandMarleau, J., Larsen, J.& A. ElGeneidy (2011). The much anticipated marriage of cycling and  transit: But how will it work? 
+III
+
+This research project draws from the results of a survey conducted in the region of Montral during  summer 2010. While the focus of the research is on this area, it is expected that many of the findings  can guide policymakers in other regions to maximize the potential of these cycling innovations. 
+                      
+IV
+
+Abstract Part 1 
+ 
+In  response  to  the  environmental,  economic  and  social  costs  associated  with  overreliance  on  the  automobile,  planners  and  transportation  professionals  are  promoting  sustainable  alternatives  such  as  walking, cycling, and public transit, either as single modes or in combination. It has been argued that the  marriage  between  cycling  and  transit  presents  opportunities  for  synergy  by  enlarging  catchment  areas  of  transit  stations,  while  drawing  in  new  users  to  both  of  these  "green"  modes.  However,  due  to  the  marginality of this practice in North America, there is a shortage of reliable empirical studies in this area.  The present research addresses this gap through an analysis of travel behavior and preferences related  to  cycletransit  integration  (CT).  An  online  survey  was  conducted  in  the  region  of  Montral,  Canada  during  the  summer  of  2010.  The  questionnaire  included  a  section  on  Montral's  public  bicycle  sharing  system, BIXI, and its potential for integration with transit. We identify three current or potential CT users  groups  using  a  factorcluster  analysis:  current  parking  bikeandriders,  BIXI  users  and  car  drivers.  Bringing  a  bicycle  on  transit  is  the  preferred  form  of  integration;  however,  scenarios  involving  bicycle  parking  (or  using  a  public  bicycle)  are  likely  to  be  used  more  regularly.  In  order  to  accommodate  the  greatest  number  of  bicycletransit  trips,  measures  facilitating  parking  at  transit  stops  and  those  that  enable bringing bicycles on board transit vehicles are recommended in tandem. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Keywords: Sustainability  Cycling  Transit  Multimodal  Bicycle sharing  Bikeandride 
+V
+
+Rsum partie 1 
+ 
+Les cots environnementaux, conomiques et sociaux associs  l'utilisation massive de l'automobile  incitent de plus en plus de professionnels du transport et de l'amnagement  promouvoir des  alternatives de transport durables telles que la marche, le vlo et le transport en commun, utilises  seules ou combines. Plusieurs experts avancent que la combinaison du vlo et du transport en  commun offre des possibilits particulirement prometteuses, car elle permet d'largir les zones de  chalandise des stations de transport en commun et d'attirer de nouveaux utilisateurs pour ces deux  modes  verts . Toutefois, tant donn la marginalit de ce type de dplacements en Amrique du  Nord, il existe trs peu de donnes fiables sur le sujet. Cette recherche vise  combler ce manque  d'information par l'analyse des comportements de dplacement et des prfrences concernant  l'intgration du vlo et du transport en commun.  Une enqute en ligne a t mene dans la rgion de  Montral, Canada au cours de l't 2010. Le questionnaire incluait galement une section sur le systme  de vlos en libre service de Montral, BIXI, et son potentiel d'intgration avec le transport en commun.  L'analyse (de type factorcluster) a permis d'identifier trois groupes d'utilisateurs actuels ou potentiels  de la combinaison vlotransport en commun : les utilisateurs actuels qui stationnent leur vlo   proximit d'une station de transport en commun, les utilisateurs de BIXI et les conducteurs automobiles.  L'option d'intgration la plus populaire est celle o l'utilisateur apporte son vlo  bord du transport en  commun; toutefois, les options o l'utilisateur stationne son vlo (ou un vlo en libreservice)   proximit des stations seraient utilises sur une base plus rgulire. Afin de maximiser le potentiel de  dplacements combinant le vlo et le transport en commun, les mesures qui facilitent le stationnement   proximit des stations et celles qui permettent d'apporter les vlos  bord des vhicules de transport  en commun sont toutes deux recommandes. 
+ 
+ 
+ 
+ 
+Motscls: Dveloppement durable  Vlo  Transport en commun  Intermodalit  Vlo en libre service  Bikeandride 
+VI
+
+Abstract Part 2 
+ 
+Planning and transportation professionals are promoting a variety of more sustainable travel  alternatives, such as public transit usage, walking and cycling, to counter the negative effects associated  with widespread car use. In their traditional form, these alternative transport modes do not always  provide the flexibility or convenience the car offers; therefore, innovative solutions have recently been  developed to allow active and public transport to better compete with the car. The present paper will  focus on one of those innovations, namely the shared bicycle system. This new cycling option is adopted  by a growing number of cities or regions throughout the world, yet little is known about the users of the  systems and their motivations. A survey was conducted in Montral, Canada in the summer 2010 to  determine the factors encouraging individuals to use the system and the elements influencing the  frequency of use. The factor that was found to have the greatest impact on the likelihood of using a  shared bicycle system is the proximity of home to docking stations. Owning a yearly shared bicycle  membership would incite users to ride shared bicycles 15 additional times per year. Respondents have  also shown that they value shared bicycle's "trendy" status and the role it can play in bicycle theft  prevention. In order to maximize the potential of shared bicycle systems, it is recommended to increase  the number of docking stations in residential neighborhoods, and to put the emphasis of advertizing  campaigns on the popularity of shared bicycle and its role in theft prevention. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Keywords: bicycle sharing  BIXI  motivators  deterrents  frequency of use  
+ 
+VII
+
+Rsum partie 2 
+ 
+Les professionnels de l'amnagement et du transport font la promotion de plusieurs alternatives de  transport durable, telles que le transport en commun, la marche et le vlo, pour contrer les effets  ngatifs associs  l'utilisation massive de la voiture. Dans leur forme traditionnelle, ces modes de  transport alternatifs n'offrent pas toujours une flexibilit et une commodit comparables  celles de la  voiture. Par consquent, des solutions innovatrices ont t dveloppes pour permettre aux modes de  transport actifs et collectifs de mieux comptitionner face  l'automobile. L'article suivant porte sur  l'une de ces innovations, soit le systme de vlos en libreservice. Cette nouvelle option pour se  dplacer  vlo est implante dans un nombre grandissant de villes et rgions  travers le monde, mais  on en connat peu sur les utilisateurs du systme et leurs motivations. Une enqute a t mene   Montral, Canada, durant l't 2010 afin de dterminer les facteurs qui encouragent les individus   utiliser le systme et les lments influenant leur frquence d'utilisation. Le facteur ayant le plus grand  impact sur la probabilit d'utiliser un systme de vlos en libreservice est la proximit des stations  la  rsidence d'un individu, et le fait de possder un abonnement annuel au systme inciteraient les  membres  utiliser le service 15 fois de plus annuellement. Les rpondants ont galement indiqu qu'ils  apprcient le statut  branch  des vlos en libreservice et le rle que ceuxci peuvent jouer dans la  prvention du vol de vlos. Afin de maximiser le potentiel des systmes de vlos en libreservice, il est  recommand d'augmenter le nombre de stations dans les secteurs rsidentiels, et de mettre l'emphase  des campagnes de promotion sur la popularit du vlo en libreservice et des avantages qu'il offre  relativement au vol de vlos.  
+ 
+ 
+ 
+ 
+ 
+ 
+Motscls : vlo en libreservice  BIXI  incitatifs  dissuasion  frquence d'utilisation 
+VIII
+
+Table of contents 
+ 
+Acknowledgements ....................................................................................................................................... II  Preface ......................................................................................................................................................... III  Abstract Part 1 .............................................................................................................................................. V  Rsum partie 1 ........................................................................................................................................... VI  Abstract Part 2 ............................................................................................................................................ VII  Rsum partie 2 ......................................................................................................................................... VIII  Table of contents ......................................................................................................................................... IX  List of figures ................................................................................................................................................ XI  List of tables ................................................................................................................................................ XII  Chapter 1  The much anticipated marriage of cycling and transit: But how will it work? .......................... 1 
+Introduction .............................................................................................................................................. 2  Literature .................................................................................................................................................. 2  Data and Methodology ............................................................................................................................. 5  Analysis ..................................................................................................................................................... 7 
+Descriptive statistics ............................................................................................................................. 7  Factorcluster analysis .......................................................................................................................... 8  Identifying Priorities ............................................................................................................................ 11  Acceptable distances .......................................................................................................................... 14  Bicycle sharing ..................................................................................................................................... 15  Discussion and Conclusions .................................................................................................................... 16  Chapter 2  Factors influencing likelihood of using shared bicycle systems and frequency of use ............ 20  Introduction ............................................................................................................................................ 21  Literature ................................................................................................................................................ 22  Case Study ............................................................................................................................................... 23  Cycling and bicycle sharing in Montral ............................................................................................. 23  BIXI  Montral's bicycle sharing system ............................................................................................ 24  Data ......................................................................................................................................................... 24  Methodology ........................................................................................................................................... 27 
+IX
+
+Analysis ................................................................................................................................................... 28  Afterword .................................................................................................................................................... 35  References .................................................................................................................................................. 36  Appendix 1: Questionnaire of the cycling and transit integration survey .................................................. 39  Appendix 2: Factors with values of constituent variables .......................................................................... 45   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+           
+X
+
+List of figures 
+  Figure 1: Sociodemographic characteristics and and travel habits ............................................................. 7  Figure 2:  Travel habits of potential cycletransit users ................................................................................ 8  Figure 3: Current and potential CTUs based on factorcluster analysis ..................................................... 10  Figure 4: Four possible cycletransit scenarios ........................................................................................... 12  Figure 5: Preferred scenario by likely frequency of CT usage ..................................................................... 13  Figure 6: Stated mode replaced with CT by home downtown distance ................................................... 13  Figure 7: Distance decay of reported acceptable bicycle and walk times .................................................. 15  Figure 8: (a) Willingness to integrate by BIXI membership type; (b) trip types replaced by BIXI ............... 16  Figure 9: BIXI usage among our respondents ............................................................................................. 26                                   
+XI
+
+List of tables 
+  Table 1  Selected descriptive statistics of the respondents..........................................................................25  Table 2  Factors influencing the likelihood of using shared bicycle systems..............................................29  Table 3  Variables influencing frequency of use of shared bicycle systems...............................................30 
+XII
+
+ 
+ 
+ 
+      Chapter 1  The much anticipated marriage of cycling and transit: But  how will it work?                 
+
+Introduction 
+ 
+In response to concerns over congestion, air pollution and sedentary lifestyles related to automobile  dependency, transportation professionals and researchers are seeking new solutions. Many cities have  adopted strategies to increase the attractiveness of walking, cycling, and public transit usage. Among  the measures implemented, some have been aimed at facilitating the combination of two or more of  these transportation modes under the moniker "bikeandride", cycletransit integration (CT) or simply  the transportation cocktail. Combining modes allows for more flexibility, making multimodal transport  more appealing and increases travel options. Similarly, integration can be beneficial for transit agencies  as it expands transit stations' service area at both ends of the transit trip(Doolittle & Porter, 1994). Some  researchers claim that CT will increase the mode share of cycling and public transit at the expense of the  use of private vehicle and help in decreasing congestion, while others debate this claim (Mees, 2010a).  Up until this point, there has not been any study in the North American context that uses empirical data  to measure the actual needs for such integration among cyclists and transit users. 
+Past literature has identified general measures that can facilitate bicycle and transit integration (John  Pucher & Buehler, 2009), however details on how this union can work have been in short supply.  Recognizing the need for elementary information on the subject for researchers and practitioners alike,  this paper seeks to answer two basic questions related to bicycletransit integration: 1) who are the  potential users of this type of intermodal transport; and 2) what are their current needs and priorities.  This research draws on a detailed online survey conducted in Montral, Canada specifically for this  purpose. The survey included demographic, travel behavior and spatial questions to explore the factors  affecting the use of and opportunities for cycletransit integration. Additionally, given the presence in  Montral of BIXI, North America's first largescale public bicycle sharing system, a set of questions were  included to measure the potential of this new system to augment the existing public transit service.   
+ 
+Literature 
+ 
+The body of knowledge on CT is relatively small; however, as evidenced by the growing literature and  transportation initiatives, interest in this form of multimodal transportation is growing. Researchers  have identified four areas for CT implementation: 1) enabling bicycles to be brought on transit vehicles; 
+2
+
+2) improving the availability of parking near transit stops 3) connecting transit stations to an existing  network of bicycle paths/lanes; and 4) providing bicycle sharing systems near transit stations and major  destinations (John Pucher & Buehler, 2009). However, beyond this general roadmap, little is known  about demand for various integration measures. Developing a more detailed understanding of this  market, the priorities of potential users and the specific benefits of integration is an essential next step.  
+Not surprisingly given the reliance on buses as the main mode of public transit in North America,  bicycles on buses (BOB) is by far the most common type of CT. For example, of the CT measures of 83  North American transit authorities listed in an online database, 63 involve BOB (Spindler & Boyle, 2009).  While no systematic method exists for monitoring usage of bus racks, reports from transit agencies  range from 575,600 to less than 20 bicycle boardings per year, with an overall yeartoyear growth  documented in the share of BOB trips to total boardings (Schneider, 2006). Moreover, it appears that  opportunities for BOB is growing; the provision of bicycle racks on buses has almost tripled in the U.S. in  only eight years, from 27 percent in 2000 to 71 percent in 2008 (John Pucher & Buehler, 2009).  Nonetheless, various criticisms have been raised about BOB, including delays to transit service and  underuse (Mees, 2010a). More substantial, however, are the critiques that BOB will remain a marginal  service, due to limited rack capacity and smaller bus stop catchment areas, in part due to stop spacing  (Hagelin, 2005; K. Krizek & Stonebraker, 2009).   
+The question of catchment or service areas is central to the branch of CT research concerned with  cycling to transit, or bikeandride. In one study, in which survey respondents were presented with bike andride scenarios containing hypothetical access distances, researchers found that the majority of  people willing to bikeandride were within 2.4 km of the transit station, while those between 3.2 and  4.8 km demonstrated equal preference for car and bicycle as an access mode to transit (Taylor &  Mahmassani, 1997). A study from Mumbai revealed that while only 1 percent of commuters traveling  1.2 km or less used a bicycle to access transit, that figure climbed to 11 percent beyond that distance  (Rastogi & Rao, 2003). Overall, the mean access distance by bicycle was found to be 2.7 km. A Dutch  study found that cycling was the predominant train access mode between 1.2 and 3.7 km; compared  with U.S and Indian cases, this similarity suggests that access distances may traverse across cultures  (Rietveld, 2000). Further analysis from the Netherlands revealed that access and egress time is not  equivalent for all trip purposes. It increases proportionately with invehicle time, then declines as total  trip extends beyond 60 minutes (Krygsman, Dijst, & Arentze, 2004).  
+3
+
+Although CT is related to the growing body of work on bicycle infrastructure usage generally, there has  been only cursory study of the effect of bicycle lanes on increasing the attractiveness of CT. One such  study indicated that the presence of bicycle facilities at the census tract level had a positive effect on  demand for CT (K. Krizek & Stonebraker, 2009). However, the effect of bicycle infrastructure has been  shown to vary depending on cycling experience; among Texas cyclists, the presence of bicycle lanes had  four times the effect on encouraging bikeandride among inexperienced riders relative to those with  more experience (Taylor & Mahmassani, 1997). It is logical to conclude that in other locations as well,  the presence of infrastructure will have a greater effect attracting new and inexperienced cyclists to the  CT option than among veteran cyclists.   Some research has been directed towards understanding the sociodemographic factors associated with   current and potential CT users, although conclusions have been mixed. While preliminary research in the  U.S. suggests that household income levels and vehicle ownership are negatively correlated to CT usage  (Hagelin, 2005; K. Krizek & Stonebraker, 2009), studies from the Netherlands reveals the opposite  (Krygsman & Dijst, 2001). This may indicate that CT usage in the U.S. is higher among individuals with  fewer travel options. Another explanation for these mixed results may be that CT usage is in part  determined by attitudinal factors which cut across sociodemographic lines, as demonstrated in related  research on opportunities for mode shifting (Anable, 2004). 
+  
+4
+
+Data and Methodology 
+ 
+In order to better understand current and potential users of "bike and ride", an online survey on CT was  undertaken in the region of Montral, Qubec (see appendix 1 for the survey questionnaire). The official  mode share of cycling for Montral is 1.3% of all trips (J. Pucher & Buehler, 2006), which is around the  national average, however central areas are between 67% (VloQubec, 2005). Currently, bicycle and  transit integration in Montral is possible in some circumstances, while restricted at certain times and  on certain transit vehicles. Bicycles are prohibited on the city's metro during peak hours, on weekends  and during special events, largely due to capacity limitations. While most stations are not equipped with  aids for bringing bicycles to boarding platforms, newer and some downtown stations include elevators.  Bicycles are allowed outside peak hours on two of the five commuter train lines. Buses operated by the  Socit de transport de Montral (STM), the transit provider on the island of Montral, are not  equipped with bicycle racks; however, several other transit agencies in the region have installed such  racks on their bus fleets. Regular outdoor bicycle parking can be found at most metro, bus and train  stations; longerterm and covered parking is rare.  
+Given the limitations of online surveys, particularly for overrepresentation of certain groups, a variety of  media were used to ensure a broad crosssection of the public was reached. The survey was publicized  through a combination of email newsletters, mailing lists, several newspaper articles in English and  French, a radio interview, and various social networking media. Flyers advertising the survey were  distributed at major transit stations of the region. These measures allowed for broader exposure than  would be possible with only email distribution, as recommended by Dillman, Smyth & Christian (2009).  The total sample of the survey is 1,787 individuals. Incomplete and outlier observations were excluded  from the analysis leading to a sample size of 1,432 individuals. This is approximately equivalent to the  number of cycling trips recorded in the regional travel survey, which covers five percent of the region's  population and is considered a representative sample (Agence mtropolitaine de transport, 2003). This  is also larger than most of the samples used in previous cycling travel behavior research (Dill & Gliebe,  2008; Hyodo, Suzuki, & Takahashi, 2000; K. Krizek, ElGeneidy, & Thompson, 2007; Moudon, et al., 2005;  Tilahun, Levinson, & Krizek, 2007). However, since the region's AM peak transit mode share is over 20  percent, a larger sampling of transit users will be required to understand the preferences for CT  integration among existing transit users. 
+5
+
+The analysis section commences with an explanation of the state of CT in Montral followed by  descriptive statistics obtained from the survey. Descriptive statistics will concentrate on the  demographics and travel habits of the surveyed population. Understanding the characteristics of CT  potential users is the next step. This is done through a market segmentation analysis. Market  segmentation is a common practice in the travel behavior research field, and has been used to develop a  clearer portrait for new transit projects prior to major investments and to attract new patrons (K. J.  Krizek & ElGeneidy, 2007; Outwater, et al., 2003; Shiftan, Outwater, & Zhou, 2008). Central to this type  of analysis is the concept that the market for any given product or service is comprised of several  segments, rather than one homogenous whole. Studies have used market segmentation to identify  perceived types of cyclists by users and nonusers (Gatersleben & Haddad, 2010), however this  technique has not yet been used to identify opportunities for CT. 
+Factorcluster market segmentation analysis, a twostep analytical procedure, is used to classify large  datasets into meaningful groups (see (K. J. Krizek & ElGeneidy, 2007; Outwater, et al., 2003; Shiftan, et  al., 2008) for  examples of factorcluster market segmentation analysis). We start with a principal  component factor analysis to learn how each of our variables relates to one another. Factor analysis  extracts a small number of fundamental dimensions (factors) from a larger set of intercorrelated  variables measuring various aspects of those dimensions. The second step in our analysis is to perform a  cluster analysis, using the newly generated factors as a "reducedform" dataset, using the Kmeans  statistical routine. Cluster analysis is used to sort different objects (in this case, a reduced form version  of the responses to the survey questions) into groups wherein the degree of association between two  objects is maximal if they belong to the same group and minimal otherwise. The purpose of the cluster  analysis is to determine how each of the factors combines to represent different groups of bicycle and  transit integrators and nonintegrators.  
+After identifying the main factors affecting potential CT users, these factors are studied in detail in the  following sections concentrating on priorities for integration, acceptable access and egress distances,  and finally the role of bicycle sharing systems in promoting CT. This is done through a series of cross tabulations of the relevant survey questions. 
+ 
+ 
+6
+
+Analysis 
+ 
+Descriptive statistics 
+Respondents are aged from 18 to 87, however the majority fall between the ages of 25 and 35 (Figure  1a). Men are slightly overrepresented, constituting 58 percent of the sample, and represent a larger  portion of regular and frequent cyclists (Figure 1b). Annual household income is quite evenly distributed  among respondents and the majority live in small households of 1 or 2 people, indicating that young  people with no families are overrepresented in the sample. In terms of transportation options, 94% of  the respondents own a bicycle, 87% have a valid driver's license and 52% own at least one car per  household, which is below the 89% car ownership rate for the region of Montreal (AMT, 2008). While  respondents report driving and walking evenly throughout the year, cycling and transit usage have  considerable variation; predictably, cycling decreases in winter months and transit usage increases,  suggesting that individuals substitute one of these modes for another depending on weather conditions. 
+ 
+
+Age Percent
+
+87 68 63 58 53 48 43 38 33 28 23 18
+60 45 30 15 0 15 30 45
+
+45 40 35 30 25 20 15 10
+5 0
+
+Number of respondents
+
+a) 
+
+Male Female
+
+b)
+
+Male Female
+
+Figure 1: Sociodemographic characteristics and and travel habits   
+Overall, 63 percent of respondents indicated they would be willing to combine bicycle and public transit  for a trip that they conduct. However, certain transit users report a greater interest in CT than others; 
+7
+
+over 80 percent of respondents using the metro and train equally or metro, train and bus equally are  likely CT users (Figure 2a). Commuter train users, especially those connecting between multiple transit  vehicles, represent the prime set of candidates for cycling and transit integration. Based on respondents'  reported cyling habits, we see that recreational and noncyclists are least likely to integrate their cycling  with transit (Figure 2b), while 68 percent of occasional cyclists reported that they would do so. 
+ 
+
+Potential CTUs (Transit users)
+100 80 60 40 20 0
+
+Potential CTUs (Cyclists)
+100 80 60 40 20 0
+
+a)  b) 
+Figure 2:  Travel habits of potential cycletransit users    Also the highest values among potential transit users come from users who are using more than one  mode of transit to reach their destination. This finding is consistent with Mees's (Mees, 2010b)  observation that CT users will come mainly from existing transit users who would like to replace an  inconvenient portion of their trip. 
+ 
+Factorcluster analysis 
+Using 28 variables derived from responses to survey questions, we obtain thirteen factors with Eigen  values above 1 which are used to define categories of current and potential users (Appendix 2). More  questions were tested for this analysis yet they were dropped due to absence of statistical significance.  The high values (above 0.5, indicated in bold) are all in a single column, each column representing one of 
+8
+
+the thirteen factors below. Cumulatively, these factors explain more than 75 percent of overall variation  in the data. Using these newly generated factors, a cluster analysis is performed. In this type of analysis,  it is important to determine the most appropriate number of clusters. We hypothesized that there are at  least two, and possibly three, clusters representing general profiles: current CTUs, potential CTUs and  nonCTUs. We tested for a variety of cluster numbers and obtained the best result with five groups.  The cluster average for each of the previously defined thirteen factors is represented by the height and  direction of each bar, as shown in Figure 3. Current bicycle and transit integrators account for 23  percent of our sample, nonintegrators represent 47 percent of our sample and the remaining 30  percent are potential integrators. In addition to presenting the cycling and transit integration potential  for each group, the analysis shows that respondents are clustered according to their current  transportation habits.    
+9
+
+2.50
+
+2.00
+
+1.50
+
+1.00
+
+.50
+
+.00
+
+.50 1.00
+
+Parking bikeand riders
+
+Bixi users 
+
+Drivers 
+
+Mature lowmobile  Cycling enthusiasts 
+
+Integrators                    Potential  integrators                                   Non integrators 
+
+23% 30%
+
+47%
+
+Committment to cycling (1) Occupation and income (3) Bixi using (5) Poor transit service (7) Transit potential (9) Priority bringing racks (11) Priority not access to platform (13)
+
+Household size (2) Car potential (4) Currently bringing (6) Experience (8) Currently parking (10) Priority bringing time (12)
+
+ 
+
+Figure 3: Current and potential CTUs based on factorcluster analysis   
+
+The first cluster is characterized by a high value for the transit potential factor, a higher than average  value for the occupation and income factor and a positive value for the currently parking factor;  respondents in this cluster have a positive perception of CT and already parkandride. The second  cluster is characterized by a high value in the BIXI using factor, a positive value in the transit potential  factor and a positive value for the two factors indicating interest in bringing bicycles on transit (priority  bringing racks and priority bringing time). These BIXI users are willing CT users and prioritize measures  to bring bicycles on transit vehicles. The third cluster shows a high value for the car potential factor, a  higher than average value for household size, occupation and income, and a positive value for the factors  related to bringing bicycles on transit. This group represents respondents with children, currently driving  and willing CT users, particularly if it involves bringing their bicycle on board. The fourth cluster is mostly 
+
+10
+
+characterized by a high value in the experience factor, and negative or low values for the other factors,  indicating that these respondents are older and have been cycling for longer. They are poorly served by  public transit and are not likely CT users. The last and largest of the clusters is composed of committed  cyclists that have a lower value in the occupation and income factors and are relatively young; this group  is considered nonpotential CT users.   The factor and cluster analysis identified three willing groups of current and potential CT users: the  current parking bikeandriders, and two groups of potential CT users, the BIXI users and the drivers.  Both BIXI users and drivers selected priorities related to bringing bicycle on transit vehicles; other  priorities were selected by current parking bikeandriders, indicating that different population groups  have distinct needs and preferences for bicycletransit integration. Awareness of these different groups,  and a better understanding of their priorities, will enable transit authorities to provide appropriate  services and facilities to satisfy existing demand and attract new users.   
+Identifying Priorities 
+Despite growing interest in bicycle CT schemes, little study has been directed at the travel circumstances  in which individuals are most likely to desire and choose this option. We identified four possible  scenarios in which bicycles could be incorporated into a transit trip, and asked survey respondents to  select the one which they were most like to use (Figure 4). 56 percent of all respondents indicated a  preference for one of the scenarios. Overall, 60 percent of respondents selected option C (bringing their  bicycle with them on transit), followed by the option A (accessing transit by bicycle and walking to one's  final destination (21 percent)). Since each different CT option entails different costs for transportation  agencies and may appeal to different segments of the population, we explore these scenarios in greater  detail.    
+11
+
+Figure 4: Four possible cycletransit scenarios   
+
+ 
+
+Of those respondents expressing interest in combined CT trips, 40 percent reported they would do so  for regular trips (eg. to work or school), while 60 percent would use this option primarily for irregular  trips (eg. shopping, social visit). This contrasts with past research which has observed CT users to be  primarily commuters (Givoni & Rietveld, 2007; Hagelin, 2005; Van Goeverden, 1993). Our research  shows that the ratio of regular to irregular CT potential users varies according to the scenario selected  (Figure 5); while only 34 percent of respondents who prefer to bring their bicycle on transit (option C)  would be regular CT users, 48 percent of respondents who would cycle to transit (option A) would be  regular CT users. These findings suggest that good quality bicycle parking facilities will be most useful to  regular commuters, while racks on vehicles will appeal more to those irregularly using CT. 
+
+ 
+
+12
+
+Percent
+
+80
+
+60
+
+40
+
+20
+
+0
+
+Cyclebringcycle
+
+Cycletransitcycle Cycletransitwalk Irregular trips Regular trips
+
+Walktransitcycle
+
+ 
+
+Figure 5: Preferred scenario by likely frequency of CT usage   
+
+Respondents were asked what type of a trip they were most likely to replace with a CT trip. Overall, trips  made by one public transit vehicle accounted for 34 percent of potential CT trips, followed by car (25  percent), existing multimodal trips (24 percent), bicycle (9 percent), walking (5 percent) and taxi (3  percent). To better understand how opportunities for CT vary by location, respondents' distance from a  central point in downtown is crosstabulated with the mode most likely replaced by a CT trip (Figure 6).  Not surprisingly, respondents living at central locations where private automobile ownership is lowest  are more likely to replace trips involving transit as one of two or more modes. These are the Parking  bikeandriders and BIXI users identified in the factorcluster analysis. Beyond 15 kilometers from  downtown, Drivers are the group most likely to constitute the greatest share of replaced trips. 
+
+Percent
+
+45 40 35 30 25 20 15 10
+5 0
+05km
+N=464
+Car Bicycle
+
+510km
+N=302
+Transit
+
+1015km
+
+1520km
+
+20km+
+
+N=45                              N=21
+
+N=35
+
+Taxi Walk Two or more modes
+
+Figure 6: Stated mode replaced with CT by home downtown distance   
+
+13
+
+ 
+
+Every respondent was asked to provide his priority for a better integration of cycling and transit in  Montral. Of all priorities indicated, the preference for bringing bicycles on transit vehicles is dominant,  particularly for extending the time in which the bicycles are allowed on board. More generally, measures  facilitating bringing bicycles on transit account for 45 percent of the identified priorities, whereas  various measures facilitating bicycle parking at transit stations represent 34 percent of the priorities.  Another 13 percent identified bicycle network connectivity with transit stop as their top priority. That no  single integration measure was clearly identified as the number one priority by a majority of  respondents also reveals that a host of different interventions are needed to promote CT.  
+Respondents who said that they would not integrate cycling and transit indicated why they would not  do so. The reason most commonly given was unwillingness to forego a bicycle trip, which speaks to the  dedication of Montral cyclists and the many short distance trips made. Over half of the reasons given  are related to convenience (no time savings; impractical), while 20 percent indicated lack of appropriate  parking facilities or fears about theft. This question underscores the difficulty of quantifying preference  for a currently littleused practice; in particular, it is unclear whether the overwhelming preference for  bringing bicycles on transit is the expression of a fundamental need, or whether it reflects a lack of other  viable options, such as secure and convenient parking. 
+ 
+Acceptable distances 
+Those respondents that selected a CT integration scenario were then asked to indicate acceptable travel  times for each portion of the trip: access, egress and on board transit. Using distance decay functions,  these acceptable access and egress times by both walking and cycling are graphed. Respondents show  markedly higher acceptable travel times by bicycle than by walking. Comparing access and egress  distances (Figure 7), we note a steeper egress curve by both walking and cycling, indicating that a  greater proportion of CT users are willing to accept longer access than egress times. This finding seems  to confirm respondents' preference for using a bicycle at the home end rather than the destination end  of a journey.  
+ 
+14
+
+Percent Percent
+
+50 45 40 35 30 25 20 15 10
+5 0
+0
+
+Bicycle
+
+Bike access Bike egress Expon. (Bike access) Expon. (Bike egress)
+
+5 10 15 20 25 30 35 40 45
+
+Minutes
+
+ 
+
+50 45 40 35 30 25 20 15 10
+5 0
+0
+
+Walk
+
+Walk access Walk egress Expon. (Walk access) Expon. (Walk egress)
+
+5 10 15 20 25 30 Minutes
+
+ 
+
+Min  Max  Mean  Std
+
+R2
+
+Min Max  Mean  Std 
+
+R2
+
+Access 
+
+1  60  14.51  9.27 0.4701 Access 1 20  7.16  3.59  0.6986
+
+Egress 
+
+2  90  14.97  10.16 0.4880 Egress 1 30 
+
+8  4.58  0.7071
+
+Figure 7: Distance decay of reported acceptable bicycle and walk times   
+Bicycle sharing 
+Given the recent implementation of BIXI (short for bicycle taxi), the public bicycle system in Montral, a  section was included in the survey to examine the role bicycle sharing systems can play in CT. Users can  take a BIXI from one of 400 docking stations located in the city center, cycle to their destination and  leave the bicycle at another station. There are three possible membership types: payperuse, monthly  or yearly enrolment. 37 percent of respondents are BIXI users, traveling by BIXI on average 12 times per  month when the service is available between May and November. Among the sample, memberships are  split almost evenly between payperuse and yearly. Only 1 percent of the BIXI users indicated that they  use a monthly membership; these users are not considered in the remainder of the analysis. More than  half of the BIXI users live less than 0.8 kilometer from a metro station and payperuse users tend to live  farther from metro stations. As indicated by the factorcluster analysis, yearly BIXI members are more  likely than payperuse users to integrate cycling and transit (Figure 8a). 
+15
+
+250 200 150 100
+50 0 Yes
+
+No
+
+a)  Yearly Payperuse
+
+2% 4% 8%
+
+28%
+
+33% 25%
+
+b)   
+
+Bixi replaces a  bicycle trip
+
+Bixi replaces a  walking trip
+
+Bixi replaces a  transit trip
+
+Bixi replaces a  taxi trip
+
+Bixi replaces a  car trip
+
+Bixi adds a trip 
+
+not otherwise 
+
+made
+
+ 
+
+Figure 8: (a) Willingness to integrate by BIXI membership type; (b) trip types replaced by BIXI    
+In most cases, bicycle sharing usage replaces trips previously made by other "green" modes, namely  public transit, bicycle or walking. Approximately 8 percent of BIXI users replaced taxi trips, while only 2  percent of the respondents use a BIXI instead of driving, revealing that official estimates of CO2  reduction due to the implementation of the program are exaggerated (BIXI, 2009). The availability of  bicycle sharing encouraged 3 percent of the respondents to add an extra trip they would not otherwise  have made. Among the different reasons for using BIXI, the most popular is their usefulness for oneway  trips, which is followed by their practicality to use in conjunction with public transit; nonetheless, the  majority of BIXI trips involve no other transportation mode. This may be due to the fact that BIXI  stations are spatially concentrated, resulting in shortdistance trips that can be made easily. Finally,  many respondents expressed the need for BIXI stations outside the central neighbourhoods where  transit stops cannot always be accessed by foot. 
+ 
+ 
+Discussion and Conclusions  
+ 
+As municipalities and transit providers aim to provide better options for "green" transport, cycletransit  integration offers significant opportunities for synergy between these modes. Existing knowledge has 
+16
+
+identified several factors affecting the cycletransit usage including transit mode, urban form, access and  egress catchment areas and trip purpose. Given the variety of options for increasing cycletransit  integration, and the significant costs associated with certain measures, the results in this paper may help  to guide municipalities in selecting the most costeffective solutions based on their goals and type of  users they are trying to attract. However, the needs and preferences in terms of bicycle and transit  integration may differ from one city to another; it is thus important to use locally obtained data when  determining the most appropriate measures.  
+Through market segmentation using factorcluster analysis, three of five distinct groups were found to  be current or potential CT users: a) Parking bikeandriders, b) BIXI users, and c) Drivers. Descriptive  statistics confirmed this finding: selfdescribed occasional cyclists are more likely to choose CT than  those who cycle recreationally, regularly or almost always. Understanding the dynamics and preferences  of these groups can significantly aid in the provision of cycletransit integration services. A better  knowledge of these groups' characteristics can also help transit agencies to effectively match resources  to their potential users' preferences as part of a competitive positioning strategy to increase their  market share (Shiftan, et al., 2008).   
+The present research reveals that transit users who primarily use Montral's commuter rail train, or  make trainbased multimodal trips, are the most likely CT users, mirroring findings from locations where  the practice is more common (Krygsman, et al., 2004; Replogle, 1992; Rietveld, 2000). In order to  replace car trips with CT trips, a major preoccupation within this field, this research suggests that  opportunities are greatest for people living farther than 15 km from the city center. Thus, improving the  integration of cycling and rail transit, particularly if combined with suburban cycling infrastructure  improvements, is expected to result in the greatest increase in CT rates. On the other hand, given the  greater ridership of the city's metro system and its higher overall share of current CT trips,  improvements focused on this transport mode will likely yield a greater gain in absolute terms, though  more likely at the expense of other "green" modes. Specific policy objectives and the availability of  resources will thus determine whether efforts are best directed towards replacing car trips, improving  overall accessibility and mobility or working towards both of these goals.      
+The preference expressed by over 60 percent of respondents for the option to bring their bicycle on  board transit presents serious challenges to promoting more widespread usage. Capacity limitations and  capital costs associated with this option will necessitate more aggressive promotion of short and  longerterm parking options and public bicycle programs to significantly increase cycletransit 
+17
+
+integration. This research makes several promising contributions to this dilemma: trips involving access  or egress by bicycle at only one end of the trip accounted for the greatest proportion of respondents  who stated they would be regular CT users. In other words, while the option to bring a bicycle on transit  remain the most popular, scenarios involving parking a bicycle (or using a public bicycle) at one end are  likely to be used more regularly. To the extent possible, measures facilitating both bicycle parking at  transit and those enabling bringing bicycles on board transit are recommended. 
+Given the absence of research on public bicycle sharing systems, and their planned adoption in other  North American cities, a section on Montreal's BIXI system was included. Over one third of survey  respondents reported having used BIXI. As shown through factorcluster analysis, BIXI users, especially  those with a yearly membership, are most likely to integrate cycling and transit. However, despite the  claims of reducing transportation emissions, this service appears to mostly replace trips made by "green  modes". While the popularity of bicycle sharing suggests that there are significant benefits to users in  terms of convenience and overall mobility, its environmental benefits have been grossly exaggerated.  Further research into bicycle sharing systems will be needed.   
+After thoroughly reviewing the state of the knowledge from small but growing subset of transportation  research, this paper includes a wideranging analysis into how and for whom to promote cycletransit  integration. The present study has several limitations, including risks for sample bias and the difficulty of  analyzing atransportation practice adopted by a marginal proportion of the population. The former is  addressed by using multiple dissemination tools; the latter is shortcoming that can only be overcome as  this practice becomes more widespread.   
+Nonetheless, using the preferences and practices of current and potential CT users in Montral, we  make concrete conclusions that can guide transportation professionals in implementing costeffective  solutions for better bicycletransit integration. While caution should be taken to avoid generalizations, it  is believed that the results will be of use to transportation researchers and professionals as they seek to  understand and promote this promising form of multimodal transportation. 
+ 
+   
+18
+
+ 
+  
+19
+
+        Chapter 2  Factors influencing likelihood of using shared bicycle  systems and frequency of use 
+              
+20
+
+Introduction   
+Bicycle sharing systems are increasingly seen as a promising initiative to encourage cycling, whose  benefits to the user and to the society as a whole are well known. Cycling is a form of physical activity in  which health authorities place great hope as it can be easily incorporated into daily routines and yields  cardiovascular benefits for both children and adults (Yang, Sahlqvist, McMinn, Griffin, & Ogilvie, 2010). It  is also an environmentally friendly transportation mode (Shaheen, Guzman, & Zhang, 2010) that  provides additional mobility options at an affordable cost.  
+Bicycle sharing systems are implemented with the intention to yield those benefits associated with  cycling while providing additional convenience for the user, in the hope to convince more commuters to  adopt the bicycle. A bicycle sharing program can be described as a system that enables individuals to use  bicycles whenever they need it, without the costs and responsibilities associated with owning a bicycle  (Shaheen, et al., 2010). The flexibility of this transport mode makes it especially suitable for short  distances and for oneway trips. All these characteristics prompt a growing number of cities to  implement bicycle sharing programs. Currently, bicycle sharing systems are present in over 125 cities on  four continents, which translates into about 140,000 shared bicycles worldwide (Shaheen, et al., 2010). 
+Despite the growing popularity of shared bicycle systems, little is known about users of shared bicycles,  their reasons for using this form of transportation, and more generally about the demand for shared  bicycle programs. In the following paper, we will seek to shed light on these questions. More precisely,  the purpose of the research is twofold. First, we will try to determine the socioeconomic and spatial  factors that influence someone's likelihood of using shared bicycles. Then, we will look more specifically  at people who are already using the bicycle sharing system, and analyze characteristics influencing their  frequency of use. This research is based on a detailed online survey conducted in Montral, Canada in  summer 2010. The survey included demographic, travel behavior and spatial questions to determine the  elements affecting the use of and opportunities for cycletransit integration, and a distinct section on  the use of BIXI, Montral's shared bicycle system. 
+ 
+ 
+ 
+21
+
+Literature 
+ 
+Bicycle sharing is a relatively recent concept; the first largescale system was implemented in the  Netherlands less than fifty years ago, in 1965. Bicycle sharing systems went through four major phases.  The first generation, labeled "White bikes", consisted of unlocked bicycles randomly located throughout  the city. The bicycles were painted in one bright color. They could be picked up and left anywhere in the  city, and their use was free of charge. In most cases, including the Amsterdam, Cambridge and Milan  experiences, the programs were put to an end after a few years due to the high number of bicycles  damaged and/or stolen (DeMaio, 2009; Gradinger, 2007; Shaheen, et al., 2010). 
+A second generation of bicycle sharing systems, called the "Coindeposit systems", was introduced in  the 1990s to overcome the problems encountered with the firstgeneration programs. These systems  were characterized by the unique, robust design and bright color of the bicycles as well as designated  docking stations where bicycles were borrowed and returned (DeMaio, 2009). The stations were  equipped with a locking system to minimize theft risk and required a small deposit to borrow a bicycle  that was generally refunded upon return. Although they were an improvement relative to the previous  generation, the coindeposit systems still did not completely solve the theft problem due to the  anonymity of the borrowing process. Furthermore there was no timelimit to the bicycle usage which  caused people to borrow bicycles for unduly long periods of time (Shaheen, et al., 2010). Most of these  systems were implemented in Northern European countries, such as Denmark and the Netherlands  (Gradinger, 2007). 
+The third generation "ITbased systems" kept some of the second generation's features such as the  distinctive design of the bicycles and the presence of docking stations. In addition, these bicycle sharing  programs were incorporating transaction kiosks which allowed for the identification of users (with  portable phone and/or credit card number). These systems have succeeded in declining theft rates since  users are exposed to penalties if they failed to return the bicycles back to a station (Shaheen, et al.,  2010). Users also had to get memberships to utilize the service. Typically, usage was free for a certain  period of time (in most cases from half an hour to one hour) and then users were charged for the extra  minutes, thus encouraging shorter trips. The first city to implement such a bicycle sharing system was  Lyon, France (in 2005), soon followed by many other European cities (Krykewycz, Puchalsky, Rocks,  Bonnette, & Jaskiewicz, 2010; Shaheen, et al., 2010).  
+22
+
+ 
+The latest and fourth generation of bicycle sharing programs, the "Demand responsive, multimodal  systems" consists mostly of management and efficiency improvements to the ITbased systems. The  innovations include mobile and/or solarpowered docking stations, the use of smartcards, and bicycle  distribution systems  (DeMaio, 2009; Morency, Trpanier, & Godefroy, 2011; Shaheen, et al., 2010).  Distribution systems involve moving shared bicycles from one station to another in order to ensure that  bicycles and empty racks are always available for users to borrow or return a bicycle at any station. The  shared bicycle system of Montral can be included in this last category of shared bicycle systems. 
+The literature on the evolution of bicycle sharing systems is limited, but reliable and relatively easy to  access. Unfortunately, the same cannot be said of literature exploring the characteristics of bicycle  sharing users and the motivators or deterrents to the use of shared bicycles. Very little is known about  the potential influence of socioeconomic, spatial or behavioral characteristics of bicycle sharing users or  about the attributes of the system itself such as the pricing, the extent of the network, the availability of  bicycles or the location of docking stations.  
+ 
+Case Study 
+ 
+Cycling and bicycle sharing in Montral 
+According to the latest OrigineDestination survey (a regional transportation survey taking place every  five years) the modal share of cycling in the region of Montral is around 1.2% of all trips (AMT, 2008). In  the past few years, the city of Montral expressed a commitment to improve the cycling conditions. The  transportation plan of the city, launched in 2008, specified many interventions to reach that goal, such  as implementing the BIXI system, doubling the cycling network, and increasing the number of bicycle  racks for parking by fivefold. Although the plan has not yet reached completion, the size of the network  increased steadily since its implementation. Unfortunately, bicycle theft is a problem in Montral.  According to the police department of the city, about 2,500 bicycles are reported stolen every year on  average, yet this number represents only a small proportion of all bicycle thefts (Tremblay, 2011). 
+ 
+23
+
+BIXI  Montral's bicycle sharing system 
+The bicycle sharing system of Montreal, BIXI (short for bicycle and taxi), was launched in the spring of  2009. It was one of the first "Demand responsive, multimodal systems" to be implemented. The BIXI  system is in operation from May to November. At the time BIXI was launched, there were about 300  stations available, but the instant success of the system prompted the BIXI organization to implement  the expansion phase ahead of schedule. There are currently about 450 stations distributed throughout  the central neighborhoods of Montral, and a total of 5,000 bicycles are in circulation (Fuller, 2010). The  BIXIs were designed specifically for shared use in an urban context: they are robust, yet esthetically  pleasant and convenient for users with their adjustable seats, front racks and integrated chain protector  (PublicBicycleSystem, 2010). There are three BIXI membership types: the 24hour pass, the monthly  membership, and the yearly membership. The system is meant to accommodate short trips, with the  first halfhour of use free and then a charge for additional time. Discounts are also available for  individuals who combine their BIXI membership with an annual transit pass or a Communauto (the  carsharing service in Montral) membership. Since the implementation of the bicycle sharing system,  over 3,000,000 trips have been made by BIXI, as of fall 2010 (Montral, 2010). 
+ 
+Data 
+  An online survey on cycling and transit integration was conducted in the region of Montral, Canada  during summer 2010. The questionnaire included a separate section on BIXI usage, since it is one of the  viable options for integrating cycling and public transit. The survey was performed using an uncontrolled  online distribution method, which means anyone could go on the web page and fill out the  questionnaire. Many different media, such as mailing lists, email newsletters, social networking media,  radio and newspaper interviews, and flyers distributed at major transit stations were used to publicize  the survey, in order to ensure a large crosssection of the population would be reached. The use of such  a variety of means allows for broader exposure, thus minimizing the bias that can be associated with  online surveys (Dillman, et al., 2009).    A total of 1,787 responses were gathered for the survey; after removing the incomplete observations,  we obtained a final sample of 1,432 respondents. The age of respondents ranges from 18 to 87,  however the majority falls between the ages of 25 and 35. Men are slightly more numerous than 
+24
+
+women in the sample,accounting for 58% of the respondents. Young people with no child are  overrepresented among our respondents, the majority of them living in small households of 1 or 2  people. More detailed descriptive statistics of our respondents are presented in Table 1.    Individuals who participated in the survey live on average 6km away from downtown Montral, and  they have a good access to transit with an average of 12 bus stops within a 400m distance from their  residence. This might explain why the majority of respondents are bus users  (they took the bus at least  once in the past year). Respondents also enjoy good access to the shared bicycle system, with almost  60% of those who participated in the survey living within close proximity to a BIXI station. Around 87%  of people in the sample have a valid driver's license and 52% own at least one car per household.    Table 1  Selected descriptive statistics of the respondents 
+
+   Age  Homedowntown distance  Number of bus stops within 400m from home  Number of bicycles stolen per respondent 
+   Gender(female)  Recreational cyclists only  Year round cyclists  Bus user  Yearly BIXI membership  People living within 500m from a BIXI station  Respondents who had a bicycle stolen   
+
+Average Max 
+
+Min 
+
+35.7 87 
+
+18 
+
+6.0    
+
+   
+
+12.1 155 
+
+0 
+
+0.7 9 
+
+0 
+
+  
+
+Average (%)   
+
+  
+
+41.8   
+
+  
+
+6.6   
+
+16.7   
+
+76.8   
+
+16.7   
+
+59.4   
+
+39.0   
+
+  
+
+ 
+
+One section of the survey was also specifically about the cycling habits of our respondents. Almost all of 
+
+them (94%) own a bicycle. Close to 40% of the respondents indicated they had already had one bicycle 
+
+stolen, and 10% had two or more bicycles stolen. As for the cycling habits of our respondents, almost 
+
+17% of the participants to the survey use their bicycle for transportation yearround, while another 6% is 
+
+cycling only for recreational purposes. In terms of bicycle sharing trends, 37% of our respondents 
+
+indicated they had already used BIXI. From this number, membership types were split almost evenly 
+
+between payperuse and yearly enrolments, while only 1% of BIXI users had acquired a monthly pass. 
+
+25
+
+Respondents were also asked about their motivations for using BIXI These motivations  and their  answers to more specific questions concerning how they integrated BIXI in their transportation habits  are presented in Figure 9.     
+
+Reasons for using BIXI 
+
+  Travel modes replaced with BIXI   
+
+  Integration of BIXI with other travel modes 
+
+ Figure 9: BIXI usage among our respondents   
+
+Figure 9 shows that our respondents use BIXIs for a variety of reasons, mostly related to convenience or  to avoid maintenance and risk of theft. Most people in our sample are using BIXI for trips previously  made by transit or with their own bicycle. Only 10% of the respondents indicated that they used a BIXI 
+26
+
+instead of taking their car or a taxi; the environmental benefits of BIXI are therefore probably not the  main advantage of the system. Despite its potential for multimodal trips, acknowledged by the  respondents themselves, less than half of the users combine BIXI with another mode for a trip. When  they do so, most of our respondents use BIXI in combination with the metro. 
+ 
+Methodology 
+ 
+Two different types of regressions were used to answer our research questions. First, a binary logistic  model is developed to determine factors encouraging the use of BIXI. A binary logistic model is a type of  logistic regression in which the dependant variable is binary. In this case, the dependant variable is the  previous use of a BIXI (yes/no). Then, a linear regression was applied on our subsample of BIXI users to  identify factors that have an impact on the frequency of use of shared bicycles. The dependant variable  in this second model is the number of BIXI uses for the 2010 season. A variety of variables were tested in  the first model, based on results of previous studies examining the motivators to cycling in general or to  using shared bicycle systems specifically. According to those studies, the typical user of shared bicycle  system is a young man earning a mediumclass income (Shaheen, et al., 2011). We hypothesized that  our analysis would confirm that trend, and we therefore included age, gender, and income as variables  in our model.  
+We also expected that travel habits would have an impact on the likelihood of using BIXI; we  hypothesized that people cycling only for recreation would be less likely to be part a bicycle sharing  system. We supposed that owning a bicycle and being a committed, yearround cyclist would decrease  the probability of using BIXI. Shared bicycle systems offer potential for combined cyclingtransit trips or  for replacing short bus trips; therefore, we expected that bus users and people who already combined  cycling and transit for a trip would be more likely to use shared bicycles. In contrast, we hypothesized  that owning a driver's license would decrease the odds of being a BIXI adept.  
+A recent study on BIXI identified the proximity to docking stations as an important motivator to the use  of the system (Morency, et al., 2011). We supposed that our analysis would generate similar results,  especially since that paper focused specifically on shared bicycles in Montral. We also expected that  living close to downtown would increase one's likelihood of using BIXI, since this type of residential  location is generally associated with shorter, more "bikeable" travel distances. Finally, we decided to 
+27
+
+explore a hypothesis not yet tested in the literature and specifically related to Montral's cycling  context. As previously mentioned, bicycle theft is a problem in Montral, and fear of theft can deter  people from using their bicycle for transportation. In this respect, shared bicycles represent a good  alternative as users do not own the bicycles and therefore they do not need to worry about it being  stolen while the bicycle is parked. Consequently, we expect that those who have had their bicycle  stolen, and thus are more conscious of theft risk, will be more likely to use shared bicycles. 
+Many of the same variables were included in the second model, yet other distinct factors could also  influence the frequency of use. First, we incorporated in the model the type of shared bicycle  membership; we expected that owning a yearly membership, with unlimited access to BIXI system for  the first halfhour would encourage people to use the system more often. We added variables  representing reasons for using shared bicycles, in order to determine if some of the advantages of BIXI  have an impact on users' behavior. Avoiding maintenance, avoiding risk of theft, and liking the design of  BIXI (which can be considered as the "trendiness" factor of the BIXI) were among the most popular  reasons mentioned by our respondents and therefore were included in the model. Finally, the number  of bus stops within a 400m buffer from residential location was added as a variable representing the  level of transit access of respondents. We expected that having a good access to transit would diminish  the need for shared bicycles.  All variables included in both models were tested for correlation. Other  variables such as household size, car ownership and a variety of interaction variables were tested in the  two regressions but proved to be insignificant and were therefore removed from the final models. The  two models presented below are those which were able to explain the highest proportion of variance  among the data with meaningful and significant variables. 
+ 
+Analysis 
+ 
+The result of the binary logistic regression measuring the probability of using a BIXI during the 2010  season is reported in table 2. There are three main types of variables that have shown to play a  significant role in the likelihood of using shared bicycle systems: socioeconomic characteristics,  transportation habits, and spatial characteristics. The variable that has the strongest impact is the  presence of a BIXI station less than 500m from home, which makes an individual more than 300% more  likely to use a shared bicycle, thus confirming results of previous studies stressing the importance of 
+28
+
+proximity to docking stations (Fuller, 2010) at the home location. The proximity of a BIXI station to  respondent's most regular destination is also increasing one's probability of using a BIXI, but is not as  critical as the proximity to home. Being a recreational only cyclist and being a female would decrease  chances of an individual to use a BIXI, while combining cycling and transit for trips and owning a driver's  license would have the opposite effect. Although it might seem counterintuitive that being a driver  makes someone more likely to use  shared bicycles, this result is consistent with findings from a Chinese  study (Shaheen, et al., 2011). Age and distance from home to downtown would have a marginal but  significant negative impact. The distance from home to downtown squared was also tested in this model  to account for the possibility of a nonlinear relationship between distance and probability of use, but  the variable was not significant and was consequently removed from the final model. 
+
+ 
+
+Table 2  Factors influencing the likelihood of using shared bicycle systems 
+
+Variable 
+
+Odds ratio 
+
+Age  Gender (female)  Owning a bicycle  Cycling for recreational purposes only 
+
+0.965***  0.585***  0.5778**  0.437** 
+
+Number of bicycle thefts 
+
+1.104* 
+
+Owning a driver's license  Annual household income from 0 to 40,000$  Being a bus user  Distance from home to downtown 
+
+1.588**  0.539***  1.486**  0.956** 
+
+Being a yearround cyclist  Presence of a BIXI station less than 500m from home 
+
+0.539***  3.245*** 
+
+Presence of a BIXI station less than 500m from destination  1.559** 
+
+Already combined cycling and transit  Constant      2 Log likelihood  Nagelkerke R square 
+*Significant at the 90% confidence level
+**Significant at the 95% confidence level
+***Significant at the 99% confidence level
+
+1.772***  0.769    
+1509.905
+.241
+
+ 
+
+29
+
+Interestingly, people who are earning less than $40,000 per year are 32% less likely to be adepts of  bicycle sharing than people falling in other income brackets, thus corroborating findings from previous  studies that users are mostly middleincome  (Shaheen, et al., 2011). People cycling throughout the year  and those owning a bicycle are less inclined to use shared bicycles, which might mean that "cycling  enthusiasts" are not the typical BIXI users, who may be more casual cyclists. Finally, each time an  individual gets his bicycle stolen increases the likelihood of being a BIXI user by 10%. 
+
+Table 3 reports the findings from the linear regression measuring the number of times a person has used  the bicycle sharing system in the 2010 season. 
+
+ 
+
+Table 3  Variables influencing frequency of use of shared bicycle systems per cycling season (spring to  fall) 
+
+Variable 
+Constant Age Gender (female) Owning a bicycle Owning a yearly BIXI membership Using BIXI to avoid risk of theft Using BIXI to avoid maintenance Using BIXI for its attractive design Number of bus stops 400m from home Distance from home to downtown Distance from home to downtown square Number of bicycle thefts N Adjusted R square
+*Significant at the 90% confidence level **Significant at the 95% confidence level ***Significant at the 99% confidence level
+
+Coefficient 
+9.766** -0.004 -1.335 -5.680** 15.911*** 5.310*** 10.992*** 10.352*** -0.093* -1.142* 0.063** 0.455
+535 0.502
+
+ 
+
+First, we can notice that some of the variables found in both models such as age, gender and number of  bicycles stolen are not significant in predicting the frequency of shared bicycle use although they  influence the probability of someone using shared bicycles. Owning a yearly BIXI membership has the 
+
+30
+
+greatest impact on the number of uses of a shared bicycle, increasing by 15 the number of times a  person would ride a BIXI per season. People who want to avoid maintenance of a bicycle and those who  appreciate the design of the BIXI are likely to use it 10 more times per season. Also, owning a bicycle  decreases the number of uses of a shared bicycle by 5.6 times per season. As for spatial characteristics,  living close to downtown slightly decreases the number of uses, yet past a certain threshold, distance to  downtown has the opposite effect. The presence of a BIXI station within a 500m buffer at both ends of  the trip was also tested in the linear regression, but proved to be insignificant and was consequently  removed from the final model. Finally, the number of bus stops within 400m from home has a small but  significant negative impact on frequency of use, which might indicate that BIXI is competing with transit 
+ 
+Discussion 
+The most obvious finding of our first model is that having a BIXI station close to home is the variable  which increases most the chances of using shared bicycles. Proximity of the stations to regular  destinations also augments the odds of being a BIXI user, yet the effect of this variable is not nearly as  strong. This might also be partly due to the fact that only the most regular destination was included in  the analysis. Therefore, to increase the modal share of BIXIs, more stations need to be installed in  residential neighborhoods in priority.  
+As of now, docking stations are only available in some central neighborhoods with good access to the  transit network, and most of the users do not combine their BIXI ride with another mode for a single trip  (probably because of their good access to transit and proximity to downtown). It would be interesting to  observe patterns of use if BIXI stations were installed in more peripheral neighborhoods or in areas with  a more limited transit access. Many of the factors which increased the probability of using shared  bicycles are related to transportation habits; those combining cycling and transit, bus users, and people  owning a driver's license are more likely to be BIXI users. We originally expected the possession of a  driver's license to have the opposite effect, yet our result is not counterintuitive as it seems. Most adults  in Montral have a driver's license; therefore, chances are great that an adult shared bicycle user also is  a driver, whether or not they own a car or drive on a regular basis.  
+Inversely, being a very committed, yearround cyclist and owning a bicycle would decrease one's  chances of using BIXI. People using their own bicycle have similar travel options and enjoy the same  health benefits shared bicycle users do and are therefore not the group targeted in priority by 
+31
+
+promotion campaigns for shared bicycle programs. Yet it would still be worth investigating whether  bicycle owners choose not to use BIXI for convenience reasons or because of the cost of the  membership, which could be prohibitive for someone who already has access to a personal bicycle free  of charge (except maintenance). 
+One very interesting finding from this study is that people who have already had their bicycle stolen are  more likely to use shared bicycles. Respondents who expressed a concern about bicycle theft as a  reason for using BIXI are also riding shared bicycles more often. This indicates that BIXI is perceived and  indeed acts as an effective solution for those who want to cycle yet are afraid of bicycling theft. The  potential of shared bicycle systems as a powerful tool to counteract the negative influence of bicycle  theft on the modal share of cycling is obvious. This study goes one step further as we can now confirm  that this advantage is valued by individuals, as it encourages those who experienced theft to start using  the system and also increases the frequency of use of individuals concerned with bicycle theft. 
+More generally, we can conclude from the results of our analysis that factors prompting people to  become shared bicycle users are not necessarily the same as those increasing the frequency of use of  this transport mode. Spatial factors and transportation habits play an important role in encouraging  individuals to use shared bicycles, yet specific the respondent's motivations for using BIXIS have the  greatest impact on the frequency of use. 
+Aside from fear of theft, another motivation that increases the frequency of using BIXI is the design of  the BIXI, which makes individuals use it on average 10 more times per year. This is a clear indication of  what we call the "trendiness factor" of the BIXI. The design of the BIXI and its promotion as an urban,  environmentallyfriendly mode contribute to make it "trendy" to be a shared bicycle user, and  consequently to the popularity of the BIXI.  
+One limitation of our study is related to the distribution method of the survey, and the risk of bias  associated with voluntarybased surveys. We addressed this shortcoming by using multiple  dissemination tools to reach a broad crosssection of the population. The main limitation associated  with our study is that we could only use socioeconomic, transportation habits and spatial variables to  generate the model; therefore the influence of the values of respondents could not be evaluated in our  analysis. . Finally it is important to note that tourists using the system during their visit were not  included in the survey. Reaching out to this special population of Bixi users requires a different study  and a different approach to capture their usage of the system.  
+32
+
+Conclusion and policy recommendations 
+ 
+A growing number of municipal and regional governments recognize and wish to enjoy the benefits  associated with shared bicycles. In order to make the shared bicycle programs successful and to  maximize their potential, it is essential to get a good understanding of factors prompting or deterring  individuals from using the system. The current study allowed us to have a better understanding of the  factors influencing the use of shared bicycle systems and those impacting the frequency of use. The  results of this research point out to some  key elements to consider in the formulation of policies for  promoting the use of shared bicycles.  
+We suggest that interventions focus on four major aspects which impact the likelihood of being a shared  bicycle user and the frequency of use: 
+ 
+1) The location of shared bicycle stations: This study has shown that the location of docking  stations plays a crucial role in encouraging individuals to use shared bicycles. A greater number  of docking stations close to origins of potential users in residential neighborhoods is highly likely  to generate an increase in the number of system users.   
+2) The transportation habits of current and potential users: Transit users, people combining  cycling and transit for their trips, and those who have a driver's license are more likely to use  shared bicycle systems. Special multimodal offers, including access to shared bicycle systems,  carsharing systems, or integrated multimodal fare cards, would encourage individuals to adopt  shared bicycles by making the integration into their current travel habits as seamless as possible.   
+3) The fear of bicycle theft: Our study confirms that individuals recognize shared bicycles as an  interesting active travel option in minimizing bicycle theft. Promotion of the shared bicycle  systems should insist on this advantage in order to attract new users and increase frequency of  use among those who have already had bicycles stolen in the past or those concerned with the  risk of theft.    
+33
+
+4) The status and perceptions associated with shared bicycles: Individuals who like the design of  shared bicycles tend to use the system more often. Advertizing campaigns sending the message  that it is "trendy" to use shared bicycles are likely to encourage users to increase their frequency  of usage of the system.   
+This research, based on a survey of people living in the region of Montral, Qubec, provided findings  that are consistent with results of previous studies conducted elsewhere in the world. Although each  region has its own particularities, we believe the main findings from this study could be useful for any  city aiming to maximize the potential of its shared bicycle system.   In the specific case of Montral, the implementation of the BIXI system had impacts that have gone  beyond the augmentation in shared bicycle usage. Many experts have observed an increase in the  overall number of cyclists, and a positive shift in the social status associated with utilitarian cycling in  general. In this specific case, the implementation of a shared bicycle system in the city not only  improved the range of sustainable travel options, but it also truly contributed to the cycling culture in  Montral, which requires some further investigation in the near future.                   
+34
+
+Afterword 
+  Despite its numerous benefits to the user as well as to society as a whole, the practice of conventional  utilitarian cycling is considered relatively marginal in North America. Cycling innovations such as shared  bicycle systems and cyclingtransit integration are meant to encourage more individuals to include the  bicycle in their travel habits. This research project is another demonstration that there is an interest  among the population for new forms of cycling. People value the convenience and the flexibility these  new cycling innovations offer. It is hoped that findings from this research will provide useful insight to  maximize the potential of these cycling innovations. 
+ 
+More generally, cycling is gaining popularity throughout North America, partly due to the efforts of  municipal and regional governments to make it a more pleasant, safe, and convenient travel mode.  However, it cannot alone fulfill all mobility needs. In order to break free from the automobile paradigm  that guided urban development in the last decades, we have to replace it by something else. Authorities  have to provide a variety of efficient travel options that can advantageously compare with the car if they  want to convince individuals to modify their travel behavior. Transportation professionals have to  continue to innovate in terms of sustainable travel; yet the conception and implementation of cycling  innovations such as shared bicycle programs and cyclingtransit integration measures is a great step  towards a more sustainable lifestyle. 
+   
+ 
+ 
+     
+35
+
+References 
+ 
+Agence mtropolitaine de transport. (2003). Enqute originedestination 2003. Montral, QC.  AMT. (2008). Enqute OrigineDestination. Rgion mtropolitaine de Montral.  Anable, J. (2004). 'Complacent Car Addicts' or 'Aspirig Environmentalists'? Identifying travel behaviour 
+segments using attitude theory. Transport Policy, 12, 6578.  BIXI. (2009). Bixi by the numbers.   Retrieved July 25, 2010, from 
+http://montreal.bixi.com/news/category/BIXI%20en%20chiffres  DeMaio, P. (2009). Bikesharing: history, impacts, models of provision, and future. Journal of Public 
+Transportation, 12(4), 4156.  Dill, J., & Gliebe, J. (2008). Understanding and measuring bicycling behavior: A focus on travel time and 
+route choice: Oregon Transportation Research and Education Consortium (OTREC).  Dillman, D., Smyth, J., & Christian, L. (2009). Internet, mail and mixedmode surveys: The tailored design 
+method, third edition. Hoboken, NJ: John Wiley and Sons, Inc.  Doolittle, J., & Porter, E. (1994). Integration of bicycles and transit. Washington D.C.: Transportation 
+Research Board.  Fuller, D. (2010). Physical Activity Levels Related to an Urban Bicycle Sharing Program: BIXI Montreal. 
+Edmonton.  Gatersleben, B., & Haddad, H. (2010). Who is the typical bicyclist? Transportation Research Part F, 13, 
+4148.  Givoni, M., & Rietveld, P. (2007). The access journey to the railway station and its role in passengers' 
+satisfaction with rail travel. Transport Policy, 14, 357365.  Gradinger, K. (2007). The Evolution of Bike Sharing Programs. Bike Share Philadelphia  Retrieved April 11, 
+2011  Hagelin, C. (2005). A return on investment analysis of bicyclesonbus programs: University of South 
+Florida.  Hyodo, T., Suzuki, N., & Takahashi, K. (2000). Modeling of bicycle route and destination choice behavior 
+for bicycle road network plan. Transportation Research Record(1705), 7076.  Krizek, K., ElGeneidy, A., & Thompson, K. (2007). A detailed analysis of how an urban trail system affects 
+cyclists' travel. Transportation, 34(5), 611634.  Krizek, K., & Stonebraker, E. (2009). Bicycling and Transit: A Marriage Unrealized. Paper presented at the 
+TRB 89th Annual Meeting Compendium of Papers DVD Washington, D.C. 
+36
+
+Krizek, K. J., & ElGeneidy, A. (2007). Segmenting Preferences and Habits of Transit Users and NonUsers.  Journal of Public Transportation, 10(3), 7194. 
+Krygsman, S., & Dijst, M. (2001). Multimodal Trips in the Netherlands: Microlevel Individual Attributes  and Residential Context. Transportation Research Record(1753), 1119. 
+Krygsman, S., Dijst, M., & Arentze, T. (2004). Multimodal public transport: an analysis of travel time  elements and the interconnectivity ratio. Transport Policy, 11(3), 265275. 
+Krykewycz, G., Puchalsky, C., Rocks, J., Bonnette, B., & Jaskiewicz, F. (2010). Defining a primary market  and estimating demand for major bicyclesharing program in Philadelphia, Pennsylvania.  Transportation Research Record(2143), 117124. 
+Mees, P. (2010a). Transport for suburbia. London: Earthscan.  Mees, P. (2010b). Transport for suburbia: Beyond the automobile age. London, UK: Earthscan.  Montral. (2010). Bixi Montral.   Retrieved March 15 2011, from 
+http://montreal.bixi.com/nouvelles/categorie/BIXI%20en%20chiffres  Morency, C., Trpanier, M., & Godefroy, F. (2011). Insights into Montreal's bikesharing system. Paper 
+presented at the Transportation Research Board 90th Annual Meeting.   Moudon, A., Lee, C., Cheadle, A., Collier, C., Johnson, D., Schmid, T., et al. (2005). Cycling and the built 
+environment, a US perspective. Transportation Research Part D, 10(3), 245261.  Outwater, M. L., Castleberry, S., Shiftan, Y., BenAkiva, M., Zhou, Y. S., & Kuppam, A. (2003). Attitudinal 
+Market Segmentation Approach to Mode Choice and Ridership Forecasting. Transportation  Research Record, 1854, 3242.  PublicBicycleSystem. (2010). Bixi Systme.   Retrieved March 17, 2011, from  http://www.bixisysteme.com/systeme_bixi/le_velo  Pucher, J., & Buehler, R. (2006). Why Canadians cycle more than Americans: A comparative analysis of  bicycling trends and policies. Transport Policy, 13(3), 265279.  Pucher, J., & Buehler, R. (2009). Integrating Bicycling and Public Transport in North America. Journal of  Public Transportation, 12(3), 79104.  Rastogi, R., & Rao, K. (2003). Travel characteristics of commuters accessing transit: Case study. Journal of  Transportation Engineering, 129(6), 684693.  Replogle, M. (1992). Bicycle access to public transportation: Learning from abroad. Transportation  Research Record(1396), 7580.  Rietveld, P. (2000). The accessibility of railway stations: The role of the bicycle in the Netherlands.  Transportation Research Part D, 5, 7175. 
+37
+
+Schneider, R. (2006). Integration of bicycles and transit: A synthesis of transit practice. Washington D.C.:  Transportation Research Board. 
+Shaheen, S., Guzman, S., & Zhang, H. (2010). Bikesharing in Europe, the Americas, and Asia: past,  present and future. Transportation Research Record(2143), 159167. 
+Shaheen, S., Zhang, H., Martin, E., & Guzman, S. (2011). Hangzhou public bicycle: understanding early  adoption and behavioral response to bikesharing in Hangzhou, China. Paper presented at the  Transportation Research Board 90th Annual Meeting.  
+Shiftan, Y., Outwater, M., & Zhou, Y. (2008). Transit market research using structural equation modeling  and attitudinal market segmentation. Transport Policy, 15, 186 195. 
+Spindler, S., & Boyle, J. (2009). Bikes on transit database  Bikes on transit ridership statistics.   Retrieved  July 25, 2010, from http://www.bikemap.com/trans.html 
+Taylor, D., & Mahmassani, H. (1997). Analysis of Stated Preferences for Intermodal BicycleTransit  Interfaces. Transportation Research Record, 1556, 8695. 
+Tilahun, N., Levinson, D., & Krizek, K. (2007). Trails, lanes, or traffic: Valuing bicycle facilities with an  adaptive stated preference survey. Transportation Research Part A, 41(4), 287301. 
+Service de police de la ville de Montral,  (2011).  Van Goeverden, C. (1993). Gecombineerd gebruik van fiets en openbaar vervoer: Verwachte effecten op 
+de vervoerwijzekeuze van optimale fietsbeschikbaarheid in voor. Delft: TU Delft, Faculteit der  Civiele Techniek.  VloQubec. (2005). L'tat du vlo au Qubec en 2005. Montreal.  Yang, L., Sahlqvist, S., McMinn, A., Griffin, S., & Ogilvie, D. (2010). Interventions to promote cycling:  systematic review. British Medical Journal, 341, 10 p.     
+       
+38
+
+Appendix 1: Questionnaire of the cycling and transit integration  survey 
+ 
+A General questions 
+What is your age? 
+What is your gender?  
+What is your home postal code or nearest intersection? (This will provide us with your approximate  home location. Your identity will remain anonymous)  
+Do you own a bicycle? (Y/N) 
+Have you ever had your bicycle stolen in Montreal?  
+1. If so, how many times?   2. If so, where was it stolen (most recently, if multiple times)? _______ & _______   
+How would you describe your general commuting pattern? 
+a. Regular commuting (usually same work/school destination)  b. Irregular commuting (many different work/school destinations) 
+Check the statement which most applies to you.   
+a. I use a bicycle for recreational purposes only  b. I use a bicycle occasionally for transportation  c. I use a bicycle regularly for transportation  d. I use a bicycle almost all of the time for transportation  e. I never use a bicycle 
+What is the intersection or postal code of your primary destination (work, school, etc.) 
+In each of the following months, what is your primary (most frequent) mode of travel to this  destination?  
+If you purchase a monthly, unlimited transit pass, in which months do you do so? (check) 
+  B  Transit questions  Do you ever use public transit? (yes / noend of survey) 
+Which of the following modes of public transit have you used in the past year? 
+39
+
+Of the modes used in the past year, how many times did you use each of them?  Count each direction of  travel as one trip. (Note: Bus + metro + bus = 3 modes) 
+a. bus:  __ times per __  b. metro :  __ times per __   c. train :  __ times per __  d. bus + metro:  __ times per __  e. bus + train:  __ times per __  f. metro + train :  __ times per __  g. 3 modes or more :  __ times per __    Do you have a "regular" destination that you frequently visit by public transit?  Y/N  If you have a "regular" trip made by public transit, how many different transit vehicles do you use? (eg.  bus + metro + bus = 3)  ___ 
+If you have a "regular" trip by public transit, at what station / intersection do you access this transit  form?  (dropdown menu) 
+At what station / intersection do you leave transit? (2 fields.. ) 
+Integrating bicycle travel with public transit can provide new opportunities for improving both forms of  transportation; however, it may be more useful for certain types of trips.   
+C  CyclingTransit questions 
+Would you ever combine cycling and transit for a trip? (Y/N) 
+(if no) Why not? 
+ 
+(if yes)Which of the following trip types are you most likely to replace with a combined bicyclepublic  transit trip?  (Either with a Bixi or your own bicycle) 
+a. Regular car trip (eg. to work, school)   b. Occasional car trip (eg. social visit, shopping, etc)  c. Regular bicycle trip   d. Occasional bicycle trip   e. Regular transit trip   f. Occasional transit trip        
+40
+
+If you already integrate cycling with public transit or would consider doing so, which of the following  combinations of cycling and transit would be most useful to you? 
+a. Cycle to transit stop and park bicycle + take transit + walk from transit  i. Imagine you are cycling to a transit stop, parking your bicycle there, taking  transit, and walking the remaining distance to your destination.  
+b. Cycle to transit stop and park bicycle +  take transit + use another bicycle to  destination (could be Bixi or your own).  i. Imagine you are cycling to a transit stop, parking your bicycle there, taking  transit, and bicycling to your destination with a bicycle present at the end of  your transit trip  
+c. Cycle to stop + bring bicycle on transit + cycle to destination  i. Imagine you are cycling to a transit stop, bringing your bicycle on transit, and  then cycling to your destination. 
+d. Walk to transit stop + take transit + cycle to destination  (could be Bixi or your own).  Imagine you are walking to a transit stop, taking transit, and then cycling to your  destination (could be Bixi or your own). 
+What is the maximum travel time you would spend on each portion of the trip?  Answer only for 
+the mode which is most relevant to you. (bus, metro, train) 
+ Bringing bicycles on transit 
+Have you ever brought your bicycle on a transit vehicle? Y/N (N> parking)  
+What are the main obstacles to bringing your bicycle on transit vehicles? (check all that apply) 
+a. Difficulties accessing or boarding transit vehicles with bicycles  b. Lack of adequate facilities for supporting bicycles on transit vehicles  c. Prohibitions against bringing bicycle on vehicles  d. Lack of bicycle paths near transit stations  e. Unpleasant cycling conditions around transit stations  f. Other _____ 
+On average, how often do you currently bring your bicycle on the following transit vehicles? Count each  direction of travel as one trip. (Note:  Bus + metro + bus = 3 modes) 
+a. Bus:  __ times per __  b. metro:  __ times per __  c. train :  __ times per __  d. bus + metro:  __ times per __  e. bus + train:  __ times per __  f. metro + train :  __ times per __  g. 3 modes or more :  __ times per __   
+41
+
+Parking your bicycle at transit stations 
+Have you ever parked your personal bicycle at a transit stop Y/N (N> Bixi) 
+What are the main obstacles to parking at a transit stop / station? 
+a. There are not enough bicycle racks  b. I need a covered bicycle rack  c. I need an indoor, secure bicycle rack or box  c. Lack of safe and convenient routes to bicycle to local transit station  d. I need my bicycle for other trips during the day  e. Other _____   
+On average, how many times per month do you currently park your bicycle at the following types of  transit stops?  
+a. bus __ times per __  b. metro __ times per __  c. train ___times per __   
+At which of the following types of transit stops do you believe bicycle parking is most needed? (select  one) 
+a. Bus  b. Train  c. Metro  
+i. What is the maximum time you would park your bicycle there? ___  ___ 
+ 
+DCycling and Bixi questions 
+Have you ever used a Bixi? Y/N  next section 
+If yes, 
+1. How many times per month in 2009?  2. How many times per month in 2010? 
+  What type of membership do you generally have? 
+a. Payperuse  b. Monthly  c. Yearly   
+42
+
+If you use Bixi, does your Bixi usage generally:  a. Replace a trip using a personal bicycle?  b. Replace a walking trip?  c. Replace a transit trip?  d. Replace a taxi trip?  e. Replace a car trip?  f. Add a trip you would not otherwise have made?  
+ 
+If you are a Bixi user, why do you use this service? (check all that apply) 
+a. Avoid hassle of maintaining a bicycle  b. I don't own a bicycle  c. I don't have space to store a bicycle when not in use  d. It is convenient to use in conjunction with public transportation  e. Attractive design of Bixis  f. It is practical to use a Bixi for a oneway trip  g. Bixi stations are well located for my purposes  h. Avoid the risk of theft  i. Other ______________________ 
+Do you integrate other modes of transportation into your travel when you use BIXI bicycles?  
+a. Yes, I take the bus at the beginning of my trip  b. Yes, I take the bus at the end of my trip  c. Yes, I take the subway at the beginning of my trip  d. Yes, I take the subway at the end of my trip  e. Yes, I take a taxi at the beginning of my trip  f. Yes, I take a taxi at the end of my trip  g. No, I walk to the BIXI station at the beginning and end of my trip 
+ 
+E  Priorities 
+Based on your current needs, what are your priorities for improving bicycletransit integration? 
+a. More bicycle racks in general  b. Covered bicycle racks   c. Indoor, secure bicycle parking stations or bicycle box  d. More bicycle paths around transit stations  e. Aids to accessing transit vehicles (ramps/elevators) inside stops   f. Racks to hold bicycles on transit vehicles  g. Increasing the number of hours when bicycles are permitted on transit vehicles 
+43
+
+h. More Bixi stations near destination transit stop  i. More Bixi stations near home transit stop  j. Integrated transitBixi fare card  k. Other (specify) 
+What is your #1 priority for improving bicycletransit integration? 
+a. More bicycle racks in general  b. Covered bicycle racks   c. Indoor, secure bicycle parking stations or bicycle box  d. More bicycle paths around transit stations  e. Aids to accessing transit vehicles (ramps/elevators) inside stops   f. Racks to hold bicycles on transit vehicles  g. Increasing the number of hours when bicycles are permitted on transit vehicles  h. More Bixi stations near destination transit stop  i. More Bixi stations near home transit stop  j. Integrated transitBixi fare card  k. Other (specify) 
+ 
+If applicable, where should your #1 priority to the previous question be located?  _____ 
+F  Demographic info and comments 
+What is your annual household income? (range) 
+How many people are there in your household? 
+How many children are there in your household? 
+Do you own a motor vehicle? (Y/N) 
+If you would like to be part of future surveys related to transportation issues in Montreal, please enter  your email address. This information will not be shared.  
+What other recommendation(s) or comments do you have to improve the integration of bicycle travel  with public transit? 
+ 
+ 
+ 
+44
+
+Appendix 2: Factors with values of constituent variables  
+ 
+
+  
+
+1 2 3 4  5 6 7 8 9 10 11 12 13
+
+ 
+
+Metro per year
+
+0.61 0.01 0.05 0.4  0.07 0.11 0.07 0.14 0.19 0.17 0.06 0.05 0.09
+
+  Commitment to cycling 
+
+Bus per year Seasons cycling
+
+0.57 0.10 0.03 0.34  0.03 0.11 0.03 0.05 0.24 0.21 0.07 0.01 0.14 0.81 0.08 0.07 0.15  0.01 0.06 0.08 0.04 0.11 0.13 0.00 0.05 0.05
+
+  
+
+Cyclist type 
+
+0.84 0.05 0.00 0.25  0.05 0.05 0.10 0.01 0.12 0.08 0.03 0.02 0.05
+
+Household size 
+
+People per household Children per household
+
+0.04 0.92 0.02 0.06  0.03 0.01 0.01 0.03 0.01 0.01 0.03 0.01 0.03 0.08 0.86 0.09 0.01  0.05 0.01 0.06 0.09 0.03 0.01 0.00 0.03 0.03
+
+Occupation and income    
+
+Fulltime worker Income Fulltime student
+
+0.03 0.04 0.90 0.04  0.03 0.01 0.04 0.00 0.01 0.03 0.01 0.01 0.03 0.04 0.48 0.56 0.21  0.11 0.08 0.01 0.12 0.08 0.11 0.02 0.06 0.01 0.01 0.00 0.86 0.05  0.01 0.02 0.05 0.2 0.01 0.04 0.02 0.02 0.02
+
+  
+
+Replace car by bikeandride 
+
+0.13 0.01 0.15 0.73  0.05 0.04 0.07 0.03 0.18 0.07 0.10 0.05 0.10
+
+Car potential 
+
+Seasons driving 
+
+0.21 0.10 0.02 0.67  0.01 0.01 0.19 0.13 0.13 0.01 0.07 0.00 0.01
+
+  
+
+Cars per household 
+
+0.17 0.50 0.09 0.56  0.00 0.03 0.17 0.08 0.09 0.05 0.09 0.09 0.02
+
+BIXI using 
+
+BIXI yearly membership
+
+0.01 0.00 0.06 0.04  0.91 0.02 0.05 0.03 0.06 0.01 0.01 0.02 0.02
+
+  
+
+BIXI uses per month (2010) 
+
+0.01 0.05 0.00 0.02  0.91 0.00 0.02 0.03 0.07 0.01 0.00 0.01 0.03
+
+45
+
+Currently bringing     Poor transit service     Experience     Transit potential     Currently parking    
+Priority bringing racks 
+Priority bringing time 
+Priority not access to  platform   
+
+Bringing on bus / year
+
+0.01 0.04 0.01 0.01  0.00 0.91 0.01 0.02 0.04 0.03 0.03 0.01 0.02
+
+Bringing on metro / year 
+
+0.00 0.03 0.02 0.01  0.02 0.91 0.01 0.02 0.08 0.04 0.03 0.02 0.03
+
+Home to bus station
+
+0.00 0.01 0.03 0.01  0.00 0.01 0.88 0.02 0.00 0.01 0.03 0.05 0.01
+
+Home to metro station 
+
+0.11 0.11 0.06 0.14  0.07 0.01 0.85 0.05 0.02 0.01 0.02 0.04 0.04
+
+Years cycling
+
+0.03 0.05 0.00 0.01  0.01 0.02 0.01 0.90 0.02 0.03 0.03 0.00 0.00
+
+Age  0.02 0.08 0.33 0.15  0.08 0.02 0.05 0.77 0.07 0.03 0.00 0.00 0.07
+
+Willing to combine
+
+0.10 0.06 0.01 0.25  0.09 0.09 0.01 0.03 0.84 0.15 0.09 0.06 0.06
+
+Replace transit by bikeandride  0.07 0.02 0.05 0.24  0.07 0.05 0.04 0.06 0.76 0.10 0.07 0.02 0.08
+
+Parking at a bus stop
+
+0.03 0.04 0.01 0.11  0.01 0.01 0.02 0.07 0.13 0.77 0.00 0.07 0.02
+
+Parking at a metro station 
+
+0.01 0.01 0.04 0.08  0.02 0.01 0.02 0.07 0.16 0.73 0.03 0.08 0.00
+
+Priority : racks inside transit  vehicles 
+
+0.06 0.01 0.02 0.00  0.03 0.01 0.02 0.02 0.03 0.05 0.90 0.17 0.15
+
+Priority: Extend hours
+
+0.17 0.00 0.00 0.02  0.12 0.01 0.10 0.05 0.06 0.05 0.57 0.55 0.39
+
+Priority NOT indoor parking
+
+0.00 0.00 0.02 0.01  0.04 0.02 0.01 0.00 0.02 0.01 0.16 0.91 0.15
+
+Priority NOT Access 
+
+0.00 0.03 0.00 0.07  0.06 0.01 0.04 0.05 0.02 0.02 0.08 0.10 0.92
+
+46
+
+

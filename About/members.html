@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>	
+		<title>TRAM: Transportation Research at McGill</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" href="/reset.css" media="screen,projection" type="text/css" />
+		<link rel="stylesheet" type="text/css" media="screen and (min-device-width:1025px)" href="/style-large-screen.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width:1024px)" href="/style-mobile.css">
+		<link rel="shortcut icon" href="/images/tramIcon.ico">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>								
+		<script>
+			// loads the menu and footer from topbar.html and footer.html
+			$(document).ready(function(e) {$('#topbarContent').load('/topbar.html');});
+			$(document).ready(function(e) {$('#footerContent').load('/footer.html');});
+		</script>
+
+		<!-- Google Analytics code -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-54231741-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+        
+        <script>
+            $(document).ready(function(e) 
+            {   if (isMobile())
+                {   fixViewportUnits(false);
+                    $(window).on("orientationchange",changeOrientation);                        
+                }
+            });
+            
+            function changeOrientation()
+            {   setTimeout(function(){ fixViewportUnits(true); }, 200);
+            }
+            
+            function fixViewportUnits(reorient)
+            {   var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+                var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);                
+                
+                var boxes = document.getElementsByClassName('credentialsBox1');
+                for (var i = 0; i < boxes.length; i++)
+                   boxes[i].style.width = (0.63 * vw - 2 * 5) + "px";
+                boxes = document.getElementsByClassName('credentialsBox2');
+                for (var i = 0; i < boxes.length; i++)
+                   boxes[i].style.width = (0.63 * vw - 2 * 5) + "px";
+                boxes = document.getElementsByClassName('credentialsBox3');
+                for (var i = 0; i < boxes.length; i++)
+                   boxes[i].style.width = (0.63 * vw - 2 * 5) + "px";               
+            }
+        </script>
+		
+	</head>
+	<body>		
+		
+		<div class="sidebarLeft">&nbsp;</div>
+		
+		<div class="main">
+		
+			<!-- menu content will be loaded from topbar.html -->
+			<div id='topbarContent' class="topbar"></div>	
+			
+			<!------------------------------- end of topbar ------------------------------------>
+			
+			<div class="content">
+			
+				<div class="pageHeader"><strong>About</strong> | TRAM Members</div>
+				
+				<div class="section members">
+					<div class="pageSubheader"><strong>Ahmed M. El-Geneidy</strong> | TRAM Group Leader</div>
+					<div class="profilePictureBox">
+						<img src="/images/members/ahmed.jpg" alt="Ahmed" class="profilePicture" />
+						<div class="personalWebsite"><a href="ahmed/ahmed.html">Ahmed's personal page</a></div>
+					</div>
+					<div class="credentialsBox1">
+						<div class="credentials"><em>Professor</em></div>
+						<div class="credentials">School of Urban Planning</div>
+						<div class="credentials">McGill University</div>
+					</div>
+					<div class="credentialsBox2">
+						<div class="credentials">Co-Editor in Chief, <a href="https://www.tandfonline.com/journals/ttrv20">Transport Reviews</a></div>
+						<div class="credentials">Editor, <a href="https://www.springer.com/journal/11116/">Transportation</a></div>
+						<div class="credentials">Board Member, <a href="http://www.artm.quebec/">Autorité régionale de transport métropolitain (ARTM)</a></div>
+						<div class="credentials">Member of <a href="http://www.cirrelt.ca/">CIRRELT</a>, the Centre Interuniversitaire de Recherché sur les Réseaux d'Entreprise, la Logistique et le Transport pour le Québec, le Canada et le monde</div>
+						
+					</div>
+					
+					<div class="paragraphNarrow">
+						Ahmed's research interests include land use and transportation planning, transit operations and planning, travel behaviour analysis including both motorized (Auto and Transit) and non-motorized (Bicycle and pedestrian) modes of transportation, travel behaviour of disadvantaged populations (seniors and people with disabilities) and measurements of accessibility and mobility in urban contexts. 
+					</div>
+				</div>
+				
+				
+		
+	
+				
+					<div class="section members">
+					<div class="pageSubheader"><strong>Mathew Page</strong> | Research Assistant</div>
+					<div class="profilePictureBox">
+						<img src="/images/members/MathewP.JPG" alt="Mathew" class="profilePicture" />
+					
+					</div>
+					
+				
+					
+					
+					<div class="credentialsBox2">
+						<div class="credentials">MSc, Urban Studies and Planning, University of Helsinki</div>	
+					<div class="credentials"> BASc, Property, RMIT University</div>	
+					</div>
+					<div class="paragraphNarrow">
+						Mathew works as a research assistant at TRAM. He has an Msc. in Urban Studies and Planning from the University of Helsinki and a BASc. in Property from RMIT University, Australia. Before joining TRAM, he worked on several interdisciplinary research projects focused on disadvantaged neighbourhoods in Nordic cities. His current research interests include sustainable urban mobility, active transportation, accessibility and urban inequalities. He is currently working on the project Getting Around to Age in Place, which seeks to measure the daily travel habits and needs of older adults across Canada.
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				<div class="section members">
+					<div class="pageSubheader"><strong>Meredith Alousi-Jones</strong> | Graduate Research Assistant</div>
+					<div class="profilePictureBox">
+						<img src="/images/members/Meredith.jpg" alt="Meredith" class="profilePicture" />
+					
+					</div>
+					
+					<div class="credentialsBox1">
+						<div class="credentials"><em>PhD Student </em></div>
+						<div class="credentials">School of Urban Planning </div>
+						<div class="credentials">McGill University</div>
+					</div>
+					
+					
+					<div class="credentialsBox2">
+						<div class="credentials">MASc., Civil Engineering, Polytechnique Montréal </div>	
+					<div class="credentials"> B.Eng., Mechanical Engineering, Polytechnique Montréal</div>	
+					</div>
+					<div class="paragraphNarrow">
+						Meredith finished her masters in Civil Engineering at Polytechnique Montréal, where she developed a keen interest in the link between travel behaviour, travel satisfaction and the built environment. In her masters thesis, she studied the impact the COVID-19 pandemic had on the relationship between Montrealers’ travel satisfaction and their immediate neighbourhood using GIS and survey data, and hypothesized how the the pandemic could impact planning and travel in the long term. Her main research interests are active transportation, more specifically walking, and how urban planning can contribute to healthy and environmentally-friendly travel behaviour.
+					</div>
+				</div>
+				
+				
+					<div class="section members">
+					<div class="pageSubheader"><strong>Hisham Negm</strong> | Graduate Research Assistant</div>
+					<div class="profilePictureBox">
+						<img src="/images/members/Hisham.jpg" alt="Hisham" class="profilePicture" />
+					
+					</div>
+					
+					<div class="credentialsBox1">
+						<div class="credentials"><em>PhD Student </em></div>
+						<div class="credentials">School of Urban Planning </div>
+						<div class="credentials">McGill University</div>
+					</div>
+					
+					
+					<div class="credentialsBox2">
+						<div class="credentials">M.Sc., Architectural Engineering and Urban Design, University of Alexandria, Egypt </div>	
+					<div class="credentials"> B.Sc., Architectural Engineering, University of Alexandria, Egypt</div>	
+					</div>
+					<div class="paragraphNarrow">
+						Hisham is a PhD student, with a B.Sc. and M.Sc. in Architectural Engineering and Urban Design from the Faculty of Engineering, Alexandria University, Egypt. During his course of study, he developed an interest in physical urban design and how people use public urban spaces. This led his master’s research to focus on pedestrian stationary and movement behavior in urban spaces, connecting spatial theories with built environment realities and social interactions. Hisham’s current research interest revolves around accessibility by public transport and its relation to improving quality of life of individuals. He has special interest in understanding the travel needs of marginalized groups and its relation to accessibility to generate practice-ready policy recommendations. 
+					</div>
+				</div>
+				
+				
+				
+				<div class="section members">
+					<div class="pageSubheader"><strong>Thiago Carvalho dos Reis Silveira</strong> | Graduate Research Assistant</div>
+					<div class="profilePictureBox">
+						<img src="/images/members/Thiago.jpg" alt="Thiago" class="profilePicture" />
+					
+					</div>
+					
+					<div class="credentialsBox1">
+						<div class="credentials"><em>PhD Student </em></div>
+						<div class="credentials">School of Urban Planning </div>
+						<div class="credentials">McGill University</div>
+					</div>
+					
+					
+					<div class="credentialsBox2">
+						<div class="credentials">MASc., Civil Engineering, Universidade Tecnológica Federal do Paraná, Brasil </div>	
+					<div class="credentials"> B.Eng., Mechanical Engineering, Universidade Tecnológica Federal do Paraná, Brasil</div>	
+					</div>
+					<div class="paragraphNarrow">
+						Thiago graduated from his B.Sc. and MSc. in Civil Engineering at the Universidade Tecnológica Federal do Paraná, Curitiba, Brazil, where he developed in interested in transport policy, transport satisfaction, and travel behavior. In his master thesis, he developed an integrated framework of social psychology and marketing theories to explain user loyalty towards public transport using survey data and structural equation modeling. His main research interests are public transport, more specifically satisfaction and attitudes, and how urban policies can foster sustainable travel. 
+					</div>
+				</div>
+				
+				
+					<div class="section members">
+					<div class="pageSubheader"><strong>Lancelot Rodrigue</strong> | Graduate Research Assistant </div>
+					<div class="profilePictureBox">
+						<img src="/images/members/Lancelot2.jpg" alt="Lancelot" class="profilePicture" />
+					</div>
+						<div class="credentialsBox1">
+						<div class="credentials"><em>PhD Student</em></div>
+						<div class="credentials">School of Urban Planning </div>
+						<div class="credentials">McGill University</div>
+						</div>
+					<div class="credentialsBox2">
+						<div class="credentials">MSc, Department of Geography, McGill University </div>
+						<div class="credentials">BASC Sustainability, Science and Society; Minor in Urban Studies, McGill University </div>
+					</div>
+					<div class="paragraphNarrow">
+						Having developed an interest for transportation research in his last year of undergraduate studies, Lancelot has been working with TRAM since May 2021. He has graduated with a BASC in Sustainability, Science and Society and a MSc in Geography both at McGill University and is now pursuing a PhD in Planning, Policy and Design in the School of Urban Planning. While he collected and studied detailed micro-scale walkability data for his Master's thesis, Lancelot is now exploring post-pandemic pricing and funding issues for public-transit and related equity considerations for his doctoral research. Lancelot is also passionate about the intersection between transportation and planning regulation as well as public perceptions of transportation services and projects. 
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+							<div class="section members">
+					<div class="pageSubheader"><strong>Rodrigo Victoriano </strong> | Graduate Research Assistant</div>
+					<div class="profilePictureBox">
+						<img src="/images/members/Rodrigo.jpg" alt="Rodrigo" class="profilePicture" />
+					
+					</div>
+					
+					<div class="credentialsBox1">
+						<div class="credentials"><em>PhD Student</em></div>
+						<div class="credentials">School of Urban Planning </div>
+						<div class="credentials">McGill University</div>
+					</div>
+					
+					
+					<div class="credentialsBox2">
+						
+						
+						<div class="credentials">MSc., Civil Engineering, University of Concepción, Chile</div>	
+					<div class="credentials"> B.Sc., Civil Engineering, University of Concepción, Chile</div>	
+					</div>
+					<div class="paragraphNarrow">
+						Rodrigo is a PhD student who graduated from his B.Sc. and MSc. in Civil Engineering at the University of Concepción, Chile, where he developed a deep interest in urban mobility and transport planning. In both his undergraduate and master’s theses he studied the interrelationships of different dimensions that shape people’s travel behavior, including time use, social interaction, and modal choice. Having been born and lived most of his life in Chile, he has a deep concern about problems that are especially relevant in the Global South, and which may be addressed through efficient transport planning, such as income and social inequality. In his last years before coming to Montreal, he collaborated in different research centers where he studied topics related to covid-19 spread and mobility patterns in the Chilean context. Today, he’s excited to start learning and collaborating in TRAM’s research.
+					</div>
+				</div>
+				
+				
+
+				
+						<div class="section members">
+					<div class="pageSubheader"><strong>Heba Abukmail</strong> | Ggraduate Research Assistant </div>
+					<div class="profilePictureBox">
+						<img src="/images/members/Heba.jpeg" alt="Heba" class="profilePicture" />
+					</div>
+						<div class="credentialsBox1">
+						<div class="credentials"><em>MSc, Student</em></div>
+						<div class="credentials">School of Urban Planning</div>
+						<div class="credentials">McGill University</div>
+						</div>
+					
+						<div class="credentialsBox2">
+						
+						
+						<div class="credentials">M.Sc.,Urban and Regional Planning, Ball State University, United States of America</div>	
+					<div class="credentials"> B.Sc., Architectural Engineering, Islamic University of Gaza, Palestine</div>	
+					</div>
+					
+					
+					<div class="paragraphNarrow">
+						
+Heba holds a B.Sc. in Architectural Engineering from Palestine and an M.Sc. in Urban and Regional Planning from Ball State University in the United States. Her passion for community development is evident through her extensive work with UN-Habitat, various international NGOs, and civil society organizations in Palestine. Currently, Heba is pursuing a second M.Sc. in Planning, Policy, and Design at McGill University's School of Urban Planning. Her professional journey has revealed a critical need to delve deeper into transport dynamics, planning, and operations. This interest has fueled her focus on transportation issues at the community level. As a member of the TRAM team, Heba is dedicated to exploring the transportation needs of immigrants to Canada and addressing the challenges of mobility inequality faced by recent arrivals.
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+
+				
+				
+				
+				<div class="section members">
+					<div class="pageSubheader"><strong>Panagiotis Goudis</strong> | Undergraduate Research Assistant </div>
+					<div class="profilePictureBox">
+						<img src="/images/members/panagiotis.jpg" alt="Panagiotos" class="profilePicture" />
+					</div>
+						<div class="credentialsBox1">
+						<div class="credentials"><em>B Eng, Student</em></div>
+						<div class="credentials">Department of Civil Engineering</div>
+						<div class="credentials">McGill University</div>
+						</div>
+					
+					<div class="paragraphNarrow">
+						
+Panagiotis is a first-year civil engineering undergraduate student at McGill University. His interests mainly lie in sustainable construction and environmentally conscience design, and he is passionate about exploring how civil engineering can contribute to a greener society through innovative practices that minimize negative environmental impact. He aims to gain experience in projects that promote sustainability and efficient urban infrastructure by studying projects like the REM.
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<div class="section members">
+					<div class="pageSubheader"><strong>Megan James</strong> | Undergraduate Research Assistant </div>
+					<div class="profilePictureBox">
+						<img src="/images/members/Megan.jpg" alt="Megan" class="profilePicture" />
+					</div>
+						<div class="credentialsBox1">
+						<div class="credentials"><em>B Eng, Student</em></div>
+						<div class="credentials">Department of Civil Engineering</div>
+						<div class="credentials">McGill University</div>
+						</div>
+					
+					<div class="paragraphNarrow">
+						Megan is a second-year civil engineering undergraduate at McGill University with a minor in urban studies. Her research interests focus on the intersection of civil engineering with social and urban issues, particularly in transportation infrastructure. She is interested in exploring the resilience of transportation infrastructure and how it can be optimized to promote sustainable and efficient mobility networks.
+					</div>
+				</div>
+				
+				
+				
+				
+			
+				
+				
+	
+				
+				
+	
+				
+				
+				
+			
+
+				
+						
+		 
+
+
+
+
+				
+				
+
+				
+				
+				
+				
+
+			</div>
+			
+			<!------------------------------- end of content ------------------------------------>
+			
+			<!-- footer content will be loaded from footer.html -->
+			<div id='footerContent' class="footer"></div>
+			
+			<!------------------------------- end of footer ------------------------------------>
+			
+			<div class="credits">
+				Website designed and coded by <a href="http://www.colinjstewart.com">Colin J Stewart</a>
+			</div>
+			
+		</div>
+		
+		<div class="sidebarRight">&nbsp;</div>
+	</body>
+</html>
+

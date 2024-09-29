@@ -1,0 +1,353 @@
+<script>			
+	function isMobile()
+    {   var agent = navigator.userAgent.toLowerCase();	
+        return agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1 || agent.indexOf("android") != -1;
+    }
+    
+    
+    //$( document ).ready(function() 
+	//{	// special event handlers for touch screens
+        //document.getElementsByClassName("pageHeader")[0].innerHTML += "FUCK";
+		if (isMobile())
+        {   document.getElementById('menu').addEventListener("click", function(e)
+                {   toggleMenu();
+                });
+            document.getElementsByClassName('googleSearch')[0].addEventListener("click", function(e)
+                {   e.stopPropagation();
+                });
+                
+            var link = document.getElementById('teamPhotosLink');
+            link.href = "/Multimedia/picturesMobile.php";
+                        
+            fixMenuViewportUnits(false);
+            $(window).on("orientationchange",changeMenuOrientation);                                                
+        
+            for (var i = 1; i <= 4; i++)
+            {   var menu = document.getElementById("menuItem" + i);                
+                menu.onmouseover = null;
+                menu.onmouseout = null;
+                //menu.onclick = 'toggleMenuItem(this);'
+            }
+            
+            //$(".menuItem").on('mouseover mouseout click', (function(event)
+            $(".menuItem").on('click', (function(event)
+				{	var rect = this.getBoundingClientRect();
+                    if (event.clientY >= rect.top && event.clientY < rect.bottom)  // to avoid event firing on hidden portion of div
+                    {//alert(rect.top + " to " + rect.bottom + " -- " + event.clientY);
+                        //document.getElementsByClassName("pageHeader")[0].innerHTML += ">";
+                        toggleMenuItem(this);
+                    }
+                    event.stopPropagation();
+				}
+			));		
+            
+            $(".popupItem a").on('mouseover touchstart click', (function(event)
+            //$(".popupItem a").on('click', (function(event)
+				{	window.location.assign(this);
+                    event.stopPropagation();
+				}
+			));		
+			
+			$(".popupSubheading a").on('mouseover touchstart click', (function(event)
+            //$(".popupSubheading a").on('click', (function(event)
+				{	window.location.assign(this);   
+                    event.stopPropagation();
+				}
+			));
+                                             
+		}       
+	//});
+    
+    
+    function changeMenuOrientation()
+    {   setTimeout(function(){ fixMenuViewportUnits(true); }, 200);
+    }
+    
+    function fixMenuViewportUnits(reorient)
+    {   var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);                                
+        document.getElementById("menu").style.height = (vh - 10 * 5) + "px";        
+                
+        var menuItems = document.getElementsByClassName("menuItem");
+        for (var i = 0; i < menuItems.length; i++)
+        {   var width = menuItems[i].offsetWidth;
+            menuItems[i].style.backgroundPosition = (width - (7.5*5)) + "px " + (3*5) + "px";
+        }
+    }
+	
+	function showMenuItem(menuItem)
+	{	//document.getElementsByClassName("pageHeader")[0].innerHTML += ".smi";						
+		hideAllMenuItems();
+		//document.getElementById("popupMenu" + id).style.display = "block";
+        //document.getElementById("popupMenu" + id).dataset.state = "visible";						
+        var popup = menuItem.getElementsByClassName("popupMenu")[0];
+        popup.style.display = "block";
+        popup.style.visibility = "visible";
+        menuItem.dataset.state = "visible";	
+        //alert("show" + menuItem.offsetHeight);        
+	}
+	
+	function hideAllMenuItems()
+	{	for (i = 1; i <= 4; i++)					
+		{	var popup = document.getElementById("popupMenu" + i);            
+            popup.style.display = "none";
+            popup.style.visibility = "hidden";
+            popup.dataset.state = "hidden";
+            
+            if (isMobile())
+            {   var menuItem = document.getElementById("menuItem" + i);
+                menuItem.style.backgroundImage = "url('/images/menu-arrow.png')"; 
+            }
+            /*menuItem.style.display = "none";
+            menuItem.offsetHeight;
+            menuItem.style.display = "block";            
+            */
+        }
+        
+        /*
+        var menu = document.getElementById("menu");
+        menu.style.display = "none";
+        menu.offsetHeight;
+        menu.style.display = "block";
+        */
+	}
+	
+	function hideMenuItem(menuItem)
+	{	//document.getElementsByClassName("pageHeader")[0].innerHTML += ".hmi";
+        var popup = menuItem.getElementsByClassName("popupMenu")[0];
+        popup.style.display = "none";
+        popup.style.visibility = "hidden";
+        menuItem.dataset.state = "hidden";        
+        //alert(menuItem.offsetHeight);
+        /*
+        if (isMobile())
+        {   //alert("toggle");
+            toggleMenu();
+            toggleMenu();
+        }*/
+	}
+    
+    function toggleMenu()
+    {   //document.getElementsByClassName("pageHeader")[0].innerHTML += ".tgm";
+        hideAllMenuItems();
+        
+        var menu = document.getElementById("menu");
+        var hamburger = document.getElementById("hamburger");
+        
+        if (typeof(menu.dataset.state) === 'undefined')
+            menu.dataset.state = "hidden";
+        
+        if (menu.dataset.state == "hidden")
+        {   menu.style.display = "block";
+            menu.dataset.state = "visible";
+            hamburger.src = "/images/hamburger-active.png";
+            
+            if (isMobile())
+            {   document.getElementById("blackScreen").style.display = "block";
+                disableScroll();
+            }
+            fixMenuViewportUnits(false);                        
+        }
+        else
+        {   menu.style.display = "none";
+            menu.dataset.state = "hidden";
+            hamburger.src = "/images/hamburger-inactive.png";
+            
+            if (isMobile())
+            {   document.getElementById("blackScreen").style.display = "none";
+                enableScroll();
+            }
+        }    
+        
+    }
+    
+    function toggleMenuItem(menuItem)
+    {   //document.getElementsByClassName("pageHeader")[0].innerHTML += ".tgi";
+        if (menuItem.dataset.state == "hidden")
+        {   menuItem.dataset.state = "visible";
+            showMenuItem(menuItem);
+            menuItem.style.backgroundImage = "url('/images/menu-arrow-inv.png')";
+        }
+        else
+        {   menuItem.dataset.state = "hidden";
+            hideMenuItem(menuItem);
+            menuItem.style.backgroundImage = "url('/images/menu-arrow.png')";
+        }        
+    }
+    
+    // functions for disabling scroll while mobile menu is active
+    var scrollDisabled = false;    
+    function disableScroll() 
+    {   scrollDisabled = true;  
+      
+             
+        //document.body.ontouchmove = function(event) { document.getElementById('menuItem4').innerHTML += 'b'; /*event.preventDefault();*/ /*event.stopPropagation();*/ };
+        //document.ontouchmove = function(event) { document.getElementById('menuItem4').innerHTML += 'd'; /*(event.preventDefault(); /*event.stopPropagation();*/ };
+        //window.ontouchmove = function(event) { document.getElementById('menuItem4').innerHTML += 'w'; /*event.preventDefault(); /*event.stopPropagation();*/ };
+        //document.getElementById('menu').ontouchmove = function(event) { document.getElementById('menuItem4').innerHTML += '>'; /*event.stopPropagation();*/ };        
+        //document.getElementsByClassName('main')[0].ontouchmove = function(event) { document.getElementById('menuItem4').innerHTML += 'm';/*event.preventDefault(); /*event.stopPropagation();*/ };        
+        
+        
+        //alert('!');
+        /*$('.content').on('touchmove',function(e){
+            if(!$('.menuItem').has($(e.target)).length)
+                e.preventDefault();
+        });*/
+        
+        /*$('.main').on('touchmove',function(e){
+            if(!$('.menuItem').has($(e.target)).length)
+                e.preventDefault();
+        });/*
+        $('body').on('touchmove',function(e){
+            if(!$('.menuItem').has($(e.target)).length)
+                e.preventDefault();
+        });*/
+        /*
+        document.body.ontouchmove = function(e) {
+            
+            //document.getElementById('menuItem4').innerHTML = $(e.target).closest('#menu')[0];
+            if (!$(e.target).closest('#menu')) {
+                document.getElementById('menuItem4').innerHTML = 'off';
+                e.preventDefault();
+            }
+            else
+                document.getElementById('menuItem4').innerHTML = 'on';
+        };*/
+        
+ 
+    /*
+        window.ontouchmove = function(event) 
+            {                   
+                var menu = document.getElementById('menu');                
+                var rect = menu.getBoundingClientRect()                
+                var touchX = event.touches[0].clientX;
+                var touchY = event.touches[0].clientY;
+
+                                
+                if (touchY >= rect.top && touchY <= rect.bottom && touchX >= rect.left && touchX <= rect.right)
+                {   return;  // scroll event was in the menu; this is fine
+                }    
+                else
+                {   // haven't returned yet; disable it!    
+                    event = event || window.event;
+                    if (event.preventDefault)
+                        event.preventDefault();
+                    event.returnValue = false; 
+                }
+            };  */  
+    }
+
+    function enableScroll() 
+    {   window.ontouchmove = null;          
+    }
+    
+</script>
+
+<div class="mobile-topbar">
+    <a href="http://tram.mcgill.ca" data-role="none" data-ajax="false"><img class="tram-logo" src="/images/tram-logo-outlined.png"></a>
+    <img id="hamburger" src="/images/hamburger-inactive.png" onclick="toggleMenu()">
+</div>
+
+<div class="title">
+	<a href="http://tram.mcgill.ca">Transportation Research at McGill</a>
+</div>
+
+<div id="menu">
+	<div class="menuItem" id="menuItem1" onmouseover="showMenuItem(this)" onmouseout="hideMenuItem(this)" data-state="hidden">
+		<div class="menuHeading">Research</div>
+		<div id="popupMenu1" class="popupMenu">
+			<div class="popupHeadingWrapper">
+				<div class="popupHeading">Research</div>
+			</div>            
+			<div class="popupWrapper wrapper1">
+				<div class="popupSubheading">Publications</div>  
+				<div class="popupItem"><a href="/Research/Publications/publicTransit.html">Public Transit Planning &amp; Operations</a></div>
+				<div class="popupItem"><a href="/Research/Publications/performanceMeasuresAccessibility.html">Performance Measures &amp; Accessibility</a></div>
+				<div class="popupItem"><a href="/Research/Publications/cyclingWalking.html">Cycling &amp; Walking</a></div>
+				<div class="popupItem"><a href="/Research/Publications/travelBehaviour.html">Travel Behaviour</a></div>
+				<div class="popupItem"><a href="/Research/Publications/other.html">Other</a></div>			
+                <div class="popupSubheading"><a href="/Research/projects.html">Projects</a></div>
+				<div class="popupSubheading"><a href="/Research/reports.html">Reports</a></div>
+				<div class="popupSubheading"><a href="/Research/Surveys/surveys.html">Surveys</a></div>
+			</div>
+		</div>
+	</div>
+	        
+	<div class="menuItem" id="menuItem2" onmouseover="showMenuItem(this)" onmouseout="hideMenuItem(this)" data-state="hidden">
+		<div class="menuHeading">Teaching</div>
+		<div id="popupMenu2" class="popupMenu">
+			<div class="popupHeadingWrapper">
+				<div class="popupHeading">Teaching</div>
+			</div>
+			<div class="popupWrapper wrapper2">
+				<div class="popupSubheading">Courses</div>  
+				<div class="popupItem"><a href="/Teaching/URBP619/URBP619.html">Land Use & Transportation</a></div>
+				<div class="popupItem"><a href="/Teaching/URBP504/URBP504.html">Active Transportation</a></div>
+				<div class="popupItem"><a href="/Teaching/URBP625/URBP625.html">Public Transport (P&amp;P)</a></div>
+				<div class="popupItem"><a href="/Teaching/URBP620/URBP620.html">Transportation Economics</a></div>
+				<div class="popupItem"><a href="/Teaching/URBP505/URBP505.html">Introduction to GIS</a></div>
+				<div class="popupItem"><a href="/Teaching/URBP608/URBP608.html">Advanced GIS</a></div>
+				<div class="popupItem"><a href="/Teaching/seminar/seminar.html">Transportation Seminar</a></div>
+				<div class="popupSubheading">Student outputs</div>
+				<div class="popupItem"><a href="/Teaching/Videos/Videos.html">Educational Videos</a></div>
+				<div class="popupItem"><a href="/Teaching/Policy_briefs/Policy Briefs.html">Policy Briefs</a></div>
+				<div class="popupSubheading">Graduate-Student Information</div>
+				<div class="popupItem"><a href="/Teaching/srp/srp.html">Masters' Supervised Research Projects</a></div>
+				<div class="popupItem"><a href="/Teaching/PhD/PhD.html">PhD Dissertations</a></div>
+				
+				
+			</div>
+		</div>
+	</div>
+    
+    <div class="menuItem" id="menuItem3" onmouseover="showMenuItem(this)" onmouseout="hideMenuItem(this)" data-state="hidden">
+		<div class="menuHeading">Data & Multimedia</div>
+		<div id="popupMenu3" class="popupMenu">			
+            <div class="popupHeadingWrapper">
+				<div class="popupHeading">Data & Multimedia</div>  
+			</div>
+			<div class="popupWrapper wrapper3">                
+				<div class="popupSubheading"><a href="/Multimedia/gisData.html">GIS Data Archive</a></div>                                 
+				<div class="popupSubheading"><a href="/Multimedia/movies.html">Movies</a></div>
+				<div class="popupSubheading"><a href="/Multimedia/posters.html">Conference Posters</a></div>			
+				<div class="popupSubheading"><a href="/Multimedia/pictures.php" id="teamPhotosLink">Team Photos</a></div>                
+			</div>            
+		</div>
+	</div>
+	
+	<div class="menuItem" id="menuItem4" onmouseover="showMenuItem(this)" onmouseout="hideMenuItem(this)" data-state="hidden">
+		<div class="menuHeading">About</div>
+		<div id="popupMenu4" class="popupMenu">
+			<div class="popupHeadingWrapper">
+				<div class="popupHeading">About</div>
+			</div>
+			<div class="popupWrapper wrapper4">
+                <div class="popupSubheading"><a href="/About/about.html">About TRAM</a></div>	
+                <div class="popupSubheading"><a href="/About/news.html">News</a></div>	                
+                <div class="popupSubheading"><a href="/About/members.html">Members</a></div>
+				<div class="popupSubheading"><a href="/About/alumni.html">Alumni</a></div> 
+                <div class="popupSubheading"><a href="/About/jobs.html">Jobs</a></div> 				
+				<div class="popupSubheading"><a href="/About/contact.html">Contact</a></div>
+			</div>
+		</div>
+	</div>	    
+    
+           
+	<div class="googleSearch">
+		<script>
+		  (function() {
+			var cx = '003680573634424237194:bmp_k3aj-ki';
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				'//www.google.com/cse/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:search class="googleSearchButton"></gcse:search>
+	</div>    
+	
+</div>
+
+<div id="blackScreen" onclick="toggleMenu()"></div>

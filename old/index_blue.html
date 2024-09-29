@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>	
+		<title>TRAM: Transportation Research at McGill</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" href="/reset.css" media="screen,projection" type="text/css" />		
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width:1025px)" href="/style-large-screen.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width:1024px)" href="/style-mobile.css">
+		<link rel="shortcut icon" href="/images/tramIcon.ico">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        
+        <script>
+			// loads the menu and footer from topbar.html and footer.html
+			$(document).ready(function(e) {$('#topbarContent').load('/topbar.html');});
+			$(document).ready(function(e) {$('#footerContent').load('/footer.html');});
+		</script>
+        
+		<script>
+			var globalTimer = -1; 
+			var globalSlideNum = 1;						
+			            
+			startSlideShowDesktop();
+			
+            function isMobile()
+            {   var agent = navigator.userAgent.toLowerCase();	
+                return agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1 || agent.indexOf("android") != -1;
+            }
+            
+            $(document).ready(function(e) 
+            {   //alert('y');
+                if (isMobile())
+                {   resizeImages(false);
+                    $(window).on("orientationchange",changeOrientation);                        
+                }
+            });
+                        
+            function changeOrientation()
+            {   setTimeout(function(){ resizeImages(true); }, 200);
+            }
+            
+            //var initial
+            function resizeImages(reorient)
+            {   var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+                var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                
+                //alert(vw + "," + vh);
+                               
+                for (var i = 1; i <= 4; i++)
+                {   var image = document.getElementById('slideshowImage' + i);                                       
+                    var caption = document.getElementById('slideshowCaption' + i);
+                    
+                    //image.style.width = "100%"; //vw + "px";
+                    image.style.height = (vw * 3 / 4) + "px";
+                    image.style.top = (15.5 * 5 + (i-1) * (vw * 3 / 4)) + "px";                                    
+                    caption.style.top = (15.5 * 5 + i * (vw * 3 / 4) - (12 * 5)) + "px"
+                    //caption.style.width = "100%"; //vw + "px";
+                }
+                
+                //document.getElementsByClassName("title")[0].style.width = vw + "px";
+                document.getElementsByClassName("fixed")[0].style.top = (15.5 * 5 + 4 * (vw * 3 / 4) + (6 * 5)) + "px"                
+                //document.getElementsByClassName("fixed")[0].style.width = vw + "px";
+            }
+            
+			function setCaptionFocus(id)
+            {	//alert('*');
+                hideAllMenuItems();
+                //alert('*');
+                changeCaption(id, globalSlideNum);
+                clearInterval(globalTimer);				
+                cycleThroughSlides(id, globalSlideNum);                
+			}
+			
+			function changeCaption(newSlideNum, oldSlideNum)
+			{	
+				document.getElementById("slideshowCaption" + oldSlideNum).style.backgroundColor = "#6888A0";
+				document.getElementById("slideshowCaption" + newSlideNum).style.backgroundColor = "#2D5672";
+                //alert('>');
+			}
+			
+			function cycleThroughSlides(newSlideNum, oldSlideNum)
+			{
+				var slideDiff = -1;
+				if (newSlideNum > oldSlideNum)
+					slideDiff = newSlideNum - oldSlideNum
+				else
+					slideDiff = (newSlideNum - oldSlideNum) + 4
+				
+				for (i = 0; i < slideDiff; i++)					
+					$('.slideshow > :first-child').hide().next().show().end().appendTo('.slideshow'); 									
+				
+				globalSlideNum = newSlideNum;
+			}
+			
+			function startSlideShowDesktop()
+			{	
+                if (isMobile() == false)
+                {   //alert('?');
+                    $(function()
+                    {	$('.slideshow > :gt(0)').hide();
+                        globalTimer = setInterval(function()
+                        {   //alert('!');
+                            $('.slideshow > :first-child').fadeOut().next().fadeIn().end().appendTo('.slideshow'); 		 			
+                                                
+                            var oldSlideNum = globalSlideNum;
+                            globalSlideNum++;
+                            if (globalSlideNum > 4)
+                                globalSlideNum = 1;						
+                            changeCaption(globalSlideNum, oldSlideNum);												
+                        }, 5000);												
+                    });		
+                }
+			}				
+			
+		</script>
+			
+		
+		<!-- Google Analytics code -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-54231741-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		
+	</head>
+	<body>		
+		
+		<div class="sidebarLeft">&nbsp;</div>
+		
+		<div class="main">
+		
+			<!-- menu content will be loaded from topbar.html -->
+			<div id='topbarContent' class="topbar"></div>	
+			
+			<!------------------------------- end of topbar ------------------------------------>
+			
+			<div class="contentHomePage">
+				<div class="slideshowText">					
+					<a href="About/about.html" id="slideshowCaptionLink1">
+						<div class="slideshowCaption firstCaption" id="slideshowCaption1" onmouseover="setCaptionFocus(1)" onmouseout="startSlideShow()">
+							<strong>About</strong> | Welcome to TRAM, a transportation research group at McGill University, Canada
+						</div>
+					</a>
+					
+					<a href="About/news3.html" id="slideshowCaptionLink2">
+						<div class="slideshowCaption" id="slideshowCaption2" onmouseover="setCaptionFocus(2)" onmouseout="startSlideShow()">
+							<strong>Research</strong> | Measuring the impacts of the REM construction 
+						</div>
+					</a>
+					
+
+					<a href="About/news1.html" id="slideshowCaptionLink3">
+						<div class="slideshowCaption" id="slideshowCaption3" onmouseover="setCaptionFocus(3)" onmouseout="startSlideShow()">
+							<strong>Research</strong> | Transportation Research Board 2022 Accepted Papers.
+						</div>
+					</a>
+					
+					
+					<a href="About/news2.html" id="slideshowCaptionLink4">
+						<div class="slideshowCaption" id="slideshowCaption4" onmouseover="setCaptionFocus(4)" onmouseout="startSlideShow()">
+							<strong>Research</strong> | New research by TRAM in the news.
+						</div>
+					</a>
+					
+					
+					
+					
+				</div>
+				
+				<div class="slideshow">							
+										
+					<a href="About/about.html"><img class="slideshowImage" id="slideshowImage1" src="/images/TRAM_Fall2022.jpg"></a>
+					
+					<a href="About/news3.html"><img class="slideshowImage" id="slideshowImage2" src="/images/REM_cover.jpg"></a>
+					
+					<a href="About/news1.html"><img class="slideshowImage" id="slideshowImage3" src="/images/WashingtonDC.JPG"></a>					
+					<a href="About/news2.html"><img class="slideshowImage" id="slideshowImage4" src="/images/Montreal_university.jpg"></a>
+					
+					
+					
+					
+					
+				</div>
+			</div>
+			
+			<!------------------------------- end of content ------------------------------------>
+			
+			<!-- footer content will be loaded from footer.html -->
+			<div id='footerContent' class="footer"></div>
+			
+			<!------------------------------- end of footer ------------------------------------>
+
+<!--			<div class="credits fixed">  -->
+<!--				Website designed and coded by <a href="http://www.colinjstewart.com">Colin J Stewart</a>  -->
+<!--			</div>			  -->
+			
+		</div>
+		
+		<div class="sidebarRight">&nbsp;</div>
+	</body>
+</html>
+

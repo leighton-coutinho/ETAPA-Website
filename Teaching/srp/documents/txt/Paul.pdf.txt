@@ -1,0 +1,2507 @@
+     
+ 
+DESIGNING A PARALLEL LIMITED STOP SERVICE BUS ROUTE IN MONTRAL USING  AUTOMATIC VEHICULE LOCATION AND PASSENGER COUNTING DATA                
+         
+Supervised Research Project submitted in partial fulfillment of the Masters of Urban Planning  degree       
+       
+by Paul Ren Ttreault   
+    School of Urban Planning  McGill University      Supervisor: Dr. Ahmed M. ElGeneidy      April 4, 2009     
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+TABLE OF CONTENTS 
+Abstract ......................................................................................................................................................... v  Acknowledgements ...................................................................................................................................... vi  Introduction .................................................................................................................................................. 1  Literature Review .......................................................................................................................................... 2 
+Runtime ................................................................................................................................................... 2  Limitedstop service .................................................................................................................................. 3  Case Study ..................................................................................................................................................... 4  Methodology ................................................................................................................................................. 8  Limitedstop route design ....................................................................................................................... 10  Estimation of limitedstop service run times .......................................................................................... 11  Analysis ....................................................................................................................................................... 13  Runtime and delays ............................................................................................................................... 15  Run time model ....................................................................................................................................... 23  Selection of stops .................................................................................................................................... 25 
+Scenario 1 ............................................................................................................................................ 25  Scenario 2 ............................................................................................................................................ 27  Scenario 3 ............................................................................................................................................ 31  Scenario 4 ............................................................................................................................................ 36  Estimation of bus run times .................................................................................................................... 38  Limitations........................................................................................................................................... 41  Walking distances ................................................................................................................................... 42  Time savings per user.............................................................................................................................. 42  Time Estimates for Route 467 ..................................................................................................................... 44  Application to Other Routes and Situations ............................................................................................... 48  Conclusion ................................................................................................................................................... 49  Bibliography ................................................................................................................................................ 52   
+
+ 
+
+  ii 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+LIST OF FIGURES 
+
+Figure 1: Route 67 SaintMichel ..................................................................................................... 6  Figure 2: Actual run time  northbound ....................................................................................... 17  Figure 3: Scheduled run time  northbound ................................................................................ 17  Figure 4: Actual run time  southbound ....................................................................................... 18  Figure 5: Scheduled run time  southbound ................................................................................ 18  Figure 6: Delay at start of trip  northbound ............................................................................... 19  Figure 7: Delay at start of trip  southbound .............................................................................. 19  Figure 8: Delay at end of trip  northbound ................................................................................ 21  Figure 9: Delay at end of trip  southbound ................................................................................ 21  Figure 10: Delay at the before last timepoint (SaintMichel and de Louvain)  northbound ...... 22  Figure 11: Delay at the before last timepoint (SaintMichel and SaintJoseph)  southbound ... 22  Figure 12: Selected stops for scenario 1 ...................................................................................... 26  Figure 13: Passenger activity by stop........................................................................................... 28  Figure 14: Selected stops for scenario 2 ...................................................................................... 30  Figure 15: Passenger activity by stop (OD) .................................................................................. 32  Figure 16: Selected stops for scenario 3 ...................................................................................... 35  Figure 17: Selected stops for scenario 4 ...................................................................................... 37  Figure 18: Proposed stops for route 467 ..................................................................................... 45 
+               
+
+iii   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+LIST OF TABLES  Table 1: Physical characteristics of route 67 SaintMichel ............................................................ 5  Table 2: Route 67 stops ................................................................................................................. 7  Table 3: Variables ........................................................................................................................... 9  Table 4: Assumptions used to estimate limitedstop service run times ..................................... 12  Table 5: Summary statistics ......................................................................................................... 14  Table 6: Run times by direction ................................................................................................... 16  Table 7: Run time model .............................................................................................................. 23  Table 8: Selected stops for scenario 1 ......................................................................................... 27  Table 9: Passenger activity by stop .............................................................................................. 29  Table 10: Selected stops for scenario 2 ....................................................................................... 31  Table 11: Passenger activity by stop (OD) ................................................................................... 33  Table 12: Selected stops for scenario 3 ....................................................................................... 36  Table 13: Selected stops for scenario 4 ....................................................................................... 38  Table 14: Run time models to estimate mean run times by scenario ......................................... 39  Table 15: Estimated analysis segment run time for new limited and regular service ................ 40  Table 16: Average walking distance to the closest stop served by limitedservice by scenario  42  Table 17: Time savings per user ................................................................................................... 43  Table 18: Proposed stops for route 467 ...................................................................................... 46  Table 19: Linear regression model for time estimate of route 467 ............................................ 47  Table 20: Estimated run time for route 467 ................................................................................ 48 
+     
+
+iv   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+ABSTRACT 
+
+In recent years, several transit agencies have been trying to be more competitive with  the personal automobile in order to attract more choice riders.  Transit agencies can only be  competitive if they can provide services that are reliable (short wait time and less variation),  have a short access time at both ends of the trip, and offer run times comparable to the  personal automobile.  This report uses AVL and APC data, in addition to a disaggregate data  obtained from a travel behaviour survey, to select stops and estimate run times for a limited stop (or express) service along a heavily used bus transit corridor, route 67 SaintMichel.  A run time model is established at the trip level and incorporates variables on rainfall, snowfall and  accumulated snow as well as separating passenger activity by door, among other operating  variables.  The climatic variables had a significant impact on increasing runtimes. Passenger  activity through the back door decreased bus travel times.  Three different scenarios are  developed based on theory and practice to select stops to be incorporated in the new limited  service.  The savings from each scenario is then evaluated as a range and a fourth scenario is  developed.  A limitedstop service is recommended based on selecting stops serving both route  directions, major activity points and an average spacing of between 800 to 1,600 meters.   Running times ranges for this scenario are estimated by varying the run time model through  isolating activity and actual number stops served by the new service. Implementing an express  service would yield substantial time savings for both the limited route and a parallel regular  route in the order of 10 to 20 percent for the limited service.  The STM will be implementing a  limitedstop service, route 467, starting on March 30, 2009 using the analysis presented in this  paper.    
+
+v   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+ACKNOWLEDGEMENTS 
+
+This supervised research project would not have been possible without the help and  support of a number of people and organizations.  I would like to thank and express my  gratitude to these individuals.  The Socit de transport de Montral (STM) has been  instrumental in providing funding and data.  Sbastien Gagn of the STM was very helpful in  his preparation and explanation of the archived automatic vehicle location and passenger  count data used in this paper.  This research was also made possible by the National Science  and Engineering Research Council of Canada which provided me with an Alexander Graham  Canada Graduate Scholarship.  David Crout of TriMet in Portland, Oregon was very helpful  when he shared some standards for implementing limited service.  I especially thank  Dr. Ahmed ElGeneidy, assistant professor in the School of Urban Planning, for his advice,  help and for answering emails at all times of the day, even though I do not recall ever  getting a reply between 5 and 6 AM.  Last but not least, I would also like to thank Dr.  Charles Fleurant, the director  optimization algorithms from Giro, for being the second  reader and his advice on the limitations of the runtime modelling technique.
+
+vi   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+INTRODUCTION 
+
+In recent years, several transit agencies have been trying to be more competitive with  the personal automobile in order to attract more choice riders.  Transit agencies can only be  competitive if they can provide services that are reliable (short wait time and less variation),  have a short access time at both ends of the trip, and offer faster or comparable run times  compared to passenger automobiles.  Improving the reliability and frequency of service is  important because "a main deterrent to bus travel is the uncertainty of bus arrival times at  stops" [1].  Transit agencies should also work towards increasing the satisfaction of their clients  [2].  Revising the current distribution of service coverage based on knowledge on travel needs  can increase the competitiveness of transit agencies. Improving running times is also an  important measure, yet it has to be significant enough for users to be able to perceive changes  in service [3]. 
+In order to improve decision making and manage transit fleets, many transit agencies in  North America and around the world have implemented automatic vehicle location (AVL) and  automatic passenger counting (APC).  These technologies can be used, among others, to  improve route design and scheduling [1].  They can also provide a comprehensive information  set about the state of existing services. 
+The Socit de transport de Montral (STM), provides transit service on the island of  Montral and is considering various measures to improve bus service.  One such improvement  is the introduction of limitedstop or express bus service in parallel to the existing route in order  to improve run times.  Of course, express service is one of many techniques that can be  implemented to improve travel times, such as stopconsolidation, reserved lanes and adjusting  the placement of stops. 
+This report focuses on using archived AVL and APC data from the SCAD system for route  67 Saint Michel, a high frequency route in the eastern part of the City of Montral, to select  stops for implementing limitedstop bus service and to estimate run time savings along the  modified route.  This report is divided into a literature review of bus run time and limitedstop  service followed by a description of the studied route.  The next section pertains to the 
+1 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+methodology used to prepare and analyze the data for run time, select stops for limited service  and estimate the bus run time for the new service.  Run time estimates for a weekday express  service that will be implemented starting March 30, 2009 are given afterwards. It is then  followed by a discussion of those results, a discussion on the applicability of this technique to  other routes and cities, and a conclusion.    LITERATURE REVIEW 
+
+When passengers choose to use transit as a transportation mode, they take a number of  factors into account. Passengers want a reliable service that arrives ontime, and minimizes  both invehicle time [4] and access time [5].  In order for transit agencies to be able to meet  these demands, it is necessary for them to understand and measure their performance.   Therefore, AVL and APC systems have been implemented by a number of transit agencies [6, 7]  and analyzed by a number of researchers with these goals in mind [6, 8, 9]. 
+ 
+
+Runtime 
+A number of factors have an influence on the running time of buses.  They can be  divided into those that do not fall under the control of the transit agency, such as congestion or  weather, and those that can be controlled by the agency such as route design and the  behaviour of drivers [10].  Nevertheless, operators can still account for uncontrollable factors  through scheduling and "realtime corrective actions" [10].  Reducing mean travel times is  beneficial for the transit operator since it reduces operating costs and the number of vehicles  required [11]. Transit users also seek to minimize their total travel time because it is a cost [11].   Minimization of transit travel times can thus attract new users to the system [12] and will  greatly increase their overall satisfaction [5].  In order to reduce travel times, various strategies  have been advanced. Vuchic [12] proposes various measures to increase the average speed of  bus operations. These can be grouped into vehicle design, intersection design, stop placement  and operational improvements. Levinson [13] found that many factors influence the running 
+2 
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+time, but that reducing the number of stops from 8 to 6 per mile leads to more time savings  than eliminating the effects of congestion. Route length, passenger activity, and the number of  intersections all have an effect on bus run times [14]. The number of actual stops [9, 1517] also  has an influence on run time.  Strathman et al. [9] also found that passenger demand increases  running time but that the time consumed per passenger decreases as the passenger activity  increases at the stop.  Lowfloor buses are also expected to have an effect on bus running times  [18].  The implementation of an AVL system on the whole fleet and relaying realtime  information to operators through computeraided dispatching (CAD) increases the reliability  and reduces the running time.  After implementation of these systems in Portland, OR, running  times were reduced by an average of 1.45 minutes per trip [19].  Reducing the number of stops  has been discussed as an effective measure for reducing run time.  This reduction can be  achieved either by stop consolidation [8] or by offering limited or express bus service.  A  limitedstop service is expected to reduce run time for the new limited service as well as for the  regular service running in parallel.  The use of archived AVL and APC data can help in estimating  the time savings from implementing limitedstop service, which I have not noticed in the transit  literature before.    
+
+Limitedstop service 
+Limited stop or express bus service has been recommended as a measure to decrease  travel times and the number of vehicles needed for service  [3, 12, 20].  Express or limited buses  stop at only a few stops along a route while, in most cases, a parallel "local" or regular route  serves all of the limited and intermediate stops.  This can be contrasted with zonal service  which makes all the stops in one zone and few or none in another [12]. One of the drawbacks of  express service is that wait times tend to increase after implementation [20], therefore they  should be parallel to routes with high ridership to allow passengers to minimize disruptions.  There are no established criteria in the transit industry in order to select stops that should be  served by express service. The selected stops should be located at major generators or stops 
+
+3   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+with high activity [12, 21].  Stops on the limited route should be spaced several times greater  than local stops [12].  In general, standards call for a spacing of 800  to 1,600 meters  [20, 22,  23] or 450 meters [21] between express stops. This spacing contrasts with "local" bus stop  spacing in urban areas which generally ranges from 200 to 600 meters [24]. It is also  recommended that stops be located near transfer points and that they be paired with another  stop in the opposite direction to avoid confusion for passengers [21]. The dilemma when  designing a new limitedstop service is that the objective should be to minimize travel times   Ercolano [3] contends that user time savings need to be at least 5 minutes in order for users to  perceive improvements  while trying to maximize the use of the service. 
+  CASE STUDY  
+
+The STM operates bus and subway services on the island of Montral which is home to  about half of the inhabitants of the region.  Four subway lines served by 759 cars and 192 bus  routes served by 1600 vehicles comprise the STM network which carries over a million trips per  weekday.  Route 67 is located to the east of downtown Montral and runs NorthSouth along a  boulevard crossing the neighbourhoods of HochelagaMaisonneuve, RosemontlaPetitePatrie,  VilleraySaintMichelParcExtension, AhuntsicCartierville and MontralNord in the city of  Montral.  The route is 9.16 km long in the northbound direction and 9.96 km southbound. Line  67 connects to two mtro (subway) stations at its southern terminus and another at its midway  point.  As such, it is one of the busiest surface routes in the city with an average ridership of  40,400 on weekdays.  The built form around the route consists mostly of 2 to 4 storey  residential buildings mixed with some commercial and institutional buildings near major  intersections.  Table 1 includes a summary of route characteristics, while Figure 1 is a map of  the studied route. Table 2 provides a list of stops for route 67 and gives the numbering used for  the report and the STM stop numbers. Time points are highlighted in bold characters in this  table.     
+4 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+ 
+
+Table 1:
+
+Physical Characteristics of Route 67 SaintMichel 
+Direction 
+Northbound  Southbound 
+
+Length (kilometres)  9.16 
+
+9.96 
+
+Intersections 
+
+45 
+
+62 
+
+Total 
+
+Traffic signals 
+
+40 
+
+43 
+
+Number of stops 
+
+39 
+
+40 
+
+Average stop spacing 
+
+(meters) 
+
+241 
+
+255 
+
+Length (kilometres)  8.43 
+
+9.34 
+
+Analysis 
+
+Intersections 
+
+50 
+
+56 
+
+Traffic signals 
+
+36 
+
+40 
+
+Number of stops 
+
+36 
+
+38 
+
+ 
+
+P. Ttreault 
+
+5   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Figure 1:  
+
+Route 67 SaintMichel 
+
+ 
+
+The experience with APC and AVL technology at the STM dates back to 1999. The 
+
+current system is the third generation and is equipped on 220 buses out of a fleet of 1,600. 
+
+Buses equipped with APC and AVL are assigned to different routes to obtain a sample of bus 
+
+operational information. Information is recorded at both the stop and trip levels by this system. 
+
+This system is mostly used by the STM for revising schedules and generating performance 
+
+measures such as schedule adherence. 
+
+6   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Table 2:
+
+Route 67 Stops 
+
+Stop Number 
+
+Location 
+
+1 
+
+Hochelaga at Joliette (Mtro  Joliette) 
+
+2  Hochelaga at Davidson 
+
+3  Davidson at Sherbrooke 
+
+4  SaintMichel/Davidson at Rachel 
+
+5  SaintMichel at WilliamTremblay 
+
+6  SaintMichel at du MontRoyal 
+
+7  SaintMichel at SaintJoseph 
+
+8  SaintMichel at Laurier 
+
+9  SaintMichel at Masson 
+
+10  SaintMichel at Dandurand 
+
+11  SaintMichel at Holt 
+
+12  SaintMichel at Rosemont 
+
+13  SaintMichel at de Bellechasse 
+
+14  SaintMichel at Beaubien 
+
+15  SaintMichel at StZotique 
+
+16  SaintMichel at Blanger 
+
+17  SaintMichel at Blair 
+
+18  SaintMichel at JeanTalon 
+
+19 
+
+SaintMichel at Everett (Mtro Saint Michel) 
+
+20  SaintMichel at Puccini 
+
+21  SaintMichel at Villeray 
+
+22  SaintMichel at Crmazie (Sud) 
+
+23  SaintMichel at Crmazie (Nord) 
+
+24  SaintMichel at Jarry 
+
+25  SaintMichel at d'Hrelle (Sud) 
+
+26  SaintMichel at d'Hrelle (Nord) 
+
+27  SaintMichel at Deville 
+
+28  SaintMichel at Robert 
+
+29  SaintMichel at Denis Papin 
+
+30  SaintMichel at mile Journault 
+
+31  SaintMichel at Legendre 
+
+32  SaintMichel at de Louvain 
+
+33  SaintMichel at Champdor 
+
+34  SaintMichel at Charland 
+
+35  SaintMichel at Sauv 
+
+36  SaintMichel at de MontJoli 
+
+STM Stop Num.  North  South 
+
+120142 120142
+
+119942 119261 118491 127391 117461 116671 116171 115581 114881 114361 114101 113661 112971 112381 111761 141051 111071
+
+    118495 127393 117293 116673 116173 115583 114883 114363 114103 113663 112973 112383 111763 138423 111073
+
+110916 110913
+
+110631 110321
+  110061 109591 109321 129871 108791 135291 107971 107616 107181 106781 106481 106161 105681 1800321
+
+110548 110323 110068 110063 109593
+  109323 108793 108413 107973 107613 107183 106783 106488 106168 105683 1800323
+
+7 
+
+Stop sequence  North  South 
+1  40
+2   3   4  36 5  35 6  34 7  33 8  32 9  31 10  30 11  29 12  28 13  27 14  26 15  25 16  24 17  23 18  22
+19  21
+20  20 21  19   18 22  17 23  16 24  0 25  15 26  14 27  13 28  12 29  11 30  10 31  9 32  8 33  7 34  6 35  5
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Stop Number 
+
+Location 
+
+STM Stop Num.  North  South 
+
+37  SaintMichel at Fleury 
+
+1800221 1800223
+
+38  SaintMichel at Prieur 
+
+1800171 1800173
+
+39  SaintMichel at HenriBourassa (Sud)  1802171 1802198
+
+40 
+
+SaintMichel at HenriBourassa  (Nord) 
+
+1802186 1802186
+
+41  Rachel at de Chambly 
+
+  118844
+
+42  Valois at Sherbrooke 
+
+  119473
+
+43  Nicolet at Hochelaga 
+
+  120303
+
+*Note: Time points are indicated using bold characters. 
+
+ 
+
+METHODOLOGY 
+
+Stop sequence  North  South 
+36  4 37  3 38  2
+39  1
+  37   38   39
+
+The objective of this report is to select stops for a parallel limitedstop bus service and  to estimate the run time of the new service by using archived AVL and APC data.  
+AVL and APC data was obtained from a sample of trips serving route 67. Over 273,000  individual stop records were obtained from the STM data archival system representing bus  arrival and departure times at each stop along the route including information on passenger  activity. The data was collected between August 27, 2007 and January 6, 2008. 
+The records were cleaned in order to remove errors in the raw data at the stop level.   Errors included incomplete trips in which there were only 1 to 3 stops recorded per trip (976  stop level records). A number of trips, 135, were also removed from the analysis because they  were bogus trips created to compensate for undersampling; in addition, all of these trips had  no time entries. One trip was also removed because the dwell time at a stop was negative  (departure time was less than the arrival time). Another 122 trips were also excluded from the  analysis because boardings and alightings were not equal.  A total of 6,620 trips were kept for  use in the analysis after data cleaning. 
+       
+
+8   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Table 3:
+
+Variables 
+
+Variable Name 
+
+Run Time 
+
+Average Load  Boardings + Alightings Front  Door  (Boardings + Alightings Front  Door)  Boardings + Alightings Back  Door  (Boardings + Alightings Back  Door)  Southbound  Weekday 
+Low Floor  TD Early AM  TD Peak AM  TD Midday  TD Peak PM  TD Evening and Night  Scheduled Stops  Actual Stops  Rain (mm) 
+Snow (cm) 
+Snow Ground (cm) 
+Delay Start  Actual Stops Scenario X 
+Actual Stops Skipped Scenario  X  Passenger Activity Front  Limited Scenario X  Passenger Activity Front  Skipped Scenario X  Passenger Activity Back  Limited Scenario X  Passenger Activity Back  Skipped Scenario X 
+ 
+
+Description
+The run time per trip in seconds from the departure of the second stop to the  departure from the before last stop (southbound) and the 3rd last stop  (northbound)  The average load per trip The number of boardings and alightings per trip through the front door
+The square of the sum of boardings and alightings through the front door
+The number of boardings and alightings per trip through the back door
+The square of the sum of boardings and alightings through the back door
+Dummy variable for southbound trips Dummy variable for weekday trips (i.e. excluding weekends, holidays and  weekdays over the Christmas holidays)  Dummy variable for trips served by lowfloor buses Dummy variable for trips that departed between 3 AM and 6:30 AM  Dummy variable for trips that departed between 6:30 AM and 9:30 AM Dummy variable for trips that departed between 9:30 AM and 3:30 PM Dummy variable for trips that departed between 3:30 PM and 6:30 PM Dummy variable for trips that departed between 6:30 PM and 3 AM  The number of scheduled stops for the trip The number of actual stops made during the trip The amount of rain in millimetres for the day of the trip at Trudeau  International Airport (obtained from Environment Canada)  The amount of snow falling on the day of the trip in centimetres at Trudeau  International Airport (obtained from Environment Canada)  The amount of snow on the ground on the day of the trip in centimetres at  Trudeau International Airport (obtained from Environment Canada)  The delay at the start of the route The number of actual stops made if the trip had been run as a scenario X  limited service  The number of actual stops skipped if the trip had been run as a scenario X  limited service  The number of passengers (boardings + alightings) using the front door at stops  served by scenario X limited service for the trip  The number of passengers (boardings + alightings) using the front door at stops  skipped by scenario X limited service for the trip  The number of passengers (boardings + alightings) using the back door at stops  served by scenario X limited service for the trip  The number of passengers (boardings + alightings) using the back door at stops  skipped by scenario X limited service for the trip 
+
+9   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Analysis of this data was conducted at both the stop and trip levels. The first step was to  prepare summary tables and a run time model to verify the quality of the data and identify if  problems in the schedule do exist or not.  After data cleaning and the elimination of shortturn  runs, 6620 trips were left for trip level run time analysis.  The trip level analysis excluded data  from the first and last stops in both directions.  The second last stop in the northbound  direction also had to be removed from the analysis because layovers were often taken at this  stop rather than the last scheduled stop.  As such, the run time for this analysis was calculated  from the departure at the second stop until the departure time at the last analysis stop (second  last for southbound trips; third last for northbound trips).  Table 3 contains a list of variables  prepared for conducting the analysis. 
+In order to assess the robustness of the obtained AVL and APC data, a running time  model was established at the trip level.  The model incorporates a number of variables relating  to the time of day, bus type, delay and passenger activity as well as variables that to our  knowledge have not yet been used accounting for the weather [25] and separating the  passenger activity by door. The following model was generated: 
+
+(1) Run Time = f(average load, passenger activity (boardings and alightings) at the front  door, passenger activity at the front door squared, passenger activity at the back door,  passenger activity at the back door squared, weekday trip, southbound trip, lowfloor  bus, early morning trip, AM peak trip, Midday trip, PM peak trip, number of actual stops,  rain (mm), snow fallen (cm), snow on the ground (cm), delay beginning of trip) 
+In this model, the run time is expected to increase with passenger activity, for trips 
+made on weekdays, for southbound trips, peak hour trips, with the delay at the beginning at 
+the trip and with adverse weather conditions or the amount of snow on the ground.  Trips 
+served by lowfloor buses and early morning trips are expected to decrease the run time. 
+
+Limitedstop route design  In order to design a limitedstop service, 3 scenarios based on a single criterion were 
+created. To derive scenarios based on generators, we selected 1 out of 4 stops.  This is based on 
+
+10   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+the average spacing of stops on this route (250 meters) and the recommended spacing of 800  to 1,600 meters [20, 22, 23]. 
+The first scenario kept only transfer stops (see figure 1). The second scenario selected  the stops in the first quartile of passenger activity as measured by the APC counts.  The third  scenario used the Montral origindestination data for users of this route and selected the top  quartile of stops with the most activity.  The Montral origindestination survey dates from  2003 and contains disaggregate information on travel behaviour.  For transit users, it contains  the sequence of transit routes that were used in a trip.  The walking distance to the nearest  limitedservice stop in each scenario was calculated and compared to the current situation by  using the street network.  For trips that were transferring from other bus routes, it is assumed  that users whose transfer stop is not served by a limited service scenario would use another  bus route before connecting to route 67. 
+
+Estimation of limitedstop service run times 
+To estimate the mean run time of the modified routes a model which divides passenger  activity and actual stops between the stops served by the limited service and those that are  skipped by this service was generated. A separate model is created for every scenario.  It is  expected that coefficients in these models will change slightly with each scenario. The general  model is given below: 
+
+(2) Run time = f(average load, weekday trip, southbound trip, lowfloor bus, early  morning trip, AM peak trip, Midday trip, PM peak trip, number of actual stops,  rain (mm), snow fallen (cm), snow on the ground (cm), delay beginning of trip,  actual stops at stops served by limited stops, actual stops at skipped stops, front  door boardings and alightings at stops served by limited service, front door  boardings and alightings at stops skipped, back door boardings and alightings at  stops served by limited service, front door boardings and alightings at skipped  stops) 
+The model mentioned above was then used to estimate run times for the various 
+scenarios. In fact, the effects of passenger activity and the actual stops made by the current 
+service at skipped stops are isolated in order to estimate run times.  Since estimating the actual 
+11 
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+number of passengers switching between regular and limited bus services is not possible 
+
+without generating a demand function, a range of run time savings will be estimated.  Three 
+
+run times were estimated for each of the limited stop service scenarios and the regular service. 
+
+The estimated mean travel times were calculated by multiplying the coefficients from the 
+
+models with the mean values of these variables (hereby referred to as time component). 
+
+For the "realistic" (or best estimate) limitedstop estimated mean travel time, the time 
+
+associated with front and back door passenger activity and the actual stops skipped is 
+
+subtracted from the mean running time derived from the models.  For the realistic regular 
+
+route, the time associated with passenger activity at the stops served by the limited service is 
+
+subtracted from the mean running time derived from the models.  This assumes that all 
+
+passengers at skipped stops would use the regular service and all passengers at actual stops 
+
+served by the limited service would use this new service.  This method assumes a zero sum 
+
+game among the number of passengers switching between stops when limited service is 
+
+offered.  For the optimistic run time estimate for limited service, the passenger demand and 
+
+actual stops skipped is removed.  The optimistic regular route would have the same average 
+
+running time as the current route.  For the pessimistic run time estimate, it is assumed that all 
+
+passenger demand would use the limited service by removing the actual stops skipped.  The 
+
+pessimistic regular route subtracts the passenger demand from the mean run time. 
+
+The assumptions mentioned in the previous paragraph are given in the table below: 
+
+ 
+
+Table 4:
+Time  Estimate  Realistic 
+
+Assumptions used to estimate limitedstop service run times 
+
+Variable(s) Removed 
+
+Express 
+
+Regular 
+
+Assumption 
+
+Actual stops skipped  Boardings and alightings at  front door skipped  Boardings and alightings at  back door skipped 
+
+Boardings and alightings  Passengers at stops 
+
+at front door 
+
+served by the limited use 
+
+Boardings and alightings  this service; passengers 
+
+at back door 
+
+boarding or alighting at 
+
+stops not served by the 
+
+limited use the regular 
+
+service. 
+
+12   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Time  Estimate 
+Optimistic 
+
+Variable(s) Removed 
+
+Express 
+
+Regular 
+
+Actual stops skipped  Boardings and alightings at  front door  Boardings and alightings at  front door skipped  Boardings and alightings at  back door  Boardings and alightings at  back door skipped 
+
+(none) 
+
+Assumption 
+Passengers only use the  regular service. 
+
+Pessimistic  Actual stops skipped 
+
+Boardings and alightings  All passengers only use 
+
+at front door 
+
+the limitedstop service 
+
+Boardings and alightings  (i.e. every passenger 
+
+at front door skipped  walks to the closest stop 
+
+Boardings and alightings  served by the express). 
+
+at back door 
+
+Boardings and alightings 
+
+at back door skipped 
+
+   
+ANALYSIS 
+
+The average run time along route 67 is just over 40 minutes which contrasts with the  mean scheduled time of just under 39 minutes.  For the analysis section, the pattern is similar:  vehicles take longer to complete the route than is scheduled.  This might be a problem in terms  of schedule adherence when the fact that the average bus leaves 48 seconds later than the  scheduled departure is considered.  Summary statistics are reported in Table 5. 
+In terms of passenger activity, there is an average of 116 passengers using the front  door while an average 48 passengers use the back door per trip. Because passenger activity  outside the analysis segment for the trip was excluded, as would be expected, the number of  passengers boarding and alighting does not add up in any trip.  In average around 92  passengers will board a bus on an average trip, although the average load over the length of the  trip is of less than 24 passengers.  The mean number of actual stops in the analysis segment (30 
+
+13   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+out of 35 or 37 scheduled stops depending on route direction) suggests that limited service  might yield some significant time savings.  The high stopping frequency is also reflective of high  passenger activity. 
+The average daily rainfall, snow and snow on the ground per trip during the study period  were 1.46 mm, 0.84 cm and 6.9 cm respectively.  The problem with these weather variables is  that they vary considerably from their mean values.  The extreme values suggest that certain  weather events might have important impacts on travel time.  
+
+Table 5:
+
+Summary Statistics 
+
+Variable 
+
+Run Time (Analysis) 
+
+Scheduled Run Time (Analysis) 
+
+Actual Run Time 
+
+Scheduled Run Time 
+
+Delay Start 
+
+Boardings front door 
+
+Alightings front door 
+
+Boardings and alightings front door 
+
+(Boardings and alightings front door) 
+
+Boardings back door 
+
+Alightings back door 
+
+Boardings and alightings back door 
+
+(Boardings and alightings front door) 
+
+Average Load 
+
+Boardings (Analysis) 
+
+Alightings (Analysis) 
+
+Southbound 
+
+Actual Stops 
+
+Low floor bus 
+
+Weekday 
+
+TD Early AM 
+
+TD Peak AM 
+
+TD Midday 
+
+TD Peak PM 
+
+TD Late PM 
+
+Rain (mm) 
+
+Snow (cm) 
+
+Snow ground (cm) 
+
+ 
+
+Minimum 
+1096  1680  1208  1800  783 
+0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  14 
+
+Maximum 
+3548  2460  7896  2640  1758  247  130  323  104329 
+40  170  201  40401  59  229  249 
+1  37  1  1  1  1  1  1  1  39  32  40 
+
+Mean 
+2088.30  2181.33  2408.88  2334.70 
+47.89  91.98  43.73  115.97  15680.37  0.54  48.79  48.11  2951.19  23.87  73.68  90.40  0.48  30.06  0.89  0.671  0.049  0.17  0.38  0.18  0.22  1.46  0.84  6.90 
+
+Std. 
+237.39  207.86  276.35  194.66  120.22  37.72  15.45  47.23  12233.40 
+1.84  25.12  25.24  3197.50  9.32  34.28  37.57  0.50  3.69  0.31  0.470  0.216  0.37  0.48  0.39  0.42  4.07  2.89  11.82 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Runtime and delays 
+
+The running times and delays were then analyzed by direction.  The objective is to  confirm whether or not there are any problems with the schedule or with schedule adherence.   The following variables were analyzed: actual run time (departure at the first stop to the arrival  at the last stop), the scheduled run time (from the first to last stop), the delay at the start of the  route (departure time minus the scheduled departure time), the delay at the end of the route  and the delay at the last time point (SaintMichel and SaintJoseph southbound; SaintMichel  and de Louvain northbound). 
+Southbound buses take on average an additional 2.5 minutes more per trip (40.49  minutes northbound vs. 39.78 minutes southbound) which is expected given the additional  stop, the extra turns, traffic signals and route length (run times per direction are given in table  6).   When looking at the mean scheduled time per direction and the standard deviation of the  actual run time, we notice that there is a problem with the schedule in the northbound  direction because this delay (3.24 minutes) is greater than the standard deviation.  For  southbound buses, the difference between the mean scheduled and run times, 40.69 and 39.78  minutes respectively, is less than a minute and also less than the standard deviation of the  actual run time (2.59 minutes).  This suggests that there are no major problems with the  schedule in the southbound direction.    
+
+15   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Table 6:
+
+Run times by direction 
+
+   
+
+Northbound 
+
+Actual run time (minutes)1  Analysis segment actual run time  (minutes) 
+
+Scheduled Route Run Time (minutes) 
+
+Delay at start of route (minutes) 
+
+Delay at end of route (minutes) 
+
+Delay at before last timepoint (minutes) 
+
+Southbound 
+
+Actual run time (minutes)  Analysis segment actual run time  (minutes) 
+
+Scheduled route run time (minutes) 
+
+Delay at start of route (minutes) 
+
+Delay at end of route (minutes) 
+
+Delay at before last timepoint (minutes) 
+
+ 
+
+Mean  40.49 
+    33.43  37.25  0.91  4.15  1.07  39.78 
+36.26  40.69  0.68  0.22  1.46 
+
+Std.   Minimum  Maximum 
+
+4.59  20.13 
+
+61.70 
+
+3.56  2.90  2.10  4.40  2.88  4.60 
+
+18.26  30.00  12.84  13.03  14.50  21.67 
+
+49.98  42.00  28.51  33.05  29.13  131.60 
+
+3.84  2.59  1.89  4.24  2.99 
+
+19.80  31.00  13.05  13.25  10.80 
+
+59.13  44.00  29.30  92.79  32.31 
+
+Histograms of the actual run time and schedule run time per direction were then 
+
+generated and are given in figures 2 to 5.  For both directions, the actual running times are 
+
+distributed normally around the mean.  The distribution for scheduled run times is not normal 
+
+since schedules are adjusted based on the time of day.  Southbound scheduled run times are 
+
+mostly clustered in the upper ranges while northbound scheduled times vary more. 
+
+                                                             
+1 It is important to distinguish between the run time for the entire route and the analysis segment.  The analysis  segment is shorter than the entire route.  The extreme values of the run time were due to problems that were  outside of the analyzed segment for the purposes of this analysis. 
+16 
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+25%
+
+20%
+
+Observations
+
+15%
+
+10%
+
+5%
+
+0% 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61
+
+Run time (minutes)
+Figure 2: Actual run time  northbound 
+20%
+
+ 
+
+18%
+
+16%
+
+14%
+
+Observations
+
+12%
+
+10%
+
+8%
+
+6%
+
+4%
+
+2%
+
+0% 30 31 32 33 34 35 36 37 38 39 40 41 42
+
+Figure 3:
+
+Scheduled run time (minutes)
+Scheduled run time  northbound 
+
+ 
+
+P. Ttreault 
+
+17   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+30%
+
+P. Ttreault 
+
+25%
+
+20%
+
+Observations
+
+15%
+
+10%
+
+5%
+
+0% 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63
+
+Run time (minutes)
+Figure 4: Actual run time  southbound 
+35%
+
+ 
+
+30%
+
+25%
+
+Observations
+
+20%
+
+15%
+
+10%
+
+5%
+
+0% 32 33 34 35 36 37 38 39 40 41 42 43 44
+
+Figure 5:  
+
+Scheduled run time(minutes)
+Scheduled run time  southbound 
+
+ 
+
+The delay at the start of the trip, the end of the trip and at the before last timepoint 
+
+were then analyzed. At the start of the route, the average run starts less than a minute late (see 
+
+18 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+table 6).  The standard deviation (1.89 minutes southbound and 2.10 minutes northbound) is  also low which suggests that most trips are starting close to the scheduled trip start time.  This  can also be seen in the distribution of the delays (see figures 6 and 7). 
+
+60%
+
+50%
+
+40%
+
+Observations
+
+30%
+
+20%
+
+10%
+
+0% 12 9 6 3 0 3 6 9 12 15 18 21 24 27
+Delay (minutes)
+
+Observations
+
+Figure 6: Delay at start of trip  northbound 
+45% 40% 35% 30% 25% 20% 15% 10%
+5% 0%
+10 7 4 1 2 5 8 11 14 17 20 23 26 29 Delay (minutes)
+
+Figure 7:
+
+Delay at start of trip  southbound 
+19 
+
+   
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Since there does not appear to be a problem with the drivers' ability to start on time,  the delay at the end of the run is analyzed. On average buses arrive at the Joliette mtro station  0.22 minutes early while they arrive 4.15 minutes late at HenriBourassa and SaintMichel.  When looking at the histograms, we notice that the run times are distributed around the mean  value with a higher proportion of delays being above than below the mean (see figures 8 and  9).  Buses are probably arriving consistently late in the northbound direction because many  drivers have been observed to take their layovers at the previous stop to the south of Henri Bourassa Boulevard. 
+Because many layovers are not taken at the last stop, the schedule adherence at the  previous timepoint was analyzed.  For the southbound direction, this timepoint is at the  intersection of boulevard SaintMichel and boulevard SaintJoseph.  In the northbound  direction, the timepoint is at the intersection of boulevard SaintMichel and de Louvain Street  East.  In the northbound direction, buses are on average late by just over a minute.  This  confirms that the problem with the schedule is occurring between the end of the route and the  previous time point.  For the southbound direction, buses are leaving 1.46 minutes late on  average from the intersection of SaintMichel and SaintJoseph, but drivers are arriving ontime  at the next time point.  Histograms of the delay at the before last timepoint are given in figures  10 and 11. 
+ 
+
+20   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+Observations
+
+Observations
+
+16% 14% 12% 10%
+8% 6% 4% 2% 0%
+13 10 7 4 1 2 5 8 11 14 17 20 23 26 29 32 Delay (minutes)
+Figure 8: Delay at end of trip  northbound 
+16% 14% 12% 10%
+8% 6% 4% 2% 0%
+13 10 7 4 1 2 5 8 11 14 17 20 23 26 29 32 Delay (minutes)
+Figure 9: Delay at end of trip  southbound 
+
+   
+
+21   
+
+P. Ttreault 
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+30%
+
+P. Ttreault 
+
+25%
+
+20%
+
+Observations
+
+15%
+
+10%
+
+5%
+
+0% 14 11 8 5 2 1 4 7 10 13 16 19 22 25 28
+
+Delay (minutes)
+
+ 
+
+Figure 10: Delay at the before last timepoint (SaintMichel and de Louvain)  northbound 
+
+25%
+
+20%
+
+Observations
+
+15%
+
+10%
+
+5%
+
+0%
+
+10 8 6 4 2 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32
+
+Delay (minutes)
+
+ 
+
+Figure 11: Delay at the before last timepoint (SaintMichel and SaintJoseph)   southbound 
+
+22 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Run time model 
+
+Since this is the first time that archived STM AVL and APC data has been used for this 
+
+type of analysis, the first step is to develop a generalized run time model to assess the data.  
+
+The characteristics of this model are well known.  Checking the effects of independent variables 
+
+on run time and to what extent it follows the theory of transit planning is used as a benchmark 
+
+for assessing the quality of the collected data.  A general multivariate linear OLS regression 
+
+model for run time was derived using the archived trip data and is given in the following table. 
+
+ 
+
+Table 7:
+
+Run Time Model 
+
+Variable 
+
+Constant 
+
+Average Load 
+
+Boardings + Alightings Front Door 
+
+(Boardings + Alightings Front Door) 
+
+Boardings + Alightings Back Door 
+
+(Boardings + Alightings Back Door) 
+
+Weekday 
+
+Southbound 
+
+Low Floor 
+
+TD Early AM 
+
+TD Peak AM 
+
+TD Midday 
+
+TD Peak PM 
+
+Actual Stops 
+
+Rain (mm) 
+
+Snow (cm) 
+
+Snow Ground (cm) 
+
+Delay Start 
+
+B 
+1443.48 2.34 2.11
+0.003 0.99 0.02 39.45
+151.39 98.31 136.41 51.40 90.83 180.15 12.89
+1.81 2.87 2.26 0.05
+
+t 
+82.51** 4.05** 8.22** 3.82** 2.38* 8.47** 9.26** 37.56** 15.50** 14.55** 8.26** 16.47** 28.61** 15.89** 3.81** 4.37** 12.90** 3.91**
+
+R  0.603 N  6620
+Dependent Variable: Run Time (seconds)  * 95% significant or higher | ** 99% significant or higher 
+
+ 
+
+23   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+As expected, the run time decreased (2.34 seconds/passenger) as average passenger  loads increased. Passenger activity (boardings and alightings) at the front door increases the  running time by 2.11 seconds per passenger, but since the activity at the front door squared is  negative, the time per passenger decreased as the overall passenger activity increased.  At the  back door, each passenger decreases the run time by 0.99 seconds.  This shows that use of the  back door has a benefit on the run time, but since the passenger activity squared is positive, the  time used by passenger increases as activity increases.  The type of bus used for the route also  has some benefits; lowfloor buses are 98 seconds faster than highfloored buses if all other  values are kept to their means.  Weekday trips were longer by 39 seconds.  Southbound trips  were also longer by 151 seconds, which accounts for the additional distance, intersections and  traffic signals.  The time of day also has an important influence on run time.  It is interesting to  note that the coefficient associated with midday trips is greater than am peak trips.  Of course,  trips in the AM peak would still be longer when accounting for increased passenger activity, but  this might be due to waiting at time points or other factors apart from traffic conditions.  PM  peak trips are much longer (180 seconds), probably due to the effects of congestion.  The  number of stops actually made also increases the run time and mostly accounts for  deceleration and acceleration time (12.9 seconds per actual stop).  Buses starting their runs late  are faster than on time or ahead of schedule buses.  Drivers seem to be adjusting their  behaviour based on whether they are ahead or behind schedule since run times decrease by  0.05 seconds for every second of delay.  As Montral is also known for its winters, the weather  variables had a statistically significant impact on run time.  For every millimetre of rain on a  given day, the trip took an additional 1.81 seconds if all other values are kept to their mean.   Snow also has an important impact on run time.  For every centimetre of snow, the run time  would increase by 2.87 seconds.  The snow on the ground which accounts for lower  temperatures and delays in snow clearing also has an impact on the travel time (2.26 seconds  per centimetre of snow on the ground).  The previous model shows us that it compares to  previous research and can be used further for analysis which establishes the robustness of the  STM collection and archival system. 
+
+24 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Selection of stops 
+
+For limitedstop bus service, four different scenarios were generated. Scenario 1 selects  stops based on transferpoints.  The second selected stops based on passenger activity as  measured by the SCAD system.  The third scenario selected stops based on the OD survey.  The  last scenario combines the results of the first three scenarios.  Another limitedstop service was  also analyzed after the initial results were presented and are available in a separate section (see  page 44). 
+Run time models are generated for each scenario isolating the actual stops skipped and  passenger activity. 
+ 
+
+Scenario 1  In scenario 1, all stops that were transfer points are selected for the limited service.  
+This scenario does not adjust for the frequency of intersecting routes.  As can be seen in figure  12, intersecting routes are numerous and are often clustered together.  This suggests that not  all transfer points should be served by limited service.  This scenario was developed to prove  that a suggestion from theory and practice that just providing limited service at transfer points  only is suboptimal.  
+ 
+
+25   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Figure 12:          
+
+Selected stops for scenario 1 
+
+26   
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+ 
+
+Table 8:
+
+Selected stops for scenario 1 
+
+Stop Number 
+
+Location 
+
+1  Hochelaga et Joliette (Mtro Joliette)  3  Davidson et Sherbrooke  4  SaintMichel/Davidson et Rachel  6  SaintMichel et du MontRoyal  7  SaintMichel et SaintJoseph  9  SaintMichel et Masson  12  SaintMichel et Rosemont  14  SaintMichel et Beaubien  16  SaintMichel et Blanger  18  SaintMichel et JeanTalon  19  SaintMichel et Everett (Mtro Saint
+Michel)  21  SaintMichel et Villeray  22  SaintMichel et Crmazie (Sud)  23  SaintMichel et Crmazie (Nord)  24  SaintMichel et Jarry  34  SaintMichel et Charland  37  SaintMichel et Fleury  39  SaintMichel et HenriBourassa (Sud)  40  SaintMichel et HenriBourassa (Nord)  42  Valois et Sherbrooke 
+ 
+
+STM Stop Num. 
+
+North  South 
+
+120142 120142 
+
+119261
+
+ 
+
+118491 118495 
+
+117461 117293 
+
+116671 116673 
+
+115581 115583 
+
+114101 114103 
+
+112971 112973 
+
+111761 111763 
+
+111071 111073 
+
+110916 110913 
+
+110321  
+110061 109591 106161 1800221 1802171 1802186
+ 
+
+110323  110068  110063  109593  106168  1800223  1802198  1802186  119473 
+
+P. Ttreault 
+Stop sequence  Nord  South 
+1 40 3  4 36 6 34 7 33 9 31 12 28 14 26 16 24 18 22 19 21
+21 19  18 22 17 23 16 33 7 36 4 38 2 39 1  38
+
+Scenario 2  Scenario 2 involved selecting stops based on passenger activity (alightings and 
+boardings) at every stop along the route.  As can be seen in Figure 13, many stops in the middle  of the route have high passenger activity without being transfer points. The highest passenger  activity, by far, was at mtro stations as seen in Figure 13 and Table 9. Although the stops with  the most activity are at transfer points, some stops in the middle part of the route, such as  SaintMichel and Legendre, have higher passenger activity than certain transfer stops such as  Davidson and Sherbrooke.   
+
+27   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Figure 13:          
+
+Passenger Activity by Stop 
+
+28   
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Table 9:
+
+Passenger Activity by Stop 
+
+Stop 
+
+Location 
+
+1  Hochelaga et Joliette (Mtro Joliette) 2  Hochelaga et Davidson  3  Davidson et Sherbrooke  4  SaintMichel/Davidson et Rachel  5  SaintMichel et WilliamTremblay  6  SaintMichel et du MontRoyal  7  SaintMichel et SaintJoseph  8  SaintMichel et Laurier  9  SaintMichel et Masson  10  SaintMichel et Dandurand  11  SaintMichel et Holt  12  SaintMichel et Rosemont  13  SaintMichel et de Bellechasse  14  SaintMichel et Beaubien  15  SaintMichel et StZotique  16  SaintMichel et Blanger  17  SaintMichel et Blair  18  SaintMichel et JeanTalon  19  SaintMichel et Everett (Mtro SaintMichel) 20  SaintMichel et Puccini  21  SaintMichel et Villeray  22  SaintMichel et Crmazie (Sud)  23  SaintMichel et Crmazie (Nord)  24  SaintMichel et Jarry  25  SaintMichel et d'Hrelle (Sud)  26  SaintMichel et d'Hrelle (Nord)  27  SaintMichel et Deville  28  SaintMichel et Robert  29  SaintMichel et Denis Papin  30  SaintMichel et mile Journault  31  SaintMichel et Legendre  32  SaintMichel et de Louvain  33  SaintMichel et Champdor  34  SaintMichel et Charland  35  SaintMichel et Sauv  36  SaintMichel et de MontJoli  37  SaintMichel et Fleury  38  SaintMichel et Prieur  39  SaintMichel et HenriBourassa (Sud) 40  SaintMichel et HenriBourassa (Nord) 41  Rachel et de Chambly  42  Valois et Sherbrooke  43  Nicolet et Hochelaga 
+
+Boardings 
+
+Mean 
+11.99 0.81 0.93 0.90 0.76 1.31 1.96 1.03 4.64 1.57 0.41 2.64 0.86 4.12 0.74 2.62 0.76 1.84
+13.66 0.13 2.20 0.48 1.63 4.37 0.42 0.83 0.95 1.71 2.29 2.71 3.73 2.38 1.80 0.95 2.37 0.58 2.63 0.80 3.38 3.00 0.46 0.69 0.11
+
+Std. 
+15.23 1.39 1.55 1.38 1.25 1.83 2.22 1.53 3.75 2.08 0.89 2.92 1.36 4.28 1.15 2.68 1.17 2.74
+10.16 0.50 2.74 1.04 2.30 3.88 0.84 1.34 1.43 2.09 2.77 3.23 3.63 3.08 2.93 1.71 3.51 1.23 3.12 1.49 5.24 4.84 0.92 1.32 0.91
+
+Alightings 
+
+Boardings and  Alightings  
+
+Mean  Std.  Mean  Std. 
+
+9.11  11.9  21.10 12.77
+
+0.15  0.45  0.96 1.48
+
+0.63  0.98  1.56 1.92
+
+1.10  1.41  2.01 2.08
+
+1.11  1.49  1.87 2.05
+
+1.18  1.62  2.49 2.42
+
+1.79  1.92  3.75 3.07
+
+1.00  1.46  2.03 2.13
+
+4.86  3.82  9.50 5.96
+
+1.41  1.71  2.98 2.66
+
+0.43  0.88  0.84 1.27
+
+2.62  2.45  5.25 4.32
+
+0.97  1.47  1.83 2.16
+
+4.01  3.55  8.13 6.20
+
+0.71  1.11  1.46 1.61
+
+2.48  2.27  5.10 3.92
+
+0.88  1.25  1.64 1.85
+
+1.00  1.97  2.84 4.07
+
+15.19  10.3  28.85 14.57
+
+0.13  0.52  0.27 0.79
+
+2.45  3.08  4.65 4.41
+
+0.74  1.22  1.22 1.72
+
+1.38  1.89  3.01 3.17
+
+4.50  3.49  8.87 5.90
+
+0.35  0.77  0.77 1.22
+
+0.96  1.48  1.79 1.94
+
+1.09  1.49  2.04 2.14
+
+1.83  2.02  3.54 2.84
+
+2.20  2.42  4.49 3.55
+
+2.62  2.80  5.33 3.84
+
+3.88  3.59  7.61 4.84
+
+2.46  3.48  4.84 4.43
+
+1.86  2.53  3.66 3.99
+
+1.72  2.27  2.68 2.78
+
+1.86  1.97  4.23 4.24
+
+0.64  1.20  1.22 1.87
+
+2.84  3.00  5.48 4.35
+
+0.77  1.40  1.58 1.96
+
+5.67  7.52  9.05 8.01
+
+0.29  1.52  3.29 4.92
+
+0.72  1.08  1.18 1.48
+
+2.34  3.82  3.03 4.34
+
+1.53  4.54  1.64 4.98
+
+29   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+  Since not all transfer points have high passenger activity, this suggests that there would  be a smaller impact on users by excluding some transfer points.  This scenario still has the  disadvantage of having a few successive stops clustered together.  A 1 in 4 ratio was used to  select stops (i.e. the top 12 stops in terms of passenger activity along the route were selected  [see Figure 14]). 
+
+Figure 14:
+ 
+
+Selected stops for scenario 2 
+30 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+ 
+
+Table 10: Selected stops for scenario 2 
+
+Stop  Number 
+
+Location 
+
+1  Hochelaga et Joliette (Mtro Joliette) 
+
+9  SaintMichel et Masson 
+
+12  SaintMichel et Rosemont 
+
+14  SaintMichel et Beaubien 
+
+16  SaintMichel et Blanger 
+
+19  SaintMichel et Everett (Mtro SaintMichel) 
+
+24  SaintMichel et Jarry 
+
+30  SaintMichel et mile Journault 
+
+31  SaintMichel et Legendre 
+
+37  SaintMichel et Fleury 
+
+39  SaintMichel et HenriBourassa (Sud) 
+
+40  SaintMichel et HenriBourassa (Nord) 
+
+ 
+
+STM Stop Num.  North  South  120142  120142  115581  115583  114101  114103  112971  112973  111761  111763  110916  110913  109591  109593  107616  107613  107181  107183  1800221  1800223  1802171  1802198  1802186  1802186 
+
+P. Ttreault 
+Stop sequence  Nord  South 
+1  40  9  31  12  28  14  26  16  24  19  21  23  16  29  11  30  10  36  4  38  2  39  1 
+
+Scenario 3  For the third scenario, data from users that declared that they used this bus route in the 
+Montral origindestination were used.  Trips from the survey were assigned to the transferring  stop or the closest stop from their origin/destination based on whether users transferred from  another route or walked to the route.  This was done using the closest facility tool in ArcGIS's  Network Analyst extension with scenario 3 stops as "facilities" and origins/destinations as  "incidents".  A road network from DMTI of the Montral region was used to do this analysis.   Recreational paths were included to this network while freeways were removed for the  purpose of this analysis.     
+
+31   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Figure 15:          
+
+Passenger activity by stop (OD) 
+
+32   
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Table 11: Passenger activity by stop (OD) 
+
+Stop  Number 
+
+Location 
+
+1  Hochelaga et Joliette (Mtro Joliette) 2  Hochelaga et Davidson  3  Davidson et Sherbrooke  4  SaintMichel/Davidson et Rachel 5  SaintMichel et WilliamTremblay 6  SaintMichel et du MontRoyal 7  SaintMichel et SaintJoseph  8  SaintMichel et Laurier  9  SaintMichel et Masson  10  SaintMichel et Dandurand 
+
+Number of  passengers  using the stop  as first stop 
+157 7 6 16 13 9 31 35 59 33
+
+Number of  passengers using  the stop as last 
+stop 
+145  8 4 21  13  11  33  37  55  35 
+
+Total number  of passengers  using the stop  
+302 15 10 37 26 20 64 72 114 68
+
+11  SaintMichel et Holt 
+
+33
+
+6
+
+12  SaintMichel et Rosemont 
+
+57 62  119
+
+13  SaintMichel et de Bellechasse 
+
+32 26  58
+
+14  SaintMichel et Beaubien 
+
+54 49  103
+
+15  SaintMichel et StZotique 
+
+20 21  41
+
+16  SaintMichel et Blanger 
+
+41 29  70
+
+17  SaintMichel et Blair 
+
+7 10  17
+
+18  SaintMichel et JeanTalon 
+
+20 20  40
+
+19  SaintMichel et Everett (Mtro SaintMichel)
+
+196
+
+210 
+
+406
+
+20  SaintMichel et Puccini 
+
+00
+
+0
+
+21  SaintMichel et Villeray 
+
+49 49  98
+
+22  SaintMichel et Crmazie (Sud)
+
+5 5 10
+
+23  SaintMichel et Crmazie (Nord)
+
+32 32  64
+
+24  SaintMichel et Jarry 
+
+55 54  109
+
+25  SaintMichel et d'Hrelle (Sud)
+
+11
+
+2
+
+26  SaintMichel et d'Hrelle (Nord)
+
+22
+
+4
+
+27  SaintMichel et Deville 
+
+11 11  22
+
+28  SaintMichel et Robert 
+
+18 20  38
+
+29  SaintMichel et Denis Papin 
+
+44 44  88
+
+30  SaintMichel et mile Journault
+
+31 32  63
+
+31  SaintMichel et Legendre 
+
+29 27  56
+
+32  SaintMichel et de Louvain 
+
+67 69  136
+
+33  SaintMichel et Champdor 
+
+28 25  53
+
+34  SaintMichel et Charland 
+
+30 30  60
+
+35  SaintMichel et Sauv 
+
+45
+
+9
+
+33 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Stop  Number 
+
+Location 
+
+36  37  38  39  40  41  42  43 
+ 
+
+SaintMichel et de MontJoli  SaintMichel et Fleury  SaintMichel et Prieur  SaintMichel et HenriBourassa (Sud) SaintMichel et HenriBourassa (Nord) Rachel et de Chambly  Valois et Sherbrooke  Nicolet et Hochelaga 
+
+Number of  passengers  using the stop  as first stop 
+1 36 7 70 7 5 15 3
+
+Number of  passengers using  the stop as last 
+stop 
+1 35  6 68  8 7 18  5
+
+Total number  of passengers  using the stop  
+2 71 13 138 15 12 33 8
+
+ 
+
+A 1 in 4 ratio was also used to select the stops with the most passenger activity and the 
+
+most origindestination pairs. The advantage of using this survey is that it contains approximate 
+
+information on where passengers boarded and alighted which the APC data does not indicate. 
+
+Using the stop selection in scenario 3, over 33% of users would be able to board or alight at the 
+
+same stop using the limited service without having to transfer to the regular route or walk to 
+
+the closest limited stop. 
+
+As can be seen from the selection, using the APC and AVL data seems to be the best 
+
+method to select stops based on passenger activity since the OD survey does not have 
+
+information on which stops are actually being used by users. The major problem with the 
+
+selection of stops criteria so far is that they do not account for stop spacing. 
+
+ 
+
+34   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Figure 16:          
+
+Selected stops for scenario 3 
+
+35   
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+ 
+
+Table 12: Selected stops for scenario 3 
+
+Stop  Number 
+
+Location 
+
+1  Hochelaga et Joliette (Mtro Joliette) 
+
+9  SaintMichel et Masson 
+
+12  SaintMichel et Rosemont 
+
+14  SaintMichel et Beaubien 
+
+19  SaintMichel et Everett (Mtro SaintMichel) 
+
+21  SaintMichel et Villeray 
+
+24  SaintMichel et Jarry 
+
+29  SaintMichel et Denis Papin 
+
+32  SaintMichel et de Louvain 
+
+39  SaintMichel et HenriBourassa (Sud) 
+
+40  SaintMichel et HenriBourassa (Nord) 
+
+ 
+
+STM Stop Num.  North  South  120142 120142  115581 115583  114101 114103  112971 112973  110916 110913  110321 110323  109591 109593  107971 107973  106781 106783  1802171 1802198  1802186 1802186 
+
+P. Ttreault 
+Stop sequence  Nord  South 
+1 40  9 31  12 28  14 26  19 21  21 19  23 16  28 12  31 9  38 2  39 1 
+
+Scenario 4  In scenario 4, the same 1 in 4 ratio is used to obtain an average spacing between 800 to 
+1,600 meters. In this scenario, a number of criteria are used in order to select limitedservice  stops.  The first criterion was the selection of stops that had the most activity.  This led to the  selection of major generators such as mtro stations and important intersecting bus routes.   After this initial criterion, stops were then selected in order to provide larger spacing and less  clustering.  In addition, to be selected, stops had to be paired with a stop in the opposite  direction in order to not confuse users.  The selected stops for scenario 4 are shown in figure  17. 
+ 
+
+36   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Figure 17:                
+ 
+
+Selected stops for scenario 4 
+37 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+ 
+
+Table 13: Selected stops for scenario 4 
+
+Stop  Number 
+
+Location 
+
+1  Hochelaga et Joliette (Mtro Joliette) 
+
+9  SaintMichel et Masson 
+
+14  SaintMichel et Beaubien 
+
+16  SaintMichel et Blanger 
+
+19  SaintMichel et Everett (Mtro SaintMichel) 
+
+24  SaintMichel et Jarry 
+
+29  SaintMichel et Denis Papin 
+
+32  SaintMichel et de Louvain 
+
+37  SaintMichel et Fleury 
+
+39  SaintMichel et HenriBourassa (Sud) 
+
+40  SaintMichel et HenriBourassa (Nord) 
+
+   
+
+STM Stop Num.  North  South  120142 120142  115581 115583  112971 112973  111761 111763  110916 110913  109591 109593  107971 107973  106781 106783  1800221 1800223  1802171 1802198  1802186 1802186 
+
+P. Ttreault 
+Stop sequence  Nord  South 
+1 40  9 31  14 26  16 24  19 21  23 16  28 12  31 9  36 4  38 2  39 1 
+
+Estimation of bus run times 
+The run time for each scenario was estimated based on the model presented in table 7.  Since it is difficult to give an exact run time, a range of travel times is given for both the limited  and regular routes. These estimations assume that the route layout, traffic conditions and other  conditions would remain unchanged.  Three sets of travel times are given for each scenario.  An  optimistic running time, a pessimistic time and a realistic (or best estimate) were generated.   The modified models separating passenger activity and actual stops into stops served by the  limited service and stops not served by this service are presented in table 14.  As can be seen,  the magnitude of the coefficients has changed when compared to the model presented in table  7, yet the direction and statistical significance are around the same level in the model in table 7  except for the activity at the back door. 
+         
+38 
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Table 14: Run Time Models to Estimate Mean Run Times by Scenario 
+
+Variables 
+
+Scenario 1 
+
+Scenario 2 
+
+Scenario 3 
+
+Scenario 4 
+
+B  t  B  t  B  t  B  t 
+
+(Constant) 
+
+1464.86  73.50  1445.03  58.01  1431.59  58.59  1459.20  59.34 
+
+Average Load 
+
+3.21  6.08  3.30  6.29  3.23  6.13  3.32  6.32 
+
+Weekday 
+
+39.63  9.19  39.31  9.13  38.01  8.76  39.71  9.22 
+
+Southbound 
+
+170.61  33.88  159.24  38.64  167.00  37.72  160.78  38.98 
+
+Low floor bus 
+
+90.50  13.57  92.08  13.98  92.64  14.14  92.24  14.05 
+
+TD Early AM 
+
+120.24  12.35  131.34  13.66  122.38  12.69  127.65  13.19 
+
+TD Peak AM 
+
+64.37  9.67  57.07  8.64  64.79  9.41  64.85  9.45 
+
+TD Midday 
+
+96.84  17.07  97.16  16.89  95.60  16.81  98.09  17.09 
+
+TD Peak PM 
+
+181.13  28.46  184.15  28.85  181.67  28.51  182.24  28.63 
+
+Rain (mm) 
+
+1.81  3.94  1.81  3.93  1.80  3.91  1.80  3.90 
+
+Snow (cm) 
+
+3.11  4.70  3.06  4.61  3.07  4.63  3.03  4.57 
+
+Snow ground (cm) 
+
+2.39  13.72  2.38  13.61  2.38  13.60  2.37  13.53 
+
+Delay Start 
+
+0.05  3.15  0.05  2.98  0.05  2.99  0.05  3.02 
+
+Actual stops 
+
+8.48  5.13  13.72  4.36  14.87  4.32  10.90  3.19 
+
+Actual stops skipped   Boardings and alightings  front door   Boardings and alightings  front door skipped   Boardings and alightings  back door  Boardings and alightings  back door skipped  
+
+13.28  1.41  0.88  1.27  3.41 
+
+12.87  10.50 
+5.16  4.89  12.28 
+
+11.14  1.20  1.24  1.35  3.19 
+
+12.48  8.10  7.49  4.71 
+11.74 
+
+11.35  1.70  0.76  1.59  2.88 
+
+12.97  10.86 
+5.13  5.77  11.11 
+
+11.50  1.30  1.17  1.10  3.22 
+
+13.27  8.21  7.64  3.74 
+12.51 
+
+R 
+
+0.602 
+
+0.600 
+
+N 
+
+6620 
+
+6620 
+
+Dependent Variable: Run Time (Analysis) 
+
+*All variables are significant at the  99% confidence level 
+ 
+
+0.601  6620 
+
+0.601  6620 
+
+By running separate run time models for each scenario, it is possible to generate run 
+
+time estimates for both of the limited and regular services.  Table 15 includes the estimates of 
+
+run times for both limited and regular service.  The realistic limited service removed the time 
+
+components associated with passenger activity and actual stops that should not be served by 
+
+the limited service to generate the run time estimates.  The realistic regular service removed 
+
+passenger activity at stops served by the limited service.  The optimistic limited service 
+
+removed all time components associated with passenger activity at all stops and the actual 
+39 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+stops skipped.  The optimistic regular service is the same as the current service because no time 
+
+component was subtracted.  The pessimistic express service removed time components 
+
+associated with the number of actual stops skipped while the pessimistic regular service 
+
+removed the time associated with passenger activity, since this scenario assumes that all 
+
+passengers walk to the nearest stop with limited stop service.  Assumptions used to estimate 
+
+bus run times are explained on page 12. 
+
+ 
+
+Table 15: Estimated Analysis Segment Run Times for New Limited and Regular Service 
+
+Scenario 
+
+1234
+
+Running Times (minutes) 
+
+Current (Route 67) 
+
+34.8 34.8 34.8 34.8
+
+Limited (Realistic) 
+
+29.3 28.4 28.5 27.9
+
+Limited (Optimistic) 
+
+27.1 26.5 26.5 26.2
+
+Limited (Pessimistic) 
+
+31.2 30.7 30.6 30.3
+
+Regular (Realistic) 
+
+32.6 33.1 32.7 33.2
+
+Regular (Optimistic) 
+
+34.8 34.8 34.8 34.8
+
+Regular (Pessimistic) 
+
+30.7 30.6 30.7 30.7
+
+ 
+
+Table 15 shows the expected range of bus run times in the analysis segment.  Scenario 4 
+
+would yield to the most time savings (4.5 to 8.6 minutes) because the coefficients associated to 
+
+activity at stops skipped is higher and the average number of passengers and actual stops 
+
+skipped is higher than any of the other scenarios.  It is also important to note that although 
+
+scenario 1 (time savings ranging from 3.6 to 7.7 minutes) serves twice as many stops, the run 
+
+time is only roughly 1.5 minutes more when compared to scenario 4.  This is due to the fact 
+
+that a large proportion of the time savings are associated with the actual stops skipped and 
+
+with passenger activity.  The time savings for scenarios 2 and 3 are almost the same (3.1 to 8.3 
+
+minutes and 3.2 to 8.3 minutes respectively).  Selected stops in scenarios 2, 3 and 4 have the 
+
+highest activity compared to scenario 1 stops.  Since the activity squared terms were not 
+
+included in this model, there might be additional time savings due to consolidating demand at 
+
+certain stops. 
+
+40   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+The STM then asked for time estimates for a slightly modified limitedstop rushhour  service, route 467.  The analysis and obtained run times are given in a separate section (see  page 44).  These run time estimates take into consideration the direction (north or south) and  the time of day (peak AM or peak PM).  Time savings for the entire route range from 4 to 11  minutes. 
+
+Limitations  Of course, using only AVL and APC data to estimate bus run times has its limitations.  For 
+instance, all variables that could have an impact on the bus run time are either not recorded or  do not have access to the information.  For example, the number of red lights, the time stopped  in traffic, traffic incidents, and the driver's experience all probably have an impact on the bus  run time.  This information would give a more accurate diagnostic of the current situation. 
+
+In addition, the performance of buses on limitedstop service is not fully known.  It is  very probable that buses might not stop for as many red lights as is currently the case, but no  information on this was available.  Other factors which were not measured might have an  influence on increasing or decreasing run times. 
+
+The major limitation of this study is that no information on passenger demand was  available.  This route does not operate in isolation from other routes on the STM network.  If  run times are decreased, one would expect that more passengers would be attracted to this  route.  This could either be existing users that use another route or new users that are currently  using other modes or not making the trip at all.  This potential increased ridership might have  an effect on run times along this route due to the additional alightings and boardings, even  though travel times would still be expected to be quicker than the current situation.  Modelling  the reallocation of passenger demand on the entire network based on the current travel time  estimates would be useful.  Macro scale transit modelling software packages could be used to  generate these passenger increase estimations.  This modelling technique would also be useful  to estimate the percentage of users using the regular or the express routes.   
+
+41   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Walking distances 
+
+Offering a limited stop service should have an effect on passenger walking distances if 
+
+users choose to walk further to use the limited service.  Accordingly, it was important to 
+
+measure the effects on walking distance associated with each scenario using the data from the 
+
+OD survey.  Table 16 shows the average walking distance to the nearest stop served by limited 
+
+service.  Scenario 4 has the advantage of having the smallest change in walking distances which 
+
+would impact around 60% of users.  This suggests that a number of users could walk to the next 
+
+bus stop to access the limited service. 
+
+ 
+
+Table 16: Average Walking Distance to the Closest Stop Served by LimitedService by 
+
+Scenario 
+
+Scenario 
+
+1 2 3 4 
+
+Number of stops served 
+
+20 12 11 11 
+
+Average walking distance 
+
+486.8 448.8 434.4 435.2 
+
+(meters)* 
+
+Average change in average 
+
+426.4 284.9 297.8 276.0 
+
+walking distance (meters) for 
+
+affected users only 
+
+Percentage of walking access 
+
+52.4 65.1 57.5 62.3 
+
+trips with change in walking 
+
+distance 
+
+*Note: The average walking distance for new service assumes that all users walk to the  nearest bus stop served by the limited service even though the nearest stop is still served  by a regular route. The current average distance is 263.2 m. The average walking  distances do not include transfer trips whose walking distance would be close to zero in  many cases. 
+ 
+
+Time savings per user 
+Another way of looking at the effects of implementing the limited service is magnifying  the effects on personal travel time.  Having the OD survey enables estimating an average  savings per person for current users.  
+In order to model this, if both the first stop and the last stop of OD trips are selected in  a given scenario, then users are assigned to the limited service.  If not, users are assigned to the 
+42   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+regular route.  The distance between the first and last stops was then found using the Saint
+
+Michel route as a network.  Time savings per user were then found by applying the average 
+
+time savings per run for the proportion of the route used by a particular user. 
+
+The average user travelled 2.5 km on route 67, not including walking distances. Because 
+
+the route distance is considerably longer, the average time savings per user are less than that of 
+
+a trip. The estimated average time savings per user are given in table 17 for both limited and 
+
+regular service users.  Time savings for limited service users are higher than for regular users.  
+
+For scenario 4, average time savings would range from 1.5 to 2.9 minutes per trip.  For regular 
+
+service trips, it is expected that they would save up to 1.2 minutes in travel time.  It is important 
+
+to note that these are passengers who were already using these stops before the limited 
+
+service is offered.  The savings to passengers who might shift will be less since additional 
+
+walking distances have to be taken into account.  Yet these passengers might not need to shift 
+
+since travel time savings are expected to occur along the regular route as well.  It is expected 
+
+that users that would shift to the limited service are travelling longer distances than average 
+
+along this route. 
+
+ 
+
+Table 17: Time savings per user 
+
+Proportion of 
+
+Time Savings (min.) 
+
+Scenario 
+
+trips 
+
+Realistic  Optimistic  Pessimistic 
+
+Limited service trips 
+
+1 
+
+41.0% 
+
+1.86
+
+2.62
+
+1.21
+
+2 
+
+28.5% 
+
+2.15
+
+2.78
+
+1.38
+
+3 
+
+33.6% 
+
+2.04
+
+2.71
+
+1.35
+
+4 
+
+30.3% 
+
+2.30
+
+2.87
+
+1.49
+
+Regular route trips 
+
+1 
+
+59.0% 
+
+0.60
+
+0.00
+
+1.15
+
+2 
+
+71.5% 
+
+0.51
+
+0.00
+
+1.21
+
+3 
+
+66.4% 
+
+0.61
+
+0.00
+
+1.22
+
+4 
+
+69.7% 
+
+0.45
+
+0.00
+
+1.20
+
+ 
+
+Scenario 4 is recommended for implementation because of the time savings and the 
+
+selection of stops accounted for various criteria including demand, transfer points and savings 
+43 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+in travel time.  Also, the increase in walking distances for passengers interested in using this  service is minimal compared to the other scenarios, yet passengers who would not like to use  the new service can still walk the same distance and use the regular service which the STM is  planning to retain.  The savings from scenario 4 of limited service should be implemented with  other measures along the route such as stop consolidation along the regular route, transit  signal priority and adjusting the location of stops from near side to far side which could yield  even more time savings for onboard passengers. 
+  TIME ESTIMATES FOR ROUTE 467 
+
+The STM is going ahead with the implementation of limitedstop route service on Saint Michel, route 467, starting on March 30, 2009.  The implementation of limited service on this  route is a first step towards implementing similar service on a number of other frequent bus  routes.  After presentation of the first four scenarios to the STM, they asked to estimate  running times for an express service running along SaintMichel only during peak periods (i.e.  6:30 AM to 9:30 AM and 3:30 PM to 6:30 PM).  The STM also decided to use a 1 to 3 ratio when  selecting bus stops, rather than the 1 to 4 ratio we proposed.  They therefore slightly modified  the stop selection and specified 15 stops that would be served by route 467 which is very  similar to scenario 4.  These stops are shown in the table and figure below.  In the end, the STM  decided to not only implement route 467 during rushhours.  Route 467 will operate between 6  AM and 6:30 PM with maximal headways of 10 minutes [26].  The general model presented  earlier was used to estimate run times for offpeak weekday runs. 
+ 
+
+44   
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+
+P. Ttreault 
+
+Figure 18:                
+ 
+
+Proposed stops for route 467 
+45 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Table 18: Proposed stops served by route 567 
+
+Stop  number  (report)  1  7  9  12  14  16  19 
+21  24  28  30  32  35  37  39  40 
+
+Location  Hochelaga and Joliette (Joliette mtro)  SaintMichel and SaintJoseph  SaintMichel and Masson  SaintMichel and Rosemont  SaintMichel and Beaubien  SaintMichel and Blanger  SaintMichel and Everett (SaintMichel  mtro)  SaintMichel and Villeray  SaintMichel and Jarry  SaintMichel and Robert  SaintMichel and mile Journault  SaintMichel and de Louvain  SaintMichel and Sauv  SaintMichel and Fleury  SaintMichel and HenriBourassa (South)  SaintMichel and HenriBourassa (North) 
+
+ 
+
+STM stop number 
+North  South  120142  120142  116671  116673  115581  115583  114101  114103  112971  112973  111761  111763  110916  110913 
+
+110321  109591  135291  107616  106781  105681  1800221  1802171  1802186 
+
+110323  109593  108413  107613  106783  105683  1800223  1802198  1802186 
+
+Stop sequence  number 
+North  South  1  40  7  33  9  31  12  28  14  26  16  24  19  21 
+21  19  23  16  27  13  29  11  31  9  34  6  36  4  38  2  39  1 
+
+  To estimate rushhour running times, another run time model was generated and given  in table 7.  This model is similar to the model used to produce run time estimates found in table  19 that separates passenger activity between stops served and not by the limited stop service.   The time of day dummy variables using in the model present in table 14 have been replaced by  four dummy variables representing each peak period and direction (i.e. southbound morning  peak, northbound morning peak, southbound evening peak and northbound evening peak).
+
+46   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+ 
+
+Table 19: Linear regression model for time estimate of route 467 
+
+Variables 
+
+B  tstat 
+
+(Constant) 
+
+1483.830  76.41 
+
+Average load 
+
+8.598  17.52 
+
+Weekday 
+
+14.623  3.19 
+
+Southbound 
+
+117.913  20.93 
+
+Low Floor 
+
+79.313  11.75 
+
+Peak AM Southbound 
+
+83.506  9.99 
+
+Peak AM Northbound 
+
+50.440  5.38 
+
+Peak PM Southbound 
+
+72.949  6.94 
+
+Peak PM Northbound 
+
+180.065  21.91 
+
+Rain (mm) 
+
+1.903 
+
+4.05 
+
+Snow (cm) 
+
+3.240 
+
+4.81 
+
+Snow Ground (cm) 
+
+2.493 
+
+13.99 
+
+Delay Start 
+
+0.041  2.48 
+
+Actual Stops 
+
+15.636  7.33 
+
+Actual stops skipped 
+
+12.540  12.29 
+
+Boardings and alightings front door  2.578 
+
+19.32 
+
+Boardings and alightings front door 
+
+skipped 
+
+2.346 
+
+11.74 
+
+Boardings and alightings back door 
+
+2.269 
+
+8.42 
+
+Boardings and alightings back door 
+
+skipped 
+
+3.878 
+
+11.87 
+
+P. Ttreault 
+
+R  0.586  N  6620 
+Dependant variable : Run Time  (Analysis)  *All variables are significant at the 95%  level or higher   
+
+  
+
+  Estimated travel times are found for each scenario using the "optimist", "pessimist" and 
+
+"realist" methods presented earlier in this report on page 12.  Since the analysis removed stops 
+
+at the beginning and end of the route, ratios of the travel time for the entire run and the 
+
+analysis are used to estimate the running time for the entire route.  A ratio of 1.10 is used for 
+
+northbound runs and a ratio of 1.14 is used southbound.  These estimated run times are given 
+
+in the following table. 
+
+47 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+Table 20: Estimated Run Times for route 467 
+
+Run Time (analysis segment) (minutes) 
+
+Route 67 
+
+567 Limited Service 
+
+Route 67 with 567 
+
+Scenario 
+Peak AM  Southbound  Peak AM  Northbound  Peak PM  Southbound  Peak PM  Northbound 
+
+Optimist  Pessimist  Realist  Optimist  Pessimist  Realist 
+
+40.4 
+
+29.2
+
+36.3 33.7
+
+40.4 
+
+33.2  35.9
+
+36.9 
+
+25.4
+
+32.8 30.0
+
+36.9 
+
+29.6  32.3
+
+40.2 
+
+29.0
+
+36.1 33.5
+
+40.2 
+
+33.0  35.7
+
+41.3 
+
+29.7
+
+37.1 34.3
+
+41.3 
+
+33.9  36.7
+
+ 
+
+APPLICATION TO OTHER ROUTES AND SITUATIONS 
+
+   Many transit agencies throughout North America are collecting a wealth of information  everyday through their automatic vehicle location and automatic passenger counting systems.   Cases where this information is used towards anything more than simple transit performance  measures such as ontime performance at time points and fleet management are far and few  between.   AVL and APC data is a rich source of information on transit operations.  One of the  important tools available to transit operators is the runtime regression model which is used in  this paper to estimate runtimes for a modified route.  This model is an important tool, which  can be used in order to understand which factors have an influence on runtimes as well as  their magnitude. 
+
+  First and foremost, this research can be used to design and implement new limitedstop  service in other cities.  Many cities have a number of highridership bus routes that would be  candidates for limited service.  This technique could be used to evaluate whether or not it is  worthwhile to implement these new services.  In addition, this run time estimate technique is  not only applicable to the implementation of a limitedstop service that was used as a case  study for this project.  Runtime models and the proposed time estimate technique could be  used to a number of route changes.  The same procedure would be ideal for run time estimates  for routes on which stop consolidation is proposed.  If the unit of analysis was changed to route 
+
+48   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+segments, it would also be possible to evaluate the time savings (or increases) due to physical  route changes such as route length or the implementation of traffic signals.  These techniques  could also be used to create better time estimates due to changes in the operational  environment including congestion, fluctuations in passenger activity or weather.  That being  said, it is necessary that these conditions be present somewhere along the studied route or  another similar route in order to evaluate the effects on run time.  For example, it would be  very difficult to estimate changes in run time using this technique for changing the placement  of bus stops from the near side to the far side of intersections if very few far side stops are  present on a particular (or similar) route. 
+
+The automation of runtime models could be beneficial to transit planners and  operators to obtain information quickly and efficiently for as many routes as possible.  A note of  caution on the creation of these automatically generated models is that contextsensibility  could be lost if they were applied across too many routes or cities.  Before the generalization of  this technique, one also needs to use judgement and experimentation to arrive at a final set of  variables. 
+
+  Of course, the major caveats with the use of this technique are the sample size, quality  and availability of data.  In this case study, it is reasonably safe to assume that other factors  such as traffic incidents, the time spent waiting at red lights and driver experience probably  have an influence on run times but this information was not available in our case.  The  availability of additional relevant data could lead to better models since their explanatory  power might be higher. 
+
+  CONCLUSION 
+The objective of this research was to recommend a limitedstop service that could yield  substantial savings in run time for transit users along the limited and regular bus service. A new  methodology is used in order to estimate run times savings for various scenarios.  A runtime 
+
+49   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+model based on current route conditions was derived from more than 6,000 trips. This run time  model at the trip level incorporated variables that accounted for the direction of the route,  actual stops, time of day, weekday, delay at the first stop, passenger activity, and climatic  conditions.  This is the first time that passenger activity by door and climatic conditions are  used in run time models in transit operations and planning research.  The activity through the  back door shows that maximizing use of the back door can yield time savings.  The model  followed transit operations theory, which confirmed confidence in the accuracy of the STM AVL  and APC data archival system.  By separating passenger activity and number of actual stops  between stops that are planned to be skipped as part of a new limited service and stops that  are proposed to be served by the regular service, it was possible to estimate a range of mean  run times.  The recommended scenario (4) would yield time savings between 4.5 to 8.6 minutes  for the limited service for the analyzed route segment keeping all other operating conditions  constant at their mean values.  When the number of bus runs on this route per weekday, in  excess of 350, is also considered, this service can lead to considerable savings in operating time  for the STM and travel time savings for users. By running a limited service in parallel to this  route, there would also be time savings for the regular route, though not as much as the  limited, because part of the passenger activity would be shifted to the limited service. For the  recommended scenario, there could be savings over the segment analyzed of up to 4 minutes.  Run time savings during for a rushhour service could be even greater.  The expected time  savings for the rushhour route range from 4 to 11 minutes for the entire route. 
+Future research for the selection of limitedservice stops should also incorporate the  variance of usage at the stops as a factor.  In this study, a large enough sample of trips  beginning at the same time of day was not available in order to evaluate the variance in  passenger activity.  The STM is in the process of implementing the findings from this research.    Therefore, it is recommended that a postimplementation study to be undertaken in order to  enable an accurate evaluation of the estimates proposed in this report and the effectiveness of  the final scenario in reducing running time along both the regular and limited routes.  This study  was mostly concerned with the overall savings in run time along the studied route.   A different 
+
+50 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+approach would be to use a smaller unit of analysis (segment between time points) where  other variables like number of signalized intersection could be incorporated in the model. 
+The introduction of limitedstop service along the route 67 SaintMichel corridor will  lead to considerable time savings for users as well as the STM.  In order to maximize time  savings and reduce operating costs, other strategies should be put in place including, but not  limited to, implementing transitsignal priority, alternating between nearside and farside stops  and consolidating bus stops along the regular service.  Bus bunching on the route was observed  on this route and it often leads to the deterioration of service quality, but since the route Saint Michel data is only a sample, accounting for headway deviations was not possible.  It is  expected that headway deviations would have an effect on run time. In order to analyze this  phenomenon, it would be necessary to have all buses serving this route equipped with AVL and  APC technology in order to analyze the effects of headway deviations on run time. The full  implementation of AVL and APC systems would also be beneficial in order to provide better  information for transit planning and operations.  It is highly recommended that all STM buses  be equipped with AVL and APC systems.  Traffic condition information was not available when  conducting this analysis, that being said, traffic congestion was accounted for with time of day  variables.  Finally, the impact on users would be the smallest as 60% of current users as  measured by the OD survey will be required to walk an average 276 meters more to utilize the  new express service.  That being said, the savings in onboard time would offset loss in access  time to these users.    
+
+51   
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+BIBLIOGRAPHY 
+
+1.  Levinson, H., Bus transit in the 21st century some perspectives and prospects.  Transportation Research Record, 2001. 1760: p. 4246. 
+2.  Hensher, D.A. and J. Stanley, Performancebased quality contracts in bus service  provision. Transportation Research Part A, 2003. 37: p. 519538. 
+3.  Ercolano, J.M., LimitedStop Bus Operations: An Evaluation. Transportation Research  Record, 1984. 994: p. 2429. 
+4.  Murray, A. and X. Wu, Accessibility tradeoffs in public transit planning. Journal of  Geographical Systems, 2003. 5(1): p. 93107. 
+5.  Hensher, D.A., P. Stopher, and P. Bullock, Service qualitydeveloping a service quality  index in the provision of commercial bus contracts. Transportation Research Part A,  2003. 37: p. 499517. 
+6.  Crout, D.T., Accuracy and precision of TriMet's Transit Tracker system, in Transportation  Research Board 86th Annual Meeting. 2007, Transportation Research Board:  Washington, DC. 
+7.  Schweiger, C.L., Realtime bus arrival information systems, in TCRP Synthesis. 2003,  Transportation Research Board: Washington, DC. 
+8.  ElGeneidy, A., et al., The effects of bus stop consolidation on passenger activity and  transit operations. Transportation Research Record, 2006(1971): p. 3241. 
+9.  Strathman, J.G., et al., Evaluation of transit operations: Data applications of TriMet's  automated bus dispatching system. Transportation, 2002. 29: p. 321345. 
+10.  Strathman, J.G. and J. Hopper, Empirical analysis of bus transit ontime performance.  Transportation Research Part A, 1993. 27(2): p. 93100. 
+11.  Feder, R.C., The Effect of Bus Stop Spacing and Location on Travel Time. 1973,  Transportation Research Institute  Carnegie Mellon University: Pittsburgh. p. 185. 
+12.  Vuchic, V.R., Transit Operating Manual, D.o.T.C.o. Pennsylvania, Editor. 1978.  13.  Levinson, H., Analyzing transit travel time performance. Transportation Research 
+Record, 1983. 915: p. 16. 
+52 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data 
+
+P. Ttreault 
+
+ 
+
+14.  Abkowitz, M. and I. Engelstein, Methods for maintaining transit service regularity.  Transportation Research Record, 1984. 961: p. 18. 
+15.  Bertini, R. and A. ElGeneidy, Modeling Schedule Recovery Processes in Transit  Operations for Bus Arrival Time Prediction. Journal of Transportation Engineering, 2004.  130(1): p. 5667. 
+16.  McKnight, C.E., et al., Impact of Congestion on Bus Operations and Costs. 2003, Region 2  University Transportation Research Center: Trenton, NJ. 
+17.  Strathman, J.G., TriMet's experience with automatic passenger counter and automatic  vehicle location systems. 2002, Center for Urban Studies, Portland State University:  Portland OR. p. 31. 
+18.  Dueker, K.J., et al., Determinants of Bus Dwell Time. Journal of Public Transportation,  2004. 7(1): p. 2140. 
+19.  Strathman, J.G., et al., Service reliability impacts of computeraided dispatching and  automatic location technology: A TriMet case study. Transportation Quarterly, 2000.  54(3): p. 85102. 
+20.  Furth, P. and B. Day, Transit routing and scheduling strategies for heavy demand  corridors. Transportation Research Record, 1985. 1011: p. 2326. 
+21.  Crout, D., Express and limited services, A.M. ElGeneidy, Editor. 2008: Montreal.  22.  Conlon, M., et al., Successful arterial street limitedstop express bus service in Chicago. 
+Transportation Research Record, 2001. 1760: p. 7480.  23.  Silverman, N., T. Orosz, and A. Zicklin, Practitioner's Forum: LimitedStop Bus Service at 
+New York City Transit. Journal of Transportation Engineering, 1998. 124(6): p. 503509.  24.  Ammons, D.N., Municipal benchmarks: Assessing local performance and establishing 
+community standards. 2nd ed. 2001, Thousand Oaks, CA: Sage Publications.  25.  EnvironmentCanada. Climate Data Online.  2008  [cited June 16, 2008]; Available from: 
+http://www.climate.weatheroffice.ec.gc.ca/climateData/canada_e.html.  26.  Socit de Transport de Montral. Un  service de bus plus rapide et comptitif grce  la 
+cration de la ligne 467 express SaintMichel et  l'implantation de mesures prioritaires.  
+
+53 
+
+ 
+
+Design of a parallel limited stop service in Montral using AVL and APC data   
+2009 March 19, 2009 [cited March 22, 2009]; Available from:  http://www.stm.info/info/comm09/co090319b.htm.     
+ 
+
+P. Ttreault 
+
+54   
+
+

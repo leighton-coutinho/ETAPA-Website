@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^tram\.mcgill\.ca$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tram\.mcgill\.ca$
+RewriteRule ^/?$ "https\:\/\/tram\.mcgill\.ca\/" [R=301,L]
+

@@ -1,0 +1,947 @@
+Beyond the Bike Lane: An Analysis of Cyclists' Travel Behavior in Montreal &
+A Methodology for Locating New Routes
+A Supervised Research Project in two parts
+Prepared by Jacob Larsen In partial fulfillment of the requirements for the degree of a Master's of Urban Planning McGill School of Urban Planning
+April 2010
+Supervisor: Ahmed El-Geneidy i
+
+ACKNOWLEDGEMENTS
+This Supervised Research Project was completed under the supervision of Prof. Ahmed ElGeneidy, whose insights and dedication played a critical role at every step along the way, as well as Dr. Brown, for his helpful comments as second reader. The author would also like to thank all the dedicated Montreal cyclists who completed the 2009 McGill Cycling Survey for their thoughtful responses; without them, this research would not have been possible. Funding was provided by Canadian taxpayers through the Social Science and Humanities Research Council (SSHRC), and the Canada Foundation for Innovation (CFI). Thanks also to members of the Transportation Research at McGill (TRAM) team for their help with the survey and their suggestions on the analysis. Finally, I am indebted to Ariane for her unwavering support and patience through this project; I could not have done this without you.
+ii
+
+PREFACE
+Cities around North America are facing a crisis in transportation. The suburban pattern of development that has predominated over the last half century has privileged the use of the automobile as the only viable mode of transportation, to the detriment of public transit, pedestrian access, bicycle usage and the quality of the urban environment generally. The frustrations of congestion are the best known effects of these policies; however, other consequences of car-dependence in public health include increasing rates of obesity and cardiopulmonary diseases related to inactivity, as well as transportation-induced climate change. As these problems reach a critical level, cycling has been presented by many as a partial solution, in particularly for short-distance trips in dense urban areas.
+Recognizing the unique travel characteristics of bicycles, cities around the world have created plans and enacted programs to encourage this mode previously marginal mode of transportation. In addition to the programs and bicycle-friendly policies adopted, dedicated bicycle infrastructure, as the most tangible intervention, have frequently been seen as a priority measure to realize these goals. As cities move forward with new facilities aimed at encouraging cycling, it is important to maximize the benefits of these investments and develop tools to predict the outcomes of these future initiatives.
+This research project is focused on infrastructural investments, exploring the results of past interventions and exploring opportunities for future improvements in Montreal, Canada. The project is divided into two distinct chapters; the first examines cyclists' actual usage of different types of bicycle infrastructure, drawing conclusions regarding future investments based on how various types of cyclists use different types of facilities. This examination of the current state of cycling in Montreal will help to guide future decisions about facility location. Building on the findings of chapter one, chapter two describes a novel approach to combining various data sources to help planners determine optimum locations for future cycling facilities. The second chapter was presented at the 89th Transportation Research Board Annual Meeting, Washington D.C. as Larsen, J. & El-Geneidy, M. (2010). Build it but where? A GIS methodology for guiding the planning of new cycling facilities.
+iii
+
+While the focus of this project is on cycling in Montreal, it is expected that many of the findings and methods used can be adapted for use in other regions.
+iv
+
+ABSTRACT 1
+Despite growing interest in active transportation, little is known about the detailed travel behavior associated with on-street bicycle facilities. The core questions this study seeks to understand are: 1) what personal factors influence cycling facility usage and 2) how do specific facility types and their spatial characteristics affect route choice? This study is based on analysis of an online survey of 2917 cyclists in Montreal, Quebec, Canada. Respondents more frequent home-based trips are modeled along with travel bicycle facilities, if used. Distance decay analyses, a binary logit model and ordinary least square regressions are used to address the central research questions. The study demonstrates that there are cogent travel patterns associated with different types of utilitarian cyclists, who demonstate varying usage patterns. Overall, cyclists are observed to add greater distance to their trips for facilities that are segregated from vehicle traffic; however, the associated diversions can be better explained by spatial factors such as facility length and location. Bicycle facilities are associated with greater levels of cycling, and can increase the distance that people are willing to travel. When considering new utilitarian bicycle infrastructure, it is recommended for planners to aim for long, continuous facilities, before settling on a particular design. It is also important to recognize that different facility designs appeal to different types of cyclists, and consequently to select a facility type with maximum appeal.
+Keywords: Active transportation  Cycling  Infrastructure  Travel Behavior Route choice  Sustainability
+Malgr un intrt grandissant pour le transport actif, il y a peu de connaissances au sujet des comportements de dplacement dtaills associs aux installations cyclables sur rues. Les questions centrales que tude cherche  lucider sont : 1) Quels facteurs personnels influencent l'usage des installations cyclables et 2) comment les types spcifiques d'installation et leurs caractristiques spatiales affectent le choix d'une route? Cette tude est base sur l'analyse d'un sondage en ligne auprs de 2917 cyclistes  Montral, Qubec, Canada. Pour chaque rpondant, le trajet le plus frquent partir de la maison sont modliss conjointement aux installations cyclables, si utilises. Une analyse "distance decay", un modle logit binaire et une rgression OLS ont t utiliss pour rpondre aux questions centrales de cette recherche. L'tude dmontre qu'il y a des modles de dplacement vidents associs avec diffrents types de cyclistes utilitaires qui dmontrent des modles d'utilisation varis. Globalement, il semble que les cyclistes ajoutent plus de distance  leurs dplacements pour des installations qui sont isols du trafic automobile; toutefois, les dtours associs sont mieux expliqus par des facteurs spatiaux, tels que la longueur des installations et leurs localisations. Les installations cyclables sont associes avec de plus grand niveaux de cyclisme, et peuvent augmenter la distance que les cyclistes sont prts  voyager. Lorsqu'on considre de nouvelles installations cyclables utilitaires, il est recommand que les urbanistes visent des installations longues et continues, avant de s'arrter  un design particulier. Il est aussi important de reconnatre que diffrentes installations attirent diffrents types de cyclistes, et consquemment de choisir un type d'installation avec un attrait maximum.
+Mots cls : Transport actif  Cyclisme  Piste cyclable  Comportements de transport  Choix de trajet  Durabilit
+v
+
+ABSTRACT 2
+The link between the presence of cycling facilities and increasing the numbers of cyclists has been welldocumented; however no methodology for locating new facilities has been developed to date. In the absence of such a methodology, new facilities are often built off-street primarily for recreational cycling or on those streets which minimize political resistance to reducing car lanes or parking. However, in order to best serve the needs of current cyclists and attract future ones, methodologies need to be developed to objectively determine how to optimally locate these facilities. This paper uses Montreal, Canada as a case study. Montreal contains a considerable number of recreational and utilitarian cycling facilities and its transportation plan calls for a doubling of its network. This paper describes a method of using several data sources in a geographic information systems (GIS) environment to identify optimal locations for new facilities. The methodology demonstrated here involves modeling : 1) current cyclists' trips based on the Origin-Destination (O-D) survey; 2) short car trips based on the O-D survey; 3) suggested routes for new facilities from a recent survey of Montreal cyclists; and 4) records of bicycle crashes obtained from police and ambulance records. This research can be beneficial to transportation engineers and planners since it uses readily available data sources. Additional recommendations can be derived from the method to help in identifying areas to invest in bicycle parking spaces and/or public bicycle-stations.
+Keywords: Cycling, GIS, Infrastructure Planning, Cycling Facilities, Bicycling
+Le lien entre la prsence d'installations cyclables et l'accroissement du nombre de cyclistes est bien document; toutefois, aucune mthodologie pour identifier l'emplacement des nouvelles installations n'a t dveloppe jusqu'ici. En absence d'une telle mthodologie, les nouvelles installations sont souvent construites hors rue principalement pour le cyclisme rcratif ou sur les rues qui minimisent les rsistances politiques  la rduction des voies pour automobiles ou des espaces de stationnement. Toutefois, dans le but de mieux rpondre aux besoins des cyclistes actuels et d'en attirer de nouveaux, il est ncessaire de dvelopper des mthodologies pour dterminer objectivement comment localiser de faon optimale ces nouvelles installations. Ce document utilise Montral, Canada, comme tude de cas. Montral contient un nombre considrable d'installations cyclables rcratives et utilitaires et son plan de transport prvoit de doubler son rseau. Ce document dcrit une mthode consistant en l'utilisation de diffrentes sources de donnes dans des systmes d'information gographique (SIG) pour identifier l'emplacement optimal de nouvelles installations cyclables. La mthodologie dmontre ici implique la modlisation de : 1) les dplacements actuels des cyclistes bass sur le sondage Origine-Destination (OD); 2) les dplacements courts par automobile bass sur le sondage O-D; 3) les routes suggrs pour les nouvelles installations cyclables d'aprs un sondage rcent auprs de cyclistes de Montral; et 4) les archives d'accidents de bicyclette obtenus des services de police et d'ambulances. Cette recherche peut tre utile aux ingnieurs et planificateurs en transport puisqu'elle utilise des sources de donnes facilement accessibles pour recommander des ajouts et des amliorations aux installations cyclables d'une ville. Des recommandations additionnelles peuvent tre tires de la mthode utilise pour aider  identifier des espaces ou investir dans le stationnement de bicyclettes ou les stations de vlo publiques.
+Mots-cls : cyclisme, SIG, planification infrastructure, installations cyclables, pistes cyclables, vlo
+vi
+
+TABLE OF CONTENTS ACKNOWLEDGEMENTS ............................................................................................................................. ii PREFACE .................................................................................................................................................. iii ABSTRACT 1............................................................................................................................................... v ABSTRACT 2.............................................................................................................................................. vi TABLE OF CONTENTS............................................................................................................................... vii LIST OF FIGURES..................................................................................................................................... viii LIST OF TABLES........................................................................................................................................ ix LIST OF APPENDICES ................................................................................................................................ x
+Chapter I ........................................................................................................................................................... INTRODUCTION ......................................................................................................................................... 1 RELEVANT LITERATURE ............................................................................................................................ 3 DATA AND SURVEY DESCRIPTION ............................................................................................................ 6 DISTANCE DECAY FUNCTION AND MEDIAN DIVERSIONS ......................................................................... 9 ANALYSIS ................................................................................................................................................ 12 CONCLUSIONS AND DISCUSSION ........................................................................................................... 19
+Chapter 2 .......................................................................................................................................................... INTRODUCTION ....................................................................................................................................... 24 METHODOLOGY....................................................................................................................................... 26 STUDY AREA AND DATA SOURCES ......................................................................................................... 30 DISCUSSION AND CONCLUSION.............................................................................................................. 38
+Afterword ...................................................................................................................................................... 40 REFERENCES .......................................................................................................................................... 41 APPENDICES ........................................................................................................................................... 43
+vii
+
+LIST OF FIGURES
+FIGURE 1. MAP OF MONTREAL'S ON- AND OFF-STREET BICYCLE FACILITIES................................... 7 FIGURE 2. EXAMPLES OF CYCLING FACILITIES IN MONTREAL............................................................. 8 FIGURE 3. EXAMPLE OF A RESPONDENT'S ACTUAL AND SHORTEST ROUTES ................................. 9 FIGURE 4. DISTANCE DECAY OF DIFFERENCE (ACTUAL-SHORTEST)............................................... 10 FIGURE 5. SENSITIVITY ANALYSIS MODEL 1B: TOTAL TRIP DISTANCE ............................................. 19 FIGURE 6. MAP OF MONTREAL'S ON- AND OFF-STREET BICYCLE FACILITIES................................. 30 FIGURE 7. EXAMPLES OF CYCLING FACILITIES IN MONTREAL........................................................... 31 FIGURE 8. MEASURES FOR IDENTIFYING POTENTIAL LOCATIONS FOR NEW FACILITIES.............. 33 FIGURE 9. COMBINED MEASURE IDENTIFYING PRIORITY AREAS FOR NEW FACILITIES................ 34 FIGURE 10. SPECIFIC SITUATIONS IDENTIFIED BY THE PROPOSED METHODOLOGY .................... 37
+viii
+
+LIST OF TABLES
+TABLE 1. DIVERSION DISTANCE BY PATH TYPE ..................................... Error! Bookmark not defined. TABLE 2. COMPARING AVERAGE DIVERSION AND PATH LENGTH..................................................... 12 TABLE 3. SUMMARY STATISTICS ............................................................................................................ 13 TABLE 4. LOGIT MODEL............................................................................................................................ 15 TABLE 5. OLS REGRESSION MODELS .................................................................................................... 18 TABLE 6. INDICATORS USED IN IDENTIFYING PRIORITIES IN CYCLING FACILITIES......................... 35
+ix
+
+LIST OF APPENDICES
+APPENDIX 1. COMPARING CYCLIST HOMES: 2003 O-D SURVEY & 2009 TRAM CYCLING SURVEY 43 APPENDIX 2. HOW DID RESPONDENTS HEAR ABOUT THE SURVEY?................................................ 44 APPENDIX 3. HOUSEHOLD INCOME OF RESPONDENTS...................................................................... 44 APPENDIX 4. REPORTED AGE OF RESPONDENTS ............................................................................... 45 APPENDIX 5. AVERAGE REPORTED WEEKLY BICYCLE TRIPS OVER 12 MONTHS ........................... 45 APPENDIX 6. FREQUENCY OF RESPONDENTS' REPORTED VEHICLE USAGE.................................. 46 APPENDIX 7. FREQUENCY OF RESPONDENTS' REPORTED PUBLIC TRANSIT USAGE.................... 46 APPENDIX 8. RESPONDENTS' STATED PREFERENCE FOR CYCLING ON ONE-WAY SECONDARY STREET WITH NO BICYCLE FACILITIES.................................................................................................. 47 APPENDIX 9. RESPONDENTS' STATED PREFERENCES FOR CYCLING ON ONE-WAY SECONDARY STREETS WITH PAINTED COUNTERFLOW FACILITIES......................................................................... 47 APPENDIX 10. RESPONDENTS' STATED PREFERENCES FOR CYCLING ON SECONDARY STREETS WITH BIDIRECTIONAL SIDEPATH, SEPARATED BY BOLLARDS........................................................... 48 APPENDIX 11. RESPONDENTS' STATED PREFERENCES FOR CYCLING ON MAJOR ONE-WAY STREETS WITH PHYSICALLY-SEPARATED SIDEPATHS ....................................................................... 48 APPENDIX 12. RESPONDENTS' STATED PREFERENCES FOR CYCLING ON MAJOR ONE-WAY STREETS WITH ONE-WAY STRIPED FACILITIES ................................................................................... 49 APPENDIX 13. RESPONDENTS' STATED PREFERENCES FOR CYCLING ON MAJOR TWO-WAY STREETS WITH NO BICYCLE FACILITIES ............................................................................................... 49 APPENDIX 14. RESPONDENTS' STATED PREFERENCES FOR CYCLING ON MAJOR ONE-WAY STREETS WITH NO BICYCLE FACILITIES ............................................................................................... 50 APPENDIX 15. SURVEY QUESTONS........................................................................................................ 51
+x
+
+Chapter I
+0
+
+INTRODUCTION
+Concerns over traffic congestion, climate change and the harmful consequences of sedentary lifestyles have led to efforts to encourage cycling as a mainstream mode of transportation. It has become readily accepted among urban planners, transportation specialists and public health officials that cycling facilities are a key component to encouraging cycling and active lifestyles; however, there is little known about what types of facilities can best achieve these goals. Nonetheless, despite incomplete information, planners and engineers are implementing new onand off-street facilities in various configurations and location. An outstanding question in the literature is how individuals' travel patterns are shaped by bicycle facility design and spatial distribution, and how cyclists' personal characteristics affect route choice.
+This research describes a highly detailed analysis of the use of on- and off-street cycling facilities in Montreal, Quebec, Canada. Montreal presents a particularly interesting case study, given the variety of bicycle facility types, including both on- and off-street facilties, and established series of bidirectional, on-street "sidepaths". In contrast to other studies which tend to be restricted to individual facilities or population groups, our approach integrates origindestination information and specific route attributes, providing a comprehensive examination of the usage of the city's cycling network in general, and specific routes in particular. The core questions this study seeks to understand are: 1) what personal factors influence cycling facility usage and 2) how do specific facility types and their spatial characteristics affect route choice? For Montreal, understanding the travel patterns associated with various facility types is important, given the city's official transportation plan to double the bicycle network (Montral, 2007). However, this knowledge will be useful in other cities which are also deliberating future bicycle path design and location, as well as other improvements to their respective networks.
+This study begins by examining the relevant literature related to bicycle infrastructure usage and cyclist travel behavior and explores some of the methodologies that other researchers have used to address these topics. The data source and route modeling techniques are discussed, followed by an exploration of distance decay functions related to various facilities. These facilities discussed in the context of their spatial characteristics. Next, a statistical analysis focused on the personal and spatial attributes related to facility usage helps to explain the overarching research questions. The final section summarizes the findings of this study, discusses some
+1
+
+methodological issues raised and concludes with a discussion of the implications this study raises for future cycling research.
+2
+
+RELEVANT LITERATURE
+Study of the built environment and utilitarian cycling is a growing field, with increasingly detailed research providing new ways to understand this complex relationship. A considerable amount of debate has been focused on the question of causality--that is, does building additional bicycle infrastructure actually lead to increases in cycling, or changes in individual mode choice? Much initial work has cited various European examples, which draws the intuitive conclusion that cycling facilities are one of several important factors leading to more increased numbers of cyclists (Pucher & Buehler, 2008; Pucher & Dijkstra, 2000). On the other hand, studies to substantiate and quantify the benefit of cycling facilities have been made in different locations, at varying geographic scales. A pivotal study by Nelson and Allen (1997) of 18 U.S. cities empirically linked the presence of bicycle facilities with increased levels of bicycle usage. An updated version found the strongest correlation to be between bicycle commuter mode share and the number of off-street cycling lanes per square mile, using data from 43 U.S. cities (Dill & Carr, 2003a). Another report from Portland, Oregon shows that an additional 1,000 linear feet of cycling facilities resulted in a 0.06 to 0.04 percent increase in an individuals' likelihood of cycling to work (LeClerc, 2002). On the other hand, a disaggregate study from Washington State showed no correlation between the presence of cycling infrastructure and the likelihood of an individual choosing to cycle. However, the same study found that living within 800 meters of a cycling facility increased the odds of cycling at least once per week by 20% (Moudon, 2005). The mixed results from these studies indicate that the geographic unit of analysis is an important factor to consider in studying the relationship between the built environment and active transportation.
+To address the challenges related to understanding the presence of dedicated bicycle facilities and their patterns of use, other research has focused on micro-level analyses of specific, and largely off-street, trails. The most commonly used method is to simply count users, which offers precise information about a given facility but ignores the many geographic variables outside the study area that influence a cyclist's decision to use the facility (Hunter & Huang, 1995). Another study aimed at understanding how the presence of off-street greenways in the Twin Cities of Minnesota affect cyclists' route choices (Krizek, El-Geneidy, & Thompson, 2007). This detailed
+3
+
+study found that cyclists using these facilities added, on average, 67% to their total trip length to use these high-quality facilities. The use of intercept surveys permitted the authors to conclude that distance traveled to access off-street facilities varies depending on trip purpose, with recreational trips constituting the longest trips. Another study of off-street facilities using intercept surveys from the Seattle area suggests that a 0.8 to 1.2 km "bikeshed" may exist around a separated bicycle path, within which individuals would increase their travel time to access that facility and outside of which a more direct route was chosen (Shafizadeh & Niemeier, 1997). However, intercept surveys conducting on bicycle facilities are time-consuming to administer, thus limiting the sample size attainable. For example, only 141 trips were analyzed in the Krizek et al. study, rendering widespread generalization highly problematic. While studies of this nature can help to relate the usage patterns of off-street facilities to user characteristics and their geographic distribution, the applicability to on-street bicycle facilities remains low. This is also due to the intuitive observation that cycling facilities of different kinds will vary in their attractiveness, depending on the spatial distribution of all other facilities.
+The dearth of research about route choices associated with on-street facilities is partly due to challenges associated with conducting surveys in the presence of busy traffic conditions. One notable study of cyclists' routes of both on- and off-street riding was an analysis of route preferences conducted in Guelph, Ontario (Aultman-Hall, Hall, & Baetz, 1997). In this study, approximately 1500 mail-out surveys were collected and cyclists' routes were geo-coded for GIS analysis. This study found that most commuters divert very little from their minimum path (0.4 km on average) and tend to use major road routes, even in corridors where off-street facilities offer potential alternate routes. The authors note high usage only on paths that are "wide with a good quality surface and extend long distances with easy access points". However, as a small city with a present day population of 200,000 and a significant university population, findings from Guelph may have limited applicability to larger cities with longer travel times.
+The gap in the literature concerning preferences for different types of on-street facilities has been addressed primarily through stated preference (SP) surveys. To understand users' preferences in terms of types of bicycle routes, one pertinent study used and adapted SP technique, in which respondents were shown images of different cycling conditions in the Twin Cities and asked to report the additional travel time they would spend to use various facilities (Tilahun, Levinson, &
+4
+
+Krizek, 2007). This study found that respondents were willing to travel up to twenty minutes more to switch from an unmarked on-street facility (with curb parking) to an off-street facility, with smaller changes associated with less dramatic improvements. Another technique was employed in a study of a potential bikeway in Bradford, UK, using an SP survey containing three variables related to time, cost and type of cycling facility (Hopkinson & Wardman, 1996). In this case, researchers found that segregated cycle paths could provide a good return on the capital invested even in conditions of low cycle use, where the benefits are restricted solely to reductions in risk. However, critics of SP methods have suggested that preferences may not accurately predict travel behavior because these preferences are expressed in controlled conditions and do not take into account real travel costs (Gliebe, Broach, & Dill, 2009). Recognizing the inherent shortcomings of SP techniques, this study addresses issues of route preference by using a large sample of real travel data, reflecting cyclists actual travel behavior.
+Other work has explored personal characteristics and attitudes to explain individuals' probability and frequency of utilitarian cycling. While the effects of personal characteristics may vary from one study to the next, gender has been repeatedly cited to have an effect on cycling in the nonEuropean context: male cyclists outnumber female cyclists and are more willing to travel greater distances by bicycle (Cynecki, Perry, & Frangos, 1993; Deakin, 1985; Dill & Gliebe, 2008; Howard & Burns, 2007; Stinson & Bhat, 2003; Winters, Friesen, Koehoorn, & Teschke, 2007). This may be due to perceptions of risk, as Australian researchers concluded, in their finding that women comprise a smaller portion of cyclists than men and exhibit a greater preference for offstreet facilities (Garrarda, Roseb, & Lo, 2008). With regards to cycling infrastructure, it has been popularly suggested that women may represent a key group of potential cyclists, and the best way to increase cycling is to design facilities that appeal especially to women (Baker, 2010). Clearly gender and other personal characteristics must be considered in any analysis of cyclists' route preferences.
+5
+
+DATA AND SURVEY DESCRIPTION
+The primary source of data in this paper is derived from an online conducted in Montreal during the summer of 2009. There were 2917 respondents who responded to the survey. Respondents provided information on the location of their home and primary bicycle destination, the time of year they cycle, their bicycle path usage and preferences regarding bicycle path design. Their personal characteristics are detailed in the appendices. Other trip-specific information used includes whether a facility is used, the access and egress points of the facility (if used), as well as information on trip purpose. This study draws primarily on reported details about the respondent's most frequent bicycle trip. This trip-related data is complemented by demographic and socioeconomic information, as well as cyclist classification. This classification was achieved by specifying various barriers to cycling (distance, traffic conditions, and weather) and asking respondents in which situation they would use a bicycle for transportation.
+While no large North American city can be compared with the levels of utilitarian cycling achieved in many European centers, Montreal is known to be a North America leader. The Island of Montreal has 425 km of bicycle facilities  over three times the length per inhabitant of Toronto, and about as many as Vancouver and half as many as Ottawa. Out of Montreal's total cycling network, 264 km are off-street facilities and 161 km are on-street, as indicated in figure 1. The official mode split share of cycling is 1.3% of all trips (Pucher & Buehler, 2006), which is around the national average, however central areas are between 6-7% (Vlo-Qubec, 2005). An example of cycling facilities in Montreal can be found in figure 2. One element that makes Montreal a particularly interesting place for the study of route choice is its variety of different cycling facility types, including on-street, bidirectional, physically-separated sidepaths, illustrated in figure 2d. Given the popularity of on-street sidepaths in many European cities, where the mode share for cycling is generally high, an examination of how those facilities affect travel behavior will be of interest to those working in the field of active transportation. Additional data is derived from geographic information systems (GIS) files of the Montreal region, detailing roads, current bicycle routes, recorded bicycle crashes and other physical features.
+6
+
+Figure 1. Map of Montreal's on- and off-street bicycle facilities
+7
+
+Figure 2. Examples of cycling facilities in Montreal
+Respondents' home and primary destinations were geo-coded, and for respondents who reported using a bicycle facility (69% of sample), the locations where they access that facility and where they leave it (egress) were added. This was performed in GIS using the street network by estimating the shortest path between the respondent's home and the closest intersection on the bicycle facility indicated, and likewise to their destination. This provided four points that were used to analyze the most salient details about the respondent's reported trip, including the hypothetical shortest distance from home to destination, their distance travelled on a bicycle facility, and total actual distance of the respondents' trip and the difference between the shortest and actual distances. An example route from one respondent is shown in figure 3, along with the shortest hypothetical path for that trip.
+8
+
+Figure 3. Example of a respondent's actual and shortest routes
+DISTANCE DECAY FUNCTION AND MEDIAN DIVERSIONS
+Distance decay functions provide a relatively simple tool through which to understand the spatial distribution of travel behavior and can be used for any mode of travel. Decay functions reveal the distribution of trip lengths as a function of impedance to travel, and provides an easy way to visualize individuals' willingness to travel to a common location such as work locations, school, shopping or transit (Luoma, 1993; Taylor, 1975; Zhao, Chow, Li, Ubaka, & Gan, 2003). The concept has been used to compare distances traveled by various modes to a host of final destinations, as well as the distance cyclists' travel to use an off-street facility (Krizek et al., 2007). While distance decay models provide a rough proxy for the effect of travel cost on travel decisions, many researchers have noted the incomplete nature of distance as a predictor of travel behavior, particularly the absence of qualitative or other aspatial factors in these models (Iacono, Krizek, & El-Geneidy, 2008). This challenge is even greater when comparing cyclists' travel behavior related to various bicycle facilities, where the effects of spatial factors cannot be easily distinguished from aspatial factors (such as facility design, pavement quality, ect.). Thus, while distance-decay provides an interesting tool for exploring general travel patterns, it should be
+9
+
+interpreted with recognition of its incomplete nature and complemented by other detailed analyses.
+
+In this study, we use distance decay to examine a hypothetical distance: the difference between the respondent's actual route taken and the shortest possible route they could have used. There were 1571 respondents (69% of sample) who used a path to reach their destination. The sample was separated into three groups: those who used an off-street facility (9%), those who used an on-street "sidepath" (44%) and those who used an on-street striped lane (19%). The distance decay analysis included all trip purposes, including those made for recreational purposes. Where more than one facility was used, respondents' primary facility was modeled. Figure 4 displays the distance decay curves by different facilities used. Immediately, one may observe that onstreet striped lanes have the steepest decay curve, and that 75% of respondents added less than 400m to their shortest route to use such a facility. To use on-street, physically-separated sidepaths, 75% of respondents added less than 1.2 km to their route. Finally, 75% of those who used off-street facilities added less than 3.1 km to their routes.
+
+Figure 4. Distance decay of difference (actual-shortest)
+
+Percent of trips
+
+50 45 40 35 30 25 20 15 10
+5 0
+0
+
+Painted line On-street divided Off street Expon. (Painted line) Expon. (On-street divided) Expon. (Off street)
+
+1000
+
+2000
+
+3000
+
+4000
+
+Distance (meters)
+
+5000
+
+6000
+
+Based solely on median diversion distances for each facility type, one might conclude that offstreet facilities are twice as attractive as sidepaths, which in turn are four times as attractive as
+10
+
+on-street striped lanes. However, as revealed in table 2, those facilities with the greatest observed diversion distances tend to be the longest facilities examined. Off-street facilities are associated with an average diversion of 1.8 km and the average distance for on-street striped lanes is only 300 m; however, the total length of frequently used paths for these two facility types is 94 km and 24 km, respectively. This suggests that facility length has indirect effect on the additional distance cyclists will add to their journey to use it, since one can travel farther on longer facilities . Overall, the positive correlation between the length of a given path and the associated diversion distance is 0.84. To more accurately understand the effects of other spatial factors such as facility length on cyclist travel behavior, we turn now to an analysis of the statistical models of all reported trips.
+11
+
+Table 1. Comparing average diversion and path length
+
+Path
+Off-street facilities St. Lawrence riverside trail (Verdun) Lachine Canal Trail Rivire-des-Prairies (& Gouin) CP Rail/des Carrires Parc All off-street facilities
+
+Average diversion (m)
+2704.11 2660.8 2388.23 996.3 198.06 1789.5
+
+On-street sidepaths Rn-Lvesque de Maisonneuve Cte Ste-Catherine Rachel Jacques Cartier Bridge Berri-Christophe-Colomb Notre-Dame All sidepaths
+On-street striped lanes Viger Clark Wellington Milton-Prince-Arthur St-Zotique St-Urbain All striped lanes
+
+314.28 513.55 519.33 526.56 557.15 735.78 1194.18 622.976
+152.78 258.9 156.73 205.39 820.53 330.56 320.86
+
+Total path length (km)
+13.25 21.39 54.64 2.81 1.55 93.64
+1.59 9.09 5.75 6.56 2.11 24.40 21.47 70.97
+1.33 2.89 8.88 1.81 6.80 2.06 23.77
+
+ANALYSIS
+To better explain the factors that influence a cyclist's decision to use a bicycle facility and the diversion distances observed for facility users, four models are used. In the first, a binary logit model tests the likelihood of a respondent using a bicycle facility (N=1812). The other models are linear regressions, which are concerned with the effects of selected variables on travel distances: total distance and diversion distance (difference between actual and shortest routes). The first of these models consists of two parts (labeled Models 1a & 1b) and takes the total route distance as the dependent variable. Model 1a examines the effect of facility usage in general on travel distance, while 1b highlights the effects of specific facility types. Model 2 is focused on
+12
+
+only those respondents who used a facility (N=1393) and seeks to explain the deviation distances introduced in the previous section. A summary of the variables used in these models is provided in table 4.
+
+Table 2. Summary statistics
+
+Variables
+
+Mean
+
+Respondent characteristics
+Age of respondent Respondent is male History of accident Uses a bicycle occasionally, in good conditions Uses a bicycle regularly, in average conditions Uses a bicycle frequently, in all conditions
+
+34.88 0.59 0.37 0.15 0.52 0.27
+
+Trip characteristics
+
+Used a bicycle path Used an off-street facility Used an on-street, physically-separated facility Used an on-street facility, marked with a painted line Actual trip length (km) Shortest route (km) Shortest route (ln) Distance on facility (km) Other facilities within 400m of path segment (km) Difference between actual & shortest routes (km) Distance from home to CBD (km) Presence of facility within 400m of home and destination Number of bike accidents per km on shortest path Number of intersections per km on shortest path
+
+0.69 0.09 0.44 0.16 6.43 5.91 8.43 2.26 12.89 0.53 6.04
+0.48
+8.61 42.63
+
+Number of auto destinations per km on shortest path
+
+219.39
+
+Difference in bike accidents per km (actual  shortest) Difference in intersections per km (actual  shortest) Destination is in CBD Trip made for work purpose
+L=Logit model
+
+4.82 130.57 0.48 0.69
+
+Std.dev Min Max Model
+
+10.77 0.49 0.48 0.35 0.50 0.45
+
+14.00 0.00 0.00 0.00 0.00 0.00
+
+81.00 1.00 1.00 1.00 1.00 1.00
+
+L,1a,1b,2 L,1a,1b,2 L L,1a,1b,2 L,1a,1b,2 L,1a,1b,2
+
+0.46 0.28 0.50 0.37 5.00 4.50 0.76 2.67 13.97 0.94 4.41
+0.50
+5.85 14.05
+154.71
+5.24 142.84 0.50 0.46
+
+0.00 0.00 0.00 0.00 0.03 38.34 3.65 0.00 0.00 0.00 0.00
+0.00
+0.00 11.20
+9.58
+0.00 0.00 0.00 0.00
+
+1.00 1.00 1.00 1.00 39.93 33.77 10.43 17.37 54.97 10.93 36.03
+1.00
+57.79 417.33 3182.1 6 56.86 986.22 1.00 1.00
+
+1a 1b,2 1b,2 1b,2 1b,2 1b,2 L 2 2 2 1a,1b,2
+L,1a,1b
+L L
+L
+2 2 L L,2
+
+13
+
+Table 4 shows the results of the binary logit model, which identifies the factors that increase a cyclist's odds of using a bicycle facility. Examining the statistically significant variables, it was shown that the length of a cyclist's journey had the strongest effect on their odds of taking a facility. This logarithmic function shows that a cyclist making a 1 km trip is on average 90% more likely to use a facility than on a 500 m trip, whereas a cyclist making a 1.5 km trip is only 10% more likely to use a facility than on 1 km trip. That a logarithmic function of distance is the best predictor of usage is logical considering the likelihood of encountering bicycle facility increases most rapidly with an incremental increase between short trips than with the same increase in longer trips. Other spatial factors affecting facility usage are having a destination in the CBD, which was shown to increase odds by 26%, and having a bicycle facility within 400 meters of both home and destination, which increases the odds of facility usage by 140%. We hypothesized that three route-specific variables (relating to the hypothetical shortest path) would increase the odds of using a facility: 1) the number of reported bicycle crashes per km; 2) the number of intersections per km; and 3) the number of automobile destinations within a 50 meter buffer of the respondents shortest path (as a proxy for exposure to motor vehicles). Of these three, an increase in bicycle crashes was shown to increase a cyclist's odds of using a facility by 5%. While the ratio is small, this likely indicates that cyclists accurately perceive danger and alter their routes accordingly. Conversely, a greater density of intersections, indicating higher levels of road connectivity, decreases a cyclist's chances of using a facility by 5%. While the margin is again small, it appears that highly connective areas provide cyclists with greater route options, decreasing slightly the appeal of bicycle facilities. Lastly, the number of car destinations within a 50 meter buffer of the respondent's shortest path had no significant effect on respondents' probabilities of using a facility.
+14
+
+Table 3. Logit model
+
+Variable
+
+Odds ratio z
+
+Shortest path (ln)
+
+2.73*** 10.17
+
+Age of respondent
+
+0.99 -1.34
+
+Respondent is male
+
+0.94 -0.54
+
+History of accident
+
+0.83 -1.55
+
+Destination is in CBD
+
+1.26*
+
+1.77
+
+Number of bike accidents per km on shortest path
+
+1.05*** 3.72
+
+Number of intersections per km on shortest path
+
+0.95*** -9.63
+
+Number of auto destinations per km on shortest path
+
+1.00*** 5.00
+
+Cycling facility within 400m of both origin and destination 2.40*** 6.87
+
+Respondent uses a bicycle occasionally, in good conditions 0.63
+
+-0.99
+
+Respondent uses a bicycle regularly, in average conditions 0.44*
+
+-1.87
+
+Respondent uses a bicycle frequently, in all conditions
+
+0.38** -2.13
+
+Trip made for work purpose Pseudo R2
+
+1.25 0.1614
+
+1.56
+
+N 1812
+
+Dependent variable
+
+Facility usage
+
+***significant at the 99% level, **significant at the 95% level, *significant at the 90% level
+
+Personal characteristics such as self-reported cycling behavior were shown to have an effect on facility usage. Relative of those who ride only recreationally, respondents who use a bicycle regularly for utilitarian purposes in average conditions are 56% less likely to use a facility; those who ride frequently in all conditions are 62% less likely to use a facility. Relative to those who ride only recreationally, no statistically significant difference in probability of facility usage was noted for occasional cyclists. Several other variables, while failing to reach levels of statistical significance, were shown to have some effect on the likelihood of taking a path, including a
+15
+
+history of a bicycle crash and trips made for work purposes. Interestingly, age and gender also did not have a statistically significant impact on facility usage. These findings contradict past research on gender and cycling (Dill & Gliebe, 2008; Garrarda et al., 2008), and may suggest that a degree of gender parity has been reached in Montreal with regard to facility usage (though not overall usage).
+The following section discusses three ordinary least squares regression models which were run to explore the effect of personal and spatial characteristics on distance traveled; these models are shown in table 7. Models 1a and 1b take trip distance as the dependent variable; Model 1a isolates the general effect of using a cycling facility, while Model 1b highlights the specific effect of various cycling facilities. Model 2 uses diversion distance, and is discussed below. Beginning with the statistically significant variables, Model 1a reveals that cyclists who used a facility added, on average, 2.2 km (34%) to their trip distance. When specific facility types are included in Model 1b, we see that relative to non-facility users, those who used off-street facilities added an average of 4.6 km (71%) to their trips and those who used physicallyseparated, on-street facilities added an average of 2 km (31%) to their trips. The use of on-street striped lanes increased the distance relative to non-facility users by 1.6 km (9%). Not surprisingly, an increase of 1 km between the respondent's home and the CBD (defined as the spatial average of all respondents' destinations) has the effect of increasing total trip distance be 680 m. However, the presence of a bicycle facility within 400m of both home and destination had the effect of decreasing trip distance by about 800m (12%), an intuitive finding given the concentration of cycling facilities in central areas, where travel distances tend to be shorter. Like the positive relationship found between work trips and facility usage, work trips added on average 1 km (16%) more to the total trip length.
+Next we examine the statistically significant variables in Model 2, in which the difference between actual and shortest routes--or the diversion distance--is used as the dependent variable. This model includes only those respondents 1393 who used a facility and thus permits the inclusion of variables related to their chosen facility, such as distance on facility and other facilities within 400 m of the segment traveled. When these variables are included, the effects of different path types have a diminished effect on diversion distance. Relative to on-street striped lanes, respondents added 1 km (16%) more to use off-street facilities; however, the difference in
+16
+
+diversions between on-street sidepaths and on-street striped lanes is negligible. This fact is interesting when considered alongside the effects of amount of nearby facilities, which can be interpreted as the supply of potential facilities for a given trip: for each meter of other facilities other than the one used, a respondent's diversion distance decreases by 4.5 m on average. This reveals that the availability of bicycle facilities in general has a greater affect on the routes of those cyclists' who chose to use a facility a the specific type of on-street facility. Examining another path-specific variable, we see that an increase by 1 km traveled on the facility produces an additional 200 m in diversion distance. This finding relates to the correlations noted in the previous section between total path length and mean diversions observed; clearly longer paths permit greater distance to be traveled on them, resulting in greater diversion distances. Examining the variables related to cyclist characteristics, we note only one with a statistically significant relationship with total trip distance or diversion distance. Occasional cyclists, who report using a bicycle for shorter journeys with fewer adverse conditions, on average travel 1.2 km (19%) shorter distances than recreational cyclists. This finding is not surprising, given the fitness motivation that likely influences much recreational cycling. Age and gender were not shown to have a statistically significant relationship on either trip or diversion distance.
+17
+
+Table 4. OLS regression models
+
+Variables
+
+Model 1a
+
+Model 1b
+
+Model 2
+
+Coefficient t-stat Coefficient t-stat Coefficient t-stat
+
+Constants
+
+-1246.66 -1.18 -826.97
+
+-0.80 -45.26761 -0.36
+
+Age of respondent
+
+66.21
+
+1.29 46.30
+
+0.92 2.94
+
+1.51
+
+Respondent is male
+
+158.93
+
+1.03 123.91
+
+0.82 -27.29
+
+-0.69
+
+Uses a bicycle occasionally, in good conditions
+
+-1271.42** -2.33 -1103.60** -2.07 35.17
+
+0.36
+
+Uses a bicycle regularly, in average conditions
+
+-6.51
+
+-0.01 198.82
+
+0.39 35.31
+
+0.4
+
+Uses a bicycle frequently, in all conditions
+
+322.75
+
+0.61 418.60
+
+0.81 13.89
+
+0.15
+
+Used a bicycle path
+
+2182.91*** 13.28 --
+
+-- --
+
+--
+
+Facility: off-street
+
+-- -- 4577.34*** 14.96 1005.99*** 13.63
+
+Facility: on-street, physically-separated
+
+--
+
+--
+
+1991.18*** 11.50 -99.33**
+
+-2.01
+
+Facility: on-street, painted line
+
+-- -- 1587.94*** 7.06 -- --
+
+Distance on facility
+
+-- -- -- -- 0.21*** 23.14
+
+Other facilities within 400m of path segment (m) --
+
+-- --
+
+--
+
+-4.49***
+
+-2.84
+
+Distance from home to CBD
+
+0.68***
+
+34.91 0.67***
+
+34.84 0.003
+
+0.45
+
+Facility within 400m of home and destination
+
+-791.36*** -4.96 -824.57*** -5.28 --
+
+--
+
+Work trip
+
+1093.91*** 5.68 1051.34*** 5.58 --
+
+--
+
+Difference in bike accidents per km
+
+-- -- -- -- -11.57*** -2.71
+
+Difference in intersections per km R2
+
+-0.5058
+
+-- -0.5286
+
+-- 15.61*** 5.14 0.5368
+
+N
+
+1812
+
+1812
+
+1393
+
+Dependent variable
+
+Distance of route Distance of route Difference (actual
+
+traveled (1)
+
+traveled (2)
+
+route  shortest)
+
+***significant at the 99% level, **significant at the 95% level, *significant at the 90% level
+
+To illustrate the effects of various facility types among different cyclist types; we perform a sensitivity analysis of by multiplying the coefficients from Model 1b with the mean values of the independent values contained therein. In isolating the effect of facility type and cyclist profile, figure 5 assumes the following conditions are met: the trip was made for work, the respondent is male and a facility is within 400 m of both the respondent's origin and destination. Comparing the travel distances associated with various facility types, it appears that the addition of an onstreet facility would have a greater impact than any particular type of on-street facility (striped
+
+18
+
+lane versus sidepath); however, the addition of new off-street facilities would result in the greater overall increase in travel distances.
+
+20 Uses a bicycle frequently, in all conditions
+Uses a bicycle regularly, in average conditions
+15 Uses a bicycle occasionally, in good conditions
+
+Average trip distance(km)
+
+10
+
+5
+
+0
+
+No facility
+
+On-street, painted line
+
+On-street bidirectional
+
+sidepath
+
+Facility type
+
+Figure 5. Sensitivity analysis Model 1b: Total trip distance
+
+Off-street
+
+CONCLUSIONS AND DISCUSSION
+This study provides new insight into the relationships between different types of bicycle facilities, the spatial arrangement of those facilities and the personal characteristics of cyclists using them. Given the sample size and large geographic area covered, this study represents a significant contribution in the field of detailed cyclist route analysis, and can be applied to inform the design and location of new facilties.
+Using distance decay analysis, we saw that some facilities are associated with greater diversion distances than others, and that these diversions are related to a facilities other spatial characteristics, especially total facility length. Our regression models revealed that relative to non-path users, off-street facilities are associated with a 71% increase in total trip distance, a
+19
+
+finding that closely resembles past research on off-street cycling facilities (Krizek et al. 2007). On-street sidepaths and striped lanes are associated with 31% and 9% increases in total travel distance, respectively. However, as we noted, this apparent demand for certain facility types is partly a function of supply, as revealed in the high correlation between average diversion distance for facilities and their total length (0.84). Since off-street and separated facilities tend to be longer, cyclists are able to travel greater distances on these facilities, resulting in greater diversion distances. This was confirmed in Model 2, which shows that an additional 1 km on a facility is associated with a 200 m increase in diversion distance; moreover, when this facility distance is considered, the difference in diversions between sidepaths and on-street striped lanes are negligible. Only off-street facilities show a greater average diversion when respondents' facility distance is taken into account. This finding points to the important fact that cyclist behavior is more affected by the length and location of on-street bicycle facilities than to specific design features of the on-street facilities explored in this study.
+Since the distance traveled on a facility is to a large extent a function of the facility length itself, the implementation of longer, continuous bicycle facilities is expected to attract more users and build public support for further investments. There were two other route-level characteristics that were shown to have an effect on the likelihood of using a facility and the extent to which a cyclist will divert from their shortest path. The number of past bicycle crashes on a respondent's shortest route increase their likelihood of using a facility by 5%, and the difference in the number of crashes between their actual and shortest paths increased the diversion distance. The opposite effect was noted with the number of intersections and the difference in the number of intersections between the actual and shortest paths. This suggests that facilities should be located along streets with high crash rates, and areas with lower connectivity.
+It appears that cyclists' personal characteristics have some effect on their decision to use facilities, though perhaps not to the extent that has been previously suggested. Self-classification revealed that greater sensitivity to adverse cycling conditions increases the likelihood of using a facility, though only marginally, and increases the distances cyclists will travel to use them. The empirical confirmation that there are several types of cyclists with identifiable travel behaviors raises important questions about the design and location of future bicycle facilities. Should infrastructure be built to attract occasional riders or for regular and frequent riders, who represent
+20
+
+the largest current user group? While efforts should be made to identify bicycle facility configurations that appeal to all cyclists, design appears to be overshadowed by the question of facility location, which has been demonstrated to play a greater role in predicting diversions to cycling facilities. With regards to gender, it appears that in the Montreal context this factor has very little effect on facility usage and none on diversion distances; gender parity in overall utilitarian cycling however, has not yet been reached.
+There were several notable limitations inherent in this study. As in any survey, the risk of a skewed sample is a serious consideration, especially for overrepresentation of committed cyclists. To counter this bias, efforts were made to disseminate the survey using print media, social networking sites, email forwards and flyers distributed to cyclists, allowing for broader exposure than would be possible with only email distribution, as recommended by Dillman, Smyth & Christian (2009). Also, while the number of respondents to the survey provided a rich data set for analysis, the survey provided for only one trip per respondent, rendering analysis of irregular commuting patterns and trip chaining difficult. There are thus several opportunities to build on this analysis in future research into cyclist travel behavior. Using the observed usage of current facilities and other relevant spatial attributes, models might be developed that would predict the demand for new facilities, based on factors such as facility design and location. Also, future surveys into route analysis might make use of internet mapping applications, which allow users to trace their actual path taken, rather than employing shortest path estimations used here. This could also be achieved using global positioning systems (GPS) units, which allow for bicycle travel analysis not only through space, but also over time. These data collection methods would help to reduce the bias found in every self-report survey, and open up opportunities to the factors affecting cyclists' routes that are still not fully understood. Finally, this study did not include non-cyclists, whose potential route choices might also be of interest to travel behavior specialists.
+Overall, this research raises several important issues for researchers estimating demand for supplementary transportation networks such as bicycle facilities. Issues of spatial distribution were identified as a major factor affecting demand. The implications for this should not be understated: evaluations of facility types must take nearby facilities and urban form factors near the given facility into account. Integrating qualitative data would likewise provide researchers
+21
+
+with an additional perspective on user preferences, allowing for a richer understanding by combining observed and revealed preference data. New tools and techniques will allow other researchers to build on this study, which will lead to increasingly nuanced results and better policy decisions on bicycle facility investment.
+22
+
+Chapter 2
+23
+
+INTRODUCTION
+As problems with urban congestion and concern over air quality increase, so too has interest grown in encouraging utilitarian cycling for short distance trips. Many North American cities have commenced initiatives to implement new on-street and off-street cycling facilities, yet much progress must be made to complete networks that provide safe, efficient access to multiple destinations. In Montreal, the case study city examined in this paper, the recent transportation plan calls for a doubling of the existing cycling infrastructure (Montral, 2007). In Montreal as well as other cities, the location and quality of new routes will determine how successful these efforts are in attracting new cyclists and improving safety and convenience for current cyclists.
+There have been several empirical studies showing the correlation between the presence of cycling facilities and bicycle use (Dill & Carr, 2003b; Nelson & Allen, 1997). This has led researchers to investigate cycling facilities in greater depth from various perspectives. Some of this past research has focused on cost-benefit analyses of cycling facilities (Hopkinson & Wardman, 1996; Ortuzar, 2000). These studies use econometric methods to estimate the demand for various types of facilities and their respective costs. Other studies emphasize the current use of existing facilities, with the aim of better understanding how different facilities and environments affect cyclists travel behavior (Aultman-Hall et al., 1997; Moudon, 2005; Tilahun et al., 2007). For instance, in a study in the Twin Cities region, cyclists added, on average, 51% to their total trip length to use high-quality, off-street cycling facilities (Krizek et al., 2007). A good deal of cycling research is focused on cyclists themselves and the socioeconomic and other factors that affect their route choices and commuting habits (Dill & Gliebe, 2008; Howard & Burns, 2007; Sener, Eluru, & Bhat, 2009). Yet another branch of cycling literature has been concerned primarily with safety issues of various types of cycling facilities, both real and perceived (Jensen, 2007; Landis, 1997). Broadly stated, all of this research points to the important role that cycling facilities play in encouraging bicycling and promoting safety.
+However, despite the growth in the number of cycling facilities over the past two decades in North America, there has been little attention given to developing sound methodological tools for locating new facilities. For small to medium sized cities, the lack of appropriate travel data may make it impossible to implement the methods explored in this paper. In these locations,
+24
+
+transportation planners must develop their own methods to decide where to locate new facilities, based on some combination of intuition, consultation and cyclist counts.. However, in larger cities where travel behavior surveys and other relevant data exist, this flexible methodology for locating new cycling facilities is a useful tool for transportation planners and engineers. Since the scale investments for new infrastructure and the potential for increased cycling will both likely be greater, the method developed in this paper is intended for larger cities.
+In Montreal and in many other cities, cycling facilities are often recreational in nature, built through parks, or along water fronts. In contrast, on-street facilities are often built in small pieces based on perceived existing demand and/or communication with advocacy groups (Pucher, Komanoff, & Schimekc, 1999). These two methods have lead to disconnected cycling networks, often consisting of isolated segments that are poorly adapted to serve utilitarian trip purposes. As cycling levels are increasing in many North American cities, the need for a systematic way to locate new cycling facilities is ever more necessary. This paper argues for a model of facility location based on a grid cell model, which offers the flexibility to accommodate various readily available datasets and identifies corridors where cycling facilities would provide the maximum benefit to existing and potential cyclists.
+This paper begins by describing a methodology for locating new bicycle facilities and linking it to the cycling literature. This section is followed by a description of the study region and a data sources section. Next, an analysis section discusses the application of the described methods. Finally, the paper ends with a conclusion and recommendation section.
+25
+
+METHODOLOGY
+The rationale for this paper is to identify the best areas for investing in the cycling infrastructure in the Montreal region to help in increasing the number of cyclists and improving the safety conditions for current cyclists. several measures can be used in identifying the high priority areas in a region where new infrastructure will benefit existing and potential users. The following is a list of measures used in this analysis:
+1- Areas with high cycling activities 2- Areas with high potential of cycling activities 3- Areas where there is a need for new facility as expressed in surveys 4- Areas with higher risks for collision. 5- Segments that will complete the network
+The first step in prioritizing areas to build new cycling infrastructure or upgrade the existing infrastructure is through an analysis of the travel behavior of the existing cyclists in a region. Identifying areas with high cycling activities can be achieved through an analysis of travel behavior surveys. Travel behavior surveys are generally rich with information related to the origin and destination locations and mode choices. This is recorded in travel diaries with which the travel path between origins and destinations can be modeled to identify parts of the region where high numbers of cycling trips occur. It is important to note that many OD surveys do not record the exact route taken so this method will lead to an approximation of the flows of cyclists on the streets. Approximations can be developed using shortest distance path in GIS. As will be discussed later in this section, adjustments can be made to address the inaccuracy imposed by using this approximation. This method addresses existing demand only, limiting benefits to areas with presently high levels of cycling, while leaving the areas with lower levels un-served with new cycling facilities.
+Identifying areas where cycling can replace existing short distance car trips is the second measure we chose to use. This measure is directed towards potential cyclists. There have been several research papers discussing the effects of cycling facilities on attracting new cyclists (Dill & Carr, 2003b; Nelson & Allen, 1997). Again, a regular travel behavior survey can help in
+26
+
+developing this measure. The first step is to identify how far cyclists are willing travel to reach destinations using the OD survey. Second is to identify short motorized trips that fall under a certain distance threshold. The areas with high number of short motorized trips are generally where new cycling infrastructure can have an effect on attracting new cyclists and by reducing car use. It is important to note that cycling infrastructure by itself is not enough to attract new cyclists; "soft measures" such as cyclist education, driver training and promoting cycling culture play a very important role as well (Pucher et al., 1999). Similar to the process used for cycle trips, travel paths between origins and destinations obtained from travel behavior survey can be generated in GIS environment. These distances can be then compared to the acceptable cycling distances to identify areas with high potential for new infrastructure that serves potential cyclists. This method limits the benefits of the new infrastructure to current car users making short trips, so the benefits to current cyclists may be limited. Again, the use of the shortest network path has its shortcoming that must be overcome.
+Asking cyclists to define areas where there is a need for new cycling infrastructure is a useful method for prioritizing the building of these new infrastructures. In the summer of 2009, an online survey of Montreal cyclists was conducted. The survey included wide-ranging questions on cyclists' socio-demographic characteristics, cycling history, travel behavior, and route preferences. The survey was publicized widely in online newsletters, print and online media, online social networking sites and by distributing flyers directly to cyclists. Ultimately, the survey was completed by nearly 3000 respondents, representing the largest sampling of Montreal cyclists to date. One question in the survey asked respondents to identify a street segment where there is a need for new infrastructure. The use of a cycling survey helps in serving the existing demand, reflecting the "on the ground" experience of cyclists.
+Safety is one of the most important decisions affecting cyclists travel behavior and the perception of unsafe cycling conditions deters some people from commuting by bicycle. (Allen-Munley, Daniel, & Dhar, 2004; Aultman-Hall, 1996; Hunter, Harkey, Stewart, & Birk, 2000; Landis, 1997). Indeed, opinion polls commissioned by the City of Montreal have revealed that this remains the greatest impediment to attracting new cyclists in Montreal (Baromtre, 2005). Cycling facilities in general increase the perception of safety, however real safety improvements
+27
+
+depend on a host of other factors (Parkin, Wardman, & Page, 2007). An indication of safety levels can be found in accident data, which are generally available through archived police reports. These data can be geo-coded in GIS and plotted, allowing the identification of priority areas where interventions would likely improve safety. This method for identifying areas of intervention does not account for exposure, which is not available in many cases. In this analysis, we alternate between the examination of cycling crashes as a normalized factor within the grid cell and simply projecting them as points, depending on the scale of the map. When examining the safety improvements of cycling facilities, it is important to note the date when accidents occurred, the date when cycling facilities were implemented, and if these cycling facilities had an effect on accident frequencies. Also, the accuracy of this method depends mainly on the police reports, the accuracy of which can vary by region. Finally, not all accidents are reported to the police. If possible, some researchers might use ambulance related data, however, having access to this data is usually problematic due to privacy issues.
+Another measure to be considered are the discontinuities in the existing network and what degree they should influence the location of new facilities. Cycling infrastructure built in the 1990s as part of the rail-to-trail initiative was mainly directed towards recreational cycling. These new facilities have helped in increasing recreational cycling however they are often less useful to utilitarian cyclists. As mentioned, the construction of new on-street cycling facilities is often based on specific requests for small segments, which generally do not contribute to a coherent network. Examination of a cycling map for many regions reveals to what extent cycling infrastructure was built as individual segments and not as a network. Consequently, in most cities with cycling facilities, there are many discontinuities where the path or lane simply ends abruptly. , When revising the existing network, it is recommended that planners identify the links in the network that will have the greatest impact on increasing the connectivity of the cycling networks. This can be done as well using GIS by locating the areas where cycling facilities end and connecting these "dangling nodes" to other existing facilities.
+In order to address the shortcomings of the use of shortest network path between points, we superimpose a 300 x 300 meters grid cell over the entire studied region in GIS. The superimposed grid cells are then intersected with data sources mentioned above. The values
+28
+
+assigned to every grid cell are then summarized by the total number of routes or points within it and normalized based on the total sample size. Finally, the normalized totals of the data sources are added in a final field and normalized as well, producing a value for each grid cell to identify the high demand corridors.
+In this paper we use a vector-based grid cell layer of 300 meter square cells superimposed on a map of the island of Montreal region. Various sizes of grid cells were tested and 300 meters was found to be the optimal size for Montreal as it produces grid cells that contain parallel road segments and several accidents. Since two of the four above-mentioned data sources are based on a shortest distance network path, which does not specify between faster arterial or calmer residential streets, the use of 300 meter grid cells allows for more general route identification; more detailed analysis can be conducted for the final step in selecting site for new facilities.
+Ultimately, selection of streets for new cycling infrastructure must take into account local conditions and cyclist preferences identified in the literature, notably connectivity with existing routes, minimizing stops, avoiding large hills and avoiding conflicts with car traffic. The method described here gives equal weight to all factors; however this may be adjusted if more emphasis is needed on certain elements, such as reducing accident rates or targeting high car-use areas. However, it is highly recommended that this methodology balance multiple data sets to assess the need for new cycling facilities and to ensure that no single data set is unduly weighted. The grid cell method is used in this paper for locating bicycle facilities; however it can also be applied to locate other cycling facilities such as bicycle parking or public bicycle stations. The data required for locating these points would be different from that required for new cycling facilities; however the principle remains the same.
+29
+
+STUDY AREA AND DATA SOURCES
+Montreal, Qubec is the second most populous metropolitan area in Canada with a population of 3.7 million people. Montreal's on-street and off-street cycling facilities, shown in Figure 6, total 425 kilometers; 264 kilometers are off-street facilities and 161 kilometers of on-street. Within both of these categories of facilities, several configurations can be found, making Montreal an interesting case study of various route types. These include separate, off-street facilities, painted lanes, "sharrow markings", and physically-separated, bidirectional on-street lanes. Figure 7 shows a few examples of these facilities.
+Figure 6. Map of Montreal's on- and off-street bicycle facilities
+30
+
+Figure 7. Examples of cycling facilities in Montreal
+Several data sources are needed to conduct the above mentioned methodology. In Montreal a travel behavior survey is conducted every five years. This survey is known as the Montreal OD Survey ((AMT), 2003). The O-D survey includes disaggregate trips that were made by each person residing in a household that is included in the survey. The survey includes 5% of all households in the Montreal Region. Although we have data for the entire metropolitan region we will be limiting our analysis to the island of Montreal. The survey includes 3,376 cycling trips and 31,331 car trips from the Montreal O-D survey where the travel distance is less than the 75th percentile of cycling trip distances. These two data sources represent the first two inputs which are aggregated into in the final analysis.
+31
+
+The 2009 McGill cycling survey involved 2917 respondents, out of which 1,172 proposed cycling facilities recommended by cyclists are modeled. This involved three separate questions in the survey requesting respondents to specify which street most needed a cycling facility, the cross street where it should begin and the cross street where it should end. These intersections were then linked to a geo-coded list of all intersections on the Island of Montreal, allowing these routes to be modeled. Online surveys are frequently cited for sampling biases, due to coverage issues and sample size (Dillman et al., 2009). The extensive outreach conducted for this survey mentioned above may compensate for coverage issues; however the total population of Montreal cyclists remains unknown, so despite the large sample size, the minimum sample size for this population is not known.
+Finally, the Socit de l'assurance automobile du Qubec (SAAQ) database includes 182,603 accidents between 2003 and 2007. Of these, 152,820 are geocoded to precise X-Y coordinates. Between 2003 and 2006 there were 2,075 bike-vehicle accidents that are geocoded. Six of these accidents were fatal and 1,050 resulted in injuries. While relatively rare, frequency of crashes in certain locales can indicate the need to new facilities, which may reduce conflicts between drivers and cyclists.
+Figure 8 shows each of the four data sources after each was individually intersected with the 300 meters grid cells, and normalized by the number of observation of each data source. Figure 8a shows that current cycling trips are highly concentrated in the downtown area and inner suburbs, with strong lines running strong north-south between the Rivire-des-Prairies to the north and east-west from the downtown. Figure 8b shows that short car trips are not limited only to suburban areas; central neighborhoods also experience high levels of car traffic. Figure 8c reveals the routes suggested by cyclists in a recent survey. The vast majority of the routes suggested tend to be major arterials extending several kilometers in length or running parallel to some of the existing facilities. Finally, Figure 8d reveals that bicycle crashes are widely distributed across the island, with a concentration in the center areas. A visual comparison of this output to Figure 3a reveals that the relationship between crashes and high cyclist volumes is not linear; in other words, the number of cyclists in an area alone cannot explain incidents of bicycle
+32
+
+crashes. However, to better understand crash patterns, studies examining crash rates and their direct causes are needed.
+Figure 8. Measures for identifying potential locations for new facilities
+Figure 9 shows the results when the above four data sources are combined into one value and normalized. The large frame area shows the central section of the Island of Montreal, extending
+33
+
+from the St. Lawrence River at the bottom to the Rivires-des-Prairies at the top. The embedded frame B shows part of the West Island suburbs. The areas identified could be considered as priority zones, where future investments in cycling infrastructure are likely to benefit the greatest number of current and potential cyclists. The selection of new locations for cycling infrastructure should take into account current cycling facilities with an aim to providing maximum connectivity and accessibility to important activity generators. New facilities would thus join existing facilities and provide connections through high value corridors.
+Figure 9. Combined measure identifying priority areas for new facilities
+Figure 9 shows that the West Island suburbs has several east-west bicycle facilities, however few north-south connections linking them together. Also, figure 4 shows many segments of bicycle facilities in the southwest quadrant of the city, however most do not follow major demand corridors. Further, given several major demand corridors and high accident concentrations upper portion of the main frame, there is a strong argument for bicycle facilities in this area. . Finally,
+34
+
+in the area directly north of the CBD in which the majority of cells score moderate or high priority, several new bicycle facilities are recommended. Using streets with high concentrations of accidents and those specifically requested in the cyclist survey as a guide, this area would benefit from several new east-west and north-south bicycle facilities on major roads. As the grid cell method does not identify individual streets for new cycle facilities, final route selection should take into consideration the routes suggested by survey respondents. To the extent that these lines fall within high value grid cells of the other three factors considered, we recommend that these routes determine the final location of new bicycle facilities.
+
+As observed in figure 10, there are several scenarios that reveal optimal locations of new bicycle facilities or upgrades to existing facilities. This methodology identifies four different types of indicators, including dangling nodes identifying discontinuities; concentrations of crashes identifying safety issues; corridors with high grid cell values identifying high demand; and isolated high value grid cells identifying locations of isolated demand. These scenarios are summarized in table 6.
+
+Table 5. Indicators used in identifying priorities in cycling facilities
+
+Indicator
+
+Location
+
+Action recommended
+
+Figure
+
+Dangling node of High value grid cell existing facility
+Low value grid cell
+
+Connect to nearby facility through 10d
+high value square
+
+Take no action
+
+-
+
+Concentration of crashes
+
+In high value grid cell with no cycling facility
+On a street with cycling facility
+
+Build new facility
+Field study of existing conditions and possibly upgrade existing facility
+
+10b 10c
+
+Not containing existing Build new facility
+Corridor of high cycling facility
+
+10a
+
+value grid cells
+
+Containing existing Upgrade existing facility and/or
+
+-
+
+cycling facility
+
+build parallel facility
+
+Isolated high Anywhere
+value grid cell
+
+Improve cycling conditions; new -
+facility not necessarily required
+
+35
+
+This method for locating new facilities allows for easy visual interpretation. Figure 10a reveals where a new facility is suggested by a corridor of high value grid cells. Figure 10b locations where high value grid cells and crashes occur together, suggesting a new facility is needed. Figure 10d reveals an area in the center city with several "dangling nodes", where an existing bicycle facility ends abruptly in a high value grid cell; here, the methodology recommends connecting the existing facility through other high value squares to another facility. Finally, figure 10c reveals where a high concentration of crashes occurs on an existing facility. As mentioned previously, when identifying such facilities, it is important to ensure that the data on crashes does not predate the construction of the facility; in this case, the facility dates from the 1980s and the crashes from 2004-2006. Before recommending action, the question of whether the concentration of crashes is simply due to high cyclist exposure on this facility must be resolved. This can best be established through field study, involving counts of traffic and cyclists and examinations of accident locations.
+36
+
+Figure 10. Specific situations identified by the proposed methodology
+37
+
+DISCUSSION AND CONCLUSION
+The positive relationship between bicycle facilities and increased cycling mode share has been well-documented in the cycling literature (Dill & Carr, 2003b; Nelson & Allen, 1997). As cities turn increasingly to bicycles to carry a greater proportion of short distance trips, it is crucial that planners have empirical methods and reliable tools with which to plan new facilities. Using Montreal as a case study, this paper represents one effort to develop such a methodology. By using grid cells and several data sources in a balanced analysis, this paper shows how GIS can be used to help effectively to plan additions to an existing bicycle network. The datasets used in this paper are: 1) current cyclist trips; 2) short car trips; 3) segments of bicycle paths suggested by survey respondents; 4) bicycle crash data; and 5) dangling nodes on the existing bicycle network. Using these or a comparable group of data sources would also be useful for cities planning to expand their current network or just beginning to build new bicycle facilities. It is important to remember that this type of grid cell analysis is a useful tool for identifying major demand corridors, allowing transportation planners to establish macro-level priorities for bicycle networks. In other words, this level of analysis is not ideal for evaluating existing facilities or pinpointing problem areas; at best, concentrations of crashes may suggest locations requiring more in depth analysis. As for selecting new routes for facilities, segments suggested by current cyclists will be helpful in identifying the final facility locations.
+Applying this method to the Island of Montreal, we see a considerable demand for new cycling facilities throughout most of the central city and for specific corridors in the West Island suburbs and in suburbs north of Mount Royal. In the center, our methodology recommends several parallel cycling facilities running north-south to provide alternatives to the sole path that extends the length of the island. Likewise, new east-west facilities are recommended to augment the existing network, and extend further west, connecting high demand areas west and north of Mount Royal. By simply focusing on building a consolidated network in the area highlighted in figure 4, Montreal's cycling network would be significantly improved. In general, greater emphasis should be placed on connectivity when designing a cycling network.
+This methodology outlines how GIS can be used to locate new bicycle facilities. As cities move forward and add new facilities, it will be important for researchers to devise methods of
+38
+
+evaluating their effects and overall improvements they bring to the network. In this study we used the 300 meters grid cells, since we found them to be most appropriate to the Montreal region. Other grid cell sizes should be tested when implementing this methodology in other regions. The method developed in this research paper recommends general areas in a region where facilities are needed. This method should be followed by detailed analysis of alternative routes within the identified zones for high priority for new cycling infrastructure. Overall, this work raises a number of important data, measurement, and methodological issues for future research in the cycling infrastructure field. An understanding of cyclists travel behavior is necessary to accompany the implementation of such methodology. Qualitative analysis of existing facilities would complement this research by shedding light on some of the factors, attitudes or methods we were unable to employ in this paper. Continued research in this field of infrastructure planning will allow transportation planners and engineers to more accurately predict the placement and characteristics of future facilities.
+39
+
+Afterword
+The papers presented in this study comprise two critical components necessary to improving any city's network of bicycle infrastructure. The first chapter of this project serves to develop a better understanding of how cyclists currently use the existing infrastructure in Montreal by exploring the travel behaviors associated with various types of infrastructure, and likewise by developing a better understanding of the behavior of various classes of cyclists. Recognizing the this behavior associated with various classes of cyclists, and how they determine their routes around the city provides planners with a greater knowledge of the user group they are serving, and is an essential component to improving cyclists day-to-day experiences on the road.
+The second paper builds on the findings of this first chapter by aggregating possible indicators of bicycle facility demand into a grid-based map of Montreal Island, illustrating areas where investments would likely yield the greatest results. By integrating factors such as past crashes, high number of cyclists or short vehicle trips, priority areas can be identified. This methodology also has the benefit of being very flexible, allowing planners to use whatever relevant data they have in the same manner.
+While this project has been focused almost exclusively on bicycle infrastructure, there are many proven ways to enhance the profile of cycling in urban areas, such as employer benefits, municipal promotions, festivals, and better training for all road users. As indicated by the literature, safety concerns remain one of the most significant barriers to enticing more people to cycle, and dedicated infrastructure has been shown to improve the perception of safety.
+As cities continue to build infrastructure to entice residents to use a bicycle for a portion of their trips, future studies will be required to explore the efficacy of infrastructure that is implemented. Safety studies and comparisons of bicycle counts on facility and non-facility streets will help to determine this. As enthusiasm for this mode continues to grow and future studies become necessary, collaborative research projects between academics and planners will likely have fruitful results, permitting greater integration between theory and practice. As long-time bicycle researcher, John Pucher, noted over a decade ago, a North American bicycle renaissance is well underway.
+40
+
+REFERENCES
+(AMT), A. M. d. T. (2003). Enqute Origine-Destination de la Rgion de Montral (Publication.: Allen-Munley, C., Daniel, J., & Dhar, S. (2004). Logistic Model for Rating Urban Bicycle Route Safety.
+Transportation Research Record, 1878, 107-115. Aultman-Hall, L. (1996). Communter Bicycle Route Choice: Analysis of Major Determinants and Safety
+Implications. McMaster University, Hamilton, Ontario. Aultman-Hall, L., Hall, F., & Baetz, B. (1997). Analysis of Bicycle Commuter Routes Using Geographic
+Information Systems Implications for Bicycle Planning. Transportation Research Record, 1578, 102-110. Baker, L. (2010, March, 2010). How to Get More Bicyclists on the Road. Scientific American. Baromtre. (2005). Sondage auprs des Montralais. Montreal. Cynecki, M., Perry, G., & Frangos, G. (1993). Study of bicyclist characteristics in Phoenix, Arizona. Transportation Research Record(1405), 28-34. Deakin, E. A. (1985). Utilitarian Cycling: A Case Study of the Bay Area and Assessment of the Market for Commute Cycling. Berkeley, Calif: Institute of Transportation Studies. Dill, J., & Carr, T. (2003a). Bicycle commuting and facilities in Major U.S. Cities: If you build them, commuters will use them. Transportation Research Record(1828), 116-123. Dill, J., & Carr, T. (2003b). Bicycle commuting and facilities in major U.S. cities: If you build them, commuters will use them. Transportation Research Record, 1828, 116-123. Dill, J., & Gliebe, J. (2008). Understanding and Measuring Bicycling Behavior: a Focus on Travel Time and Route Choice: Oregon Transportation Research and Education Consortium (OTREC). Dillman, D., Smyth, J., & Christian, L. (2009). Internet, mail and mixed-mode surveys: The tailored design method, third edition. Hoboken, NJ: John Wiley and Sons, Inc. Garrarda, J., Roseb, G., & Lo, S. (2008). Promoting transportation cycling for women: The role of bicycle infrastructure. Preventative Medicine, 46(1), 55-59. Gliebe, J. P., Broach, J., & Dill, J. (2009). Development of a multi-class bicyclist route choice model using revealed preference data. Paper presented at the The 12th International Conference on Travel Behaviour Research. Retrieved March 26, 2010, from http://iatbr2009.asu.edu/ocs/custom/abstracts/572_Abstract.pdf Hopkinson, P., & Wardman, M. (1996). Evaluating the demand for new cycle facilities Transport Policy, 3(4), 241-249. Howard, C., & Burns, E. (2007). Cycling to Work in Phoenix: Route Choice, Travel Behavior, and Commuter Characteristics. Transportation Research Record (1773), 39-46. Hunter, W., Harkey, D., Stewart, R., & Birk, M. (2000). Evaluation of blue bike-lane treatment in Portland, Oregon. Transportation Research Record, 1705, 107-115. Hunter, W., & Huang, H. (1995). User counts on bicycle lanes and multiuse trails in the United States. Transportation Research Record, 1502, 45-57. Iacono, M., Krizek, K., & El-Geneidy, A. (2008). Access to Destinations:How Close is Close Enough? Estimating Accurate Distance Decay Functions for Multiple Modes and Different Purposes: Minnesota Department of Transportation. Jensen, S. (2007). Safety effects of blue cycle crossings:A before-after study. Accident Analysis and Prevention, 40, 742750. Krizek, K., El-Geneidy, A., & Thompson, K. (2007). A detailed analysis of how an urban trail system affects the travel of cyclists. Transportation, 34(5), 611-624. Landis, B. W. V., V. R.; Brannick, M.T. . (1997). Real-Time Human Perceptions: Toward a Bicycle Level of Service. Transportation Research Record 1578, 119-126.
+41
+
+LeClerc, M. (2002). Bicycle Planning in the City of Portland: Evaluation of the City's Bicycle Master Plan and Statistical Analysis of the Relationship between the City's Bicycle Network and Bicycle Commute. Portland, OR: Partland State University.
+Luoma, M. M., Kauko.; Palomki, Mauri. (1993). The threshold gravity model and transport geography : How transport development influences the distance-decay parameter of the gravity model. Journal of Transport Geography, 1(4), 240-247.
+Montral, V. d. (2007). Plan de Transport. Moudon, A. V. (2005). Cycling and the built environment, a US perspective. Transportation Research Part
+D, 10, 245261. Nelson, A., & Allen, D. (1997). If You Build Them, Commuters Will Use Them: The Association Between
+Bicycle Facilities and Bicycle Commuting Transportation Research Record, 1578, 79-83. Ortuzar, J. d. D. I., iAndres; Valeze, Claudio (2000). Estimating demand for a cycle-way network.
+Transportation Research Part A, 34, 353-373. Parkin, J., Wardman, M., & Page, M. (2007). Models of perceived cycling risk and route acceptability.
+Accident Analysis and Prevention, 39, 364371. Pucher, J., & Buehler, R. (2006). Why Canadians cycle more than Americans: A comparative analysis of
+bicycling trends and policies. Transport Policy, 13, 265-279. Pucher, J., & Buehler, R. (2008). Making Cycling Irresistible: Lessons from the Netherlands, Denmark, and
+Germany. Transport Reviews, 28, 495-528. Pucher, J., & Dijkstra, L. (2000). Making Walking and Cycling Safer: Lessons from Europe. Transportation
+Quarterly, 54(3). Pucher, J., Komanoff, C., & Schimekc, P. (1999). Bicycling renaissance in North America? Recent trends
+and alternative policies to promote bicycling. Transportation Research Part A, 33(7/8), 625-654. Sener, I., Eluru, N., & Bhat, C. (2009). An analysis of bicycle route choice preferences in Texas, US.
+Transportation Shafizadeh, K., & Niemeier, D. (1997). Bicycle Journey-to-Work: Travel Behavior Characteristics and
+Spatial Attributes. Transportation Research Record, 1578, 84-90. Stinson, M., & Bhat, C. (2003). Frequency of Bicycle Commuting Internet-Based Survey Analysis.
+Transportation Research Record 1878, 123-130. Taylor, P. J. (1975). Distance Decay Models in Spatial Interactions. Norwich, UK: Geo Abstracts Ltd. Tilahun, N., Levinson, D., & Krizek, K. (2007). Trails, lanes, or traffic: Valuing bicycle facilities with an
+adaptive stated preference survey. Transportation Research Part A, 41, 287-301. Vlo-Qubec. (2005). L'tat du vlo au Qubec en 2005. Montreal. Winters, M., Friesen, M., Koehoorn, M., & Teschke, K. (2007). Utilitarian Bicycling: A Multilevel Analysis
+of Climate and Personal Influences. American Journal of Preventive Medicine, 32(1), 52-58. Zhao, F., Chow, L., Li, M., Ubaka, I., & Gan, A. (2003). Forecasting transit walk accessibility: Regression
+model alternative to buffer method. Transportation Research Record(1835), 34-41.
+42
+
+APPENDICES
+Appendix 1. Comparing Cyclist homes: 2003 O-D survey & 2009 TRAM Cycling Survey
+43
+
+Facebook 5%
+
+Other 24%
+
+Email forward from an
+acquaintance 27%
+
+Flyer on bike 2%
+Word of mouth 4%
+
+News story 23%
+
+Via a listserv 15%
+
+Appendix 2. How did respondents hear about the survey?
+
+Percent of respondents
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+<20
+
+20-40
+
+40-60
+
+60-80
+
+80-120
+
+>120
+
+Annual income (in thousands)
+
+Appendix 3. Household income of respondents
+
+44
+
+Percent of respondents
+
+Round trips per week
+
+12 10
+8 6 4 2 0
+19 23 27 31 35 39 43 47 51 55 59 63 67 71+ Age
+Appendix 4. Reported age of respondents
+60 50 40 30 20 10
+0
+Appendix 5. Average reported weekly bicycle trips over 12 months
+45
+
+Percent
+
+50 40 30 20 10
+0 Never
+
+Students Workers Unemployed Retired
+
+Occasional
+
+Regular
+
+Very Frequent
+
+Appendix 6. Frequency of respondents' reported vehicle usage
+
+Percent
+
+60 50 40 30 20 10
+0 Never
+
+Students Workers Unemployed Retired
+
+Occasional
+
+Regular
+
+Very Frequent
+
+Appendix 7. Frequency of respondents' reported public transit usage
+
+46
+
+Percent
+
+Cyclist type 100
+Moderate 80 Regular
+Serious 60 All
+40 20
+20 13 13 14
+0 Negative
+
+30 27 28 28 Neutral
+
+60 60 59 50
+Positive
+
+Appendix 8. Respondents' stated preference for cycling on one-way secondary street with no bicycle facilities
+
+Percent
+
+Cyclist type 100 Moderate
+Regular 80 Serious
+All 60
+
+40
+
+25
+
+20 16 19
+
+20
+
+0 Negative
+
+31 33 31 26
+Neutral
+
+59 50 49 43
+Positive
+
+Appendix 9. Respondents' stated preferences for cycling on one-way secondary streets with painted counterflow facilities
+
+47
+
+Percent
+
+Cyclist type
+
+100 Moderate
+
+80
+
+Regular Serious
+
+60 All
+
+40
+20 20 13 14
+7 0
+Negative
+
+85
+71 71 62
+
+17 18 16 9
+Neutral
+
+Positive
+
+Appendix 10. Respondents' stated preferences for cycling on secondary streets with bidirectional sidepath, separated by bollards
+
+Percent
+
+Cyclist type 100
+Moderate Regular 80 Serious All 60
+40
+21 20 13 14
+6
+0 Negative
+
+85 73 72 61
+
+14 18 14 9
+Neutral
+
+Positive
+
+Appendix 11. Respondents' stated preferences for cycling on major one-way streets with physically-separated sidepaths
+
+48
+
+Cyclist type 100 Moderate
+Regular 80 Serious
+All 60
+40
+20 20 10 7 11
+0 Negative
+
+24 26
+
+24
+
+20
+
+Neutral
+
+74 64 65 56
+Positive
+
+Percent
+
+Appendix 12. Respondents' stated preferences for cycling on major one-way streets with one-way striped facilities
+
+100 80 78
+60 51 51 40 34
+20
+0 Negative
+
+33 36 31 19
+Neutral
+
+Cyclist type Moderate Regular Serious All
+30 16 18 3
+Positive
+
+Percent
+
+Appendix 13. Respondents' stated preferences for cycling on major two-way streets with no bicycle facilities
+
+49
+
+100
+80
+61
+60
+40 34 36 25
+20
+0
+Negative
+
+28 30 28 29 Neutral
+
+Cyclist type Moderate Regular Serious All 48
+35 35
+11
+Positive
+
+Percent
+
+Appendix 14. Respondents' stated preferences for cycling on major one-way streets with no bicycle facilities
+
+50
+
+Appendix 15. Survey questons
+USER CHARACTERISTICS What is your age? What is your gender? (male/female/prefer not to say) How many people are in your household? How many bicycles are in your household? How many motor vehicles are in your household? How many months do you bicycle each year? Beginning in what month? ____________ How many years have you been bicycling for transportation purposes (ie. not only for recreation) Why do you use a bicycle for transportation? Please rank the following reasons from 1-5 (pull-down)
+__Environmental reasons __Health reasons __Low cost of cycling __It is an efficient way to get from A to B __ It is part of my self-identity/culture What is the approximate total annual combined income of your household? Under $10 000 $10 000-$20 000 $20 000-$30 000 $30 000-$40 000 $40 000-$60 000 $60 000-$80 000 $80 000-$100 000 $100 000-$120 000 More than $120 000
+Route-specific questions
+What is the postal code at your home location? (Note: this is only to establish your approximate location; your identity will remain anonymous) ______________________
+What is your usual cycling destination?
+51
+
+a) Work b) School / university / CEGEP c) Shopping d) Recreational destination (ie. pool, gym) e) Other ______________
+What is the nearest intersection to your usual cycling destination (location identified in previous question)? _____________________________________________________
+What on-street bicycle path is closest to your usual route to this destination? (from question above)
+Do you use this bicycle path to reach this destination? (Y/N)
+If yes, where do you get on this path (when traveling from)?___ ______________
+Where do you get off this path? ______________________
+Stated preference (w/ images)
+In terms of speed and efficiency, how desirable are the following types of streets for cycling?
+In terms of safety and comfort, how desirable are the following types of streets for cycling?
+very undesirable / undesirable / no opinion / desirable / very desirable
+One-way cars, no bike path (de Bullion) One-way cars, painted bike symbols ( ....) One-way cars, two-way (counterflow) bike paths (Clark) One way cars, multiple lanes, no bike path (St. Jacques West) One way cars, multiple lanes, one-way bike path (St. Urbain) Two lanes of cars, both directions, no bike lane (des Pins) Four lanes of cars, both directions, no bike lanes (Sherbrooke) Separated, bi-directional bike lane (de Maisonneuve)
+How important are the following factors in making a street a good bicycle route? (rank 1-7)
+Presence of a bicycle path Presence of a bicycle path with a physical barrier Directness towards my destination Surrounding environment is attractive or interesting Low number of cars driving Low number of cars parked Quality of the street pavement
+How important are the following factors in making an intersection good for cyclists? (rank 1-7)
+-high likelihood of catching a green light
+52
+
+-clear lane markings leading up to the intersection -markings, such as bike symbols, across the intersection -low number of cars passing -low number of cars turning -low number of pedestrians crossing What street in Montreal is most in need of a bicycle path? Please be specific. Street ____________________ From (cross-street) ________________________ To (cross-street) __________________________ Have you ever had a bicycle accident in Montreal? Y/N If yes, on what street? At what cross-street? Briefly, describe what happened Have you had a "close call" in Montreal on your bicycle recently? If yes, where was the what street? _________________ At what cross-street? _________________ Briefly, describe what happened_________________________________________
+53
+
+

@@ -1,0 +1,889 @@
+ 
+ 
+Making Montreal's Indoor City Accessible  
+for People with Disabilities  
+                               
+                  Matthew Hagg 
+Master of Urban Planning Candidate   
+Supervised Research Project Report 
+Submitted to Ahmed M. ElGeneidy in partial fulfillment of  
+the requirements for the Master of Urban Planning degree 
+School of Urban Planning 
+McGill University 
+October 1, 2009 
+
+Making Montreal's Indoor City Accessible for People with Disabilities ACKNOWLEDGEMENTS    I would like to thank Professor ElGeneidy for all of his assistance and guidance during this  project and to thank Professor Badami for offering to be the second reader for this project. I  would also like to thank Lisa Kastelberger, Kevin Manaugh, and Andrew Matheson for their  contributions towards the GIS model that this research is based on.  Finally, thank you  Fawn for everything. I could not have done it without you.
+2 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+ABSTRACT  Indoor pedestrian networks are a facet of the built environment in many cities around the  world. They are built for many reasons, including separating pedestrians from motor  vehicle traffic, providing a refuge from seasonal inclement weather, or to bring pedestrian  traffic and retail businesses to otherwise unused floors of office buildings. In Montreal, an  Indoor City (RSO) has been in existence since 1962 and has grown to a length of 32 km  within the downtown area. While previous studies have examined the network growth and  its effects on the levels of accessibility to retail space within the indoor city, the results of  these studies do not hold true for people with disabilities. This research examines the  ability of a person with physical disabilities and/or mobility impairments to function  within Montreal's Indoor City. This is done through an examination of the existing indoor  network and measuring the existing barriers that a person with disabilities faces when  moving inside Montreal's Indoor City using a simple accessibility measure. Also in this  research several scenarios were developed to determine the most important links that  could substantially increase the accessibility levels for people with physical disabilities.  Results suggest that while certain segments are more accessible than others, the majority  of the Indoor City is currently inaccessible to people with physical disabilities. The paper  concludes with a series of recommendations for upgrading key connection points in order  to increase the level of accessibility inside the Indoor City by implementing universal  design measures; legislative improvements aimed at ensuring accessibility in future  extensions and as part of any major renovations; organizational improvements, such as a  municipal department dedicated to running the Indoor City; and the launch of a RSO  website. 
+3 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+TABLE OF CONTENTS 
+LIST OF FIGURES
+INTRODUCTION
+BACKGROUND
+INDOOR CITIES THE IMPORTANCE OF ACCESSIBILITY
+MONTREAL'S INDOOR CITY
+HISTORY AND BACKGROUND LEGISLATIVE BACKGROUND QUASI-PUBLIC SPACE METRO SYSTEM BACKGROUND
+ACCESSIBILITY OF COMPARABLE INDOOR CITIES
+METHODOLOGY
+ANALYSIS AND DISCUSSION
+STREET LEVEL ACCESS SIGNAGE NETWORK ANALYSIS FOR PEOPLE WITH DISABILITIES METRO ACCESSIBILITY IMPROVEMENTS EASTERN AND WESTERN RSO ACCESSIBILITY
+RECOMMENDATIONS
+PHYSICAL IMPROVEMENTS LEGISLATIVE IMPROVEMENTS ORGANIZATIONAL IMPROVEMENTS WEBSITE
+CONCLUSION
+REFERENCES
+APPENDIX 1
+4 
+
+5
+7
+10
+10 11
+17
+17 20 24 25
+28
+31
+33
+34 35 39 45 49
+53
+53 55 56 57
+58
+60
+62
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+LIST OF FIGURES 
+Figure 1: Montreal's Indoor City (RSO) ...................................................................................................... 8 Figure 2: Inaccessible store in Montreal's Indoor City. ....................................................................... 14 Figure 3: A typical connection between buildings in the Indoor City. .......................................... 19 Figure 4: Only three suburban Montreal Metro stations, shown with "Ascenseur" symbols,  are currently equipped with elevators. Source: STM ............................................................................ 25 Figure 5: Elevator construction at the Bonaventure Metro Station............................................... 27 Figure 6: Closeup view of the downtown segment of Montreal's Indoor City......................... 34 Figure 7: Inaccessible stores in the Cours Mont Royal building in the Indoor City ................ 35 Figure 8: Coordinated RSO signage, with an inaccessible connection beyond....................... 36 Figure 9: While it might seem that this sign points the way to the Delta Hotel, or a  connection between various levels of this building for mobility device users, in fact, only  the washrooms and parking lot are actually accessible via this route........................................... 37 Figure 10: Place Ville Marie to Central Station connection. An accessible, yet unsigned,  connection is available via the Queen Elizabeth Hotel, through the top doors.......................... 38 Figure 11: Map depicting the amount of retail space (sqft) that can be accessed from  individual buildings within the network, not including the metro. People without  disabilities can reach any building in the downtown network from any other downtown  building, while people in the Atwater, Concordia, or Berri segments can only reach retail  space in those segments. .................................................................................................................................... 39 Figure 12: Map showing the difference in accessibility for persons with physical  disabilities between the base network and the current disabled network. Values closer to  zero mean that the level of accessibility is closer to that of the base network. ......................... 40
+5 
+
+Making Montreal's Indoor City Accessible for People with Disabilities Figure 13: Map showing the difference in accessibility for persons with disabilities  between the base network and the disabled network with suggested new automatic door  locations. ................................................................................................................................................................... 42 Figure 14: Map showing the difference in accessibility for persons with disabilities  between the base network and the disabled network with Eaton Centre to Place Ville Marie  accessible .................................................................................................................................................................. 43 Figure 15: Map showing the difference in accessibility for persons with disabilities  between the base network and the disabled network with four key locations made  accessible .................................................................................................................................................................. 45 Figure 16: Metro stations linked to the Indoor City ............................................................................. 46 Figure 17: Images depicting the process of boarding a STM metro car with a ramp, and of  the gap that exists between the car and the platform. Source: STM.info...................................... 47 Figure 18: Map A shows the difference in accessibility for persons with disabilities  between the base network and the disabled network with all Metro stations accessible.  Map B shows the difference in accessibility between the base network and the disabled  network with all Metro Stations and the four key locations accessible. ....................................... 49 Figure 19: Closeup view of the Atwater section of the Indoor City.............................................. 50 Figure 20: Closeup view of the Concordia section of the Indoor City ......................................... 51 Figure 21: Closeup view of the Eastern section of the Indoor City............................................... 52 Figure 22: Accessibility signage example from Toronto's PATH. Source: PATH map ........... 53
+6 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+INTRODUCTION 
+"The moral test of government is how it treats those who are in the dawn of life, the  children; those who are in the twilight of life, the aged; and those in the shadows of life,  the sick, the needy and the handicapped." Hubert H. Humphrey, former U.S. Senator    Montreal's Indoor City  often called the Underground City and officially known as RSO  (rseau de ville souterrain)  is one of the largest networks of interconnected complexes in  the world. This network links shopping malls, office towers, metro and train stations,  hotels, apartments, and convention centres in the downtown area. It provides Montrealers  with the ability to travel between any of these destinations without stepping outdoors. The  Indoor City is well used by pedestrians looking to escape from Montreal's harsh climate,  especially during the cold winter and hot summer days. As Montreal's downtown is located  on a hillside, buildings that comprise the Indoor City tend to have a variety of levels, often  with a tunnel entering the building on one level, but leaving towards the next building on a  higher or lower level. Consequently, stairs are a common feature of the Indoor City;  however, because the majority of the system was constructed before the advent of the  concept of universal access, there are few elevators or ramps to be found in the tunnels and  walkways connecting buildings. 
+The Indoor City network poses complications for people with physical disabilities.  In addition, many of its components are especially inaccessible for people with mobility  impairments. Having full access to all services within the Indoor City is currently a big  challenge, if not an impossible one, for people with mobility impairments. Therefore, this  study will examine the current level of accessibility of Montreal's Indoor City for people 
+7 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+with mobility impairments and suggest modifications to the existing network that could  improve the level of accessibility for people with mobility impairments. Figure 1 is a map of  Montreal's Indoor City. 
+
+Figure 1: Montreal's Indoor City (RSO)    
+This study is divided into six chapters. It begins with a background discussion on 
+
+ 
+
+indoor cities in general, followed by a look at why accessibility for persons with disabilities 
+
+is important. Chapter Two focuses on Montreal's Indoor City, including a discussion of its 
+
+history and "raison d'etre", the legislative background which governs how the Indoor City 
+
+was built and operates, and the quasipublic space that the Indoor City encompasses, as 
+
+well as the metro system that the RSO has been built around. The third chapter is a brief 
+
+overview of other similar indoor cities and how their accessibility compares to Montreal's 
+
+RSO. Chapter Four explains the methodology used to undertake this study. The fifth 
+
+chapter involves analysis and discussion, including the results from the field study 
+
+8 
+
+Making Montreal's Indoor City Accessible for People with Disabilities undertaken, along with several scenarios that have been generated to show the significance  of changing the levels of accessibility along some key links and the extent these changes  will benefit people with mobility impairments. Finally, recommendations for future  accessibility improvements within the Indoor City are presented. 
+9 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+BACKGROUND 
+Indoor Cities  Numerous indoor pedestrian networks exist in cities around the world. These networks,  which are often called indoor cities, underground cities or skyways, usually connect  buildings, mass transportation systems, and parking facilities, and allow pedestrians to  travel between them without venturing outside. These networks can usually be classified  into two different types: systems that are primarily underground, and systems that are  primarily above grade, usually on the second stories of buildings. Montreal's indoor  pedestrian network is unique because around half of the network is at or above grade.  Pedestrian networks across the globe have developed as important indoor pedestrian  environments that host a diversity of activities and purposes, especially in downtown  areas. In Canada, Montral's Indoor City, Toronto's PATH and Edmonton's Pedway  underground pedestrian routes have gained fame, as have other systems all over the world  such as Forum des Halles in Paris, Japan's Crysta Nagahori, and Singapore's CityLink Mall.  Above grade "skyway" systems are also common in North America, such as the  Minneapolis' Skyway, and Calgary's PLUS 15.  
+Historically, there have been varying rationales behind the construction of indoor  cities. In Canada, they were largely constructed to provide a refuge from climate extremes,  while in other cities, such as in Houston as well as in those in Asia, the reasoning behind  construction was primarily to separate pedestrians from automobile traffic as part of the  segregation of street users for increased safety and efficiency [1, 2]. Elsewhere they have 
+10 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+often been constructed to provide a quick route between mass transit stations and large  trip generators. 
+Underground and indoor cities provide benefits for many stakeholders. They offer  climate protection and safety for pedestrians; increased property values and more  opportunities for highrent spaces for property owners; and they allow municipalities to  show off a model of compact sustainable environment [3]. Increased visibility and exposure  for retailers is also a key element in the underground city. After Montreal's Metro was  constructed in 1966, retailers saw the advantage of opening shops in the Indoor City as  they could rely on extensive traffic to and from the metro passing by their storefronts.  Indeed, prior to the opening of the metro and the indoor city there was no belowground  retail space, but as of recently, 65% of all the retail space in Montreal's downtown core can  be accessed via the indoor city [2, 4].     Accordingly, granting smooth access to people with disabilities is a must so they can  have equal opportunities in term of access to transportation, retail, and protection from  severe weather conditions. 
+The Importance of Accessibility  It is a common misconception that persons with disabilities are limited just to people in  wheelchairs. In fact, there are a wide range of disabilities including mobility, visual,  auditory, and cognitive impairments, among others. Although the scope of this research  study will be limited to physical disabilities and mobility impairments, all of these  aforementioned disabilities are important, and people with each of these disabilities could  certainly face difficulties in accessing and navigating Montreal's Indoor City. 
+11 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+Even so, focusing on persons with physical disabilities actually covers a wide range  of conditions. Kroul, a Quebec based organization that aims to make cultural and tourism  attractions more accessible to persons with disabilities, defines a person with a physical  disability as someone who, either temporarily or permanently, has trouble with mobility  due to his size or physical condition. It widens the definition to include people with  deficiencies resulting from illness or accident and who consequently get around with the  help of a wheelchair, crutches or a cane. Their definition also includes people who live with  a visual or auditory impairment and people who tire easily due to pregnancy, age, arthritis  or heart problems, or being overweight [5]. Nevertheless, it is a basic tenet of our society  that persons with disabilities should have the right to access and use the same public space  that other people can [6, 7]. Unfortunately, and despite the best efforts of advocacy  organizations, this is not always the case. 
+In today's world, the built environment is usually designed for the perceived model  pedestrian: that is, the young and able bodied [8]. This is problematic, because a growing  percentage of the population is aging and not able bodied, and studies have found that the  design of today's built environment generally does not meet the needs of persons with  disabilities [7]. According to recent statistics, about 15% of the Canadian population has  some sort of physical disability [9]. Combine this with the fact that temporary injuries or  permanent disabilities that make it very difficult, if not impossible, to climb stairs will affect  70% of the population at some point during their lives, and perhaps we should adjust our  thinking on who a model pedestrian is [8].  
+Recent studies on the interaction between people with disabilities and their  environment have found that the built environment is actually more of a constraint to 
+12 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+people with disabilities than their disability is. In fact, any person can be disabled if the  built environment is not designed according to his or her needs [6]. Public spaces are often  socially produced in ways that deny disabled people the same levels of access as non disabled ones [6, 10]. In a recent survey, over twothirds of disabled respondents agreed  that society was their main cause of disability, not their impairment [11]. Accordingly, it is  the duty of transportation engineers, planners, architects, and other professions to work  closely with people with disabilities in order to understand their needs and include them in  the development of public space. 
+Impediments in the built environment can lead to marginalization within society for  persons with disabilities. This is likely because the built environment is often planned by  persons whose awareness of disabilities is limited. Certainly, for those who are not  disabled, it can be difficult to conceive of life as a person with a mobility impairment. There  are many examples in our everyday lives that require totally different behaviour for  persons with disabilities. A narrow aisle or tight corner, which is a common sight in many  Montreal dpanneurs, can mean the difference between being able to get a package off the  shelf by oneself, and having to rely on others to help. One UK study noted that numerous  accessibility problems exist in shops, including narrow doorways and aisles, changing  rooms that are difficult to use, shelves that are too high, and stock that is poorly placed, not  to mention that 37% of respondents rated accessibility to these shops as "poor" [11]. Stairs,  steep gradients, or heavy doors might be the barrier between being able to use the front  door of a building, just like any other person, or having to travel around to the side or rear  of a building to use a special wheelchairaccessible entrance. Even just a single stair can  cause an area, store, or building to be offlimits for someone in a wheelchair, as seen in 
+13 
+
+Making Montreal's Indoor City Accessible for People with Disabilities Figure 2. Denial of access to public places due to physical obstructions can actually cause  social isolation for people with disabilities [6].  
+  Figure 2: Inaccessible store in Montreal's Indoor City.   
+To ensure accessibility for persons with disabilities, it is necessary to redefine our  view of designing the built environment for the model pedestrian. Instead, universal design  (also known as universal access or universal accessibility)  that is designing urban  environments to be accessible to everyone, regardless of any disability or impairment  is a  new approach, and one that has been adopted by most organizations and jurisdictions,  including Montreal, in recent years. 
+Designing for universal access is beneficial in that it is not only persons with  disabilities that benefit from accessibility improvements. Everyone does, including groups 
+14 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+such as parents with strollers, elderly persons, pregnant women, or people with temporary  injuries from accidents. Building owners and tenants also benefit from universal design as  easier and better access will inevitably lead to increased pedestrian traffic, allowing  owners to charge higher rent, and allowing tenants to benefit from more customers and  increased revenue. Universal access will become especially useful in the future as the  population ages. It is expected, for example, that 50% of the population will be over the age  of 55 by the year 2030 and as the baby boomers age, the amount of people with ambulatory  and breathing difficulties is expected to rise, as is the number of persons using wheelchairs  to shop [8, 11]. By designing for universal access, impediments such as stairs, heavy doors,  steep ramps, and poor signage can be minimized, and an environment that is truly open to  everyone can be created [11, 12].  
+Historically, universal accessibility, or even just accessibility for people with  disabilities, has not been a high priority for the developers of pedestrian networks. A  comprehensive study completed in 1978 on the development, design and implementation  of pedestrian systems and networks in Canada failed to even mention accessibility for  persons with disabilities. It did mention, however, the lack of wayfinding and proper  signage, and the possibility of becoming disoriented within the system was acknowledged  even then [13]. 
+It was not until the 1990s that universal design began to be acknowledged as an  important principle in Canada. While this was recognized by governments around the  world, including the United States and the United Kingdom, which passed national  disability acts in 1990 and 1995 respectively, Canada has yet to implement national  disability legislation. Nevertheless, local building codes have, for the most part, begun to 
+15 
+
+Making Montreal's Indoor City Accessible for People with Disabilities require newly constructed publicly accessible buildings to be accessible to persons with  disabilities.     
+16 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+MONTREAL'S INDOOR CITY 
+History and Background  Montreal's Indoor City, is one of the world's largest indoor pedestrian networks. Located  across the downtown core of Montreal, the Indoor City is a hybrid of the underground and  abovegrade indoor city system types and is comprised largely of underground corridors  connecting the underground and atgrade retail levels of downtown buildings.  
+This network began with the construction of the Place Ville Marie complex in 1962,  which was linked at its south end by two underground corridors to Central Station,  Montreal's primary terminus of commuter and intercity trains, and to the Queen Elizabeth  Hotel, which is located above Central Station. Since then, the network has been expanded  over many phases and several decades, with numerous crossings under streets and a wide  variety of standards for access. As of 2007, there were 30.7km of corridors in the Indoor  City, travelling through 69 buildings and used by over 230,000 people each weekday. From  a transportation perspective, the Indoor City is very well connected, as it is directly  connected to all four commuter and intercity train and bus stations, 10 of the 12 metro  stations in the downtown area, and 38 parking garages with a total of 17,500 parking spots.  
+The Indoor City also provides access to over twothirds of the commercial space in  downtown Montreal [2, 4]. Examples of nearly every type of store or service can be found  in the Indoor City, including grocery stores, pharmacies, hair salons, tailors, bookstores,  and theatres, as well as connections to numerous other types of buildings, from concert  halls to hotels, and apartments to office buildings. All of this has occurred despite the  complete lack of a master plan for the Indoor City, and little in the way of public investment 
+17 
+
+Making Montreal's Indoor City Accessible for People with Disabilities or guidelines. Instead, the Indoor City has grown organically over the years since its  inception, primarily through private sector development; however, the lack of public  regulations has resulted in an environment that is unfriendly to persons with disabilities. 
+When the network began to be implemented in 1962, and throughout the bulk of its  growth between the 1960s and 1980s, there were no standards for universal accessibility  and thus, many impediments to persons with disabilities exist today. For example, there  are numerous locations in the Indoor City where two areas or corridors are connected with  a few stairs, as shown in Figure 3. These stairs may look harmless and not even be noticed  by many people, but they act as a major barrier to a people with mobility devices, such as a  wheelchair. As a result, there are many areas of the Indoor City that are very inconvenient  or even impossible to access for persons using a wheelchair or other mobility device;  however, stairs are not the only impediment for persons with mobility impairments. Poor  navigation and wayfinding signs, substandard ramps, overly heavy doors that lack  wheelchair buttons, lack of handrails, and inaccessible washrooms can all be found in the  RSO. In fact, a firsthand account of the navigation difficulties that can be found in  Montreal's Indoor City, noted that navigating the indoor city as a parent with a stroller was  very difficult, and that someone in a wheelchair would not be able to do it at all [14]. 
+ 
+18 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+Figure 3: A typical connection between buildings in the Indoor City.  
+
+ 
+
+A major irritant for people with mobility devices is that the passageways which 
+
+connect the concourse levels of buildings are often unnavigable, forcing one to take 
+
+elevators up to street level, travel across busy streets, and then enter the second building 
+
+only to take another elevator back down to the retail concourse level. This makes 
+
+navigating through the Indoor City, and shopping in general, discouraging for disabled 
+
+persons. One survey in the U.S. found that "shoppers who are wheelchair mobile cannot 
+
+count on compliance (with accessibility legislation) and cannot predict which physical 
+
+barriers they will find in shopping centres" [15]. The same is true for shoppers in 
+
+Montreal's Indoor City, as the existing quasipublic system and lack of proper legislation 
+
+has created an environment where one can never be sure just what type of accessibility 
+
+barriers one will face around the next corner. 
+
+19 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+Legislative Background  Four separate levels of government have passed legislation or have implemented programs  that directly or indirectly affect the Indoor City. These include the City of Montreal along  with its Ville Marie borough, as well as the provincial and federal governments. 
+The City of Montreal has taken a largely handsoff approach to the Indoor City over  its 47year history. While at times in the past the City has made sure Indoor City  connections were provided for before issuing building permits; banned abovegrade  skyway connections; and even imposed a moratorium on further expansion in the 1990s  due to fears that the Indoor City was contributing to a lack of street life, for the most part  the City has been content to let private developers be in control of the expansion and  operation of the Indoor City [4, 16].  
+In recent days, the City has, however, been slightly more proactive and has  incorporated the Indoor City into its master planning. Section 4.23 of Montreal's Master  Plan of 2004 defines the indoor pedestrian network as one of its Detailed Planning Areas  and sets out goals and planning guidelines for the future development of the system. This  section acknowledges that mobilityimpaired persons are at a disadvantage in the  underground, mainly because of the "variation in levels and the lack of adequate signage"  [17]. As a result, one of the five planning guidelines for the indoor pedestrian network is to  move towards providing universal access throughout the RSO for mobility impaired  persons. The Master Plan also notes that there is a lack of consistent and integrated  planning in the network and that standards related to access and design need to be defined  and applied to the RSO [17].  This Detailed Planning Area will be implemented through  action 7.3 of the Montreal Master Plan which is intended to "guide the development of the 
+20 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+indoor pedestrian network" and is committed to ensuring universal accessibility of the  Indoor City as one of its implementation measures [17]; however, since the development of  the Master Plan, the City has yet to announce any details or pass bylaws to implement  specific measures or actions related to this Detailed Planning Area. The only other recent  mention of the Indoor City is in Montreal's 2007 Transportation Plan, which notes that the  City is looking to improve access to the Indoor City for persons with mobilityimpairments,  but does not mention any specific plans to do so [18]. 
+The city has, however, adopted a universal accessibility program with the intent of  eliminating undue obstacles in public sector buildings and ensuring that access is available  to all. The genesis of this plan was the Montreal Summit, held in 2002, during which the city  committed itself to making the public realm universally accessible, but it was not until  2006 that an accessibility program was implemented as mandated under the Government  of Quebec's Loi assurant l'exercice des droits des personnes handicapes en vue de leur  intgration scolaire, professionnelle et sociale [19]. Since then, the City of Montreal has been  creating a yearly Universal Accessibility Action Plan. This plan lists all the accessibility  actions that are proposed or are being undertaken by the City, as well as the results from  previous years. The plan focuses on different areas of city life, such as architecture and  urban planning as well as other areas such as training, municipal communications, and  accessibility to programs, services and employment. Unfortunately, there is no mention in  any of the plans so far about any accessibility work related to the indoor city, despite the  fact that the city has committed itself to making the indoor city more accessible [19].  Consequently, as of June 2009, there seems to be little, if any, progress on the City's plans to  move towards universal accessibility in the Indoor City. 
+21 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+At the provincial level, the current inaccessible state of much of the Indoor City  would appear to contravene section 15 of the Quebec Charter of Human Rights and  Freedoms which states that "No one may, through discrimination, inhibit the access of  another to public transportation or a public place, such as a commercial establishment,  hotel, restaurant, theatre, cinema, park, camping ground or trailer park, or his obtaining the  goods and services available there," as the Indoor City contains six of these eight  establishments [20]. This charter applies both to the province and to the private sector, but  not to federally regulated activities. Other relevant provincial legislation includes the  aforementioned Loi assurant l'exercice des droits des personnes handicapes en vue de leur  intgration scolaire, professionnelle et sociale, which gives the Ministry of Labour the  responsibility to regulate which categories of buildings must be made accessible [21].  
+Unlike the wideranging Americans with Disabilities Act, which governs nearly all  aspects of accommodation for persons with disabilities in the American public realm,  Canada has no applicable national disability legislation. The closest applicable federal  legislation is the Charter of Rights and Freedoms, which applies to the federal government  and all of its agencies, along with the provincial governments. The relevant part of the  Charter, section 15, states that discrimination based on physical disability is forbidden [22].  Whether or not the Charter would apply to the Indoor City is complicated due to the  public/private nature of the RSO and is discussed further below. 
+Despite all of this legislation, the links between buildings in the Indoor City and, in  some cases the buildings themselves, remain inaccessible to people with disabilities. This  problem of poor access for persons with disabilities is not a situation unique to Montreal  and, in fact, occurs throughout the world. In many cases, legislation exists to require 
+22 
+
+Making Montreal's Indoor City Accessible for People with Disabilities authorities to take action against buildings that do not provide for accessibility for persons  with disabilities, but they are often ineffective and enforcement is often nonexistent [6]. In  other jurisdictions, voluntary compliance with accessibility legislation is used to try and  improve the existing situation, which experience has shown generally does not work. For  example, after the enactment of the U.K.'s Disability Discrimination Act in 2004 which  prescribed hefty fines for violations of the law, 42% of members of the Federation of Small  Businesses preferred instead to wait and see rather than do anything about compliance  with the legislation. Accessibility can be a costly proposition for small businesses, which  could explain why it is difficult to ensure compliance with accessibility norms, rules, and  legislation. On the other hand, accessibility compliance and the expenses associated with it  should not be an issue for the big businesses which, by and large, control the Indoor City  [11]. 
+Part of the problem is certainly due to the fact that much of the Indoor City was  constructed decades ago, before accessibility legislation applied and because there is no  legislation mandating that older private sector buildings become accessible. This is  common around the world, where, in many cases, only new buildings and buildings that are  undergoing major renovations are required to become accessible [7]. Even though, by most  definitions, the Indoor City would be recognized as public space, and would logically have  to comply with public space accessibility legislation, legally it is much more complicated  than that, and the Indoor City might best be described as "quasipublic space". 
+23 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+QuasiPublic Space  Public space is generally defined as space that is freely open to everyone, regardless of  social or economic considerations, with a typical example being a city street, or a town  square. While the Indoor City operates in the public realm, and has many qualities of a city  street, such as plants, benches, and storefronts opening up to public areas, legally, the  Indoor City is actually a complicated network of quasipublic space, owned by numerous  entities, both public and private. In fact, the City of Montreal owns just 10% of the RSO,  with the vast majority owned by the private sector, while other public entities, such as the  federal government and Hydro Qubec, own small segments [23]. This ownership  arrangement is problematic in terms of devising building and architectural standards and  regulations for the Indoor City as there is currently no uniform set of rules or guidelines  that govern the entire system. The result is that the RSO has become a series of connected  privatepublic spaces with each part designed and operated differently [16, 24]. This was  noted in 1985 when a study by Brown and Sijpkes [25] stated that the Indoor City was a  haphazard arrangement with no clear motivations or plans for growth, and desperately in  need of rules and standards, such as for signage and maps. While the city has since taken  responsibility for signage, few other rules and standards have been developed for the  Indoor City. 
+In this respect, the Indoor City is no different than most other skyway and tunnel  systems in North America. One author noted that these systems are a place where one is  not subject to the usual freedoms and rights that one enjoys, but rather subject to the rules  of private industry, with curtailed legal rights [24]. A basic example would be the signage  commonly seen at the entrances to businesses forbidding entrance to those without shirts 
+24 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+and shoes, both of which would be permitted in public space. Nevertheless, whereas  buildings such as malls, restaurants, and theatres are technically private property, since  they are open to and for use by the public, they should be fully accessible to everyone [6]. 
+To remedy the issue of quasipublic space in the Indoor City, one study envisioned a  type of condominium ownership whereby the City would take ownership of all publicly  accessible Indoor City corridors and become responsible for their maintenance and upkeep  while the storefronts along them would remain in the hands of the private sector, much like  a typical public street [16]. This idea, as well as others for remedying the issue of quasi public space, is discussed further in the analysis section of this paper. 
+Metro System Background  The Montreal Metro system  forms an integral part of the  Indoor City and is connected  to it at many points.  Unfortunately, Montreal is also  one of the last major cities in  the world to implement  accessibility improvements in  their Metro system. In Europe,  for example, most public  transit systems are already  
+Figure 4: Only three suburban Montreal Metro stations, shown  with "Ascenseur" symbols, are currently equipped with elevators. 
+Source: STM 
+25 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+fully accessible, and those that are not must meet a 2015 deadline to become so [26]. In  contrast, at the present time, none of the downtown Montreal Metro stations have  elevators, as seen in Figure 4.  
+Montreal's deep level Metro stations dating from the 1960s through 1980s are  problematic in that they simply were not designed for wheelchair accessibility. At the time  of the construction of these stations, it was common practice to provide a separate  paratransit service which was seen as sufficient to accommodate the needs of persons with  disabilities. As such, none of these stations were equipped with elevators, and most  stations are not even equipped with escalators between all levels. Today, while paratransit  service is still, and will continue to be, necessary for some of the population, designing  transportation systems to take advantage of universal design will allow persons with  disabilities to utilize the excellent public transit system that Montreal has to offer. Indeed,  many persons with disabilities would much rather be able to take the same forms of public  transit that everyone else can, whenever and to wherever they choose, rather than having  to book appointments and miss out on unforeseen or unplanned opportunities simply  because there are no paratransit vehicles available.  
+By enabling persons with mobility impairments to travel on the metro, expensive  paratransit costs can be avoided. A report by Toronto's TTC, operator of that city's public  transit system, noted that it actually costs the TTC over $30 in subsidies every time a ride is  taken on their paratransit system. Over the longterm, equipping stations with elevators  may actually be more cost effective than continuing to provide paratransit for mobility  impaired customers that could use the regular transit network instead.   
+26 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+It has only been recently that the Societ de transport de Montral (STM), operator of the  public transit authority, has changed its stance on paratransit. Previously, in a policy dating  from 1991, the STM had simply encouraged persons with disabilities to use lowfloor buses  and paratransit where necessary; however, in recent years the STM has committed to  universal design, and improvements are now slowly being phased in across the system.  Elevators are currently under construction in five key metro stations, two of which,  Bonaventure and BerriUQAM, will provide the first accessible connections to the RSO, as  shown in Figure 5 [27].  
+New fullyaccessible  metro cars are also on order  and are due to arrive by  2013. Once the metro is  accessible to people with  mobility impairments, the  city will be under pressure  to make the Indoor City  accessible as well.           
+Figure 5: Elevator construction at the Bonaventure Metro Station. 
+27 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+Accessibility of Comparable Indoor Cities  
+While there are numerous indoor pedestrian networks located in cities elsewhere,  Toronto's PATH system is the most suitable comparison to Montreal's RSO because of its  many similarities, such as the length of the network, the mix of above and belowgrade  segments, and because it has been developed in a similar legislative, regulatory, and  transportation context. While Montreal's RSO, at 30.7km in length, bills itself as the  largest network of interconnected complexes in the world, Toronto's PATH, with 27km of  walkways, has been recognized as the world's largest underground shopping complex, as it  has more retail space in total than the RSO [28]. Both networks are located downtown in  their respective cities and connect rapid transit stations and transportation hubs to retail  and office buildings. 
+The PATH also has a similar ownership model to that of RSO. Although the system  appears to be public, in fact, the vast majority of the system is owned by the private sector,  which is responsible for security, maintenance, and capital upgrades. This setup is starting  to change, however, as the City of Toronto has steadily begun to take a more active role in  determining the future of the PATH in recent years. Toronto took control of coordinating  PATH development in 1987, and installed a universal wayfinding system to aid in  navigating the sometimes complex corridors of their indoor city [29]. Indeed, one fable  regarding the PATH is that the city's mayor became lost while trying to locate his dentist  and insisted that comprehensive maps and signage be developed so that it would not  happen again [30].  
+28 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+Today, while most extensions to the PATH system are still made by private  developers, the City is currently involved in developing a new northwest connection in  order to relieve pedestrian congestion on the busiest points of the system. The City has  indicated that this new connection will meet all accessibility requirements and will be fully  accessible to persons with mobility impairments [31, 32]. In fact, most of Toronto's PATH  network is already accessible to persons with disabilities. Although many of the  connections are not always immediately apparent, there are usually automatic doors,  ramps and elevators available, even if one must travel slightly out of their way. Toronto's  PATH Manager estimates that 95% of the PATH network is wheelchair accessible, and  noted that the City is encouraging private property owners to upgrade nonaccessible  segments of the PATH [33]. 
+Other North American indoor cities are similarly accessible to persons with  disabilities. For example, the original plan for the City of Edmonton's indoor pedestrian  network, which was approved in the late 1970s, had foresight in suggesting that ramps be  provided for people with disabilities and for baby carriages [34]. Nevertheless, this advice  was not always followed. To remedy this, the city decided to require all air leases (which  enable connections to be built across city streets) to provide accessibility to people with  disabilities unless technically infeasible [35]. As a result, most of Edmonton's pedestrian  network is wheelchairaccessible today. 
+In the United States, Houston, Texas, which has one of the largest tunnel systems in  the U.S., is largely wheelchair accessible, a feature that stems from a 1977 report of the  Houston Planning Department which mandated that all future tunnels should be fully  accessible to persons in wheelchairs. Exceptions included previously existing buildings that 
+29 
+
+Making Montreal's Indoor City Accessible for People with Disabilities were accessible through the tunnel level, but that did not have elevators connecting the  tunnel to the building above [1].  
+Overall, the trend in comparable cities is towards indoor pedestrian networks that  are as fully accessible as possible, although some cities have made more progress towards  this goal than others. Judging solely by the literature, Montreal has a long way to go before  it can catch up to the level of universal accessibility that can be found in other indoor cities  around the globe. Accordingly, prioritizing the changes that could be made to the existing  network is a key element in the process of making Montreal's Indoor City accessible to  people with mobility impairments, as discussed further in Chapter's 5 and 6. 
+30 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+METHODOLOGY 
+A field study of the Indoor City was conducted in June, 2009 to gather information on  accessibility barriers, such as segments accessible only via stairs or escalators, or ramps  that are too steep to navigate with a mobility device. Data that was collected included the  locations of all stairways, including the number of stairs in each location; escalators, in one  or both directions; ramps, including those that were satisfactory and others that were too  steep; elevators; doorways with and without wheelchair buttons; and any other barriers  which are located on the main path of the Indoor City. Also, data was collected on the  ability of a person with a mobility device to travel between the Indoor City and street levels  of each connected building. This data was then integrated in a geographic information  system (GIS) environment with an indoor city network that was developed by the McGill  TRAM research group as part of their previous Indoor City research. 
+This new GIS network was then used to produce accessibility measures that  illustrate the current levels of accessibility for persons with and without mobility  impairments. Accessibility is a measure of potential opportunity [36]. Accessibility is  measured here using the cumulative opportunity measure, which was among the earliest  ones to be developed and the simplest to calculate [37, 38]. Cumulative opportunity reflects  the number of opportunities available from a predetermined point within a certain travel  time or travel distance. In this research, the amount of retail space that can be reached  from certain points within the Indoor City will be measured and will not be limited by  distance. 
+31 
+
+Making Montreal's Indoor City Accessible for People with Disabilities  The network was then analyzed to determine the optimal locations in which to 
+implement new accessibility measures in order to increase the level of accessibility for  persons with mobility impairments. Several methods were employed to do so, such as re connecting the network in locations where simple door improvements such as a  wheelchair button could make the connection accessible, or reconnecting the network  where ramps could easily be installed. In other cases, a trial and error approach was used  to determine the minimum action required in terms of cost that could produce the  maximum benefit possible in terms of increase in accessibility. This was used for key  locations where the installation of an elevator could drastically increase the level of  accessibility in the network. Several options have been produced to discuss further in the  following section. 
+32 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+ANALYSIS AND DISCUSSION 
+Montreal's Indoor City has been the subject of numerous research papers and studies, the  first of which were conducted in the 1980s. There have been many different areas of study,  including papers which have researched the growth of the Indoor City and examined the  context in which it was developed, and others which have modelled the flow of pedestrians  throughout the Indoor City network and looked at ways to enhance the efficiency of the  system; however, there has been very little work completed on the issue of accessibility for  persons with disabilities. In fact, only one existing paper has even mentioned this issue, and  very briefly at that [16]. Due to the lack of study in this area, this research paper seeks to  fill this niche and to provide much needed discussion on an important topic. 
+The amount of retail and office space has grown over time in the Indoor City, as well  as the links between these spaces. A total of 69 buildings have been linked into the Indoor  City network between 1962 and 2006, connecting a total of 45,372,176 square feet of office  space and 3,907,662 square feet of retail space. While this growth has led to an increase in  the number of opportunities that can be reached, this is not true for a person with physical  disabilities. In fact, the primary finding of this field study is that it would currently be a  frustrating and timeconsuming exercise to try and navigate the Indoor City in a wheelchair  or mobility device. While almost all of the individual buildings of the Indoor City are  accessible on their own, travelling between them without returning to street level is often  quite difficult. A map of the downtown segment of the Indoor City is shown in Figure 6. 
+33 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+Figure 6: Closeup view of the downtown segment of Montreal's Indoor City  
+
+ 
+
+Street Level Access  For the most part, access to street level is not a problem in the Indoor City. Elevators are  ubiquitous in the Indoor City, and almost all connected buildings have elevators that  operate between the Indoor City and street level. One notable exception is the connection 
+
+34 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+between the Eaton Centre and Place Ville Marie. This connection is one of three buildings in  the RSO that contains shops and services at the Indoor City level that cannot be accessed  by persons in wheelchairs as there are no public elevators, an example of which is seen in  Figure 7.   
+
+Figure 7: Inaccessible stores in the Cours Mont Royal building in the Indoor City  Signage 
+
+ 
+
+There are currently two types of signage in the Indoor City: signs installed by individual  building owners, which typically provide information related to that particular building;  and coordinated RSO signage (Figure 8), which was designed to help people navigate  between different buildings. While this coordinated signage was installed throughout much 
+
+35 
+
+Making Montreal's Indoor City Accessible for People with Disabilities of the Indoor City starting in 2002, these signs cannot always be relied on by the typical  pedestrian, as they are primarily located in the newer sections of the Indoor City and have  not been completely deployed throughout the network, even though it has been seven  years since installation began.  
+  Figure 8: Coordinated RSO signage, with an inaccessible connection beyond.   
+Signage with regard to accessibility for persons with disabilities is also poor in the  Indoor City. The coordinated RSO signage fails to give any sort of indication of wheelchair  accessibility, while only some individual building signage conveys this information. In some  cases where signage does depict accessible routes, the information is confusing or incorrect  (Figure 9). The lack of signage is especially apparent in buildings where elevators are in a 
+36 
+
+Making Montreal's Indoor City Accessible for People with Disabilities different location than the more commonly used stairs and escalators. Examples of this can  be found in Place Ville Marie (PVM), where the accessible connection from the Indoor City  to 1 PVM is located down a service hallway, far from the escalators typically used to access  the building. This connection can be seen on the mall directory map, but there are no other  signs directing users where to go. Another confusing location is in Place Victoria/Tour de la  Bourse, where it is quite difficult to find the single elevator that travels between street level  and the various Indoor City levels. Clearly marked accessibility signage that is visible from  all directions would benefit users of both of these buildings. 
+  Figure 9: While it might seem that this sign points the way to the Delta Hotel, or a connection  between various levels of this building for mobility device users, in fact, only the washrooms  and parking lot are actually accessible via this route.   
+A different type of example can be seen in the connection between PVM and Central  Station, shown in Figure 10. While an accessible Indoor City connection is currently 
+37 
+
+Making Montreal's Indoor City Accessible for People with Disabilities available between these two busy nodes, it actually involves taking an alternate route via  an elevator located in the Queen Elizabeth hotel; however, this alternate route is  problematic in that there is only directional signage from one direction, the meaning of  which could be confusing for someone not familiar with the area. In addition, there is no  indication within the elevator to note which floor one should exit on to continue through  the Indoor City. Simple signs depicting a wheelchair and a directional arrow would fix these  problems and thus drastically improve wayfinding for those in mobility devices in this  Indoor City segment. 
+  Figure 10: Place Ville Marie to Central Station connection. An accessible, yet unsigned,  connection is available via the Queen Elizabeth Hotel, through the top doors.  
+38 
+
+Making Montreal's Indoor City Accessible for People with Disabilities Network Analysis for People with Disabilities  In comparing origindestination matrices between the regular network, and the network  accessible by persons with disabilities, a huge difference can be seen. Whereas in the  regular downtown network, a person with no disabilities can reach any other connected  downtown building, in the disabled network, a person with disabilities can just reach a  handful of other buildings. Figure 11 shows the existing level of accessibility for a person  without disability. It is important to note these figures show the amount of retail areas that  are accessible through walking in the Indoor City, without the need to use a metro or to  cross a street. 
+  Figure 11: Map depicting the amount of retail space (sqft) that can be accessed from  individual buildings within the network, not including the metro. People without disabilities  can reach any building in the downtown network from any other downtown building, while  people in the Atwater, Concordia, or Berri segments can only reach retail space in those  segments. 
+39 
+
+Making Montreal's Indoor City Accessible for People with Disabilities Currently, the most accessible section of the Indoor City for persons with disabilities 
+is in the northwestern segment along the SteCatherine Street shopping district and  includes ten linked accessible buildings. The eastern Indoor City segment is the second  most accessible with six linked accessible buildings. It is clear that the majority of the  Indoor City is not accessible and the "difference map," as seen in Figure 12, shows the  current situation and the difference in the level of accessibility between a person without  any mobility impairments and a person with a physical disability.  
+  Figure 12: Map showing the difference in accessibility for persons with physical disabilities  between the base network and the current disabled network. Values closer to zero mean that  the level of accessibility is closer to that of the base network.   
+To make the entire Indoor City 100% accessible for persons with physical  disabilities, several barriers need to be overcome. Creating a barrierfree Indoor City would 
+40 
+
+Making Montreal's Indoor City Accessible for People with Disabilities require the construction of at least 17 ramps and at least 40 new elevators and "mini elevators" (smaller elevators that can typically hold just one mobility device user with an  attendant, which are often used in retrofitted spaces where it would be impractical to  install a ramp or a full sized elevator), along with 38 locations where automatic doors  activated by sensors or wheelchair buttons would need to be installed. Implementing all of  these improvements would be quite expensive. 
+Sixteen locations were identified where no impediments exist other than doorways.  Accordingly, installing automatic doors controlled by wheelchair access buttons can lead to  an increase in the level of accessibility by 24%, compared to the existing level of  accessibility for people with disabilities. As shown in Figure 13, while this increase in  accessibility is small and results in little visible change on the map, it is a necessary  precursor to other improvements, such as new ramps and elevators, which result in greater  increases. Therefore, this improvement has been made before implementing all other  improvements on the following maps. 
+41 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+Figure 13: Map showing the difference in accessibility for persons with disabilities between  the base network and the disabled network with suggested new automatic door locations.    
+Further suggested accessibility improvements were determined using a trial and 
+
+ 
+
+error approach to locate segments of the Indoor City that would require a minimum 
+
+amount of investment, yet produce the maximum benefit. This approach was focused on 
+
+connecting the busiest segments of the Indoor City, which is located in the heart of the "U" 
+
+shaped section; that is around the "U" formed between McGill Metro and Complexe 
+
+Desjardins.  
+
+The single greatest improvement in universal accessibility in the Indoor City would 
+
+be achieved by upgrading the corridor between the north and southwestern segments, 
+
+which is the tunnel from the Eaton Centre to Place Ville Marie. This connection is one of the 
+
+most significant links in the entire Indoor City, as it completes the western connection 
+
+42 
+
+Making Montreal's Indoor City Accessible for People with Disabilities between the green and orange metro lines and unites what were previously two separate  networks; however, from the point of view of a person in a wheelchair, this connection  does not even exist, as persons with disabilities must exit to street level to travel between  the two sections [16]. Connecting this section of the Indoor City would improve the level of  accessibility by 113%, in terms of the total amount of retail space that can be accessed,  compared to the existing level of accessibility for people with disabilities,. As shown in  Figure 14, this is a huge impact as it would effectively double the connected space that  people with disabilities can access with just one improved link, and would only require the  installation of two elevators. 
+  Figure 14: Map showing the difference in accessibility for persons with disabilities between  the base network and the disabled network with Eaton Centre to Place Ville Marie accessible  
+43 
+
+Making Montreal's Indoor City Accessible for People with Disabilities There are four critical locations in the Indoor City that, if made accessible, would result 
+in the greatest increase in universal accessibility. These are:    the connection between the Eaton Centre and Place Ville Marie (733 Cathcart);   the connection between Central Station and Place Bonaventure;    the connection between Place Bonaventure and ICAO/Place de la Cit; and    the connection between the Palais des Congrs and Complexe Guy Favreau.  
+If these four links were made accessible, which could be done with the installation of nine  elevators and seven automatic doors, then the Indoor City network would become fully  accessible for persons with disabilities between the McGill metro station and Complexe  Desjardins. This would increase accessibility by 396%, in terms of the total amount of retail  space that can be accessed by people with disabilities as compared to the base scenario, as  shown in Figure 15.  
+Implementing these improvements would allow the segments of the Indoor City  with the greatest amount of retail space, and the connections between them, to become  accessible to persons with disabilities. This change would allow most of the Indoor City to  have the same level of accessibility for everyone and represents the most cost effective  approach to making this vital public space more accessible. The remaining buildings that  continue to be inaccessible for people with disabilities in this approach are primarily  buildings that would have little impact on the accessibility of the overall network. 
+44 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+Figure 15: Map showing the difference in accessibility for persons with disabilities between  the base network and the disabled network with four key locations made accessible  
+
+ 
+
+Metro Accessibility Improvements 
+
+The ongoing project to enhance the accessibility of STM's metro system will also help to  increase access for persons with disabilities within the Indoor City. Currently, elevators are  under construction at two downtown stations, Bonaventure and BerriUQAM. These  elevators are critical to making the Indoor City more universally accessible, as they may,  depending on their configuration, enable accessible connections between the central and  eastern segments of the Indoor City when completed (as long as accessible connections  from Metro Bonaventure to adjacent buildings are also constructed).  A map of metro  stations connected to the Indoor City is shown in Figure 16. 
+
+45 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+Figure 16: Metro stations linked to the Indoor City 
+
+ 
+
+Even once the elevators are completed, accessibility will still be complicated for 
+
+transit riders until the STM's new metro cars arrive in a few years. While imperceptible to 
+
+the typical metro user, Figure 17 shows that the current metro cars have a small step up 
+
+from the platform, which persons travelling with mobility devices may find 
+
+insurmountable. The current STM practice for the three existing accessible metro stations 
+
+46 
+
+Making Montreal's Indoor City Accessible for People with Disabilities is to notify an attendant who will then travel with the client in order to deploy a ramp to  board and disembark the train. Once more stations become accessible and passengers with  disabilities can travel further across the STM's metro network, this practice will no longer  be feasible due to the manpower required, and a different solution will be need to be found  until the new metro cars are in service. 
+  Figure 17: Images depicting the process of boarding a STM metro car with a ramp, and of the  gap that exists between the car and the platform. Source: STM.info   
+In the future, when funds are available to make the STM's metro network 100%  universally accessible, the STM could save on elevator installation costs by utilizing  elevators in buildings already connected to metro stations. At McGill, Peel (west side), Guy Concordia, and Square Victoria, installing elevators between the metro platforms and the  mezzanine levels would allow persons with disabilities to access certain neighbouring  buildings and street level without any further upgrades. This alone would significantly  improve the level of accessibility in the Indoor City. At Place des Arts, Peel (east side),  Atwater, and Place d'Armes, ramps would need to be installed in addition to elevators  between the platforms and the mezzanine, while at Lucien l'Allier elevators would need to  be installed to connect adjacent buildings. In all cases, good signage would be important, in 
+47 
+
+Making Montreal's Indoor City Accessible for People with Disabilities order for passengers to be able to easily navigate through the stations and to elevators that  may be in adjacent buildings. 
+Figure 18 displays a comparison between two possible changes to the network for  people with disabilties with the metro taken into account. The upper map (A) shows that  while making the metro stations themselves more accessible will certainly help to increase  accessibility, the increase is not as great as one would expect, as many of the neighbouring  buildings surrounding and connected to each station are not accessible to people with  disabilities. While the increase in accessibility of 141% that is shown in Map A does seem  like a lot when compared to the existing level of accessibility for people with disabilities, it  pales in comparison to the increase shown in the lower map (B). Map B shows that  accessibility would be greatly enhanced by the upgrading of the four key locations,   previously mentioned, as well as upgrading one additional metro connection, with a total  increase in accessible retail space of 646% when compared to the existing level of  accessibility for people with disabilities.   
+48 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+A 
+B 
+  Figure 18: Map A shows the difference in accessibility for persons with disabilities between the  base network and the disabled network with all Metro stations accessible. Map B shows the  difference in accessibility between the base network and the disabled network with all Metro  Stations and the four key locations accessible.  Eastern and Western RSO Accessibility  In the Atwater section of the Indoor City, shown in Figure 19, one ramp could easily  connect Place AlexisNihon to Metro Atwater and Dawson College, ensuring accessibility 
+49 
+
+Making Montreal's Indoor City Accessible for People with Disabilities for persons with disabilities between these busy trip generators. Providing universal  accessibility to Westmount Square would be more difficult, although installing ramps may  be possible. Only two elevators would be required to make the Atwater metro station  accessible, one for each platform, as the existing elevator in Place AlexisNihon could be  used to exit to street level. Figures 19 through 21 show existing Indoor City buildings and  corridors in order to complement the text describing where accessibility improvements  would be needed. 
+Figure 19: Closeup view of the Atwater section of the Indoor City In the GuyConcordia section of the Indoor City, shown in Figure 20, the mezzanine 
+level of the GuyConcordia metro station is already accessible via the adjacent Concordia  EV building. In the next few years, additional Concordia buildings will become part of this 
+50 
+
+Making Montreal's Indoor City Accessible for People with Disabilities RSO section, as they are connected with newly constructed tunnels. Providing  accessibility for persons with disabilities to the platform levels of this metro station could  be a challenge due to its depth, but three elevators would likely be required: two between  the platforms and the lower mezzanine, and one between the lower mezzanine and the  upper mezzanine/ Indoor City level, while the existing elevators in Concordia's EV building  could be used to exit to street level.  
+  Figure 20: Closeup view of the Concordia section of the Indoor City   
+In the eastern Indoor City segment, shown in Figure 21, the Grande Bibliotheque  and the entire UQAM campus are already accessible via the mezzanine level of the Berri UQAM metro station. Additionally, in Fall 2009 the orange line platforms of the metro will 
+51 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+become accessible. A new central bus station is currently being built just to the north of the  existing one and will likely have an accessible connection to the metro upon completion,  while the remaining existing building, Place Dupuis, would require a single elevator to  become accessible. 
+
+Figure 21: Closeup view of the Eastern section of the Indoor City 
+
+ 
+
+52 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+Recommendations 
+There are several initiatives that could be implemented in order to help bring the Indoor  City closer to being accessible to all. These include physical improvements, such as new  ramps or elevators; legislative improvements, including specific legislation relating to the  accessibility of the Indoor City; as well as other improvements, including creating a  website. 
+Physical Improvements  There are a number of physical improvements that could be made in order to bring the  system to a higher level of universal accessibility. These improvements would involve  adding ramps or elevators to critical locations in the indoor city; however, just the addition  of an elevator is not enough to ensure that access is available for all, as other small and  often overlooked improvements must be completed as well. This includes ensuring that  automatic sensor or button operated doors are provided and in good repair, ensuring that  doors are not overly heavy or difficult to open, and installing doors that are wide enough  for wheelchairs to safely navigate. Other areas to improve include ensuring that there are  no obstacles along a corridor, such as planters, benches, or sign pillars; ensuring that ramps  are of an adequate grade; and providing adequate signage if access for persons with  disabilities is in a different location than the default route, as shown in Figure 22. 
+  Figure 22: Accessibility signage example from Toronto's PATH. Source: PATH map 
+53 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+  Since it is unlikely that every single connection between buildings in the Indoor City  can or will be made accessible, the following list of connection upgrades and locations has  been prioritized by ease of implementation, mainly in terms of how many ramps and  elevators would need to be installed, and by how much it would improve access to retail for  persons with disabilities, as determined by GIS analysis of the field study results. 
+1. Automatic door openers/wheelchair buttons where the doors are the only  impediment to accessibility 
+2. Eaton Centre to Place Ville Marie connection  3. Gare Centrale to Place Bonaventure and to Metro Bonaventure connections  4. Palais des congrs to Complexe Guy Favreau connection  5. Place Bonaventure to OACI connection 
+As was shown in the analysis section, these upgrades are essential. Even so, many of  the buildings comprising the Indoor City were built years before universal accessibility was  regarded as necessary and cannot be easily upgraded. For those buildings that can be  upgraded, it becomes an expensive proposition to do so as it is far more cost effective to  make buildings accessible when they are first constructed, at an additional one percent of  construction costs, rather than retrofit them at a later time for an additional cost of 17%  [39]. Due to these costs, it can be difficult to encourage the owners of existing private  sector buildings to implement these physical improvements, despite all of the benefits that  these improvements would bring for building owners, tenants, and their customers.     One potential solution would be for the municipal or upper levels of government to  implement a program which would subsidize or even completely fund accessibility  improvements within the Indoor City. This would allow the City to achieve its goal of 
+54 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+making the Indoor City accessible without creating too great a financial burden on the  private sector. Also this process could be phased in over a number of years, allowing  improvements to be conducted in stages, and combining these projects with building  renovations and other maintenance projects where possible.    Improvements could also be made to the existing wayfinding system. Currently, the  Indoor City can be a confusing place, with a labyrinth of passageways leading to all corners  of the downtown core. To make wayfinding easier, Montreal should implement digital  maps, easily allowing tourists and those unfamiliar with the Indoor City the ability to type  in their destination and be shown a map with an option to print out directions. In fact, this  feature did previously exist and was located at select junctions within the Indoor City, but  was discontinued at some point after its installation in 2001 [40].  
+Legislative Improvements  Better accessibility regulations and standards are needed for the Indoor City. While the  Ville Marie borough is responsible for developing the RSO's wayfinding system and  publishing an official map, the municipal government currently does little else with regard  to the Indoor City. In order to achieve universal accessibility, more centralized planning  and coordination is recommended, along with improved legislation specifically targeting  the Indoor City to ensure this.  
+New legislation regarding the Indoor City, to be passed at the provincial and/or  municipal levels, could include mandating accessible connections whenever a new building  is linked to the Indoor City or when significant renovations are done to an existing building.  If private building owners were still reluctant to implement accessibility improvements, 
+55 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+legislation could be also introduced to delegate control of the Indoor City's public space to  the City of Montreal. 
+Indeed, the City could look into implementing a type of condominium ownership  system in the Indoor City, similar to that recommended by Brown and Sijpkes over 20  years ago. An arrangement of this sort would greatly simplify the process of making the  Indoor City universally accessible, as it would allow the city to implement improvements  within the public space of the Indoor City, such as installing new ramps and elevators,  without the complexity of negotiating with each building owner separately, and would also  allow for economies of scale in awarding construction contracts for these improvements. 
+Organizational improvements  It is recommended that the City of Montreal create a dedicated team specifically to operate  the Indoor City. This team could be overseen by the City or the Ville Marie borough and  would be responsible for liaising with the private sector to implement a universal  accessibility program for all buildings and connections, where feasible. Other  responsibilities could include fully implementing the existing wayfinding program by  installing signage in all necessary locations, both inside buildings and at the surface;  updating the wayfinding signage to show alternate routes where applicable for mobility  device users; creating and maintaining a RESO website (discussed further below); and  working with Tourism Montreal to promote the Indoor City both here and to tourists from  around the world. In addition, ensuring that all RSO signage is bilingual, as opposed to the  current Frenchonly signage, would simplify navigation for both tourists and the significant  local Anglophone population. 
+56 
+
+Making Montreal's Indoor City Accessible for People with Disabilities Website  In today's world, the Internet is invaluable for providing information on nearly any topic,  and the Indoor City should be no exception; however, there is currently no website for  RSO. For a network that calls itself the largest interconnected retail network in the world,  it is strange that the RSO has such a small web presence. In fact, except for the relevant  sections of Montreal's Master Plan, the only item relating to the Indoor City on Montreal's  website is a link to the official map on the home page of the Ville Marie borough. Otherwise,  any information on the internet related to the Indoor City must currently be accessed on  other websites, such as the STM, Tourism Montreal, or other travelrelated sites.  
+Therefore, it is recommended that the Ville Marie borough develop a RSO website.   While a website for the Indoor City would be useful on many fronts, it would be especially  helpful for persons with disabilities. This website could include information on what parts  of the system are accessible to persons with mobility impairments and where accessibility  barriers on the system are located, as well as a map highlighting this information. 
+57 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+CONCLUSION 
+At present, Montreal's Indoor City is largely inaccessible to persons with disabilities. This  has been allowed to occur mainly because much of the Indoor City was built before  universal accessibility became a mainstream issue, and before accessibility legislation was  implemented. Nevertheless, the Indoor City is public space and should be accessible to  everyone. A barrierfree Indoor City would help remove the constraint that the current  built environment poses to people with disabilities and allow for equality in this segment of  the city. 
+This study has shown the power of creating newly accessible connections within the  Indoor City and the great extent that these connections will benefit people with physical  disabilities. While future additions to the Indoor City will likely be accessible, given the  minimal additional costs to do so, upgrading current facilities is an expensive proposition.  Therefore, important connections, such as the aforementioned four key locations, should  be prioritized in any accessibilityrelated renovations, as this will allow for the greatest  increase in accessibility at the lowest cost.      It is important to remember that everyone benefits from accessibility  improvements, including parents with strollers, shoppers loaded down with heavy grocery  bags, and elderly persons who might have difficulties opening heavy doors, and not just  people with disabilities. Increased accessibility will become especially important in the  near future as the average age of the population continues to rise. 
+The efforts of the STM in making the metro system accessible will also help in  connecting all parts of the Indoor City network, while at the same time saving money in 
+58 
+
+Making Montreal's Indoor City Accessible for People with Disabilities paratransit costs in the long run. Other simple and cost effective solutions to the issue of  Indoor City accessibility do exist, however, such as upgrading doors with automatic  openers, and implementing new signage to illustrate alternate routes for persons with  disabilities. Legislative and organizational improvements, such as laws ensuring that future  Indoor City connections will be accessible, and a dedicated Indoor City municipal  department to manage the network and ensure that the Indoor City remains public space,  will also go a long way towards ensuring that the RSO becomes more universally  accessible in the future.   
+59 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+REFERENCES 
+1.  City of Houston, Houston Downtown Tunnel System, C.P. Department, Editor. 1977.  2.  Zacharias, J., Modeling Pedestrian Dynamics in Montreal's Underground City. Journal 
+of Transportation Engineering, 2000. 126(5): p. 405412.  3.  Besner, J., The Sustainable Usage of the Underground Space in Metropolitan Area, in 
+ACUUS 2002  Urban Underground Space: A Resource for Cities. 2002: Torino, Italy.  4.  Boisvert, M., From Connexity to Connectivity: Enhancing the Efficiency of Interior 
+Walkways with the Current Extensions of Montreal's Indoor City, in ACUUS 2002   Urban Underground Space: A Resource for Cities. 2002: Torino, Italy.  5.  Kroul. About Us  Tourism and Culture for People with Restricted Physical Disability.   2009; Available from: http://www.keroul.qc.ca/en/mission/.  6.  Evcil, A.N., Wheelchair Accessibility to Public Buildings in Istanbul. Disability and  Rehabilitation: Assistive Technology, 2009. 4(2): p. 76  85.  7.  Imrie, R. and M. Kumar, Focusing on Disability and Access in the Built Environment.  Disability & Society, 1998. 13(3): p. 357374.  8.  McMillen, B., Policies, Resources and Programs for Providing Accessible Pedestrian  Systems in the USA, in Walk21 3rd International Conference: Steps towards livable  cities. 2001: San Sebastian, Spain.  9.  Kroul, A Growth Market: Behaviours of Tourists with Restricted Physical Abilities in  Canada, Kroul, Editor. 2001.  10.  Kitchen, R. and R. Law, The SocioSpatial Construction of (In)accessible Public Toilets.  Urban Studies, 2001. 38(2001): p. 287298.  11.  Bromley, R.D.F., D.L. Matthews, and C.J. Thomas, City Centre Accessibility for  Wheelchair Users: The Consumer Perspective and the Planning Implications. Cities,  2007. 24(3): p. 229241.  12.  City of Montreal, A Barrierfree City: Montral has Universal Accessibility at Heart.  2007b.  13.  Shostack, H., City Centre Pedestrian Systems: A Stateoftheart Review, T. Canada,  Editor. 1978.  14.  Campisi, S., Underground not Accessible Enough, in The Gazette. 2000, March 13,  Southam Publications Inc.: Montreal.  15.  McClain, L., Shopping Center Wheelchair Accessibility: Ongoing Advocacy to  Implement the Americans with Disabilities Act of 1990. Public Health Nursing, 2000.  17(3): p. 178186.  16.  Sijpkes, P. and D. Brown, Montreal's Indoor City  35 Years of Development, in 7th  International Conference on Underground Space. 1997: Montreal.  17.  City of Montreal, Montreal Master Plan. 2004.  18.  City of Montreal, Transportation Plan: Consultation Document. 2007a: Montreal.  19.  City of Montreal, Bilan 2007 et Plan d'Action 2008 de la Ville de Montral en Matire  d'Accessibilit Universelle, d.l.q.d.m.d.v.e.d.l.d.e. Direction de la diversit sociale du  Service du dveloppement culturel, Editor. 2008: City of Montreal.  20.  Government of Quebec, Charter of Human Rights and Freedoms, G.o. Quebec, Editor.  1975. 
+60 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+21.  Government of Quebec, An Act to Secure Handicapped Persons in the Exercise of their  Rights with a View to Achieving Social, School and Workplace Integration. 2007. 
+22.  Government of Canada, Canadian Charter of Rights and Freedoms, G.o. Canada,  Editor. 1982. 
+23.  Madger, J., Underground is Mostly Sound, in The Gazette. 2008, March 1: Montreal.  24.  Byers, J., The Privatization of Downtown Public Space: The Emerging GradeSeparated 
+City in North America. Journal of Planning Education and Research, 1998. 17(3): p.  189205.  25.  Brown, D. and P. Sijpkes, Critiquing the Underground City. Planning, 1985. 51(3): p.  1617.  26.  Baillargeon, S., Des Ascenseurs Pour Cinq Stations du Mtro Montralais, in Le Devoir.  2007, June 12: Montreal.  27.  STM. The STM and the Mtro Accessibility Challenge 2009; Available from:  http://www2.stm.info/English/info/atravaux.htm.  28.  Robin, L., Visit Montreal and Toronto, in Kingston WhigStandard. 2006, March 4:  Kingston.  29.  City of Toronto. PATH  Toronto's Downtown Walkway.  2006; Available from:  http://www.toronto.ca/path/.  30.  Maitland, B., Hidden Cities : The Irresistible Rise of the North American Interior City.  Cities, 1992. 9(3): p. 162169.  31.  Barker, M.B., Toronto's Underground Pedestrian System. Tunnelling and  Underground Space Technology, 1986. 1(2): p. 145151.  32.  Laspa, T. and J. Kelly, Municipal Class Environmental Assessment Study (Schedule "C")  for a New Northwest PATH Connection (Union Station to Wellington Street),  C.P.D.a.T.S. Division, Editor. 2008: City of Toronto.  33.  Saunders, M., Response: PATH Wheelchair Accessibility, M. Hagg, Editor. 2009.  34.  City of Edmonton, Pedway Concept Plan. 1977.  35.  City of Edmonton, Downtown Pedway Network Review. 1989.  36.  ElGeneidy, A. and D. Levinson, Access to destinations: Development of accessibility  measures. 2006, Minnesota Department of Transportation: Minnesota. p. 124.  37.  Vickerman, R.W., Accessibility, attraction and potential: A review of some concepts  and their use in determining mobility. Environment and Planning A, 1974. 6: p. 675 691.  38.  Wachs, M. and T. Kumagai, Physical accessibility as a social indicator. Socioeconomic  Planning Science, 1973. 7: p. 327456.  39.  Lee, J., Beijing Attempts to Make City More Accessible, in Vancouver Sun. 2008, Aug  22: Vancouver.  40.  Paskal, C., Below the Surface: Even Underground, Montreal's Culture Lives and  Breathes, in National Post. 2001, July 14: Don Mills, Ont.     
+61 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+APPENDIX 1 
+Table of Existing Indoor City Barriers and Recommended Improvements 
+
+Building/Connection  Tour Scotia to Tour La Maritime  Tour La Maritime  
+
+Existing Barrier  13 stairs, doors  Doors 
+
+Tour La Maritime to 1001 de Maisonneuve West  1001 de Maisonneuve West/Peel Metro Entrance NE  2000 Peel/Peel Metro Entrance NW  1140 de Maisonneuve West 
+
+16 stairs  34 stairs, doors  45 stairs, doors  Door 
+
+1140 de Maisonneuve West Stanley St. Peel Metro Entrance  43 stairs, doors 
+
+Cours Mont Royal  Peel Metro Entrance SE  Cours Mont Royal  Northwest side  Cours Mont Royal  Southeast side 
+
+40 stairs, doors  6 stairs, doors  15 stairs 
+
+Place Montreal Trust to Tour Industrielle Vie  Tour Industrielle Vie to 2200 McGill College  Complexe Les Ailes to McGill Metro  Promenades Cathedrale  West corridor north  Promenades Cathedrale  West corridor south  Promenades Cathedrale to The Bay  The Bay to 2021 Union  2001 University to 2075 University 
+
+24 stairs, 2 doors  Steep ramps  5 stairs, doors  7 stairs  7 stairs  12 stairs  Bollards  2 doors 
+
+625 President Kennedy  Entrance from 2075 University 
+
+5 stairs, doors 
+
+Recommended Improvements 
+
+New  New Mini  New  Elevators  Elevator  Ramps 
+
+1 elevator (or possibly a ramp); automatic door 
+
+1   
+
+Automatic door 
+
+  
+
+ 
+
+2 minielevators or 2 wheelchair stair lifts or possibly a 
+
+ramp 
+
+ 
+
+2 
+
+1 elevator; automatic doors 
+
+1   
+
+1 elevator; automatic doors 
+
+1   
+
+Automatic door 
+
+  
+
+ 
+
+New  Doors 
+1 1
+  1 1 1
+
+None  Elevator in main building entrance can be used  
+
+ 
+
+  
+
+None  Elevator in main building entrance can be used  
+
+ 
+
+  
+
+2 ramps; automatic doors 
+
+  
+
+21
+
+3 ramps 
+
+  
+
+3 
+
+2 minielevators or 2 wheelchair stair lifts plus 2  automatic doors 
+
+ 
+
+2  2
+
+New ramps with a shallower grade 
+
+  
+
+1 
+
+1 ramp; automatic doors 
+
+  
+
+11
+
+1 ramp or minielevator 
+
+  
+
+1 
+
+1 ramp or mini elevator 
+
+  
+
+1 
+
+1 elevator or minielevator 
+
+  1   
+
+Remove shopping cart bollards 
+
+  
+
+  
+
+Automatic doors 
+
+  
+
+ 
+
+2
+
+New ramped entrance or new minielevator, 
+
+automatic door 
+
+  
+
+1 
+
+62 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+2075 University to 680 Sherbrooke West  Eaton Centre to 733 Cathcart  733 Cathcart to 1253 McGill College  1253 McGill College 
+
+25 stairs, 2 doors  17 stairs  9 stairs, doors  18 stairs 
+
+1 elevator; 2 automatic doors  1 elevator or minielevator  1 minielevator; automatic doors  1 elevator 
+
+   
+
+733 Cathcart to Place Ville Marie  4 Place Ville Marie  Entrance from Shopping Concourse  1 PVM  Entrance from Shopping Concourse  PVM to QE hotel 
+
+3 stairs + 19 stairs, doors  Escalators only, doors  26 stairs  1 door 
+
+PVM to Gare Centrale  West side 
+
+34 stairs 
+
+PVM to Gare Centrale  East side 
+
+36 stairs, door 
+
+Gare Centrale to Place Bonaventure "le passage" 
+
+26 stairs + 5 stairs, door 
+
+Place Bonaventure "le passage" to 1001 de la Gauchetiere quai 
+
+nord 
+
+5 stairs, doors 
+
+1001 de la Gauchetiere quai nord to Bonaventure Metro 
+
+55 stairs 
+
+1 ramp + 1 elevator or minielevator; automatic doors 
+
+1 elevator; automatic doors 
+
+Better signage for existing elevator 
+
+ 
+
+Automatic doors 
+
+ 
+
+Better signage for existing accessible connection via 
+
+QE Hotel 
+
+ 
+
+1 elevator and automatic doors, or signage for  alternate connection via west side 
+
+1 elevator; automatic doors 
+
+1 ramp  1 elevator 
+
+ 
+
+Bonaventure Metro to 1001 de la Gauchetiere quai centre sud  1001 de la Gauchetiere quai centre sud to Street level  1001 de la Gauchetiere quai nord to Street level  Bonaventure Metro to Marriot Hotel  Bonaventure Metro to Gare Windsor 
+
+60 stairs  30 stairs  34 stairs  16 stairs  84 stairs 
+
+1 elevator  1 elevator  1 elevator  1 minielevator; automatic doors  2 elevators 
+
+ 
+
+Gare Windsor  Metro Bonaventure Street Level Entrance  Gare Windsor  North side 
+Gare Windsor  South side  Gare Windsor to Bell Centre  Bell Centre  South side  Gare Lucien L'Allier Street Entrance and link to Metro 
+
+25 stairs  10 stairs 
+39 stairs  35 stairs  2 doors  4 doors 
+
+None  Elevator in main building entrance can be used  
+
+1 ramp or minielevator 
+
+ 
+
+New stop on existing elevator to serve lower level of 
+
+Gare Windsor 
+
+ 
+
+1 elevator 
+
+2 Automatic doors 
+
+ 
+
+4 automatic doors 
+
+ 
+
+63 
+
+1 
+1  1 1 
+      1  1    1  1  1  1 
+2       
+1     
+
+ 2 1    1   
+  
+1     1     1
+  
+ 1  1
+1    
+         1  1   
+   1 
+       2  4
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+Gare Lucien L'Allier to Metro Lucien L'Allier  Metro Bonaventure to 1250 Rene Levesque 
+
+30 stairs, door  11 stairs, door 
+
+Elevator; automatic doors  Minielevator; automatic doors 
+
+ 
+
+1250 Rene Levesque  Place Bonaventure "le passage" to Place Bonaventure  Metro Bonaventure to Place Bonaventure  Place Bonaventure  east side  Place Bonaventure to OACI  OACI  west side  OACI  east side 
+Square Victoria Metro  Northern Square entrance  OACI and Centre CDP Capital to Square Victoria Metro  Square Victoria Metro to Tour BNC   Square Victoria Metro to 1080 Beaver Hall  1080 Beaver Hall  Square Victoria North Metro Entrance 
+Square Victoria Metro  Southern Square Entrance  Square Victoria Metro to Tour de la Bourse  Tour de la Bourse  Place Victoria to Delta Hotel 
+
+6 stairs + escalators only  38 stairs + 7 stairs  64 stairs  72 stairs  32 stairs  21 stairs + 20 stairs, doors  2 Doors 
+22 stairs  42 stairs  80 stairs  Steep ramp, 116 stairs  24 stairs 
+54 stairs  1 door  Lack of signage  1 door 
+
+1 ramp + 1 elevator or minielevator; automatic doors   
+
+1 ramp + 1 elevator 
+
+1 elevator 
+
+1 elevator 
+
+1 elevator 
+
+2 elevators; automatic doors 
+
+2 automatic doors 
+
+ 
+
+None  Parisianstyle Guimard metro entrance cannot 
+
+be retrofitted 
+
+ 
+
+1 elevator 
+
+1 elevator 
+
+None  Too many elevators would be required 
+
+ 
+
+None, see above note 
+
+ 
+
+1 elevator, or signs directing wheelchair users to the 
+
+Tour de la Bourse/Place Victoria  
+
+ 
+
+Automatic doors 
+
+ 
+
+Improved elevator signage 
+
+ 
+
+Automatic doors 
+
+ 
+
+Square Victoria to Centre de commerce mondial de Montreal  41 stairs, door 
+
+Centre CDP Capital 
+
+2 doors 
+
+Place Jean Paul Riopelle Indoor City Entrance  Palais des congres to Place d'Armes Metro  Palais des congres to 205 Viger  Palais des congres to Complexe Guy Favreau  
+
+Stairs  3 stairs + 9 stairs  1 door  33 stairs 
+
+1 elevator; automatic doors  Automatic doors at east and west Indoor City  connections  Signs directing wheelchair users to the Palais des  congrs 
+2 ramps 
+Automatic doors 
+1 elevator 
+
+ 
+     
+
+1 
+1  1  1  1  2 
+ 
+  1  1 
+   
+       
+1 
+ 
+      1 
+
+ 1 1  1
+111 1 
+          1  2
+              
+    1     1
+ 1
+ 2
+   2 
+ 1   
+
+64 
+
+Making Montreal's Indoor City Accessible for People with Disabilities
+
+Complexe Desjardins to Place des Arts  Place des Arts to Place des Arts Metro  Place des Arts Metro to UQAM Science Campus  Totals 
+ 
+Location  All buildings with minielevator recommendations  Tour Industrielle Vie to 2200 McGill College 
+Place des Arts Metro to UQAM Science Campus  2000 Peel/Peel Metro Entrance NW 
+ 
+
+23 stairs 
+
+1 elevator or minielevator 
+
+1     
+
+8 stairs 
+
+1 ramp 
+
+  
+
+1 
+
+23 stairs, 2 doors 
+
+1 elevator 
+
+1   
+
+2
+
+  
+  
+
+29
+  
+
+11 17 38
+  
+
+Notes 
+
+Minielevator is a type of elevator for 2 passengers only  a person with disabilities and an attendant 
+
+Access is via a common parking garage between the two buildings 
+
+The current revolving door to UQAM is inaccessible, but an accessible connection exists by exiting outside and then immediately back  inside through normal doors which could be made accessible with wheelchair buttons. 
+
+Currently must walk outdoors 3m to travel between 2000 Peel and Peel Metro Entrance 
+
+65 
+
+

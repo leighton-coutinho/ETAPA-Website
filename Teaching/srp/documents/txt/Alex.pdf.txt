@@ -1,0 +1,4409 @@
+FACTORS AFFECTING VEHICLE USAGE AND
+AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+Alexandre de Lorimier
+MASTER OF URBAN PLANNING CANDIDATE
+
+SUPERVISED RESEARCH PROJECT MCGILL UNIVERSITY APRIL 2010
+
+Factors affecting vehicle usage and availability in the Communauto carsharing network
+Supervised research project submitted in partial fulfilment of the
+Master of Urban Planning degree
+By Alexandre de Lorimier
+School of Urban Planning McGill University
+Montral, Qubec, Canada
+30 April 2010
+
+Copyright  2010 by Alexandre de Lorimier. Typeset in ITC Garamond and Futura Std.
+
+TABLE OF CONTENTS
+List of tables.....................................................................................................................vii
+List of figures....................................................................................................................ix
+Abstract.............................................................................................................................xi
+Abrg.............................................................................................................................xiii
+Acknowledgments............................................................................................................ xv
+1.Introduction................................................................................................................ 1
+2. Literature review ........................................................................................................3 2.1. A shared automobility....................................................................................................................3
+2.1.1. Classification of carsharing systems 2.1.2. Definition of carsharing 2.2. The history of carsharing...............................................................................................................6 2.2.1. Ideation of carsharing 2.2.2. Early carsharing experiments 2.2.3. The popularisation of carsharing 2.3. The practice of carsharing..............................................................................................................8 2.3.1. Business models 2.3.2.Partnerships 2.4. Carsharers and their newfound mobility.....................................................................................11 2.4.1. Early adopters of carsharing 2.4.2. Effects of carsharing on personal mobility 2.5. Previous comparable research.....................................................................................................13
+3. Research design........................................................................................................15 3.1. Introduction to Communauto......................................................................................................15
+3.1.1. A brief history 3.1.2. Services provided 3.1.3. Membership profile 3.2. Data sources..................................................................................................................................17 3.2.1. Member location file 3.2.2. Station and vehicle listings 3.2.3. Record of 2009 reservations 3.2.4. Record of binary tests 3.2.5. Census and other data 3.3.Methods.........................................................................................................................................23 3.3.1. Definition of station buffers 3.3.2. Monthly usage model 3.3.3. Availability model
+v
+
+4.Analysis..................................................................................................................... 31 4.1. Monthly usage model...................................................................................................................31
+4.1.1. Summary statistics 4.1.2. Model evaluation 4.2. Availability model.........................................................................................................................38 4.2.1. Summary statistics 4.2.2. Model evaluation 5.Recommendations..................................................................................................... 41 5.1. Station characteristics...................................................................................................................41 5.1.1. Availability and usage 5.1.2. Negative effects 5.1.3. Positive effects 5.1.4.Synthesis 5.2. Temporal effects...........................................................................................................................57 5.2.1.Seasonality 5.2.2. Day of the week 5.2.3. Time of the day 5.3.Limitations.....................................................................................................................................60 6.Conclusion................................................................................................................. 61 References........................................................................................................................ 65
+vi
+
+LIST OF TABLES
+
+Table 1
+Table 2 Table 3 Table 4 Table 5 Table 6 Table 7 Table 8
+Table 9
+
+Member distribution based on vehicle ownership, education level and household size....................................................................................................................................17 Monthly usage model: variables......................................................................................28 Availability model: variables............................................................................................29 Monthly usage model: summary statistics.......................................................................32 Monthly usage multilevel models....................................................................................34 Availability model: summary statistics.............................................................................38 Availability model.............................................................................................................40 Stations with composite 3-hour availability success rates in the 10th and 90th percentile..........................................................................................................................42 Synthesis of station characteristics affecting performance.............................................55
+
+vii
+
+LIST OF FIGURES
+Figure 1 Relationship between carsharing and other vehicular modes of transportation............2 Figure 2 Communauto members in the Montral area, 2009.......................................................20 Figure 3 Communauto stations in the Montral area, 2009..........................................................21 Figure 4 Composite 3-hour availability throughout 2009.............................................................22 Figure 5 Composite success rate for 3-hour reservations, 2009...................................................24 Figure 6 Tolerable walking distance station buffers in Longueuil................................................25 Figure 7 Total daily hours-reserved by vehicle, 2009....................................................................27 Figure 8 Stations with composite 3-hour availability success rates in the 10th and 90th
+percentile..........................................................................................................................43 Figure 9 Stations with average monthly usage in the 10th and 90th percentile..........................45 Figure 10 Stations with average vehicle ages in the 90th percentile.............................................47 Figure 11 Stations with alternative vehicle concentrations in the 90th percentile........................49 Figure 12 Stations in employment areas in the 90th percentile.....................................................51 Figure 13 Stations with member concentrations in the 90th percentile.........................................53 Figure 14 Composite 3-hour availability by month, 2009...............................................................57 Figure 15 Composite 3-hour availability by day of the week, 2009...............................................58 Figure 16 Composite 3-hour availability by time of the day, 2009.................................................59
+ix
+
+ABSTRACT
+The novelty of carsharing as an alternative to the private car in dense urban areas raises a number of questions on the logistics of operating a carsharing network. This study seeks to determine what factors affect vehicle usage and availability in the Communauto carsharing network in Montral, Qubec. Using data provided by the carsharing operator, a multilevel regression model and a logistic regression model were devised to answer the main research question. The datasets included a record of the reservations placed during the year 2009, and the location of current members, vehicles and stations. The study determined that a number of factors have a major impact on either availability and usage. The number of vehicles parked at a station has the most effect on availability. Usage is affected by average vehicle age, and by member concentration in the vicinity of the station. The paper concludes by identifying which stations require immediate attention from the carsharing operator, and describes which factors make them the leastperforming stations in the network. Carsharing is a new practice which can reduce our dependence on personal vehicles, and complements public and active modes of transportation. The conclusions of this study are geared specifically for the operators of the Communauto network. However, other carsharing operators should consider the characteristics presented in this study when building or expanding their network. Carsharing service membership has been growing at a fast rate in the last years, and fulfilling the needs of users will only further the popularity of the model. Planners and urban researchers should also examine the factors identified in this report, and how they can promote new modes of transportation such as carsharing.
+Keywords  Carsharing -- Private car -- Road transport -- Sustainability -- Transport policy -- Urban transport
+
+xi
+
+ABRG
+La nouveaut de l'autopartage en tant qu'alternative au vhicule personnel dans les zones urbaines denses pose un certain nombre de questions sur les oprations des rseaux d'autopartage. Cette tude tient  tablir les facteurs qui influencent l'utilisation des vhicules et leur disponibilit dans le rseau Communauto  Montral, Qubec.  partir de donnes fournies par le gestionnaire du rseau d'autopartage, une regression multi-niveaux et un modle de rgression logistique ont t produits pour rpondre  la question de recherche principale. Un rapport des rservations places en 2009 et l'emplacement des membres, des vhicules et des stations ont t inclus dans les modles. L'tude a dtermin que certains facteurs ont un effet marqu sur la disponibilit et l'utilisation des vhicules. Le nombre de vhicules stationns  chaque station a l'effet le plus marqu sur la disponibilit, tandis que l'ge des vhicules et la densit de membres autour de la station ont une influence sur l'utilisation des vhicules. En guise de conclusion, nous identifions les stations qui ncessitent une action immdiate de la part du gestionnaire du rseau et nous dcrivons les facteurs qui rduisent leur performance dans le rseau. L'autopartage est une nouvelle initiative qui peut rduire notre dpendance envers les vhicules personnels et qui complte l'utilisation des modes de transport publics et actifs. Bien que les conclusions de cette tude soient spcifiques  Communauto, d'autres organismes d'autopartage pourraient examiner les caractristiques prsentes dans ce rapport au moment d'tablir ou d'aggrandir leur rseau. L'adhsion  l'autopartage crot rapidement. Rpondre aux besoins des utilisateurs ne peut que rendre le modle plus populaire. Les urbanistes et les chercheurs devraient aussi examiner les facteurs identifis dans ce rapport et dterminer comment promouvoir de nouveaux modes de transport comme l'autopartage.
+Mots-cl Autopartage -- Dveloppement durable -- Politiques des transports -- Transport routier -- Transport urbain -- Voiture personnelle
+
+xiii
+
+ACKNOWLEDGMENTS
+I would like to thank Prof Ahmed El-Geneidy for his invaluable advice and remarkable availability throughout the production of this paper. Thanks to Prof David Brown for providing constructive comments on the drafts of the paper.
+I would also like to thank Michelle DelisleBoutin and Marco Viviani for entrusting their data in my hands, and for their prompt answers to my many questions. A nod goes to Communauto and all their employees who graciously welcomed me into their midst during the summer of 2008.
+A special acknowledgement goes to the Master of Urban Planning class of 2010, an exceptional group of people with whom I had the pleasure to share the lecture halls.
+The completion of this project would not have been possible without the care and support of my parents who made me discover the world's greatest cities at a very young age.
+Finally, I owe a debt of gratitude to Angela Brinklow who challenged me to produce a better paper, and provided the most insightful comments at critical moments. I could not have done it without your patience and dedication.
+xv
+
+DE LORIMIER
+1. INTRODUCTION
+The private automobile has had a massive impact on the way we build and design our cities. Urban areas are founded on quick and efficient individual mobility. Our roads are engineered to make the flow of people and goods as smooth as it can be, and motor vehicles have taken a large place in society. Alternatives to the private vehicle are numerous but they serve very different purposes. Public transit is useful for short trips within the city in dense areas that can sustain the high ridership required to make a bus, tram or mtro network financially viable. Active modes of transportation such as walking or cycling are increasingly popular in cities as well. Not only are they healthy breaks for short trips but they also reduce our collective and individual carbon footprints. However, these modes are ill-adapted for families, and cannot be used to carry the goods that are paramount to our consumer economies.
+The ways to travel described above are different modes of transportation. Carsharing, however, is not a mode per se but rather a major shift in the ownership and usage structure of the individual cars. In fact, the private car remains the vehicle of choice within a carsharing system; it is how drivers use this car that makes all the difference. In a carsharing system, users choose to subscribe to a service that will give them access to a fleet of vehicles for short trips within--or in close proximity to--an urban area. The member can then make one or more trips as long as the car is used during a pre-set booking period. In this fashion, individuals can take advantage of all the benefits of a private vehicle without the hassles of lease payments, maintenance, or parking. In dense urban areas, where trips requiring a private car are few and far apart, this is an ideal complement to the assortment of transportation options already available. Furthermore, carsharing reduces the number of cars on the road by making the purchase of a new vehicle redundant. Inspired by the model's appeal, efficiency and versatility, it is our belief that carsharing along with public and active modes of transportation are key elements to a new urban transportation paradigm (see Figure 1).
+This study focuses on the operations of the Communauto carsharing service based in Montral, Qubec. With more than 16,000 members in the Montral area alone, Communauto is the oldest carsharing operator in North America. In the past years, the operator has been experiencing important growth, increasing its membership twofold between 2004 and 2009. Using data provided by the
+1
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+company, our objective is
+
+to find ways to improve current service based on a quantitative study of
+
+Taxi
+
+Car rental
+
+Modal exibility
+
+existing vehicle supply. Results from this study
+
+Carsharing
+
+will allow the carsharing
+
+operator to identify areas in the city where vehicles are either under- or over-
+
+Bicycle
+
+Public transit
+
+supplied, and determine what factors have lead to such issues. The high volatility of carsharing
+
+Distance of travel
+Figure 1 Relationship between carsharing and other vehicular modes of transportation Adapted from Millard-Ball (2005)
+
+availability within a given month, week or even day leads to extreme situations where vehicles are
+
+either highly underutilised or in extreme demand. In sum, we seek to answer the following ques-
+
+tion: What factors influence the availability of vehicles in the Communauto carsharing network in
+
+the Montral area?
+
+This report begins with a literature review, which outlines the history behind carsharing and previous studies on the topic. We then introduce the Communauto carsharing network before describing the data sources and methods employed in the study. The next section presents the results of the study through a thorough analysis of the regression models. Finally, a conclusion brings the report to a close with a number of recommendations for the Communauto network.
+
+2
+
+DE LORIMIER
+2. LITERATURE REVIEW
+2.1. A shared automobility Within the last two decades, carsharing has appeared in numerous cities throughout the world although under many different forms. Attempts at establishing a formal definition of carsharing are still underway: the idiosyncratic nature of carsharing services, their number and the relative novelty of the concept have made defining carsharingi an arduous task at best. This section first places carsharing within the broader framework of shared-use vehicle systems. It then provides numerous definitions for the model, as found in legal texts and in academic literature; these myriad definitions uncover the novelty of the concept, and provide hints toward standardisation through carsharing certifications.
+2.1.1.Classification of carsharing systems
+Carsharing is a form of shared-use vehicle system. Barth & Shaheen (2002) developed a framework to classify such systems. The spectrum they established goes from station car systems on the one end, towards traditional carsharing organisations on the other, with hybrid models in between. Vehicles within a station car system are located at suburban transit nodes, and benefit from a close relationship with local transportation authorities. At the end of the workday, members use vehicles to travel from the transit node to their home; they then keep the vehicle overnight and drive back to the station in the morning. Vehicles taken during the night then become available at the transit station during the day, and are used by commuters who work in the suburb but live elsewhere. Traditional carsharing operators (CSO), on the other hand, are not inherently linked to transit, even though their vehicles might be located at or near transit nodes. CSOs depend on stations within residential neighbourhoods, and members use the vehicles for any short-distance trip (and not only for commuting purposes). Some CSOs also operate in central employment areas, and replace company fleet vehicles.
+Both the station car and the traditional carsharing model require members to return the shared vehicle to the station it was taken from; this is called a two-way system. Hybrid shared-vehicle
+i There is no formal spelling for the concept; car sharing, car-sharing and carsharing are all used to varying degrees in the literature. This paper uses the latter form.
+3
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+systems occur on academic and corporate campuses, and in resorts, where inter-nodal travel is allowed (Barth & Shaheen, 2002). In these one-way systems, members can take cars from one station but then return it to another parking lot within the network. One-way systems are convenient in smaller service areas where vehicle use is contained but cause costs to increase dramatically in larger territories such as an entire city. For this reason, they are rare in classic carsharing operations due to the high logistics costs involved with maintaining a proper supply of cars at each station throughout the system.
+2.1.2.Definition of carsharing
+First and foremost, it must be stressed that this paper uses the North American meaning of the word carsharing. In fact, an important distinction in terminology exists between North American and British usage (Millard-Ball, 2005). In the UK, carsharing refers to the sharing of a vehicle by the driver and a certain number of passengers for commuting purposes; this is commonly known as ride-sharing or carpooling in North America. On the other hand, the sharing of a fleet of vehicles-- such as that is the topic of this paper--is known in British English as a car club. Carsharing and carpooling, however, are not mutually exclusive given that a member of a carsharing service can use a shared vehicle to carpool.
+While some jurisdictions have started introducing carsharing in their legislation and regulations, many still lack a formal understanding of what is entailed by carsharing (Rydn & Morin, 2004). Given the novelty of carsharing in North American cities, local governments have had to establish official stances on what carsharing is, notably for tax purposes, and in order to provide incentives for the use of such service. The State of Oregon, for example, defines carsharing as "[a] facility in which drivers pay to become members in order to have joint access to a fleet of cars from a common parking area on an hourly basis. It does not include operations conducted by a car rental agency" (Oregon, 2009). In fact, the distinction between carsharing and traditional car rental is an important one. Carsharing operations can be likened to those of a rental car service in that they render available a fleet of vehicles for a set period of time. However, the similarities end there. The concept of carsharing inherently implies that a reservation can be short (up to 15-minute intervals in some cases) but does not have to be, whereas a rental car must be booked for continuous 24-hour
+4
+
+DE LORIMIER
+periods. In carsharing, vehicles are dispersed throughout the city in what are called stations, or pods, rather than at centralised locations. Carsharing stations are unattended, and usage of the shared vehicle requires that a member be allowed to use a vehicle without assistance, at any time of the day or night.
+The State of Washington provides less detail but includes businesses as carsharing users in its definition: "a membership program intended to offer an alternative to car ownership under which persons or entities that become members are permitted to use vehicles from a fleet on an hourly basis" (Washington, 2005). Rather than defining carsharing as a whole, the District of Columbia defines the carsharing vehicle as "any vehicle available to multiple users who are required to join a membership organization in order to reserve and use such a vehicle for which they are charged based on actual use as determined by time and/or mileage" (Columbia, 2009). Both these definitions are inclusive and strike at the most important features of carsharing: round-the-clock availability, and an organised membership.
+As for Canadian jurisdictions, the City of Montral--which is of particular interest to this study--defines carsharing quite succinctly in its 2008 Transportation Plan as a "system whereby a corporation, a public agency, a cooperative or an association lets members share a fleet of vehicles" (Montral, 2008). The City of Toronto, in a 2000 policy document, used a descriptive definition of carsharing: "the practice where a number of people share the use of one or more cars that are owned by a profit or nonprofit carsharing organization. To use a vehicle a person must meet the membership requirements of the carsharing organization, including the payment of a membership fee that may or may not be refundable. Cars are reserved in advance and fees for use are normally based on time and miles driven. Carsharing organizations are typically residentially based with cars parked for convenient access within the area of the membership served by the organization" (cited in Millard-Ball, 2005).
+A number of jurisdictions have also chosen to establish special carsharing certifications, forcing CSOs to respect a certain set of criteria. In this fashion, local governments seek to make carsharing more visible as a mobility alternative, and can promote certain aspects of the service such as its environmentalism (Paris, 2009; Umweltbundesamt, 2009). In exchange for their participation,
+5
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+CSOs are awarded certain benefits such as tax breaks, or parking incentives. Noteworthy certifications include Der Blauer Engel in Germany and the label autopartage initiated by the City of Paris.
+While the definitions may be numerous, the basic concept of carsharing remains the same. By aggregating the definitions above, we can establish our own: carsharing is a membership service in which individual and group members share a fleet of vehicles dispersed throughout a service area in decentralised stations, accessed without assistance, and booked remotely for a set period of time.
+2.2. The history of carsharingii Carsharing is a very late occurrence in the history of human transportation. In fact, carsharing is not a new mode of transport per se, but rather an adaptation of the use of the private automobile. Rather than own and operate a private car, users share a fleet of vehicles which they can use for short trips. As we will discuss in this section, the concept arose in Europe where vehicle ownership and maintenance cost are much higher than in North America, and where the relative unavailability of land has put the car-oriented transportation and development model under pressure. This section begins with a discussion of the early attempts at carsharing in Europe before examining the first experiments in North America. We finish by looking at the growing popularity of the model.
+2.2.1.Ideation of carsharing
+As demonstrated in the previous section, carsharing has never been a clearly defined concept. Vehicles such as taxicabs have been shared for centuries but the novelty in carsharing is the elimination of a driver assigned to the vehicle. To this day, the components of a carsharing system are still evolving although a standardised model is beginning to appear. In fact, the very first carsharing experiment proves this outright. Launched in Zurich, in 1948, the Selbstfahrergenossenshaft (SEFAGE) was a drivers' club intended to divvy the then-high cost of a private automobile among a group of people (Robert, 2004). The SEFAGE was a private partnership, however, and never intended in becoming a full-fledged business serving paying customers; it remained an experiment with a limited number of users.
+ii This is a brief overview of the history of carsharing. For thorough accounts, see Britton, 1998; Harms & Truffer, 1998; Shaheen, Cohen & Chung, 2009. Shaheen, Sperling, & Wagner, 1998.
+6
+
+DE LORIMIER
+Not more than three years later, and seemingly unaware of the experiment that had taken place in neighbouring Switzerland, French urban planner and architect Jacques d'Welles wrote a foreboding article in the trade journal Urbanisme. He spoke of a company placing small economical cars at disposal throughout Paris, of members presenting a card in order to use those vehicles, and of said members using the cars for "simple, consecutive errands" (d'Welles, 1951) before receiving a monthly usage bill. The planner was distraught at the space and resources private cars were taking in the city, and at the congestion such a use was creating. D'Welles went even further by suggesting parking partnerships between the municipal government and the company he imagined--a company in all points like current-day CSOs. While d'Welles's approach was groundbreaking, it never morphed into a carsharing service proper.
+In 1969, Fishman & Wabe posited that British cities were in need of a new model for car ownership that would decrease congestion, costs, and the deleterious impact of automobility on the environment. Their community garage scheme was combined to renewed investment in public transit services whereby users would drive in low-density areas around the city, but would use buses and underground systems inside the core (Fishman & Wabe, 1969). Fishman & Wabe posited that by making the car a shared good, all costs of driving would become apparent, and this every time a car was used. In the end, their hope was that "the switch to the new scheme would save resources and slow the growing flood of spending on the auto sector" (1969, p. 441).
+2.2.2.Early carsharing experiments
+With these articles and early experiments, a new approach was born, but a large-scale model had not been attempted. In the 1970s, various carsharing prototypes were devised: Procotip in 1971 in Montpellier, France; and in Amsterdam, Witkar by 1973. Cousins later postulated that the technology available in the 1970s was not advanced enough to make these early carsharing systems work, and that a few decades of innovations, notably in information technologies, would be needed for such prototypes to become full-fledged carsharing services (1999).
+In North America, the first attempt at carsharing on a prototypical scale was the Short Term Auto Rental (STAR) program in San Francisco operating from 1983 to 1985 (Shaheen, Sperling, & Wagner, 1998). The service was centred around a 9,000-resident apartment complex near San
+7
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+Francisco State University, and counted 51 vehicles for approximately 350 participants (Walb & Loudon, 1986).
+2.2.3.The popularisation of carsharing
+The first commercial carsharing services started in Switzerland and Germany in the late 1980s. Mobility CarSharing Switzerland was launched in 1987, and is still up and running to this day; it counted more than 84,000 members and 2,200 vehicles in 2008 (Mobility-CarSharing-Switzerland, 2009). StattAuto Berlin was started one year later in the German capital. Both companies established a pioneering model for carsharing using new and economical cars, and a graded pricing scheme which favoured short trips within city limits. Their growth was rapid, reaching 50% per year in the mid-1990s (Shaheen, et al., 1998).
+In North America, the establishment of carsharing services was delayed by about a decade. Canadian operators led the way in 1994, with Auto-Com (later Communauto) which started in Qubec City with a handful of members and even fewer vehiclesiii. The Cooperative Auto Network based in Vancouver, and the Victoria Carshare Co-op followed suit in the province of British Columbia three years later. The first commercial carsharing program in the United States was CarSharing Portland, in 1998. During the first half of the next decade, programs were started in "Seattle, San Francisco, Boston and Washington DC, with other smaller groups operating in several areas of the country and still others in the planning stages" (Katzev, 1999, p. 68). Originally a stand-alone service operating in the Boston area, Zipcar merged with Flexcar in October 2007, creating the largest CSO on the continent with 325,000 members operating in the US, Canada, and the UK (Zipcar, 2009). The popularity of carsharing has only grown since then. Estimates now place the number of carsharing users at 650,000 worldwide (Shaheen, Cohen, & Chung, 2009).
+2.3. The practice of carsharing 2.3.1.Business models
+Carsharing operators have espoused a number of business models throughout the years. The most common business models are for-profits, and cooperatives. Other types of non-profits have also
+iii See Section 3.1 for more on the history of Communauto.
+8
+
+DE LORIMIER
+been attempted, although at a very small and restricted scale (one major exception is PhillyCarShare has been operating as a non-profit since its inception in 2003). University-based programs have also been created for research purposes to study the effects of carsharing on mobility in campus-like settings (Shaheen, et al., 2009). The choice of operational model depends on a wide number of factors such as the geographic extent of the program, its intended size, its degree of technological sophistication, the relative luxury of its vehicles, and local legal and economic conditions.
+Early carsharing programs in Europe tended towards the cooperative model, in which each member owns an equal share in the company and is therefore an owner as well as a user. Cooperatives are democratic, with decision-making powers resting on the entire membership gathered in assembly. The co-op model, by definition, depends on the active participation of all its members and reduces the need for outside capital by requiring that new members purchase their share outright. Cooperatives are also traditionally associated with the social equity, and environmental awareness movements. Given the novelty of carsharing during its first years, it was expected that early adopters would also be adamant defenders of the new transport model and that they would choose to get involved in its administration.
+The cooperative model, however, is maladapted to larger groups of users, or to instances where members do not feel involved (or do not want to get involved) in the daily affairs of the co-op. A cooperative is less prone to expand its operations into new territories, and is more likely than a for-profit business to discourage the use of its vehicles by members for ideological reasons (Millard-Ball, 2005). It is also harder for cooperatives to acquire capital, especially the large sums needed to invest in new equipment or large-scale information technology improvements. In comparison, for-profits have access to venture capital, although such funding sources often require higher returns. For-profits may also be less inclined to push for such environmental awareness that would affect their revenues.
+In North America, there is no denying the dominance of the for-profit model in terms of membership and fleet size. In the US, five of the 17 operators are for-profit; nonetheless, they account for "90% of all members and 83% of the total fleet" (Shaheen, et al., 2009, p. 38). The proportion is significantly lower in Canada, where the two for-profit CSOs (out of 11) had a market share
+9
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+representing 78% of members and 76% of vehicles (ibid). Traditional rental car companies have also attempted to enter the carsharing market: U-Haul launched the U Car Share service, Hertz started Connect by Hertz, and Enterprise created WeCar (Robert, 2009). Their success remains to be determined and is poorly researched in the literature.
+2.3.2.Partnerships
+As a new approach to automobility, carsharing can take advantage of partnerships with other modes of transportation, institutions, businesses and governments. In each market, the sharedvehicle model integrates itself into the larger transportation network, and can take advantage of such interconnectivity. A logical partnership occurs between carsharing operators and public transport networks. The station car model created in the US prior to the arrival of traditional carsharing was based on a network of vehicles stationed at major suburban transit nodes. The vehicles would provide short-distance mobility for commuters in either direction, thereby completing the loop between home and work. Transit authorities can also help publicise the availability of carsharing at and around their stations on maps, and other informational documents. Some CSOs have also concluded agreements with local transit agencies to create bundled ticketing options for both carsharing and public transport.
+Agreements have also been made between carsharing organisations and traditional car rental companies. In exchange for group discounts on car rental services, CSOs refer their members to the rental car company when a shared vehicle is not adapted for the intended use, such as travelling farther away or for longer periods of time. In this fashion, members benefit from lowered rates on traditional rentals, and are further dissuaded from using or acquiring a private car.
+Local jurisdictions also have a role in promoting and assisting carsharing organisations. They can provide parking spaces on municipal lots at lowered rates, install special signage, ensure, and secure access to parking lots (CityCarShare, 2006). Local governments have also introduced incentives for developers to include carsharing vehicle stations in large-scale residential complexes. Finally, municipalities in the US and Canada have become corporate carsharing members to reduce the dependency on corporate fleet cars, and to promote the use of shared vehicles (ibid).
+10
+
+DE LORIMIER
+2.4. Carsharers and their newfound mobility Carsharing--we have seen--has noble goals, and strives to fit into an ideal system of human mobility. In fact, shared-vehicle systems were created to rethink the way we move around the city. And while they are not intended as a panacea to our transport problems, their proponents believe they can change the ongoing paradigm on automobility, which may, in turn, have dramatic effects on our cities, our health, and that of our planet. With this in mind, this section provides an overview of the effects and consequences of carsharing. We first ask who the users of carsharing are, before delving into the proven effects of shared use vehicle systems on the users' personal mobility.
+2.4.1.Early adopters of carsharing
+Any innovation requires early adopters, persons who are willing to take the first leap of faith and embrace a new technology or, in this case, a new service. In 1994, Meijkamp & Theunissen conducted a study of early carsharing users in The Netherlands. The researchers studied a group of people who chose to become members of the Huur-op-Maat program in the city of Leiden (Meijkamp & Theunissen, 1996); they organised focus group sessions with 10 clients of the CSO. One crucial distinction was made up front between persons who owned a car when they joined the service, and those who did not. The researchers determined that the way one comes to adopt carsharing as a mode of transportation is key, and that policies must encourage such a use in order to make the model more popular. In fact, during the mid-1990s, carsharing was only beginning as a successful commercial venture.
+Early adopters were found to be critical in the early stages of North American carsharing development. In 1999, Katzev proceeded in analysing the adoption process of new Car Sharing Portland (CSP) members. He determined that "early adopters of car sharing in Portland were a highly educated, relatively affluent group of individuals who were primarily employed in professional occupations" (Katzev, 2003, p. 73). He also noted that while participants were conscious of environmental issues, it was not their primary reason for joining the CSO. These findings confirmed those of earlier European studies, and a survey of 262 PhillyCarShare early adopters in 2003 described the same trends elsewhere in the US (Lane, 2005). Lane also established that income was not a major determinant in being a carsharing user; however, low income groups were likely less represented
+11
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+because of the initial costs of joining a CSO such as large security deposits, and credit checks. Likewise, convenience and affordability were cited as the main reasons for members to join.
+2.4.2.Effects of carsharing on personal mobility
+The effects of carsharing on personal mobility have been researched at many occasions during the last ten years. We will focus on North American studies given that operating conditions are quite different in Europe and that research methods have not yet been standardised. In fact, this creates some issues when comparing data from different CSOs; the formulation of questions in surveys, the use of non-verified vehicle-miles-traveled (VMT) figures given by members, and other methodological differences creates variance between the studies (Shaheen, et al., 2009).
+One major impact of carsharing is its effect on car ownership. As a general rule, carsharing tends to reduce the need for a private car by replacing said vehicle with a shared one. In Philadelphia, Lane determined that "each PhillyCarShare vehicle has removed an average of 22.8 cars from the roads--corresponding to 10.8 cars removed by members who gave up a car, plus 12.0 cars removed by members who decided not to acquire a vehicle" (2005, p. 163). Millard-Ball compiled the car ownership information from previous studies and determined that "each car-sharing vehicle is estimated to take 14.9 private cars off the road" (Millard-Ball, 2005, p. 4-11). A 2006 report for the Communauto CSO in Montral determined that each carsharing vehicle in operation was equivalent to 8.3 private vehicles out of circulation (Dallaire, Lafond, Lanoix, & Viviani, 2006). This figure was obtained by combining data from an internal survey with figures found in the literature for both North America and Europe. It is important to stress that the method used to achieve such figures is different from one case to the other, and is highly depended on the way survey questions were posed to members.
+In 2001, Cervero conducted a study at the launch of the City CarShare in San Francisco. The research focused on the varying mobility patterns between early adopters of the service, and persons who were not members but wished to join at some point in the future. Although the study was inspired by European research done a few years prior, the author made clear that the US mobility context was much different: "the fact that the cost of auto motoring and parking is considerably higher in Europe than in the United States, in addition to the higher population densities and transit
+12
+
+DE LORIMIER
+service levels found there, casts doubt on the transferability of European lessons" (Cervero, 2003, p. 159). The researcher surveyed the mobility behaviour of City CarShare members and non-members during three time intervals to determine how carsharing had changed their mobility patterns during these periods. While the control group was necessary to evaluate the effects of carsharing, a certain amount of self-selection might have skewed the values provided by the control group: future carsharing users may not have the same mobility characteristics as the general population, given that they are potentially attracted to such a niche mode of transportation.
+The study found that "[w]hile some evidence of substitution for private-car travel was found, City CarShare also appears to be inducing motorized travel" (p. 166). In fact, the members' vehiclemiles-traveled increased as users would switch from active modes of transportation such as biking and walking to using a shared vehicle. The author noted, however, that this may be due to the novelty of carsharing and the appeal of the service early during a member's tenure. This hypothesis was later confirmed in subsequent study: citing more judicious mobility choices, the authors determined that average VMT was lowered by 47% for members, but increased by 73% for non-members (Cervero & Tsai, 2004). In terms of emissions, this result was enhanced by the fact that City CarShare vehicles have an overall lower gas consumption and emissions rating that the average car in San Francisco which, along with a reduction in overall VMTs, had a compounded effect on resource use. The authors posited that "carshare members, mindful of the cumulative costs of driving have also become more judicious and selective when deciding whether to use a car, take public transit, walk, bike or even forgo a trip" (p. 126). In a later study, Cervero, Golub & Nee determined that the reductions in VMT occur a few months into membership but taper off a few years later (2007). Overall, however, the addition of new members (who are forced to drive less), cancels out the increase in VMT for seasoned users.
+2.5. Previous comparable research Given the novelty of carsharing as an option for transportation, quantitative research on the inner workings of the model are scarce at best. As was shown in the previous sections, some studies have been conducted on the membership of carsharing, and on the impact of the model on personal mobility behaviour. However, no studies have been published on improving current models of
+13
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+carsharing from an operational perspective, as is the case in this report. The best examples on such research comes from the public transportation field, and notably studies on bus service in dense urban areas. In fact, a carsharing service can be likened to a bus service in that users must travel to a predetermined location--a bus stop in one case, a carsharing station in the other--to gain access to the service.
+14
+
+DE LORIMIER
+3. RESEARCH DESIGN
+The objective of this report is to identify what factors affect the availability of vehicles in the Communauto carsharing network. In order to achieve this goal, this study seeks to provide three models: an ordinary least squares regression model based on the monthly number of hours-reserved by vehicle, a multilevel regression using the same dependent variable, and a logistic regression model of vehicle availability, which is based on actual usage of Communauto vehicles during the year 2009. Given that the behaviour of members can change dramatically according to operating conditions, this report does not intend to predict future usage; rather, we seek to better understand past usage and availability in order to improve the existing system.
+This section begins with a brief overview of the Communauto carsharing operator, its history and membership, followed by a description of the data sources used in the analysis. We then delve into the specific methods used to create the models.
+3.1. Introduction to Communauto This paper focuses on a case study of the Communauto CSO based in Montral, Qubec, which prides itself on being the "oldest carsharing service in North America", and one of the fastest growing CSOs on the continent (Communauto, 2009). This section describes the carsharing operator's history, the services it provides, its fleet, and summary indicators on membership.
+3.1.1.A brief history
+The carsharing organisation was founded in 1994 in Qubec City by Benot Robert, then a regional planning student at Laval University. First named Auto-Com, the CSO started out as a cooperative with a dozen members and three shared cars (Communauto, 2006). It quickly expanded its service: within twelve months, 100 new members had joined in. In September 1995, the management team started a parallel service in Montral, which they registered under the portmanteau Communauto, for the French commun (common) and auto (short form of automobile, car). A few years later, the decision was taken to merge the two businesses, and to incorporate their assets. The move from the cooperative model to a for-profit business was controversial, and some members voiced their dismay at the direction the company was headed in (Robert, 2005). In defence of the decision, Robert considered that "the
+15
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+great majority of our users simply bought into a service when they became members of Auto-Com, [and that] they did not want to get involved in the administration of the cooperative" (Communauto, 2006). In the end, 90% of the members present at the dissolution assembly voted in favour of the plan, and by June 1997 the cooperative was dissolved.
+3.1.2.Services provided
+Today, Communauto operates in four metropolitan regions throughout Qubec. Montral (including Laval, and the South Shore), and Qubec City were the first markets to be serviced; Sherbrooke started in 2001; and Gatineau, in 2003. The CSO operates a fleet of more than 1,000 vehicles comprised of Toyota Echo, Yaris and Matrix models. The fleet is regularly renewed once vehicles have reached a certain mileage. Communauto focuses on short intracity trips. Most of its 310 stations are located within residential areas, although some are also placed at strategic transit nodes, or in central business areas to accommodate corporate members. Trips are priced by the hour, and for each kilometre travelled. The invoiced price includes gas, insurance and car maintenance. On signing the contract, full members are required to provide a security deposit, which is refundable should they leave the service after a mandatory one-year delay. At membership, each user is given a master key which gives her access to a lock box located at each vehicle station. The key can be used at all locations that are part of the Communauto system, including those outside of the member's home city. Members can book cars online, or by telephone either through an operator or an automated system.
+3.1.3.Membership profileiv
+In 2004, Communauto conducted a survey to better understand its membership, and potentially improve its service. In total, 4,838 questionnaires were sent to an identical number of CSO member households; 2,167 were returned. This equates to a response rate of 44.8%. At that time, 8,323 persons were members of the carsharing organisation.
+The results of the survey are comparable to those found in other carsharing programs. The average age of members in 2004 was 40.9 years, with no major difference between females and males. In Montral--Communauto's principal market with 77% of total members--users were mainly
+iv The data in this section are derived from Dallaire, et al., 2006.
+16
+
+DE LORIMIER
+francophones (91%), with small anglophone (8%) and allophone (1%) cohorts. As is expected from earlier discussions, members had a high educational level: 75% of them had achieved universitylevel education. In terms of income, 67% of Montral members fit in the $25,000 to $70,000 bracket. In comparison, only 45% of Montrealers accrue such an income. Couples without children represented 43% of member households, followed by single-person households (35%), one-child couples (14%), single-parent households (6%), and couples with more than one child (2%).
+Car ownership is another important statistic for carsharing operators. In Montral, 90% of member households did not own a car, and the remaining 10% owned one or more cars. Table 1 provides a further breakdown of vehicle ownership by education level and household size. Furthermore, according to the results of the survey, belonging to a carsharing organisation has a strong effect on car ownership: 53% of members chose not to acquire a new vehicle, 24% gave up a car, and 11% delayed a new car purchase.
+
+Table 1 Member distribution based on vehicle ownership, education level and household size
+
+Vehicles per household
+0
+1 2+
+
+Education level University CEGEP High school University CEGEP High school All
+
+% respondents 66% 18% 6% 8% 2% 0% 1%
+
+Single adult 39% 43% 45% 10% 8% 25% 6%
+
+Two or more adults, without children 41% 35% 35%
+58%
+61% 75% 69%
+
+One or more adult, with children 21% 22% 20%
+32%
+32% 0% 25%
+
+3.2. Data sources The data used in this paper originated from two principal sources. On the first hand, Communauto provided a number of files detailing their operations, membershipv, and vehicle use. On the second hand, summary census data was obtained from Statistics Canada. In order to help answer the research questions posed in this paper, Communauto provided the following datasets:
+(1) a member location file;
+
+v Limited to postal codes to ensure privacy.
+
+17
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+(2) a stations listing; (3) a list of vehicles; (4) a record of 2009 reservations; and, (5) a record of binary tests performed automatically by the Communauto reservation system. These datasets, as well as the census data used, are described below.
+3.2.1.Member location file
+The member location file included specific information about the Communauto members who selected Montral as their default reservation city upon subscribing to the service (see Figure 2). No personal details were provided except a randomised membership number, and a 6-character postal code extracted from the billing address provided by the member at subscription. While the postal code does not provide an exact street location, it is an accurate portrayal of each member's overall location within the city at a block level.
+Out of the 16,485 members on file, 16,228 (98.44%) had postal codes within the Montral Census Metropolitan Area; the remainder (257, or 1.56%) were located either elsewhere in the country or abroad, and were removed from the dataset. Of those members located in Montral, 13,939 (84.65%) made at least one reservation during the year 2009.
+3.2.2.Station and vehicle listings
+The stations listing provides details on each station in the Communauto network. It describes the geographical location of the station (see Figure 3), the number of cars present, and the number of parking spots available in each lot. Additionally, a unique station number and a descriptive name are included; these elements are identical to those used in documentation made available to members. Communauto operates a total of 230 stations in the Montral CMA. Five of these stations (2.17%) were not assigned any vehicles when the study was performed.
+The vehicle listing describes each car in the Communauto fleet. The make, model and year of each vehicle is provided, as well as its date of entry into service and when it was taken out of service, if applicable. The station number where each vehicle is assigned and a unique vehicle number are also provided. Additionally, vehicle options such as anti-locking brakes (ABS), the presence of
+18
+
+DE LORIMIER
+a child seat, or air conditioning are recorded for each vehicle. According to the listing, 855 vehicles were in service for at least part of 2009. Ninety-eight cars (11.46%) were taken out of service during the year be it due to wear and tear, or traffic accidents; the remaining 757 vehicles (88.54%) remained in service throughout the year. The average age of the Communauto fleet is 4.28 model years, and the average number of cars per station is 3.77.
+3.2.3.Record of 2009 reservations
+The record of 2009 reservations provides details on each reservation made by local Communauto members in the Montral area. The record includes a unique reservation number, the date and time of both the start and the end of each reservation, the vehicle number, and the mileage accrued (if any).
+In total, 435,506 reservations were made during 2009. Of these, 89,788 (20.62%) were cancelled, leaving 345,718 (79.38%) reservations for which the vehicle was booked and could only be used by the member who made the reservation. Of the bookings for which the car was reserved, only 3,641 (0.01%) did not accrue any mileage; in accordance with Communauto regulations, these reservations were nonetheless billed to their respective members. The remaining 342,077 (78.55%) reservations did accrue mileage, and are assumed to have been used by the member. The high number of cancellations, and the low number of mileage-less bookings are evidence of the reservation system's competency, allowing members to cancel reservations up to two hours in advance of their start time, or at any time if the reservation was intended to start before 9:00. In fact, Communauto revenues are based on both the mileage and the duration of each reservation, and it is in the best interest of the CSO to encourage members to cancel reservations which they do not intend on using in order for other members to accrue both time and mileage.
+The dataset also provides insight on the overall usage pattern of the vehicles. In total, over 2.8 million vehicle-hours were booked, and 19.6 million kilometres were logged using the Montral Communauto fleet. The average duration of a reservation was 6.65 hours, and the median duration was 3.5 hours. In terms of mileage, 45.75 kilometres were travelled on average, while the median distance accrued was 18 kilometres.
+19
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+DE LORIMIER
+
+20
+
+!
+! !!
+!
+
+! ! !!
+
+! ! !! ! !!
+
+!
+
+! ! !
+
+! !! !
+
+! !!
+
+! !
+
+!! !
+!
+! !
+
+! !
+
+! !
+
+!
+! !!
+!! !
+
+!! !!
+!! ! !!
+
+!!!! !! !
+!!
+!!
+
+!
+
+!! !
+
+!
+
+!
+
+! !
+
+! !!
+!! !
+!
+! ! !!
+!
+
+!
+
+!
+! !
+!
+
+!
+
+! !!
+
+!
+
+!
+
+!
+
+! !!
+!
+
+! !
+
+!
+
+!
+
+! !
+
+!
+
+! !!
+!!
+
+! !
+!
+
+! ! !!
+! !
+!! !
+
+! !
+
+!
+
+! !
+
+!
+
+! !
+! ! !
+! ! !
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+! !!
+
+! !
+!
+
+! !!
+!
+
+!!
+
+!
+! !
+
+!
+! !! !
+
+!
+
+!
+
+! !
+
+! !
+
+! !! !!
+!
+
+!
+
+!! !
+
+!
+
+!!
+
+!
+! !
+! !!
+
+! !
+!
+
+!
+
+! Communauto member
+
+Mtro line
+
+012
+
+4 km
+
+
+
+! ! !
+!
+
+! ! ! !! !!!
+
+!! !
+
+!! !
+
+! !
+!
+! !
+! !
+
+!
+
+! !
+
+!!
+
+!
+
+!!
+
+!
+
+!
+
+! !
+
+!
+
+!
+
+! !!
+
+!
+
+! !!
+
+!
+! !
+
+! !!
+
+! !!
+! ! !
+
+!
+
+! !
+!
+
+!
+
+! !
+!
+
+!!
+
+!
+
+!! !
+! ! !! !! !!
+!
+
+! !!
+
+!
+
+! !! !
+
+!! !
+
+!!
+
+! !!!
+
+!
+
+!!!
+
+! !!
+
+!
+
+! !
+
+!
+
+!
+
+!!
+
+! !
+
+!! ! !! ! !!
+
+!!
+
+! ! !! !
+
+! !
+! !
+
+!
+
+! !! ! ! !
+
+! !
+
+!!
+
+!!
+
+!
+
+!!
+
+!! !
+
+! !
+! !!
+
+! !
+
+!
+
+! !
+! !! ! ! !!
+
+! ! !
+! !!
+!
+
+! !! ! !! !
+
+!! !!
+
+!
+
+!
+
+! ! ! !!
+
+!! !
+
+!
+
+!
+
+! !
+
+! !!
+
+!! !
+
+! ! !!
+
+!
+
+!
+
+!
+
+!! !!
+
+!
+
+!
+
+! !!
+
+!
+
+le Jsus!
+!
+le de Montral SainFtl-eLuavuerent!
+
+!! !
+
+!
+! !!
+
+!! !!
+!
+! !!
+! !
+
+! !
+! !!
+
+!! ! !!
+!
+!
+
+! !
+! ! !! !
+! !! !
+!!
+
+! !
+
+! ! !!
+
+! !
+
+! !
+
+! !
+
+!
+
+!
+! !
+!
+! !
+
+!
+! !!
+! ! ! ! !!
+
+!!
+
+!!
+
+! !
+
+!
+
+!
+!! !!
+
+! !
+! !! !!!
+!!
+
+! !!
+
+!
+
+!
+
+! !!
+
+! !
+!! !!
+!
+! !!!! !
+! ! !
+!!
+! !
+!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ! !! ! !!
+
+!! !
+
+! !
+
+! !
+
+!!
+
+!
+!! !
+
+! !!! !! !!
+
+!
+
+! !!!
+
+! !
+
+! ! !
+
+!!
+
+!
+
+! !
+
+!
+
+!
+
+!
+
+!
+
+! ! !! ! !
+! !
+
+! ! !
+! !!
+! !
+! !!
+
+!
+
+!
+
+! !
+! !
+! !!
+
+! !
+
+! !!
+
+! !!
+
+! !!! !!
+
+!!
+
+!! !
+
+!! ! !!
+
+!
+
+! !!
+
+!!
+
+! !!
+
+!!
+
+!! !
+
+! !! !
+
+! !
+
+!! !
+
+!! !!
+
+! !! ! !
+
+!
+
+!!!!
+
+! !
+
+! !
+
+! !
+
+! !
+
+!!! !
+
+!! !
+
+! !
+
+!!
+
+! !!
+
+!
+
+! !! !!!
+
+!! !!
+
+! !
+
+!
+
+!!!
+
+!
+
+!!
+
+! !! !
+
+! !!
+
+!
+
+! !!
+
+!
+
+!
+
+!!
+
+!
+! ! ! !
+!
+
+! !
+
+!
+
+! ! !
+
+! !! !
+
+! !
+
+!
+! !
+
+!
+! !
+
+! !!
+! !
+!
+
+! ! !!
+!
+
+!
+
+! !
+
+!!
+
+! !
+
+!
+
+! !
+
+!
+
+!! ! !! !
+!
+
+!! !
+
+!
+
+! !!
+
+! ! !
+! !
+
+!
+
+! !
+
+! !!
+! !
+!
+
+!
+
+!!
+
+!!
+
+!
+
+!!
+
+!!
+! !
+
+!
+
+!! !
+
+!
+
+!
+! !
+! !
+
+!
+
+! !
+! !
+
+! !
+
+!! !
+
+!
+
+!!
+
+!
+
+! !
+
+! !!
+
+!! !
+
+!!
+
+!
+
+!!
+
+!! !
+
+!
+
+!
+
+!! !
+
+!!
+
+! !! !
+
+! !
+
+!
+! !
+
+! !! !
+
+!
+
+!
+! ! !
+
+! !
+! !
+
+! !
+!
+
+!
+
+! !
+
+! !
+
+!! !
+!!
+
+!!
+! !
+
+! ! !
+
+!!
+
+! !!
+
+!
+
+! ! !!
+
+! ! !
+!!
+
+!! ! ! ! !! !!
+! !
+!
+
+!
+
+!
+
+! !
+
+!
+
+! !!
+
+!
+
+!
+
+! ! !!
+
+! !
+
+!
+
+Lac
+
+!!
+
+!
+
+!
+
+! !
+!
+!
+
+Saint-Louis
+
+! ! ! !!
+
+!! ! !
+
+!
+
+! !
+
+!!
+
+!
+
+! !
+! !!
+
+!
+
+! !
+
+!
+! !
+
+!
+
+!
+
+!
+
+!
+
+!
+
+! !
+
+!
+
+!
+
+! !
+!
+
+! !
+
+!
+
+!
+
+!
+
+!
+! !
+
+!
+
+!! !
+
+! !
+
+!
+
+! !
+!
+!
+
+!
+! !
+! !
+
+!
+
+! !
+!
+!
+
+! !
+
+!
+
+!!
+
+Data source: Communauto
+Figure 2 Communauto members in the Montral area, 2009
+
+Projection: MTM NAD 83 Zone 8
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+DE LORIMIER
+
+" "
+
+""
+
+"
+
+"
+
+" "
+
+" " """"" ""
+
+"
+
+"
+
+" "
+" "
+
+"" "
+"
+
+" ""
+"
+"
+"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" "" " "" " "
+"
+
+"" ""
+
+" "
+
+""""""""""
+
+""""
+
+"" ""
+
+" " ""
+
+"
+
+" "
+
+" "
+
+"
+
+""
+
+"
+
+" ""
+
+"" "
+
+"
+
+" Communauto station
+
+Mtro line
+
+012
+
+4 km
+
+
+
+le Jsus
+"
+Lac Saint-Louis
+
+" "
+
+" "
+" " ""
+
+"" "
+" "
+
+" "
+""
+
+"
+
+" "
+" "
+
+" "
+"
+"
+
+" ""
+"
+"
+"
+
+"
+
+"
+
+" "
+
+" ""
+
+"
+
+" "" """
+
+"
+
+"""""
+
+" "
+" " ""
+
+"
+
+"
+" "
+"
+
+" ""
+
+""
+
+" " ""
+
+"" "" ""
+"
+
+"
+" " " " "
+
+"
+
+""
+
+" "
+
+"
+
+" ""
+
+" "
+""
+
+""
+
+""
+"" " ""
+""
+
+" """
+" ""
+
+" """"""
+
+"
+
+" "
+
+"
+
+"
+
+" "
+
+"
+
+" "
+
+"
+
+"" """
+
+" "
+"
+
+""
+" "
+
+"" "
+
+" "
+" "
+
+" "
+
+"
+
+"
+
+"
+
+"
+
+"" "
+
+"""""""
+
+""
+
+"" "
+
+"
+
+"
+
+"
+
+""
+" " "
+
+" "
+
+"
+
+le de Montral
+
+" "
+""
+"" " "
+
+"
+
+""
+
+" " " " ""
+
+""
+
+"
+
+" "
+""
+
+" "
+
+"
+" "
+
+" "
+" "
+
+Fleuve Saint-Laurent
+
+"
+
+" "
+
+"
+
+"" "
+
+" "
+
+"
+
+Data source: Communauto
+Figure 3 Communauto stations in the Montral area, 2009
+
+Projection: MTM NAD 83 Zone 8
+
+21
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+3.2.4.Record of binary tests
+This record provides the results of automatic tests performed twice a week by the Communauto reservation system during the year 2009. With 24-hour notice, the reservation system automatically attempted to make the following reservations on every Wednesday and Saturday, at every station in the network:
+(1) a 3-hour reservation during the morning (between 6:00 and 12-noon); (2) a 3-hour reservation during the afternoon (between 12-noon and 18:00); (3) a 3-hour reservation during the evening (between 18:00 and 22:00); (4) a 24-hour reservation; and, (5) a 7-day reservation.
+Each test was performed without respect to a specific departure time, notwithstanding the entire booking period fell into the intended test window. The system recorded the result of each test, and assigned a binary value for either success or failure. For the year 2009, a total of 118,119 tests were preformed.
+
+It is important to note that the availability of a vehicle varies greatly throughout a day, a
+
+month or a year. Certain periods such as long weekends and the annual summer break in July lead
+
+to higher demand for Communauto vehicles. However, we chose to focus on the shorter, 3-hour
+
+reservations given that they cor-
+
+respond to the median trip duration throughout the year 2009. Furthermore, 24-hour and 7-day
+
+100 80
+
+trips only represent 6.71% and
+
+60
+
+%
+
+less than 0.01% of active reservations, respectively.
+
+40
+
+Throughout 2009, the overall success rate for 3-hour reservation tests performed with 24-hour notice was 48.91%. From this data, we can affirm that the probability
+
+20
+
+0 Jan
+
+Feb Mar Apr May
+
+Jun Jul Month
+
+Aug Sep
+
+Oct Nov Dec
+
+Wednesday AM Wednesday PM Wednesday Evening
+
+Saturday AM Saturday PM Saturday Evening
+
+Figure 4 Composite 3-hour availability throughout 2009
+
+22
+
+DE LORIMIER
+of booking a car for three hours is much higher on a Wednesday than it is on a Saturday, with 71.10% and 26.72% success rates, respectively. Without regard to the day of travel, booking a car in the afternoon was the least likely (38.92%), followed by booking a car during the morning (51.87%), and the evening (55.94%). Figure 4 provides the composite 3-hour availability for each month in 2009; it is evident from the graph that reservations are least likely to succeed during the month of August. Figure 5 displays the composite 3-hour success rate for each station in the network.
+3.2.5.Census and other data
+The census data used in this report was extracted from the 2006 Canadian census. Neighbourhood characteristics were observed at a census tract level throughout the Montral CMA. The census variables observed include population, gender, education levels, income, employment, and commuting behaviour. Other data such as census tract boundaries, and GIS layers were provided by Desktop Mapping Technologies Inc (DMTI).
+3.3. Methods 3.3.1.Definition of station buffers
+By modelling both the usage and the availability of Communauto vehicles, we seek to determine what factors influence these aspects of the service. A preliminary step in the preparation of the data is the establishment of buffers around each station. These buffers are then used as a radius of analysis for each variable in the regression models, which constitutes the bulk of the analysis.
+Given that Communauto members are expected to walk from their home to the station they use, the buffers are established based on the walking distance between each member and that station. The data provided by Communauto only includes the postal code assigned to the billing address of each member. It is therefore impossible to know whether a member uses cars that are actually closer to another location such as a workplace, or a secondary dwelling. Such an analysis would have required an in-depth survey of Communauto users, which was not the purpose of this study. Furthermore, while members are given the opportunity to pick favourite stations in the online reservation system, this selection is considered inaccurate as it might not actually portray the sta-
+23
+
+24
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+! !
+
+! !
+! ! !!
+
+!! ! !
+!
+
+! !
+!!
+
+!
+
+!
+
+! !
+! !
+
+!! !
+!
+
+! !!
+!
+!
+!
+
+! ! !! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+!
+
+!!
+!! !
+
+! !
+
+!
+
+!! !!
+
+!
+
+!!
+
+! !
+
+! !
+
+! ! !!
+
+!
+
+!! !!
+
+! ! !!
+
+! ! !! ! !!
+!!
+
+!
+
+!!
+
+!
+
+! !!
+
+! !
+
+!
+
+!
+
+Composite 3-hour reservation success rate
+0% - 24% 25% - 39% 40% - 51% 52% - 63%
+
+64% - 80% Mtro line
+
+0 0.5 1
+
+2 km
+
+
+
+Data sources: Communauto, STM
+Figure 5 Composite success rate for 3-hour reservations, 2009
+
+DE LORIMIER
+Projection: MTM NAD 83 Zone 8
+
+DE LORIMIER
+tions used by the member. For example, a member may not have changed their favourite stations after moving, or might have favourites that are located closer to their workplace than to their home.
+Using the reservation data included in the record of 2009 reservations described in the previous section, we determined which station each member used most often during the year, and defined said station as the member's preferred station. The distance between the preferred station and the member's home was then calculated. In order to remove major outliers and improve the normalcy of the distribution, the top and bottom 2% of the values were discarded. The 85th percentile of the distances between a member's home and their preferred station was designated as the tolerable walking distance for Communauto members. This value is equal to 1,101.75 metres, and can be interpreted as follows: "85% of Communauto members walk 1.1 kilometres or less to their preferred station". While we acknowledge that this is a large distance to travel in order to gain
+"
+"
+
+Fleuve Saint-Laurent
+
+""
+
+" "
+
+"
+
+le Sainte-Hlne
+
+LONGUEUIL
+
+Data sources: Communauto, DMTI Inc.
+Figure 6 Tolerable walking distance station buffers in Longueuil
+
+" "
+
+Station buffer " Communauto station
+
+Projection: MTM NAD 83 Zone 8
+
+0 125 250
+
+500 m
+
+25
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+access to a carsharing vehicle, we consider that this tolerable walking distance best describes the catchment area for each station.
+Using the Network Analyst extension in ArcMap 9.3, a network buffer was created for each station based on the normal walking distance described above. Figure 6 displays the buffers; note the overlap between the different stations. The buffers were then used as an area of analysis for the variables in the regression models.
+3.3.2.Monthly usage model
+The monthly usage model seeks to explain which factors affect the usage of vehicles at a station, using the number of monthly hours-reserved per vehicle as the dependent variable (see Figure 7). Cancelled reservations were removed but bookings which did not accrue mileage and remained active were preserved. It is assumed that a reservation, once booked and not cancelled, renders the vehicle unavailable to other users, whether the latter is used or not. This is a characteristic of the Communauto reservation system, and maintains the integrity of the network for all users. Given that the dependent variable is based on a monthly value of each vehicle's usage, dummy variables were included to reflect the month during which the hours were accrued. This allows to eliminate vehicles that were either taken out or added to the network during the course of the year. Each observation is compared to the month of December. Measures of accessibility were also included to determine whether Communauto vehicle usage was related to the local accessibility to retail and to employment.
+The usage model contains 8,673 observations, which is equal to the number of vehicles in operation during the year 2009 multiplied by the number of months said vehicles were in service. Table 2 describes the variables used in the model.
+The usage model can be described as follows: Monthly hours-reserved by vehicle = f (Vehicles, Vehicle age, Vehicles with child seats, Vehicles with air conditioning, Alternative vehicles, Mtro stations, Member density, Income, Big box, Jobs gravity, Month in operation (January, February, March, April, May, June, July, August, September, October, November))
+26
+
+27
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+! !
+
+! !
+! ! !!
+
+!! ! !
+!
+
+! !
+!!
+
+!
+
+!
+
+! !
+! !
+
+!! !
+!
+
+! !!
+!
+!
+!
+
+! ! !! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+!
+
+!!
+!! !
+
+! !
+
+!
+
+!! !!
+
+!
+
+!!
+
+! !
+
+! !
+
+! ! !!
+
+!
+
+!! !!
+
+! ! !!
+
+! ! !! ! !!
+!!
+
+!
+
+!!
+
+!
+
+! !!
+
+! !
+
+!
+
+!
+
+Total daily hour-reserved by station
+2.9 - 6.6 6.7 - 8.9 9.0 - 10.2 10.3 - 11.2
+11.3 - 12.1
+
+12.2 - 13.5 Mtro line
+
+0 0.5 1
+
+2 km
+
+
+
+Data sources: Communauto, STM
+Figure 7 Total daily hours-reserved by vehicle, 2009
+
+DE LORIMIER
+Projection: MTM NAD 83 Zone 8
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+The total number of vehicles, member density and income are expected to have a positive relationship with the dependent variable. The presence of accessories and the proximity to a mtro station may also increase the number of hours-reserved. On the other hand, vehicle age and the number of alternative cars are expected to return a negative to the dependent variable. The relationship to the month of operation is expected to be variable according to seasonal effects with summer months being the busiest throughout the year.
+
+Table 2 Monthly usage model: variables
+
+Variable name Vehicles Vehicle age Vehicles with child seats Vehicles with air conditioning Alternative vehicles Mtro stations
+Member density
+Income Big box Employment Month in operation
+January February March April May June July August September October November Dependent variable
+
+Description Number of vehicles at the station Average age of vehicles at the station, in model years Number of vehicles with child seats at the station
+Number of vehicles with air conditioning at the station
+Number of vehicles in other stations within the station's buffer Number of mtro stations within the station's buffer Number of Communauto members within the station's buffer per square kilometre Average income of residents within the station's buffer, in dollars Number of big box stores located within 30 minutes by car Number of jobs located within 30 minutes by car
+Dummy variable for vehicles in operation during the month of January Dummy variable for vehicles in operation during the month of February Dummy variable for vehicles in operation during the month of March Dummy variable for vehicles in operation during the month of April Dummy variable for vehicles in operation during the month of May Dummy variable for vehicles in operation during the month of June Dummy variable for vehicles in operation during the month of July Dummy variable for vehicles in operation during the month of August Dummy variable for vehicles in operation during the month of September Dummy variable for vehicles in operation during the month of October Dummy variable for vehicles in operation during the month of November Monthly hours-reserved by vehicle
+
+28
+
+DE LORIMIER
+3.3.3.Availability model
+The availability model aims to explain each test performed in the record of binary tests described in the previous section, save the 24-hour and 7-day tests. In total, the model contains 70,775 observations. In order to make the dataset manageable, the tests were separated into individual entries and coded to reflect which day the test was performed. Dummy variables were added for each test reservation period.
+Table 3 describes the variables used in the model, which were split into three categories: (1) Test characteristics; (2) Station characteristics; and, (3) Neighbourhood characteristics.
+Table 3 Availability model: variables
+
+Variable name
+
+Description
+
+Test characteristics
+
+3-hour AM
+
+Dummy variable for 3-hour reservations in the morning
+
+3-hour PM
+
+Dummy variable for 3-hour reservations in the afternoon
+
+Wednesday
+
+Dummy variable for tests performed on a Wednesday
+
+Winter
+
+Dummy variable for reservations from December through February
+
+Spring
+
+Dummy variable for reservations from March through May
+
+Summer
+
+Dummy variable for reservations from June through August
+
+Station characteristics
+
+Vehicles
+
+Number of vehicles at the station
+
+Vehicles with child seats Number of vehicles with child seats at the station
+
+Vehicles with air conditioning
+
+Number of vehicles with air conditioning at the station
+
+Vehicle age
+
+Average age of vehicles at the station
+
+Alternative vehicles
+
+Number of vehicles in other stations within the station's buffer
+
+Closest station
+
+Distance to the closest station, in metres
+
+Mtro stations
+
+Number of mtro stations within the station's buffer
+
+Neighbourhood characteristics
+
+Member density
+
+Number of Communauto members within the station's buffer per square kilometre
+
+Income
+
+Average income of residents within the station's buffer, in dollars
+
+Big box
+
+Number of big box stores located within 30 minutes by car
+
+Employment
+
+Number of jobs located within 30 minutes by car
+
+Dependent variable
+
+Outcome of the binary test
+
+29
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+Test characteristics include the 3-hour tests for the morning and afternoon periods, which are compared to the 3-hour test for the evening period. A dummy variable was added for tests performed on a Wednesday versus those performed on a Saturday. Furthermore, dummy variables for each season are intended to explain seasonal availability of vehicles; winter, summer and fall variables are included, and are compared to the spring season. Station characteristics include the number of vehicles at the station, vehicle age, and the distance to the next closest Communauto station, as well as the distance to the closest mtro station. Finally, the neighbourhood characteristics describe the demographics of the area with variables such as member, seniors and employment density.
+The availability model is a logistic regression model. It can be described as follows: Outcome of the binary test = f (Test characteristics (3-hour AM, 3-hour PM, Winter, Spring, Summer, Wednesday), Station characteristics (Vehicles, Vehicle age, Vehicles with child seats, Vehicles with air conditioning, Alternative vehicles, Closest station, Distance to mtro), Neighbourhood characteristics (Member density, Income, Big box, Employment)) The odds of a test succeeding are expected to rise for shorter reservation periods, on Wednesdays, and during the warmer seasons of the year (with a general exception for major holiday periods). Variables such as the number of members, jobs, the number of big box stores in the vicinity of the station, and reservations placed on a Saturday should make it harder to book a car, and are expected to have a negative relationship with the odds of a reservation succeeding.
+30
+
+DE LORIMIER
+4. ANALYSIS
+The datasets presented in the previous section provide invaluable details on the operations of the Communauto carsharing network. In order to answer the principal research question, however, we must determine which factors influence both usage and availability. In this section, we first present the results of both the monthly usage model and the availability model before discussing their implications on vehicle usage and availability in the Communauto carsharing network.
+4.1. Monthly usage model The monthly usage model seeks to identify which factors affect the overall usage of each Communauto vehicle, based on the total number of hours-reserved monthly. While a standard regression was performed, the multilevel regression model was found to more accurately reflect the conditions at the station-level.
+4.1.1.Summary statistics
+On average, each vehicle accrued 328.15 hours-reserved with a maximum at 1,196.50 hours-reserved for the busiest vehicle during the busiest month, and a minimum at 2 hours-reserved. The mean vehicle age is 4.35 model years; 11.22% of the vehicles have a child seat, and 36.21% of vehicles have air conditioning. On average, a Communauto vehicle will have 22.31 alternative vehicles in other stations within its tolerable walking distance buffer. Vehicles are located close to mtro stations with an average of 1.60 mtro stations within the Communauto station's buffer; the maximum is 6 and the minimum lies at naught. In terms of membership, the mean member density is 266.38 members per square kilometre with a high of 652.15 and a low of 1.90. The average income within the station buffers is $37,777.02 per annum with a minimum of 23,589.40 and a maximum of 91,695.80. Accessibility measures indicate that, on average, vehicles are located within 30-minute driving time of 125.01 big box stores, with a low at 30 stores and a high at 163. The accessibility to employment establishes the number of jobs within 30-minute driving time; its mean is 59,267.50 with a maximum of 110,524 and a minimum of 9,750.93. Additional summary statistics for the model are presented in Table 4.
+31
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+Table 4 Monthly usage model: summary statistics
+
+Vehicles Vehicle age Vehicles with child seats Vehicles with air conditioning Alternative vehicles Mtro stations Member density Income Big box Employment Month in operation
+January February March April May June July August September October November Dependent variable: Monthly hours-reserved by vehicle n = 8,673
+
+Minimum 0.08 1 0 0 0 0 1.90 23,589.40 30 180,292.20
+
+Maximum 20.33 10 1 1 80 6 652.15 91,695.80 163 1,327,758
+
+01 01 01 01 01 01 01 01 01 01 01
+2.00 1,196.50
+
+Mean 5.67 4.35 0.112 0.362 22.31 1.595 266.38 37,777.02 125.01 1,050,591
+0.0747 0.0741 0.0759 0.0804 0.0823 0.0865 0.0880 0.0867 0.0877 0.0874 0.0873
+328.15
+
+Standard deviation 4.437 1.908 0.316 0.481 19.51 1.329 192.05 8,307.75 19.88 218,446.40
+0.263 0.262 0.265 0.272 0.275 0.281 0.283 0.281 0.283 0.282 0.282
+105.27
+
+32
+
+DE LORIMIER
+4.1.2.Model evaluation
+The purpose of these models is to evaluate the effect of the independent variables presented in the above table against the dependent variable: the monthly hours-reserved by vehicle. To this goal, both a standard regression and a multilevel REML regression were run. While the standard regression provided significance for most of the variables in the model, the multilevel regression acknowledges that the vehicles are located in stations and that those vehicles in the same station share characteristics related to their immediate environment. For example, while each vehicle has its own age, its local member density is shared with the other vehicles located at the same station.
+In a pooled model using a linear regression model the R2 was 0.2334. Due to the presence of a hierarchical nature of the data, a multilevel regression is a better model to explain the number of hours-reserved per month while controlling for the station-level characteristics and effects. The likelihood ratio test did show a statistical significance at the 99% confidence level indicating that a multilevel regression model is appropriate to estimate the number of hours-reserved by vehicle per month. Conceptually, we find two levels of analysis: the station at Level I, and the vehicle at Level II. The multilevel regression provides for both fixed and random effects. A fixed effect is one that can be replicated among different iterations of the experiment, whereas a random effect will also be replicable but may affect a different sample size from one iteration to another. In this model, we have identified that member density is a random effect. Graphically, fixed effects are identified as those which have different intercepts but identical slopes, making the fitted value trend lines parallel to each other; a random effect has both a different intercept and a different slope.
+Table 5 displays the results of three multilevel models. Model 1 includes only the intercept and no fixed or random effects, Model 2 includes all the fixed effects described in the previous section, and Model 3 provides estimates for both fixed and random effects using an unstructured variance-covariance structure. Using the model fit statistics provided in the table, we determined that placing member density as a random effect provided the best fitting model. Deviance and two information criteria (AIC and BIC, respectively) identify Model 3 as have the highest goodness of fit.
+The multilevel model shows that the total number of vehicles in the station has a major impact on the number of hours-reserved by vehicles. For each additional vehicle parked at a station, total
+33
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+Table 5
+
+Monthly usage multilevel models Model 1
+
+Model 2
+
+Model 3 (Unstructured)
+
+Fixed effects Intercept Vehicles Vehicle age Vehicles with child seats Vehicles with air conditioning Alternative vehicles Mtro stations Member density Income Big box Employment Month in operation
+January February March April May June July August September October November
+
+Coefficient z-statistic
+
+318.00
+
+120.83***
+
+Coefficient 345.98 2.42 -8.69 -18.31
+
+z-statistic 20.13*** 2.65*** -10.55*** -5.48***
+
+-4.11
+
+-1.22
+
+-0.839 3.22 0.188 -0.000423 0.596 -0.000541
+
+-2.87*** 1.75* 5.47*** -1.68* 2.92*** -2.74***
+
+-74.95 -73.68 -52.12 -63.56 -28.62 -22.76 50.58 58.21 -41.93 -30.36 -80.46
+
+-15.35*** -15.04*** -10.78*** -13.58*** -6.19*** -5.02*** 11.23*** 13.01*** -9.30*** -6.73*** -17.83***
+
+Coefficient 352.07 1.90 -8.77 -18.41
+
+z-statistic 19.24*** 2.22** -10.66*** -5.51***
+
+-5.04
+
+-1.50
+
+-0.752 2.49 0.175 -0.000570 0.456 -0.000529
+
+-2.80*** 1.33 5.54*** -2.17*** 2.71*** -2.55***
+
+-74.57 -73.29 -51.73 -63.30 -28.46 -22.74 50.57 58.83 -41.92 -30.35 -80.44
+
+-15.34*** -15.02*** -10.74*** -13.54*** -6.17*** -5.02*** 11.23*** 13.01*** -9.30*** -6.73*** -17.83***
+
+Random effects Intercept Member density Residual
+
+Standard deviation
+34.14
+
+Standard error
+2.194
+
+100.38
+
+0.773
+
+Standard deviation
+26.66
+
+Standard error
+1.95
+
+88.18
+
+0.679
+
+Standard deviation 39.22
+0.0913
+88.17
+
+Standard error 4.07
+0.0216
+0.679
+
+Model fit statistics
+
+Estimate
+
+Estimate
+
+Estimate
+
+Deviance
+
+104,897.47
+
+102,610.30
+
+102,602.36
+
+AIC
+
+104,903.50
+
+102,654.40
+
+102,654.30
+
+BIC
+
+104,924.70
+
+102,838.10
+
+102,823.90
+
+Dependent variable: Monthly hours-reserved by vehicle
+
+n = 8,673 Minimum significance: *** = 98% confidence level ** = 95% confidence level * = 90% confidence level
+
+34
+
+DE LORIMIER
+hours-reserved by vehicles increases by 1 hour and 53 seconds monthly. This indicates that stations with more vehicles are more used than stations with a smaller number of vehicles. Furthermore, vehicle age impacts the number of monthly hours-reserved by vehicle, but negatively. For each additional model year in the station's average, the number of hours-reserved by vehicle decreases by 8 hours and 45 minutes. This indicates that members are less likely to use older vehicles. Furthermore, this relationship entails that members may select the station they use based on the age of the vehicles. The Communauto reservation system does not allow members to pick a specific vehicle for a given reservation, unless the reservation is booked less than 72 hours from its intended start time. This procedure is in place to ensure that all vehicles are used and to prevent the preferential usage of a vehicle over another based on such factors as vehicle-age, overall mileage, and other aesthetic concerns. It is however important to note that members gain experience through continued usage of the service, and may eventually select a station based on vehicles that they prefer, thereby circumventing the restrictions set in place by the Communauto reservation system.
+The accessories variables provide important insights as to the preferences of Communauto members. In fact, the vehicles with air conditioning variable return a negative relationship with the dependent variable. For each additional vehicle with air conditioning made available at a station, the total daily number of hours-reserved decreases by 5 hours and 2 minutes. However, this relationship is not statistically significant. On the other hand, the relationship with the number of vehicles with child seats is significant and follows a similar negative trend. For each vehicle with a child seat parked at a station, total hours-reserved by vehicle decreases by 18 hours and 24 minutes on a monthly basis. This indicates that vehicles with child seats are less used overall than vehicles without the accessory.
+A variable accounting for the number of alternative vehicles in other stations within the station's buffer was included in the model to evaluate the effect of the density of stations on the total daily number of hours-reserved. The relationship between the two variables is negative: for each additional alternative vehicle located within the station's buffer, the number of monthly hours-reserved by vehicle in the target station is reduced by 45 minutes and 6 seconds. The relationship and coefficient demonstrate a dispersion effect within the network whereby members located in areas where stations are numerous and close together will have the option of choosing an alternative sta-
+35
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+tion for the trips. This affects the total number of hours-reserved negatively and demonstrates that the clustering of vehicles--and therefore stations--is not to Communauto's advantage.
+The number of mtro stations within the buffer has a positive relationship with the total monthly number of hours-reserved; however the relationship is not statistically significant. Each additional station within a Communauto station's tolerable walking distance buffer increases monthly hours-reserved by 2 hours and 28 minutes. Further research may indicate that high-order transit services in close proximity to a carsharing station increases the use of the latter. We can postulate that members who cannot have access to vehicles close to their homes, or those who live outside the immediate coverage area provided by the CSO use stations which are easily reachable by public transit. The fact that large Communauto stations are located close to mtro stations is also of note, and should be encouraged. Adding stations in less densely populated areas may not be economically viable, but increasing the number of vehicles in the vicinity of mtro stations might have the same intended effect, as well as providing service to those living close to that mtro station.
+Member density has a positive relationship with the number of hours-reserved monthly by vehicle. For each additional 100 members per square kilometre, the number of hours-reserved increases by 17 hours and 32 minutes. This relationship shows that it would be worthwhile to open stations in areas where members are concentrated. Income was also found to be statistically significant. The relationship of income with monthly hours-reserved is negative but small. In fact, for each additional $1,000 in average income within a station's buffer, a decrease in the order of 34 minutes and 11 seconds in the monthly number of hours-reserved per vehicle in operation was observed. This could be explained by the fact that persons with lower incomes are less financially able to take longer trips, which would accrue more hours per vehicle and per station. The relationship could also indicate that Communauto members have a lower average income than the general population, a finding that would contradict the operator's internal member survey data. It is impossible, however, to determine whether members would have misrepresented their income in the survey.
+Many carsharing users become members of the service to run errands, and benefit from the flexibility and capacity of a private car. Big box stores are a common destination for carsharing members who may not be able to travel to commercial centres by public or active modes of
+36
+
+DE LORIMIER
+transportation. Furthermore, carrying heavy loads on transit, by foot or bicycle is difficult, and makes a shared vehicle quite useful. The model indicates that the number of big box stores within 30 minutes driving time from a Communauto station has a positive relationship with the number of hours-reserved by vehicle. Each additional store within the 30-minute travel time increases monthly hours-reserved by 27 minutes and 23 seconds. The interpretation of this figure must be considered carefully. The model should not be interpreted to signify that Communauto should locate stations in areas where big box stores are numerous and close together. In fact, this advantage would be cancelled out by a low member density and an overall lack of members in the area.
+The employment accessibility variable indicates that each 1,000 additional jobs within a 30-minute driving time of a stations decreases monthly usage by 31 minutes and 44 seconds. A high number of jobs in close proximity to a Communauto station reduces the overall usage of vehicles within that station. This relationship may reflect the fact that most Communauto stations are located in areas with relatively low employment given that the service is primarily geared towards individual members. Corporate members, however, may also use vehicles for shorter amounts of time than individuals. In fact, corporate members have a broader access to rental car company services and may forfeit the use of Communauto vehicles for longer trips, whereas individual members may benefit from using carsharing vehicles even on longer trips.
+While the month in operation variables are elements out of the control of Communauto, they do confirm trends established on summary analysis of both the usage and the availability datasets. Keep in mind that each month variable is compared to usage during the month of December. January through June, and September through November have lower usage than December, with the penultimate month of the year having the lowest usage overall. The summer months of July and August have higher usage than December by 50 and 58 hours respectively. It is important to note that these figures also take into account old and damaged vehicles being taken out of service, and new vehicles introduced into the fleet throughout the year. The model confirms that the summer months, as well as the end-of-year holiday period, are the busiest for Communauto. Usage dwindles in November, and throughout the cold Montral winter, only to pick up again in the spring. The implications of the season on any carsharing service should be carefully considered by the CSO, and clearly affect the quality of the service throughout the year.
+37
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+4.2. Availability model The availability model seeks to determine which factors influence the probability of obtaining a successful reservation using the binary tests performed by the Communauto reservation system throughout the year 2009.
+
+4.2.1.Summary statistics
+In total, 70,871 tests were used as observations. On average, 49% of the tests were successful. These are tests for a 3-hour reservation in the morning, and a 3-hour reservation in the afternoon, which are compared to the test for a 3-hour reservation in the evening. Some of the independent variables used in this model are the same as the ones used in the previous, vehicle-hours reserved model. Notable additions are the distance to the closest station, and to the second closest station, and the ring variables described in the previous chapter. Table 6 provides summary statistics for this model.
+Table 6 Availability model: summary statistics
+
+Variable name
+
+Minimum
+
+Test characteristics
+
+3-hour AM
+
+0
+
+3-hour PM
+
+0
+
+Wednesday
+
+0
+
+Winter
+
+0
+
+Spring
+
+0
+
+Summer
+
+0
+
+Station characteristics
+
+Vehicles
+
+0
+
+Vehicles with child seats 0
+
+Vehicles with air conditioning
+
+0
+
+Vehicle age
+
+0.50
+
+Alternative vehicles
+
+0
+
+Closest station
+
+27.02
+
+Mtro stations
+
+0
+
+Neighbourhood characteristics
+
+Member density
+
+1.90
+
+Income
+
+23,589.41
+
+Big box
+
+30
+
+Employment
+
+180,292.20
+
+Dependent variable: Outcome of the binary test
+
+0
+
+n = 70,871
+
+38
+
+Maximum
+1 1 1 1 1 1
+20 4
+11
+8.00 80 13,052.54 6
+652.15 91,695.75 163 1,327,758
+1
+
+Mean
+0.333 0.333 0.496 0.392 0.169 0.252
+3.36 0.388
+1.55
+3.04 19.11 609.83 1.53
+205.30 38,559.48 121.13 1,006,801
+0.487
+
+Standard deviation
+0.471 0.471 0.499 0.488 0.375 0.434
+2.89 0.635
+1.66
+1.34 19.32 643.74 1.45
+179.19 9,755.69 25.58 275,533.50
+0.499
+
+DE LORIMIER
+4.2.2.Model evaluation
+The purpose of this model is to evaluate the effect of the independent variables on the dependent variables: the outcome of the binary test. A multivariate logistic regression was performed. Table 7 provides the model associated with this regression.
+The logistic regression model returns odds-ratios as well as coefficients. The odds-ratio is the equivalent to the probability of the event occurring in comparison to another event. The model establishes that a 3-hour reservation in the morning is 21% less likely to be successful than a 3-hour reservation in the evening; likewise, a 3-hour reservation during the afternoon period is 62% less likely to be fulfilled than a 3-hour reservation in the evening. A test performed for a Wednesday reservation is 882% more likely to be successful than a reservation for a Saturday. Reservations are also less successful in the winter, spring and summer compared to the fall by 7%, 17% and 32%, respectively.
+In terms of station characteristics, the model establishes that each additional vehicle at the station increases the likelihood of a reservation being booked by 30%. The presence of a vehicle with a child seat increases the chance of successfully booking a reservation by 8%; the variable for vehicles with air conditioning does not return a statistically significant relationship, however. The age of the vehicles also has a positive relationship with their availability: each additional vehicle year of age increases the probability of a reservation fulfilled by 10%. Finally, each additional alternative vehicle within the station's buffer increases the probability of a reservation succeeding by 2%.
+In terms of proximity to another station, the closest station variable does not have a major impact on the outcome of the binary tests. However, the z-statistic provides the direction of the relationship. The closest station has a positive relationship to the outcome of the test. On the other hand, the relationship between the outcome of the binary test and the number of mtro stations in the immediate vicinity of the stations is negative: each additional mtro station decreases the probability of the reservation being fulfilled by 2%.
+The neighbourhood characteristics return the following relationships. A higher member density decreases the probability of a reservation succeeding by 1%. This follows our expectations: a larger concentration of members will increase the use of vehicles and in turn lower their availability. The relationship to income is marginal but negative. The presence of big box retail stores
+39
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+Table 7 Availability model
+
+Variable name
+
+Odds-ratio
+
+Coefficient
+
+z-statistic
+
+Test characteristics
+
+3-hour AM
+
+0.7925
+
+-0.2324
+
+-10.71***
+
+3-hour PM
+
+0.3827
+
+-0.9606
+
+-43.19***
+
+Wednesday
+
+8.82 2.18 116.54***
+
+Winter
+
+0.9323
+
+-0.0701
+
+-2.80***
+
+Spring
+
+0.8267
+
+-0.1903
+
+-6.37***
+
+Summer
+
+0.6833
+
+-0.3808
+
+-13.95***
+
+Station characteristics
+
+Vehicles
+
+1.3046
+
+0.2659
+
+37.99***
+
+Vehicles with child seats
+
+1.0829
+
+0.0796
+
+4.79***
+
+Vehicles with air conditioning
+
+0.9919
+
+-0.008
+
+-0.83
+
+Vehicle age
+
+1.1036
+
+0.0986
+
+11.43***
+
+Alternative vehicles
+
+1.0163
+
+0.0161
+
+13.67***
+
+Closest station
+
+1.0002
+
+0.0002
+
+12.21***
+
+Mtro stations
+
+0.9795
+
+-0.0206
+
+-2.85***
+
+Neighbourhood characteristics
+
+Member density
+
+0.9971
+
+-0.0029
+
+-21.39***
+
+Income
+
+0.9999
+
+-3.84  10-6
+
+-3.89***
+
+Big box
+
+0.9976
+
+-0.0024
+
+-3.08***
+
+Employment
+
+1.0001
+
+5.33  10-7
+
+6.90***
+
+Dependent variable: Outcome of the binary test
+n = 70,871 Log likelihood = -37,858.56 Model 2 = 22,484.96 McFadden pseudo-R2 = 0.2290 Minimum significance: *** = 98% confidence level
+
+within 30-minute driving time of the station also produces a negative relations; each additional retail store in this radius decreases the probability of a reservation succeeding by 1%. Finally, jobs located within a 30-minute drive return a positive relationship but it is also marginal.
+
+Overall, the relationships in the availability model correspond with the ones found in the multilevel usage model described in the previous chapter. It is logical that the effect of these variables will be concurrent from one model to the other. For example, member density increases usage and decreases availability. Some variables direct both models in the same direction: the number of vehicles at the station increases both usage and availability. This is an important finding and indicates that there may be a vehicle threshold above which both availability and usage remain high, which is a favourable situation for the members and the CSO management alike.
+
+40
+
+DE LORIMIER
+5. RECOMMENDATIONS
+The models described in the previous chapter have provided a quantitative basis for a number of policy recommendations. With the models in hand, the next step is to describe how to take advantage of the factors affecting both availability and usage to improve Communauto's service. The relationships described in the previous section can lead to a number of shifts in policy which are described in this chapter.
+5.1. Station characteristics Both the availability and the usage models have determined that a certain number of station characteristics affected both or either of the variables. In this section, we detail the stations which possess the key characteristics identified by the models, before concluding with a synthesis table indicating which stations require immediate attention.
+5.1.1.Availability and usage
+Availability  The availability model showed that station size was the strongest positive determinant for successful reservations, notwithstanding temporal and seasonal variables. In fact, a reservation was 30% more likely to be successful for each additional vehicle parked in a station. Table 8 lists the stations in the 10th and 90th percentile in terms of overall 3-hour availability, respectively. The stations in the 10th percentile have a composite 3-hour availability score of less than 27%, while the stations in the 90th percentile have a score greater to 65%.
+Even without a statistical model, a quick glance at the table hints at a strong correlation between station size and availability. The smallest stations in the network also have the poorest availability, while the largest stations in the network have the best availability. Before confirming this correlation, there are a number of caveats. For one, the larger stations have smaller stations numbers, owing to the fact they have been in operation for a longer period of time. This may indicate that they were easier parking lots to acquire and that large parking lots are now depleting especially in the high density areas where Communauto finds most of its members. On the other hand, the bottom 10% stations have large station numbers, and were thus opened at a later date. They are usually smaller in size and the majority are located in fringe areas where Communauto service is limited to those stations.
+41
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+The map in Figure 8 provides a spatial dimension to the findings on stations size and availability. Some stations in the top and bottom 10% can be paired up, especially in central areas such as the Plateau-Mont-Royal. It is expected that members who use the stations in the bottom 10% attempt to book vehicles but may be hindered by the low availability, which is a result of the small number of vehicles at those stations. Their next option is to use one of the larger stations in the vicinity, which have higher success rates due to the larger capacity and central location. In fact, this finding tends to promote larger centralised stations rather than smaller local ones. While a member may prefer a station that is located closer to their home and a vehicle that remains the same at each reservation, interpretation of the statistical model and of the raw data provided by Communauto steers in the direction of larger stations which can accommodate more users. Furthermore, the CSO must consider the cost effectiveness of operating one large station versus many smaller ones. Lower maintenance and infrastructure costs may make the former more appealing than the latter, although such a stance may come at a cost of convenience for some users.
+Table 8 Stations with composite 3-hour availability success rates in the 10th and 90th percentile
+
+10th percentile
+Station number and name 260 Quai de l'Horloge 267 Lionel-Groulx et Vinet 263 Bibliothque Belleville 262 Saint-Julien et de Charleroi 237 Island et Richardson 236 Brown et Bannantyne 258 De Maisonneuve et St-Mathieu 208 Waverly et Fairmount 227 35e Avenue et de Bellechasse 226 20e Avenue et de Bellechasse 254 Frontenac et Marie-Anne 206 Roy et Rivard 207 Henri-Julien et Gilford 259 Brbeuf et Cur-Poirier 229 43e Avenue et St-Zotique 159 De Lanaudire et Gilford 112 Mtro Laurier 248 Jeanne-Mance et Sherbrooke 241 Place Bonaventure 240 Henri-Julien et Beaubien 191 Square Dorchester 228 41e Avenue et St-Zotique
+42
+
+# cars
+1 2 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1
+
+90th percentile
+Station number and name
+50 Parc Ahuntsic 2St-Sacrement 100 St-Clement et Adam 124 Henri-Julien et De Castelnau 70 Masson et De Lorimier 181 St-Andr et Blanger 148 Laurier et St-Urbain 4 Parc Lafontaine 116 Riverside et Birch 75 March Saint-Jacques 110 Arena Cartier 22 Place St-Henri 41 Mtro Angrignon 130 Emery et Sanguinet 177 De Lanaudire et Mont-Royal 149 St-Joseph et Henri-Valade 96 Collge Notre-Dame 39 Place d'Youville 84 Centre St-Mathieu 64 Mtro Sauv 13 6e Avenue 190 13e Avenue et de l'Ukraine 44 Nicolet et Hochelaga
+
+# cars
+12 23 10 18 15 12 13 20 3 8 4 10 5 5 11 6 7 6 4 8 14 5 7
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+DE LORIMIER
+
+!
+
+262
+!!
+!
+
+! !
+
+! !
+
+! !!
+!!
+! !!
+
+!!! ! !!!
+
+! !
+!!
+
+!
+
+" " " "" "! "!"!!""!"!"!"!!!""!!""""! " " !!
+
+! !
+! !
+
+!! !
+!
+
+! !!
+!
+!
+!
+
+! ! !! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+!
+
+!!
+!! !
+
+! !
+
+!
+
+!! !!
+
+!
+
+!! !
+
+!! "!
+
+! !
+
+! ! !!
+
+!
+
+!! !!
+
+! ! !!
+
+! ! !!
+
+!
+
+!
+"!
+
+!
+!!
+
+!
+
+!!
+
+!
+
+! !!
+
+! !
+
+!
+
+!
+
+Composite 3-hour availabilty
+" Stations in 90th percentile ! Stations in 10th percentile ! Other station
+Mtro line
+
+0 0.5 1
+
+2 km
+
+
+
+263
+!!
+! !
+
+228!! 229 !
+!!
+22! 7
+!!
+
+! !!
+
+110
+"!
+!
+! !
+
+50 !
+"!
+64
+"!
+
+!
+
+!! !
+!
+
+! !
+
+!
+!
+84
+"!
+
+! 226
+!!
+190
+"!!
+
+! ! ! !!!
+! !
+!
+
+! !
+
+!
+
+"! 13! "! 149 !
+
+!
+
+44
+"!
+
+!
+
+!
+
+!!
+
+!
+
+181! ! 124!!
+"!
+
+"! !
+
+!
+
+!
+
+!
+
+240
+!!
+! ! !
+
+!
+
+70! 254"!
+
+!!
+
+! !
+
+!! !
+
+!
+
+!
+
+! !
+
+! 15!! 917! 7
+
+112 "!! !
+
+!
+
+!
+
+!
+! !
+!
+
+! !
+!
+
+! !
+!
+
+!!
+
+!! !
+
+2! 208148 4!
+207 206 75!! "!
+
+"! !!
+! !
+
+! !!
+"! ! "!
+!
+
+! !
+
+! !
+
+! !
+
+! !
+
+!!
+!! !
+
+! !
+!
+130
+
+"!
+!
+248!
+
+! 260
+!!
+
+!! ! !
+
+!
+
+! !
+
+!
+
+!
+
+96
+
+"! !
+
+!
+
+191241 39! !
+
+! !
+
+!!
+
+!
+!!
+
+"!
+
+! !
+258
+
+!
+
+!! !
+
+!
+
+100
+"!
+! !
+!
+116
+"!
+
+! !
+!!
+
+!
+267
+
+!! !
+
+237
+
+22 !!
+
+!! ! !!
+
+"! !
+
+!
+
+!!
+! !
+
+!
+!
+! !
+
+!!
+! !
+
+!!
+
+!
+41
+
+236
+!!
+
+"!
+
+!
+Data sources: Communauto, STM
+
+! !
+!
+! 259
+!!
+Projection: MTM NAD 83 Zone 8
+
+Figure 8 Stations with composite 3-hour availability success rates in the 10th and 90th percentile
+
+43
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+Usage  Monthly usage in itself is a key characteristic toward describing the performance of the Communauto fleet of vehicles. Given that members are charged according to their use of the vehicles (by mileage and by time), the CSO must ensure that all its vehicles travel as much as possible. A vehicle which is not used to its full potential could be moved to another station where demand is higher.
+Figure 9 displays the stations in the 10th and 90th percentile in terms of average monthly vehicle usage. The figures for each vehicle used as the dependent variable for the usage model were compiled at the station level, and reflect average vehicle usage for the station. Vehicles that were put into service or taken out of service during 2009 are taken into account in the figure. Stations in the lower bracket have an average monthly usage of no more than 257 hours, whereas those in the higher group reach 364 hours per month or more. In many cases, the least performing stations are located in newly inaugurated areas, where carsharing service may not be as popular or useful as in established neighbourhoods. Many of the stations in the outer ring of Montral and in nearby suburbs fall into this category. This is the case for a station in Longueuil, for example, even though it is interesting to notice that another station in the same city falls into the 90th percentile in terms of average monthly usage. This may be explained by the fact that said station is located at the only mtro station in Longueuil, which is also a transit node for local and regional bus services.
+In the suburban city of Laval, two of the three Communauto stations fall within the 10th percentile in terms of monthly vehicle usage. This may reflect the low demand for carsharing services in a suburban area where residents depend on private vehicles to move around. The Laval stations have been opened for a few years and that the local government has heavily promoted a partnership between the local transit corporation and Communauto to encourage carsharing; the data demonstrates, however, that this has not been a success in terms of vehicle usage.
+Low usage stations are also found in other areas such as Notre-Dame-de-Grce, AhuntsicCartierville, Lasalle, Lachine and Verdun. While these areas are not recent suburbs per se, they are all largely residential areas with good but not optimal transit service, and relatively low accessibility. On the opposite end of the spectrum, high usage stations are located in densely populated areas, and fit neatly along the orange line of the mtro system, as can be witnessed on the figure.
+44
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+DE LORIMIER
+
+127
+!!
+
+! ! !
+
+! !
+!
+!
+
+!
+
+!!
+
+! !
+
+!!
+
+!
+
+!!
+
+! !
+
+!! ! !
+!
+
+! !
+!!
+
+!
+
+! ! !! !""!!"!"!""""""" !""!"!""!"!""" " !!
+
+! !
+! !
+
+!! !
+!
+
+! !!
+!
+!
+!
+
+! ! !! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+!
+
+!!
+!! !
+
+! !
+
+!
+
+!! !!
+
+!
+
+!!
+
+!! "!
+
+! !
+
+! ! !!
+
+!
+
+!! ! ! !
+
+! ! !!
+
+! ! !!
+
+!
+!!
+
+!
+
+! !
+
+!
+
+!!
+
+!
+
+!! !!!!
+
+!!!! !
+
+119
+!!
+!!
+
+Average monthly usage
+" Station in 90th percentile ! Station in 10th percentile ! Other station
+Mtro line
+
+0 0.5 1
+
+2 km
+
+
+
+! !
+! !
+! !
+
+! !
+!
+152
+!!
+65
+!!
+!
+
+!! !!
+
+!
+
+! !!
+!
+
+166
+
+!
+
+!!
+
+185
+
+!!
+
+! !
+
+"!
+
+!!
+
+!
+
+!
+
+!
+
+! 2!32
+
+176"" !
+!!! !!
+
+81
+
+34
+
+"! "!!
+
+! "! "! "!
+
+124240 8
+
+!
+
+! !
+
+!
+
+! 19
+
+"!
+
+!
+
+! !
+
+98!
+!!
+
+195 104! "! !
+
+! !
+
+"!
+!
+
+178"!
+
+!
+
+!
+
+!
+7
+
+"!
+! !
+
+!! !
+51 !
+
+!! !
+
+!
+
+14! !! !
+
+"!
+
+! !
+
+!
+
+220
+
+"!
+
+!!
+
+! !
+
+132 246!! !
+!
+!! !
+
+!
+
+139"! 1!48!
+
+"! !
+
+!
+
+247
+
+!! !
+
+! !
+
+! !
+! !!
+80!
+"! !
+!
+
+!! !!
+!
+!
+
+! !
+!
+
+!!
+37
+
+!
+! 201 !
+
+!
+
+!!
+! !
+
+!!! !
+
+! 188
+
+"! !
+
+! !
+
+!
+193
+!!
+
+215
+
+! !
+
+!
+
+!
+
+59
+!!
+
+198! !
+!!
+"!
+
+!! ! !
+
+!!
+
+!
+
+!
+
+! !
+
+214
+!! !
+
+!
+
+! !
+
+!
+
+!
+
+! !204
+
+163!!
+
+!! ! !!
+
+!!
+
+"!
+
+!
+!
+! !
+
+! !
+
+! !
+!
+
+! !
+!
+!
+
+172
+!!
+175 !! !! 174
+
+171 !! 170
+!!
+
+!
+
+Data sources: Communauto, STM
+Figure 9 Stations with average monthly usage in the 10th and 90th percentile
+
+!
+
+!!
+
+! 102
+"!
+
+121
+!!
+
+!
+
+Projection: MTM NAD 83 Zone 8
+
+45
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+5.1.2.Negative effects High vehicle age  Vehicle age was shown to have a major impact in both models. An older fleet of vehicles at a station affects availability positively with an increase of 16% for each additional average model year at the station, and induces a negative effect on vehicle usage with a 14 minute daily drop in usage for each additional model year. While the carsharing operator must strive to keep a balance between newer cars and older cars, the balancing of this fleet within the network may help relieve high-demand areas and during peak months of the year.
+Figure 10 identifies stations with an average vehicle age value in the 90th percentile (larger or equal to 5 model years). The map shows that these stations are not concentrated in a specific part of the city. The downtown core has the highest number of stations within this range (7). The carsharing operator should consider giving priority to this group of stations specifically when it next introduces new cars in its fleet.
+46
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+DE LORIMIER
+
+!
+
+! !
+
+!! !
+! ! !!
+
+!! ! !
+!
+
+!! ! !!
+
+!
+
+! ! !!!!! !!!!!!!!!! ! !!
+
+! !
+! !
+
+!! !
+!
+
+! !!
+!
+!
+!
+
+! ! !! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+!
+
+!!
+!! !
+
+! !
+
+!
+
+!!! !!! !
+
+!
+
+!!
+
+! !
+
+! !
+
+! ! !!
+
+!
+
+!! !!
+
+!! ! !!
+
+! ! !!
+
+! !
+!!! !
+
+! !
+!
+
+! !
+
+! !!
+
+! !
+
+!
+
+!
+
+120 !!
+
+! !
+
+119 !!
+
+! !
+
+! !
+!
+
+!
+
+111 !!
+!
+
+Vehicle age
+
+! Station in 90th percentile ! Other station
+Mtro line
+
+0 0.5 1
+
+2 km
+
+
+
+65 !! ! 60 !!
+!
+
+Data sources: Communauto, STM
+
+Figure 10 Stations with average vehicle ages in the 90th percentile
+
+!
+! !
+
+! !
+!
+!
+
+!
+
+101 !!
+
+!
+
+!
+
+!!
+
+!!
+! 19! 0 !! !!
+
+!
+182 !!
+!
+! !!
+!
+202!!! !! ! !
+!! !
+
+! !
+
+! !! !
+
+!
+
+! !
+
+!
+
+! !
+
+! !
+
+! !
+
+! !
+
+99 104!
+
+!!
+
+! !
+
+!
+
+! !!
+
+!! !
+
+!
+
+!
+
+! !
+
+!
+
+! !
+112!
+
+!!
+
+! !
+
+!
+
+! !! !
+
+!
+
+!! !
+
+!
+
+!!
+
+!!
+
+! !
+
+!
+
+210 !! !
+! !
+
+! !!
+
+!
+
+!
+! !
+!
+
+! !
+
+!! !
+!!
+
+!
+
+! !
+
+! !
+
+!!
+
+! !!
+
+! !
+!
+
+!
+
+!
+
+!
+! !
+
+16
+
+!! !
+
+!
+
+! 93
+
+!! ! !
+
+!
+! 56 ! !! !
+
+! !
+
+47! !! !
+
+48 !!
+!
+
+59
+
+! !!
+
+!! 143 9! 1
+
+!! !
+
+!!
+
+! !
+
+! !
+!!
+
+28!
+
+!! !
+
+237
+
+! ! !11!! 5!!!! 92
+
+!!
+
+!
+
+!!
+! !
+
+! 109 !!
+! !
+
+!!
+! !
+
+!! ! !
+!
+
+!
+
+97 !!
+
+!!
+
+68 !!
+!
+
+!
+
+! !
+
+!
+
+! !
+
+! !!
+!
+
+Projection: MTM NAD 83 Zone 8
+
+47
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+High concentration of alternative vehicles  The concentration of vehicles was also found to have an impact on availability and vehicle usage. In fact, for each additional vehicle in another station within the target station's buffer, there was an increase in 3-hour availability by 1% and a decrease in usage by 1 minute and 12 seconds. This indicates that a concentration of vehicles may not be the best option for the carsharing operator. Larger stations far and wide apart could result in increased usage compared to many small stations located close together. One small caveat, however, is that many of the stations with a high number of alternative cars in other stations are located close to the very largest stations in the network, and themselves have a small number of cars. As was discussed in the previous section, the pull from large stations is very strong and may dwarf the effect of the concentration of vehicles within a smaller station's buffer.
+Figure 11 displays the stations with a number of alternative vehicles in the 90th percentile (a value greater or equal to 51 vehicles). There is an evident concentrations of these stations along the orange line axis of the Montral mtro, which also happens to be where most Communauto members are located. The map also reveals clustering around Jean-Talon mtro station.
+48
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+DE LORIMIER
+
+! !
+!!
+
+! !
+
+! !
+! ! !!
+
+!! ! !
+!
+
+! !
+!!
+
+!
+
+!!!!! !!!!!!!!!!!!!
+
+! !
+! !
+
+!! !
+!
+
+! !!
+!
+!
+!
+
+! ! !! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+!
+
+!!
+!! !
+
+! !
+
+!
+
+!! !!
+
+!
+
+!!
+
+! !
+
+! !
+
+! ! !!
+
+!
+
+!! !!
+
+! ! !!
+
+! ! !!
+
+! !! !!
+
+!
+
+!!
+
+!
+
+! !!
+
+! !
+
+!
+
+!
+
+! !!
+
+! ! !
+!! !
+
+153 !!
+
+82 !! !! 12 81
+!!! ! ! 218
+
+181 !!
+!
+
+! !
+
+!
+
+147 !!
+!
+
+! !
+
+!
+!! !
+
+Alternative vehicle concentration
+! Station in 90th percentile ! Other station
+Mtro line
+
+0 250 500
+
+1,000 m
+
+!
+
+
+!! ! !
+
+! !
+
+! !
+
+! !
+
+! !!
+! !
+
+Data sources: Communauto, STM
+Figure 11 Stations with alternative vehicle concentrations in the 90th percentile
+
+!!
+
+! !
+
+!
+! !
+
+! !
+!
+
+!!
+
+! !
+
+!
+
+!
+
+!
+
+19 !!
+
+113 157!!
+!!
+
+! !
+
+!
+
+!
+
+!
+
+!
+238 !! 112
+!! 205 !!
+
+! 17!7! !! 3 136 !!
+
+14 !!
+
+25 !!
+
+! 207 ! !! 239 ! !!
+
+160 !! !
+
+206 !!
+
+! !
+
+! !
+!
+
+!
+
+!
+
+! !
+! !
+!
+167 !!
+
+! !
+
+!
+!
+! !
+
+! !
+
+! !
+
+!
+! !
+
+Projec!tion: MTM NAD 83 Zone 8
+!
+
+49
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+5.1.3.Positive effects High jobs concentration  In recent years, Communauto has strived to attract corporate members in parallel with its individual membership drive. Corporate members have much different needs from individual members. They use vehicles located close to their offices, share their membership among authorised persons working for their company, and they mainly use vehicles during working hours, a period when vehicles are relatively available throughout the network. It is the expectation of the carsharing operator that corporate members will increase the usage of vehicles at periods when they are usually not used by individual members, such as during weekday business hours. However, increasing the number of vehicles in high employment areas can have the opposite effect if the vehicles are not used during weekends, and holiday periods. Likewise, corporate members are not as captive as individual members, and may have more demands than the latter.
+It is also important to note that an unknown number of individual members begin their trips at the workplace rather than at their home. While it was not possible to quantify this effect in this study, further research could establish the role of trips started from locations other than the member's primary home on both vehicle availability and usage.
+Figure 12 displays the stations located in high employment areas throughout the city. Not surprisingly, the majority of these stations are located in the central business district, in the Quartier international and in Vieux-Montral. A number of stations are also located east of the central business district in peripheral employment areas near major hospitals.
+50
+
+51
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+! !
+
+! !
+! ! !!
+
+!! ! !
+!
+
+! !
+!!
+
+!
+
+!!!!!!!!!!!!!!!!!!
+
+! !
+! !
+
+!! !
+!
+
+! !!
+!
+!
+!
+
+! ! !! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+!
+
+!!
+!! !
+
+! !
+
+!
+
+!! !!
+
+!
+
+!!
+
+! !
+
+! !
+
+! ! !!
+
+!
+
+!! !!
+
+! ! !!
+
+! ! !!
+
+! !! !!
+
+!
+
+!!
+
+!
+
+! !!
+
+! !
+
+!
+
+! !
+
+!
+
+! ! !
+!!
+
+! !
+
+!
+
+! !
+
+!
+
+!!
+
+! !
+
+! !
+
+! !
+!
+
+! !
+!
+
+!
+
+!
+
+! !
+
+!
+
+!
+
+!
+
+129 !!
+
+107 !! 168 !!
+
+!
+
+154 !!
+
+! !!
+
+!
+
+! !
+
+!
+! !
+!
+
+! !
+!
+
+!! 155!! 156 ! 75!! 126
+!! 18 !!
+
+! !
+!
+
+! !
+
+! !
+!
+
+248 !!
+
+!
+249 !!
+
+! !
+
+Jobs concentration
+
+!
+
+! Station in 90th percentile ! Other station
+Mtro line
+
+0 250 500
+
+1,000 m
+
+
+
+Data sources: Communauto, STM
+
+Figure 12 Stations in employment areas in the 90th percentile
+
+47 !!
+
+192
+
+!!
+
+188 !!
+
+48 186!!
+
+!!
+
+191
+
+180 241!!
+
+39 !!
+
+! !! !
+
+198
+
+!!
+
+91 !!
+! !
+
+!
+
+!
+! !
+
+DE LORIMIER
+! !
+Projection: MTM NAD 83 Zone 8
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+High member concentration  The number of members within the station's buffer is a key statistic, and had a major impact on availability and usage in both models. A higher density of members increased the total daily number of hours-reserved and decreased the overall 3-hour availability of vehicles in a station. As a general rule, high membership areas are located in densely populated areas of the city, where ownership of a car is optional, and where the carsharing operator has had the highest success in recruiting members. Communauto excels particularly in one area, the PlateauMont-Royal, a neighbourhood of the city often cited for its high yuppie, student and artist population. The area also boasts one of the highest gross population density in Montral, and highest transit and active transportation use. Figure 13 presents the stations with member concentrations in the 90th percentile. Another high membership cluster is located around the Jean-Talon mtro station in the Petite-Italie neighbourhood of Montral.
+52
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+DE LORIMIER
+
+! !
+!!
+
+! !
+
+! !
+! ! !!
+
+!! ! !
+!
+
+! !
+!!
+
+!
+
+!! !!!!!!!!!!!!!!!
+
+! !
+! !
+
+!! !
+!
+
+! !!
+!
+!
+!
+
+! ! !! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+
+!
+
+!!
+!! !
+
+! !
+
+!
+
+!! !!
+
+!
+
+!!
+
+! !
+
+! !
+
+! ! !!
+
+!
+
+!! !!
+
+! ! !!
+
+! ! !!
+
+! !! !!
+
+!
+
+!!
+
+!
+
+! !!
+
+! !
+
+!
+
+!!
+
+! ! !
+!! !
+
+!
+
+82
+
+!! !! 12 81 !! !
+
+!
+
+!
+
+!
+
+! !
+! !
+
+Member concentration
+
+!! ! !
+
+! !
+
+! !
+
+! Station in the 90th percentile ! Other station
+Mtro line
+
+0 250 500
+
+1,000 m
+
+
+
+! !
+
+Data sources: Communauto, STM
+
+Figure 13 Stations with member concentrations in the 90th percentile
+
+! !!
+
+! !
+
+!
+! !
+
+! !
+
+!!
+
+! !
+
+!
+
+! !
+!! !
+!!
+! !
+
+!!
+
+!
+
+! !
+
+! 113 157!!
+!! !
+
+!
+
+!
+
+187
+
+88 !!
+
+159
+
+!!
+
+!! 17!7! !! 3 136
+
+!!
+
+14 !!
+
+! 112 !! 205 !!
+
+25
+
+27 !!
+
+2 207 !! !! 95 239 !! !!
+
+!! 160
+!! !
+
+!
+
+! !
+! !
+! !
+!
+
+! !
+!
+
+! !
+
+! !
+
+! !
+
+! ! !
+! !
+! !
+!
+! !
+
+!
+
+!
+! !
+
+!Projection: MTM NAD 83 Zone 8
+!
+
+53
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+5.1.4.Synthesis
+In the previous sections, we have identified a number of station characteristics which affect network performance, member convenience and flexibility. The maps in the previous section identifies the stations which fit in each category and provide a spatial dimension to the analysis.
+Table 9 lists the stations which feature two or more of the station characteristics which influence performance. Forty-two stations fit in this category. Stations with only one feature were left out of the table in order to focus on those that require immediate attention, and especially those which combine both negative and positive effects. In fact, in the latter situation, a station may be in a highly promising area but its performance is curbed by a high vehicle age or by a low availability. Not surprisingly, stations with a high number of alternative vehicles are often located in areas with a high concentration of members.
+Throughout this paper we have considered that low availability was a negative factor and high availability, a positive factor. While this may be counterintuitive if the CSOs sole purpose is to increase revenues at all costs, a low availability leads to member frustration and to overall dissatisfaction with the service. After all, carsharing users become members in order to gain access to a fleet of vehicles and not to be denied service whenever they want to use a car. With this in mind, it is important to remember that the ideal situation is the combination of high availability and high vehicle usage, which ensures that users are satisfied with the service and that vehicles are used thereby ensuring revenues for the carsharing operator. Two stations featured in Table 9 fulfill this criterion: stations 124 (Henri-Julien et De Castelnau) and 148 (Laurier et Saint-Urbain).
+Overall, eight stations have a high availability, nine stations enjoy high vehicle usage, ten stations are located in areas with a large concentration of jobs, and 18 stations benefit from high member concentrations. On the other end of the spectrum, many stations suffer from low availability (9), while others have low vehicle usage (3), high vehicle age (10) or a high number of alternative vehicles (18). The carsharing operator should first consider renewing the fleet in stations which have high average vehicle age. Using the maps in the previous sections, it should also consider merging or removing certain stations which do not perform appropriately. An alternative would be to pinpoint promotional activities in areas where performance is low, in order to increase usage.
+54
+
+Table 9
+
+Synthesis of station characteristics affecting performance
+
+Negative effects
+
+Positive effects
+
+DE LORIMIER
+
+Low availability Low vehicle usage High vehicle age High alternative vehicles High availability High vehicle usage High jobs concentration High member concentration Action
+
+Station number & name
+
+2 St-Sacrement
+
++ + Support growth
+
+3 Garnier
+
+- + Support growth
+
+12 Lajeunesse
+
+- + Support growth
+
+14 Rachel et Papineau
+
+- + + Add vehicles
+
+19 Laurier et Papineau
+
+-+
+
+Add vehicles
+
+25 Christophe-Colomb et Rachel
+
+- + Support growth
+
+39 Place d'Youville
+
++ + Promote
+
+47 Peel et Dr Penfield
+
+- + Renew fleet
+
+48 St-Jacques et St-Jean
+
+- + Renew fleet
+
+59 Tour Penfield
+
+--
+
+Renew or cut fleet
+
+65 Provost
+
+--
+
+Renew or cut fleet
+
+75 March Saint-Jacques
+
++ + Promote
+
+81 St-Vallier et Jean-Talon
+
+- + + Add vehicles
+
+82 Berri et De Castelnau
+
+- + Support growth
+
+91 Lucien-L'Allier
+
+- + Renew fleet
+
+104 Dzery et Ontario
+
+- + Renew fleet, add vehicles
+
+112 Mtro Laurier
+
+- --
+
++ Renew fleet, add vehicles
+
+113 Jardin De Lorimier
+
+- + Support growth
+
+119 Cartier et Lavoisier
+
+--
+
+Renew or cut fleet
+
+124 Henri-Julien et De Castelnau
+
+++
+
+Support growth
+
+136 De Lanaudire et Marie-Anne
+
+- + Support growth
+
+148 Laurier et St-Urbain
+
+++
+
+Support growth
+
+157 Chabot et Gilford
+
+- + Support growth
+
+159 De Lanaudire et Gilford
+
+-
+
++ Add vehicles
+
+160 Napoleon et de Mentana
+
+- + Support growth
+
+177 De Lanaudiere et Mont-Royal
+
+-+
+
++ Support growth
+
+181 St-Andre et Blanger
+
+-+
+
++ Support growth
+
+188 McGill et du Prsident-Kennedy
+
+++
+
+Add vehicles
+
+190 13e Avenue et de l'Ukraine
+
+-+
+
+Renew fleet
+
+191 Square Dorchester
+
+-
+
++ Add vehicles
+
+198 Mtro Bonaventure
+
+++
+
+Add vehicles
+
+205 Resther et Gilford
+
+- + Support growth
+
+206 Roy et Rivard
+
+--
+
+Add vehicles
+
+207 Henri-Julien et Gilford
+
+-
+
+-
+
++ Add vehicles
+
+237 Island et Richardson
+
+--
+
+Renew fleet, add vehicles
+
+239 Mont-Royal et De Bullion
+
+- + Support growth
+
+240 Henri-Julien et Beaubien
+
+-
+
++ Add vehicles
+
+241 Place Bonaventure
+
+-
+
++ Add vehicles
+
+248 Jeanne-Mance et Sherbrooke
+
+-
+
++ Add vehicles
+
+55
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+The rightmost column of the table provides a clear action, which should be performed by Communauto in order to improve the station's performance. Each station falls in a specific category depending on the combination of negative and positive effects it has accrued:
+ Support growth Stations in this category have a combination of high alternative vehicles, high member concentration, and perhaps both high availability and high usage. These stations do not require immediate action but may fall into a different category at a later date. Given that these are well-performing stations overall, they should be monitored closely to confirm that members are satisfied with the service they provide. High membership areas are especially important, and service quality at these stations should not be left to dwindle.
+ Add vehicles In this category, the CSO should consider adding vehicles either due to low availability, or high vehicle usage. Stations in this category do not perform well currently but have a high potential. In these cases, current demand is higher than current supply. Many of these stations occur in high membership areas, and should be monitored akin to stations in the previous category. (This category may occur along with Renew fleet).
+ Promote These stations have a high availability and occur in areas with high levels of employment. Communauto should promote its service in these areas in order to attract more corporate members, or individual members who wish to use the service from their workplace.
+ Renew fleet Stations in this category have ageing fleets which should be renewed as soon as possible. These stations may be located in areas with high potential, and performance may increase when newer vehicles are introduced. (This category may occur along with Add vehicles).
+ Renew or cut fleet Communauto should consider either renewing its fleet, or removing cars outright for stations in this category. These are the least-performing stations in the network. Furthermore, these stations do not lie in high-potential areas. Nonetheless, a renewed vehicles fleet might push stations performance positively.
+56
+
+DE LORIMIER
+
+5.2. Temporal effects
+Time is of crucial importance with regards to the availability of vehicles in the Communauto network. Daily, monthly, and seasonal differences occur throughout the year, and affect overall availability. In this section, we seek to reduce the impact of temporal effects on both availability and usage.
+
+5.2.1.Seasonality
+
+The model found that
+
+0 .2 .4 .6 .8 1
+
+summer was the hardest
+
+season in which to suc-
+
+cessfully book a vehicle,
+
+followed by spring, winter
+
+and fall. Figure 14 provides
+
+monthly box plots of the
+
+composite 3-hour avail-
+
+ability throughout the year
+
+2009. The plots are colour-
+
+coded to reflect each sea-
+
+son. Median availability is at its highest in April and
+
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+Figure 14 Composite 3-hour availability by month, 2009
+
+November, while it is at its
+
+lowest in August and June.
+
+Given that the 24-hour and
+
+7-day reservations were removed from the dataset in this study, it is impossible to evaluate the ef-
+
+fect of longer reservations on monthly availability. However, we may postulate that members use
+
+vehicles for longer periods during the summer and may even use Communauto like a traditional car
+
+rental service throughout the warm season. While the number of long reservations may be small in
+
+comparison to short-term bookings, their effect on the network is important given that those cars
+
+are made unavailable for long periods of time.
+
+57
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+
+The increase in demand during the summer (especially during the month of August) should encourage the carsharing operator to improve alternatives to the use of its vehicles for long-term reservations. If improving summer availability is a priority, Communauto should consider improving its partnerships with traditional rental car companies and ensure that its members are aware that such an option exists. The operator could also consider increasing its long-term reservation fees in order to ensure vehicles remain in the city for short-term trips.
+
+5.2.2.Day of the week
+
+0 .2 .4 .6 .8 1
+
+Not surprisingly, the day of the week is also a major determinant in the availability of vehicles. In fact, the availability model determined that a vehicle was 894% more likely to be available on a Wednesday than on a Saturday. Figure 15 is a box plot of 3-hour availability by day of the week.
+
+Most Communauto members are individuals
+
+Wednesday
+
+Saturday
+
+Figure 15 Composite 3-hour availability by day of the week, 2009
+
+who use the vehicles during
+
+their time off work, thereby
+
+forcing peak usage on weekends and during civic holidays. The high availability of vehicles on
+
+weekdays would be profitable for corporate members who seek to replace their fleet with a carshar-
+
+ing membership. This finding favours the carsharing operator by confirming that vehicles are indeed
+
+being reserved, especially on weekends. Members, however, may grow frustrated if they cannot
+
+reserve vehicles during their time off work. Keep in mind that the automatic tests used to extract
+
+this data are performed with 24-hour notice by the Communauto reservation system. These data
+
+58
+
+DE LORIMIER
+
+represent last-minute situations, and many members have taken up the habit of booking vehicles much in advance of their usage, especially at peak periods on weekends and holidays. While such behaviour may be easily acquired for many users, it highlights a disadvantage of carsharing versus the private cars: carsharing reduces the possibility of spontaneous trips. Reducing trips made on a whim is an environmental strong point of carsharing, but members may not agree with having their freedom curbed by the carsharing operator's online reservation system.
+
+5.2.3.Time of the day
+
+Akin to season and day of
+
+week, the time of the day
+
+0 .2 .4 .6 .8 1
+
+for which the reservation
+
+is made has an important
+
+effect on availability. A res-
+
+ervation is 20% less likely
+
+to succeed in the morning
+
+than in the evening. That
+
+number is as high as 62%
+
+less likely for a reservation
+
+in the afternoon compared
+
+to the evening. Note that the automatic availability tests do not cover the per-
+
+Morning
+
+Afternoon
+
+Evening
+
+Figure 16 Composite 3-hour availability by time of the day, 2009
+
+iod between midnight and
+
+6:00. Figure 16 is a box plot
+
+of the composite 3-hour availability by time of the day.
+
+In order to balance the availability of its vehicles during a given day, the carsharing operator may consider increasing its fees during afternoon hours, or offering credits to users who reserve vehicles between 18:00 and midnight, and between midnight and 12-noon. While such a measure may not be popular and would make the fee structure more complicated, it may force members to
+
+59
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+use vehicles during off-peak periods. Communauto already increases its hourly rate for reservations carried out between Thursday and Sundays. A similar pricing scheme for a specific range of hours during the day may have a positive effect on availability while maintaining usage levels.
+5.3. Limitations It is important to underscore the limitations of this study and what it was not able to achieve. First and foremost, the data provided by Communauto was a snapshot of operations during a specific year. Fluctuations in membership, station openings and the introduction of new vehicles might have affected operating conditions throughout the year.
+Another major limitation stems from the membership data available to and provided by Communauto. Without a formal survey to its members, the carsharing operator cannot know whether users book cars located close to their home, or close to their workplace. Such a situation limits our understanding of the users' behaviour. In fact, vehicle usage and availability are functions of their location throughout the city. In attempting to model both variables with the purpose of improving them in the future, knowing where members start their trip from would be a worthy insight. There are also assumptions as to which stations are more popular and whether or not members choose stations based on the age of the vehicles.
+A third limitation stems from the fact that the automatic tests performed by the Communauto reservation system only provide a glimpse of availability with 24-hour notice. However, members of the carsharing service are specifically advised, at subscription, to book vehicles with much more foresight, especially during peak periods such as weekends and holidays. The values in the availability model may give the impression that vehicles are very rarely available, which is the case when reservations are made last-minute. However, this may also indicate that members have taken upon themselves to plan their trips ahead of time in order to ensure they will have access to a vehicle when they need one. It is likewise impossible to quantify the effect of reservations that are made well in advance, thereby restricting access to a vehicle, but are cancelled at the last minute. Availability may in fact increase in the last two hours before an intended start time, yet this effect cannot be quantified with the data in hand.
+60
+
+DE LORIMIER
+6. CONCLUSION
+Availability and usage are key characteristics of any transportation service. Carsharing, however, is meant to replace individual automobility by providing the flexibility of a car, without the need to own a personal vehicle.
+This study has shown that many factors affect both availability and usage. In particular, the size of a carsharing station was shown to have a large impact on both variables. Larger stations offer more vehicle options and have, by definition, a larger catchment basin than smaller stations. Communauto has succeeding in installing large stations in areas where it is most successful. However, the next step is to increase membership in areas that are not inherently attracted to such a novel service. Persons who are used to having a car will not make the choice to give it up lightly; Communauto's service must be up to par in terms of availability, quality and flexibility. One major bottleneck in expansion, however, is the lack of affordable parking spaces, which at the same time always accessible, safe, and well located. At the same time, scarce parking may be a strong incentive for users to become members of the service when they realise that parking costs are included in the package provided by the carsharing operator. Perhaps one policy option to increase the use of carsharing is for municipal governments to provide incentives toward parking specifically geared toward CSOs, at the expense of parking for private vehicles.
+Along with station size, important factors identified in this study are fleet age, temporal effects, the age cohort of the members, and the location of stations within the city. The carsharing operator should consider investing in attracting niche members such as seniors, corporations, and other organised individuals in order to increase its ranks. For each satisfied organisational members gained, an even larger number of individual members may follow. Until now, Communauto has relied solely on word-of-mouth to promote its service. While advertising in local media or on the web comes at a high cost, targeted ads toward certain groups of the population may have a positive effect on the company's membership.
+Given the novelty of carsharing, research on the operation of a successful network is scarce. Likewise, local and regional characteristics make standardisation more complex. Further research
+61
+
+FACTORS AFFECTING VEHICLE USAGE AND AVAILABILITY IN THE COMMUNAUTO CARSHARING NETWORK
+is necessary to properly model which members use the service and what their needs are in the long-term. Upcoming research should consider where members start their trips from, and establish the impact of that behaviour on the network and on further expansion. Additional capacity may be needed in high employment areas, not only to fulfill the needs of corporate members but also to ensure individual members who begin their trips from the workplace have the option to do so using the service. Another study should investigate demand for carsharing service in areas that are not currently served by Communauto. While the operator has made a foray into the suburbs, it is not clear that carsharing is adapted to the suburban built form and to the specific mobility needs of persons in low-density areas. A proper demand model would establish where service is needed based on the performance of the existing network, and may initiate a domino effect which would eventually reach outlying suburban areas.
+Other carsharing companies have invested massively in research and development but are not willing to share these findings with other companies in order to remain competitive and gain the returns needed to compensate investors. Communauto, on the other hand, has chosen another route for financing. Rather than seek private investors and venture capital, it uses its members to provide seed money for new vehicles, improved partnerships for parking spaces, and useful information technology tools. All these elements would make the Communauto service more attractive for members, and would help the company increase its membership and therefore its role in making transit more efficient throughout the Montral region.
+62
+
+REFERENCES
+Barth, M., & Shaheen, S. (2002). Shared-Use Vehicle Systems: Framework for Classifying Carsharing, Station Cars, and Combined Approaches. Transportation Research Record: Journal of the Transportation Research Board, 1791, 105-112.
+Cervero, R. (2003). City CarShare: First-Year Travel Demand Impacts. Transportation Research Record: Journal of the Transportation Research Board, 1839, 159-166.
+Cervero, R., Golub, A., & Nee, B. (2007). City CarShare: Longer-Term Travel Demand and Car Ownership Impacts. Transportation Research Record: Journal of the Transportation Research Board, 1992(1), 70-80.
+Cervero, R., & Tsai, Y. (2004). City CarShare in San Francisco, California: Second-Year Travel Demand and Car Ownership Impacts. Transportation Research Record: Journal of the Transportation Research Board, 1887, 117-127.
+CityCarShare. (2006). Bringing Car-Sharing to Your Community. San Francisco CA: CityCarShare.
+District of Columbia Municipal Regulations  18-9901 (2009).
+Communauto. (2006). D'Auto-Com en Communauto. Retrieved 3 February, 2010, from http:// www.communauto.com/histoire.html
+Communauto. (2009). Qui sommes-nous? Retrieved 3 February, 2010, from http://www. communauto.com/qui.html
+Cousins, S. (1999). Carsharing? An alternative vision and a bit of history. World Transport Policy & Practice, 5(3), 57-55.
+d'Welles, J. (1951).  propos de circulation urbaine. Urbanisme, 20(11-12), 56.
+Dallaire, Y., Lafond, N., Lanoix, C., & Viviani, M. (2006). Le projet auto+bus: valuation d'initiatives de mobilit combine dans les villes canadiennes. Montral QC: Communauto.
+Fishman, L., & Wabe, J. S. (1969). Restructuring the form of car ownership: A proposed solution to the problem of the motor car in the United Kingdom. Transportation Research, 3(4), 429-442.
+Katzev, R. (1999). CarSharing Portland: Review and Analysis of its First-Year. Portland OR: Oregon Department of Environmental Quality.
+Katzev, R. (2003). Car Sharing: A New Approach to Urban Transportation Problems. Analyses of Social Issues and Public Policy, 3(1), 65-86.
+Lane, C. (2005). PhillyCarShare: First-Year Social and Mobility Impacts of Carsharing in Philadelphia, Pennsylvania. Transportation Research Record: Journal of the Transportation Research Board, 1927, 158-166.
+Meijkamp, R., & Theunissen, R. (1996). Car Sharing: Consumer Acceptance and Changes on Mobility Behaviour. Paper presented at the European Transport Conference.
+Millard-Ball, A. (2005). Car-sharing : where and how it succeeds. Washington, D.C.: Transportation Research Board.
+65
+
+Mobility-CarSharing-Switzerland. (2009). Die Geschichte des CarSharing 1987 - 2008. Retrieved 4 February 2010, 2010, from http://www.mobility.ch/pages/index.cfm?srv=cms&pg=&dom=6&pru b=526&rub=528
+Montral, V. d. (2008). Transportation Plan. Montral: Ville de Montral. Oregon Administrative Business Energy Tax Credit  330-090-0110 (2009). Paris, V. d. (2009). Pourquoi un label pour l'autopartage? Autopartage  Paris Retrieved
+2 February, 2010, from http://www.paris.fr/portail/deplacements/Portal.lut?page_ id=8158&document_type_id=4&document_id=35956&portlet_id=19548&multileveldocument_ sheet_id=8444 Robert, B. (2004). De l'ide  la pratique. Histoire de l'auto-partage Retrieved 4 February, 2010, from http://www.communauto.com/historique01.html Robert, B. (2005). Recueil de textes concernant Communauto Inc., Universit Laval, Qubec City QC. Robert, B. (2009). L'auto-partage, un nouveau joueur en expansion dans la chane des transports collectifs et actifs. Paper presented at the Forum URBA 2015, Montral QC. Rydn, C., & Morin, E. (2004). Legal, political and fiscal incentives and barriers for car-sharing. Stockholm: Mobility Services for Urban Sustainability (MOSES). Shaheen, S., Cohen, A., & Chung, M. (2009). North American Carsharing: 10-Year Retrospective. Transportation Research Record: Journal of the Transportation Research Board, 2110, 35-44. Shaheen, S., Sperling, D., & Wagner, C. (1998). A Short History of Carsharing in the 90's. World Transport Policy & Practice, 5(3), 18-40. Umweltbundesamt. (2009). Success Stories of the Blue Angel Retrieved 4 February, 2010, from http://www.blauer-engel.de/en/blauer_engel/balance/success_stories.php Walb, C., & Loudon, W. (1986). Evaluation of the Short Term Auto Rental (STAR) Service in San Francisco, CA. Cambridge MA: Research & Special Programs Administration Transportation System Center, United States Department of Transportation. Revised Code of Washington  82.70.010 (2005). Zipcar. (2009). Zipcar Media Kit Retrieved 4 February, 2010, from http://zipcar.mediaroom.com/ index.php?s=23
+66
+
+

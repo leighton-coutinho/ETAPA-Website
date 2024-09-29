@@ -1,0 +1,1104 @@
+ 
+Julien SurprenantLegault 
+ 
+ 
+ 
+ 
+THE SPATIAL PATTERNS AFFECTING
+HOME TO WORK DISTANCES OF
+TWO-WORKER HOUSEHOLDS
+ 
+ 
+ 
+ 
+ 
+ 
+Supervised research report  Submitted to Ahmed M. ElGeneidy  In partial fulfillment of the Masters of Urban Planning Degree 
+  School of Urban Planning 
+McGill University  April 2010 
+
+Surprenant-Legault
+
+iii
+
+ABSTRACT
+
+RSUM
+
+While a lot of research concerns location decisions, this report aims at identifying patterns in the commute distances and the positioning of two-worker households. Two spatial interrelationship factors are investigated: the difference between the maximal and the minimal home to work distances and the angle formed at home location by the direct lines linking each workplace to home. The former indicates how equal the commute distances are in a household, while the latter illustrates to which extent partners go to work in similar directions. A cluster and outlier analysis and four regression models concerning home to work distances are built. Findings are that two-worker households pool their commute distances to optimize their spatial positioning and that a small angle may result from a strategy to minimize distances commuted. An important spatial pattern is that larger angles are encountered around the CBD and in two local subcentres. Finally, this research could help policy makers adapt land use and transportation networks to the needs of a growing population group.
+
+Alors que les dcisions de localisation font l'objet de nombreuses recherches, ce rapport vise  identifier des agencements spatiaux concernant les distances de navettage et la localisation des mnages  deux travailleurs. Deux facteurs d'interrelation spatiale sont examins : la diffrence entre les distances maximale et minimale sparant la rsidence de chaque lieu de travail et l'angle form au lieu de rsidence par les lignes directes y reliant chaque lieu de travail. Le premier facteur indique  quel point les distances de navettage sont gales, tandis que le second montre  quel point les conjoints vont au travail dans des directions similaires. Une analyse de groupements (clusters) et valeurs extrmes (outliers) est effectue en plus de quatre modles de rgression. Les rsultats montrent que les mnages  deux travailleurs mettent en commun leurs distances de navettage afin d'optimiser leur positionnement spatial et qu'un petit angle peut dcouler d'une stratgie de minimisation des distances parcourues. Un agencement spatial  noter concerne les angles les plus grands, que l'on retrouve au centre-ville et dans deux centres rgionaux. Finalement, cette recherche pourrait aider les dcideurs  adapter l'utilisation du sol et les rseaux de transport  un groupe de la population de plus en plus important.
+
+Surprenant-Legault
+
+v
+
+ACKNOWLEDGEMENTS
+
+I would first like to gratefully thank Professor Ahmed M. El-Geneidy, who supervised this research project, for his valued advice, feedback and help, and for his support of the most complicated research ideas I could have. I also wish to acknowledge Richard Shearmur, professor at the INRS  Urbanisation Culture Socit, who kindly revised this report, providing many detailed and pertinent comments, indications or suggestions. I need to especially thank my fiance, Myriam Gagnon-Vzina, who encouraged me and who supported me morally during this research process. I would like to thank Daniel Bergeron and Assumpta Cerd, from the Agence mtropolitaine de transport, for respectively providing us with the detailed Montral 2003 O-D survey and for building the accessibility measures for Montral. Finally, I would like to thank David Brown, professor at the McGill University School of Urban Planning, and Paul Lewis, professor at the Institut d'urbanisme de l'Universit de Montral, for their advice about the initial conception of this research.
+This research was partially funded by the Social Sciences and Humanities Research Council of Canada (SSHRC) and by the Fonds qubcois de recherche sur la socit et la culture (FQRSC).
+
+Surprenant-Legault
+
+vii
+
+TABLE OF CONTENTS
+
+Abstract  Rsum .......................................................................................................................... iii  Acknowledgements......................................................................................................................... v  List of figures............................................................................................................................... viii  List of tables................................................................................................................................... ix  Introduction..................................................................................................................................... 1  Literature review............................................................................................................................. 3 
+Two-worker households' commuting and location decision factors ......................................... 3  Processes forging home and work location configurations........................................................ 5  Description of spatial configurations ......................................................................................... 6  Demographics and geography of Montral.............................................................................. 10  Methodology ................................................................................................................................. 13  Data .......................................................................................................................................... 13  Variables .................................................................................................................................. 13  Hypotheses on spatial interrelationship variables .................................................................... 15  Regression models ................................................................................................................... 16  Descriptive statistics ..................................................................................................................... 18  Analysis and discussion ................................................................................................................ 25  Effect of living in a two-worker household ............................................................................. 25  Spatial interrelationship factors analysis.................................................................................. 28 
+Difference between the maximal and the minimal Euclidean home to work distances...... 28  Angle at home location........................................................................................................ 34  Sum of home to work distances regression model................................................................... 38  Gendered variables .............................................................................................................. 39  Spatial interrelationship factors........................................................................................... 41  Conclusion .................................................................................................................................... 44  Policy implications................................................................................................................... 46  Limitations ............................................................................................................................... 47  References..................................................................................................................................... 48  Appendix....................................................................................................................................... 51  Frequencies of distances travelled by individuals.................................................................... 51  Variance inflation factor tables for the regression models....................................................... 52 
+
+Surprenant-Legault
+
+viii
+
+LIST OF FIGURES
+Figure 1.  Examples and meanings of workplace 1  home  workplace 2 angles....................... 9  Figure 2.  Geographic context of Montral................................................................................. 11  Figure 3.  Frequency of the distance between home and work for a worker, per type of
+household, until 50 kilometres ................................................................................... 20  Figure 4.  Frequency of the sum of distances between home and work in a household............. 21  Figure 5.  Accessibility to jobs by car within 15 minutes........................................................... 22  Figure 6.  Frequency of the difference between the maximal and the minimal home to
+work distances............................................................................................................ 23  Figure 7.  Frequency of the workplace 1  home  workplace 2 angle ...................................... 24  Figure 8.  Box plot of the sum of home to work Euclidean distances ........................................ 30  Figure 9.  Distribution of the difference between the maximal and the minimal home to
+work distances according to the minimal home to work distance ............................. 32  Figure 10.  High- and low-value clusters and outliers of the workplace 1  home 
+workplace 2 angle ...................................................................................................... 34  Figure 11.  Frequency of the distance between home and work for a worker, per type of
+household, bins of 1 kilometre, until 66 kilometres, with exponential trendlines ..... 51 
+
+Surprenant-Legault
+
+ix
+
+LIST OF TABLES
+Table 1.  Definitions of the variables used in the regression models ........................................ 14 
+Table 2.  Descriptive statistics for the variables used in the regression models........................ 18 
+Table 3.  Logarithmic regression models 1 to 3  Home to work Euclidean distance .............. 25 
+Table 4.  Correlation table involving the difference between the maximal and the minimal Euclidean home to work distances .............................................................. 28 
+Table 5.  Counting of clusters and outliers of the workplace 1  home  workplace 2 angle ........................................................................................................................... 35 
+Table 6.  Geographic distribution of the workplaces for households with low-value clusters of angle ......................................................................................................... 36 
+Table 7.  Geographic distribution of the workplaces for households with high-value clusters of angle who live in the centre of the Montral region................................. 36 
+Table 8.  Geographic distribution of the workplaces for households with high-value clusters of angle who live in Saint-Jrme and Saint-Jean-sur-Richelieu ................. 37 
+Table 9.  Logarithmic regression model 4  Sum of home to work Euclidean distances in two-worker households .............................................................................................. 38 
+Table 10.  Change in the sum of distances relating to a change in trip mode, by gender........... 40 
+Table 11.  Descriptive statistics for individual distances travelled (m), members of the households where a man and a woman make a work trip.......................................... 40 
+Table 12.  Difference between the mean distance using a mode and the mean distance driving a car (m)......................................................................................................... 40 
+Table 13.  Logarithmic regression models 1 to 3 variance inflation factors............................... 52 
+Table 14.  Logarithmic regression model 4 variance inflation factors ....................................... 53 
+
+Surprenant-Legault
+
+1
+
+INTRODUCTION
+
+Round-trips between home and work represent, for the majority of North Americans, most of their daily commuting time (Levinson & Wu, 2005). These times are dictated by individual preferences and are part of the home location decision. Still, selecting home and work places involves more constraints for two- than for one-worker households and necessitates compromises within households (Costa & Kahn, 2000; Green, 1997; Sultana, 2005; Van Ommeren, 2000). This situation creates an arduous optimization problem. As Clark, Huang, and Withers (2003) noted, there is a clear need for research addressing the spatial complexity of twoworker households, while economic, social, and spatial restructuring lead to even more presence of this household type in the future. In Montral, two-worker households represented 19.8% of households in 2003. This type of household included 25.7% of people residing in the Montral region, 30.1% of children, and 43.6% of workers (Agence mtropolitaine de transport, 2003). Accordingly, more complete information on this important population group is needed to improve land use and transportation policies in general and especially in Montral (Kim, 1995; Turner & Niemeier, 1997).
+While a lot of research concerns location decisions, this research aims at exploring the spatial configuration of two-worker households' home and work locations and at identifying patterns in the commute distances and the positioning of these households. On the one hand, it involves assessing the effect on home to work distance of a two-worker household structure and of one's partner's home to work distance. On the other hand, this research discusses spatial clustering in two-worker households and elaborates on how two partners' home to work distances are linked to each other and to the environment with the help of spatial interrelationship factors.
+
+Surprenant-Legault
+
+2
+
+The results should help to better optimize transportation networks, which means a better matching of offers with demands. Understanding spatially how partners in two-worker households locate their workplaces relative to each other and to home is useful in implementing land use and transportation policies seeking to correspond to and sometimes influence travel behaviour.
+
+Surprenant-Legault
+
+3
+
+LITERATURE REVIEW
+This literature review commences with the vastly investigated topic of the factors involved in commuting and location decisions of two-worker households. It serves as a basis to an insight into the processes forging home and work location configurations, which is the second topic. The third topic, the description of spatial configurations, is the one that this report attempts to develop. Finally, a fourth and last topic concerns the demographics and geography of Montral, which has a certain impact on households' spatial configurations.
+Twoworker households' commuting and location decision factors 
+Spatial configurations or patterns are ultimately the product of commuting and location decisions, for which a vast amount of research exists; notably, research concerning gender differences in commuting, jobs-housing balance, and economic or discrete choice location modelling.
+Studying gender differences in commuting distances is the first step to understand twoworker households' behaviour. Empirical evidence suggests that women travel shorter distances than men to go to work (Clark et al., 2003; Clark & Wang, 2005; Gordon, Kumar, & Richardson, 1989; Hanson & Hanson, 1980; Johnston-Anumonwo, 1992; Madden, 1981; Singell & Lillydahl, 1986; Sultana, 2005, 2006; White, 1977, 1986). One of the dominant explanatory factors is that women have more household responsibilities than men (Hanson & Hanson, 1980; JohnstonAnumonwo, 1992; Madden, 1981; Turner & Niemeier, 1997; White, 1977). Income seems to have a positive effect on the distance travelled (Clark & Wang, 2005; Madden, 1981; Turner & Niemeier, 1997), although Aronsson and Brnns (1996) found a negative effect in Sweden. In Montral, Shearmur (2006) observed that men travel farther distances to all suburban
+
+Surprenant-Legault
+
+4
+
+employment nodes than they do to the central business district (CBD). Women, by contrast, travel farther distances to reach jobs in the CBD than they do to reach jobs in all other five centres except for one. He attributes this difference to the relative attractiveness of the centres of employment for women and men, and to "agglomeration or milieu effects [that exist] for women in Montral's employment centers, especially in the CBD, but not necessarily for men" (Shearmur, 2006, p. 355). There could also be a particular spatial distribution of "female-type jobs" (Johnston-Anumonwo, 1992; Singell & Lillydahl, 1986) in Montral, as well as in other regions.
+The theory of jobs-housing balance states that to shorten travel distances, all parts of a city should have enough housing for employees near employment concentrations and vice versa (Sultana, 2005). Yet, the concrete application of this principle is hard to achieve (Levine, 1998), especially when introducing two-worker households (Cervero, 1989; Levine, 1998; Sultana, 2005, 2006).
+Curran, Carlson, and Ford (1982) developed a theoretical economic model of residential location for two-worker households based on a bid-rent function. In their model, different types of households compete for their residential locations and the household willing to bid the most becomes the actual user of a place. However, Mok (2007) rejects the assumption that one of the work locations has to be in the CBD, and various researchers proved that Canadian cities such as Montral are now more polycentric than monocentric (Coffey & Shearmur, 2001; Shearmur, 2006; Shearmur, Coffey, Dub, & Barbonne, 2007; Vandersmissen, Villeneuve, & Thriault, 2003).
+Freedman and Kern's (1997) discrete choice model aims at explaining location determinants of two-worker households. The authors found women's earnings and commuting
+
+Surprenant-Legault
+
+5
+
+time to influence home as well as both job locations. According to Mok (2007), location decisions of two-worker households are more responsive to the woman's income than to the man's, which is even truer when the woman's earnings are the highest (Singell & Lillydahl, 1986). Another important factor is the presence of children in the household (Madden, 1981; Mok, 2007; White, 1986). For Singell and Lillydahl (1986), it reduces commuting times for both parents, although for White (1986), it may also increase these times. At least, school becomes an additional location factor for the household (Green, 1997; Sultana, 2006). Many researchers suggested that two-worker households would prefer accessible suburban neighbourhoods (Green, 1997; Madden, 1980, 1981; Rose & Villeneuve, 1998; Sultana, 2005). Finally, one should note that commuting and location decisions are made on the basis of a vast array of motivations, which can introduce noise in the distribution of travel distances, even when controlling for the main factors cited above.
+
+Processes forging home and work location configurations 
+From the decisions made by households emerge the processes forging home and work location configurations of two-worker households. These processes include minimization  or not  of commuting distances, and job and house relocations.
+In claiming that two-worker households seek to achieve similar distances for both partners even if it means longer distances, Plaut (2006) contradicts the theory that these households minimize the combined costs of commuting and housing (Curran et al., 1982; Kim, 1995; Sultana, 2005). Redmond and Mokhtarian (2001) even note that commute time provides some benefits and that people do not invariably seek to minimize it; they can target an optimal level. Still, only 7% of the people in their sample were willing to commute more than they actually did. Charron (2007) explains the gap between theoretical minimal average commute
+
+Surprenant-Legault
+
+6
+
+distances and observed commute distances by location constraints and a certain commuting tolerance. Deding, Filges, and Van Ommeren (2009) assert that two-worker households do not completely minimize commuting distances due to likely future relocations in the job or housing markets, but according to Sultana (2005), this type of household minimizes commuting distances more than one-worker households. Notwithstanding constraints and the variety of factors or motivations affecting home to work distances, minimization of distances remains desirable for all households (Kim, 1995) and is a tendency effectively reflected in commuting behaviour (Charron, 2007).
+Some research on moving behaviour focuses on two-worker households (Clark et al., 2003; Deding et al., 2009; Van Ommeren, 2000; Van Ommeren, Rietveld, & Nijkamp, 1998, 1999). Compared to other types of households, two-worker households will search more often for jobs and less for houses (Van Ommeren, 2000). In addition, two-worker households move less often than one-worker households (Clark & Withers, 1999; Van Ommeren et al., 1998). Singell and Lillydahl (1986) found that in the United States, travel time increases for women after relocating while it decreases for men.
+
+Description of spatial configurations 
+The first elements providing a basic description of spatial configurations were used in the literature cited above. They are time and Euclidean or network distance between home and work. Still, more creative measurements relying on angles and distances are used in research exploring two-worker households' spatial configurations of home and workplaces.
+The distance between the two workplaces contributed to explain job and residential search behaviour (Deding et al., 2009; Van Ommeren, 2000; Van Ommeren et al., 1998, 1999). Deding and her collaborators (2009) found that an increase in the distance between workplaces
+
+Surprenant-Legault
+
+7
+
+decreases the probability of moving while increasing the probability of changing jobs. In Denmark, the mean workwork distance is 18 km (Deding et al., 2009) while in the Netherlands, workwork distances are smaller than 10 km for about 60% of households and smaller than 20 km for about 80% of them (Van Ommeren, 2000). However, those researches do not specify if there is any pattern or equilibrium for workwork distances.
+Angles are primarily used in the literature to describe home moving (Adams, 1969; Clark et al., 2003; Van Ommeren, 2000; Van Ommeren et al., 1998, 1999). Then, the angle at the CBD homeCBDworkplace is the angle most frequently encountered for one-worker households (Madden, 1981; Simpson, 1987) and two-worker households (Curran et al., 1982; Vandersmissen et al., 2003). Such methodological choice is interesting in a monocentric city where it would be significantly faster to travel in the direction of the CBD than in any other direction. In that case, angles near 0 would be associated with more efficient home positioning. As Montral is ordered around a small number of employment centers (Shearmur et al., 2007), the most meaningful angle to describe the positioning of two-worker households' home and workplaces should be the angle at home workplace 1  home  workplace 2 used by Van Ommeren, Rietveld, and Nijkamp (Van Ommeren, 2000; Van Ommeren et al., 1998, 1999). It is intrinsically linked with households' constraints and choices, as well as with home-to-work distances.
+Moreover, the workplace 1  home  workplace 2 angle illustrates whether or not two partners commute to work in the same direction (Van Ommeren, 2000). Besides, the effects on home and job search behaviour of the workwork distance and of the workplace 1  home  workplace 2 angle are similar (Van Ommeren, 2000), and households do not directly consider workwork distances in their location choices (Deding et al., 2009; Van Ommeren, 2000; Van
+
+Surprenant-Legault
+
+8
+
+Ommeren et al., 1998, 1999). Hence, the use of the workplace 1  home  workplace 2 angle is preferable to the use of the workwork distance in the description of spatial location configuration of two-worker households. Van Ommeren (2000) found that for two-worker households in the Netherlands, about 85% of workplace 1  home  workplace 2 angles are below 90, and that consequently, home is seldom positioned between the workplaces, which would involve a straight angle or at least an obtuse one. Van Ommeren (2000) adds that this result could be expected in areas where jobs are concentrated in the centre, but not in territories such as the Netherlands where job concentrations are mostly even.
+Figure 1 (p. 9) illustrates examples of workplace 1  home  workplace 2 angles and gives a key to interpret them. Although home to work distances are equal for both partners in this figure, it is not a condition that can change the meaning of angles. Acute angles indicate that partners travel in similar directions (the extreme being 0, exactly the same direction), while obtuse angles mean that the two workers commute in dissimilar directions (the extreme being 180, totally opposite directions). Partners who travel in similar directions may experience benefits compared to other partners, as sharing part of the ride. At the regional level, a concentration of households where partners travel in relatively dissimilar directions could reveal the possibility to access many job centres or signify that these households live within a job centre. Inversely, if most households in a zone tend to go to work in a unique direction, it means that one or more job centres have an important attraction power on the workers living in this zone, or that this zone is poor in jobs.
+
+Surprenant-Legault
+
+9 Workplace 1
+
+Home
+
+Workplace 1 Home Workplace 2
+
+Angle = 0: Partners travel in exactly the same direction.
+Workplace 1
+
+Workplace 2 Angle = 30: Partners travel in similar directions.
+Workplace 1
+
+Home
+
+Home
+
+Workplace 2
+Angle = 90: Partners travel in directions as similar as dissimilar.
+
+Workplace 2 Angle = 120: Partners travel in dissimilar directions.
+
+Workplace 1
+
+Home
+
+Angle = 180: Partners travel in totally opposite directions.
+
+Workplace 2
+
+Figure 1. Examples and meanings of workplace 1  home  workplace 2 angles
+
+While spatial configurations of home and work locations can be identified and described, they are subject to the diversity of motivations behind location decisions. Important variations
+
+Surprenant-Legault
+
+10
+
+between households' criteria may thus complicate the highlighting of spatial configurations or geographical patterns.
+
+Demographics and geography of Montral 
+As of 2008, the census metropolitan area of Montral comprises 3.8 million inhabitants (Statistics Canada, 2009). The city of Montral is located on the Island of Montral, occupying 364 km of the Island's 504 km (141 mi of 195 mi) and grouping 87% of the Island's population (Communaut mtropolitaine de Montral, 2008). Besides, the Communaut mtropolitaine de Montral (CMM), which has a planning mandate at the regional level, gathers 82 municipalities sheltering 3.6 million people. Figure 2 shows the municipalities of the CMM, the municipalities included in the AMT 2003 Origin-Destination (O-D) survey in addition to the CMM ones (see Methodology, p. 13), the freeway network, as well as the five commuter train lines and the four metro lines. Notably, many transportation axes cross or end in the central business district. A particular geographic feature of the region is the presence of Mount Royal west of the CBD, an obstacle that can only be crossed by one collector road or one commuter train line.
+
+Surprenant-Legault
+
+11
+
+Figure 2. Geographic context of Montral
+In terms of demographic weight, the centre of the region is strong with 1.6 million people living in the city of Montral. According to Coffey and Shearmur (2001), Montral is a polycentric city, where several specialized employment centres exist other than the CBD, although they are all close to the centre. Among the different methods that these authors have developed, they chose to characterize employment centres in Montral as the census tracts where employment was over 7,000 and where the ratio of employment to resident workers was at least 2.0 (Coffey & Shearmur, 2001). As a result, groups of contiguous census tracts form six employment centres in Montral (Coffey & Shearmur, 2001; Shearmur, 2006). Shearmur (2006) did not find major differences in the distances commuted to these centres, except for Ville Saint-
+
+Surprenant-Legault
+
+12
+
+Laurent/Dorval, a suburban job centre on the Island of Montral located around the airport, which generated slightly longer trips. However, Shearmur showed that "people systematically travel farther to reach jobs in employment centers than they do to reach jobs located in the direction of employment centers" (Shearmur, 2006, p. 354).
+
+Surprenant-Legault
+
+13
+
+METHODOLOGY
+Data 
+The data used in this research comes from the AMT 2003 Origin-Destination (O-D) survey (Agence mtropolitaine de transport, 2003). The AMT O-D survey is a comprehensive travel behaviour survey covering 4.70% of all residents in the Montral metropolitan region (see territory on Figure 2, p. 11) living in 56,959 households. The data were refined to obtain 11,271 two-worker households as well as 20,725 one-worker households used as a comparison group.
+The need to only keep households where one or two employed persons have an impact on home location complicates data extraction. Obviously, a household where one or two adult partners are the only ones working does not pose a problem. However, multi-generational households or teenagers who work involve a choice in keeping or leaving a household in the database. Here, age is the criteria on which this decision is based. Two assumptions are made: (1) parents are at least 18 years older than their children, and (2) a person being at least 18 years younger than the oldest person and being 25 years old or less is deemed not to influence the location decision. Having considered these criteria, (3) all households with more than two working people influencing home location decision are removed from the database.
+Variables 
+The distance linking a household's home to one of its workplaces constitutes the key variable of this study, and is the dependent variable in our models. Geographic information systems (GIS) are used to measure home to work Euclidean distances and circuity, which is the ratio of network distance over Euclidean distance (Levinson & El-Geneidy, 2009). GIS also help in computing the elements of potential spatial patterns for two-worker households: partner's
+
+Surprenant-Legault
+
+14
+
+home to work Euclidean distance, sum of home to work distances in a household, and workplace 1  home  workplace 2 angle. Accessibility to jobs at home location and at workplace, or the number of jobs that can be reached from a point within a range of time using a determined transport mode, is also calculated within GIS. The concept of accessibility was initially developed by Hansen (1959) and was used to explain home to work distances by Levinson (1998). Cumulative opportunity measures of accessibility are used because they are similar to gravity measures for travel times under 30 minutes, while being easier to understand (El-Geneidy & Levinson, 2006). Variables often referenced to in the literature as influencing home to work distance, namely gender, age, children, income, and trip mode are listed in Table 1, along with the previous variables. Categories for number of years spent at the same home location, though included in the O-D survey, are not significant in the regression models presented in the Analysis and discussion section (p. 25). Lastly, the O-D survey did not include data concerning ownership or tenancy of the home, years spent in the same home and job locations, previous household moves, home prices, length of marriage or union, type of job and level of education of the partners.
+
+Table 1. Definitions of the variables used in the regression models
+
+Variable Home to work Euclidean distance Sum of home to work Euclidean distances Circuity
+Combined circuity of the household
+Two-worker household
+Partner's home to work distance
+Female
+Age Mean age of the two workers
+
+Definition
+Home to work Euclidean distance in meters Sum of home to work Euclidean distances in meters of a household Home to work network distance divided by home to work Euclidean
+distance (value is 1 or more) In a household, sum of home to work network distances divided by the
+sum of home to work Euclidean distances (value is 1 or more) Dummy variable that equals to 1 if the household has two workers and
+zero if the household has one worker Home to work Euclidean distance in meters of the other member of the
+household working Dummy variable that equals to 1 if the person is a female and zero if
+the person is a male Age of the person in years Average of the age of the two workers in years
+
+Surprenant-Legault
+
+15
+
+Variable
+Number of children Household income
+[$0  $20,000[ [$20,000  $40,000[ [$40,000  $60,000[ [$60,000  $80,000[ [$80,000 and above Trip mode Auto driver Auto passenger Public transit Auto and transit Other Accessibility to jobs by car within 15 minutes at home/workplace Difference between the maximal and the minimal Euclidean home to work distances Angle at home location
+
+Definition Number of persons in the household that are 17 years old or less Dummy variables for the declared household income, before income
+taxes
+Dummy variables for the trip mode declared by a person (other mostly stands for walking, biking and taking a taxi)
+Number of jobs that can be reached by car within 15 minutes from home/workplace, adjustment made for congestion
+In a household, the difference between the maximal and the minimal Euclidean home to work distances
+Angle in degrees (0 to 180) formed at home location by the direct lines linking each workplace to home (workplace 1  home  workplace 2)
+
+Hypotheses on spatial interrelationship variables 
+This research attempts to better explain spatial configurations of two-worker households thanks to spatial interrelationship factors, which are factors that connect the spatial characteristics of two workers living in a two-worker household. These factors concern the geometry of residence and work places, and the environment in which workplaces are located. Two factors are investigated in this research, that are the difference between the maximal and the minimal Euclidean home to work distances in a household and the angle formed at home location by the direct lines linking each workplace to home. The first factor, the difference between the maximal and the minimal Euclidean home to work distances, is important because it illustrates to which extent the commute distance associated with a household's choices and constraints is equally split between the two partners. The difference in distances should have a positive effect on the sum of distances, as this difference represents part of the sum of distances.
+
+Surprenant-Legault
+
+16
+
+The question is thus whether or not the difference has a unitary effect on the sum of distances. The difference in distances is worth being analyzed because it gives a sense of how equally the two workers benefit from the selected home location. Some households may seek to achieve similar distances, while others would opt for one of the partners having the smallest distance possible. One can object that distance minimization may not be an issue in some households, but as stated in the Literature review (p. 3), once controlling for the other main location factors, a general tendency towards minimization of distances should be observed. The hypothesis on the difference in distances is that an increase of one unit of the difference should yield an increase of less than one unit in the sum of distances because of adjustments made at the household level. The second factor, angle at home location or workplace 1  home  workplace 2 angle, serves to illustrate to which extent partners in two-worker households travel in similar directions. The angle should have a negative effect on the sum of home to work distances. Indeed, living on the line that can be traced between the two workplaces (angle of 180) is the way to travel the smallest sum of distances, given that home cannot be located at one of the workplaces (distances have to be larger than 0). Angle values are dispersed between 0 and 180 because with no particular horizontal axis, any negative value or value between 180 and 360 can be converted into a value ranging between 0 and 180.
+
+Regression models 
+In the O-D survey sample, frequencies of distances travelled decrease exponentially as distances increase in length (see Figure 3, p. 20, and Figure 11, p. 51). Therefore, analysis of home to work distances is performed with logarithmic regressions models. The first regression model's dependent variable is the natural logarithm of all workers' home to work Euclidean distances; the second model has the same dependent variable, though for workers in one-worker
+
+Surprenant-Legault
+
+17
+
+households only; the third model also uses this distance, but for workers in two-worker households; the last model estimates the natural logarithm of the sum of home to work Euclidean distances in two-worker households. The choice to use Euclidean distance instead of network distance is explained by the inclusion of the workplace 1  home  workplace 2 angle variable, which can only be calculated using Euclidean distance. To control for the difference between Euclidean and network distances, the circuity variable is inserted in all regressions. In order to keep a more representative sample in regression model 4, differences between the maximal and the minimal home to work Euclidean distances that were equal to 0 and workplace 1  home  workplace 2 angles between 0 and 1 were all changed to a value of 1 prior to the transformation into a natural logarithm. In addition, model 4 only includes two-worker households formed of a man and a woman, as trip mode and accessibility to jobs at workplace were gendered. This choice represents a loss of 8% of cases. Before regression results, descriptive statistics are presented for the different variables.
+
+Surprenant-Legault
+
+18
+
+DESCRIPTIVE STATISTICS
+As Table 2 illustrates, one- and two-worker households are often similar, although some substantial differences stand out. When circuity, age and the number of children (if any) are comparable in both types of households, Euclidean and network home to work distances are slightly longer in the two-worker ones. Meanwhile, accessibility at both home and work locations is lower for workers in two-worker households. In terms of socio-demographic characteristics, two-worker households count as many women as men (only 43.3% of women in one-worker households), they are more likely to have children, they are richer, and they carpool almost twice as much as one-worker households, although they use public transit 25% less.
+
+Table 2. Descriptive statistics for the variables used in the regression models
+
+Variable
+Home to work Euclidean distance (m) Male Female
+Sum of home to work Euclidean distances (m)
+Home to work network distance (m) Circuity Combined circuity of the household Age Number of children (if any) Accessibility to jobs at home Accessibility to jobs at workplace
+Male Female Difference between the maximal and the minimal distances (m) Angle at home location ()
+
+Workers in one-worker households
+
+Workers in two-worker households
+
+Median
+8,533 9,628 7,342
+
+Mean
+11,445 12,536 10,017
+
+Std. dev.
+10,282 10,833 9,323
+
+Median
+9,702 10,842 8,617
+
+Mean
+12,304 13,352 11,226
+
+Std. dev.
+10,328 10,722 9,791
+
+11,019 1.2551
+
+14,309 1.2935
+
+42 2
+62,515 167,051 167,598 179,150
+
+42 1.74 104,071 199,015 199,034 210,785
+
+12,199 0.2324
+11 0.83 106,597 157,425 155,448 162,166
+
+21,061 12,546 1.2574 1.2577
+41 2
+45,083 156,859 154,661 156,951
+
+24,609 15,404 1.3021 1.2857
+41 1.72 84,638 194,307 193,264 195,376
+
+16,921 12,259 0.2742 0.1653
+10 0.74 94,685 156,285 152,781 159,797
+
+4,814 34.2
+
+7,722 52.8
+
+8,985 52.7
+
+Variable
+Female Presence of at least one child
+
+Proportion
+43.3% 36.2%
+
+Proportion
+49.3% 46.1%
+
+Surprenant-Legault
+
+19
+
+Variable
+Household income [$0  $20,000[ [$20,000  $40,000[ [$40,000  $60,000[ [$60,000  $80,000[ [$80,000 and above
+Trip mode Auto driver Auto passenger Public transit Auto and transit Other
+Trip mode (male) Auto driver Auto passenger Public transit Auto and transit Other
+Trip mode (female) Auto driver Auto passenger Public transit Auto and transit Other
+N
+
+Proportion
+10.1% 31.8% 26.4% 14.8% 16.9%
+68.1% 4.4%
+18.6% 2.6% 6.3%
+74.9% 2.9%
+14.7% 1.9% 5.6%
+59.3% 6.3% 23.7% 3.4% 7.2% 20,725
+
+Proportion
+2.8% 15.3% 24.7% 23.2% 34.1%
+70.9% 7.5% 14.0% 3.1% 4.5%
+78.4% 3.9%
+11.4% 2.3% 4.0%
+63.0% 11.2% 16.7% 4.0% 5.0% 22,542
+
+In the two types of households, men and women benefit from very similar levels of accessibility at workplace, yet they do not use the same modes in the same proportions for their trips. Females are less likely to drive a car, but they are more likely to be a car passenger or to take public transit. Members of two-worker households show a median difference in the distances that they travel equal to 4.8 km. Finally, the median workplace 1  home  workplace 2 angle is 34.2, an aspect developed further. Figure 3 to Figure 7 complete the descriptive statistics.
+
+Surprenant-Legault
+
+20
+
+Frequency
+
+7%
+6%
+5% 4% One-worker households
+Two-worker households 3%
+2%
+1%
+0%
+Home to work distance (km) Figure 3. Frequency of the distance between home and work for a worker, per type of household, until 50 kilometres
+In Figure 3, the bins of home to work distances below 6 kilometres are the most important ones in terms of frequency for both one- and two-worker households. Over 6 kilometres, the proportion of workers travelling every additional kilometre gradually decreases. Besides, the proportion of workers who travel distances below 9 kilometres is larger in one-worker households than in two-
+
+[0, 1] ]1, 2] ]2, 3] ]3, 4] ]4, 5] ]5, 6] ]6, 7] ]7, 8] ]8, 9] ]9, 10] ]10, 11] ]11, 12] ]12, 13] ]13, 14] ]14, 15] ]15, 16] ]16, 17] ]17, 18] ]18, 19] ]19, 20] ]20, 21] ]21, 22] ]22, 23] ]23, 24] ]24, 25] ]25, 26] ]26, 27] ]27, 28] ]28, 29] ]29, 30] ]30, 31] ]31, 32] ]32, 33] ]33, 34] ]34, 35] ]35, 36] ]36, 37] ]37, 38] ]38, 39] ]39, 40] ]40, 41] ]41, 42] ]42, 43] ]43, 44] ]44, 45] ]45, 46] ]46, 47] ]47, 48] ]48, 49] ]49, 50]
+
+Surprenant-Legault
+
+21
+
+worker households, and two-worker households count a more important portion of workers who travel over 9 kilometres. The higher number of constraints faced by two-worker households could explain this difference (Costa & Kahn, 2000; Green, 1997; Sultana, 2005; Van Ommeren, 2000), but variations in the other characteristics of the two types of households (see Table 2, p. 18) could also explain the dissimilar distributions observed in Figure 3.
+
+Frequency
+
+1800 1600 1400 1200 1000
+800 600 400 200
+0
+
+[0, 5] ]5, 10] ]10, 15] ]15, 20] ]20, 25] ]25, 30] ]30, 35] ]35, 40] ]40, 45] ]45, 50] ]50, 55] ]55, 60] ]60, 65] ]65, 70] ]70, 75] ]75, 80] ]80, 85] ]85, 90] ]90, 95] ]95, 100] ]100, 105] ]105, 110] ]110, 115] ]115, 190[
+
+Sum of distances (km) Figure 4. Frequency of the sum of distances between home and work in a household
+Looking closer at the distribution of the sum of home to work Euclidean distances, Figure 4 indicates that two-worker households as entities would generally prefer small distances between home and work. However, distances less than 10 km and especially less than 5 km seem harder to achieve than distances between 10 and 20 km. Land use constraints could explain the difficulty to exhibit sums of distances less than 10 km. Additional potential explanatory factors
+
+Surprenant-Legault
+
+22
+
+could be a higher price of land near employment centres or a reluctance to locate too close to work.
+
+Figure 5. Accessibility to jobs by car within 15 minutes
+Figure 5 maps a cumulative opportunity measure of accessibility to jobs by car for a travel time of 15 minutes taking into account congestion. Concretely, Figure 5 displays how many jobs are reachable from the centre of each of the 1552 transportation analysis zones (TAZ) in 15 minutes of driving. One will note that the highest accessibility levels are reached in or around the CBD and that generally, these levels decrease with the distance from the CBD. This decrease is slower along freeways and regional routes, which provide more access to jobs, and west of the CBD, as the Ville Saint-Laurent/Dorval and March Central job centres offer many
+
+Surprenant-Legault
+
+23
+
+job opportunities (Shearmur, 2006). Although it is true that people may be willing to drive more than 15 minutes to access their jobs, a travel time of 15 minutes allows for a characterization of zones that relies more on local attributes than on regional attributes. Urban areas are easily identifiable on Figure 5, roughly being the ones with accessibility over 20,000, while suburban areas are the ones in the lightest tones of green.
+
+Frequency
+
+2400 2200 2000 1800 1600 1400 1200 1000 800 600 400 200
+0
+Difference (km) Figure 6. Frequency of the difference between the maximal and the minimal home to
+work distances
+The distribution of distances in Figure 6 is similar to the distributions of home to work distances and of sum of home to work distances presented in Figure 3 and Figure 4, with a clearer negative exponential shape  especially if the bins 0 and ]0, 2] were merged. The median difference is 4.8 km and the predominance of smaller differences in households could be explained by accessibility to jobs at home, which is naturally the same for both partners, or by a
+
+0 ]0, 2] ]2, 4] ]4, 6] ]6, 8] ]8, 10] ]10, 12] ]12, 14] ]14, 16] ]16, 18] ]18, 20] ]20, 22] ]22, 24] ]24, 26] ]26, 28] ]28, 30] ]30, 32] ]32, 34] ]34, 36] ]36, 38] ]38, 40] ]40, 42] ]42, 44] ]44, 46] ]46, 48] ]48, 50] ]50, 52] ]52, 54] ]54, 56] ]56, 58] ]58, 60] ]60, 62] ]62, 64] ]64, 66] ]66, 68] ]68, 70] ]70, 72] ]72, 74]
+
+Surprenant-Legault
+
+24
+
+similar tolerance to commute for the two partners. In addition, in 10% of households, the partners travel exactly the same distance, which could mean that they work at the same place.
+
+Frequency
+
+1400 1200 1000 800 600 400 200
+0
+
+0 ]0, 5] ]5, 10] ]10, 15] ]15, 20] ]20, 25] ]25, 30] ]30, 35] ]35, 40] ]40, 45] ]45, 50] ]50, 55] ]55, 60] ]60, 65] ]65, 70] ]70, 75] ]75, 80] ]80, 85] ]85, 90] ]90, 95] ]95, 100] ]100, 105] ]105, 110] ]110, 115] ]115, 120] ]120, 125] ]125, 130] ]130, 135] ]135, 140] ]140, 145] ]145, 150] ]150, 155] ]155, 160] ]160, 165] ]165, 170] ]170, 175] ]175, 180]
+
+Angle ()
+Figure 7. Frequency of the workplace 1  home  workplace 2 angle
+As for the distribution of workplace 1  home  workplace 2 angles illustrated in Figure 7, it would look like a bell-shaped curve if negative angles were allowed. The predominance of acute angles shows that the members of the same household tend to go in the same direction to work. In fact, 76% of angles are below 90, which is similar to the Netherlands' proportion of 85% (Van Ommeren, 2000). It confirms that households do not locate their home on the direct line that could be traced between their two workplaces, even though it may be an intuitive choice.
+
+Surprenant-Legault
+
+25
+
+ANALYSIS AND DISCUSSION
+In order to characterize the spatial configuration of two-worker households' home and work locations and to highlight spatial patterns, we will investigate the effect of living in a twoworker household, the attributes associated to spatial interrelationship factors, and the determinants of the sum of home to work distances in a household.
+Effect of living in a twoworker household 
+The first three logarithmic regression models concern the home to work Euclidean distance of workers living in one- or two-worker households and are detailed in Table 3.
+
+Table 3. Logarithmic regression models 1 to 3  Home to work Euclidean distance
+
+(1) Workers in one- or twoworker households
+
+(2) Workers in one-worker households
+
+(3) Workers in two-worker households
+
+Coefficient
+
+t
+
+ Coefficient
+
+t
+
+ Coefficient
+
+t
+
+
+
+Constant Ln of circuity
+Two-worker household
+Ln of partner's home to
+work distance Female Age Number of children Household income
+[$0  $20,000[ [$20,000  $40,000[ [$60,000  $80,000[ [$80,000 and above Trip mode Auto passenger Public transit Auto and transit Other Ln of accessibility to jobs At home At workplace
+
+9.98607 128.26 *** -1.15845 -28.74 *** -0.15434
+-0.02067 -2.09 *
+
+10.24753 88.57*** -1.17362 -19.50*** -0.14838
+
+-0.18619 -19.48 ***
+
+-0.00393 -8.48 *** -0.03879
+
+-0.00591 -1.22
+
+-0.00545
+
+-0.24593 -0.08079 0.08298 0.10223
+
+-10.45 *** -5.74 *** 6.01 *** 7.89 ***
+
+-0.23034 -0.17961 0.20844 -1.69752
+
+-10.64 *** -14.47 *** 13.52 *** -62.65 ***
+
+-0.30567 -70.52 *** -0.37024 0.24927 39.88 *** 0.27538
+
+-0.17639 -12.41***
+
+-0.00367 -5.62*** -0.03768
+
+0.00740 1.03
+
+0.00664
+
+-0.28847 -0.08771 0.05182 0.06837
+
+-10.18*** -4.78*** 2.42* 3.37**
+
+-0.30503 -0.16008 0.25728 -1.65645
+
+-7.83*** -9.08*** 10.99*** -44.88***
+
+-0.30019 -47.60*** -0.36192 0.22126 23.84*** 0.23784
+
+7.97242 59.30 *** -1.13509 -21.54 *** -0.15872
+
+0.16208 20.84 *** 0.16591
+
+-0.22929 -17.80 *** -0.00334 -5.15 *** -0.03156 -0.01535 -2.35 * -0.01444
+
+-0.10336 -0.06647 0.07969 0.08263
+
+-2.38 * -3.04 ** 4.42 *** 4.92 ***
+
+-0.18934 -0.17733 0.16218 -1.68607
+
+-7.78 *** -10.28 ***
+7.88 *** -42.33 ***
+
+-0.26858 -43.17 *** -0.32512 0.26103 31.47 *** 0.29609
+
+*** Significant at 99.9%
+
+N 34,589 R 0.3568
+** Significant at 99%
+
+N 16,517 R 0.3590
+* Significant at 95%
+
+N 18,070 R 0.3778
+
+Surprenant-Legault
+
+26
+
+Standard errors in the three models are robust to heteroskedasticity and as shown in the Appendix (p. 52), there is no multicollinearity in any of them. Concerning the coefficients, one should first note that the observed signs are consistent with the previous literature, females travelling less than males (Clark et al., 2003; Clark & Wang, 2005; Gordon et al., 1989; Hanson & Hanson, 1980; Johnston-Anumonwo, 1992; Madden, 1981; Singell & Lillydahl, 1986; Sultana, 2005, 2006; White, 1977, 1986), income increasing distances (Clark & Wang, 2005; Madden, 1981; Turner & Niemeier, 1997), accessibility to jobs at home decreasing distances, and accessibility to jobs at workplace increasing distances (Levinson, 1998). The reason why accessibility to jobs at workplace increases distances can be that the high number of jobs leads businesses to employ a labour force living farther or that workers are not all able to locate as close as they would like to due to the lack of housing stock. As for the number of children, it does not seem to have an effect on distances, while positive (Mok, 2007) and negative (Singell & Lillydahl, 1986) effects have been observed, in addition to different effects for men and women (Madden, 1981; Singell & Lillydahl, 1986; White, 1986). Logically, when circuity increases, Euclidean distance decreases relative to network distance. The model also reflects this relation. Regarding age, it has a small negative effect on distance that may be explained by generational characteristics. Young people may stay in the centre after finishing their studies or work parttime during their education; while people founding a family who want to buy a house often do so away from the centre where prices are lower. Older workers may reside slightly further away from the centre because they can afford more expensive properties in the suburbs. Still, variations in age seem to account for only a tiny proportion of the variations in distances travelled. In terms of transport modes, the omitted dummy variable is driving a car. Car passengers and public transit users travel smaller distances than car drivers, while people who
+
+Surprenant-Legault
+
+27
+
+use a car before taking public transit display the longest commute distances. The latter combination is probably representative of suburban workers driving to park-and-ride facilities to take commuter trains or bus shuttles to downtown. A surprising observation is that transit users travel slightly longer distances than auto passengers, especially in one-worker households. However, it is unclear to which extent these two alternatives compete and if drivers with passengers also travel shorter distances.
+In Montral, workers living in two-worker households travel on average distances 7.5% longer than workers living in one-worker households (see Descriptive statistics, p. 18). Furthermore, as Plaut postulates (2006), the results for Montral indicate a positive effect of the distance travelled by the partner on the other's journey to work; in this case, when the partner's distance raises by 1%, the other's distance increases by 0.16%. This impact is likely due to accessibility at home location, which is identical for the two partners, or to shared personal travel preferences. Compared to one-worker households, two-worker households benefit on average from 18.7% less accessibility to jobs at home (see Descriptive statistics, p. 18). Yet, according to regression models 1 to 3 (see Table 3, p. 25), members of two-worker households are less sensitive to accessibility to jobs at home (a factor that has a negative effect on distance) and more sensitive to accessibility to jobs at workplace (a factor that has a positive effect on distance) than members of one-worker households. Notwithstanding all these observations, when everything else is kept equal, each member of a two-worker household commutes on average 2.07% less than a worker in a one-worker household. In fact, adding the effect in the model (members of two-worker households travel 2.1% less) and the observed difference (members of two-worker households travel on average 7.5% more) yields a difference of 9.6% between the two types of households. This gap between the two groups should be explained by different
+
+Surprenant-Legault
+
+28
+
+average values for the other variables present in the model, by different reactions to these variables, or by omitted variables. Ultimately, variations in the preferences or constraints between the two types of households may be the source of the divergences. The next section attempts to introduce spatial interrelationship factors to improve our understanding of twoworker households' commutes.
+
+Spatial interrelationship factors analysis 
+Before modelling the sum of home to work distances in two-worker households, it is necessary to examine what are the configurations associated with the two spatial interrelationship factors introduced in this research: the difference between the maximal and the minimal Euclidean home to work distances and the workplace 1  home  workplace 2 angle. Difference between the maximal and the minimal Euclidean home to work distances 
+The difference between the maximal and the minimal Euclidean home to work distances is the spatial interrelationship factor that relates together two partners' distances, representing how similar are the distances travelled.
+
+Table 4. Correlation table involving the difference between the maximal and the minimal Euclidean home to work distances
+
+Minimal distance
+Maximal distance
+Sum of home to work distances
+Difference between the maximal and minimal distances
+
+Minimal distance
+1.0000 0.5951
+0.8495
+
+Maximal distance
+1.0000 0.9296
+
+Sum of home to work distances
+1.0000
+
+Difference between the maximal and minimal distances
+
+-0.1278 0.7210
+
+0.4148
+
+1.0000
+
+Table 4 is a correlation table between the minimal distance, the maximal distance, the sum of distances and the difference in distances in two-worker households. The table shows that the difference in distances is more strongly correlated with the maximal distance than with the
+
+Surprenant-Legault
+
+29
+
+minimal distance. A possible explanation is that when one of the partners travels a large distance (the maximal one in the household), the other partner is not likely to present the same behaviour, which increases the difference between the two distances. Also, as illustrated in Table 3 (p. 25), one is affected by only 16% of his or her partner's distance. However, because of other factors like accessibility to jobs at home, two partners' home to work distances remain correlated (0.5951). The weak negative correlation between the difference in distances and the minimal distance could mean that when the minimal distance increases, the maximal distance will not increase as much (or may even decrease), decreasing the difference between the two. This correlation table is an interesting insight into the effect of the difference between the maximal and minimal home to work distances on the sum of home to work distances that is detailed with regression model 4 (see Table 9, p. 38).
+
+Surprenant-Legault
+
+30
+
+Figure 8. Box plot of the sum of home to work Euclidean distances
+The box plot in Figure 8 illustrates the distribution of the values of the sum of home to work Euclidean distances in households. The line that divides the box is the median, equal to 21,061 m; the box is delimited by the 25th percentile (11,998 m) and the 75th percentile (33,354 m); while the whiskers are 28 m (minimal value) and 65,388 m (75th percentile + 1.5  [75th  25th percentile]). Over the upper whisker, values are outliers, represented by * in Figure 8.
+Using the upper whisker, it is possible to trace in Figure 9 (p. 32) the line that separates statistically significant values from outliers; this line is named in this research the non outlier
+
+Surprenant-Legault
+
+31
+
+frontier. The non outlier frontier for the sum of distances links all the combinations of minimal distance and difference in distances where the sum of distances would be equal to 65,338 m.
+Figure 9 serves to relate in every household the minimal to the maximal distance through the difference between these two distances. Creating box plots for the minimal distance and for the maximal distance, it is possible to find for the two distributions the upper whiskers, which are 25,852 m for the minimal distance and 42,918 m for the maximal distance. These two upper whiskers allow the tracing of the non outlier frontier (minimal distance), only affected by the "Minimal home to work distance" axis in Figure 9, and of the non outlier frontier (maximal distance), that connects the combinations of minimal distance and difference in distances where the maximal distance is equal to 42,918 m. Then, the superimposition of the frontiers for minimal distances, maximal distances and sum of distances creates a global frontier below which no household has any outlier value in terms of distances. These households are 10,667, representing 95% of two-worker households.
+
+Surprenant-Legault
+
+32
+
+Difference between the maximal and the minimal home to work distances (m)
+
+70000
+
+60000
+50000 (0, 42918)
+40000
+
+Household Non outlier frontier (minimal distances) Non outlier frontier (maximal distances) Non outlier frontier (sum of distances)
+
+30000 20000 10000
+
+(22470, 20448) (25851.5, 13685)
+
+(25851.5, 0) 0
+
+0
+
+10000
+
+20000
+
+30000
+
+40000
+
+50000
+
+60000
+
+70000
+
+80000
+
+90000
+
+Minimal home to work distance (m)
+
+Figure 9. Distribution of the difference between the maximal and the minimal home to work distances according to the minimal home to work distance
+
+In Figure 9, every point represents the relationship that exists between the minimal and the maximal home to work distances in a household. As minimal distances are necessarily less or equal to maximal distances, only the difference between the maximal and minimal distances is graphed in relation to the minimal home to work distance. Figure 9 illustrates the existence of a household commuting frontier made of the most restrictive of each distance's non outlier frontier. The slope changes four times at points labelled on the graph, depending on which non
+
+Surprenant-Legault
+
+33
+
+outlier frontier is the most restrictive. For minimal distances less than 22,470 metres, it is the maximal distance frontier; for minimal distances between 22,470 and 25,851.5 metres, it is the sum of distances frontier if differences in distances are between 13,685 and 20,448 metres, and the minimal distances frontier for differences in distances less than 13,685 metres.
+Figure 9 gives two insights into how households adjust (or not) their minimal to the maximal distance and vice versa. First, the three non outlier frontiers form a convex constraint. Following the constraint, trade-offs have to be made within households. For the minimal distance to increase, the maximal distance or the difference between the two distances has to decrease, and inversely. The distribution of points in Figure 9 and the weak negative correlation between the difference in distances and the minimal distance shown in Table 4 suggest that such tradeoffs probably happen even below the constraint. Second, if household commuting budgets exist, they at least vary a lot across this sample. Rather, the concept of a "commuting budget" appears hard to defend regarding all the variations observed in Figure 9.
+
+Surprenant-Legault
+Angle at home location 
+
+34
+
+Figure 10. High- and low-value clusters and outliers of the workplace 1  home  workplace 2 angle
+Figure 10 is a cluster and outlier analysis of the workplace 1  home  workplace 2 angle that reveals clusters of high or low values, as well as outliers of high or low values surrounded by clusters of opposite values. Anselin Local Moran's I statistic for spatial autocorrelation calculates spatial correlation by taking into account the values of features and their location relative to each other. When a feature is surrounded by features of similar values, the I is positive. When a feature is next to features of relatively different values, the I is negative. Then, features are considered as clusters or outliers if the Z score that is calculated is significant at a 95% confidence level (ESRI, 2009).
+
+Surprenant-Legault
+
+35
+
+In the case of angles, the higher the value, the more dissimilar are the directions that partners take to reach their jobs. Clusters of high values are concentrated in the central part of the Island of Montral, extending to Longueuil and Laval, and in Saint-Jrme and Saint-Jean-surRichelieu, while clusters of low values are frequent around the centre of the Island of Montral, stretching along the Saint Lawrence River. Where clusters of high values are encountered, large angles show that people can find work in any direction from home, which can mean that land use is diversified and that transportation networks are efficient. On the contrary, low-value clusters indicate that the members of a household reach their jobs going in the same direction, being constrained by their environment. This pattern of high- and low-value clusters concerns 29.7% of households (see Table 5). It could be explained by the high number of jobs available in the centre of the region and by high job accessibility by any mode for houses located in the centre. Unlike in other suburbs, Saint-Jrme and Saint-Jean-sur-Richelieu exhibit clusters of high values, which could be due to the fact that these cities still act as local centres and are not dependent on jobs found on the Island of Montral.
+
+Table 5. Counting of clusters and outliers of the workplace 1  home  workplace 2 angle
+
+Cluster/outlier
+(surrounding clusters) High (high) High (low) Low (high) Low (low) Total (clusters and outliers) Total (other households)
+
+Number of
+households 1,246 417 979 704 3,346 7,925
+
+Proportion of
+households 11.1% 3.7% 8.7% 6.2% 29.7% 70.3%
+
+Table 6 to Table 8 detail the destinations of two-worker households separately for lowvalue angle clusters, high-value angle clusters in the centre of the Montral region, and highvalue angle clusters around Saint-Jrme and Saint-Jean-sur-Richelieu (see also Figure 10).
+
+Surprenant-Legault
+
+36
+
+Table 6. Geographic distribution of the workplaces for households with low-value clusters of angle
+
+Workplace
+Island of Montral Laval Longueuil agglom. Other Total
+
+Number of
+workers 1218 45 56 89 1408
+
+Proportion of
+workers 86.5% 3.2% 4.0% 6.3%
+100.0%
+
+As shown in Table 6, work destinations of people living in low-value angle clusters are almost exclusively on the Island of Montral or very close to it. It is true that these work destinations also correspond to the most important job centres in the region, but few exceptions are observable (6.3%). By definition, a low-value angle cluster seems to correspond to a household living in one of the first-ring suburbs and working on the Island of Montral. More important, all these home locations are close to transportation axes, be they a bridge, a freeway or a commuter train line (see also Figure 2 and Figure 10). Hence, the households represented in Table 6 potentially are households who have a preference for a suburban living environment, but who try to minimize home to work distances locating home close to a major transportation infrastructure.
+
+Table 7. Geographic distribution of the workplaces for households with high-value clusters of angle who live in the centre of the Montral region
+
+Workplace
+Island of Montral Laval Longueuil Agglom. Other Total
+
+Number of
+workers 1740 141 205 104 2190
+
+Proportion of
+workers 79.5% 6.4% 9.4% 4.7%
+100.0%
+
+Table 7 lists workplaces' locations corresponding to the high-value clusters of the workplace 1  home  workplace 2 angle for homes in the centre of the Montral region (the
+
+Surprenant-Legault
+
+37
+
+Island of Montral, Laval, and Longueuil Agglomeration). Only 104 of the 2190 work locations are not in the central area. In addition to illustrating the relative concentration of employment in the centre of the region, Table 7 tends to confirm that large angles observed for households living in the centre are due to the numerous work opportunities offered in all directions from their home location.
+
+Table 8. Geographic distribution of the workplaces for households with high-value clusters of angle who live in Saint-Jrme and Saint-Jean-sur-Richelieu
+
+Workplace
+Island of Montral Laval Longueuil agglom. Other Total
+
+Number of
+workers 30 7 8
+133 178
+
+Proportion of
+workers 16.9% 3.9% 4.5% 74.7%
+100.0%
+
+In the case of Saint-Jrme and Saint-Jean-sur-Richelieu that is exposed in Table 8, only 37 out of the 178 work destinations (20.8%) are located on the Island of Montral or in Laval. It shows that although Saint-Jrme and Saint-Jean-sur-Richelieu are part of the AMT OriginDestination survey, they are not serving the employment centres of Montral and Laval; rather, they act as downtowns themselves, like Montral's downtown. The relative concentration of workplaces in the centres of the two cities and the relative remoteness from the major employment centres of the Montral region could explain the relatively high angles encountered in the Laurentian and the Monteregian cities.
+
+Surprenant-Legault
+
+38
+
+Sum of home to work distances regression model 
+The last logarithmic regression model presented in Table 9 concerns the sum of home to work Euclidean distances in a household. Because of the need to distinguish between the two partners for two variables, 731 households where there is no man or no woman are not part of model 4, which distinguishes the effects of trip mode and accessibility to jobs at workplace between males and females. It is a way to capture the gender effect even though it is the sum of distances that is analyzed, while also providing a convenient way to separate members of a household in order to include these two variables that relate to individuals.
+
+Table 9. Logarithmic regression model 4  Sum of home to work Euclidean distances in two-worker households
+
+Coefficient
+
+t
+
+Constant Ln of combined circuity of the household Mean age of the two workers Number of children Household income
+[$0  $20,000[ [$20,000  $40,000[ [$60,000  $80,000[ [$80,000 and above Ln of accessibility to jobs at home MALE CHARACTERISTICS Trip mode
+Auto passenger Public transit Auto and transit Other Ln of accessibility to jobs at workplace FEMALE CHARACTERISTICS Trip mode Auto passenger Public transit Auto and transit Other Ln of accessibility to jobs at workplace
+Ln of max - min distance
+Ln of angle at home location
+
+10.36759 -0.94103 -0.00408 -0.01058
+
+72.31 *** -12.38 *** -5.42 *** -1.59
+
+-0.16189 -0.07315 0.08201 0.09724 -0.26017
+
+-3.11 ** -3.08 ** 4.44 *** 5.45 *** -35.05 ***
+
+-0.10419 -0.13868 0.04621 -0.69698 0.07212
+
+-2.63 ** -6.52 *** 1.46 -16.28 *** 9.15 ***
+
+-0.03906 -0.08510 0.08350 -0.62826 0.11583
+0.10018
+-0.07599
+
+-1.51 -4.56 *** 3.61 *** -15.73 *** 14.63 ***
+25.58 ***
+-12.73 ***
+
+*** Significant at 99.9%
+
+N R
+** Significant at 99%
+
+8,231 0.4389
+
+ -0.13459 -0.04763 -0.01338
+-0.41687
+0.10512
+0.18104 0.36147 -0.15886
+
+Surprenant-Legault
+
+39
+
+Model 4 adds the two spatial interrelationship factors (in bold, significant at 99.9%). These factors give a higher explanatory power (R) to model 4 compared to model 3 (see Table 3, p. 25), which means that two-worker households may tend to at least partially pool their commuting distances, and may try to minimize the sum of distances subject to their household's constraints and preferences. Standard errors in model 4 are robust to heteroskedasticity and as shown in the Appendix (p. 53), model 4 does not suffer from multicollinearity.
+Comparing model 3 to model 4, circuity, age, number of children and household income have effects of similar magnitude on travel distances. As expected, the  standardized coefficient of accessibility to jobs at home is larger in model 4 than in model 3. Indeed, model 4 estimates the sum of the two distances in a household, both of which being affected by the same accessibility to jobs at home. That accessibility to jobs at home play a larger role in the sum of distances model than in the individual distances model may be an indicator that distances are at least partially pooled in a household. Gendered variables 
+Two variables are gendered in model 4: trip mode and accessibility to jobs at workplace. Concerning trip mode, the base scenario in model 4 is that the two partners drive a car to commute. The coefficients listed in Table 9 thus represent the change in the sum of distances when the man or the woman does not to drive a car. When somebody uses a mode other than driving a car, the sum of distances decreases more (or increases less) if it is a male who does not drive than if it is a female, as presented in Table 10 below.
+
+Surprenant-Legault
+
+40
+
+Table 10. Change in the sum of distances relating to a change in trip mode, by gender
+
+Trip mode
+Auto passenger Public transit Auto and transit Other
+
+Change if male
+-10% -14% not significant -70%
+
+Change if female
+not significant -9% +8%
+-63%
+
+The reason why a change in the man's trip mode cause a more important decrease in the sum of distances than a change in the woman's is that the differences in average distances between the other modes and car driving for men are always less than the differences for women (see Table 12). Table 11 presents the descriptive statistics for distances separated by trip mode and gender.
+
+Table 11. Descriptive statistics for individual distances travelled (m), members of the households where a man and a woman make a work trip
+
+Trip mode
+Auto drive Auto passenger Public transit Auto and transit Other
+Total
+
+Males Obs Median Mean Std. dev.
+
+8,309 398
+1,035 249 382
+
+12,208 14,471 8,463 11,859 8,116 9,688 19,102 19,062 1,490 3,289
+
+10,934 11,645 6,720 9,218 5,436
+
+10,373 11,157 13,592 10,745
+
+Females Obs Median Mean Std. dev.
+
+6,608 1,187 1,641
+427 510
+
+9,664 12,235 8,436 10,874 7,256 8,977 18,766 19,163
+829 2,010
+
+10,297 9,462 6,581 9,117 3,937
+
+10,373 8,731 11,346 9,850
+
+Table 12. Difference between the mean distance using a mode and the mean distance driving a car (m)
+
+Trip mode
+
+Male Female Diff. male-female
+
+Auto passenger -2,612 -1,361
+
+-1,251
+
+Public transit -4,783 -3,258
+
+-1,524
+
+Auto and transit 4,591 6,928
+
+-2,336
+
+Other
+
+-11,182 -10,225
+
+-957
+
+Surprenant-Legault
+
+41
+
+While men travel longer distances than women to go to work  which is documented and expected  they seem willing to pay a premium in distance to drive a car and not use another mode. It may be because they prefer to drive or because their job locations are less accessible by other modes  Shearmur (2006) showed that contrary to women, men travel longer distances to every suburban job centre than to the CBD. Policy makers who seek to induce the population to shift from car driving to other transport modes should pay attention to this situation, as men are likely to be less sensitive to such policies if the right incentives to change their behaviour are not provided to them.
+The second gendered variable is accessibility to jobs at workplace. This time, women could be willing (or constrained) to travel more than men for the same increase in accessibility to jobs at workplace, as the sum of distances is more affected by women's accessibility to jobs at workplace. In model 4, the  standardized coefficient for a change of one standard deviation in accessibility at workplace is equal to 0.18 for women, while it is equal to 0.11 for men. This finding is consistent with Shearmur (2006), who noted that women travel more than men to reach jobs in the CBD, and the CBD displays the highest levels of accessibility to jobs in the region (see Figure 5, p. 22). Policy makers who want to develop a transportation network fair-minded regarding gender should pay a special attention to transportation to the CBD. Spatial interrelationship factors 
+The last paragraphs of the Sum of home to work distances regression model section discuss the impact of the two spatial interrelationship factors. The first factor is the difference between the maximal and the minimal home to work Euclidean distances. The proportion of the sum of distances that the difference in distances represents is on average 33.5%, but increasing the difference in distances by 1% increases the sum of distances by 0.10%, not by 0.335%. As the coefficient associated with the difference is positive, a decrease in the difference has to be
+
+Surprenant-Legault
+
+42
+
+caused primarily by a decrease in the maximal distance. Yet, as the decrease in the difference does not yield a unitary change in the sum of distances, the decrease in the maximal distance must be partly compensated by an increase in the minimal distance. Likewise, an increase in the difference would be caused by an increase in the maximal distance and amplified by a smaller decrease in the minimal distance. The global effect of an increase in the difference in distances would be a smaller increase in the sum of distances. Hence, the first insight given in Figure 9 (p. 32) was good; the difference between the maximal and the minimal distances effect highlights that in the long run or on a large scale, partners living in two-worker households adjust their commute distances to each other's distance. The effect of the difference in distances does not mean that households look at this variable; rather, it means that households tend to pool their home to work distances.
+The second spatial interrelationship factor, the workplace 1  home  workplace 2 angle, makes the sum of distances decrease by 0.076% when it increases by 1%, which corresponds to a  standardized coefficient of -0.16 for one standard deviation in angle. Our hypothesis on the angle is that it corresponds to the final adjustment of the positioning of a household's home and work locations. As a transportation network tends to ease trips directed towards the CBD (Vandersmissen et al., 2003), it is possible that workers living away from the centre would locate their home and the two workplaces near a major transportation axis, creating a small angle. Here, a small angle is the result of a strategy attempting to minimize the sum of distances when this sum is already large. On the contrary, when people work and live near the CBD, the transportation network is dense enough to allow movement in many directions at an acceptable speed, so workers worry less about sharing the same direction to work (or having a small angle). In the two cases, the angle gives a sense of the possibilities that land use and transportation
+
+Surprenant-Legault
+
+43
+
+networks offer to workers in terms of residence and work location. Moreover, clusters of angles shown in Figure 10 (p. 34) support this hypothesis.
+The significance of spatial interrelationship factors demonstrate that despite facing more constraints than one-worker households (Costa & Kahn, 2000; Green, 1997; Sultana, 2005; Van Ommeren, 2000), two-worker-household members may shrink their commuting distances by applying strategies that involve adjusting their home to work commuting trips to one another's.
+
+Surprenant-Legault
+
+44
+
+CONCLUSION
+In Montral, all other variables kept equal, workers in two-worker households should travel 2.07% less than workers in one-worker households, but they actually travel 7.5% more. The gap between the two measures is 9.6%. When compared to one-worker households, twoworker households present different average characteristics, they react differently to some factors and they have specific constraints. For instance, two-worker households benefit from less accessibility to jobs at home than one-worker households, they travel more than one-worker households for the same level of accessibility to jobs at workplace, and they have to consider two workplaces instead of one in their location decisions.
+Within two-worker households, men and women do not have the same travel behaviour regarding trip mode and accessibility to jobs at workplace. Compared to a woman, a man increases more the length of his trip if he drives a car instead of using another mode. This difference may originate from men's preference for driving a car, but it may also be due to men's job locations that would be less accessible by other modes than car. On their side, women seem willing to or are constrained to travel more than men to reach the same level of accessibility to jobs at workplace. It may be because they prefer to work in the CBD (Shearmur, 2006) than in other job centres.
+The major contribution of this research is the use of spatial interrelationship factors. They reveal links in two partners' commute behaviours, as well as spatial patterns in the positioning of two-worker households' work and residential locations.
+First, the difference between the maximal and the minimal home to work Euclidean distances illustrates how equal the commute distances are between two partners. As many variations exist in the distances travelled by members of different two-worker households, it is
+
+Surprenant-Legault
+
+45
+
+not possible to observe "commuting budgets." However, two-worker households do seem to make trade-offs between the two partners' distances. The positive correlation observed between the minimal and the maximal distance should be taken as an indication of what happens at the regional level. This correlation is linked to the 0.16%-increase in one's distance when his or her partner's distance increases by 1% and to the negative impact that an increase in accessibility to jobs at home location has on distance. Looking at the household level, an increase of 1% in the difference in distances only increases the sum of distances in a household by 0.10%, while the average weight of the difference in distances on the sum of distances is 33.5%. It means that two-worker households adjust their two commute distances relative to each other. An increase in the maximal distance is generally compensated by a decrease in the minimal distance, while a decrease in the maximal distance is accompanied by an increase in the minimal distance. As a result, the change in the difference in distances is more important than the change in the sum of distances. We do not pretend that households have a "commuting budget" or that they consciously look at the difference between the distances that each member travels; rather, we consider that two-worker households pool their commute distances to optimize their spatial positioning.
+Second spatial interrelationship factor, the workplace 1  home  workplace 2 angle indicates whether or not partners travel in similar directions to go to work. Clusters of households where members commute to work in relatively opposite directions are found in the centre of the metropolitan region, while some suburban households' clusters indicate that members travel in relatively similar directions. The density of transportation networks and the degree of land use mix probably explain these angle clusters, with a denser network and a higher mix providing for job opportunities in many directions (larger angles) around home locations.
+
+Surprenant-Legault
+
+46
+
+Even though the households with the largest angles seem to benefit from the smallest sum of home to work distances, it may be particularly desirable to have a small angle in the suburbs. Indeed, as transportation networks are built to facilitate trips towards the CBD (Vandersmissen et al., 2003), going to work in the same direction following a major transportation axis may be a strategy to minimize distances commuted. This pattern also opens the opportunity for two partners to share part of their ride, which may provide a more positive utility to the home to work trip.
+Spatial interrelationship factors highlight that two-worker households exhibit particular patterns in the positioning of their home and work locations in the Montral region and that these households at least partially pool their commute distances to optimize them. Two-worker households have particular preferences and constraints (Costa & Kahn, 2000; Green, 1997; Sultana, 2005; Van Ommeren, 2000), but they make efforts to minimize their home to work distances (Charron, 2007; Kim, 1995).
+
+Policy implications 
+In terms of policy implications, policies aiming at changing modal shares should pay a particular attention to the reasons why men are willing to travel much more when they drive a car than when they use other transport modes. The difference also exists for women, but it is tinier. Women are willing to travel more than men for the same increase in accessibility to jobs at work location and Shearmur (2006) already demonstrated that women prefer the CBD as a work environment. Policy makers should thus make sure to provide efficient and safe transportation alternatives to reach the CBD. Observed patterns in the angles can be used to define areas for improvements in the public transit network. For instance, in the heart of the Island of Montral, the grid-like transit system could be reinforced to serve commuters going in all directions more
+
+Surprenant-Legault
+
+47
+
+efficiently. Meanwhile, a high-capacity east-west transit corridor on the Island as well as high occupancy vehicle lanes can help in getting two-worker-household workers to their destinations. If these destinations are located near the CBD, they could then switch to the grid transit network. In addition, a good land use mix providing jobs near residences could be effective in decreasing distances travelled, as strategies adopted by two-worker households already indicate that they seek to locate at least one of the workplaces close to home.
+
+Limitations 
+The limitations of this study are of two orders. First, the lack of data in the O-D survey concerning ownership or tenancy of the home, years spent in the same home and job locations, previous household moves, home prices, length of marriage or union, type of job and level of education of the partners. Second, there is an important variance in the distances travelled by individuals and a variety of personal motivations behind the distances and the spatial configurations that are hard to model. Performing a survey asking for these motivations could help controlling for such variations.
+
+Surprenant-Legault
+
+48
+
+REFERENCES
+
+Adams, J. S. (1969). Directional bias in intra-urban migration. Economic Geography, 45(4), 302323.
+Agence mtropolitaine de transport. (2003). Enqute origine-destination 2003. Montral, QC: AMT, STM, RTL, STL, CIT, Gouvernement du Qubec.
+Aronsson, T., & Brnns, K. (1996). Household work travel time. Regional Studies, 30(6), 541548.
+Cervero, R. (1989). Jobs-housing balancing and regional mobility. Journal of the American Planning Association, 55(2), 136-150.
+Charron, M. (2007). From excess commuting to commuting possibilities: More extension to the concept of excess commuting. Environment and Planning A, 39(5), 1238-1254.
+Clark, W. A. V., Huang, Y. Q., & Withers, S. D. (2003). Does commuting distance matter? Commuting tolerance and residential change. Regional Science and Urban Economics, 33(2), 199-221.
+Clark, W. A. V., & Wang, W. F. W. (2005). Job access and commute penalties: Balancing work and residence in Los Angeles. Urban Geography, 26(7), 610-626.
+Clark, W. A. V., & Withers, S. D. (1999). Changing jobs and changing houses: Mobility outcomes of employment transitions. Journal of Regional Science, 39(4), 653-673.
+Coffey, W., & Shearmur, R. (2001). The identification of employment centres in Canadian metropolitan areas: the example of Montreal, 1996. Canadian GeographerGographe Canadien, 45(3), 371-386.
+Communaut mtropolitaine de Montral. (2008). Les municipalits en chiffres. Retrieved October 20, 2009, from http://www.cmm.qc.ca/index.php?id=267
+Costa, D. L., & Kahn, M. E. (2000). Power couples: Changes in the locational choice of the college educated, 1940-1990. Quarterly Journal of Economics, 115(4), 1287-1315.
+Curran, C., Carlson, L. A., & Ford, D. A. (1982). A theory of residential location decisions of 2worker households. Journal of Urban Economics, 12(1), 102-114.
+Deding, M., Filges, T., & Van Ommeren, J. (2009). Spatial mobility and commuting: The case of two-earner households. Journal of Regional Science, 49(1), 113-147.
+El-Geneidy, A., & Levinson, D. (2006). Access to destinations: Development of accessibility measures. Minneapolis, MN.
+ESRI. (2009). How cluster and outlier analysis: Anselin Local Moran's I (spatial statistics) works. Retrieved April 1, 2010, from http://webhelp.esri.com/arcgisdesktop/9.3/index.cfm?tocVisable=0&ID=1&TopicName=How%20Cluster%20and%20Outlier%20Analysis:%20Anselin%20Local %20Moran%27s%20I%20%28Spatial%20Statistics%29%20works&pid=1
+Freedman, O., & Kern, C. R. (1997). A model of workplace and residence choice in two-worker households. Regional Science and Urban Economics, 27(3), 241-260.
+Gordon, P., Kumar, A., & Richardson, H. W. (1989). Gender differences in metropolitan travel behavior. Regional Studies, 23(6), 499-510.
+Green, A. E. (1997). A question of compromise? Case study evidence on the location and mobility strategies of dual career households. Regional Studies, 31(7), 641-657.
+Hansen, W. G. (1959). How accessibility shapes land use. Journal of the American Planning Association, 25(2), 73-76.
+
+Surprenant-Legault
+
+49
+
+Hanson, S., & Hanson, P. (1980). Gender and urban activity patterns in Uppsala, Sweden. Geographical Review, 70(3), 291-299.
+Johnston-Anumonwo, I. (1992). The influence of household type on gender differences in work trip distance. Professional Geographer, 44(2), 161-169.
+Kim, S. (1995). Excess commuting for 2-worker households in the Los Angeles Metropolitan Area. Journal of Urban Economics, 38(2), 166-182.
+Levine, J. (1998). Rethinking accessibility and jobs-housing balance. Journal of the American Planning Association, 64(2), 133-149.
+Levinson, D. (1998). Accessibility and the journey to work. Journal of Transport Geography, 6(1), 11-21.
+Levinson, D., & El-Geneidy, A. (2009). The minimum circuity frontier and the journey to work. Regional Science and Urban Economics, 39(6), 732-738.
+Levinson, D., & Wu, Y. (2005). The rational locator reexamined: Are travel times still stable? Transportation, 32(2), 187-202.
+Madden, J. F. (1980). Urban land-use and the growth in two-earner households. American Economic Review, 70(2), 191-197.
+Madden, J. F. (1981). Why women work closer to home. Urban Studies, 18(2), 181-194. Mok, D. (2007). Do two-earner households base their choice of residential location on both
+incomes? Urban Studies, 44(4), 723-750. Plaut, P. O. (2006). The intra-household choices regarding commuting and housing.
+Transportation Research Part a-Policy and Practice, 40(7), 561-571. Redmond, L. S., & Mokhtarian, P. L. (2001). The positive utility of the commute: Modeling
+ideal commute time and relative desired commute amount. Transportation, 28(2), 179205. Rose, D., & Villeneuve, P. (1998). Engendering class in the metropolitan city: Occupational pairings and income disparities among two-earner couples. Urban Geography, 19(2), 123-159. Shearmur, R. (2006). Travel from home: An economic geography of commuting distances in Montreal. Urban Geography, 27(4), 330-359. Shearmur, R., Coffey, W., Dub, C., & Barbonne, M. (2007). Intrametropolitan employment structure: Polycentricity, scatteration, dispersal and chaos in Toronto, Montreal and Vancouver, 1996-2001. Urban Studies, 44(9), 1713-1738. Simpson, W. (1987). Workplace location, residential location, and urban commuting. Urban Studies, 24(2), 119-128. Singell, L. D., & Lillydahl, J. H. (1986). An empirical analysis of the commute to work patterns of males and females in two-earner households. Urban Studies, 23(2), 119-129. Statistics Canada. (2009). Population of census metropolitan areas (2006 Census boundaries). Retrieved October 20, 2009, from http://www40.statcan.ca/l01/cst01/demo05a-eng.htm Sultana, S. (2005). Effects of married-couple dual-earner households on metropolitan commuting: Evidence from the Atlanta metropolitan area. Urban Geography, 26(4), 328352. Sultana, S. (2006). What about dual-earner households in jobs-housing balance research? An essential issue in transport geography. Journal of Transport Geography, 14(5), 393-395. Turner, T., & Niemeier, D. (1997). Travel to work and household responsibility: new evidence. Transportation, 24(4), 397-419.
+
+Surprenant-Legault
+
+50
+
+Van Ommeren, J. (2000). Job and residential search behaviour of two-earner households. Papers in Regional Science, 79(4), 375-391.
+Van Ommeren, J., Rietveld, P., & Nijkamp, P. (1998). Spatial moving behavior of two-earner households. Journal of Regional Science, 38(1), 23-41.
+Van Ommeren, J., Rietveld, P., & Nijkamp, P. (1999). Impacts of employed spouses on jobmoving behavior. International Regional Science Review, 22(1), 54-68.
+Vandersmissen, M. H., Villeneuve, P., & Thriault, M. (2003). Analyzing changes in urban form and commuting time. Professional Geographer, 55(4), 446-463.
+White, M. J. (1977). Model of residential location choice and commuting by men and women workers. Journal of Regional Science, 17(1), 41-52.
+White, M. J. (1986). Sex-differences in urban commuting patterns. American Economic Review, 76(2), 368-372.
+
+Surprenant-Legault
+
+51
+
+APPENDIX
+
+Frequencies of distances travelled by individuals 
+
+3000 2500 2000 1500 1000
+
+One-worker households Two-worker households Expon. (One-worker households) Expon. (Two-worker households)
+y = 2397.3e-1E-04x R = 0.9849
+y = 2827.4e-1E-04x R = 0.9688
+
+Frequency
+
+500
+
+0 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70
+Home to work distance (km)
+Figure 11. Frequency of the distance between home and work for a worker, per type of household, bins of 1 kilometre, until 66 kilometres, with exponential trendlines
+
+Surprenant-Legault
+
+52
+
+Variance inflation factor tables for the regression models 
+
+Table 13. Logarithmic regression models 1 to 3 variance inflation factors
+
+(1) Workers in one- or two- (2) Workers in one- (3) Workers in two-
+
+worker households
+
+worker households worker households
+
+VIF
+
+1 / VIF
+
+VIF 1 / VIF VIF 1 / VIF
+
+Ln of circuity Two-worker household Ln of partner's home to
+work distance Female Age Number of children Household income
+[$0  $20,000[ [$20,000  $40,000[ [$60,000  $80,000[ [$80,000 and above Trip mode Auto passenger Public transit Auto and transit Other Ln of accessibility to jobs At home At workplace
+
+1.02 1.12
+1.04 1.05 1.06
+1.24 1.51 1.43 1.56
+1.05 1.30 1.08 1.08
+1.39 1.41
+
+0.984 0.891
+0.961 0.951 0.943
+0.806 0.661 0.699 0.642
+0.950 0.770 0.928 0.924
+0.719 0.709
+
+1.02 0.984 1.02 0.982
+1.15 0.867
+1.04 0.965 1.06 0.943 1.04 0.957 1.06 0.945 1.06 0.944 1.04 0.964
+1.22 0.820 1.11 0.897 1.49 0.671 1.39 0.717 1.42 0.704 1.50 0.666 1.53 0.655 1.64 0.612
+1.05 0.954 1.06 0.940 1.30 0.770 1.25 0.798 1.08 0.928 1.08 0.925 1.08 0.924 1.07 0.936
+1.39 0.720 1.45 0.690 1.41 0.710 1.41 0.710
+
+Mean VIF
+
+1.22
+
+1.22 1.22
+
+Surprenant-Legault
+
+Table 14. Logarithmic regression model 4 variance inflation factors
+
+Ln of combined circuity of the household Mean age of the two workers Number of children Household income
+[$0  $20,000[ [$20,000  $40,000[ [$60,000  $80,000[ [$80,000 and above Ln of accessibility to jobs at home MALE CHARACTERISTICS Trip mode
+Auto passenger Public transit Auto and transit Other Ln of accessibility to jobs at workplace FEMALE CHARACTERISTICS Trip mode Auto passenger Public transit Auto and transit Other Ln of accessibility to jobs at workplace Ln of max - min distance Ln of angle at home location
+
+VIF
+1.05 1.06 1.04
+1.11 1.39 1.51 1.66 1.75
+1.04 1.21 1.07 1.09 1.41
+1.18 1.37 1.13 1.12 1.66 1.96 2.10
+
+Mean VIF
+
+1.35
+
+1 / VIF
+0.955 0.945 0.958
+0.903 0.720 0.660 0.601 0.573
+0.961 0.825 0.931 0.916 0.711
+0.847 0.727 0.881 0.890 0.602 0.511 0.476
+
+53
+
+

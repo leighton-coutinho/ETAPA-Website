@@ -1,0 +1,760 @@
+Decode the City: A Methodological Study Responding to the New Trend of City "Re-image"
+Montreal as a Case
+Supervised Research Project presented to Prof. Ahmed El-Geneidy
+By Weina Chen
+School of Urban Planning McGill University Montreal
+January, 2009
+
+Acknowledgments
+Many people have helped, supported and tolerated me through my very first formal research and writing process and my sincere appreciation extends to all of them. First and foremost, I would like to thank my advisor Prof. Ahmed M. El-Geneidy, who has expanded my horizon on the research fields and introduced me the right directions to dig in. I benefited a lot from his generous and knowledgeable guidance during the supervised research project. Especially heartfelt thanks go to Dr. Hatem T. Abdelhamid, the second reader of my research work, for his excellent advice, criticism and suggestions. My appreciation also goes to other professors, staffs and students in the School of Urban Planning, McGill University, who have shared their knowledge with me over the years and never hesitated to help me along the way. In particular, Profs. Jeanne Wolfe, David Brown, Raphael Fischler, Lisa Bornstein, Nik Luka, Jane Glenn, Murtaza Haider, Madhav Badami, and Ray Tomalty; the secretarial staff has been most kind and helpful, including Ms. Anand Sood and Ms.Gladys Chan.
+I would also like to thank the people in Montreal who have answered my survey and given me inspiring perspectives of this city, including my friends and classmates, professors and students in the school of Urban Planning, the School of Architecture and the Desautels Faculty of Management, and many people who I do not know the names of. Special acknowledgements go to Prof. Alain Trudeau (Ville de Montral), for his highly valuable answers for my interview.
+Two more people deserve special mention. Ms. Guoying Zeng, whose insights and support have left a deep mark on my work. My husband, Dr. Yue Zhang, his constant support and help have always been my source of faith.
+
+Table of Contents
+List of Figures ...................................................................................................................................... II List of Graphs...................................................................................................................................... III List of Tables ....................................................................................................................................... IV Abstract.................................................................................................................................................. 1 1 Introduction ..................................................................................................................................... 2
+1.1 Research Objectives ............................................................................................................ 2 1.2 Study outline .......................................................................................................................... 3 2 Theory Exploration ......................................................................................................................... 3 2.1 Literature review.................................................................................................................... 3 2.2 City impression...................................................................................................................... 5
+2.2.1 Differences between city impression and city image ......................................... 6 2.2.2 Characteristics of city impression........................................................................ 12 2.2.3 The importance of city impression ...................................................................... 13 3 Research Methodology ............................................................................................................... 14 4 The City Impression Decoding Process.................................................................................... 22 4.1 Decode the city impression through elements ............................................................... 22 4.1.1 Element, Category and Aspect ............................................................................ 22 4.1.2 Identification Ratio and Presenting Ratio........................................................... 25 4.1.3 P-value .................................................................................................................... 27 4.1.4 Professionals vs. non-professionals ................................................................... 32 4.2 Decode the city impression through people.................................................................... 37 4.2.1 Male vs. Female..................................................................................................... 37 4.2.2 Age difference ........................................................................................................ 39 4.2.3 The length of stay .................................................................................................. 41 4.2.4 Car ownership ........................................................................................................ 47 4.2.5 Daily travel methods.............................................................................................. 48 5 Conclusion and future issues ..................................................................................................... 51 Sources and Bibliography ................................................................................................................. 55 Appendix I............................................................................................................................................ 61 Appendix II........................................................................................................................................... 62 Appendix III ......................................................................................................................................... 63 Appendix IV ......................................................................................................................................... 64 Appendix V .......................................................................................................................................... 68
+-I-
+
+List of Figures
+FIG. 1- HARBOUR VIEW OF SYDNEY, AUSTRALIA. ....................................................................................................6 FIG. 2-THE LOGO OF THE 2000 OLYMPICS .............................................................................................................7 FIG. 3-THE GIZA SPHINX ......................................................................................................................................7 FIG. 4-THE SILHOUETTE OF A PYRAMID ..................................................................................................................8 FIG. 5-STEPHANSDOM IN VIENNA, AUSTRIA............................................................................................................9 FIG. 6-GUSTAV KALHAMMER, VIEW FROM THE CAF HEINRICHHOF OF THE IMPERIAL OPERA........................................9 FIG. 7- STREETSCAPE IN VIENNA, AUSTRIA. .........................................................................................................10 FIG. 8-PARIS AT NIGHT. ......................................................................................................................................11 FIG. 9-STREETSCAPE IN PLATEAU .......................................................................................................................18 FIG. 10-A PHOTO OF TERRITORY CHANGES IN MONTREAL ......................................................................................19 FIG. 11-A PHOTO OF INDUSTRIAL HERITAGES IN MONTREAL....................................................................................20 FIG. 12-MONTREAL SKYLINE ..............................................................................................................................20 FIG. 13-A PHOTO OF TYPICAL RESIDENTIAL BUILDING CHARACTER...........................................................................21 FIG. 14- A PHOTO OF THE DIFFERENCE OF LIVING CONDITION ON DIFFERENT SIDES OF THE STREET.............................21 FIG. 15- OLD MOLSON COMPANY AT RIVERSIDE AND OLD RAILWAY IN MONTREAL ....................................................31 FIG. 16- MANY CHURCHES IN MONTREAL.............................................................................................................32 FIG. 17-OUTDOOR CAFS ALONG THE STREET, MONTREAL ....................................................................................38 FIG. 18-A PHOTO OF THE OLD PORT OF MONTREAL ..............................................................................................39 FIG. 19-STREETSCAPE OF UNIVERSITY STREET ...................................................................................................43 FIG. 20-A PHOTO OF A HERITAGE BUILDING WITH A DOME ROOF...............................................................................43 FIG. 21-A PHOTO OF THE BASILIQUE NOTRE-DAME...............................................................................................44 FIG. 22- A PHOTO OF ORATOIRE ST-JOSEPH DU MONT-ROYAL...............................................................................44 FIG. 23-A PHOTO OF THE SAINT LAWRENCE RIVER ...............................................................................................45 FIG. 24- A PHOTO OF VIEUX-MONTRAL ..............................................................................................................45 FIG. 25-DIFFERENT SETBACKS COMPARISON........................................................................................................46 FIG. 26- A PHOTO OF PONT DE LA CONCORDE ......................................................................................................48
+- II -
+
+List of Graphs
+GRAPH 1- FROM CITY IMAGE TO CITY IMPRESSION............................................................................................................... 5 GRAPH 2-THE RANK OF PERCENTAGES OF CATEGORIES ...................................................................................................... 23 GRAPH 3- THE RANK OF PERCENTAGES OF THE FOUR ASPECTS ........................................................................................... 24 GRAPH 4-THE PERCENTAGES OF THE CATEGORY OF BUILDING ........................................................................................... 25 GRAPH 5-IR VS. PR AT THE ASPECT LEVEL........................................................................................................................ 26 GRAPH 6-CATEGORY IR VS. PR COMPARISON.................................................................................................................... 27 GRAPH 7- P-VALUE COMPARISON OF THE FOUR ASPECTS.................................................................................................... 28 GRAPH 8-P-VALUE COMPARISON OF CATEGORIES .............................................................................................................. 29 GRAPH 9-P-VALUE COMPARISON BETWEEN PROFESSIONALS AND NON-PROFESSIONALS ..................................................... 33 GRAPH 10-IR COMPARISON BETWEEN PROFESSIONALS AND NON-PROFESSIONALS............................................................. 34 GRAPH 11- ELEMENT PRESENTING COUNT DIFFERENCE BETWEEN PROFESSIONAL AND NON-PROFESSIONAL...................... 36 GRAPH 12-IR OF GENDER DIFFERENCE IN CATEGORIES...................................................................................................... 37 GRAPH 13-AGE GROUP OF PARTICIPANTS........................................................................................................................... 40 GRAPH 14-IR OF AGE DIFFERENCE .................................................................................................................................... 41 GRAPH 15-PARTICIPANTS COMPOSITION BASED ON THE LENGTH OF STAY ........................................................................... 42 GRAPH 16-IR OF THE LENGTH OF STAY.............................................................................................................................. 46 GRAPH 17-PARTICIPANTS COMPOSITION BASED ON CAR OWNERSHIP .................................................................................. 47 GRAPH 18-IR OF CAR OWNERSHIP..................................................................................................................................... 48 GRAPH 19-PARTICIPANTS COMPOSITION BASED ON DAILY TRAVEL METHODS ...................................................................... 49 GRAPH 20-IR OF DAILY TRAVEL METHODS......................................................................................................................... 50
+- III -
+
+List of Tables
+TABLE 1- PRESENTING COUNTS OF ELEMENTS .....................................................................................................30 TABLE 2- SUMMARY OF THE KEY VISUAL ELEMENTS OF MONTREAL .........................................................................52
+- IV -
+
+Abstract
+Recently, world-class cities start to evolve their city image into city impression through city "re-image" process, to meet the new demands of city identity. The purpose of this study is to provide a theoretical method and practical strategies for creating city impression, and these can be utilized as basic tools for city management. The paper reveals publicly accepted key elements as signatures of a city, through the investigation of the relationships between exoteric features and cognitive identities of a given place, based on visual aspects at the neighborhood level. The city of Montreal, Quebec, a world-class city, is chosen for a case study. A comprehensive analysis of Montreal's city impression is presented as a "decoding" process. The results show practical implementations which fit to the city's context. The research framework assets providing a chance for planners to re-consider the needs of cities today and suggests intervention strategies to promote city impression.
+-1-
+
+1 Introduction
+The relationships between city image and city identity have been extensively studied for decades. The term "identity" means something refers to a persistent sameness and unity so that a differentiation from others is entailed. "City identity" can be technically defined as something persistent in the urban mutations, which makes it a permanent asset of a city, such as mountain, river, and church (Inn, 2004). By overlapping many individuals' mental-maps (distributions of city identities), a shared image can be created by its residents (Psenner, 2004; Burgin, 1996; Lynch, 1988). This collective image, well known as city image, starts to represent the place itself and constitutes a boundary and structure of a place (Bolling, 2004). City image is based on residents' mental awareness of their environmental surroundings (Levebvre, 2001; Jukes, 1990), and it is a subjective link between existing spaces and people's memories (Clarke, 1997; Lynch, 1988). Moreover, City image works as an environmental "language" for people to understand the place through its typical structure, or the uniqueness of the language itself, as well as a channel for visual expression of city identity. Thus, the close relationships between city image and city identity of one place start to become a key component in competitiveness among places and cities. However, recently, world-class cities begin to evolve their city image into city impression through city "re-image" process, to meet the new demands of city identity. Thus, the new "language", city impression, must be understood.
+1.1 Research Objectives The research aims at developing a theoretical method that can discover and express identities of a city in an objective way, and providing practical strategies for creating city impression. Since identities of a place or a city are important but often hard to describe and
+-2-
+
+evaluate, further investigations on this issue are needed. This study focuses on identities of a city from visual perspectives at the neighbourhood level. Taking the city of Montreal as a case, this paper explores possible solutions to the practice of revealing the publicly accepted key elements. These solutions can be utilized as basic tools for city management.
+1.2 Study outline To achieve the research objective, this paper is organized into five sections as follows. It begins with a process of summarizing the evolution of recent research trends. The second section reviews relevant theories and concepts and explores the concept of city impression. Section 3 describes the methodology used this paper, including the details of the survey and the data. Detailed results are presented in Section 4. A comprehensive visual analysis of Montreal's city impression is presented as a "decoding" process, in order to capture the most influential elements and then to create a widely recognized city impression. Finally, Section 5 as conclusion provides suggestions for the improvement of Montreal's current city impression and possible directions for future research.
+2 Theory Exploration
+2.1 Literature review Since the mid-1970s, there has been growing interest in exploring city image. Several studies have explored the meaning of the built environment, regarded as the language of urban form (Atzwanger and Schafer, 1999; Kostof, 1991; Rapoport, 1982, 1977; Neisser, 1978; Lynch, 1976, 1954). For example, Rapoport (1977) explains the relationship between people and their environment: "People ... act according to their reading of the environmental cues and thus the `language' must be understood. If the design of the environment is seen as a process of encoding information, then the users can be seen as decoding it. If the code is not shared, not understood or inappropriate, the environment does not communicate".
+-3-
+
+The "environment cues" and the "decoding process" in Rapoport's exposition not only contribute to an understanding of the way cities are formed and organized, but also demonstrate the importance of knowing a city's language.
+However, recently, the research focus has shifted from city image to city "re-image" (Jensen, 2007; McCarthy, 2006; Eckstein and Throgmorton, 2003; Sandercock, 2003). This change is due to new demands for city identity. The reasons for these new demands can be summarized as follows. First, globalization breaks the balance among cities and causes a shuffle in the rankings of new world cities (Dowdall, 2003; Erickson and Roberts, 1997). In this Information Age, lifestyles change rapidly, as do the social and cultural values (Reisenleitner, 2001; Watson, 1997). Since the current economy has become an experience economy (Ritzer, 1999; Schulze, 1992), people are pursuing more diversified lifestyles. Second, rapid social transformation has produced the uncertainty in people's minds and evoked a need for permanence and stability (Neill, 1997). As a result, people are calling for a sense of attachment to the places where they live (Prossek, 2004; Erickson and Roberts, 1997) for social cohesion (McCarthy, 2006; Gospodini, 2004).
+City "re-image", an updated method of city image-creation, is a response to the new demands above. It plays the following three roles: it demands the retention of the city's past and the collective memories of urban dwellers (Belanger, 2002; Healy, 2002; Neill, 1997); it represents local culture (Jensen, 2007; Markussen, 2005; Stevenson, 2003; Thorsby, 2001) as a newer and more sustainable way of image-building (Young, 2008; Reisenleitner, 2001); and it embodies the value of humanity and the strong connections between identity creation and the people's recognition (Erickson and Roberts, 1997).
+-4-
+
+Graph 1- From city image to city impression1
+As shown above (Graph 1), city "re-image" is a method which facilitates the evolution from city image into a broader version. I define this broader version as "city impression". Similar to city image, it is subjective and comprehensive. Due to these characteristics, it is hardly possible to describe it perfectly and difficult to summarize it adequately. In my opinion, these difficulties have two main causes. One is that there is always a divergence of opinion on locating the key identities that we want to preserve and carry forward. The other is the lack of a clear and objective method to facilitate the identity-selection process. However, there is little research focusing on overcoming these two major difficulties, especially for the visual aspects.
+2.2 City impression Oswald Spengler (1928) describes how city impression is formed: "...all great Cultures are town-Cultures....the real miracle is the birth of the soul of a town... As soon as it is awake, it forms for itself a visible body....Thenceforward, in addition to the individual house, the temple, the cathedral, and the palace, the town-figure itself becomes a unit objectively expressing the form-language and style-history that accompanies the Culture throughout its life-course2". Based on this statement, city impression represents an overall feeling retained as a consequence of experiencing inherent characteristics and temperaments of a city. When this overall feeling is widely accepted by the majority of the society, city impression has become the historical and cultural component meaning of the city. Hence, the impression 1 All the graphs and tables in this paper were provided by Weina Chen. 2 The "town" mentioned here, equals to today's "city".
+-5-
+
+becomes a symbol. To residents, city impression is a soulful attachment about the place they live. To visitors, city impression means a kind of attractive newness and mystery.
+2.2.1 Differences between city impression and city image Three cases are used to illustrate the differences between city impression and city image. In 1955, Sydney, Australia (Fig. 1), held an international architectural design competition and selected a strangely shaped building design. After that, Sydney spent nearly 20 years completing the famous Sydney Opera House. The opera house greatly enhanced the overall image of the city and made Sydney impressive around the world. This is an additional to its culture and economy. Because of the building, Sydney becomes more widely recognized around the world
+Fig. 1- Harbour view of Sydney, Australia.3
+Source-www.metrostrategy.nsw.gov.au
+The building is an outstanding landmark and is representational enough to be deemed a signature of the city, especially to those whom have never been there. For example, the Sydney Opera House is abstracted into a simple icon (Fig. 2) as the flame of the torch in the logo of the 2000 Olympics. A similar effect is reached by the Giza Sphinx (Fig. 3) or even a silhouette of a Pyramid (Fig. 4), which can act as a logo and reminder of Cairo, Egypt. No 3 All the figures in this paper without indication of source were provided by Weina Chen.
+-6-
+
+matter whether newly created or inherited from ancestors, profound city images exist in both Sydney and Cairo.
+Fig. 2- The logo of the 2000 Olympics
+Source: www.product-reviews.net Fig. 3- The Giza Sphinx
+Source: www.pharaohsadventure.com
+-7-
+
+Fig. 4- The silhouette of a Pyramid
+Source: travel.nationalgeograohic.com Another case is Vienna, Austria (Fig.5). Compared to other capital cities in Europe, such as London or Paris, Vienna's physical image may not be so renowned. Although Vienna has the Stephansdom (St. Stephen's Cathedral) (Fig. 5) as a landmark, the soul of the city -which is linked closely to the classical music, caf culture and the exquisite sense of life -has always been highly appreciated and well known. For instance, An Austria official tourist web site introduces its caf culture as follows: "Cafs and coffeeshops are an everyday part of city living and in Vienna in particular they are at the heart of city life. In Vienna there were cafs for everyone: artists, intellectuals, the respectable bourgeoisie and the not-so-respectable. People gathered in cafs to chat, eat, read, work, play, gamble and argue in a city at the heart of an ancient empire" (excerpted from AdvantageAustria.org4). This impression of the Viennese lifestyle greatly sums up the soul of the city; the city itself becomes the muse of artists (Fig. 6), showing an inviting image. This impression cannot be built in a short time or just with capital investment. Vienna is an example of a city with a stunning city impression and a relatively unknown city image (Fig. 7).
+4 Source: advantageaustria.org/gb/events/2008-10-13-vienna-cafe-1900.en.jsp
+-8-
+
+Fig. 5- Stephansdom in Vienna, Austria
+Source: alisim.wordpress.com Fig. 6- Gustav Kalhammer, view from the caf Heinrichhof of the Imperial Opera.
+Source: Wiener Werkstatte Postcard No. 412, c.1910. www.rca.ac.uk/viennacafe
+-9-
+
+Fig. 7- Streetscape in Vienna, Austria.
+Source: goeurope.about.com/od/austria/l/bl_vienna_2.htm Paris, France (Fig.8) is the perfect combination of an exciting city image and a vibrant city impression. Paris has not only landmarks, such as the Eiffel Tower, Louvre Museum and Arc de Triomphe, but the additional pleasure from the luxury of Champs Elysees, the name of Fashion Capital, and the legendary left bank of The Seine. The charming fantasies of Paris attract investments and tourists, stimulate its economy, and then create a positive lifestyle for its residents.
+- 10 -
+
+Fig. 8- Paris at night.
+Source: depts.washington.edu From these three cases, we can see that city impression is a wider concept than city image. Specifically, city impression is not only about the look of a city, but about having the special life style which people project onto the overall city images. These visible features are only part of a city's impression. They are the static, material side of a city, or the "hardware" of a city. City impression contains not only the "hardware", but the "software" which makes a city more dynamic and full of vitality. The "software" is what we call the "soul" of a city. If the impression of a city is low or negligible, this impression may cause an investment decrease due to low attractiveness to new industries and new generations; or, the city will not be seen as a modern and developing city compared to the world-class cities such as Paris and New York. To this end, city impression is truly a brand-new concept. It is related to city planning, city management and the appearance of a city. It is based on the opinions from the citizens, i.e., the creators, evaluators and propagators of the impression of a city.
+- 11 -
+
+2.2.2 Characteristics of city impression
+City impression is based on the city itself and targeted to people's cognitive judgments to the following characteristics: a) Comprehensiveness. City impression is the combination of city appearance and
+context in people's feeling and memory, referring to the feeling by the public of an overall assessment of the city. b) Distinctiveness. Every city has its own characteristics, natural conditions, cultural traditions, economic strengths as well as development strategies, created by its originality and specialty. These variables provide unique features which strengthen its attractiveness. One of the important functions of the complex system of a city is to provide a concise distillation of the soul of a city for people to distinguish it from other cities. c) Long-term establishment and stability. "Rome was not built in one day", so too with city impression. It involves many aspects of a city at different levels. The process of the awareness and acceptance of city impression requires a long period. However, once the city impression has been widely accepted, it can last a fairly long time. As a result, redeveloping and upgrading it usually occurs voluntarily from inside-out and bottom-up, for the impression could not be imposed onto a culture or a place. The city impression must grow out of its own culture. Therefore, it involves great effort and deep understanding of the soul of a city to improve its impression. d) The public good. City impression is public wealth, like the lighthouse over the sea. A city can share its glory for carrying forward the spirit of a culture and cultivating public sentiment. Residents will have a profound sense of identity and strengthened emotional ties with the city, which will help the society achieve economic prosperity and social harmony. e) Transmissibility. A vivid city impression could facilitate communications between foreigners and residents, because impression-building is a process of illustrating the
+- 12 -
+
+inner "personality" of a city to newcomers who want to know the city better. Moreover, when people travel to different places, the impression of a city will be carried away with them, and spread. For example, one who has never been to New York knows the Statue of Liberty as a symbol the American Dream. Furthermore, in this Information Age, city impressions are spread through media such as the Internet; the world becomes aware of the objective dimensions of cities, such as legal rights and duties, and the subjective dimensions, such as local pride and political loyalty (Cinpoes, 2008). f) 2.2.3 The importance of city impression A city's image-building is a stage of development following urban modernization. The image-building process begins after a geographical area becomes prosperous has the need to expand and grow. Then, the need for an image acts as a means which helps a location become a place. For example, "55 degree 57 minutes north and 3 degree 13 minutes west is not a place, but when we call that same space `Edinburgh' it becomes a place" (Hague, 2005).
+The concept of city impression as well as its instructive significance has been discussed above. To sum up, since city impression is various and comprehensive, it is hard to describe and evaluate. Different people see different aspects of the city, and this is usually determined by the viewers' living patterns and backgrounds. Therefore, further studies are needed in order to understand people's subjective interpretations of city impression and to represent them in an objective way. In the next section, the research methods are discussed in detail. Special effort is made to reduce the "blind spots" which are often neglected by professionals, such as planners. The city of Montreal, Quebec, is studied as a case in the following sections.
+- 13 -
+
+3 Research Methodology
+As mentioned in the theory exploration section, the methods used in this field are mainly from two directions: top-down and bottom-up. The top-down method is usually taken by professionals such as architects, planners and city managers, who already have specialized knowledge and accurate insights into the city. Thus, they usually represent the "top" of the planning process and act as the designers of the city. The method which is determined by their visions in the decision process is called the top-down method. In this study, professionals include urban planners, students and professors in the School of Urban Planning and the School of Architecture at McGill University. By contrast, the bottom-up method mainly considers the comments from the non-professionals, who are ordinary people not familiar with the concepts of city image and city impression.
+My methodology in this research is based on the bottom-up method. Therefore, the research emphases are founded on the judgments from users of the city, rather than designers of the city. My bottom-up research consists of an interview and data analyses. The interview is designed to avoid any presupposed visual elements found by professionals, unless it is widely accepted and used by citizens. Moreover, note that this "bottom-up" scheme is universal and can be easily applied to other cities, though the research results are highly customized and all the follow-up suggestions based on the results well fit the research target, Montreal. Furthermore, in order to investigate the differences between these two research methods in the field of urban planning, the subjects of my survey consist of two types: one group is professionals and the other is non-professionals.
+Data used in this research contain two sources: a face-to-face survey data and a data from a web-based questionnaire using the same questions in the same sequence. To capture the instant reaction from the interviewees, the face-to-face interview method is used in order to
+- 14 -
+
+mimic people's mental reaction when they saw visual elements. Based on the feedback from pilot survey, the web-based questionnaire is designed for people who are unable to be reached in the day time, the people who are unable to share certain period of time finishing the survey with me, and the ones who prefer reading to speaking English.
+In an effort to reduce the bias in the data collection, I choose to avoid the places where people who have similar backgrounds gather, such as the food court in Eaton Center in downtown Montreal. The subjects are randomly chosen on the street. In order to get average data, the interview spots are located at approximately five zones within the island of Montreal (Appendix I). Zone 1 includes the small but densest areas in Ville-Marie and Plateau along foot of Royal Mountain, and the eastern part of the densest areas in Outremont, the center of Montreal. The other four zones are equally distributed towards the four directions of Montreal. Zone 2 includes the north part of Cote-des-Neiges, west end of Saint-Michel- Parc-Extension, and part of Outremont at the northern side of the mountain. Zone 3 includes the southern part of the island, i.e. places along Saint Lawrence River (tourists' areas), including Peel Basin and Old Port, as well as Sainte-Helene Island. Zone 4 contains Notre-Dame-de-Grace along Sherbrooke Street West, south Verdun and part of Sud-Ouest. Finally, Zone 5 includes the densest parts of Rosement and La Petite-Patrie.
+I chose these five zones because they contain almost all the densest areas of the city, where the impressions of these areas are highly representative. Moreover, the five zones cover both the high-income and low-income areas, as well as the mixed ethnic regions of Montreal, based on the Montreal 2001 Census5 (Appendix II). Prior to the data collection for the survey, both in person and via Internet, a letter showed notifying the subjects of the purpose and the length of the survey, ensuring the confidentiality and anonymity of their participation, and guaranteeing the limited use of the data (only for this university research). 5 Qubec 2001 Population Census Montral et Laval (06 et 13).
+http://www.stat.gouv.qc.ca/regions/recens2001_06/06_index_an.htm#population
+- 15 -
+
+The survey data was collected from December 2007 to June 2008. There are 200 participants and 182 effective answers. Among the 182 effective answers, there are 150 non-professional answers and 32 professional answers. In order to keep each interview to a manageable time length, it lasts 20-30 minutes each (Appendix III), starting with quick check-box questions of the participants' general information, such as gender, age and home/office postal code. Besides these basic questions, there are other specific questions about the background of interviewees. For example, Question 5 asks about the participants' length of stay in Montreal, which is a parameter of their familiarity with Montreal; Question 6, inquiring about the number of family-owned cars, intends to discover the rough income levels of the participants; and Question 7 asks the interviewees about their travel habits. After the questions about the general information, twenty photos are shown to the participants. They are asked to answer whether he or she can recognize the place in each photo and to describe the reason(s) that helps him or her identify these photos. This photo-identification component is the main body of the survey, which collects the visual elements that might be seen as identities of the city.
+In the data analysis process, first, all the key words referring to the elements of the city are extracted from every single answer of the interviews, such as "church", "outdoor stair case" and "building material". Then, these elements are ranked by counts and classified into categories according to their similarities. For example, "road width" and "road sign" are under the same category: "Road". Third, the original elements are analyzed by considering the basic personal information mentioned above (e.g. gender, age and the length of stay in Montreal). The analysis process can be seen as a decoding procedure. Then, the visual environment "language" (e.g. identity) is translated to actual factors.
+In this survey, photographs are the main carrier of the image of Montreal. In total, there are
+- 16 -
+
+three sets, totaling 60 photos used in the survey (Appendix IV). Considering the length of each interview, the 60 photos are divided into three sets, each containing 20 photos. Each photo set is showed to people on rotation bases. In order to cover as many images of the city as possible, the photos are taken along several main paths of Montreal (Appendix V). Assuming each photo represents the image of an area with a radius of 1 kilometer, these 60 photos cover the most densely populated areas of the main city. For the purpose of the following analyses, I assume the 60 photos cover the main images of Montreal Island. Most of the photos are taken along the main roads or the places where people gather as travel hubs, such as tourist areas and downtown. These photos are taken at a certain angle to avoid local landmarks that take up too much attention in the photo. (In the pilot interview, if one photo contains an obvious landmark, many other details of the environment would be neglected by the interviewees, so landmarks are left out of the survey.) Moreover, there is little difference between the perceptions of the city from the perspectives of tourists and citizens. To users of the city, city elements, such as a metro entrance, are closer to their everyday life. Thus, the images without or with few hints of landmarks are the determined factor of the city's impression.
+- 17 -
+
+Fig. 9-Streetscape in Plateau
+Therefore, the 60 photos chosen to show the participants are the ones which focus on the living level of the city with few hints from the local landmarks. For example, the photo showing a streetscape in one of Montreal's historical districts, Plateau (Fig 9), has no obvious landmarks. The interviewees are "forced" to search visual cues in order to discover where this photo is taken. Most of the interviewees find the famous Montreal Smoked Meat sign board (the orange Schwartz's sign), which helps them identify the place. In other words, this sign board is a visual cue of city impression.
+- 18 -
+
+Fig. 10-A photo of the territory change in Montreal
+In some photos, visual elements are purposely shown, in order to test the likelihood of being a recognizable visual cue. For example, the terrain changes of Montreal territory appear in one photo (Fig. 10). The upward slope at the foot of the Royal Mountain gives a cue of this place, and indeed acts as a visual cue during the interview. Moreover, the city's origin is included in the photo collection (Fig. 11). Industrial elements which related to the history of the city, such as old industrial buildings, are the visual cues of traditional Montreal working-class neighbourhood.
+- 19 -
+
+Fig. 11-A photo of the industrial heritage of Montreal
+In addition, multiple levels of city image, from city skyline to building details, are considered in the photo-chosen process. The Montreal skyline is included (Fig. 12), as are typical building style and building detail (e.g. outdoor staircase) (Fig. 13).
+Fig. 12-Montreal Skyline
+- 20 -
+
+Fig. 13-A photo of the typical residential building characteristics
+Additionally, the photo selection considered the multi-elements effect, which acts by more than one element. These elements work together as a visual cue. In the photo below (Fig. 14), the difference between the fenced upper-level residential community on the left side and the low-income residences on the right side delivered a distinct image, which makes the place memorable.
+Fig. 14- A photo of the difference of living condition on different sides of the street.
+- 21 -
+
+To sum up, the survey is intended to find the identity of the city of Montreal, to test the sensitivity of these visual elements and in order to discover the unique expressions of the city impression of Montreal.
+4 The City Impression Decoding Process
+4.1 Decode the city impression through elements In the interviews, 182 effective answers are obtained in total. It is interesting to see the elements provided by the users of the city. All the elements come from the most basic and commonly-used ways of describing the city. Compared to the standard elements pre-established in standard planning principles, they are more localized and precise in terms of representing the true image of the city. Using the bottom-up method, I thus collected the elements that Montrealers frequently used to describe their own city, and grouped them into categories.
+4.1.1 Element, Category and Aspect There are approximately 490 words used by the 182 participants as identities of the city. They are classified into 140 elements. In order to facilitate the following analyses, the 140 elements are recorded and grouped into twelve categories, which show the most mentioned areas in the city of Montreal. They are as follows:
+- Landmark building, including church, movie theatre, museum, etc. - Building detail, containing awning, stone faade, outdoor stairs, etc. - Building characteristics, including low-rise, office building, industrial building reuse,
+etc.
+- 22 -
+
+- Road, consisting of street width, median, sidewalk, etc. - Street furniture, including road sign, lamp, fence, etc. - Feeling, containing old / new, cleanness, beautify, etc. - Business & Sign, containing banner and name, business sign, restaurant and bars,
+etc. - Activity, consisting of shopping area, event, busy street, etc. - Neighbourhood, including residential area, mature neighbourhood, etc. - Green, containing park, greenery, height of trees, etc. - Water, consisting of bridges, river, waterfront, etc. - Terrain, including slope, Royal-Mountain, skyline of downtown, etc.
+
+In the graph below (Graph 1) the most popular element is Landmark building, including church, movie theatre, museum, and so on. It contains 25% of all the elements mentioned by 182 interviewees. The next most popular elements are Business & Sign, Road and Building detail. These four elements take three fifth of all the elements and become the leading elements influencing the overall city impression of Montreal.
+
+Graph 2-The rank of percentages of categories
+
+4% 5% 8%
+
+4% 2% 1%
+
+9%
+
+9% 10%
+
+11%
+
+25% 12%
+
+Landmark building Business & Sign Road Building detail Building character Feelings Terrain Street furniture Activity Water Green Neighbourhood
+
+- 23 -
+
+Examining list of the elements given by the users of the city reveals the uniqueness of the city. For example, what are listed above shows numerous heritage buildings with unique details, nice contemporary construction and diverse activities in Montreal. They contribute to the formation of a beautiful, memorable city image. One unique building with suitable details and nice building characteristics does ring a bell in people's minds and help them remember one place. The atmosphere and diverse activities within one place enhance the impression of Montreal in one's mind as well.
+Moreover, these categories can be synthesized into four broad areas, which are as follows: - Building, including Landmark buildings, Building detail and Building characteristics - Road, containing Road and Street furniture - Function, consisting of Business & Sign, Activity, Neighbourhood and Feeling - Nature, including Water, Terrain and Green
+Graph 3- The rank of percentages of the four aspects
+
+14% 26%
+
+16% 44%
+
+Building Function Nature Road
+
+Consequently, these four aspects of the city stand out as representatives of the most noticed spheres of the city, or the most frequently impressing aspects of the city's overall appearance.
+- 24 -
+
+Among the four main aspects of the city, Building and Function are greatest and these two areas have the biggest influence on the city image of Montreal in people's minds.
+
+Significantly, Building is the most popular of the four aspects. 44% of interviewees identify the photos through buildings in that aspect (Graph 2). It is mentioned 1721 times by the 182 people and appears 253 times in the 60 photos. Within the area of Building, Landmark building is the most mentioned category. It is mentioned 961 times by 182 people (Graph 3) and emerges 105 times in 60 photos.
+
+23%
+
+Graph 4-The percentages of the category of Building
+
+21%
+
+Landmark building Building detail
+Building character
+56%
+
+4.1.2 Identification Ratio and Presenting Ratio The following graphs (Graphs 4 and 5) show the Identification Ratio (IR) and the Presenting Ratio (PR) associate with each aspect or category. These two ratios indicate the weight of each aspect or category in describing an impression of a place in Montreal. IR is defined as the number of times the aspect or category has been mentioned in the interviews divided by the amount of effective answers, 182 (the green bar). PR is defined as the number of times the aspect or category appears in each photo per photo, i.e., the number of photos containing
+- 25 -
+
+the aspect or category divided by the amount of photos, 60 (the blue bar). Graph 5-IR vs. PR at the Aspect level
+
+Nature
+
+Function Building
+
+IR PR
+
+Road 0.00 2.00 4.00 6.00 8.00 10.00
+
+As can be seen from the graph above (Graph 4), Building gets an extremely high value of IR. On average, each person mentions Building as a key cue approximately nine times during the interview. Moreover, as the blue bar shows, it appears four times on average in one single picture. Function is another strong keyword. Therefore, a clear image of readable functions helps people identify the places as well. On average, each person mentions five times during the interview and this aspect is pointed out three times in each photo.
+
+- 26 -
+
+Graph 6-Category IR vs. PR comparison
+
+Terrain
+
+Water
+
+Green
+
+Neighbourhood Activity
+Business & Sign
+
+IR PR
+
+Feelings
+
+Building character
+
+Building detail
+
+Landmark building
+
+Road
+
+Street furniture
+
+0.00 1.00 2.00 3.00 4.00 5.00 6.00
+
+By applying the same analysis to the twelve categories, Landmark Building and Business & Sign are relatively more significant than the other categories. Landmark Building is mentioned more than five times by one person on average during the interview and each person mentions Business & Sign 2.5 times. As displayed in (Graph 5), Landmark building has the highest IR and PR. The following elements are Business & Sign and Road.
+4.1.3 P-value It is important to discover the most recognizable signature elements which most people will take as a cue to identify where they are, whenever they appear. How can we find these elements? If P = IR / PR, P indicates how significantly the parameter emerged as an identity, i.e., the value of the chance to become an identity of a place. The meaning of the definition shows that the higher the P-value is, the more representative the element is, when it appears in the photo. For example, as shown in (Graph 6) below, the highest P-value belongs to
+- 27 -
+
+Nature, PNature= 2.6. It means that if elements of Nature appeared once, the value of becoming an identity of the city is 2.6. Although Nature has the lowest PR in (Graph 4), it is the most noticeable feature of the city. It means that the aspect Nature has is absolutely a higher chance to become visual cue for people than the other three aspects. When elements of Nature appear in the photo, they have the highest possibility to become a cue for people. The opposite example is Road: this is the most unlikely item that people will take as an identification reference.
+Graph 7- P-value comparison of the four aspects
+
+3.00 2.50 2.00 1.50 1.00 0.50 0.00
+Road
+
+Building
+
+Function
+
+Nature
+
+- 28 -
+
+LBauBinludSdBstiirmnunielageredtikscFfnshbeugaru&reilldnRiaidteocnittuagnraeisdlgre NeighboAurcthiSioviotgdyn Green TeWrrataiern
+
+Graph 8-P-value comparison of categories
+5.00 4.50 4.00 3.50 3.00 2.50 2.00 1.50 1.00 0.50 0.00
+Moreover, if a P-value is applied to a more detailed level, the Category level, as can be seen in the graph above, there are several noticeable peak P-values. The highest category is Terrain. Compared to (Graph 5) where Landmark building has the highest IR, it is just the second place in P-value. On the other hand, P-value helps us reexamine the neglected elements because of their low PR values. Therefore, the categories which actually represent the city of Montreal are Terrain, Landmark building and Water. First, the highest one is the peak value of Terrain within Nature. It is clear that when a slope appears once in a photo, the chance that it will be an identity is 4.5. Related to the low PR value in the former graph (Graph 5), the high P-value here shows that although the number of times Category Terrain appears in the photo is among the lowest, people use it the most often as a popular icon to identify a place in Montreal. In other words, the terrain variance is indeed a typical feature of Montreal. The second peak appears at the Landmark building, which has
+- 29 -
+
+a P-value equal to 3.0. The two peaks (Graphs 5 and 7) together show that Landmark building is a common parameter, and at the same time, the frequency of using it as a typical cue is high enough to make it the second most popular category of elements in Montreal. The third peak value is Water; its chance of becoming an identity is 2.3. To sum up, similar to Terrain, the Nature elements, including water, the view of river, mountain, level changes of territory and man-made landmark buildings, truly represent the city's main impression and demonstrate the salient parameters which make Montreal special.
+
+Table 1- Presenting Counts of elements
+
+Element
+
+Count
+
+Banners or names of the building
+
+244
+
+Church
+
+205
+
+Tall building
+
+175
+
+Industrial buildings
+
+166
+
+Building style
+
+136
+
+Bridges
+
+129
+
+Slope
+
+119
+
+"The" building / the specific one
+
+118
+
+Street width
+
+105
+
+Restaurant, stores and bars
+
+100
+
+Even more specifically, as shown (Table 1), there are ten elements (of 140) which are mentioned over 100 times by each of the 182 people. Of these ten elements, five are related to Building. Therefore, the appearance of buildings in Montreal stands out as a key aspect when considering the impression of the city. In addition, the result that "banners or names of the building" is the most mentioned element, may relate to the fact that a lot of headquarters of big companies and industries had existed in Montreal during its golden years, 1880 to 1930 (Wolfe, 2002). This reminds us not only of citizens' high visual sensitivity to
+- 30 -
+
+signboards, but of the long phase of prosperity Montreal had as an industrial and commercial center of North America. Also, this means that the identity of the city might be enhanced by reinforcing the image of today's new representative companies and industries in Montreal, such as Jean Coutu and Bombardier, just like the former Molson and Pacific Railway (Fig.15) in Borough Papineau and La Chine.
+Fig. 15- Old Molson Company at riverside and Old Railway in Montreal
+Source: www.railfame.ca What is more, "church" is another highlighted, mentioned 205 times by 182 people. Everyone mentions it more than once. The PR is very high among 60 photos. There are 16 photos that contained churches. Montreal, nicknamed the "City of Saints" or "the ville aux cent clochers" (city of a hundred bell towers), is famous for its many beautiful churches (Fig.16). Mark Twain once said about Montreal: "You can't throw a rock in Montreal without breaking stained glass," demonstrating the incredible number of churches erected downtown Montreal6, and forming part of the impression of the city.
+6 Jeremy Morris, When I was young and Catholic in Quebec, Jan 6th, 2003 http://media.www.mcgilltribune.com/media/storage/paper234/news/2003/01/06/Oped/Le.Qubecker-34332
+- 31 -
+
+Fig. 16- Many churches in Montreal
+Source: farm1.static.flickr.com 4.1.4 Professionals vs. non-professionals The elements chosen by the professionals have higher accuracy. During the data gathering process, there are 150 non-professional and 32 professional participants. Overall, the average P-value of the twelve categories chosen by the professionals is 3.99, which is twice the value those chosen by the non-professionals, 1.84. The value difference means that due to their professional training and habits, the professionals pay more attention to the city's appearance.
+- 32 -
+
+Graph 9-P-value comparison between Professionals and Non-professionals 8.00 7.00 6.00 5.00 4.00 3.00 2.00 1.00 0.00
+
+non-Pro Pro Total non-Pro Pro Total
+
+LBauBinludSdBtsiirmunnielageredtiskcFfnshbeugaru&erilldRniaiSdteonciittaugngraeisdlgnre NeighboAurcthiovitoyd Green W ater Terrain
+
+Furthermore, generally speaking, the non-professionals are still not as accurate as the professionals, continuing the comparison at the category level, as shown in (Graph 8). However, the overall significance of the categories remains coherent. The category Terrain (e.g., "slope", "skyline of the city" and "mountain"), Landmark building (e.g.," church", "tall building" and " `the' building"), and Water (e.g., "bridge", "river" and "waterfront") are all preferred by both the professionals and the non-professionals, with the highest attention from them. These preferred categories emphasize the possible directions of identity creation. With a limited budget, the priority of construction and redevelopment should be focused on these three categories in order to increase the benefit of identity creation. Compared to the non-professionals, the frequency of using Street furniture (e.g., including "road sign", "street lamp", and "fence"), Feelings (e.g., "old and new", "emptiness", "cleanness"), and Green (e.g., "greenery", "height of the trees" and "park") as identities of the city by the professionals are much higher than other elements. By contrast, the professionals pay less attention to the category of Neighbourhood, such as the definition of the area ("residential" or "industrial"),
+- 33 -
+
+neighbourhood sense ("area as a whole"), and the overall feeling of the neighbourhood ("mature neighbourhood"). Therefore, the planners and other professionals might turn their attention to neighbourhood elements in their work for the effectiveness of design, so as to better serve the public.
+
+Another way of comparing the two groups of people is to look at the IR differences between the professionals and the non-professionals. As displayed in (Graph 9), Landmark building is the first choice by both of the two groups. However, besides that, the differences of the two groups are revealed by the noticeable un-corresponding changes in slope. Business & Sign, Feelings and Neighbourhood are the three inconsistent categories.
+
+Graph 10-IR comparison between Professionals and Non-professionals
+7.00 6.00 5.00 4.00 3.00 2.00 1.00 0.00
+
+non-Pro Pro
+
+LBauBinluSddBtsiirumninelageerdtiskcFfnshebguareu&lrRiidnliaontedctiatguradnsielrge Sign
+NeighboAucrtihvoitoyd Green W Terrataiern
+
+In addition, Presenting Count (PC) is another interesting perspective from which to consider the differences between the two groups, the designers and the users of the city. PC means the chance of elements which are pointed out from the 60 photos as identities. The graph below (Graph 10) shows 28 elements with the largest PC differences out of the approximately 140 elements used in this data gathering process. They are PC differences which are larger
+- 34 -
+
+than five and less than zero. It is worth noticing that the number of people in the two groups were fairly different, the 150 non-professionals verses the 32 professionals. The two groups had been shown the same 60 photos in the same sequence. In common circumstances, PC for the 150 people should be always larger than PC for the 32 people.
+However, in this survey, PCs of some elements by the 32 professionals are even higher than those by the150 non-professionals. They are shown as negative numbers in (Graph 10). Here, "building type" and "age of building" are the two most distinct elements that are found more often by the professionals. On the other hand, there are three elements which are different from the other commonly used elements found by the professionals: "'The' building", "street width" and "banners or names of the building". The non-professionals are much more sensitive to these elements than the professionals.
+Finally, combining the three analyses together, to start a project on developing the city impression of Montreal, planners should pay more attention to landmark creation as well as highlighting the terrain and water elements which make Montreal unique, such as increasing the accessibility towards the waterfront: the old port, La Chine Canal and especially Rivere des Prairies to the north edge of Montreal Island. Moreover, by emphasizing the visual elements related to neighbourhood, streets and banners, a widely satisfactory in city impression could be achieved by planners. By enhancing the street decorations and signs in related neighbourhoods or boroughs, during the unique festivals and events, such as Fte-des-neiges, Festival Montral en Lumire, and the popular Montreal Museums Day, the overall perceptions of the city impression will improve.
+- 35 -
+
+Graph 11- Element Presenting Count Difference between Professional and non-Professional
+
+-10 -5
+
+0
+
+5 10 15 20
+
+Element Presenting Difference
+
+"the" building / specific one street width
+banners/ names of the building road sign
+sparse buildings building style
+street arrangement English vs. French restaurant, stores and bars all the business signs
+building height low-rise lamp hotels
+old buildings cleaness
+old heritage building stone faade
+the variance of building height colour match
+e French mixture with immgrates density of shops
+the width of the sidewalk trees
+level of activity building details age of buildings
+building type
+
+- 36 -
+
+4.2 Decode the city impression through people
+To avoid potential bias, only data from non-professional people will be analyzed. As a representative, IR is used to conduct the analysis through different groups of people on the five most distinguishing aspects: gender, age difference, length of stay, car amount and daily travel methods.
+
+4.2.1 Male vs. Female
+As shown below, there are totally 150 people who have taken the survey. The ratios of male to female are fairly even. 51% of the total subjects, 77 people, are male. First, the difference between male and female is quite surprising. As displayed in (Graph 11), the results demonstrate that men need more visual cues than women when they try to locate themselves in a city. Visual identities of a city also have more influence on men, for the 77 male interviewees contribute 828 visual cues, while the 73 female participants contribute 565 visual cues.
+
+Graph 12-IR of Gender difference in categories
+3.00 2.50 2.00 1.50 1.00 0.50 0.00
+
+Male Female
+
+LBauilnSddtiBrnumielgaerdtickfnhugbarruindRlaiteodctituaraneidlreg BusinessFe&elings
+Sign NeighboAucrtihviotoyd
+Green W
+ater Terrain
+
+- 37 -
+
+For example, statistically, one of the visual cues, the outdoor cafs along the street as shown on the left side of the figure below (Fig. 17), mainly represents three areas in Montreal, the St. Denis street and Crescent Street in Downtown and Sherbrooke Street in NDG on the western side of the island. This visual cue is pointed out more by men than women. However, men tend to use more than one cue to help them make judgments. In the same photo, male interviewees mention other cues, such as street width, the two-way road, and roof style, while the female interviewees mention mainly on the outdoor caf and the typical style of the building.
+Fig. 17-Outdoor cafs along the street, Montreal
+Another finding is the significant differences of the sensitivity to different visual elements categories between men and women. The above graph (Graph 11) shows the difference in the number of times each category of elements is mentioned on average between male and female. The differences are relatively large at Landmark building and Road. For example, one single landmark building is taken as a cue 2.6 times by men and 1.8 times by women. For example, in the photo of the Old Port (Fig. 18), the key visual cue to male interviewees is the modern museum building on the right side of the photo. On the contrary, the female
+- 38 -
+
+interviewees mainly chose greenery and a fence on the left side as visual cues. In other words, men mainly depend on these two categories (Landmark and Road) to identify one place, while women usually depend on more diverse categories, such as Building detail and Feelings, which are much closer to human scale and feelings.
+Fig. 18- A photo of the Old Port of Montreal
+4.2.2 Age difference Due to the lack of effective answers from participants under 18 years old and over 51 years old, the main age group of this survey is from 18 to 50 years old. As shown in (Graph 12), the participants aged 18 to 50 occupy 97% of total survey population. As seen in (Graph 13), there is no significant difference among our majority populations, except for the people 41 to 50 years old. They are inclined to choose Landmark building and Building character more than the people 18 to 40 years old, who pay more attention to Activity and Business & Sign.
+- 39 -
+
+Graph 13-Age group of participants
+
+68%
+
+23% 0-18
+
+18-30
+
+31-40
+
+41-50
+
+51-60
+
+Over 60
+
+5% 1% 3% 0%
+
+This phenomenon implies that the city does not provide enough memorable places for activities or shopping for people aged 41 to 50, or, the places familiar to those ages 41 to 50 are gradually disappearing. This suggests a trend toward a loss of memorable identities. The fracture of cognition may be affected by the loss of big organizations and enterprises caused by the political and economic turbulence in Quebec around 1980. In general, Landmark building is still the most popular element among all age groups. Besides that, Road, Building character and Business & Sign are the next most popular factors.
+
+- 40 -
+
+Graph 14-IR of age difference
+4.5 4
+3.5 3
+2.5 2
+1.5 1
+0.5 0
+
+0-18 18-30 31-40 41-50 51-60 over 60
+
+LBauiBnlSuddtiBsrimuneinlageredtikscfnFshubgeraur&einllidRiatdeonciuttragnaeiesdlgr Sign
+NeighbouArcthioviotyd Green W ater Terrain
+
+4.2.3 The length of stay
+To investigate how the length of stay influences people's view of the city, the interview subjects are divided into five groups according to the familiarity to the city. For example, the length of less than six months stay likely separates most visitors from residents7. According to the latest Quebec Census8, the subjects are close to the actual population buildup. 91% of the subjects are residents of the city.
+In the survey, 41% of the participants have lived in Montreal for one to five years, and 30% of the participants have stayed in Montreal for five to ten years. 20% of interviewees have been living in Montreal for over ten years. Therefore, the 91% of participants have lived in Montreal more than one year, and they all have basic familiarity with Montreal. Similarly, the participants' composition (Graph 14) demonstrates that the outcome of this survey covers most of the residents' opinions about the city. 7 www.cic.gc.ca/english/information/faq/visit/visit-faq01.asp 8 Annual Internal Migration, 2006-2007
+www.stat.gouv.qc.ca/donstat/societe/demographie/migrt_poplt_imigr/migr_interne_ann_an.htm
+- 41 -
+
+Graph 15-Participants composition based on the length of stay
+
+20%
+
+2% 7%
+
+<6 months 6-12 months 1-5 years
+
+41%
+
+5-10 years > 10 years
+
+30%
+The most active observers of the city of Montreal are the people who have stayed in Montreal for one to five years or over ten years (Graph 15). The single highest category IR of elements and the highest diversity of cues all appears in the two lengths of stay mentioned above. The possible explanation is that people who have stayed for one to five years are still exploring the city, and are sensitive to the visual cues around them, while the ones who have stayed over 10 years know the city well and can easily point out the most memorable elements.
+For example, the photo looks at the beginning of University Street (Fig. 19). The poles on the median are certainly visual cues to most of the interviewees. However, people who stay in Montreal for quite a long time (more than five years), confirmed their judgments with other visual cues, such as the Bell Center and the entry to Bonaventure Station. Furthermore, to the tourists or people new to Montreal, the photo of a heritage building with a dome roof (Fig. 20) reminds them of the Old Port area, yet, the natives who know the dome-shaped roof is not a unique visual cue representing the Old Port, turn to choose the blue awning and typical town houses in the photo.
+
+- 42 -
+
+Fig. 19- Streetscape of University Street
+Fig. 20- A photo of a heritage building with a dome roof
+Additionally, as shown in (Graph 15), the ability to provide visual cues of the city is proportional to the length of stay. To the tourists, for instance, the most impressive images of Montreal are landmark buildings, such as Basilique Notre-Dame (Fig. 21) and Oratoire St-Joseph du Mont-Royal (Fig. 22), water elements such as Saint Lawrence River (Fig. 23) and Vieux-Montral (Fig. 24) as well as road elements, such as, the road arrangements (e.g.
+- 43 -
+
+setback in residential area (Fig. 25)) which are different from many other cities in North America.
+Fig. 21- A photo of the Basilique Notre-Dame
+Source: highnotes.concordia.ca Fig. 22- A photo of Oratoire St-Joseph du Mont-Royal
+Source: carboncopy.hobix.com/archives/269
+- 44 -
+
+Fig. 23- A photo of the Saint Lawrence River Fig. 24- A photo of Vieux- Montral
+- 45 -
+
+Fig. 25- Different setbacks comparison (Left: Montreal; Right: a city in the U.S)
+
+Source of the right figure: www.preservation.lacity.org/files/images/BonnieBrae1000
+
+Normally, landmark buildings are crucial in creating a unique city image. However, as shown in the graph (Graph 15) below, as the length of stay becomes longer, the users of the city notice more and more memorable characters in Business & Sign. This demonstrates that the city would welcome more characters or businesses, such as the famous smoke meat store on Saint Laurent Street, the Hard-Rock Caf and even the colorful flags along the streets annually during Jazz Festival.
+
+3.00 2.50 2.00 1.50 1.00 0.50 0.00
+
+Graph 16-IR of the length of stay
+
+< 6 months 6-12 months 1-5 years 5-10 years over 10 years
+
+LBauiBnlSudtdiBsrimuneinlageredtikcsfFnshubegraure&inllidRiatdoencitutragnaeisdelgr Sign
+NeighbouArcthivoitoyd Green TeWrrataiern
+
+- 46 -
+
+4.2.4 Car ownership
+From the data shown in (Graph 16), the city of Montreal is quite a green city. 56% of the interviewees have no car in their family. This high no-car ratio may be caused by the well developed public transit systems in Montreal. Moreover, this feature can be regarded as an advantage, because the walking population is large and the time period when these people are exposed to the beautiful city vista is longer than the people who have cars. To this point, the fewer the people who use cars, the more important it is to have a meaningful and beautiful city impression of Montreal.
+
+Graph 17-Participants composition based on car ownership
+
+3% 0% 12%
+
+none 1 2 >2 others
+
+29% 56%
+
+As can be seen in (Graph 17) below, the people with two cars are better observers. Cars can extend their footprints. These people have higher IR than the other groups. The cues provided by them are more diverse. For example, to the interviewees who do not have cars at home, in the photo of Pont de la Concorde (Fig. 26), the Montreal downtown skyline acts as the only visual cue, and shows the rough location of the spot which should be on the southern side of St. Lawrence River. However, to the car owners, the visual cue is not just the tall towers in the background. Only car owners in the survey point out the other visual
+- 47 -
+
+cues, such as the fence between the car way and pedestrian-bicycle sideways, and the
+
+particularly wide bridge road, and then, give me the specific answer about the place showed
+
+in this photo.
+
+Graph 18-IR of car ownership
+
+3.50
+
+3.00
+
+None
+
+2.50
+
+2.00
+
+One
+
+1.50
+
+Two
+
+1.00 More than two 0.50
+
+0.00
+
+LBaBuilnuSddsiitBrnnmuielgeaerdsticksfFnhubgea&rrueilndlaiiRtedcnotitugrnaaeirsledg Sign
+NeighboAucrtihvoitoyd Green Water Terrain
+
+Fig. 26- A photo of Pont de la Concorde
+
+4.2.5 Daily travel methods In the survey, there are 36% of interviewees who walk to work, 49% of interviewees choose
+- 48 -
+
+public transit, and only 15% of the interviewees use a car. Due to the research results, there is a good opportunity for city planners and designers to exhibit the details of the beauty of Montreal to the great number of walkers. When people are walking, the travel speed is the relative lowest, compared to other travel methods listed below (Graph 18). Because of that, detailed city images, such as color and material of building faades, can be viewed and apprehended by people. Then, there are more chances for these details to become visual cues for people to know the city. Thus, the impression of the city becomes more diverse.
+
+In detail (Graph 18), walking and taking the metro are the two dominant travel methods based on the survey. There are a total of 66% of the interviewees who choose walking and taking the metro. The following travel methods are private vehicle (13%), including self-owned cars, motor-cycles and other vehicles; bicycle (6%) and bus (6%); and train (4%). Only 2% of the interviewees chose taxi. In general, 45% of the participants use public transit as their daily travel methods. 42% of the interviewees choose totally zero emission travel methods: walking and bicycling.
+
+Graph 19-Participants compyosition based on daily travel methods
+
+36%
+
+6% 0% 4%
+33%
+
+train metro taxi private vehicle bicycle walking bus others
+
+6% 13%
+
+2%
+
+Moreover, according to (Graph 19) below, the people travelling by train and taxi are different from the others. They have higher IR values of almost every category especially Road,
+- 49 -
+
+Feelings and Building character, including elements such as "street width", "building style", and "the variety of buildings". Thus, the people travelling by train and taxi may have enough time, travel length and clear view to taste and remember the road changes, characters and overall feelings of one place in a larger scale.
+Therefore, to have a rich image of the city, visual improvement at key spatial points along the long travel route is strongly recommended. For instance, there are several visual corridors towards the mountain in downtown Montreal. If the mountain is decorated with lights at night, people who travel through these corridors will perceive these lights as memorable identities of Montreal. Moreover, there is a newly constructed community, "Bois Franc". It is beside the commute train route which connected Deux-Montagnes, where most of the population works on Montreal Island. If Bois Franc can reinforce the landscape design along the area where near the railway, it can become one of the visual cues to the commuting population.
+Graph 20-IR of daily travel methods 4.00 3.50 3.00 2.50 2.00 1.50 1.00 0.50 0.00
+Train Metro Taxi Private vehicle Bicycle Walking Bus
+- 50 -
+
+Street furniture LBauinlddiBmnuialgrdkicnhbgaurildaRdeciottnaaeiglrd
+BusinesFse&eliSniggsn NeighbouArcthioviotdy
+Green Water Terrain
+
+5 Conclusion and future issues
+This paper demonstrates the importance of city impression in current worldwide city competitions and the irreplaceable role of identity creation in the process of city impression building. It mainly presents an approach to finding the impression of a city with a bottom-up process, expresses the impression of a city in an objective way and discovers the underestimated aspects of the city while diagnosing existing problems through this procedure. In addition, as a planner, an effort is made to maximize the effectiveness of investments by identifying the weakness of the current city image and the focus of the future development of city impression to get an optimal design.
+As a consequence, in general, the results indicate that the visual impression of the city can be revealed and examined by investigating into people's visual needs and potentials. Based on the data, several interesting insights can be identified. First, the economic and political turbulence in Montreal have caused irreversible city characteristics changes and identity cognition fracturing, breaking the connection between the current city image and its past. Second, there are still consecutive industrial and commercial traditions which remained in Montreal's blood and have resonance with its people through different time periods.
+From the outcome of the survey, key issues which determine Montreal's city impression are collected by grouping the similar key words mentioned, when describing the scenes of the city by the interviewees. Thus, these key words are grouped into four aspects and twelve categories, which work as an integration of the most important issues influencing the overall city impression of Montreal. Furthermore, it can also be used as a customized template or checklist for future city impression assessment.
+- 51 -
+
+Table 2- Summary of the key visual elements of Montreal
+
+Aspect Category
+
+Description
+
+Landmark building church, movie theatre, museum, etc.
+
+Building Building detail
+
+awning, stone faade, outdoor stairs, etc.
+
+Building character Low-rise, office building, industrial building reuse, etc.
+
+Road
+
+Road Street furniture
+
+street width, median, sidewalk, etc. road sign, lamp, fence, etc.
+
+Feeling
+
+Old / new, cleanness, beautifulness, etc.
+
+Function
+
+Business & Sign Activity
+
+banner and name, business sign, restaurant and bars, etc. shopping area, event, busy street, etc.
+
+Neighbourhood
+
+residential area, mature neighbourhood, etc.
+
+Green
+
+park, greenery, height of trees, etc.
+
+Nature Water
+
+bridges, river, waterfront, etc.
+
+Terrain
+
+slope, Royal-Mountain, skyline of downtown, etc.
+
+Moreover, this paper studies each category and element in detail and takes interviewees' personal backgrounds into considerations. Then, the ways in order to enhance the overall city impression of Montreal are aggregated as follows.
+ The top three most mentioned categories of elements:  Landmark building  Business & Sign  Road
+Landmark building does not always mean well known buildings such as Basilique Notre-Dame. It can be every building which has special elements which make the building standing out from its environment. Then, Business & Sign shows a particular living pattern in Montreal, which can be developed as part of city impression. The following category of
+
+- 52 -
+
+Road points out another aspect of uniqueness of Montreal. In total, the top three mentioned categories reveal the basic life styles encountered by ordinary Montrealers, which can be developed into part of the "software" of Montreal's city impression.
+ The most mentioned elements:  Banners or names of the building  Church  Tall buildings
+In a more detailed level, these elements above demonstrate the "software" of city impression in a specific way. The listed elements also show where to put in the investments on developing city impression of Montreal, in order to get the most enlarged benefits.
+ The top three most noticeable categories of elements:  Terrain  Landmark building  Water
+Terrain and the other nature elements including water, mountain and level change of territory and man-made landmark buildings are the excellent city impression carriers, which can truly represent Montreal's impression on the "hardware" side. These categories listed above are the natural highlights and key points to effectively improve the impression of Montreal as a memorable city.
+To sum up, the city impression creation gives meaning and feeling to a city, and adds unrealized meaning and value to its overall impression. In order to study the city impression in a practical approach, this paper uses the city of Montreal as a case. First, different groups of Montrealers have different senses to the city, as their needs from the city are different. Planners and other professionals should respond to the needs of the citizens to create a
+- 53 -
+
+pleasant and memorable neighbourhood feeling. Second, compared to landmarks, which are attractive to tourists, other identity elements representing the city's culture and life are needed by the citizens, at the level of streets and neighbourhoods close to them. Third, people who travel by train or taxi are the most potential target population to judge the overall impression of a city. Therefore, to have a rich impression of the city, visual improvements at key spatial points along the main travel routes as well as highlighting of entrance of the city are strongly advised. The whole research framework is intended to demonstrate the importance of identity creation as well as city impression building in order to stress the brand new development trends for city decision makers.
+Finally, this paper can be generalized and extended in multiple directions. First of all, the research framework is can be applied to different levels of the city, as well as to be applied to other cities all over the world. The outcome could support the vertical and horizontal comparisons within the city, or even between cities. Second, due to the limited time, this study is still a small-scale pilot study. There will be many other aspects of the city of Montreal can be counted in, such as the "underground city" in downtown Montreal, which does support the year-round economic prosperity. In the same time, because the face-to-face survey was conducted using only English, more attention should be paid to the French speaking population. Lastly, the analysis of city impression can be extended with GIS, in order to combine the visual and sensible factors with other digital information of the city. In conclusion, the research framework and the solution method above deserve further investigation in the future.
+- 54 -
+
+Sources and Bibliography
+Alkoven, P. (1993). The changing image of the city: a study of the transformation of the townscape using computer-aided architectural design and visualization techniques: a case study: Heusden. Proefschrift. University Utrecht.
+Allmendinger, P. (2001). The Head and the Heart. National Identity and Urban Planning in a Devolved Scotland. International Planning Studies. Vol. 6, No.1, p.33-54, 2001.
+Atzwanger, K., & Schafer, K. (1999). Evolutionary Approaches to the Perception of Urban Spaces. Evolution and Cognition, Vol.5, Nr.1, pp.87-92.
+Ball, M., & Smith, G. (1992). Analyzing Visual Data. SAGE Publications, Inc.
+Bolling, M. (2004). Creating "Spatial Identity": A Way to Improve the Periphery? City Images and Urban Regeneration, pp.225.
+Barke, M. (1999). City marketing as a planning tool. In: M. Pacione. (Ed.), Applied geography: principles and practice. London.
+Barke,K., & Harrop, K. (1994). Selling the industrial town: identity, image and illusion. In: Gold, J.R., & Ward, S.V. (Eds.), Place Promotion. The Use of Publicity and Marketing to Sell Towns and Regions. West Sussex.
+Baskaya, A., Wilson, C., Ozcan, Y. Z., & Karadeniz, D. (2006). A Study in Re-establishing the Corporate Identity of A Post Office Institution with Gender-Related Differences in Perception of Space. Journal of Architectural and Planning Research. 23:1, Spring 2006. p.43.
+Becker, H.S. (1981). "Introduction", in: Becker, H.S. (Ed.) Exploring Society Photographically, pp.9-11Block Gallery. North Western University Press.
+Belanger, A. (2002). Urban Space and Collective Memory: Analysing the Various Dimensions of the Production of Memory. Canadian Journal of Urban Research. Vol. 11, Issue 1. p. 69-92.
+Bradley, A., Hall, T., & Harrison, M. (2002). Selling cities: Promoting New Images For Meetings Tourism. Cities 19(1): 61-70.
+Bruce, V., Green, P. R., & Georgeson, M. A. (Eds.) (1996). Visual Perception. Physiology, Psychology, and Ecology. 3rd Edition. Psychology Press Taylor & Francis.
+- 55 -
+
+Burgin, V. (Ed.). (1982). Thinking Photography. Macmillan
+Burgin, V. (1996). In/Different Spaces. Place and Memory in Visual Culture. University of California Press.
+Bruzzese, A. (2004). Images in Action. City Images and Urban Regeneration, pp.99
+Chaplin, E. (Ed.). (1994). Sociology and visual representation. Routledge
+Cinpoes, R. (2008). Thematic Articles-National Identity and European Identity. Journal of Identity and Migration Studies. Vol.2:1,2008.
+Clarke, D.B. (Ed.). (1997). The Cinematic City. Roultedge
+Collet, P. (2008). A Commentary on Women Creating Spaces in Welsh Visual Culture. Visual Culture & Gender. Vol.3, 2008.
+Cross, L. T. (2007). Evaluation of Swedish Outdoor Living Environments: Cultural Influence on Environmental Perceptions. Journal of Architectural and Planning Research. Vol.24:4 (Winter, 2007). P.338.
+Dowdall, P. (2003). Writing the `architexture' of the global city. City, Vol.7:3, p.327-348.
+Erickson, B., & Roberts, M. (1996). Marketing Local Identity: The Importance of the Physical. Documentation on Urban Identity, Selected from Presentations at the International Making Cities Livable Conferences.
+Erickson, B., & Roberts, M. (1997). Marketing Local Identity. Journal of Urban Design. Vol.2. Issue 1.
+Franklin, B., & Tait, M. (2002). Constructing An Image: The Urban Village Concept in The UK. Planning Theory. Vol.1(3). P.250-272.
+Gaber, J., & Gaber, S. L. (2004). If You Could See What I Know: Moving Planners' Use of Photographic Images from Illustrations to Empirical Data. Journal of Architectural and Planning Research. Vol.21:3. (Autumn, 2004). P.222.
+Gold, J. R., & Ward, S. V. (Eds.). (1994). Place Promotion: The Use of Publicity and Marketing to Sell Towns and Regions. West Sussex.
+Gospodini, A. (2004). Urban Morphology and Place Identity in European Cities: Built Heritage and Innovative Design. Journal of Urban Design, Vol.9, No.2, p.225-248. June, 2004.
+- 56 -
+
+Gospodini, A. (1999). European cities in Competition and the New `Uses' of Urban Design. Journal of Urban Design. 7(1): 59-73
+Hancock, C. (1997). Your city does not speak my language: cross-Channel views of Paris and London in the early nineteenth century. Planning Perspectives, 12(1997), 1-18.
+Hassenpflug, D. (2004). Some Remarks on Urban Signs and Symbols in History. City images and Urban Regeneration, pp.23
+Hague, C. (2005). Planning and Place Identity, in Hague, C. and Jenkins, P. (Eds.). Place Identity, Participation and Planning, pp.3-17.
+Harvey, D. (1989). The Experience of Space and Time, in Harvey, D (Ed.). The Condition of Post modernity. pp. 201-225. Cambridge University Press.
+Healy, P. (2002). On Creating the `City' as a Collective Resource. Urban Studies. 39(10): 1777-1792
+Ho. K. C. (2006). Where do community iconic structures fit in a globalizing city? City. Vol.10:1, p.91-100.
+Inn, K. (2004). Plan for City Identity Establishment and City Marketing, the Case of Kimpo City. Dela21. 233-240.
+Jensen, O. B. (2007). Culture Stories: Understanding Cultural Urban Branding. Planning Theory. Vol.6 (3). P.211-236.
+Jukes, P. (1990). A shout in the street. University California Press, Berkley
+Kallus, R. (2004). The Political Construct of the "Everyday": The Role of Housing in Making Place and Identity. Constructing A Sense of Place, pp.136
+Koch, M., & Sander, H. (2007). Where The Heck Is Urbanity? In Henckel, D., Pahl-Weber, E., & Herkommer, B. (Eds.). Time Space Places, pp.145
+Kostof, S. (1991). The City Shaped. Urban Patterns and Meanings through History. Little, Brown and Company.
+Levebvre, H. (2001). The Production of Space. Blackwell Publishers
+Lynch, K. (1988). The Image of The City. MIT Press.
+Lynch, K. (1954). Perceptual form of the city. MIT Press.
+- 57 -
+
+Lynch, K. (1976). Managing the Sense of a Region. MIT Press. Cambridge, Ma.
+Madurowic, M., & Pieniazek, M. (2004), Changes in the Management of Urban Spaces in the Eyes of the Inhabitants of Warsaw, City Images and Urban Regeneration, pp.113
+Marling, A., & Karal A. (1997). Designing Disney Theme Parks-The Architecture of Reassurance. Paris-New York: Flammarion.
+McCarthy, J. (2006). Regeneration of Cultural Quarters: Public Art for Place Image or Place Identity? Journal of Urban Design, Vol. 11. No.2. p. 243-262. June, 2006.
+McClendon, B. W. (2003). A Bold Vision and a Brand Identity for the Planning Profession. APA Journal. Vol. 69, No.3. Summer 2003. p.221-232.
+McNeill, D. (2008). Globalization and the ethics of architectural design. City. Vol.9. No.3. December, 2005.
+Muller, T. (2004), Viewing Gentrification: A Photographic Study of Prenzlauer Berg in Berlin. City Images and Urban Regeneration, pp. 245
+Nasar, J. (1998). The evaluative image of the city. SAGE Publications, Inc.
+Neisser, U. (1978). "Perceiving, Anticipating and Imagining". In: Wade Savage, C. (Ed.) Perception and Cognition. Issues in the Foundation of Psychology. University of Minnesota Press, pp. 260-269.
+Neill, W. J. V. (1997). Memory, Collective Identity and Urban Design: The Future of Berlin's Palast Der Republik. Journal of Urban Design, 13574809, Jun97, Vol. 2, Issue 2.
+Paasi, A. (2002). Bounded spaces in the mobile world: Deconstructing `Regional Identity'. Tijdschrift voor Economische en Sociale Geigrafie, Vol. 93, No.2, pp. 137-148
+Paddison, R. (1993). City Marketing, Image Reconstruction and Urban Regeneration. Urban Studies, Vol.30, pp339-350
+Portaliou, E. (2005). Anti-global Movements Reclaim the City. City. Vol.9, No.3. December 2005. p.165-175.
+Prossek, (2004), A Coal Mine is not a Coal Mine: Image Improvement and Symbolic Representation of the Ruhr Area. City Images and Urban Regeneration, pp.67
+Psenner, (2004). The Production of Urban Space, A Field Study of Visual Perception of Architectural Space. City Images and Urban Regeneration, pp.189
+- 58 -
+
+Prosser, J. (1998). The Status of Image-based Research. In: Prosser, J. (Ed.) Image-based Research. A Sourcebook for Qualitative Researchers. Falmer Press, pp.97-112.
+Raagmaa, G. (2002). Regional Identity in Regional Development and Planning. European Planning Studies, Vol. 10, No.1, pp. 55-76
+Rapoport, A. (1982). The Meaning of the Built Environment. SAGE Publications, Inc.
+Rapoport, A. (1977). Human Aspects of Urban Form, Towards a Man-Environment Approach to Urban Form and Design. Pergamon Press (Aust.) Pty. Ltd.
+Ratcliffe, B. (2002). Imaged Places / Imagined Spaces in Mid-Nineteenth-Century Paris: Deconstructing Early Photographs of the City Reconstructing Popular Cultures. In Sears, A. (Ed.). Urban Places, Urban Pleasures: The Cultural Use of Civic Space, pp.47
+Reisenleitner, M. (2006). A Palace with a View: Imagining Europe in the Baroque City. Space of Identity. 6.2 (2006). P.167-184
+Reisenleitner, M. (2001). Tradition, Cultural Boundaries and the Constructions of Spaces of Identity. Spaces of Identity. Vol.1, 2001.
+Sanoff, H. (1991). Visual Research Methods in Design. Van Nostrand Reinhold. New York.
+Schauman, S. (1988). Scenic values of countryside landscapes to local residents: a Whatcom Country, Washington, case study. Landscape Journal, 7, 40-46
+Schwab, (2004). The Rise of Urban Symbols through Culture Policies. Three Flagship Cultural Projects between Internationalization Strategies and Local Resistance. City Images and Urban Regeneration, pp.211
+Simard, M., & Mercier, G. (2001). Planning, Participation and Identity in Quebec City: Community Building through Urban Revitalization. Canadian Journal of Urban Research. 10.1 (Summer 2001): p.23.
+Spengler, O. (1928). Authorized translation by Atkinson, C., THE DECLINE OF THE WEST. Vol.2, pp.90-91. New York, Alfred, A. Knopf, MCMLVII
+Spirn, A.W. (2000). The language of city and nature: toward a new aesthetic for urban design. Places, 6(1): 82-93
+Stevenson, D. (1999). Reflections of a `great port city': the case of Newcastle, Australia. Environment and Planning. D: Society and Space 17(1): 105-119
+- 59 -
+
+Thomas, H. (2004). Identity building and cultural projects in Butetown, Cardiff. City. Vol.8:2. p. 274-278. Tuan, Y. (1990). Topophilia: a study of environmental perception, attitudes and values. Columbia University Press. New York Tuan, Y. (2001). Space and place: the perspective of experience. University of Minnesota Press Tzfadia, (2004). Trapped Sense of Peripheral Place in Frontier Space. Constructing A Sense of Place, pp.119 Watson, S. (1997). Information, Urbanism and Identity: Perspectives on the current Work of Manuel Castells. City. Vol.2:7. p.133-139. Watkin, D. (1996). A New Order for Office Buildings. City Journal. Vol.6, No.2. 1996. Weston, P., & Handy, S. (2004), Mental Maps. Handbook of Transport Geography and Spatial Systems, Edited by D. A. Hensher et al. pp.533 Wolfe, J. M. (2002). Montreal's Golden Age. Urban History, 29, 3 (2002). Cambridge University Press. Young, G. (2008). The Culturization of Planning. Planning Theory. Vol.7 (1): p.71-91.
+- 60 -
+
+Appendix I
+- 61 -
+
+Appendix II
+- 62 -
+
+Appendix III
+City Image of Montreal Survey
+Hello. I am Weina Chen, a student from School of Urban Planning, McGill University and I am doing a research on how people perceive the city images of Montreal. I appreciate that you could help me in this study by filling in this questionnaire. Thank you very much!
+This questionnaire has two parts. The first part is your basic information. In the second part, I'll show you some photos of Montreal. Please tell me where they are by your own knowledge and try your best to tell me the cues in each photo that help you identify these places, such as the colour of the building, the height of the trees along the road and even the wearing of people passing by. Thank you very much for your time!
+Part I
+1. Please provide your gender: Female Male
+2. Your age: Under 18 18-30 31-40 41-50 51-60 Over 60
+3. Home postal code (e.g. H2D 3X1):_________________________ 4. Office/school postal code (e.g. H2D 3X1):________________________ 5. How long have you been in Montreal?
+Less than a half year Less than 1 year 1-5 years 5-10 years More than 10 years 6. How many cars you have in your family? None One Two More than two Other, please specify: _______________ 7. Daily travel method (multiple choices): Train Metro Taxi Private Vehicle Bicycle Walking Other please specify: ___________________________________________________ Part II
+8.-27. Would you please specify where it is and write down the clues in this photo which help you positively identified this place. 28. Any thing you want to say about the city image of Montreal? Again, thank you very much!
+- 63 -
+
+Appendix IV
+Photo-Set 1
+- 64 -
+
+Photo-Set 2 - 65 -
+
+Photo-Set 3 - 66 -
+
+- 67 -
+
+Appendix V
+- 68 -
+
+

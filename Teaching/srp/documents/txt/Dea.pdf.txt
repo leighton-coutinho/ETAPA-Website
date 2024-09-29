@@ -1,0 +1,1625 @@
+van Lierop 2
+ACKNOWLEDGEMENTS
+I would like to thank Prof. Ahmed El-Geneidy for his constant support, availability, and guidance throughout the development of this research project. I am also grateful to Prof. Brian H. Y. Lee for his helpful comments as a second reader. Thanks also to Michael Grimsrud, co-author of the first chapter, for his dedication and constant interest in the development of this research.
+A special thank you also goes out to Le Comit sur le vol de vlo for their support and insight into the development of this research and to all of the dedicated Montreal cyclists who completed the 2012 Montreal Bicycle Theft Survey for their thoughtful responses; without them, this research would not have been possible. Thank you also to Mr. Daniel Schwartz for the excellent tech support that he provided throughout the data collection process and to Mr. Daniel Bergeron from the Agence Metropolitaine de Transport (AMT) for providing the O-D survey data used in part of the study.
+I would also like to express my gratitude to all of the members of the Transportation Research at McGill (TRAM) team for their help with the survey, suggestions on the analysis, and friendship.
+
+van Lierop 3
+ABSTRACT 1
+Currently, bicycle theft often goes unnoticed and is largely unchallenged. The present research brings attention to this issue by analyzing the multifaceted problem of bicycle theft in Montreal, Quebec, Canada. A bilingual online bicycle theft survey was designed for this purpose and answered by 2,039 Greater Montreal residents, yielding 1,922 usable responses. This paper tries to understand bicycle theft through answering the questions of `who,' `what,' `where,' `how,' and `when.' Findings from this study are useful to better understand and ultimately decrease bicycle theft in Montreal, but can also be beneficial for cyclists, police, and policy makers in other cities aiming to decrease bicycle theft.
+Key words: cycling  theft  victimization  Montreal  bicycle parking  logit  cycling facilities
+Actuellement, le problme de vol de vlo suscite peu d'attention et gnre peu de rponses. Le prsent projet de recherche porte l'attention  cette problmatique en analysant le problme complexe du vol de vlo  Montral, au Qubec, au Canada.  cette fin, un sondage en ligne bilingue a t conu auquel 2039 personnes rsidant dans le Grand Montral ont rpondu, produisant 1922 rponses utilisables. Cette tude vise  apporter une meilleure comprhension du vol de vlo en rpondant aux questions : Qui? Quoi? O? Comment? Quand? Les rsultats de cette tude servent  mieux comprendre le vol de vlo afin de rduire de tels incidents  Montral, mais peuvent galement tre utiles pour les cyclistes, pour la police, et pour les responsables de la formulation des politiques publiques dans d'autres villes voulant diminuer l'incidence de vol de vlo.
+Mots-cls : cyclisme  vol  victimisation  Montral  stationnement vlo  logit  quipements vlo
+
+van Lierop 4
+ABSTRACT 2
+Fear of bicycle theft and related vandalism discourages bicycle usage. The present study recognizes this problem and aims to understand whether or not users are willing to pay for secured bicycle parking in Montreal, Canada by examining the following research questions: 1) Are users willing to incur some of the extra cost of improving bicycle parking infrastructure? 2) Of those willing to pay, what are their common characteristics? and 3) Is there a distinction between the characteristics of those willing to pay, and those that are able to pay? Results from a bilingual online bicycle theft and parking survey provided 1,533 responses about cyclists' willingness to pay for secured bicycle parking. Forty-three percent would be willing to pay at least $0.50 per day for secured parking, and the highest amount that some participants are willing to pay is $15.00. Findings from this study demonstrate that cities will benefit from improving their cycling infrastructure by installing more secured bicycle parking facilities and cyclists who state that risk of theft influences their decision to cycle are more likely to pay for secured parking. The results make clear that pricing of secured bicycle facilities should remain low to ensure that the security provided by paid bicycle parking always remain an incentive to use a bicycle.
+Key words: cycling  bicycle parking  security  willingness to pay  theft  Montreal  logit  cycling facilities
+La peur du vol et du vandalisme de vlo dcourage l'usage du vlo. Partant de ce principe, le prsent projet d'tude vise  dterminer si les cyclistes seraient prts ou non  payer pour l'usage de stationnement de vlo  Montral, Canada en posant les questions suivantes : 1) Les cyclistes seraient-ils prts  absorber le cot supplmentaire de l'amlioration des quipements de stationnement de vlo? 2) Quels sont les caractristiques qui runissent ceux qui seraient prts  payer ces frais? 3) Y a-t-il une diffrence en termes de caractristiques entre ceux qui seraient prts  payer et ceux qui sont en mesure de payer? Un sondage en ligne bilingue a produit 1533 rponses concernant le consentement  payer pour le stationnement de vlo scuris. Quarante-trois pourcent accepteraient de payer au moins $0.50 par jour pour le stationnement de vlo scuris; certains seraient prts  payer jusqu' $15.00. Les dcouvertes de cette tude de recherche dmontrent que les villes bnficieront d'une amlioration des quipements vlos en termes d'installation de stationnements plus scuriss. De plus, les cyclistes qui dclarent que la peur du vol joue un rle dans leur dcision de se dplacer ou non en vlo font preuve d'une volont de payer plus cher pour le stationnement de vlo scuris. Les rsultats de cette analyse dmontrent clairement que l'usage des quipements de vlo scuriss devrait demeurer peu cher afin d'assurer que la scurit qu'apporte le stationnement de vlo scuris continue  servir de motivation pour l'usage du vlo.
+Mots-cls : cyclisme  stationnement de vlo  scurit  consentement  payer  vol  Montral  logit quipements vlo
+
+van Lierop 5
+TABLE OF CONTENTS
+ACKNOWLEDGEMENTS ................................................................................................................ 2 ABSTRACT 1.................................................................................................................................... 3 ABSTRACT 2.................................................................................................................................... 4 LIST OF TABLES................................................................................................................................ 7 LIST OF FIGURES ............................................................................................................................. 7 PREFACE......................................................................................................................................... 8
+CHAPTER 1............................................................................................................................. 9
+INTRODUCTION.......................................................................................................................... 9 LITERATURE REVIEW ................................................................................................................. 10 DATA AND METHODOLOGY.................................................................................................. 11 WHO: Who are the victims of bicycle theft? ...................................................................... 14
+Montreal bicycle theft survey participants...................................................................... 14 Factors associated with theft ............................................................................................ 14 WHERE: Where does bicycle theft occur most frequently, and where is it perceived to occur most frequently? ......................................................................................................... 18 Experienced and perceived theft .................................................................................... 18 Bicycle Parking .................................................................................................................... 20 WHAT: What kinds of bicycles are most commonly stolen?............................................. 22 Stolen bicycles and bicycle parts..................................................................................... 22 HOW: How are bicycles most commonly stolen?.............................................................. 23 Theft technique ................................................................................................................... 23 WHEN: When are bicycles most likely to be stolen?.......................................................... 24 Seasonality and time of day.............................................................................................. 24 Before and after bicycle theft........................................................................................... 25 Bicycle recovery.................................................................................................................. 26 DISCUSSION ............................................................................................................................. 26 CONCLUSIONS ........................................................................................................................ 27
+
+van Lierop 6
+CHAPTER 2........................................................................................................................... 30
+INTRODUCTION........................................................................................................................ 30 BICYCLE PARKING................................................................................................................... 31 CONTINGENT VALUATION (CV) / WILLINGNESS TO PAY (WTP) METHOD......................... 32
+Strengths and weaknesses................................................................................................. 32 Improving the public realm ............................................................................................... 33 Transportation infrastructure improvements.................................................................... 34 Bicycle parking and security ............................................................................................. 35 STUDY CONTEXT....................................................................................................................... 36 DATA AND METHODOLOGY.................................................................................................. 36 SUMMARY STATISTICS .............................................................................................................. 37 Cycling habits ...................................................................................................................... 39 Theft preventing attitude ................................................................................................... 41 Household income.............................................................................................................. 42 DETERMINANTS OF WTP .......................................................................................................... 43 Choice of variables............................................................................................................. 43 Binary Logit ........................................................................................................................... 44 Ordered Logit ...................................................................................................................... 46 Binary Logit that accounts for ability to pay ................................................................... 48 CONCLUSION AND DISCUSSION........................................................................................... 49
+AFTERWORD................................................................................................................................. 51 REFERENCES................................................................................................................................. 52 APPENDIX ..................................................................................................................................... 56
+
+van Lierop 7
+LIST OF TABLES
+Table 1: Montreal bicycle theft survey and origin-destination survey participants .......... 12 Table 2: Binary Logit model ....................................................................................................... 14 Table 3: Summary statistics ........................................................................................................ 38 Table 4: binary Logit (all participants) ..................................................................................... 45 Table 5: Ordered Logit (all participants) ................................................................................. 47 Table 6: binary Logit (participants with annual income greater than $60,000 only) ........ 49
+LIST OF FIGURES
+Figure 1: Difference in values between stolen and current bicycles.................................. 16 Figure 2: Comparison of locks used on stolen bicycles and locks used on current bicycles ........................................................................................................................................ 17 Figure 3: (a) Bicycle thefts within the five-year period between June 2007 and May 2012 and ............................................................................................................................................... 19 Figure 4: Bicycle racks................................................................................................................ 21 Figure 5: Number of cyclists and number of thefts per month............................................. 24 Figure 6: Survey participants' WTP per price category ......................................................... 39 Figure 7: Differences in WTP amongst survey participants who ranked reasons for cycling as `very' or `extremely' important............................................................................................ 40 Figure 8: Differences in WTP amongst survey participants who do and do not have insurance for their bicycle(s)..................................................................................................... 42 Figure 9: Differences in WTP based on annual income ........................................................ 42 Figure 10: Differences in WTP based on the price of cyclists' current bicycle................... 43 Figure 11: Prototype for educational poster........................................................................... 51
+
+van Lierop 8
+PREFACE
+In recent years planners and transportation specialists have begun to promote more sustainable urban transportation systems that include a strong presence of well-used pedestrian and cycling infrastructure. This shift from car-oriented development to emphasizing the need for improved active transportation networks comes largely as a response to the negative impacts that automobiles have had in terms of air pollution, road accidents, and congestion. As a result, many cities have reacted by adopting policies that promote active modes of transportation, such as walking and cycling due to their positive environmental, economic, health and social benefits.
+Transportation planners are developing more sustainable and efficient alternatives with the goal of fulfilling mobility needs without generating the negative consequences associated with automobile use. However, a large focus has been placed on improving cycling networks (paths and lanes), often leaving the planning of terminals (parking facilities) as an afterthought.
+As cities continue to promote the use of the bicycle as a preferred mode, transportation professionals must maximize the benefits of their investments by planning both bicycle networks, as well as secure and efficient bicycle parking facilities. Cities need to recognize the negative consequences associated with bicycle theft and take preventative actions by aiming to create urban spaces that encourage cycling and decrease instances of bicycle theft. This research project aims to better understand bicycle theft and tries to fill the gap concerning the security, availability, and pricing of bicycle parking facilities. It recognizes that a major concern for cyclists is bicycle theft and, therefore, seeks to answer questions about the security and availability of bicycle parking, as well as about cyclists' willingness to pay for secured bicycle parking facilities.
+The project is divided into two distinct chapters; the first examines the state of bicycle theft in Montreal, addressing questions about the `who,' `what,' `where,' `how,' and `when' of theft to better understand how Montreal cyclists are effected by bicycle theft and vandalism in the region. Building on the findings of chapter one, chapter two focuses on understanding what kind of cyclists are willing to pay for secured bicycle parking in Montreal, and makes suggestions for an appropriate pricing scheme. The first chapter was presented at the 92nd Transportation Research Board Annual Meeting, Washington D.C. as van Lierop, D., Grimsrud, M., & El-Geneidy, A. (2013). Breaking into bicycle theft: Insights from Montreal, Canada. While the focus of this project is on bicycle theft and bicycle parking facilities in the Montreal region, it is expected that many of the findings and methods can be adapted for use by transportation planners in other cities.
+
+CHAPTER 1
+
+van Lierop 9
+
+Breaking into bicycle theft: Insights from Montreal, Canada
+INTRODUCTION
+Planners and transportation specialists are aiming to improve pedestrian and cycling infrastructure in an attempt to promote urban futures that are not heavily reliant on the personal automobile. Many cities have adopted policies that promote active modes of transportation such as walking and cycling due to their positive environmental, economic, health and social benefits (Dill, 2009; Gordon-Larsen, Nelson, & Beam, 2005). While much of the recent research in active transportation aims to understand cyclists' experience and satisfaction with the built environment, few studies evaluate their opinions about the security and availability of bicycle parking facilities. Facilitating an increase in bicycle mode share requires planning both terminals (parking facilities) and cycling networks (paths and lanes). This research aims to better understand bicycle theft and tries to fill the gap concerning the safety and availability of bicycle parking facilities. As bicycles become a more popular form of transportation, planners and transportation researchers will need to consider how to create urban spaces that encourage cycling and discourage bicycle theft.
+This paper recognizes that a major concern for cyclists is bicycle theft and therefore seeks to answer five basic questions: 1) who are the victims of bicycle theft; 2) where does bicycle theft occur most frequently, and where is it perceived to occur most frequently; 3) what kinds of bicycles are most commonly stolen; 4) how are bicycles most commonly stolen; and 5) when are bicycles most likely to be stolen; as well as examining trends. The data for this research is a result of a detailed online survey conducted in Montreal, Quebec, Canada specifically for this purpose. The survey included demographic, travel and parking behavior, theft history, and spatial questions to better understand the factors influencing bicycle theft in Montreal. Although the paper answers specific questions in relation to bicycle theft in the Montreal region, transportation planners and engineers in other cities can benefit from the findings as it gives some insights about the nature of bicycle theft as well as the attitudes of cyclists towards this issue.
+
+van Lierop 10
+LITERATURE REVIEW
+As cities continue to propose transportation plans that encourage the use of bicycles as a sustainable alternative to the automobile, and bicycles become an increasingly popular form of transportation, planners and transportation researchers need to be aware of the growing opportunities for bicycle theft. The monetary value, availability, and utility of the bicycle have made it become a popular target for theft. Findings from the International Crime Victim Survey (ICVS) indicate that bicycle theft is the highest per bicycle owner in cities where bicycles are most popular and that from the 30 cities included in the study, cyclist are (slightly more than) four times as likely to be victims of bicycle theft than are automobile owners to be victims of automobile theft (van Dijk, van Kesteren, & Smit, 2007).
+Gamman, Thorpe, and Willcocks (2004) claim that thefts are not properly recorded to the police because they are often seen as being a low crime priority. Johnson, Sidebottom, and Thorpe (2008) state that bicycle theft is a crime that frequently goes unnoticed and is largely unchallenged by authorities. Although no academic attention has been given to the underreporting of bicycle theft in the literature, many respondents in the Montreal Bicycle Theft Survey indicate that they did not report the crimes due to doubt that police would act on these instances of crime. Within the field of criminology, Routine Activity Theory explains that for most criminal acts to be committed likely offenders, suitable targets, and a lack of a capable guardian is required. This theory provides temporal predictions about when crime rates could be higher (L. Cohen & Felson, 1979). Survey participants made clear in their responses that bicycles are indeed suitable targets, and that police do not act as suitable guardians who actively protect against bicycle theft. A clear disconnect exists between cyclists' individual efforts to decrease instances of theft (i.e. by using strong locks, parking in well-lit areas, always taking their bicycle inside, etc.), and the apparently minimal effort by local police. While there is little academic research about bicycle-related crime, several studies have identified that bicycle theft is a problem for cycling communities (Bachand-Marleau, Larsen, & El-Geneidy, 2011; Gamman, et al., 2004; Sidebottom, Thorpe, & Johnson, 2009; Zhang, Messner, & Liu, 2007).
+Within a Chinese context, Zhang et al. (2007) used data collected in the city of Tianjin to explore social and legal aspects of bicycle theft victimization. The authors focused on neighborhood deviance and crime levels, and found that neighborhood poverty level is a significant risk factor in bicycle theft victimization. Gamman et al. (2004) focused on the need for bicycle-specific and theft-preventing urban design in the UK and elsewhere in Europe. These authors suggested best practice policies to increase the security of bicycle parking facilities. Meanwhile, Sidebottom et al. (2009) conducted a study in London and Brighton, UK, aiming to understand whether instructional stickers placed on bicycle parking facilities would encourage cyclists to park and lock their bicycles more securely in public spaces. Bachand-Marleau et al. (2011), in their research on bicycle and transit integration in Montreal, found that 20% of surveyed Montreal cyclists reported a lack of appropriate parking facilities or mentioned fears about theft.
+
+van Lierop 11
+Many studies have assessed cycling behavior and cyclists' preferences of bicycle specific infrastructure (such as bicycle lanes, boulevards, and paths) (Aultman-Hall, Hall, & Baetz, 1997; Dill & Carr, 2003; Handy, Boarnet, Ewing, & Killingsworth, 2002; Larsen, Patterson, & El-Geneidy, 2011; Tilahun, Levinson, & Krizek, 2007; Winters, Brauer, Setton, & Teschke, 2010). However, the abovementioned studies are unique in identifying that with a rise in bicycle mode share comes and increase in the opportunity for bicycle theft, thereby increasing the need for secure bicycle parking facilities. This study specifically contributes to the literature by providing an analysis of the multifaceted problem of bicycle theft in Montreal and by evaluating cyclists' opinions about the security and availability of bicycle parking facilities in the region.
+DATA AND METHODOLOGY
+The City of Montreal endeavors to increase cycling mode share in the region by developing bicycle facilities throughout the area (Division du Dveloppement des Transports, 2008). According to the 2008 OrigineDestination (O-D) survey, which is a regional transportation survey that is conducted every five years, the mode share for cycling in the region of Montreal is 1.2% of all trips (Agence Metropolitaine de Transport (AMT), 2008). This mode share resembles the national average (Canada, 2010; Pucher & Buehler, 2005). To increase the overall mode share of bicycle trips, Montreal's 2008 Transportation Plan encourages cycling for basic transportation as a part of the development program for reinventing Montreal within the next ten years (Division du Dveloppement des Transports, 2008). The city's transportation plan includes goals that involve interventions for both increasing the bicycle path network and improving bicycle parking facilities. These goals include doubling the length of the cities' bicycle paths, updating the existing cycling network, and increasing the number of bicycle racks by 500% by means of public-private partnerships. According to the Service de police de la Ville de Montreal (SPVM), the city's police department, an average of approximately 2,500 bicycles are reported stolen every year. The SPVM believes this number represents only a small proportion of all bicycle thefts taking place in the region (Tremblay & Letendre, 2011).
+To better understand bicycle theft in and around Montreal, a bilingual online survey was conducted in the region.1 Given the limitations of online surveys, particularly for overrepresentation of certain groups, a variety of media were used to ensure a broad cross-section of the public was reached. The survey was publicized through a combination of email newsletters, mailing lists, several newspaper articles in French and English, a radio interview, and various social networking media. Flyers advertising the survey were distributed to several bicycle shops throughout the region. These measures, as recommended by Dillman, Smyth and Christian (2009), allowed for a broader exposure and presumably reduced sample bias that can be associated with online surveys. Due to the title of the survey, the Montreal Bicycle Theft Survey, the
+1 A copy of the survey is available online at: http://tram.mcgill.ca/Teaching/srp/documents/Dea.pdf
+
+van Lierop 12
+survey may have attracted more victims than non-victims of bicycle theft (50% of the respondents had at least one bicycle stolen). However, previous research, unrelated to theft, also found that 50% of cyclists had been victims of bicycle theft (Bachand-Marleau, Lee, & El-Geneidy, 2011). The survey was available online for approximately one month in the late spring of 2012, and it yielded a total sample of 1,922 usable responses from 2,039 individuals. This is slightly higher than the count of bicycle-riding adults in the regional travel survey, which samples 5% of the region's population (Agence Metropolitaine de Transport (AMT), 2008). Table 1 highlights the demographic characteristics of participants both in the Montreal Bicycle Theft Survey and the O-D survey and includes both percentage and count figures. In this table, the total number per cell does not always add up to the total number because participants always had the option of leaving the question blank.
+
+TABLE 1: MONTREAL BICYCLE THEFT SURVEY AND ORIGIN-DESTINATION SURVEY PARTICIPANTS
+
+2012 Bicycle Theft Survey
+
+All Survey
+
+Logit
+
+2008 Origin-Destination Survey (Adult)
+
+Respondents
+
+Victims
+
+All Bicyclists
+
+All
+
+GENDER
+
+Male
+
+58% (1,037) 60% (233) 60% (612) 65% (1,029) 47%
+
+(58,890)
+
+Female
+
+42% (738) 40% (155) 40% (400) 35% (548) 53%
+
+(65,563)
+
+AGE
+
+Average Age
+
+37 38 38 42
+
+48
+
+18-29
+
+30% (542) 27% (104) 29% (290) 24% (372) 16%
+
+(19,750)
+
+30-39
+
+37% (658) 37% (143) 36% (362) 22% (343) 16%
+
+(20,182)
+
+40-49
+
+17% (301) 16% (64) 17% (167) 25% (395) 21%
+
+(25,929)
+
+50-64
+
+14% (254) 18% (68) 17% (167) 24% (371) 28%
+
+(34,983)
+
+65+ 2% (41) 2% (9) 2% (25) 6% (96) 19% (23,609)
+
+HOUSEHOLD SIZE
+
+One
+
+21% (369) 22% (82) 19% (190) 22% (346) 15%
+
+(18,203)
+
+Two
+
+43% (755) 40% (153) 44% (433) 34% (539) 38%
+
+(47,008)
+
+Three
+
+19% (335) 18% (70) 19% (184) 20% (310) 19%
+
+(24,121)
+
+Four
+
+12% (213) 14% (55) 13% (130) 17% (270) 19%
+
+(23,788)
+
+Five or More
+
+6%
+
+(100)
+
+5%
+
+(20)
+
+6%
+
+(56) 7% (112) 9%
+
+(11,333)
+
+OCCUPATION
+
+Employed Full-time
+
+64% (1,133) 66% (253) 65% (653) 59% (935) 52%
+
+(64,439)
+
+Employed Part-time
+
+7%
+
+(130)
+
+9%
+
+(33)
+
+7%
+
+(71) 9% (135) 6%
+
+(7,105)
+
+Student
+
+21% (370) 18% (68) 20% (202) 13% (200) 8%
+
+(9,872)
+
+Retired
+
+3% (50) 2% (9) 3% (29) 11% (181) 25% (31,057)
+
+Other
+
+6%
+
+(100)
+
+5%
+
+(21)
+
+5%
+
+(47) 8% (126) 10%
+
+(11,936)
+
+INCOME (household)
+
+<$20,000
+
+14% (245) 10% (38) 12% (118) 15% (186) 12%
+
+(10,217)
+
+van Lierop 13
+
+2012 Bicycle Theft Survey
+
+All Survey
+
+Logit
+
+2008 Origin-Destination Survey (Adult)
+
+Respondents
+
+Victims
+
+All Bicyclists
+
+All
+
+$20,000 - $40,000
+
+18% (305) 19% (69) 17% (157) 24% (310) 22%
+
+(19,849)
+
+$40,000 - $60,000
+
+18% (313) 18% (68) 17% (164) 22% (278) 21%
+
+(18,877)
+
+$60,000 - $80,000
+
+14% (234) 16% (58) 15% (138) 16% (203) 16%
+
+(14,502)
+
+$80,000 - $100,000
+
+13% (216) 13% (47) 13% (126) 10% (131) 11%
+
+(10,186)
+
+>$100,000
+
+23% (391) 24% (90) 26% (245) 13% (166) 17%
+
+(15,009)
+
+N*
+
+1,922
+
+388
+
+1,012
+
+1,577
+
+124,453 (all modes)
+
+*The total number of survey participants was 2,039. Of these responses 1,922 were usable. Almost all of
+
+the usable responses came from current cyclists. The total number of current cyclists was 1,896.
+
+As mentioned earlier, this paper tries to answer several questions in relation to bicycle theft. The first question asks who the victims of bicycle theft are. This question is answered through a description of the survey participants and the differences between cycling theft victims and non-victims. Basic sociodemographic information about the survey participants is presented through a series of summary statistics. This is followed by a binary logit model, which incorporates variables pertaining to socio-demographic status, commuting habits, and bicycle and lock characteristics, and which is used to demonstrate which of these factors most influence survey participants' likeliness to have had their bicycle stolen. Similarly to Zhang et al. (2007), this logit model helps to better understand the risk and protective factors for bicycle theft.
+
+The second question concerns where bicycle theft occurs most frequently, and where is it perceived to occur most frequently. Answering this question involves using a geographic information system (GIS) software to highlight experienced and expected bicycle theft locations on the Island of Montreal. Details about the methodology that was used to better understand where bicycle theft occurred and where it is perceived to occur more frequently is further explained in the section titled `Where.' This is followed by a short discussion about the differences between actual and perceived instances of theft. Cyclists' perceptions and preferences about bicycle parking facilities are also analyzed.
+
+The third, fourth and fifth questions attempt to understand what kinds of bicycles are most commonly stolen, how bicycles are most commonly stolen, and when bicycles are most likely to be stolen, respectively. These questions are answered through a series of descriptive statistics. Figures are used to highlight key findings and to better understand relationships between variables. Also, a brief examination of bicycle recovery is included as are suggestions to improve the security and availability of bicycle parking. The paper concludes with recommendations and suggestions for further research.
+
+van Lierop 14
+
+WHO: Who are the victims of bicycle theft?
+
+Montreal bicycle theft survey participants
+
+The respondents' ages range from 18 to 85. However, 68.9% are 40 years old or younger. Men, accounting for 58% of the respondents, are slightly underrepresented, compared to O-D survey figures (see Table 1 for more details). Most of the respondents are employed full-time and have completed at least an undergraduate degree. Participants generally live in two-person households and 82.3% of participants live in households with fewer than four people. Almost all survey participants (98.6%) have made at least one commuting trip by bicycle in Montreal during the last year. Around 50% of the participants in the survey were subjected to a bicycle theft in their life time as active cyclists. This finding resembles previous studies' (Bachand-Marleau, Lee, et al., 2011).
+
+Factors associated with theft
+
+The binary logit model below is used to further understand how individuals' habits, choices, and sociodemographic status relate to the likeliness of having been a victim of a bicycle theft. Although the model can be helpful to better understand questions about the `who,' `what,' `where,' `how,' and `when' of bicycle theft, it is presented in the section `who' because it measures an individual's odds of having had his or her bicycle stolen. The output of the logit is reported in Table 2.
+
+TABLE 2: BINARY LOGIT MODEL
+Parameters
+
+Bicycle:
+
+Used bicycle
+
+New bicycle (reference)
+
+Value between $500-$1500
+
+Value more than $1500
+
+Less than $500 (reference)
+
+Registration:
+
+Chose not to register
+
+Did not know about registering
+
+Registered (reference)
+
+Lock:
+
+U-lock
+
+Cable lock
+
+Chain lock
+
+Bicycle kept inside
+
+Other locks
+
+No lock (reference)
+
+Coefficient -.227 ---
+-2.491 ** -2.251 **
+---.816 * .142
+---5.385 ** -2.122 ** -2.579 ** -2.243 ** -3.974 **
+---
+
+t-stat -.873
+---9.223 -4.671
+---2.007
+.380 ---
+-10.381 -4.351 -4.668 -6.302 -6.007 ---
+
+Odds Ratio .797 --.083 .105 --.442
+1.152 ---
+.005 .120 .076 .106 .019
+---
+
+van Lierop 15
+
+Parameters
+
+Coefficient
+
+t-stat Odds Ratio
+
+Exposure:
+
+Year round cyclist
+
+.643 *
+
+2.068
+
+1.903
+
+Cycle less than 12 months of the year
+
+---
+
+--- ---
+
+(reference)
+
+Commuting for 4-6 yrs
+
+.070 .227 1.072
+
+Commuting for 7-10 yrs
+
+.534
+
+1.416
+
+1.706
+
+Commuting for more than 10 yrs
+
+.662 *
+
+2.284
+
+1.939
+
+Commuting less than 4 yrs
+
+--- --- ---
+
+(reference)
+
+Socio-demographic: Female
+
+-.506 *
+
+-2.135
+
+.603
+
+Male (reference)
+
+--- --- ---
+
+Age .000 .000 1.000
+
+Constant
+
+4.761
+
+6.262
+
+116.883
+
+All values in Canadian
+
+Dependent variable: stolen bicycle
+
+Dollars
+
+*95% significance **99% significance
+
+Cox & Snell R square = 0.54, Nalgelkerke R square =0.73
+
+Since participants were not obliged to answer all questions in the survey, for the purpose of the logit model, the original data had to be scaled down to a final sample size of 1012 cyclists. Demographic information about the participants who are included in the logit model is highlighted in Table 1. If a participant's bicycle had been stolen, the value of the stolen bicycle or the lock used to lock the stolen bicycle was input into the database; if a participant had not been a victim of bicycle theft, the value of their current bicycle or the lock currently used was input into the database. By using commensurate data describing both participants who have and have not been subject to bicycle theft, including the bicycles (and locks) that were or were not stolen (or overcome), the model is able to determine how the different factors influence a cyclist's likeliness to have had their bicycle stolen.
+
+The model possesses a reasonable amount of explanatory power (Cox & Snell R square = 0.54, Nalgelkerke R square =0.73), and its variable coefficients show the expected relationship directionality (positive or negative). It indicates that bicycle value, awareness about registration, lock type, exposure, and gender are statistically significant. High value bicycles are less likely to have been stolen. This is further illuminated in figure 1. Participants were asked whether they registered their bicycles, both stolen and current.
+
+van Lierop 16
+FIGURE 1: DIFFERENCE IN VALUES BETWEEN STOLEN AND CURRENT BICYCLES The model reports that cyclists who did not register their bicycles were 55.8% less likely to have been victims of bicycle theft than cyclists who did register their bicycles. This could be due to cyclists who knew about registration but consciously chose not to register their bicycles being more aware of the risk of theft, bicycle security, and locking techniques. Another hypothesis is that cyclists who did register their bicycles experienced a false sense of invulnerability and became more careless with bicycle security after registration. The model compares cyclists who use U-locks, cable locks, chain locks, other types of locks, and cyclists who always keep their bicycles inside to cyclists who do choose to not take security measures. The category "other locks" accounts for the many different types of locks cyclists used, such as wheel and combination locks, not specifically named in the logit model. The output of the model makes very clear that using a lock significantly decreases a cyclist's likeliness to have been a victim of bicycle theft compared to not using a bicycle lock. Of the different kinds of locks, U-locks are found to decrease the likeliness of bicycle theft more than other lock types. Figure 2 shows use frequencies for common types of locks on stolen and current bicycles.
+
+van Lierop 17
+FIGURE 2: COMPARISON OF LOCKS USED ON STOLEN BICYCLES AND LOCKS USED ON CURRENT BICYCLES Surprisingly, around 8.5% of the surveyed theft victims neither used a lock nor keep their bicycles inside or on their porch at the time when their bicycle was stolen. In other words, these bicycles were unprotected and unlocked. Also, 10% of all surveyed theft victims did not have a lock at the time when their bicycle was stolen. The difference lies in the fact that some cyclists, although not using a lock, became victims of theft despite taking their bicycle indoors.
+Although the model ranks bicycle value and lock types, it is important to understand that the likeliness for a cyclist to have had their bicycle stolen depends not only on the variables presented in the model, but also on factors not expressed by the model. Factors such as bicycle parking location, the duration that the bicycle was left unattended, and how the bicycle was locked, are not included in the model but might influence bicycle theft. Data about these factors is only available for the stolen bicycle from the 2012 Montreal Bicycle Theft Survey, and therefore cannot be included in the logit model.
+Exposure is partially controlled for in two manners: by comparing participants who cycle twelve months of the year to participants who do not, and by comparing long-time bicycle commuters to those who have been doing so for under four years. Year-round cyclists' likeliness to have been a victim of bicycle theft is 90.3% higher than that of cyclists who do not cycle every month of the year. Similarly, as the number of years that a cyclist has regularly been commuting increases, so does his or her likeliness to have been a victim of bicycle theft. These factors indicate, as expected, that the longer a bicycle is exposed, the more likely it is to be stolen.
+Most notable among socio-demographic characteristics, females are found less likely to have had a bicycle stolen. Although the male-female ratio, 60%-40%, is nearly the same for survey participants generally and theft victims, being female is shown in the model to significantly reduce the likelihood of bicycle theft.
+
+van Lierop 18
+Females seem to be, then, disproportionately represented in other higher-likelihood factors, such as riding an inexpensive bicycle or using no lock. Several survey respondents wrote of women's bicycles seeming less attractive to thieves. "Un remeur urbaine affirme que les velos pout femmes se font moins voles" (English translation by author: An urban legend claims that women's bicycles are less frequently stolen). Other variables that were available for both stolen and non-stolen bicycles that were not included in the model either were not theoretically meaningful, tested to be insignificant in the model, or had high levels of correlation with the existing variables in the model. While only including a small number of variables, the model does make clear that bicycle value, lock type, and exposure time are the most significant factors in determining a cyclist's likeliness to have been a victim of bicycle theft.
+WHERE: Where does bicycle theft occur most frequently, and where is it perceived to occur most frequently?
+Experienced and perceived theft
+Data about Montreal cyclists' home-based bicycle trips from the 2008 Origine-Destination (O-D) survey helps establish cycling frequencies that are needed in order to determine where on the Island of Montreal bicycle theft is most prevalent (Agence Metropolitaine de Transport (AMT), 2008). This data provides the origin locations of 2719 cycling trips and the destination locations of 2742 cycling trips on the Island of Montreal. The difference between origin and destination counts is explained by cyclists commuting from areas that are located off island to the Island of Montreal.
+The Montreal Bicycle Theft Survey (MBTS) provides data about participants' home location and bicycle theft location. It does not, however, provide information about where participants usually park their bicycles on a daily basis. To understand the destination points of cyclists in the Montreal Bicycle Theft Survey, the ratio between the origin and destination points of cyclists in the O-D survey is applied to calculate the ratio between home location and destination points of cyclists in the Montreal Bicycle Theft Survey at the police district level of analysis.
+Although it is most common to collect and analyze data at the borough level, police districts have been used to analyze instances of theft because they are both smaller than boroughs and represented by SPVM stations that are responsible for handling crime within their respective police districts. While 49 police districts exist on the Island of Montreal, there are only 19 boroughs. Police districts can therefore more closely describe theft trends at the neighborhood level. To standardize the number of thefts per police district, accounting for differences in theft opportunity, the z-score of the total number of thefts per police district (from MBTS) is divided by the sum of participants' home locations (from MBTS) and expected destinations (from OD) per police district.
+
+st = standardized thefts per police district x = score of thefts per police district  = mean  = standard deviation y = survey participants' home location z = survey participants' expected destination
+A.
+
+()
+
+van Lierop 19
+
+B.
+FIGURE 3: (A) BICYCLE THEFTS WITHIN THE FIVE-YEAR PERIOD BETWEEN JUNE 2007 AND MAY 2012 AND (B) AREAS ON THE ISLAND OF MONTREAL KNOWN FOR HAVING HIGH INSTANCES OF THEFT
+
+van Lierop 20
+The standardized thefts per police district are mapped by standardized score (figure 3). These maps represent bicycle theft on the Island of Montreal within the five-year period between June 2007 and May 2012 as well as the areas that survey participants identified as being known for having high instances of theft (similarly standardized to expose differences between infrequently bicycled districts).
+The highest standardized score is observed in the downtown police district and identified as the darkest police district on the maps. This is followed by neighboring police districts and the southwestern end of the island. Actual theft counts were over twice as high in the Lower Plateau, a trendy and densely populated neighborhood bordering downtown to the north, as anywhere else, but were tempered by very high rates of bicycle use. Conversely, the high rates featured for sprawling West Island neighborhoods largely reflect very low ridership.
+When asked to identify which areas of the city were known to have high instances of bicycle theft by placing a pin on a map, cyclists' responses broadly matched the measured reality, showing a degree of theft awareness, but there were some notable differences. Perceptions of theft were calculated similarly to actual theft; the same formula was applied, but the variable st was replaced with standardized perceived thefts per police district. Results of the analysis show that Old Montreal, to the downtown's east, was perceived as having incidences as high as the downtown, but suffered fewer actual thefts, both in absolute and standardized terms. This pattern of imagined theft occurring farther east (and north) than actual theft can be seen on a larger scale across the island and might reflect conceptions of higher density or lower income areas (similarly situated) as being less safe than wealthier suburbs. Most dramatically, Montral Nord, a traditional immigrant neighborhood far north of downtown, is perceived as a high instance area (after standardization), despite a total absence of thefts reported in that district.
+The apparent disconnect between actual and perceived theft locations suggest that some cyclists might underestimate risk of theft both in their own neighborhoods as well as in others. In general, survey participants perceive bicycle theft to occur most frequently at least 5.5 kilometers from their home location. The actual average distance from participants' home locations to the reported theft locations, however, is 3.2km (for thefts that occurred between June 2007 and May 2012).
+Bicycle Parking
+Johnson et al. (2008) claim that parking and locking habits are closely related to risk of bicycle theft. According to their report, lock type and application, as well as where and to what a bicycle is locked, are the key factors most likely to influence bicycle theft. With regard to bicycle parking, Sidebottom et al. (2009) claim that there is a need for increased locking facilities based on the observation that nearly half of
+
+van Lierop 21
+the parked bicycles in their study were `fly-parked.' Fly-parking, a term coined by Adam Thorpe, refers to the securing of bicycles to street furniture not intended to function as parking facilities (Gamman, et al., 2004). It reflects the appeal of being able to move through the city freely and experience parking near destinations, eliminating the spatial restrictions that are often attributed to the automobile. The data in our survey corroborates Sidebottom et al.'s (2009) finding that nearly half of all stolen bicycles were stolen from fly-parking locations. There appears to be, therefore, a need for an increase in bicycle locking facilities in Montreal. The Montreal Bicycle Theft Survey asked participants to evaluate six different types of bicycle racks with regard to security (figure 4). While racks one through five are found in Montreal, rack six is not publically available in the city. Rack four has the lowest ranking; it has visibly thinner metal bars and is not secured to the sidewalk. Rack six has the highest ranking; it functions as a bicycle locker in which the entire bicycle is stored. In response to a question about which factors cyclists look for when they are locking their bicycle, ease of locking and proximity to destination point are the most highly regarded factors. A place being officially designated as bicycle parking is also deemed important. Cyclists who value parking places that are well lit so that their bicycle is easy to see tend to rank racks two and three higher than the other available rack types in terms of security. In Montreal, these racks tend to be located on the sidewalks of commercial streets, in areas with high levels of pedestrian and cyclist movement.
+FIGURE 4: BICYCLE RACKS photo credit: rack 1- 5 courtesy of author, rack 6: http://www.bikegard.net/photo1.gif
+
+van Lierop 22
+As well as rating bicycle rack types, survey respondents characterized general bicycle parking security and availability at five types of locations: at metro stations, near home, near work or school, in the downtown area, and by grocery stores. Parking security near work or school appears relatively good, with 60% of all responses favorable (either "satisfied" or "very satisfied"), compared to rates around 30-35% for other location types. Even work or school locations, however, show room for improvement, with 20% "unsatisfied" or "very unsatisfied" responses. Parking availability, similarly, appears better at work and school than elsewhere: about 55% favorable compared to corresponding scores around 25-35%. As with security, work and school parking availability could be improved, though. Nearly 30% of respondents were "unsatisfied" or "very unsatisfied."
+Thirty-five percent of written suggestions at the end of the Montreal Bicycle Theft Survey involve parking racks. A factor that might inform decisions about new bicycle parking is cost, and relatedly, cost sharing. Many people were unwilling to pay for secure bicycle parking, for reasons such as cost (39.0% of those unwilling), unfelt necessity (34.9%), or principle (19.4%). "The goal of biking, among others, is to save money", wrote one study participant. A large minority of respondents (37.2%), however, indicated that they would pay something for such improved facilities. Owners of high value bicycles (>$500) are more often willing to pay for secured parking (57%) compared to owners of low value bicycles (32%). Responses suggest that either $1.00 or $2.00 would be ideal rates, at 29.8% and 16.0% acceptability, respectively. Popularity appears to drop off immediately as each dollar value is exceeded, at only 18.4% willing to pay $1.25 and 7.0% at $2.25. These rates are low in comparison to those paid for automobile parking, and secure bicycle parking, such as that pictured as Rack 6 in figure 4 would likely require some subsidy. Compared to automobile parking, however, secure bicycle parking takes much less space per vehicle, and it encourages use of the preferred transportation mode, working to reduce costly traffic congestion while contributing to an active, healthy population and workforce.
+WHAT: What kinds of bicycles are most commonly stolen?
+Stolen bicycles and bicycle parts
+The most frequently stolen bicycles are new bicycles that at the time of the theft were valued between $150 and $500 (27% or 256 of 961 total stolen bicycles). Used bicycles in the same price range (15%) and new bicycles valued between $500 and $1000 (16%) were the second most frequently stolen. Many more used bicycles priced at under $150 (28%) were stolen compared to new bicycles (1%) in the same price range. Owners of high value bicycles more frequently increase protective measures. They use high value locks with 71% of high value bicycle owners using locks valued at more than $40 compared to only 47% of low value bicycle owners. Similarly, users of high value bicycles also more frequently claim to always keep their
+
+van Lierop 23
+bicycles inside as an action to avoid bicycle theft. Around 24% of high value bicycle owners took such protective measures compared to only 13% of low value bicycle owners.
+After a theft, around 36% of participants claimed that they did report the crime to the police. Of the participants who did not report their theft, the majority reported that they did not think it was worth the effort. Only 8.5% of bicycle theft victims had registered their bicycle, and of these people 26.8% did not record the serial number (which would allow victims to positively identify their bicycle on sight). The survey asked participants if they had photos of their bicycle that they could give to the police to assist in an investigation; merely 27.8% of participants reported that they possessed photos for this purpose. Johnson et al. (Johnson, et al., 2008) also report that the majority of bicycle owners cannot provide enough supporting documentation to support in an investigation. The proof-of-ownership problem must be addressed to improve the police's likeliness to recover stolen bicycles and return them to their legitimate owners. Only 2.5% of survey respondents' most recent stolen bicycles had been recovered.
+Not only do victims rarely recover their bicycles, but they often have replacement bicycles stolen as well. While only 961 respondents (about 50%) had been victims of bicycle theft, the total number of bicycles stolen was at least 1890, owing to high numbers of multiple theft victims and of thefts from some victims. A majority (525 respondents) had only once lost a bicycle to theft, but nearly 20% had been victims three times or more. Theft of bicycle parts is about half as frequent overall, but displays a similar pattern of multiple theft victims. The most frequently stolen parts are accessories (40.3%), seats (30.1%), and wheels (20.1%), with handlebars, frames, pedals, breaks, and other parts each stolen in less than 5% of cases.
+HOW: How are bicycles most commonly stolen?
+Theft technique
+Most bicycle theft victims surveyed (52.3%) do not know the means by which the most recent theft occurred (the cut off for most recent thefts was set at 1990). A sizeable minority (20.5%), however, report that their bicycle was simply picked up and moved, echoing the importance of locks evidenced by the logit model. Other commonly reported means include bolt cutters (10.3%), hacksaws (4.5%), and crowbars (2.3%). As was mentioned earlier, 8.5% of victims did not lock their bicycle.
+The theft of bicycle parts can be more easily explained. Only 27.6% of responding victims of parts theft do not know how it happened. Screwdrivers (8.5%), wrenches and Allen keys (4.1% each) are the leading part theft tools reportedly used, but 51.5% of parts theft events described required only pulling the part(s) off. Unfortunately, 60.6% of respondents currently leave removable bicycle parts unlocked. Substantial reduction in theft of removable bicycle parts might be achieved if locking them becomes the norm.
+
+van Lierop 24
+WHEN: When are bicycles most likely to be stolen?
+Seasonality and time of day
+Cycling and theft are both most frequent in summer months. Considering all bicycle thefts reported in the survey, findings illustrate that every calendar month between 2  10% of cyclists on the road had been victims of bicycle theft. Survey participants could report multiple months for riding, but they could not for theft, as detailed information was only collected on the most recent bicycle theft event and/or bicycle part theft event, as applicable. The actual rate for cyclists ever having had a bicycle stolen is about 50%, roughly double the rate for bicycle parts. Figure 5 makes clear that a greater number of bicycles are stolen in months when more bicycles are being used. Theft of bicycle parts shows a similar pattern. Thefts rates peak in July and drop significantly in August even though ridership levels remain similar from May to September. While this drop cannot be explained by the data, it might represent a decrease in the demand of bicycle sales.
+FIGURE 5: NUMBER OF CYCLISTS AND NUMBER OF THEFTS PER MONTH
+
+van Lierop 25
+Bicycles are more frequently stolen during the night (37.0%) than in the morning (9.0%), afternoon (32.3%) or evening (21.7%). In the comment section at the end of the survey many people state that bicycles should not be left on the street at night. One participant claimed that her "last bike was locked to a bike rack outside [her] apartment with a high security U-lock, yet it was stolen overnight. [Now, she is] forced to bring [it] into [her] apartment every night, which is a nuisance." Almost as frequent, however, is afternoon theft (the most frequent time for bicycle parts theft), and over three fifths of bicycle thefts happen at some point during the day, when bicycles are likely to be parked at a destination other than the rider's home and are presumably visible to passers-by. There is, therefore, substantial potential for theft reduction by improving bicycle parking facility provision and locking habits.
+Before and after bicycle theft
+Many current cyclists have at one or more times been victims of bicycle theft, rarely to see their rides returned. While this fact is itself unsettling, it is possibly more problematic, for those attempting to increase regional bicycle commute mode share, that some victims do not replace their stolen bicycles (7.3%). An interesting counterpoint is that among those who do, or who have their stolen bicycle recovered, 24% report increased cycling, compared to 15.5% who cycle less and 60.5% who report no change. One explanation is that replacements for both new and used stolen bicycles are more often new than used, and are possibly better suited to riders' travel needs, enabling use for longer or more difficult trips. Unclear from this study (because the vast majority of respondents do commute by bicycle or have done so) is the degree to which theft discourages non-riders from attempting bicycle commuting.
+Bicycle theft victims who continue cycling appear to make efforts to adapt and reduce their risk of further theft. Around 61.1% of theft victims subsequently change the type of lock that they use. Of bicycles that were replaced or recovered, only 3% are usually left unlocked and 71.1% are currently locked with U-locks. Less than a quarter of thefts of bicycle parts motivate a lock type change, but this does not necessarily indicate irresponsiveness, as victims might improve technique, fastening some removable parts and taking others with them into destinations.
+Bicycle registration, although shown in the logit model to relate positively with stolen bicycles, stays at 8.5% for both stolen bicycles and theft victims' current bicycles. However, only 40.2% of those who had registered their stolen bicycles chose also to register their current bicycles, evidencing a lack of faith among those who have had personal experience with registration.
+
+van Lierop 26
+Bicycle recovery
+Of all stolen bicycles, as mentioned above, only 2.4% had been recovered. This small sample size reduces the reliability of information that characterizes recovered bicycles in comparison to unrecovered bicycles. However, some statistics appear relevant and bear mention. Two thirds of recovered bicycles were reported stolen, compared to only 34.8% of unrecovered bicycles. In the open-ended questions at the end of the survey, several respondents claimed that they had recovered their unregistered and unreported stolen bicycles by finding them again after a theft occurred. Recovered bicycles had been photographed 37.5% of the time and 12.5% were registered, in contrast to unrecovered bicycles (26.8% photographed and 8.2% registered). Reporting a bicycle theft should, and does, substantially improve the likelihood of recovery (testing significant at the 99% confidence interval [see Table 2]), if still to a very low rate. Photographing and registering bicycles also appear to have some positive effect, although the numbers involved are too low to make a strong claim. It is interesting that a third of recovered bicycles were not reported stolen: perhaps respondents recovered them on their own. Most compelling, however, is the evidence that, while measures such as reporting, photographing, and registering bicycles might improve chances of recovery, they offer little assurance that a bicycle will be returned. While only 22 stolen bicycles (2.3% of most recent thefts) were reported stolen, registered, and photographed, indicating substantial room for improvement on the part of owners, not one of these bicycles had been recovered at the time of the survey, suggesting currently insufficient police attention to bicycle theft that is echoed in 24% of written comments.
+DISCUSSION
+This research can be helpful for different regions and not only the City of Montreal in their efforts to better understand bicycle theft and upgrade theft-preventing infrastructure as it attempts to increase bicycle mode share in their regions. It provides an account of bicycle theft that includes information and instances not available from official police reports. Results from this study have driven public policy and are currently being used by the City of Montreal to create an educational theft-preventing campaign in the borough of Rosemont-Petite-Patrie. The study makes clear that public agencies should act to prevent theft by adding bicycle parking capacity and ensuring that parking facilities are strong (thick metal well-anchored), easy to properly use (locking to bicycle frame and removable parts), visible, and located near destinations such as work, school, shopping, and recreation. Improvements to bicycle parking facilities should also include removing unsafe racks and installing alternative racks that are secured to the ground and feature thick metal bars at an appropriate height for easy and effectual locking. Other actions that public agencies can take to help reduce bicycle related crime, are to fit both new and existing racks with prominent signage showing proper locking technique, and to offer workshops or audio-visual materials to schools and other organizations that provide information about bicycle theft prevention, stolen bicycle recovery, and registration. Police districts, such as those located in the downtown core, that are most in need of bicycle
+
+van Lierop 27
+parking improvements, were also the same areas that were known for having high rates of bicycle theft per rider. It is important to note that bicycle parking improvement should be determined based on field observations of existing rack quantity, quality, and vacancies, and not only based on theft statistics. Police departments need to be more transparent in the area of bicycle theft to report recovery rates and organize registration campaigns with local cycling agencies. Although bicycle registration had a little role in recovery, it is recommended to increase awareness of these services among cyclists and at bicycle shops.
+Theft can likely be reduced by using better locks, securing removable parts, and practicing safe locking techniques. Although public agencies in cities are advised to take leading roles in bicycle theft prevention, cyclists must recognize that bicycles are likely targets of crime, and take preventative actions by always locking their bicycle and ensuring that frames, as well as easily removable parts, are secured. While the police should improve the transparency of bicycle theft investigation procedures, cyclists should register and photograph their bicycles, and report instances of theft to the police to improve the chance of recovery.
+This study focuses on Montreal and many factors might be different in other cities or regions, but the magnitude both of the problem of bicycle theft and of the under-reporting seen here are compelling. Information on bicycle theft available through official means in other cities might be similarly incomplete and insufficient so other cities might benefit from conducting similar surveys. Too, insight gained here about cyclists' parking facility preferences and locking habits and effectiveness might be broadly applicable elsewhere, and might be used to influence cities to promote specific types of bicycle racks and education programs. Findings about cyclists' opinions on police involvement can be useful to assist in policy changes that improve the transparency of theft investigation procedures in hopes of increasing recovery rates and bicycle mode share.
+CONCLUSIONS
+This research has attempted to understand bicycle theft by asking 1) who are the victims of bicycle theft; 2) where does bicycle theft occur most frequently, and where is it perceived to occur most frequently; 3) what kind of bicycles and bicycle parts are most commonly stolen; 4) how are bicycles and bicycle parts most commonly stolen; and 5) when are bicycles most likely to be stolen. With regard to understanding who the victims of bicycle theft are, the most striking finding is that over 50% of participants were subjected to a bicycle theft in their life time as active cyclists. The logit model makes clear that the monetary value of a bicycle, lock type, and a cyclist's gender influence his or her likeliness to have been a victim of bicycle theft. Thematic maps make clear where thefts occur, and where thefts are perceived to occur. The maps illustrate that theft rates are, and are perceived to be, most prominent in the downtown police districts. However,
+
+van Lierop 28
+there appears to be a disconnect between actual and perceived theft locations in many regions, which suggests that some cyclists might underestimate risk of theft in their own neighborhoods.
+The majority of theft victims had only once lost a bicycle to theft, but nearly 20% had been victims three times or more. Theft of bicycle parts is about half as frequent overall, but displays a similar pattern of multiple theft victims. Concerning what kinds of bicycles are mostly commonly stolen, the results show that the most frequently stolen bicycles are new bicycles, which at the time of the theft were valued between $150 and $500. Many more used bicycles priced at under $150 were stolen compared to new bicycles in the same price range. Although cyclists are generally aware of how parts were stolen from their bicycles, the means by which the most recent theft of a whole bicycle occurred is unknown for the majority of victims.
+With respect to understanding when bicycles are most likely to be stolen, theft evidently occurs most frequently in months when more bicycles are being used. Because the majority of thefts occur during the day, when bicycles are likely to be parked at a destination other than the rider's home and presumably visible to passers-by, there is substantial potential for theft reduction by improved bicycle parking facility provision and locking habits. Pertaining to bicycle parking facilities, respondents are largely unsatisfied with current parking facility security and availability at most destinations, and rack types such as racks 2, 3, and 6, in figure 4 are perceived as being more secure than others.
+In future studies it would be interesting to track changes in theft frequency from year to year. In the current study, over a quarter of both complete bicycle thefts and partial bicycle thefts were reported to have occurred in 2011 and 2012, despite theft events being mentioned as long ago as 1990 or earlier. However, because respondents only detailed the most recent theft (as well as noting the number of thefts they have experienced), previous incidents for victims of multiple thefts are not dated and underrepresented. Additionally, people who had been bicycle theft victims in Montreal in the distant past are more likely than recent local victims to have since moved out of the region and not filled out the survey. Subsequent bicycle theft surveys might benefit by including questions for timing of all thefts, rather than just the most recent, as well as amount of time having lived in the chosen region and at the current address. Future research should also include putting the collected data to more extensive use, by modeling the relationships between the characteristics of the victims, as well the observed differences between the reported and perceived locations of bicycle theft.
+This research, based on a survey of cyclists in Montreal, Quebec, Canada, provides new insights into bicycle theft. The main findings from this study can not only be useful to better understand and ultimately decrease bicycle theft in Montreal, but can also be beneficial for cyclists, police, and policy makers in any city aiming to decrease bicycle theft. The creation of urban spaces that encourage cycling and discourage theft nurtures
+
+van Lierop 29
+Montreal's cycling culture and encourages the use of the preferred transportation mode, working to reduce costly traffic congestion while contributing to an active, healthy population and workforce.
+
+CHAPTER 2
+
+van Lierop 30
+
+Secure investment for active transport: Willingness to pay for secured bicycle parking in Montreal, Canada
+INTRODUCTION
+In recent years, planners and transportation professionals have begun to promote more sustainable urban transportation systems that include a strong emphasis on well-designed pedestrian and cycling infrastructure. Much of the recent research focuses on the environmental, economic, health, and social benefits of walking and cycling, and often includes discussions about the opinions of active transportation users on the built environment (Dill, 2009; Gordon-Larsen, et al., 2005). While there are much literature about user experiences of cycling on bicycle lanes, boulevards, and paths, few studies evaluate cyclist perceptions about the security and availability of bicycle parking facilities, especially paid bicycle parking. Much like motorized vehicles, bicycles are more often kept in parking or storage facilities rather than being ridden by a cyclist (Manville & Shoup, 2005). While the development of cycling networks deserves a great amount of attention, the perhaps slower-paced study of bicycle parking must not be left behind as cities continue to promote active transportation and cycling becomes a more normative rather than alternative urban transport mode.
+Previous studies have acknowledged that fear of theft and bicycle related vandalism discourages bicycle usage (Bachand-Marleau, Lee, et al., 2011; Krizek, 2006; Schneider, 2013; van Lierop, Grimsrud, & El-Geneidy, 2013). The present study recognizes this problem and aims to understand whether or not users are willing to pay for secured bicycle parking by examining the following research questions: 1) Are users willing to incur some of the extra cost of improving bicycle parking infrastructure? 2) Of those willing to pay, what are their common characteristics? and 3) Is there a distinction between the characteristics of those willing to pay, and those that are able to pay? The data used for this research is from a detailed online survey conducted in Montreal, Quebec, Canada, designed to better understand bicycle theft in the region. Although the survey includes detailed information about both travel and parking behavior, as well as cyclists' theft histories, this research primarily uses the socio-demographic data and information about
+
+van Lierop 31
+participants' willingness to pay for secured bicycle parking to analyze the abovementioned research questions. Even though this research analyses the amount cyclists are willing to pay per day for secured bicycle parking in the Montreal region specifically, transportation professionals and planners in other cities can benefit from these findings as it provides insight into a new area of research.
+BICYCLE PARKING
+Transport Canada (2010) recognizes that providing secure bicycle parking is necessary to promote the use of the bicycle as a mode of transportation. The organization identifies two main types of bicycle parking required by cyclists. The first is short-term, on-street parking, which can encourage individuals to use a bicycle for utilitarian trips such as shopping and running other errands. The second is long-term bicycle parking, which should be developed to promote the use of a bicycle for commuting, especially to work and school. Commuters who travel by bicycle often need a place to store their bicycles for relatively long periods of time. Some of these commuters also integrate the use of transit into their trips, thereby requiring long-term bicycle facilities at transit nodes, rather than at final destinations. Long-term bicycle parking should, therefore, significantly reduce the risk theft and vandalism, and prevent these factors from discouraging individuals from using a bicycle (Transport Canada 2010).
+Transport Canada (2010) makes clear that a distinction must not only be made between the use of shortterm and long-term bicycle parking, but also in the design and level of security of these different facilities. Short-term parking is most frequently located in highly visible outdoor locations, used by the general public, and is free of charge. This type of bicycle parking generally has a low level of service, often without weather protection, as well as limited protection against vandalism and theft. Long-term bicycle parking, in contrast, is often made up of bicycle racks or stands in a partially or fully enclosed area, or provided in the form of bicycle lockers that enclose the entire bicycle. Long-term bicycle parking can be located either indoors or outdoors and frequently has higher levels of weather protection and security against vandalism and theft. These facilities often charge a fee for usage and are commonly designed for exclusive use by paying cyclists. These facilities are available on a pay per use basis or assigned for long term rentals (e.g., weekly, monthly, etc.) (Transport Canada 2010).
+In Canada, several examples of paid long-term bicycle parking exist. Toronto's Union Station and Victoria Park Bicycle Stations, for example, charge $2.15 a day, $64.57 for four months, plus a $26.91 membership fee (City of Toronto, 2013). In Montreal, Concordia University's Secure Bicycle Parking Facility charges staff and students $30 a trimester (Sustainable Concordia, 2013). Metro Vancouver's transportation authority, Translink, provides bicycle lockers at transit interchanges for $30 for three months (TransLink, 2013). Though no counterpart currently exists in Canada, the United States-based consulting, management, and development firm Bikestation has engaged in several public-private partnerships to facilitate the
+
+van Lierop 32
+development of secured bicycle parking facilities (Bikestation, 2013). Bikestation charges a $20.00(US) annual membership fee, plus $2.00(US) a day for casual users, or a $96.00(US) annual fee.2 Since the installation of bicycle lockers in many cities, the service has become overwhelmingly popular, thereby creating wait-lists. Although paid bicycle parking is only sparsely available throughout North America, it is not an uncommon phenomenon, and is becoming more popular in regions where the bicycle mode share is increasing.
+This paper aims to identify and understand the factors that contribute to cyclists' willingness to pay for secured bicycle parking facilities in Montreal, Canada. It follows the framework of earlier studies that aim to assess users' willingness to pay for a non-market good by using the stated preference contingent valuation method. This method provides quantitative measures to assess the financial value representative of theftpreventing bicycle infrastructure. Since willingness to pay for parking is a relatively unexplored area of research then a review of the literature on the contingent valuation (CV) / willingness to pay (WTP) method, parking pricing strategy, and users WTP for improved transportation infrastructure is discussed below.
+CONTINGENT VALUATION (CV) / WILLINGNESS TO PAY (WTP) METHOD
+Strengths and weaknesses
+The CV/WTP method asks individuals to place a price on a service, and uses the stated prices to determine the value of a non-market good. The method is used in the absence of a price for a good and has been thoroughly tested in many disciplines for at least the last two decades. It was initially most popular in the environmental and public health fields, but has more recently been utilized in crime and justice studies (M. Cohen, Rust, Steen, & Tidd, 2004; Piquero, Cohen, & Piquero, 2011). Like most methods, CV/WTP comprises both strengths and weaknesses. Piquero, Cohen et al. (2011), for example, find that an important benefit of this method includes an accurate estimate of an individual's attitude towards the perceived price of a good or service. Yet, without understanding what the respondent believes to be the cost of service, it is difficult to determine on what a respondents' stated price is based (Piquero, et al., 2011). Piquero, Cohen et al. (2011) make clear that this method is useful to place economic value on a service that has not previously been assigned a monetary price. In this study, when determining the appropriate price of secured bicycle parking, individuals are able to state the amount that they would be willing to pay without having been given any indication about how much the capital or operating costs of secured bicycle parking would be. However, a problem with the CV/WTP method is that individual stated costs may not at all reflect actual costs. Another issue with this method is that the price stated in a survey is not certain to accurately reflect
+2 Prices from services in Canadian cities are in Canadian dollars, and Bikestation prices are in United States Dollars based on April 2013 prices.
+
+van Lierop 33
+the dollar amount that individuals will pay for a service. Cohen (2010) calls this a "hypothetical bias" because the hypothetical dollar value is not always in accordance with the actual dollar value. Cohen (2010), claims that a caution should be made with regard to participants' likeliness to state what they believe is the socially appropriate amount of dollars they are willing to spend, rather than a purely personally evaluated amount (Kahneman, Ritov, Jacowitz, & Grant, 1993). Another common objection to assessing WTP is that it should not only measure individuals' WTP, but also their ability to pay, as generally the rich can afford to pay more. Specifically, the European Commission makes clear that the rich can often afford to pay more for road safety and infrastructure services than the poor (SafetyNet, 2009). For lower income groups, WTP and the ability to pay often become merged, thereby leading to a greater provision of non-market goods, such as bicycle security, to higher income groups within a given population (SafetyNet, 2009).
+Improving the public realm
+Whereas charging a fee for bicycle parking is a relatively new phenomenon, paid parking for automobiles, a familiar concept to most drivers, was first introduced in Oklahoma in 1935 (U.S. Department of Transportation, 2012). Manville and Shoup (2005) state that "most cars are parked most of the time, and both auto use and auto ownership are easier if a car can be cheaply and reliably stored when it is not being driven." The authors make clear that studies that analyze travel patterns generally ignore parking facilities because a parked vehicle often indicates that a vehicle has reached its final destination and that the user becomes a pedestrian. Optimizing the security, design, and availability of both car and bicycle parking facilities deserves attention in transportation and city planning, not only because it is where both cars and bicycles spend most of their time, but also for the reason that it is at parking nodes that users of motorized vehicles and bicycles leave their wheels and become pedestrians.
+Jane Jacobs (1961) makes the argument that a busy street with many pedestrians results in a more vibrant street life. More recently, Gehl and Gemze (1996) showed how several small active transportation-focused interventions gradually transformed Copenhagen, Denmark from a car-oriented city to one for people. These authors demonstrated that the combination of restricting the presence of vehicles in certain areas and increasing the occurrence of pedestrians resulted in greater economic returns to local retail establishments. Other studies have similarly found that economic revenue increased on streets where cyclists and pedestrians replaced vehicles (Pratt et al., 2012). As a strategy to switch the modal preference from car use to active transportation, Manville and Shoup (2005) recommend that cities convert their offstreet parking requirements from minimums to maximums. This approach is meant to counter what the authors refer to as "car-oriented density"  a condition that, they claim, results from cities' implementation of minimum parking requirements. They make this argument to increase density and thereby foster vibrant streets with improved pedestrian realms. Whereas Manville and Shoup's (2005) suggestion of setting parking maximums could be a highly efficient strategy for decreasing the amount of space allocated to motorized
+
+van Lierop 34
+vehicles, the same argument cannot be applied to bicycle parking facilities. Whereas fees for paid car parking can be set high to function as a negative incentive for driving to, and parking in certain locations, fees for secured bicycle parking should not function as a disincentive for using a bicycle, but rather an incentive due to increased levels of bicycle security. The following section reviews the relevant literature that uses the CV/WTP method to determine how much users are willing to pay for other forms of improved transportation infrastructure. The literature review of WTP for improved infrastructure is useful to better understand how to determine an appropriate price for secured bicycle parking in Montreal.
+Transportation infrastructure improvements
+Anastasiadou, Dimitriou et al. (2009) used the CV/WTP method to determine the appropriate fee for new car parking services before they went into operation on the Greek island of Crete. The authors state that they use this method because before parking facilities are constructed there is a need to investigate the demand. They claim that the fee for parking in past studies has been based on estimating the elasticity-price curve and by comparing alternative services. Parking fees, they claim, should be determined based on three principles: that the fee reflect the quality of the service, the economic viability and security of the project, and the demand and needs of the population, especially during peak hours. In their study they used a survey to collect information about participants' WTP for parking as well as personal data and socioeconomic characteristics of the respondents and found that drivers who were younger, those with high levels of education, and people with high incomes were willing to pay a greater amount for parking (Anastasiadou, et al., 2009).
+Outside of the realm of parking, dell'Olio, Ibeas et al. (2011) used a stated choice survey to administer logit models that measured individual's WTP for transfer time, information, and services at transport interchanges. Jou, Chiou et al. (2012) used the contingent valuation method in combination with a spike model to determine freeway drivers' WTP for a distance-based toll rate. And, whereas O'Garra, Mourato et al. (2007) used the contingent valuation method to compare public WTP for pollution reducing hydrogen buses in four cities, McDonnell, Ferreira et al. (2009) used a stated choice analysis, multinomial logit, and random parameters logit models to investigate how residential location and temporal experience of bus priority and mode choice influences participants' WTP. More recently, Russo, van Ommeren et al.'s (2012), used a dynamic search methodology approach to determine university workers' WTP for commuting time. Although these abovementioned studies are not specifically about bicycle parking facilities, they contain useful information to develop a method that can be helpful to better understand cyclists' WTP for secured bicycle parking.
+Dell'Olio, Ibeas et al. (2011) found that travelers in their study were more likely to value the information they received and the services available to them at transit interchanges than they were likely to value their
+
+van Lierop 35
+transfer time. Whereas dell'Olio, Ibeas et al. (2011) define available services at transport interchanges as including the "quality of the toilets, cafeterias, shops, kiosks, etc.", other studies include bicycle parking and storage facilities in their definition of interchange services (Papon, Assaf, Berezoski, Osipov, & Santa Maria Davila, 2011; Pucher & Buehler, 2012). Like many WTP transportation infrastructure and service studies, dell'Olio, Ibeas et al. (2011) emphasize measuring the variables gender, age, and income. The authors found that for both genders WTP for improvements in the quality of information at transit interchanges was higher than their WTP for service availability and their WTP for travel time reductions.
+As a means of understanding WTP from a user-fee perspective, Jou, Chiou et al.'s (2012) attempt to determine freeway drivers' WTP for a distance-based toll rate concluded that drivers' frequency of freeway use affected their WTP for distance-based tolls. The authors found that drivers who use the freeway only a few times a month were less willing to pay for distance-based tolls than more frequent users, and determined that drivers with travel times that were shorter than half an hour were not willing to pay for distance based tolls at all (Jou, et al., 2012). Alternatively, O'Garra, Mourato et al.'s (2007) study which used the CV/WTP method to compare public WTP for pollution reducing hydrogen buses in four cities, determined WTP from a social goods perspective. These authors aimed to assess whether the public was willing to pay for some of the costs associated with the introduction of pollution reducing busses. The results of the study demonstrate that the public may be willing to pay for the introduction of hydrogen busses, and that individuals' environmental concerns influence their WTP (O'Garra, et al., 2007).
+Bicycle parking and security
+Although the CV/WTP method does not appear to have been used to determine cyclists' WTP for secured bicycle parking, other studies have analyzed how the design, availability, and geographic location of bicycle parking facilities influence ridership. For example, the modal choice study developed by Taylor et al. (1996) included the variables `on-street bicycle facility type,' `bicycle parking facility type,' and `bicycle access distance to transit.' The results of their analysis found that cyclists were more likely to increase bicycle usage when bicycle lockers and lanes were present. Papon, Assaf et al. (2011) surveyed cyclists to determine the most optimal location for secured bicycle parking. This study revealed the majority of cyclists who participated in their bicycle parking study prefer secure parking to be located near rail stations, and expect it to be free of charge and available 24 hours a day. These authors make clear that WTP for secured bicycle parking is an area of research that requires further academic attention (Papon, et al., 2011). The following section provides a regional context and describes the data used for the study.
+
+van Lierop 36
+STUDY CONTEXT
+The cycling mode share for the region of Montreal, as reported in the 2008 Origine-Destination (OD) survey, is 1.2% of all trips. This places Montreal's cycling mode share in line with the Canadian national average (Canada, 2010; Pucher & Buehler, 2005). In response to the City of Montreal's 2008 Transportation Plan to increase the cycling mode share in the region, the city intends not only to expand the bicycle path network, but also to improve bicycle parking facilities; specifically by increasing the number of bicycle parking facilities by 500% (Division du Dveloppement des Transports, 2008).
+Plans to increase the number of bicycle parking facilities are intended to serve as an incentive to increase active transportation in the region and to prevent bicycle-related crime. According to the Service de police de la Ville de Montreal (SPVM), the city's police department, approximately 2,500 bicycles on average are reported stolen every year. The SPVM believes this number represents only a small proportion of all bicycle thefts taking place in the region (Tremblay & Letendre, 2011), with a Montreal bicycle theft committee reporting actual theft numbers in 2011 to be more likely between 15,000 and 30,000 (Riga, 2012).
+DATA AND METHODOLOGY
+The data used for this study was compiled from the results of a bilingual online survey on bicycle theft that was conducted in the Montreal region. To allow for a broad exposure and reduce sample bias normally associated with online surveys, a variety of measures were taken to ensure a broad cross-section of the public was reached. These measures, as recommended by Dillman, Smyth and Christian (2009) included circulation through a combination of email newsletters, mailing lists, newspaper articles in French and English, a radio interview, and a number of social networking platforms.
+The survey yielded a total sample of over 2,039 individuals over a period of approximately one month in the late spring of 2012. This is similar to the number of home-based cycling trips recorded in the regional O-D survey, which samples 5% of the region's population (Agence Metropolitaine de Transport (AMT), 2008). While the survey posited a number of questions relating to bicycle theft, this study uses data only from participants who answered the question, "Would you consider paying for supervised or secured bicycle parking? (i.e., security guard, bicycle locker, bicycle parking garage)." The analysis also used the related socio-demographic information from the survey, including participants' age, gender, income, employment status, and household size. Respondents who left any of these questions blank were removed from the sample. The final sample size used in this study consists of 1,533 Montreal cyclists, of which 43% are willing to pay for secured parking.
+
+van Lierop 37
+As mentioned earlier, this study recognizes that fear of bicycle theft and vandalism can discourage the use of a bicycle for transportation. The study aims to understand whether users are willing to incur some of the extra cost of improving bicycle parking infrastructure improvements, the common characteristics of those who are and are not willing to pay, and whether these characteristics change when an individuals' ability to pay is taken into consideration. Basic socio-demographic information about the survey participants is presented through a series of summary statistics (Table 3). This is followed by a series of logit models. The first model is a binary logit which determines the characteristics associated with whether or not cyclists are willing to pay for secured parking. The second is an ordered logit which takes into account the amount cyclists are willing to pay, and the third is a binary logit that recognizes that WTP differs from ability to pay and only models the data for participants whose household income is high enough to likely offer them the ability to pay for secured parking. The data collected from the survey question, "Would you consider paying for supervised or secured bicycle parking? (i.e., security guard, bicycle locker, bicycle parking garage)" is used for the first and third binary logit models. The results are used to demonstrate which factors most influence survey participants' likeliness to be willing to pay for parking. The second model, which is an ordered logit, uses the results from the question "How much per day?" to determine individuals' willingness to pay. Data for this question is taken from survey respondents' selection from a dropdown menu that had $0.50 as the lowest monetary value, and displayed options at $0.25 intervals, with $50.00 being the maximum. The ordered logit model is used to analyze the variation in cyclists' responses and to better understand which factors influence a cyclist to be willing to pay more for secured parking than others. Finally, to account for the potential discrepancy between WTP and ability to pay, a binary logit is presented that includes only the subset of the sample that has an annual income greater than $60,000. This final model demonstrates that the variables which are significant in the earlier models are consistently significant when only the subset of the sample which is likely to be able to pay for parking is taken into account. The results of this model make clear that WTP in this study is not affected by ability to pay.
+SUMMARY STATISTICS
+The respondents' ages range from 18 to 85. The average age for cyclists who are willing to pay is 39, and the average for those who are not willing to pay is slightly lower at 36. Women, accounting for 42% of the survey, are slightly overrepresented, compared to O-D survey figures (see Table 3 for more details). Most of the respondents are employed full-time and have completed at least an undergraduate degree. In accordance with the O-D survey, most participants live in two-person households and have a household annual income of between $20,000 and $60,000. Approximately 50% of the participants reported that they had been victims of bicycle theft in their life time, a finding that resembles previous studies (BachandMarleau, Lee, et al., 2011).
+
+van Lierop 38
+
+TABLE 3: SUMMARY STATISTICS
+2012 Bicycle Theft Survey
+
+General
+
+WTP Logit
+
+All survey Willing To
+
+respondents Pay
+
+GENDER
+
+Male
+
+58% (1,037) 63% (416)
+
+Female
+
+42% (738) 37% (249)
+
+AGE
+
+Average Age
+
+37
+
+39
+
+18-29
+
+30% (542) 26% (175)
+
+30-39
+
+37% (658) 35% (234)
+
+40-49
+
+17% (301) 17% (110)
+
+50-64
+
+14% (254) 20% (130)
+
+65+
+
+2% (41)
+
+2% (16)
+
+HOUSEHOLD SIZE
+
+One 21% (369) 20% (131)
+
+Two 43% (755) 42% (275)
+
+Three
+
+19% (335) 19% (129)
+
+Four
+
+12% (213) 13% (83)
+
+Five or More
+
+6% (100) 7% (44)
+
+OCCUPATION
+
+Employed
+
+71% (1263) 80% (533)
+
+Student
+
+21% (370) 14% (93)
+
+Retired
+
+3% (50)
+
+3% (18)
+
+Other
+
+6% (100) 3% (21)
+
+INCOME (household)
+
+<$20,000
+
+14% (245) 9% (59)
+
+$20,000 - $60,000
+
+36% (618) 29% (192)
+
+$60,000 - $100,000
+
+26% (450) 31% (204)
+
+>$100,000
+
+23% (391) 32% (210)
+
+N*
+
+1,922
+
+665
+
+Not Willing to Pay
+55% (479) 45% (389)
+36 31% (270) 39% (342) 16% (140) 11% (99) 2% (17)
+21% (182) 44% (379) 19% (160) 12% (102) 4% (38)
+70% (608) 24% (207) 3% (22) 4% (31)
+16% (143) 40% (346) 26% (225) 18% (154) 868
+
+2008 Origin-Destination
+
+(Adult)
+
+Bicyclists
+
+All
+
+Survey
+
+65% (1,029) 47% (58,890) 35% (548) 53% (65,563)
+
+42 24% (372) 22% (343) 25% (395) 24% (371) 6% (96)
+
+48 16% (19,750) 16% (20,182) 21% (25,929) 28% (34,983) 19% (23,609)
+
+22% (346) 34% (539) 20% (310) 17% (270) 7% (112)
+
+15% (18,203) 38% (47,008) 19% (24,121) 19% (23,788) 9% (11,333)
+
+68% (1070) 13% (200) 11% (181) 8% (126)
+
+58% (71544) 8% (9,872) 25% (31,057) 10% (11,936)
+
+15% (186) 46% (588) 26% (334) 13% (166) 1,577
+
+12% (10,217) 44% (38726) 28% (24688) 17% (15,009) 124,453 (all modes)
+
+Figure 6 assumes that the majority of cyclists would use free secured bicycle parking (i.e., be willing to pay $0.00), and that 43% would be willing to pay at least $0.50 per day for secured parking. The figure assumes that if a cyclist is willing to pay a given amount, he or she will also be willing to pay lower amounts. The highest amount that participants are WTP is $15.00 (2/1533). Less than 1% of participants is WTP more than $6.00, and is accordingly not included in figure 6. Ideal payments appear to be simple dollar amounts such $1.00 or $2.00. These findings are in accordance with existing paid bicycle parking facilities where long-term secured bicycle parking memberships often average out to well below $1.00 a day, and casual secured
+
+$ 0.00 $0.50 $0.75 $1.00 $1.25 $1.50 $1.75 $2.00 $2.25 $2.50 $2.75 $3.00 $3.25 $3.50 $3.75 $4.00 $4.25 $4.50 $4.75 $5.00 $5.25 $5.50 $5.75 $6.00
+
+van Lierop 39
+bicycle parking is priced at around $2.00 a day (Bikestation, 2013; City of Toronto, 2013; Sustainable Concordia, 2013; TransLink, 2013).
+Percentage of participants willing to pay
+100% 90% 80% 70% 60% 50% 40% 30% 20% 10% 0%
+FIGURE 6: SURVEY PARTICIPANTS' WTP PER PRICE CATEGORY
+The following section discusses select summary statistics about the variables that may provide information about cyclists' WTP for secured parking. It provides information regarding the sample's cycling habits, theft preventing attitudes, and household income.
+Cycling habits
+Results from the Montreal Bicycle Theft Survey made clear that when survey participants were asked to rank six different kinds of bicycle parking facilities in terms of safety, secured bicycle lockers were the most favored (van Lierop, et al., 2013). Although many initiatives are being made in North America to make bicycle lockers available for cyclists, other forms of secured bicycle parking are also being implemented (Bikestation, 2013; City of Toronto, 2013; Pratt, et al., 2012; Sustainable Concordia, 2013; TransLink, 2013). According to Transport Canada (2010), the parking and security needs of one cyclist may not be appropriate for all kinds of cyclists. Although Transport Canada (2010) primarily compares commuter cyclists to recreational cyclists, the data from the Montreal Bicycle Theft Survey alternatively enables the categorization of cyclists based on a number of reasons for cycling. Participants ranked different motivations to cycle from `not at all important' to `extremely important.' Figure 7 below, shows the results
+
+van Lierop 40
+for cyclists who responded that a given reason was either `very' or `extremely' important, and compares the percentage of cyclists in each group who are and who are not willing to pay for secured parking.
+
+'Very' and 'Extremely' important reasons for cycling
+
+Willing to pay for secured parking
+
+Not willing to pay for secured parking
+
+I enjoy cycling (n=1291) It is part of my self-identity/culture (n=770) It is an efficient way to get from A to B (n=1160)
+It is inexpensive (n=936) It is good for my health (n=1287) It is good for the environment (n=1017)
+
+44% 56%
+47% 53%
+40% 60%
+39% 61%
+44% 56%
+41% 59%
+
+FIGURE 7: DIFFERENCES IN WTP AMONGST SURVEY PARTICIPANTS WHO RANKED REASONS FOR CYCLING AS `VERY' OR `EXTREMELY' IMPORTANT
+
+The enjoyment that cyclists experience from riding a bicycle and the health benefits of cycling ranked highest among reasons to cycle. When the 2 of these variables was tested with  = 0.5 as a criteria for significance, neither the enjoyment of cycling or health reasons were statistically significant. However, in both cases, of the 84% of participants who ranked enjoyment and health benefits as `very' or `extremely' important, 44% were willing to pay for secured bicycle parking. Using a bicycle because it is an efficient way to travel was also highly regarded as important (76% `very' or extremely' important'). This variable was statistically significant with (N=1533) = 18.90, p=0.00. Environmental concern (66%) (N=1533) = 4.37, p=0.04, and, finally, self-identity of a cyclist (50%) (N=1533) = 7.17, p=0.01 were also regarded as being important. Not surprisingly, cyclists who use a bicycle because it is an inexpensive form of transportation have the lowest percentage of cyclists who are willing to pay for secured bicycle parking, (61%) (N=1533) = 17.90, p=0.00. Although only 50% of the total sample strongly identified with bicycle culture, within this subgroup nearly half were willing to pay for secured bicycle parking.
+
+With regards to when participants use a bicycle, results from the survey show that all cyclists in the sample cycle at least one month during the summer. Nearly all cyclists also use a bicycle in spring (98%) and fall (99%), with only 30% of the total sample cycling during at least one of the winter months. This is most likely due to Montreal's harsh winter climate and seasonal bicycle network that significantly reduce winter cycling in the region. While WTP for secured parking is similar for spring, summer, and fall cyclists, it decreases slightly for winter cyclists, although this finding is not statistically significant. This could be because winter
+
+van Lierop 41
+cyclists' higher levels of exposure may have allowed them to become more proficient with bicycle theft prevention practices.
+With regards to asking cyclists to state the length of time they feel comfortable cycling, those who were willing to pay for secured bicycle parking were comfortable cycling for an average of 90 minutes (median = 70 minutes), whereas those not willing to pay were comfortable cycling only 79 minutes on average (median= 60 minutes). It is likely that cyclists who are willing to pay for parking on average feel comfortable cycling longer distances because they use their bicycles for commuting, and therefore are more likely to require long-term, secure bicycle parking while they are away from their bicycles.
+Theft preventing attitude
+Although there has been research conducted on the categorization of different kinds of cyclists (Dill & McNeil, 2013; Geller, 2006), these studies generally do not include cyclists' opinions about theft prevention and bicycle parking. The data from the Montreal Bicycle Theft Survey makes clear that there are two overarching and contrasting techniques to theft prevention. The first method, which is primarily practiced by owners of high value bicycles, is to avoid storing a bicycle in open public places. Owners of higher value bicycles, often keep them inside when they are not being used, and are more likely to be willing to pay for secured bicycle parking. The second technique, which is more common with owners of lower value bicycles, is to use electrical tape, anti-theft rust stickers, spray paint, or decoration to make a bicycle less appealing to thieves. Owners of lower value bicycles are generally not willing to pay for secured bicycle parking, and alternatively often engage in what Adam Thorpe refers to as "fly-parking," a term that is used to describe the securing of bicycles to street furniture not intended to function as parking facilities (Gamman, et al., 2004).
+Another way to categorize different kinds of cyclists is by whether or not they have insurance for their bicycle(s). WTP for bicycle parking is clearly reflected in cyclists' WTP for insurance. Figure 8 demonstrates that there are more cyclists who are willing to pay for secured parking and who have insurance than there are cyclists who do not have insurance, do not know whether or not they have insurance, or do not know about bicycle insurance.
+
+van Lierop 42
+
+Awareness and availability of insurance
+
+Willing to pay for secured parking
+
+Not willing to pay for secured parking
+
+I have insurance (n=456) I do not have insurance (n=555) I do not know if my current insurance covers it or not (n=350) I did not know that I could get bicycle insurance (n=172)
+
+56% 44% 32%
+68% 46%
+54% 41%
+59%
+
+FIGURE 8: DIFFERENCES IN WTP AMONGST SURVEY PARTICIPANTS WHO DO AND DO NOT HAVE INSURANCE FOR THEIR BICYCLE(S)
+
+Household income
+
+The most overwhelming determinant of WTP appears to be household income. A general trend is that as a cyclists' household income increases, so does his or her WTP for secured bicycle parking. Similarly, as the price of an individual's bicycle increases, so does his or her WTP. The equilibrium point in figure 9 shows that cyclists who earn over $60,000 will, in general, more frequently be willing to pay for secured parking. Figure 10 similarly demonstrates the trend that cyclists who own bicycles worth more than $500 are more likely to be willing to pay for parking. These findings are in accordance with the concern that WTP can be influenced by individuals' ability to pay. The differences in participants' WTP and ability to pay are further discussed in the analysis of the third regression below.
+
+80% 70% 60% 50% 40% 30% 20% 10%
+0% Less than $20,000
+(n=202)
+
+$20,000 - $60,000 $60,000 - $100,000
+
+(n=538)
+
+(n=429)
+
+Willing to pay for secured parking
+
+Not willing to pay for secured parking
+
+More than $100,000 (n=364)
+
+FIGURE 9: DIFFERENCES IN WTP BASED ON ANNUAL INCOME
+
+van Lierop 43
+
+80% 70% 60% 50% 40% 30% 20% 10%
+0% Less than $100 (n=187) $100 - $499 (n=693) $500 - $1,000 (n=314)
+Willing to pay for secured parking
+Not willing to pay for secured parking
+
+More than $1,000 (n=262)
+
+FIGURE 10: DIFFERENCES IN WTP BASED ON THE PRICE OF CYCLISTS' CURRENT BICYCLE
+DETERMINANTS OF WTP
+The following section uses a series of logit models to better understand cyclists' WTP for secured bicycle parking. First, a binary logit is used to demonstrate which factors most influence cyclists to be willing to pay for secured bicycle parking. The second model is an ordinal logit that demonstrates which factors are more likely to influence a cyclist to be willing to pay either $0.00, $0.50-$1.00, $1.25-$2.00, or more than $2.00 a day for secured bicycle parking. The third model, which accounts for cyclists' ability to pay for secured bicycle parking, is a binary logit which includes only the survey respondents with annual incomes of $60,000 or higher. This threshold is based on the finding from figure 9, which makes clear that cyclists' whose annual income is $60,000 or greater are more likely to be willing to pay for secured bicycle parking, and therefore also more likely to be able to pay than lower income cyclists. WTP for cyclists with incomes $60,000 or more is therefore less likely to be influenced by ability to pay than for lower income cyclists.
+Choice of variables
+A correlation matrix was used to choose appropriate variables for the models. Variables included individuals' habits, choices, and socio-demographic statuses. Many variables pertaining to monetary values such as `insurance' and `lock price' were not included because they were highly correlated with the `income' variable. Other variables were not included because they did not show significance. Surprisingly, having been a victim of bicycle theft did not affect a cyclists' likeliness to be willing to pay for parking; this variable
+
+van Lierop 44
+was insignificant in the primary models and was, therefore, not included in the final ones. The variable `bicycle value' was included in the model to demonstrate that it is not only how much cyclists earn that effects WTP, but also the amount that cyclists are willing to spend on a bicycle. Relevant literature was also consulted to decide which variables should be used. For example, Jou, Chiou et al.'s (2012) study includes socio-demographic, trip frequency, and WTP information. These authors included gender, age, education, occupation, working hours, and monthly income to measure socio-demographic information. Other authors also included similar variables to better understand WTP (Anastasiadou, et al., 2009; dell'Olio, et al., 2011; O'Garra, et al., 2007; Russo, et al., 2012).
+The logit models below include socio-demographic information about cyclists' employment status, gender, age, and income. The employment statuses `retired' and `other', although not statistically significant, are kept in the model in accordance with the relevant literature which commonly accounts for participants' employment or work status. Gender, although also insignificant, is included for the models to be theoretically consistent with the relevant literature. Cyclists' level of education is not included in the models because it was highly correlated with both employment status and income. Because the data from the Montreal Bicycle Theft Survey does not provide information about the distances cyclists commute, the continuous variable `time comfortable' is included. This variable describes the distance that cyclists are comfortable cycling. The model also includes the continuous variable `commute,' which determines the number of years that a cyclist has been using a bicycle to commute. Few studies include information about participants' attitudes towards statements; O'Garra, Mourato et al. (2007), for example, include a variable in their regression that measures participants' attitude to environmental problems. Figure 7 shows the questions included in the Montreal Bicycle Theft Survey that considered cyclists reasons for using a bicycle. All of the reasons for cycling were tested in the preliminary models, but only the variable `culture' which represents the statement, "It is part of my self-identity/culture" was found to be statistically significant in the logistic regressions. This variable was therefore kept in the model while other reasons for cycling were taken out.
+Binary Logit
+The model possesses a reasonable amount of explanatory power (Cox & Snell R square = 0.16, Nalgelkerke R square =0.22), and its variable coefficients all have the expected positive or negative signs. The model uses WTP for secured bicycle parking as the dependent variable and indicates that risk of theft, employment status, age, income, cultural identity as a cyclist, the amount of years that a cyclist has been commuting, and the value of the bicycle, are statistically significant.
+
+van Lierop 45
+
+TABLE 4: BINARY LOGIT (ALL PARTICIPANTS)
+Parameters
+
+Theft influence: Slight
+
+Moderate
+
+Very
+
+Extremely
+
+Employment status:
+
+Student
+
+Retired
+
+Other
+
+Gender:
+
+Male
+
+Age: Age
+
+Annual household Less than $20,000
+
+income:
+
+Between $20,000 - $60,000
+
+Between $60,000 -
+
+$100,000
+
+Reason:
+
+Culture
+
+Commuting:
+
+Time comfortable
+
+Years commuting
+
+Cost of bicycle:
+
+Low (less than $500)
+
+Constant:
+
+Cox & Snell R Square = 0.162
+
+Nagelkerke R Square = 0.218
+
+N=1533
+
+Coefficient .633 *** 1.073 *** 1.564 *** 2.133 ***
+-.342 *
+-.579 .175 .100 .016 *** -.680 *** -.714 *** -.365 **
+-.437 *** .002 -.065 *** -.684 *** -.210
+
+t-stat
+4.510 6.538 7.431 6.550
+-1.934
+-1.492 .553 .840 2.604 -3.003 -4.553 -2.340
+
+Odds Ratio
+1.883 2.923 4.779 8.437
+0.711
+0.561 1.191 1.105 1.016 0.507 0.489 0.694
+
+-3.597
+
+0.646
+
+1.610
+
+1.002
+
+-3.978
+
+0.937
+
+-5.717
+
+0.504
+
+-0.622
+
+0.811
+
+*** 99% significance
+
+** 95% significance
+
+* 90% significance
+
+In this first binary logit model, the variable `Theft' is highly significant meaning that the greater the influence of risk of theft has on a cyclist's decision to use a bicycle, the more likely a cyclist is willing to pay for secured parking. The model compares cyclists' decision to cycle to be slightly, moderately, very, or extremely influenced by the risk of bicycle theft to those who are not at all influenced. Whereas WTP for cyclists who are slightly influenced by the risk of theft increases only by 88%, WTP for cyclists whose decisions to use a bicycle are extremely influenced by theft increase by 744% compared to cyclists whose decision to use a bicycle is not at all influenced. Not surprisingly, students' WTP decreases by 29% compared to participants who are in the work force and are also less likely to be willing to pay than other cyclists. Similarly, younger cyclists are less likely to be willing to pay. With regard to annual household income, cyclists who have an annual income lower than $60,000 are approximately 50% less likely to be willing to pay for secured parking, and cyclists who earn between $60,000 and $100,000 are 31% less likely to be
+
+van Lierop 46
+willing to pay than are cyclists whose annual income is greater than $100,000. Similarly, cyclists who own low-value bicycles (under $500) are only half as likely to be willing to pay as are cyclists with bicycles valued at over $500. The amount of time that a cyclist is comfortable using a bicycle is insignificant, while as the amount of years that a participant has been commuting by bicycle increases, their likeliness to be willing to pay for parking decreases. This may be due to cyclists' increased level of exposure having led to long-term commuters becoming more aware of bicycle theft prevention strategies. This finding mirrors the summary statistic that year-round cyclists are less likely willing to pay for secured parking. Cyclists who did not report that culture was a very or extremely important reason for using a bicycle were also 35% less likely to willing to pay for secured bicycle parking than cyclists who identified more closely with cycling culture.
+Ordered Logit
+The results of the ordered logit are similar to those of the binary logit. In this model, the dependent variables are the amounts that cyclists are willing to pay for parking. The first group (n=869) contains cyclists who are willing to pay zero dollars (not willing to pay). The second group (n=342), represents cyclists who are willing to pay between $0.50-$1.00, the third (n=197), $1.25-$2.00, and the fourth (n=125), cyclists who are willing to pay more than $2.00 a day for secured bicycle parking. These categories were chosen because they represent the ideal rates represented in figure 6, and because they correspond to the abovementioned existing paid bicycle parking facilities.
+
+van Lierop 47
+
+TABLE 5: ORDERED LOGIT (ALL PARTICIPANTS)
+Parameters
+
+Theft influence: Slight
+
+Moderate
+
+Very
+
+Extremely
+
+Employment status:
+
+Student
+
+Retired
+
+Other
+
+Gender:
+
+Male
+
+Age: Age
+
+Annual household Less than $20,000
+
+income:
+
+Between $20,000 - $60,000
+
+Between $60,000 - $100,000
+
+Reason:
+
+Culture
+
+Commuting:
+
+Time comfortable
+
+Years commuting
+
+Cost of bicycle:
+
+Low (less than $500)
+
+Cox & Snell R Square = .179
+
+Nagelkerke R Square = .200
+
+Total N=1533
+
+Estimate
+.667 *** 1.035 *** 1.420 *** 1.762 ***
+
+95% Confidence Interval
+
+Lower Odds Ratio 1.499 2.087 2.897 3.595
+
+Upper Odds Ratio 2.533 3.800 5.905 9.432
+
+-.356 **
+
+.504 .973
+
+-.344 .083 .080 .018 *** -.629 *** -.614 *** -.287 ** -.370 *** .002 * -.059 *** -.746 ***
+
+.362 1.386
+
+.605 1.951
+
+.874 1.343
+
+1.007
+
+1.029
+
+.350 .812
+
+.409 .715
+
+.573 .984
+
+.556 .858
+
+1.000
+
+1.004
+
+.916 .970
+
+.382 .589
+
+*** 99% significance
+
+** 95% significance
+
+* 90% significance
+
+Similarly to the binary logit model present in Table 4, results of the ordered logit make clear that the variable `theft' is highly significant. Because these variables are significant at the 99.9% confidence level, they increase individuals' likeliness to be willing to pay a greater amount for parking. Whereas cyclists who are slightly influenced by the risk of theft in their decision to use a bicycle are 50% to 153% more likely to be willing to pay a greater amount than cyclist who are not at all influenced by risk of theft, likeliness to be willing to pay more for secured bicycle parking increases to up to 840% for cyclists who are extremely influenced. Students are willing to pay less, as are cyclists with incomes under $100,000. The variable `gender' remains insignificant, but the variable `time comfortable,' becomes significant at the 90% confidence level. The longer a cyclist is comfortable commuting, the more likely he or she is to be willing to pay a higher amount for secured bicycle parking. This may be because cyclists who are comfortable cycling for longer distances are likely to use their bicycles for commuting, and therefore more likely to require
+
+van Lierop 48
+long-term bicycle parking facilities. Similar results were demonstrated in the analysis of the summary statistics. Similarly to the results present in the binary logit in Table 4, the variables `year commuting,' and `culture,' are also significant in the ordered logit model.
+Binary Logit that accounts for ability to pay
+Several studies have put forth a concern that WTP often does not account for ability to pay (SafetyNet). Because income is found to be highly significant in both the binary and ordered logit models, a model that includes only cyclists who have an annual income greater than $60,000 is presented in Table 6. Unexpectedly, the factors effecting WTP for participants who are most likely also able to pay remains similar to those of the total sample. Only the variable `student' becomes insignificant, most likely because this group often has incomes lower than $60,000.
+Similarly to the models that include the full sample, the variable `theft' is also highly significant in the binary logit that accounts for cyclists' ability to pay. However, within this sample, cyclists whose decision to use a bicycle is extremely influenced by the risk of theft rises to being 1131% more likely to be willing to pay than cyclists whose decision to cycle is not at all influenced by the risk of theft. This makes clear that the likeliness to be willing to pay increases as a cyclist's decision to use a bicycle becomes more influenced by the risk of theft, as annual household income increases, as well as with age. Because the same variables are significant in all of the models, it is clear that the significant factors influence WTP regardless of ability to pay.
+
+van Lierop 49
+
+TABLE 6: BINARY LOGIT (PARTICIPANTS WITH ANNUAL INCOME GREATER THAN $60,000 ONLY)
+
+Parameters:
+
+Coefficient
+
+t-stat
+
+Odds Ratio
+
+Theft influence low:
+
+Slight
+
+Moderate
+
+Very
+
+Extremely
+
+Employment status:
+
+Student
+
+Retired
+
+Other
+
+Gender:
+
+Male
+
+Age: Age
+
+Annual household income: Between $60,000 - $100,000
+
+Reason:
+
+Culture
+
+Commuting:
+
+Time comfortable
+
+Years commuting
+
+Cost of bicycle:
+
+Low (less than $500)
+
+Constant:
+
+Cox & Snell R Square = .168
+
+Nagelkerke R Square = .224
+
+n=793
+
+.555 *** 1.004 *** 1.649 *** 2.510 *** -.245 -.208
+.596 -.058 .016 ** -.375 ** -.403 ** .002 -.083 *** -.834 *** .095
+
+2.941
+
+1.741
+
+4.403
+
+2.730
+
+5.786
+
+5.201
+
+4.456
+
+12.307
+
+-.815
+
+.783
+
+-.404
+
+.812
+
+.963 1.815
+
+-.340
+
+.944
+
+1.970
+
+1.017
+
+-2.366
+
+.687
+
+-2.397
+
+.669
+
+1.073
+
+1.002
+
+-3.701
+
+.921
+
+-5.146
+
+.434
+
+.216 1.100
+
+*** 99% significance
+
+** 95% significance
+
+* 90% significance
+
+CONCLUSION AND DISCUSSION
+As various cities around the world plan to increase their bicycle mode share, the problem of bicycle theft will continue to remain significant unless countermeasures are taken. Cyclists are highly likely to become victims of theft or bicycle related crime over the course of their lifetimes. Given the costs associated with losing cyclists and thereby decreasing the share of the preferred mode, policy makers and planners should take a multi-faceted approach to consider strategies to promote the use of the bicycle. Secured bicycle parking facilities that decrease the chance of theft are likely to encourage individuals to increase their bicycle usage.
+In addition to implementing municipal and provincial theft prevention strategies, policy makers and planners should understand that many individual citizens are willing to pay for bicycle security. Although this study provides information about a sample of Montreal cyclists' willingness to pay for secured bicycle parking facilities, the findings are also relevant for transportation planners in other regions and future study of this new area of research is worthy of further scholarly attention.
+
+van Lierop 50
+A limitation identified with this study is that the survey did not ask cyclists who would be willing to pay for secured parking how often they are expected to use this service. Future studies should ask participants how often they would use secured parking in addition to how much they would be willing to pay. Future studies would also benefit from comparing cost estimates to the expected effectiveness of secured bicycle parking. Another question for further research that should be addressed is the role of bicycle sharing programs and their relationships with infrastructure investments and cyclists' willingness to pay. Further research should also include questions such as whether cyclists would rather use a shared bicycle and not worry about theft, as well as whether public resources would be better spent on bicycle sharing programs instead of secured parking.
+Other considerations that city planners and transportation professionals should take into account are the reasons that cyclists would not pay for parking. The responses from the open-ended questions from the Montreal Bicycle Theft Survey confirm that many cyclists are not willing to pay for secured bicycle parking because they use a bicycle to save money. The statement that "[l]e but du vlo est, entre autres, d'conomiser en cot de transport" ("the goal of using a bicycle, among others, is to save money on transportation costs") is representative of the opinions of many survey participants. This finding is also reflected in the summary statistics which demonstrate that of the people who stated that the low cost of cycling was very or extremely important in their decision to cycle, 61% were not willing to pay for secured parking. The results of the binary logit that includes the total sample also confirm that participants with annual household incomes lower than $60,000 are much less likely to be WTP than participants who have household incomes higher than $100,000. Other reasons that cyclists are not willing to pay for secured parking include the concern that secured parking would not be located in the places where cyclists would want to go, and that their current bicycle lock was sufficiently secure. One participant stated that "[i]t would take a very long time, if ever, for such services to be located conveniently enough throughout the city. I want to lock my bike close to where I am going."
+Yet, even though many cyclists are not willing to pay for secured parking, there are a substantial number who would be interested in increasing the security of their parked bicycle for a price. Based on the findings of this study, cities will benefit from improving their cycling infrastructure by installing more secured bicycle parking facilities. Cyclists who state that risk of theft influences their decision to cycle are more likely to pay for secured parking. As risk of theft becomes more influential in a cyclist's decision to use a bicycle, his or her willingness to pay for secured parking increases. Therefore, if cities provide more bicycle parking then bicycle mode share is likely to increase. Although the installation of paid secure bicycle parking is highly recommended, city planners and transportation officials should ensure that the pricing of these facilities remains low to ensure that the security provided by paid bicycle parking always remain an incentive to use a bicycle.
+
+van Lierop 51
+
+AFTERWORD
+
+The chapters presented in this study bring attention to the need for transportation professionals and urban
+
+planners to focus on the issues related to bicycle theft and bicycle parking. The first chapter of this project
+
+aims to better understand the state of bicycle theft in Montreal by addressing questions about the `who,'
+
+`what,' `where,' `how,' and `when' of theft. The main findings from this study can not only be useful to
+
+better understand and ultimately decrease bicycle theft in
+
+Montreal, but can also be beneficial for cyclists, police, and
+
+policy makers in any city aiming to decrease bicycle theft.
+
+Results from the first chapter have been used by the City of
+
+Montreal, Tandem  the city's crime preventing agency, and
+
+the borough of Rosemont La Petite-Patrie to develop an
+
+educational campaign about bicycle security. Figure 11
+
+shows a prototype for the educational poster that will be
+
+displayed in bicycle parking areas in the borough of
+
+Rosemont La Petite-Patrie. Members of Montreal's Comit
+
+sur le vol de vlo (Bicycle theft committee) which include
+
+the City of Montreal, Tandem, the Service de police de la
+
+Ville de Montreal (SPVM) - the city's police department,
+
+Vlo Qubec, and Transportation Research at McGill, would
+
+like a similar education campaign adopted in the borough of
+
+Le Plateau-Mont-Royal and in the downtown borough of Ville-Marie.
+
+FIGURE 11: PROTOTYPE FOR EDUCATIONAL POSTER
+
+Recognizing that fear of bicycle theft discourages bicycle usage, the second chapter in this project focuses on analyzing cyclists' willingness to pay for secured parking and makes suggestions for an appropriate pricing scheme. Findings from this study can be useful for the City of Montreal and the Socit de transport de Montral to determine what cyclists in the region would be willing to pay for secured bicycle parking.
+
+As cities continue to promote the use of the bicycle, transportation professionals and planners will need to continue to educate cyclists about bicycle safety and security and plan for both free and paid bicycle parking facilities. Although this research has focused specifically on the Montreal region, findings can be applied in different regions to create safe urban spaces that promote active, healthy, and sustainable lifestyles.
+
+van Lierop 52
+
+REFERENCES
+
+Agence Metropolitaine de Transport (AMT). (2008). Enqute Origine-Destination. Rgion mtropolitaine de
+
+Montral.
+
+Anastasiadou, M., Dimitriou, D., Fredianakis, A., Lagoudakis, E., Traxanatzi, G., & Tsagarakis, K. (2009).
+
+Determining the parking fee using the contingent valuation methodology Journal of Urban Planning
+
+and Development 135(3), 116-124.
+
+Aultman-Hall, L., Hall, F., & Baetz, B. (1997). Analysis of bicycle commuter routes using geographic
+
+information systems. Transportation Research Record(1578), 102-110.
+
+Bachand-Marleau, J., Larsen, J., & El-Geneidy, A. (2011). The much anticipated marriage of cycling and transit:
+
+But how will it work? Transportation Research Record(2247), 109-117.
+
+Bachand-Marleau, J., Lee, B., & El-Geneidy, A. (2011). Towards a better understanding of the factors
+
+influencing the likelihood of using shared bicycle systems and frequency of use. Transportation
+
+Research Record(2314), 66-71.
+
+Bikestation. (2013). Bikestation: How it works.
+
+Retrieved 13 March 2013, 2013, from
+
+http://home.bikestation.com/how-it-works
+
+Canada, T. (2010). Urban Bicycle Planning. Retrieved from http://www.tc.gc.ca/eng/programs/environment-
+
+utsp-casestudy-cs77ebikeplanning-1177.htm.
+
+City of Toronto. (2013). Bicycle Parking Stations.
+
+Retrieved 13 March 2013, 2013, from
+
+http://www.toronto.ca/cycling/bicycle-station/
+
+Cohen, L., & Felson, M. (1979). Social change and crime rate trends: A routine activity approach. American
+
+Sociological Review, 44(4), 588-608
+
+Cohen, M. (2010). Valuing crime control benefits using stated preference approaches. In J. Roman, T.
+
+Dunworth & K. Marsh (Eds.), Cost-benefit analysis and crime control (pp. 233). Washington, D.C:
+
+Urban Institute Press.
+
+Cohen, M., Rust, R., Steen, S., & Tidd, S. (2004). Willingness-to-pay for crime control programs. Criminology,
+
+42(1), 89-110.
+
+dell'Olio, L., Ibeas, A., Cecn, P., & dell'Olio, F. (2011). Willingness to pay for improving service quality in a
+
+multimodal area. Transportation Research Part C, 19, 1060-1070.
+
+Dill, J. (2009). Bicycling for transportation and health: The role of infrastructure. Journal of Public Health
+
+Policy, 30(S1), S95S110.
+
+Dill, J., & Carr, T. (2003). Bicycle commuting and facilities in major U.S. cities: If you build them, commuters
+
+will use them. Transportation Research Board(1828), 116123.
+
+Dill, J., & McNeil, N. (2013). Four types of cyclists? Examining a typology to better understand bicycle
+
+behavior and potential Paper presented at the Paper presented at the Transportation Research
+
+Board 92nd Annual Meeting. , Washington, DC.
+
+van Lierop 53
+Dillman, D., Smyth, J., & Christian, L. (2009). Internet, mail and mixed-mode surveys: The tailored design method, third edition. Hoboken, NJ: John Wiley and Sons, Inc.
+Division du Dveloppement des Transports. (2008). Transportation Plan 2008 -Ville de Montreal. Retrieved from http://ville.montreal.qc.ca/pls/portal/docs/PAGE/TRANSPORT_V2_EN/MEDIA/DOCUMENTS/transpor tation_plan_2008.pdf.
+Gamman, L., Thorpe, A., & Willcocks, M. (2004). Bike off! Tracking the design and terrains of cycle parking: Reviewing use, misuse and abuse. Crime Prevention and Community Safety: An International Journal, 6(4), 19-36.
+Gehl, J., & Gemze, L. (1996). Public Spaces, Public Life. Copenhagen: Danish Architectural Press and the Royal Danish Academy of Fine Arts.
+Geller, R. (2006). Four Types of Cyclists. Retrieved from http://www.portlandoregon.gov/transportation/article/264746,.
+Gordon-Larsen, P., Nelson, M., & Beam, K. (2005). Associations among active transportation, physical activity, and weight status in young adults. Obesity Research, 13(5), 968-975.
+Handy, S., Boarnet, M., Ewing, R., & Killingsworth, R. (2002). How the built environment affects physical activity American Journal of Preventative Medicine, 23(2S1), 64-73.
+Jacobs, J. (1961). The death and life of great american cities. New York: Random House, Inc. Johnson, S., Sidebottom, A., & Thorpe, A. (2008). Problem-oriented guides for police problem-specific guides
+series. Washington, DC: U.S. Department of Justice: Office of Community Oriented Policing Services Jou, R., Chiou, Y., Chen, K., & Tan, H. (2012). Freeway drivers' willingness-to-pay for a distance-based toll
+rate. Transportation Research Part A, 46(3), 549-559. Kahneman, D., Ritov, I., Jacowitz, K., & Grant, P. (1993). Stated willingness to pay for public goods: A
+psychological perspective. Psychological Science, 4(5), 310-315. Krizek, K. (2006). Approaches to valuing some bicycle facilities' presumed benefits Journal of the American
+Planning Association, 72(3), 309-320. Larsen, J., Patterson, Z., & El-Geneidy, A. (2011). Build it. But where? The use of geographic information
+systems in identifying locations for new cycling infrastructure (accepted). International Journal of Sustainable Transportation. Manville, M., & Shoup, D. (2005). Parking, People, and Cities. Journal of Urban Planning and Development, 131(4), 233-245. McDonnell, S., Ferreira, S., & Convery, F. (2009). Bus priority provision and willingness to pay differentials resulting from modal choice and residential location: Evidence from a stated choice survey Journal of Transport Economics and Policy, 43(2), 213-234. O'Garra, T., Mourato, S., Garrity, L., Schmidt, P., Beerenwinkel, A., Altmann, M., et al. (2007). Is the public willing to pay for hydrogen buses? A comparative study of preferences in four cities. Energy Policy, 35, 3630-3642.
+
+van Lierop 54
+
+Papon, F., Assaf, P., Berezoski, K., Osipov, C., & Santa Maria Davila, E. (2011). Intermodal bicycle parking
+
+facilities: A stated preference survey Paper presented at the Paper presented at the Transportation
+
+Research Board 90th Annual Meeting.
+
+Piquero, N., Cohen, M., & Piquero, A. (2011). How Much is the Public Willing to Pay to be Protected from
+
+Identity Theft? . Justice Quarterly, 28(3), 437-459.
+
+Pratt, R., Evans IV, J., Levinson, H., Turner, S., Jeng, C., Nabors, D., et al. (2012). Pedestrian and Bicycle
+
+Facilities: Traveler Response to Transportation System Changes. Washington, DC.
+
+Pucher, J., & Buehler, R. (2005). Cycling trends & policies in Canadian cities World Transport Policy &
+
+Practice, 11(1), 44-61.
+
+Pucher, J., & Buehler, R. (2012). Integration of Cycling with Public Transportation. In J. Pucher & R. Buehler
+
+(Eds.), City Cycling. Massachusetts Institute of Technology: MIT Press.
+
+Riga, A. (2012, 3 August 2012). McGill report: Sturdier racks the single biggest subject of concern. The
+
+Gazette.
+
+Russo, G., van Ommeren, J., & Rietveld, P. (2012). The university's workers' willingness to pay for commuting
+
+Transportation, 39(6), 1121-1132.
+
+SafetyNet.
+
+(2009).
+
+Cost-benefit
+
+analysis.
+
+Retrieved
+
+from
+
+http://ec.europa.eu/transport/road_safety/specialist/knowledge/pdf/cost_benefit_analysis.pdf.
+
+Schneider. (2013). Theory of routine mode choice decisions: An operational framework to increase
+
+sustainable transportation Transport Policy, 25, 128-137.
+
+Sidebottom, A., Thorpe, A., & Johnson, S. (2009). Using targeted publicity to reduce opportunities for bicycle
+
+theft: A demonstration and replication. European Journal of Criminology, 6(3), 267-286.
+
+Sustainable Concordia. (2013). Secure Bike Parking Facility. Retrieved 13 March 2013, 2013, from
+
+http://sustainable.concordia.ca/working-groups/allego-concordia/projects/secure-bike-parking-
+
+facility/
+
+Taylor, D., & Mahmassani, H. (1996). Analysis of stated preferences for intermodal bicycle-transit interfaces. .
+
+Transportation Research Record, 1556, 86-95.
+
+Tilahun, N., Levinson, D., & Krizek, K. (2007). Trails, lanes, or traffic: Valuing bicycle facilities with an adaptive
+
+stated preference survey. Transportation Research Part A, 41(4), 287-301.
+
+TransLink. (2013). Bike Lockers. Retrieved 13 March 2013, 2013, from http://www.translink.ca/en/Rider-
+
+Guide/Bikes-on-Transit/Bike-Lockers.aspx
+
+Transport Canada. (2010). Bicycle end-of-trip facilities: A guide for Canadian municipalities and employers.
+
+Retrieved from http://www.tc.gc.ca/media/documents/programs/betf.pdf.
+
+Tremblay, A., & Letendre, N. (2011). Service de police de la ville de Montral, Comit de travail sur le vol de
+
+vlo  Montral. Montral.
+
+U.S. Department of Transportation. (2012). Contemporary approaches to parking pricing: A primer
+
+Washington, DC: Federal Highway Administration.
+
+van Lierop 55
+van Dijk, J., van Kesteren, J., & Smit, P. (2007). Criminal victimisation in international perspective: Key findings from 2004-2005 ICVS and EU ICS. The Hague: Boom Juridische Uitgevers.
+van Lierop, D., Grimsrud, M., & El-Geneidy, A. (2013). Breaking into bicycle theft: Insights from Montreal, Canada. Paper presented at the Paper presented at the Transportation Research Board 92nd Annual Meeting, Washington, DC.
+Winters, M., Brauer, M., Setton, E., & Teschke, K. (2010). Built environment influences on healthy transportation choices: Bicycling versus driving. Journal of Urban Health: Bulletin of the New York Academy of Medicine, 87(6), 969-993.
+Zhang, L., Messner, S., & Liu, J. (2007). Bicycle-theft victimization in contemporary urban china: A multilevel assessment of risk and protective factors. Journal of Research in Crime and Delinquency, 44(4), 406426.
+
+van Lierop 56
+APPENDIX
+Introduction
+1. During the past year have you made at least one commuting or recreational trip using a bicycle in Montreal?  Yes  No, but I have in other years  No, I never use a bicycle
+History of Bicycle Theft: Entire Bicycle
+2. Have you ever had your entire bicycle stolen in Montreal  Yes  No
+3. How many bicycles have you had stolen? 1 2 3 4 5 6 7 8 9  10  More than 10  I don't remember
+4. If you remember approximately when the last time was that your bicycle was stolen, please select the year and month from the drop down menu:
+5. At what time of day did the theft occur?  Morning  Afternoon  Evening  Night  I can't remember
+6. If you remember approximately how long you left your bicycle unaccompanied the last time it was stolen, please select the approximate amount of time (from the first drop down menu) in minutes, hours, days, or weeks (from the second drop down menu):
+
+van Lierop 57
+7. The last time your bicycle was stolen, approximately where did the theft occur? Please adjust the zoom and drag the pin to the approximate location at which you had your bicycle stolen:
+8. At the time that you bought the bicycle that was stolen, was it new or used?  New  Used
+9. How much was the bicycle worth that was stolen?  Under $50  Between $50 - $99  Between $100 - $149  Between $150 - $499  Between $500 - $1499  Between $1500 - $2000  More than $2000
+10. Did you report the fact that your bicycle had been stolen to the police?  Yes  No
+11. Why did you not report the theft to the police?  I was afraid that the cost of my insurance would increase  I did not think that it was worth the effort  I had no proof that it was mine  I bought my bicycle used, and was afraid that the person I bought it from may have sold me a stolen bicycle  I did not think about reporting the theft to the police  Other
+12. Was the bicycle that was stolen registered?  Yes  No, I chose not to register my bicycle  No, I did not know that registering a bicycle was possible
+13. Did you have the serial number written down?  Yes  No
+14. Did you have photos of your bicycle that you could give to the police to identify your bicycle?  Yes  No
+15. Was your stolen bicycle recovered?  Yes  No
+
+16. Did you replace the stolen bicycle?  Yes  No  No, but I'm planning to
+17. Was the replacement bicycle new or used?  New  Used
+18. The last time your bicycle was stolen, how was it done?  Hacksaw  Hammer  Crowbar  Bolt cutters  Angle grinder  Picked up and moved  I don't know  Other
+19. The last time your bicycle was stolen, where was it locked up?  Locked only to itself  To a bicycle rack  Against a pole (for example a stop sign)  Against a parking pole  Against a tree  Against a fence or other street furniture  On the balcony/porch of my building  Inside my building  Other
+20. What kind of bicycle lock were you using at the time?  U-lock  Cable lock  Chain lock  Wheel lock (O-lock)  I cannot remember  Other:
+21. What was the total value of the lock(s) that you were using at the time?  Less than $20  Between $20 - $40  Between $41 - $100
+
+van Lierop 58
+
+van Lierop 59
+ More than $100  I cannot remember 22. After the last time your bicycle was stolen, did you change the kind of lock that you use?  Yes  No 23. After the last time your bicycle was stolen, did the amount you cycle change?  Yes, the amount increased  Yes, the amount decreased  No, the amount did not change
+History of the bicycle theft: parts of the bicycle
+24. Have you ever had parts of your bicycle stolen?  Yes  No
+25. How many times have you had parts of your bicycle stolen? 1 2 3 4 5 6 7 8 9  10  More than 10  I don't remember
+26. The last time you had a part stolen from your bicycle, approximately when did this occur? Please select the approximate year and month from the drop down menu:
+27. At what time of day did this occur?  morning  afternoon  evening  night  I don't remember
+28. The last time you had parts stolen from your bicycle, indicate where this occurred. Please adjust the zoom and drag the pin to the approximate location at which you had parts stolen from your bicycle:
+
+van Lierop 60
+
+29. The last time this occurred, what part(s) of your bicycle were stolen?  Accessories (bell, lights, reflectors, fenders, rack, basket, etc.)  The wheel(s)  The saddle/seat  The pedals  The handle bar  The frame  Other:
+30. How long did you leave your bicycle unaccompanied the last time parts were stolen? Please select the approximate amount of time (from the first drop down menu) in minutes, hours, days, or weeks (from the second drop down menu):
+31. The last time a part of your bicycle was stolen, how was it done?  Pulled/broken off without the use of a special tool  Hacksaw  Hammer  Crowbar  Bolt cutters  Angle grinder  I don't know  Other
+32. After the last time parts were stolen from your bicycle, did you change the kind of lock that you use?  Yes  No
+33. After the last time parts were stolen from your bicycle, did the amount you cycle change?  Yes, the amount decreased  Yes, the amount increased  No, the amount stayed the same
+
+Behaviour
+34. Why do you use a bicycle for transportation? Please rank the following reasons from 'not at all
+important' to 'extremely important'.
+
+Not at all important
+
+Slightly important
+
+Moderately important
+
+Very important
+
+Extremely important
+
+It is good for the environment
+
+It is good for my
+
+van Lierop 61
+
+Not at all important
+
+Slightly important
+
+Moderately important
+
+Very important
+
+Extremely important
+
+health
+
+It is inexpensive
+
+It is an efficient way to get from A to B
+
+It is part of my selfidentity/culture
+
+I enjoy cycling
+
+35. Currently, how many bicycles do you own?  Choose an option between 0 - 50
+36. What type of bicycle(s) do you currently have access to?  Commuter bicycle (speed bike, road bike, mountain bike etc.)  Recreational bicycle (BMX, trial, etc.)  Bixi  Other:
+37. How much is the bicycle worth that you currently ride most frequently for commuting?  I use Bixi  Under $50  Between $50- $99  Between $100 - $149  Between $150 - $449  Between $500 - $999  Between $1000 - $1499  Between $1500 - $2000  More than $2000  I don't know
+38. Where did you buy the bicycle that you use the most frequently?  I did not buy it, it was a gift  From a genuine retailer  A second-hand source (Craigslist, garage sale, etc.)
+39. Do you know if the most current bicycle that you bought or received as a gift was stolen before you received it?  No, it is definitely not a stolen bicycle  I am not sure whether or not it was stolen
+
+ Yes it is, or probably is, a stolen bicycle 40. Did you register the bicycle you most recently bought or received as a gift?
+ Yes  No, but I knew it was possible to register my bicycle  No, I did not know that registering a bicycle was possible 41. Do you currently have insurance for any of your bicycles?  Yes  No  I do not know if my current insurance covers it or not  I did not know that I could get bicycle insurance 42. Currently, do you lock up the removable parts of your bicycle?  Yes  No 43. Currently, do you use a bicycle lock?  Yes  No 44. What kind of bicycle lock are you currently using?  U-lock  Cable lock  Chain lock  Wheel lock  Other: 45. What is the total value of the lock(s) that you currently use?  Less than $20  Between $20 - $40  Between $41 - $100  More than $100 46. What factors do you take into consideration when choosing a bicycle lock?  Cost  Weight  Security rating  Brand  Recommendation from a bicycle retailer  Recommendation from a friend  Other: 47. To what extent does risk of bicycle theft influence your decision to cycle?  Not at all influential
+
+van Lierop 62
+
+van Lierop 63
+ Slightly influential  Moderately influential  Very influential  Extremely influential 48. Please adjust the zoom and place the pin on the location that you think has the highest frequency of bicycle theft in Montreal: 49. What kind of actions do you currently take to avoid bicycle theft?  I always lock my bicycle  I always lock all of the removable/quick release parts of my bicycle  I use Bixi  I use different methods (electrical tape, anti-theft rust stickers, spray paint, decorations
+etc.) to make my bicycle less appealing to thieves  I always bring my bicycle indoors  Other: 50. "I use Bixi to avoid bicycle theft." Indicate how true this statement is for you.  I do not use Bixi  Not at all true of me  Slightly true of me  Moderately true of me  Very true of me  Completely true of me
+Bicycle locking and parking
+51. If you stop for less than 15 minutes between trips do you park your bicycle less securely than you would otherwise?  No, I take the time to lock it the best I can  Yes, sometimes I lock it less thoroughly to save time  Not always, it depends on where I am
+52. There are many different kinds of bicycle racks. To better understand which types are favoured by cyclists in terms of security, please rate the following rack:
+ Very safe  Somewhat safe  Neutral  Somewhat unsafe  Very unsafe
+
+van Lierop 64
+53. There are many different kinds of bicycle racks. To better understand which types are favoured by cyclists in terms of security, please rate the following rack:  Very safe  Somewhat safe  Neutral  Somewhat unsafe  Very unsafe
+54. There are many different kinds of bicycle racks. To better understand which types are favoured by cyclists in terms of security, please rate the following rack:  Very safe  Somewhat safe  Neutral  Somewhat unsafe  Very unsafe
+55. There are many different kinds of bicycle racks. To better understand which types are favoured by cyclists in terms of security, please rate the following rack:
+ Very safe  Somewhat safe  Neutral  Somewhat unsafe  Very unsafe 56. There are many different kinds of bicycle racks. To better understand which types are favoured by cyclists in terms of security, please rate the following rack:  Very safe  Somewhat safe  Neutral  Somewhat unsafe  Very unsafe 57. There are many different kinds of bicycle racks. To better understand which types are favoured by cyclists in terms of security, please rate the following rack:  Very safe  Somewhat safe  Neutral  Somewhat unsafe  Very unsafe
+
+van Lierop 65
+
+58. If there is no nearby bicycle rack available, where do you typically park your bicycle when you are at your regular destination?  Whatever is available to lock it to close to my destination (i.e., a tree, bench, fence, etc.)  Locked only to itself close to my destination  A bicycle rack, even if it means I have to park it somewhat far away from my destination  I take it with me into the building that I'm going to  Other
+59. For what purpose(s) do you most frequently commute by bicycle?  To reach school or work  To reach grocery stores and other shopping  To reach leisure/sport/art/extracurricular activities
+60. Please rank your overall level of satisfaction with the security of bicycle parking facilities in the following areas in Montreal:
+
+very unsatisfied
+unsatisfied
+
+neutral
+
+not satisfied very satisfied
+applicable
+
+At metro stations
+
+Near your home
+
+Near your work/school
+
+In the downtown area
+
+By grocery stores
+
+61. Please rank your overall level of satisfaction with the availability of bicycle parking facilities in the following areas in Montreal:
+
+very unsatisfied
+unsatisfied
+
+neutral
+
+not satisfied very satisfied
+applicable
+
+At metro stations
+
+Near your home
+
+Near your work/school
+
+In the downtown area
+
+By grocery stores
+
+62. When you are looking for a place to lock up your bicycle, what do you consider to be the most important?
+
+van Lierop 66
+ A place that will keep my bicycle dry  A place that is well lit, so that people can see my bicycle (to discourage theft)  A place that is dark, so that it hides my bicycle  A place that is as close as possible to my destination  A place that is officially designated as bicycle parking  A place that is easy to lock my bicycle to  Other 63. When you are looking for a place to lock up your bicycle, what do you consider to be the second most important?  A place that will keep my bicycle dry  A place that is well lit, so that people can see my bicycle  A place that is dark, so that it hides my bicycle  A place that is as close as possible to my destination  A place that is officially designated as bicycle parking  A place that is easy to lock my bicycle to  Other 64. Would you consider paying for supervised or secured bicycle parking? (i.e., security guard, bicycle locker, bicycle parking garage)  Yes  No 65. How much per day?  Choose amount between $0.50 to $50.00 66. Why not?
+Commuting Habits
+67. During which months do you ride your bicycle?  January  February  March  April  May  June  July  August  September  October  November  December
+
+ I don't know 68. In seasons that you do not use your bicycle, where do you store it?
+ Locked outside  Inside my building  In public storage  In a friend/relative/coworker's garage  Does not apply  Other 69. In a one way trip, what amount of time are you comfortable cycling?  Choose between 1 minute to 160 minutes 70. If you commute by bicycle regularly, how long have you been doing so?  Less than a year  1 year  2 years  3 years  4 years  5 years  6 years  7 years  8 years  9 years  10 years  More than 10 years  I do not commute by bicycle regularly
+71. Why do you choose not to cycle?  I don't know how to ride a bicycle  I don't feel comfortable riding a bicycle  My culture restricts me from riding a bicycle  I do not like the clothes required to ride a bicycle  I'm out of shape  I can't afford to buy a bicycle  I don't feel safe riding a bicycle  Other:
+Personal Profile
+72. You are:  Male
+
+van Lierop 67
+
+van Lierop 68
+ Female  Prefer not to answer 73. For us to better understand your approximate home location, please identify it by:  Your home postal code  The closest intersection to your home 74. Please enter your postal code (for example: H3A 0C2): 75. Please enter the nearest intersection by providing us with two street names. Please write one street name in each box (for example: text box 1: ST LAURENT text box 2: SHERBROOKE): 76. If you would like to be included in further research at Transportation Research at McGill, please provide us with your email address: 77. What year were you born? 78. How many people are in your household? 79. You are:  Employed full-time  Employed part-time  Unemployed  A student  Retired  A visitor to Montreal  Other 80. What is your household income?  Less than $20,000  Between $20,001 - $40,000  Between $40,001 - $60,000  Between $60,001 - $80,000  Between $80,001 - $100,000  Between $100,001 - $120,000  More than $120,000 81. What is the highest level of education that you have completed?  No formal education  Elementary school  High school  CEGEP  Diploma  Undergraduate degree  Graduate degree  Other
+
+van Lierop 69
+Further Thoughts
+82. Do you have any suggestions to improve bicycle security in Montreal? 83. Do you have any other comments about bicycle theft and security in Montreal?
+
+

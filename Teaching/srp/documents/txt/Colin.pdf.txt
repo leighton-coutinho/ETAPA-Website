@@ -1,0 +1,1639 @@
+Don't stop just yet!
+A simple, effective, and socially responsible approach to bus-stop consolidation
+Submitted in partial fulfillment of the Masters of Urban Planning degree at McGill University
+Submitted by:
+Colin Stewart
+Supervised by: Ahmed El-Geneidy
+School of Urban Planning McGill University August 2014
+
+Disclaimer
+This study was not paid for or commissioned by La Socit de transport de Montral (STM). Thus, its findings and conclusions are for academic purposes only, and are not an indication of any future programs that STM may undertake.
+Stewart / Bus-stop consolidation | 1
+
+Acknowledgements
+I wish to extend my thanks first and foremost to my supervisor, Ahmed El-Geneidy. Ahmed has been tireless in making sure I push myself and succeed, not just academically, but in my professional life after graduation. The knowledge and discipline that I've gained from him in my two years at McGill University has been extremely valuable, and frankly, I couldn't ask for much more in a supervisor. I would also like to thank all members of Transportation Research at McGill (TRAM), both for their feedback on my work, and for creating such a great research environment to work in. In particular, I would like to thank Gabriel Damant-Sirois and Myriam Langlois. I also would like to thank Michel Tremblay and Anna Guinzbourg at La Socit de transport de Montral (STM), for access to their data and for providing guidance on my work. Finally, a big thank you to my second reader, Sbastien Gagn, for being so generous with his time and for giving me such quality feedback.
+2 | Stewart / Bus-stop consolidation
+
+Abstract
+Bus-stop consolidation is one of the most cost-effective ways for a transit agency to improve the quality of their bus services. By removing unnecessary stops, buses will have reduced runtimes, which can lead to higher frequencies and, in the best-case scenarios, a need for fewer buses on a route. The result is reduced operating costs for the transit agency, and faster, more frequent service for passengers, all without any capital investments. Unfortunately, current research on bus stop consolidation and stop spacing focuses on complex mathematical models that are difficult for agencies to apply, and that overlook many important real-world considerations. The goal of this paper was to create a consolidation methodology that is realistic, simple, and effective, while at the same time being sensitive to the needs of those with reduced mobility. The new methodology was applied to the bus network of the Socit de transport de Montral (STM); it was found that 23% of the network's stops could be removed while only reducing the system coverage area by 1% and having no impact on the average passenger's travel times. The removal of these stops would result in morning-peak savings of up to 109 hours of operating time, and in the elimination of a bus from as many as 42 routes. This methodology can be applied to any urban bus network, and thus can be of interest to transit agencies and transportation researchers.
+Stewart / Bus-stop consolidation | 3
+
+Rsum
+La consolidation des arrts d'autobus est l'une des manires les moins dispendieuses pour amliorer la qualit du service d'autobus d'une agence de transport. Le retrait des arrts inutiles rduit le temps de trajet des autobus, ce qui peut augmenter leur frquence, et dans le meilleur des cas, permettre l'opration d'une ligne avec un autobus en moins. Rsultats, l'agence voit ses cots d'exploitation diminuer sans nouvel investissement en capital et ses usagers ont droit  un service plus rapide et frquent. Malheureusement, les recherches actuellement menes sur la consolidation et l'espacement des arrts d'autobus dveloppement des modles mathmatiques trop difficiles  implanter par les agences et qui ngligent plusieurs considrations contextuelles importantes. Cette recherche eut donc pour but de dvelopper une mthodologie simple, efficace et soucieuse des besoins des personnes  mobilit rduite permettant la consolidation des arrts d'autobus. La mthodologie dveloppe fut applique sur l'ensemble du rseau de la Socit de transport de Montral (STM). Il fut trouv que 23 % des arrts du rseau de la STM pourraient tre retirs sans aucun effet sur le temps de dplacement des usagers, et ce, seulement avec une rduction de 1 % du territoire couvert par le rseau. Le retrait de ces arrts pourrait faire conomiser  l'agence jusqu' 109 heures d'opration durant l'heure de pointe matinale tout en lui permettant le retrait d'un autobus sur 42 lignes. Cette mthodologie peut tre applique  n'importe quel rseau urbain d'autobus, ce qui en fait un outil intressant autant pour les agences de transport en commun que pour les chercheurs dans ce domaine.
+4 | Stewart / Bus-stop consolidation
+
+Policy brief
+
+TO:
+FROM:
+DATE: RE:
+
+Michel Tremblay, Anna Guinzbourg, and Sbastien Gagn La Socit de transport de Montral (STM)
+Colin Stewart School of Urban Planning, McGill University
+August 19, 2014 New methodology for bus-stop consolidation
+
+This report presents a new methodology for determining which of STM's bus stops are unnecessary. Removing these stops can lead to improved bus runtimes, frequency, and reliability, as well as reduced operating costs, all without affecting ridership or requiring capital investment.
+The new methodology is intended to be: simple to understand and apply; effective in identifying redundant stops; adaptable to any bus route; and sensitive to the needs to passengers with reduced mobility, such as the elderly.
+The main factors used in the methodology include: observed walking distances of Montral bus passengers; connections to public transit; proximity to facilities used frequently by populations with reduced mobility, such as hospitals; and ridership averages and variation.
+The methodology was developed and refined using one route, and then was automated and applied to all STM's routes using computer programming. The main findings are as follows:
+ 1977 stops (23%) were identified for removal  Average stop spacing would increase by 72 metres (26%) to 350 metres  Total service area would decrease by only 1% system-wide
+The following savings were calculated for the morning peak:
+ Average runtime would decrease by 1.2 minutes per trip (109 hours of operating time)  Average headway would decrease by 19 seconds  42 routes could be run with one less bus, representing substantial cost savings  The effect on passengers' overall trip times would be virtually non-existent
+In conclusion, implementation of a system-wide stop consolidation program would likely result in significant savings for STM and a higher quality of service for passengers without any decrease in ridership. It is recommended that STM conduct further studies into stop removal on the routes that would see the most benefit, prior to inexpensive pilot projects along these routes.
+
+Stewart / Bus-stop consolidation | 5
+
+Table of Contents
+Disclaimer ........................................................................................................................................ 1 Acknowledgements ......................................................................................................................... 2 Abstract ............................................................................................................................................ 3 Rsum............................................................................................................................................. 4 Policy brief ....................................................................................................................................... 5 Table of Contents............................................................................................................................. 6 List of Figures .................................................................................................................................. 8 List of Tables.................................................................................................................................... 9 Introduction.................................................................................................................................... 10 Literature Review ........................................................................................................................... 12
+Forms of consolidation.......................................................................................................................12 Bus Stop Spacing...............................................................................................................................12
+Benefits of wider stop spacing................................................................................................................................ 13 Drawbacks of wider stop spacing........................................................................................................................... 14
+Real-world implementations of consolidation ...................................................................................15 Passenger perceptions ......................................................................................................................16 Current spacing methodologies ........................................................................................................17
+Street grid................................................................................................................................................................ 17 Stop spacing standards.......................................................................................................................................... 17 Optimization ............................................................................................................................................................ 19
+Methodology .................................................................................................................................. 21 General criteria ...................................................................................................................................21
+Simple ..................................................................................................................................................................... 21 Socially responsible ................................................................................................................................................ 21 Adaptable ................................................................................................................................................................ 21 Effective................................................................................................................................................................... 21
+Overview .............................................................................................................................................22 Catchment area ..................................................................................................................................23
+6 | Stewart / Bus-stop consolidation
+
+Catchment area & stop spacing ............................................................................................................................. 24
+Stop importance .................................................................................................................................25
+1. Mobility problems................................................................................................................................................ 25 2. Transit connections ............................................................................................................................................. 28 3. Passenger activity ............................................................................................................................................... 28 4. First and last stops.............................................................................................................................................. 30 Stop class................................................................................................................................................................ 30
+Selecting stops for removal................................................................................................................31
+Removal score ........................................................................................................................................................ 31 Twin stops ............................................................................................................................................................... 31 Consecutive stops................................................................................................................................................... 31 The process ............................................................................................................................................................ 32
+Savings calculations...........................................................................................................................35
+Impact on passengers ............................................................................................................................................ 38
+Application of the methodology to the entire system........................................................................39
+Details of the system-level automation process ..................................................................................................... 40
+Findings & Discussion................................................................................................................... 44 System savings overview ...................................................................................................................44 Redundancy reduction .......................................................................................................................47 Change in travel time..........................................................................................................................48
+Conclusions ................................................................................................................................... 49 Future research ..................................................................................................................................49 Closing remarks..................................................................................................................................50
+Appendix ........................................................................................................................................ 51 System savings figures: Distributions................................................................................................51
+Stops removed per route ........................................................................................................................................ 51 Increase in stop spacing......................................................................................................................................... 52 Decrease in service coverage................................................................................................................................. 53 Decrease in runtime per route................................................................................................................................. 54 Decrease in headway per route .............................................................................................................................. 55
+References ..................................................................................................................................... 56
+Stewart / Bus-stop consolidation | 7
+
+List of Figures
+Figure 1: The spacing tradeoff between speed and system access.........................................................11 Figure 2: How reducing runtime can save a bus........................................................................................13 Figure 3: Route 161 westbound ..................................................................................................................22 Figure 4: When stop spacing is equal to the catchment area radius, coverage overlaps have the same size as coverage gaps ......................................................................................................................24 Figure 5: The fundamental spacing rule of the new methodology ............................................................25 Figure 6: Methodology for determining the closest stops to hospitals......................................................26 Figure 7: The hospitals, health-care centres, and seniors residences served by route 161 ....................27 Figure 8: Stops connecting to major and minor public transit lines on route 161.....................................28 Figure 9: Pax quality of all stops on route 161............................................................................................29 Figure 10: Final stop classes for route 161.................................................................................................30 Figure 11: The process for calculating the removal score of stops, based on catchment areas and stop classes .................................................................................................................................................32 Figure 12: Reduction in redundancy of coverage, before and after stop consolidation...........................38 Figure 13: Connection stops between overlapping routes ........................................................................41 Figure 14: A problem encountered when identifying twin stops on routes running on parallel one-way streets...........................................................................................................................................................42 Figure 15: Reduction in service-coverage redundancy..............................................................................47
+8 | Stewart / Bus-stop consolidation
+
+List of Tables
+Table 1: Selected stop spacing standards in North America.....................................................................18 Table 2: Selected stop spacing standards that vary by service or urban environment ............................18 Table 3: Factors for determining walking distances to bus stops. ............................................................23 Table 4: Calculation of the 85% percentile walking distance to the westbound bus stop at Rosemont subway station .............................................................................................................................................23 Table 5: Criteria for stop classes.................................................................................................................30 Table 6: Breakdown of stop classes on Route 161 westbound.................................................................31 Table 7: Example of removal score calculation, using the first 11 stops on route 161 .............................33 Table 8: Example of how to deal with twin stops, using a selection of stops from route 161 ..................34 Table 9: How to deal with consecutive stops under consideration for removal, using route 161 as an example........................................................................................................................................................34 Table 10: The method for calculating the number of active and on-layover buses for a route in a given period. ................................................................................................................................................35 Table 11: Seconds saved per stop on the express route 467 versus the local route 67, by peakperiod and direction.....................................................................................................................................36 Table 12: Increase in headway with one less bus on hypthothetical routes..............................................37 Table 13: Savings on route 161...................................................................................................................37 Table 14: Average change in passenger trip time for route 161................................................................39 Table 15: Summary of data collected at the system level..........................................................................40 Table 16: Summary of main system-level findings .....................................................................................44 Table 17: The 42 routes from which a bus can be removed......................................................................46 Table 18: Average change in passenger travel time at the system level...................................................48
+Stewart / Bus-stop consolidation | 9
+
+Introduction
+North American bus networks have traditionally prioritized short walking distances at the expense of service quality (El-Geneidy 2006). The mindset behind this is to provide an experience where passengers don't have to walk much more than they would if they were driving a car. However, this requires bus stops to be narrowly spaced, which in turn reduces buses' speed and reliability; the ultimate result is a public transit service that competes with walking and cycling rather than cars. Given the magnitude of the problems caused by car dependency, it is necessary to create transit systems that can provide a serious transportation alternative for most people. Unfortunately, transit agencies today are suffering from budget problems, so cost-effective solutions must be found.
+One well known solution to this problem is bus stop consolidation, that is, the removal of bus stops. Bus stop consolidation can lead to a variety of benefits both to passengers and to agencies: passengers will enjoy faster, more frequent, and more reliable service, while agencies will save on operating costs. The main concerns among transit agencies when discussing bus-stop consolidation is increased walking time and loss in demand; however, as this paper will show, these negative impacts can be mitigated through sensitive planning. Stop consolidation programs have been implemented successfully in Seattle and Portland with no loss in ridership (Kehoe 2004, El-Geneidy 2006), and is now being implemented in San Franciso, Washington DC, and Toronto (WMATA 2009, SFMTA 2010, TTC 2014).
+The key consideration in stop consolidation is the issue of stop spacing. Stop spacing is a seemingly minor issue that profoundly affects the quality of a bus network. If stop spacing is too narrow, the network will have very high access--that is, it will be easy for passengers to walk to a stop--but buses will stop too frequently, making the service too slow to be useful. Conversely, if stop spacing is too wide, the service will be very fast, but it will require passengers to walk too far to access it. The ideal spacing strikes a balance between these considerations (Benn 1995); see Figure 1.
+Numerous strategies for finding this balance exist. Agencies have often taken simple approaches, either by placing stops every one or two blocks, or basing it on textbook spacing standards, such as a stop every 400 metres. These approaches are easy to understand, but often don't consider such factors as land use, population density, and the actual distances that passengers walk.
+Conversely, most current research on stop spacing takes an engineering approach to the subject. This approach, while mathematically rigorous, has a tendency to be very complicated and is thus difficult for agencies to apply. Additionally, the practical value of engineering approaches is often unclear, as the mathematical models typically go into great depth on minor operating details while overlooking much more important social realities of consolidation.
+10 | Stewart / Bus-stop consolidation
+
+Figure 1: The spacing tradeoff between speed and system access
+Thus, the goal of this paper is to develop a new methodology for bus-stop consolidation. This methodology is simple enough for agencies to understand and apply, effective enough to create significant savings in runtime and operating costs, adaptable to any bus route in any city, and sensitive to those who would be most affected by the removal of bus stops. The paper starts with a review of literature on bus stop spacing and existing spacing methodologies; it then describe the new methodology and apply it to the entire bus network of the Socit de transport de Montral (STM), Montral, Canada. Lastly, the savings from implementing this methodology are estimated at the system level, and directions for future research are discussed.
+Stewart / Bus-stop consolidation | 11
+
+Literature Review
+Forms of consolidation
+There are two main forms of stop consolidation (El-Geneidy 2006). The first is to simply remove a stop; the second is to move a stop. Combining these possible actions, two stops might be removed and a new one placed in between them.
+Stop removal is generally preferable to stop relocation, as it doesn't require new infrastructure, and it allows stops to be temporarily closed for pilot projects. As such, removal is much more common than relocation (Gordon 2010), and it will thus be the focus of this study. While relocation is sometimes the more appropriate consolidation option, it will not be discussed here, and is left for other researchers to tackle.
+Bus Stop Spacing
+The issue of how far apart to place bus stops falls into the general transit-planning trade-off of coverage versus ridership (Walker 2012). Coverage refers to the goal of a transit agency to make its services available to everyone. This can mean providing bus service to every area of a city, or putting a bus stop on every city block, even if few people in that area or on that block use the service. Coverage is an important social-service duty of an agency, as it provides a transportation option to people who cannot afford to live close enough to their primary destinations to walk or bike, or who are unable to use a private automobile, either for financial or health reasons.
+Unfortunately, the goal of providing high coverage is in direct opposition with the goal of obtaining high ridership. Ridership is the goal of having as many passengers as possible on each transit vehicle (for example, a subway or bus). Generally, this means concentrating bus and subway lines in areas with high densities of residents, and jobs, and commercial offerings; such concentration makes it possible to provide fast and frequent services that can move large numbers of people quickly to their destinations with minimal waiting times. Transit lines with high ridership are the least expensive to operate, as the agency recovers a large proportion of their costs, or even all their costs, from transit fares; as such, agencies tend to focus more on ridership goals than coverage goals--for example, a 80% / 20% split (Walker 2008).
+Thus, to provide narrower stop spacing is to focus on coverage goals: the bus service will be relatively slow and infrequent, but will be easy to access (short walking times). Inversely, to provide wider stop spacing is to focus on ridership goals: the service will take longer to walk to, but will be faster and more
+12 | Stewart / Bus-stop consolidation
+
+frequent. Agencies can meet both goals by providing two parallel bus services on the same route: a local, slower service that stops frequently (narrow spacing), and an express service that stops infrequently (wide spacing); however, this sort of system is only possible along transit corridors with very high density, and thus is not often possible. Most corridors can only support a single route, and it is in these situations where a trade-off between coverage and ridership must be made. This paper argues that, in general, wider spacing makes more sense. The benefits and drawbacks of wider spacing will now be discussed.
+Benefits of wider stop spacing There are many benefits to having wider stop spacing (El-Geneidy, Strathman et al. 2006). The most obvious one, as previously mentioned, is that wider spacing allows buses to go faster (Kehoe 2004, Walker 2012, TTC 2014). This is beneficial both to passengers and to transit agencies: passengers will enjoy reduced trip times, and agencies will have lower operating costs due to reduced operating hours. This can represent substantial savings for an agency, given that each bus costs around $100 per hour to operate (Riga 2013). Reduced bus runtimes can lead to other benefits. Since a bus can complete its trip faster, it can also complete more trips in the same period of time; to the passenger, this means increased frequency and reducing waiting times. If the reduction in trip runtime is great enough, it will be possible to provide equal frequency of service with fewer buses (Figure 2); this represents even greater savings to an agency, as each standard bus costs at least $500,000 (Marchal 2012). It should be noted that the ability to save a bus can be exchanged for increased frequency.
+Figure 2: How reducing runtime can save a bus
+A second major benefit of wider stop spacing is increased reliability (Kehoe 2004, El-Geneidy 2006). A service with many stops will have relatively low passenger activity (boarding and/or alighting) at each stop; thus, there will be some stops that sometimes have passenger activity and sometimes do not. This
+Stewart / Bus-stop consolidation | 13
+
+uncertainty in whether the bus will stop or not means that trip runtime will vary. From a passenger's perspective, this means that passengers will not know how long their trip will take, and may also have to wait longer than usual at a bus stop. From an agency's perspective, this variation makes it difficult to provide accurate schedules, both for their passengers and their drivers (Gordon 2010). However, by removing stops on a route, there will be more passenger activity at each stop, meaning that the bus's pattern of stopping will be more consistent. Thus, wider spacing leads to greater reliability.
+Wider spacing has a number of other, smaller benefits for passengers, agencies, and the city in general. For passengers, it provides a more comfortable ride, with less stopping and starting. This, combined with increased speed, frequency, and reliability, make the service more attractive to passengers, which can lead to an increase in ridership and/or increased retention of existing passengers.
+For agencies, having fewer stops means having less infrastructure to maintain; it also means that there will be more money to spend on each remaining stop, allowing for more amenities such as shelters and realtime information signs. Agencies can also benefit from the consolidation process by having an opportunity to review the performance of their stops, and to re-evaluate demand fluctuations that will have occurred over years of operation (TTC 2014). Additionally, removing stops is a very cost-effective way to realize performance improvements, as it has no capital costs. On top of this, stop consolidation programs can be easily implemented as pilot projects to test the benefits--for example, by installing temporary "out of service" signs at selected stops.
+Finally, for the city, fewer stops means having more space on the sidewalks for pedestrians or for other sidewalk infrastructure. Also, if buses have to stop less frequently, they will have to enter and exit traffic less often; this means both that there will be fewer delays to traffic, and fewer opportunities for collisions with buses re-entering traffic.
+Drawbacks of wider stop spacing
+The main drawback of wider stop spacing is increased access time (i.e. walking time) for passengers (Benn 1995, Furth and Rahbee 2000, El-Geneidy, Strathman et al. 2006). For the vast majority of the population, small increases in access time will not be much of a problem. However, this is not true for people with reduced mobility. People with reduced mobility include the following: people in wheelchairs; people who are injured or in poor health; people with heavy loads to carry, such as groceries; and people with small children. These populations will be disproportionately affected by increased access times; thus, from a social responsibility standpoint, it is essential that stop removal does not occur near where these populations will need bus stops the most. These locations include hospitals, health care centres, and seniors centres.
+14 | Stewart / Bus-stop consolidation
+
+If spacing is increased too much, the average passenger with no mobility issues may decide that the increased walking time is not offset by the increases in bus speed and frequency. In this case, the bus network has become inaccessible. Thus, it is preferred that spacing is not widened so much that the increases in walking times are greater than the reductions in waiting and trip times. However, passengers' perception of time--which vary depending on whether the passenger is waiting, walking, or riding--must also be considered (Gaudry, Jara-Diaz et al. 1989, Ibeas, Alonso et al. 2010). These perceptions will be discussed in a later section of the literature review.
+The other significant drawback to wider stop spacing is that removing stops can provoke backlash from residents and businesses near a stop (El-Geneidy 2006). For residents, the presence of a bus stop might increase their property values, or simply make their trip to the bus easier. For businesses, a nearby bus stop might increase their client base. As such, removing a bus stop can be politically difficult. This difficulty can be mitigated by temporarily closing stops rather than removing them outright. Another strategy is to implement a network-wide consolidation program to lessen the feeling that anyone is being "targeted" (Gordon 2010). Widespread marketing campaigns extoling the benefits of having fewer stops are necessary for any major consolidation program.
+Real-world implementations of consolidation
+Studies on transit agencies' actual implementations of consolidation have confirmed its value. In 1999, Trimet, the transit agency for Portland, Oregon, launched its Streamline project, with the stated goal to "improve service reliability and reduce travel time while also improving patron safety, accessibility and comfort on select routes" (Trimet 2002). El-Geneidy (2006) studied the consolidation aspect of the project, and found that "passenger activity was found to be unaffected by stop consolidation, while bus running times showed a significant improvement."
+Similarly, in 2002, a "speed and reliability" project was launched by King County Metro in Seattle WA. Kehoe (2004) studied the effect of this project on bus route 48, the longest route in the city. On the portion of the route affected by the consolidation, 41 of 198 stops (26%) were removed. The results were as follows: a decrease in run times of about two minutes per trip (2.2%); an increase in reliability, as measured by the decrease in the number of late trips (7%) and very late trips (2%); and a modest increase in ridership.
+Other agencies around North America are currently launching major bus projects that include stop consolidation. San Francisco's Municipal Transportation Agency (SFMTA) is implementing their Transit Effectiveness Project, which includes increases in stop spacing as one strategy in a suite of "travel time reduction proposals" (others include reserved lanes, all-door boarding, far-side stop relocation, and
+Stewart / Bus-stop consolidation | 15
+
+transit-signal priority) (SFMTA 2010). The average proposed removal of stops is 18% per line, with an average increase in spacing of 23% (Gordon 2010).
+In Canada, the Toronto Transit Commission (TTC) has recently announced plans to "make transit services faster ... by eliminating closely spaced transit stops"; this process if part of a comprehensive review of transit stops, an opportunity to evaluate whether each stop has remained useful since it was installed (TTC 2014).
+Passenger perceptions
+An important question to ask when considering stop consolidation is how passengers are likely to respond to the changes. Individual passengers cannot perceive the system-level savings that consolidation creates; they will instead feel the effect of direct changes to their own trips. With that in mind, do passengers feel the benefits of stop consolidation more than the drawbacks?
+The academic literature agrees that passengers prefer to minimize the time taken by all parts of their transit trip: this includes access time (walking to the bus), waiting time, in-vehicle time, and egress time (walking from the bus) (Wirasinghe and Ghoneim 1981, Levinson 1983, Koffman 1990). However, these different parts of the trip are perceived differently: out-of-vehicle time (access, waiting, egress) is perceived as more valuable than in-vehicle time. In particular, waiting time is seen as the most valuable, 1 at a level two to three times more valuable than in-vehicle time (Gaudry, Jara-Diaz et al. 1989, Ibeas, Alonso et al. 2010); this is likely due to the feeling of powerlessness and uncertainty while waiting. The value of walking time is also considered to be more valuable than in-vehicle time, but less so than waiting time: results vary from 33% to 60% of the value of waiting time.
+Ideally, the net result of bus stop consolidation is that passengers' actual trip times improve or stay constant. However, given that consolidation can decrease waiting time, it may be possible to improve or maintain perceived trip times even with slight increases in actual trip time. That said, improvements to perceived trip times at the expense of actual trips times should not be accepted; if actual trip times do, in fact, increase, then further time saving measures, such as all-door boarding, reserved lanes, and trafficsignal priorities, should be implemented to offset the increases. These measures, as well as comfort enhancements such as greater seat availability and real-time information screens at stops, improve the overall quality of service, in turn increasing passengers' willingness to walk farther to it (Walker 2012).
+1 Transfer time is valued even higher, but will not be discussed in this paper. The consolidation methodology proposed in this paper has no effect on the vast majority of transfer times.
+16 | Stewart / Bus-stop consolidation
+
+Current spacing methodologies
+As was mentioned in the introduction, there exist several methodologies for determining the best stop spacing. Each has advantages, but also has serious drawbacks.
+Street grid
+The simplest way to space bus stops is by using the street grid. It is mathematically true that the best location for bus stops in order to minimize walking distance is at street intersections; thus, locating stops at every intersection, or every second, third, fourth, etc. intersection is an easy and coherent way to locate stops. The MTA in San Francisco is one such agency that uses the street grid as the basis for its stop spacing; most of its routes have a consistent spacing of every one, two, three, or four blocks (SFMTA 2010). Chicago and Portland OR also use their street grid for spacing, with common spacings of one block and three blocks, respectively.
+Despite the simplicity and intuitiveness of this approach, it has several problems. First, it has an underlying assumption that each street block is roughly the same length, and that each block has similar passenger demand; clearly, neither is true in the majority of urban environments. Second, it ignores land use and demand. It may be possible to account for the most obvious generators of passenger demand with this method--for example, universities, major transit stations, and shopping malls--but in other, less obvious situations, its intuitiveness ceases to be useful. Thirdly, it often underestimates how far people are willing to walk to transit service; this is especially true in North America (El-Geneidy 2006).
+Stop spacing standards
+Many studies and textbooks cite 400 metres as the ideal stop spacing for bus routes with local service (that is, non-rapid services). This standard translates into an intuitive five-minute walking distance (Kittleson & Associates 2003). It is certainly easy to remember these nice, round numbers, but the reality is that people will walk different distances depending on numerous factors, such as population density, the quality of transit service, and the quality of pedestrian infrastructure (Walker 2012, El-Geneidy, Grimsrud et al. 2014). For this reason, using a single standard makes little sense.
+Many North American agencies nonetheless use their own spacing standards. These standards vary considerably; see Table 1. Figures were not readily available for many non-North American agencies, but it has been documented that European spacing is at least twice that of North America: 400 to 530 metres, versus 160 to 230 metres (Furth and Rahbee 2000).
+Stewart / Bus-stop consolidation | 17
+
+Spacing standard
+
+City
+
+200m (1 block)
+
+Chicago
+
+200m
+
+Boston
+
+229m (750 ft)
+
+New York
+
+237m (3 blocks)
+
+Portland OR
+
+300 to 400m
+
+Toronto (proposed)
+
+320m
+
+Philadelphia
+
+320 to 400m
+
+Washington DC (consolidation targets)
+
+Table 1: Selected stop spacing standards in North America Sources: MTA (2000), CTA (2001), WMATA (2009), TTC (2014)
+
+Some agencies and organizations realize that this one-size-fits-all approach is unrealistic, and have different standards for different services or different kinds of urban environment (Table 2).
+
+Spacing standard
+
+City or Organization
+
+Service
+
+320m
+
+Los Angeles
+
+Local
+
+1120m
+
+Los Angeles
+
+Express
+
+250 to 400m
+
+Vancouver
+
+Local
+
+1000 to 1500m
+
+Vancouver
+
+Express
+
+200 to 300m
+
+BC Transit
+
+Downtown
+
+200 to 365m
+
+BC Transit
+
+Urban
+
+200 to 760m
+
+BC Transit
+
+Suburban
+
+300m
+
+UITP*
+
+Downtown
+
+400m
+
+UITP
+
+Urban
+
+600m
+
+UITP
+
+Suburban
+
+Table 2: Selected stop spacing standards that vary by service or urban environment *International Assocation of Public Transport (L'Union internationale des transports publics) Sources: BC Transit (2010), Howe (2011), Translink (2012)
+
+While definitely more nuanced, this second set of standards raises more questions. For example, what is the standard for an express service in a suburban environment versus an urban one? What exactly is a suburban environment, anyway? And when the standard is not one number but a wide range of values (for example, the BC Transit Suburban service), what other important factors should be considered?
+It should be noted that agencies sometimes put spacing standards in place for political reasons, namely as a way to resist the pressure from the community to add stops (El-Geneidy 2006). However, as we will see, other options than a single numerical standard exist for resisting such pressure.
+
+18 | Stewart / Bus-stop consolidation
+
+Optimization
+Another strategy for finding the ideal stop spacing is to use optimization. Optimization seeks to find the minimal social cost of a bus route, with social cost being measured by numerous variables affecting the passenger, and sometimes also the agency. Solutions are complex, and often require advanced mathematical models such as dynamic programming. Overall, this strategy is an attempt to bring the rigour of engineering to the stop-spacing question, and it is popular in the academic literature. However, in all the examples of optimization found, numerous problems abound.
+Ibeas, et al (2010) go into great detail about the influence of private traffic and congestion on buses, and measure such minutiae as the "hourly costs due to [the bus] standing still with the engine running." However, there are several serious flaws in their models: bus stops are allowed to be located anywhere, not just at intersections, thereby increasing walking distances unnecessarily; and bus routes are given a single frequency, ignoring the fact that frequencies on most routes vary considerably over the course of a day.
+Mamun and Lownes (2014) make many errors in their model inputs: for example, in-vehicle time is weighted higher than access time, and estimates for both dwell time and average passenger activity are incorrect, with too-low estimations of per-passenger boarding time (1.7 seconds, versus the accepted figure of around 3 seconds (Kittleson & Associates 2003, Dueker, Kimpel et al. 2004, Fletcher and ElGeneidy 2013)), and far-too-high estimations of per-stop passenger activity (15 to 16 passengers per trip; for comparison, the morning-peak per-stop average in Montral is 3.3).
+Chiraphadhanakul and Barnhart (2013) make incorrect assumptions about passenger behaviour, assuming that they will not change bus stops to walk to better service, and uses fixed dwell times at stops (an acknowledged weakness). Furth and Rahbee (2000), one of the most highly-cited optimization papers, is generally solid, but makes arbitrary weightings in its attempt to redistribute demand along a route (1 for detached homes, 3 for low-rise multifamily dwellings, 5 for mid-rises, etc.).
+What becomes clear from all these attempts to find a mathematically perfect solution is that, in trying to precisely quantify all aspects of a city that affect a bus route, something inevitably gets overlooked. A large portion of the work done by the above researchers is rigorous and well-thought out, but despite the considerable amount of brainpower between them, perfection remains elusive.
+The larger question though, is whether a mathematically perfect solution, and the incredible complications involved in finding it, is the appropriate strategy. Consider what the actual problem is in bus stop consolidation. First, possible stop locations: it has already been well-established that the best locations for stops are at street intersections, as these minimize walking distances; thus, there are a small number of possible locations for stops along any given route. Second, many stops along a route must be kept--such
+Stewart / Bus-stop consolidation | 19
+
+as those serving hospitals, transit stations, major commercial / residential / employment nodes; this fact is almost always ignored by optimization. As such, the question of spacing is not one that applies to an entire route: it is one that applies to relatively short stretches of a route between these must-keep stops. Along these stretches, the possible interventions for each existing stop are, again, limited: each can either be (a) removed, or (b) moved a couple blocks in one direction or the other. Given these extremely basic possible outcomes of consolidation, is it really necessary to create complex models approximating such details as the effect of traffic congestion on buses? Clearly, a simpler approach is more appropriate, not to mention being much easier to apply.
+20 | Stewart / Bus-stop consolidation
+
+Methodology
+General criteria
+The new methodology for bus-stop consolidation proposed by this paper seeks to overcome the drawbacks of existing methodologies. As such, the methodology must meet the following criteria:
+Simple The methodology must be easy to understand. This will help to keep the process focused on the important aspects of consolidation and avoid getting lost in the details. It will also help to ensure that agencies can easily apply the methodology on their routes. To fulfill this criteria, advanced math and modeling techniques will be avoided.
+Socially responsible When the issue of removing stops is raised in casual conversation, the inevitable objection that comes up is that it will hurt elderly passengers. While the importance of this particular objection is overblown-- according to the 2008 Montral origin-destination survey, less than 2% of bus riders are 80 or older--the general observation that increasing walking distances will negatively affect some populations more than others is valid and must be addressed by any serious stop consolidation study. One of the aims of this research is to minimize the impact on populations with reduced mobility.
+Adaptable A third criteria of the new methodology is to be adaptable to any bus route in any city. Also, the methodology must be able to have some flexibility in its specific criteria for which stops to keep and remove.
+Effective Ultimately, the methodology needs to create significant savings for passengers and the agency in order to be worth the hassle of implementation. This paper doesn't attempt to quantify the definition of "worth the hassle," but the reader is invited to judge the methodology's effectiveness based on its results.
+Stewart / Bus-stop consolidation | 21
+
+Overview
+The methodology for deciding which stops to consolidate on a bus route consists of five main steps: 1. Determining each stop's catchment area--that is, the area where the bulk of passengers for that stop come from 2. Assigning a class to each stop--that is, an importance level--based on transit connections, the needs of people with reduced mobility, and the level and variation in passenger activity (boarding and alighting) 3. Determining which stops should be removed, primarily based on catchment areas and stop classes 4. Calculating the runtime savings that result from the removal of these stops, and whether the savings are high enough that the route can be run at current frequencies with one less bus 5. Determining the impact on passengers--specifically, whether their actual and perceived trip times will be longer or shorter
+These steps will now be described in detail, using the bus route 161 in Montral as an example. This route is one of the busiest in in the city, serving three subway stations and over 28,000 passengers each weekday. The route is roughly eleven kilometres long and runs primarily along Avenue Van Horne. See Figure 3.
+Figure 3: Route 161 westbound 22 | Stewart / Bus-stop consolidation
+
+Catchment area
+
+El-Geneidy, Grimsrud, et al. (2014) researched walking distances to transit in Montral. The authors used the 2003 local origin-destination survey, which is a random sampling of 5% of households in the Greater Montral area, to determine how far passengers walked to their bus stops. From this, they built a regression model that approximated the 85th percentile of walking distance (that is, the distance that 85% of passengers walk less than); this model was based on such factors as wait time for the bus, local street connectivity, and the local population around a stop. The factors they used are described in Table 3.
+
+Factor
+
+Description
+
+Average
+
+Wait time (minutes)
+
+Average waiting time at the stop for the bus
+
+5.72
+
+Intersections
+
+Number of intersections within 510m of the stop
+
+146.72
+
+Downtown distance (km)
+
+Straight-line distance from the stop to the centre of downtown
+
+8.93
+
+Population 800m
+
+The population, in thousands, within 800m of the stop
+
+9.33
+
+Pop'n proportion 400m
+
+The proportion of the population within 400m of the stop to the population living within 800m
+
+29.73
+
+Base distance (m)
+
+The base walking distance for all stops
+
+
+
+Table 3: Factors for determining walking distances to bus stops. For more information on these factors, please refer to El-Geneidy, Grimsrud, et al. (2014).
+
+Coefficient -2.97 0.07 6.92
+-4.27
+-681.22 663.21
+
+These numbers,which can be generated for any city using geographic information system (GIS) software,can be used to calculate the 85th percentile of walking distance to any bus stop. Table 4 shows how this is done: the values of each factor for a stop are multiplied by the corresponding regression coefficient from Table 3, and then added to come up with the total walking distance in metres. An example of this is shown in Table 4; the factors used in the table are for the westbound stop at Rosemont subway station on route 161.
+
+Factors
+
+Value
+
+Coefficient
+
+Value  Coefficient
+
+Wait time (minutes)
+
+3.6 -2.97
+
+-10.69
+
+Intersections
+
+174 0.07
+
+12.18
+
+Downtown distance (km)
+
+3.9
+
+6.92
+
+26.99
+
+Population 800m
+
+11.335
+
+-4.27
+
+-48.40
+
+Population proportion 400m
+
+0.203
+
+-681.22
+
+-138.29
+
+Base distance (m)
+
+ 663.21
+
+663.21
+
+Total walking distance (m)
+
+505.00
+
+Table 4: Calculation of the 85% percentile walking distance to the westbound bus stop at Rosemont subway station
+
+Stewart / Bus-stop consolidation | 23
+
+Catchment areas around each stop were made with these walking distances. For example, the catchment area for the Rosemont station stop is the area that can be reached by walking 505 metres from the stop along the street network. Figure 3 shows the catchment areas around each stop on route 161 in the westbound direction. The formula was applied to all stops in Montral. The resulting catchment area sizes ranged from 420 to 583 metres, with an average of 484 metres. This is considerably higher than the textbook standard of 400 metres. Catchment area & stop spacing When using street-network distances on a regular street grid, catchment areas form diamond shapes. The problem that this creates is that no matter how the stops are spaced, there will either be gaps in coverage around the stop, overlaps in coverage, or both. The areas of these gaps and duplicate coverage can be made equal by having stop spacing equal to the catchment area radius. See Figure 4.
+Figure 4: When stop spacing is equal to the catchment area radius, coverage overlaps have the same size as coverage gaps
+Under this general principle, it can be seen that the catchment area of each stop S touches the stop immediately before and immediately after S. This forms the basis for the fundamental spacing rule of the new methodology: each stop S should have exactly one other stop before and after it within its catchment area. If there are more than one on either side of S, then the most important stop on either side should be kept, while the others are considered for removal. See Figure 5.
+24 | Stewart / Bus-stop consolidation
+
+Figure 5: The fundamental spacing rule of the new methodology
+Stop importance
+For this research, the importance of a bus stop was based on four factors: the needs of people with reduced mobility, transit connections, passenger activity (boarding/alighting), and whether the stop is the first or last stop on the route.
+1. Mobility problems
+People with reduced mobility live and work in almost all areas of cities. As such, any widespread stopremoval program will have an impact on these populations. However, this impact can be minimized if stops are retained at locations that are heavily used by these populations. For this research, three kinds of locations were deemed to fall into this category: health-care centres, seniors residences, and hospitals.
+The locations of 159 health-care centres, 300 seniors residences, and 37 hospitals on the island of Montreal were identified. Bus stops that were considered to be "serving" these facilities were then identified. To determine this, two different methods were used: one for health-care centres and seniors residences, which tend to be relatively small buildings; and one for hospitals, which tend to be substantially larger.
+Health-care centres and seniors residences The midpoint of each health-care centre and seniors residence (collectively referred to as "facilities" from now on) was determined. If this midpoint was inside the catchment area of a stop S on a bus route R, then
+Stewart / Bus-stop consolidation | 25
+
+the stop on R with the shortest network distance to the facility was considered to be the one stop on that route serving the facility. Note that there could thus be multiple stops serving the same facility if there were multiple routes near it.
+Figure 6: Methodology for determining the closest stops to hospitals. (1) The building footprint of a hospital H, the block B where it is situated, and the street intersections that form B. (2) The polygon P enclosing the hospital building footprint using the intersections that form the block B. (3) The bus lines near the hospital H, their stops, and the bus stop catchment areas. (4) Stops whose catchment areas cover the intersections composing P; that is, the stops serving the hospital. 26 | Stewart / Bus-stop consolidation
+
+Hospitals Determining which stops serve a hospital is more difficult. As hospitals are large buildings, or consist of multiple buildings, it doesn't make sense to reduce a hospital to its midpoint. Also, since hospitals often have multiple entrances, it might make sense for one bus route to have multiple stops serving the same hospital. The best way to determine which stops serve a hospital is to visit each hospital physically and see the locations of entrances, walkways, and so forth. However, given the large number of hospitals in Montral, or in any major city, this would have been too time-consuming. For this methodology, a more abstract approach was used. First, the block occupied by each hospital, and all the street intersections that acted as vertices of these blocks were identified (Figure 6.1). Second, using these vertices (intersections), the smallest possible polygon P that enclosed the hospital's building footprint was drawn (Figure 6.2). Third, for each vertex V composing P that was inside a bus route's catchment area, the stop on this route with the closest network distance to V was identified as "serving" the hospital (Figure 6.3 / 6.4). The stops on the route 161 (westbound) serving health-care centres, seniors residences, and hospitals are shown in Figure 7. There are 13 such stops, all of which will be kept (class A).
+Figure 7: The hospitals, health-care centres, and seniors residences served by route 161
+Stewart / Bus-stop consolidation | 27
+
+2. Transit connections Connections between different transit lines are a necessary part of any good transit system. They are also one of the disliked aspects of transit use (Ibeas, Alonso et al. 2010), so it essential that they are not made more difficult than they need to be. Thus, all stops that directly connect to a major transit line should be kept. For this research, "major transit lines" were defined as being either: metros, commuter trains, and buses belonging to Montral's ten-minute-max frequent network, its express-bus network (400-series), or its shuttle buses (700-series and shuttles for the elderly). Connections to other buses were also considered important, though less so. Stops were identified as connections to other lines if they were at the same street intersection, metro station, commuter rail station, or transit terminal as a stop on the other line. The stops on route 161 connecting with major and minor transit lines are shown in Figure 8. There are 5 stops serving major transit lines and 16 serving minor transit lines.
+Figure 8: Stops connecting to major and minor public transit lines on route 161
+3. Passenger activity A high volume of passengers boarding or alighting is a good measure of a stop's usefulness. High passenger volumes indicate that there is a high concentration of residents, jobs, commercial activities, or other trip generators near the stop. It is difficult to determine how much each of these generators is
+28 | Stewart / Bus-stop consolidation
+
+contributing to the passenger activity ("pax"), as some studies have done, but it is also unnecessary; all that matters is the pax itself.
+
+Evidently, stops with the lowest passenger activity should be considered for removal; however, high variation in passenger activity is also a major concern. A stop that picks up ten passengers on one trip and zero on the next is one that will cause fluctuations in the run time of a bus route; these fluctuations, in turn, lead to decreased reliability. Thus, stops with the lowest passenger activity and highest variation should be strong candidates for removal.
+
+A variable was created to distinguish stops with high pax and low variation from those with low pax and high variation. This variable was called pax quality. To calculate this variable, the average pax of a stop was divided by the stop's coefficient of variation. The coefficient of variation quantifies the variation of a pax at a stop, and is calculated by dividing the standard deviation of pax by the average pax. Pax quality is thus defined as:
+
+Average pax
+
+(Average pax)2
+
+PaxQuality =
+
+=
+
+(Standard deviation of pax  Average pax)
+
+Standard deviation of pax
+
+Standard deviation cannot be used by itself here to measure variation, because a stop cannot have a high standard deviation without also having a high average; thus, the coefficient of variation is a better measure.
+Average per-stop passenger activity figures from 2013 were provided by STM. The quartiles of pax quality for the stops on route 161, as calculated over all seven days of the week, are shown in Figure 9.
+
+Figure 9: Pax quality of all stops on route 161
+
+Stewart / Bus-stop consolidation | 29
+
+4. First and last stops On many routes, the first or last stop may not have high passenger activity or connect with other transit lines. However, in this research, it was assumed that these stops were chosen for strategic reasons related to drivers' layovers, such as having enough space for break rooms or for being out of the way of traffic. Thus, all first and last stops on each route were kept. Future research may find that some first or last stops should be relocated, but that goes beyond the scope of this paper.
+Stop class The above four factors were used to determine each bus stop's class--that is, each stop's importance. All stops in the STM's network were categorized into six classes from A to F, with A being the most important (a "must-keep" stop) and F being the least important. The criteria for each class is shown in Table 5.
+Class Criteria A Serves reduced-mobility centres; or
+Connects to metro/train/frequent/express/shuttle; or First/last stop B Fourth (top) quartile of pax quality C Connects to regular bus network D Third quartile of pax quality E Second quartile of pax quality F All other stops Table 5: Criteria for stop classes
+The class of each stop on route 161 is shown in Figure 10, with a breakdown of classes shown in Table 6.
+Figure 10: Final stop classes for route 161
+30 | Stewart / Bus-stop consolidation
+
+Class
+
+Stop count
+
+Stop percent
+
+A 17
+
+35%
+
+B4
+
+8%
+
+C6
+
+13%
+
+D6
+
+13%
+
+E5
+
+10%
+
+F 10
+
+21%
+
+Table 6: Breakdown of stop classes on Route 161 westbound
+
+Selecting stops for removal
+
+Removal score
+Catchment areas and classes are the two main factors used to determine the removal score of each stop. Stops with a removal score greater than zero will be considered for removal, and stops with the highest scores will have a greater chance of being removed.
+Two other factors come into the final decision of whether to remove a stop: twin stops and consecutive stops.
+Twin stops
+Most stops in Montral have a twin stop: that is, a stop serving the same intersection on the same route in the opposite direction. For consistency, either both stops in a twin pair will be kept, or both will be removed. More specifically, a pair of twins will only be considered for removal if both stops in the pair have a removal score greater than zero. Greater detail on how twin stops were identified is given in the Application of the methodology to the entire system section.
+Consecutive stops
+Removing multiple consecutive stops can create stop spacing which is too wide. For this reason, consecutive stops will not be removed. In the case where a group of consecutive stops each have a removal score greater than zero, only the odd- or even-numbered stops will be removed, depending on which have the higher average removal score. Ties in removal score averages are broken by using average pax quality.
+
+Stewart / Bus-stop consolidation | 31
+
+The process One of the aims of this research was to create a systematic process of selecting stops for consolidation so that it could be automated for an entire bus network. This process is as follows:
+1. Give each bus stop in the system an initial removal score of 0. 2. For each route R in the system, for each direction D in R, and for each stop S along D:
+a. Find the stops on route R in direction D that fall within S's catchment area. b. Find the most important stop before S and most important stop after S within the
+catchment. Importance is first determined by class; pax quality is used to break ties. c. If there are other stops within the catchment, and if they are of lower importance than S,
+and if they are not Class A stops, add one point to their removal scores. See Figure 11. 3. For each stop S with a removal score of at least 1:
+a. If S has a twin stop and its twin has a removal score greater than zero, mark S and its twin as a potential removal
+b. If S has no twin stop, mark it as a potential removal 4. For all the stops marked as a potential removal that are not adjacent to other stops marked as a
+potential removal: a. Mark the stop as for removal
+5. For all the groups of consecutive stops on a route that are marked as a potential removal: a. Calculate the average removal score and pax quality of the odd- and even-numbered stops b. If the odd-numbered stops have a higher average removal score, mark each as for removal, and vice versa. Break ties on pax quality.
+Figure 11: The process for calculating the removal score of stops, based on catchment areas and stop classes
+32 | Stewart / Bus-stop consolidation
+
+Table 7 gives an example of the scoring process for part of route 161. The first stop, Station Rosemont, has no stops before or after it within its catchment area; as such, there are no stops to consider removing, and no points to be given. For the second stop, there is only one stop after it so there is no need to remove any stops.
+For stop 3, however, there are two stops after it within its catchment; of these two stops, stop 4 is the most important, based on its class, so the other stop, number 5, is given a point. For stop 4, there is only one other stop before and after it within its catchment, so no points are given. For stop 5, there are two stops in its catchment before it; however, both of these stops have greater importance than stop 5, so no points are given. For stop 6, there are two stops after it; these two stops have equal classes (C), but stop 8 has a lower pax quality and is thus given a point.
+
+Stop name
+
+Class PaxQuality* Stops before
+
+1. Station Rosemont
+
+A .98
+
+0
+
+2. Van Horne / Waverly
+
+D .63
+
+0
+
+3. Van Horne / du Parc
+
+A .83
+
+1
+
+4. Van Horne / Querbes
+
+D .52
+
+1
+
+5. Van Horne / Bloomfield E .50
+
+2
+
+6. Station Outremont
+
+A .92
+
+1
+
+7. Van Horne / McEachran
+
+C
+
+.73
+
+1
+
+8. Van Horne / Rockland
+
+C .46
+
+2
+
+9. Van Horne / Hartland
+
+F .10
+
+2
+
+10. Van Horne / Pratt
+
+E .31
+
+2
+
+11. Van Horne / de Vimy
+
+E .42
+
+2
+
+Table 7: Example of removal score calculation, using the first 11 stops on route 161 Note that scores of 0 are shown as "-" for visual clarity. *Expressed as percentiles
+
+Stops after 0 1 2 1 1 2 2 2 2 2 1
+
+Score 1 1 4 1 -
+
+After this process is completed for each stop in both directions of Route 161, twin stops must be considered. Table 8 gives an example of how to deal with twin stops. A selection of stops from route 161 is given, along with their removal scores in the westbound and eastbound directions.
+
+In the first case, stop 39, the westbound direction has a score greater than zero, and has no twin; as such, it can be considered for removal. For stops 40 and 41, both their westbound and eastbound twins have scores greater than zero, so both can be removed. In the case of stop 42, the eastbound stop has a score greater than zero, but its westbound twin does not; as such, the pair is not considered for removal.
+
+Stewart / Bus-stop consolidation | 33
+
+Westbound
+
+Eastbound
+
+Stop name
+
+Score
+
+Score
+
+Consider removing
+
+39. Guelph / Parkhaven
+
+1 (no twin)
+
+Yes
+
+40. Guelph / Whitehorne
+
+5
+
+5
+
+Yes
+
+41. Guelph / Melling
+
+31
+
+Yes
+
+42. Guelph / McMurray
+
+-
+
+2
+
+No
+
+43. Guelph / Westminster
+
+-
+
+-
+
+44. Guelph / Westluke
+
+3 (no twin)
+
+Table 8: Example of how to deal with twin stops, using a selection of stops from route 161
+
+Yes
+
+Table 9 shows how to deal with consecutive stops under consideration for removal. As previously mentioned, consecutive stops cannot be removed; only the odd- or even-numbered ones can be removed, depending on which are better candidates for removal. For the first pair of consecutives in Table 9, stops 9 and 10, the average removal score of the odd and even stops is calculated; the average for stop 9 ((4 + 4)  2) is higher than that of 10, so it is removed.
+
+For the second group of consecutives, stops 12 and 13, all the removal scores are the same, so the average pax qualities are calculated. Stop 12 has the lower average pax quality, so it is removed.
+
+For the third group, the average removal score for the odd stops (stops 27 and 29) is 2.5 ((2 + 1 + 3 + 4)  4), which is higher than the average for the even stops, so the odd stops are removed. The reverse situation occurs in the last group, where the even-numbered stop in the middle (stop 40) has a higher average score than that of the odd-numbered stops, so only it is removed.
+
+Westbound
+
+Eastbound
+
+Stop name
+
+Consider removing Score PaxQual* Score PaxQual* Remove
+
+9. Van Horne / Hartland
+
+Yes 4 .10 4 .05 Yes
+
+10. Van Horne / Pratt
+
+Yes
+
+1 .31 3 .23
+
+No
+
+12. Van Horne / Northcrest
+
+Yes
+
+1 .85 1 .84 Yes
+
+13. Van Horne / Wilderton
+
+Yes
+
+1 .90 1 .89
+
+No
+
+27. Van Horne / Macdonald
+
+Yes
+
+2 .29 1 .16 Yes
+
+28. Fleet / Finchley
+
+Yes
+
+1 .19 1 .14
+
+No
+
+29. Fleet / Netherwood
+
+Yes 3 .13 4 .02 Yes
+
+39. Guelph / Parkhaven
+
+Yes
+
+1 .25
+
+(no twin)
+
+No
+
+40. Guelph / Whitehorne
+
+Yes
+
+5 .02
+
+5 .09 Yes
+
+41. Guelph / Melling
+
+Yes
+
+3 .17
+
+1 .27
+
+No
+
+Table 9: How to deal with consecutive stops under consideration for removal, using route 161 as an example *Expressed as percentiles
+
+34 | Stewart / Bus-stop consolidation
+
+Savings calculations
+From here, potential runtime savings from stop removal can be calculated. For this research, savings were calculated for the morning peak period (6:30 to 9:30 AM) only. Since there can be considerable fluctuation during this time, savings were calculated separately for each half-hour period (6:30 to 6:59, 7:00 to 7:29, etc.). The following process was used:
+First, the number of buses that are either actively serving a route or on a layover2 was determined. This figure was calculated by counting the number of buses which were active or on a layover at each minute of the half-hour period, then taking the average of these counts. See Table 10 for an example.
+
+Trip # 7:00 7:01 7:02 7:03 7:04 7:05 7:06 7:07 7:08 7:09 7:10 7:11 7:12 7:13 7:14 Average
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+7  Active 5 5 5 4 4 3 3 5 5 5 5 5 5 3 3
+
+4.3
+
+Layover - - - 1 1 2 2 1 - - - - - 1 1
+
+0.6
+
+TOTAL 5 5 5 5 5 5 5 6 5 5 5 5 5 4 4
+
+4.9
+
+Table 10: The method for calculating the number of active and on-layover buses for a route in a given period. For space purposes, only half of a 30-minute period is shown.
+
+Second, the average cycle time for the route was calculated. Cycle time consists of the bus's runtime, from first to last stop, for each direction, plus the layover time at each end of the trip. Scheduled stop times from the General Transit Feed Specification (GTFS) were used to calculate cycle time. Third, the average headway--that is, the time between buses--was calculated by dividing the average cycle time by the number of active or on-layover buses.
+Fourth, the time savings expected from removing the selected stops were determined. This was calculated
+
+2 Layovers are extra time taken at the end of a route. They are "provided for some or all of the following purposes: Vehicle turning or change of driver's cab; Resting of the crew; Adjustment in schedule (e.g., to maintain uniform headway); Recovery of delays incurred in travel" (Vuchic, 2005).
+Stewart / Bus-stop consolidation | 35
+
+by adding the time saved for each removed stop. The average time that a bus takes to make a stop, excluding the time taken by passengers, is about 12 seconds (Ttreault and El-Geneidy 2010, Stewart and El-Geneidy 2014). This time comprises the time taken to decelerate from full speed to a stop, open the doors for passengers, close the doors, wait to be able to re-enter traffic, and then accelerate back to full speed. Thus, for most stops, the average time saved by removing the stop is 12 seconds per trip. However, if a stop is not stopped at on all trips, the time savings will be less; for example, if it is stopped at on every other trip, then only 6 seconds will be saved by removing it. In general, if a stop's average pax is 1 or greater, the time saved by its removal will be 12 seconds; otherwise, the time saved will be equal to the stop's average pax multiplied by 12 seconds (for example, 0.75  12s = 9s) .
+On a related note, it should be mentioned that the figure of 12 seconds per stop is conservative compared to actual results seen in Montral. For example, along Boulevard St-Michel, there are parallel local and express routes, the 67 and 467, which follow an identical path; the only difference between the two routes is the number of stops. According to STM's schedules, the runtime differences between them indicate that the savings per stop vary between 12 seconds and 24 seconds, depending on the time of day and direction (Table 11).
+
+Peak-period
+
+North
+
+South
+
+AM 16.4 12.4
+
+PM 23.9 15.8 Table 11: Seconds saved per stop on the express route 467 versus the local route 67, by peak-period and direction
+
+Fifth, the new cycle time is calculated by subtracting the total time savings from the cycle time. Sixth, the new headway is determined by dividing the new cycle time by the current number of buses on the route.
+Seventh, the new number of buses required to maintain the existing headway is calculated by dividing the new cycle time by the existing frequency. If the new number of required buses (rounded up) is less than the existing number of required buses (rounded up), then it might be possible to operate the route at existing frequencies with fewer buses.
+The possibility of removing a bus was explored further, since it represents such substantial savings. Specifically, the increase in headway was calculated for a hypothetical situation where one less bus was used compared to the current number; for example, if 17 buses are currently being used on a route, the headway with only 16 buses would be calculated, after taking the runtime savings from stop removal into account. In doing this, it was found that numerous routes could be run with one less bus with very minor increases in headway.
+The question that gets raised here is how much of an increase in headway is acceptable in order to obtain the considerable savings of needing one less bus on a route. For this paper, it was decided that an
+
+36 | Stewart / Bus-stop consolidation
+
+increase of 5% or less would be tolerable; in the case of a route that has a ten-minute headway, a 5% increase would amount to only an extra 30 seconds between buses. However, it is also necessary that this increase of 5% or less occurs over a long enough period of time for a bus to complete one full trip cycle. For example, if a route X with a cycle of 75 minutes saw a headway increase of just 3% in one half-hour period but an increase of 20% in the previous and subsequent half-hour periods, then clearly a bus cannot be saved (Table 12); this route would need minor headway increases over at least 75 minutes, which is to say, at least three consecutive half-hour periods. However, if a route Y with a cycle of 105 minutes had headway increases of 5 or less in at least four consecutive half-hour periods (120 minutes), then this is considered acceptable for this paper (see Table 12).
+
+Route
+
+Average cycle time
+
+Halfhour periods needed
+
+6:306:59
+
+Increase in headway with one less bus 7:007:29 7:307:59 8:008:29 8:308:59
+
+9:009:29
+
+X 75
+
+3 32% 20% 3% 20% 14% 18%
+
+Y 105 4 19% 4% -2% 2% 0% 14%
+
+Z 45
+
+2 13% 21% 15% 11% -1%
+
+4%
+
+Table 12: Increase in headway with one less bus on hypthothetical routes. Routes Y and Z can operate using one less bus with only minimal increases in headway, whereas route X cannot.
+
+The results of the above calculations for route 161 are shown in Table 13. As can be seen in the bottom row, the increase in headway after a bus has been removed is never more than 1%, which represents an increase of just four seconds. Also, since this increase is below 5% in six consecutive half-hour periods, and the average cycle time of the 161 (93 minutes) requires only four consecutive periods, it can be said that a bus can be removed on this route with no significant increase in headway.
+
+Current active buses & buses on layover Current runtime Current headway Minutes saved Potential runtime Potential headway Potential buses required Potential headway with one less bus Increase in headway with one less bus Table 13: Savings on route 161
+
+6:30 6:59 7.2 85.9 11.9 2.3 83.6 11.6 7.0 11.9 0.5%
+
+7:00 7:29 10.3 90.6 8.8 2.5 88.1 8.6 10.0 8.8 -0.2%
+
+7:30 7:59 14.5 94.8 6.6 3.2 91.6 6.3 14.0 6.5 -0.2%
+
+8:00 8:29 16.5 96.3 5.8 2.7 93.6 5.7 16.1 5.9 0.4%
+
+8:30 8:59 12.5 95.6 7.6 3.3 92.3 7.4 12.1 7.7 0.8%
+
+9:00 9:29 9.3 92.6 9.9 2.6 90.0 9.6 9.1 10.0 0.8%
+
+Stewart / Bus-stop consolidation | 37
+
+Impact on passengers Next, the impact on passengers that results from removing stops was determined. This was measure in two ways: by decline in service coverage area, and by change in overall passenger travel time. Service area decline, which is a mathematical certainty when removing stops, was measured by comparing the total area covered by the route's catchment areas before and after removing stops. In the case of route 161, when 22% of the stops were removed, the coverage area declined by only 3%. Service area decline can be seen from a positive angle though: as a reduction in service redundancy. Certainly, some redundancy is necessary in a transit system in order to give passengers choices; however, after a point, it becomes wasteful. Figure 12 shows the decrease in service redundancy; the figure was generated by counting the number of service areas which overlap each 50-by-50 metre grid cells around the route. There is a considerable decrease in the number of grid cells overlapped by five or more service areas, while the overall coverage of the route remains nearly identical.
+Figure 12: Reduction in redundancy of coverage, before and after stop consolidation
+Lastly, the effect on passengers' overall travel time was calculated. Ideally, this would be calculated using an origin-destination survey to see how real people's trips would be affected; unfortunately, time restrictions prevented these calculations from being performed. Instead, a rough estimation based on
+38 | Stewart / Bus-stop consolidation
+
+route averages was performed instead. Table 14 shows these estimations for the 161; the most important result is that overall travel times--that is, the total of walking time, waiting time, and in-vehicle time-- are shown to decrease. The amount that these travel times decrease varies from 16 to 23 seconds, depending on whether a bus is removed (thereby maintaining frequencies) or not (thereby increasing frequencies).
+
+Walking time Average increase in stop spacing Average increase in walking distance Average walking-time increase
+Waiting time Average AM-peak headway decrease Average wait-time savings
+In-vehicle time Average AM-peak runtime savings Average in-vehicle time savings
+
+Change
+70 metres 35 metres 25 seconds
+14 seconds 7 seconds
+84 seconds 42 seconds
+
+Notes
+Half the stop spacing increase Average walking speed of 5 km/h
+Half the headway decrease
+Half the runtime savings, assuming the average passenger is riding half the total route
+
+Total change, no buses removed Total change in trip travel time
+Total perceived change in travel time
+
+-23 seconds -12 seconds
+
+Walking-time increase minus in-vehicle savings minus wait-time savings
+Using walking time and waiting time as worth two and three times that of in-vehicle time
+
+Total change, one bus removed Total change in trip travel time
+
+-16 seconds With one bus removed; no headway change
+
+Total perceived change in travel time
+
++9 seconds With one bus removed; no headway change
+
+Table 14: Average change in passenger trip time for route 161 Walking speed reference: Browning, et al. (2006)
+
+Application of the methodology to the entire system
+This methodology was automated using Python programming and applied to all bus stops and routes operated by STM in Montral during the morning peak. GTFS (General Transit Feed Specification) data
+Stewart / Bus-stop consolidation | 39
+
+from 2012 was used. In this data set, there are 177 bus routes; three of these routes (19, 76, and 126) were removed due to a lack of morning-peak buses. There are also 8628 physical bus stops, and 15,832 "logical" bus stops, that is, bus stops serving different routes, directions, or trajectories (the specific sequence of stops taken by a bus). Table 15 summarizes the data calculated at the system level:
+
+Average catchment area (metres) Stops serving facilities for populations with reduced mobility:
+Health-care centres and seniors residences Hospitals Stops connecting to transit: Metro (subway) Commuter train 10-minute max frequent bus network Express bus network Shuttles Transit termini Local bus network Average AM-peak passenger activity (per stop per trip) Average stops within catchment areas (ideal number is 3): Average stops within catchment area before stop Average stops within catchment area after stop Stop classes A B C D E F Table 15: Summary of data collected at the system level
+
+484 3443 3022 707 7032 706 190 2093 2105 518 250 4741 2.74 4.15 1.58 1.57
+6878 (43%) 1456 (9%) 1484 (9%) 1625 (10%) 2078 (13%) 2311 (15%)
+
+Details of the system-level automation process
+Connection stops Stops were deemed to be connection points ("transfers") to other transit lines if they were at the same intersection, or if they were at the same metro station, train station, or terminus. This follows an intuitive
+
+40 | Stewart / Bus-stop consolidation
+
+understanding of the term "connection," even though walking distances may vary considerably, given that some stations have many bus stops spread over a large area, while intersections are very small by comparison. To determine if stops were at the same intersection or station, a Python script was used to group together similar names of stops; stop names were provided in the GTFS files. However, stop names referrring to the same location often had slightly different names; for example, the following variations of names all had to be identified as the same location:
+ Berri / Place milie-Gamelin  Station Berri-UQAM (Berri / Place milie-Gamelin)  Station Berri-UQAM (Berri / De Maisonneuve)  Station Berri-UQAM (Berri / de Maisonneuve)  Station Berri-UQAM (Berri / Sainte-Catherine)  Station Berri-UQAM (De Maisonneuve / Berri)  Station Berri-UQAM (De Maisonneuve / Saint-Denis)  Station Berri-UQAM (De Maisonneuve / St-Hubert)  Station Berri-UQAM / Gare d'autocars de Montral Additionally, connection stops could not be to a last stop on another route or from the first stop on the starting route, as these are not logical connections. Lastly, if two bus routes ran in parallel for a portion of their routes, only the stops where the two routes joined and left each other were considered connection stops; see Figure 13. A total of 33 adjustments were made manually.
+Figure 13: Connection stops between overlapping routes
+Twin stops A Python script was written to identify which stops on each route had a twin. This was not as simple as finding stops on the same route at the same intersection, because many routes in Montral run in a single direction on one-way streets, and in the opposite direction on a parallel one-way street. Thus, twins were determined by using the following process. First, for each stop S on route R, all the stops in the opposite
+Stewart / Bus-stop consolidation | 41
+
+direction of R within S's catchment were found. Second, of these stops, the closest one to S, stop C, is identified. If S is also the closest stop to C within C's catchment, they are considered to be twins. After this process has been run for all stops along route R, the matched twins are removed and the process is repeated with the remaining non-twinned stops; this is done because, in some cases, one stop in a pair of twins on parallel one-way streets might be closer to another stop in the opposite direction. Figure 14 gives an example of this problem. In the figure, the eastbound end of a bus route is shown, with a terminus stop that is both the last stop in the eastbound direction and the first stop in the westbound direction. It is clear that stops 3 (westbound) and 21 (eastbound) are twins, as are stops 2 (westbound) and 22 (eastbound). However, the closest eastbound stop to stop 1 (westbound) is the terminus stop (T), while its true twin is stop 24. This problem is resolved in the above process by first identifying the eastand westbound twin at the terminus, then re-running the process without the already-identified twins; on this second run-through, stops 1 (westbound) and 24 (eastbound) are identified as twins. After this entire process was run, 31 manual adjustments were made.
+Figure 14: A problem encountered when identifying twin stops on routes running on parallel one-way streets
+Order of stop removal The removal of stops on one route will affect the class of another route if the removed stop was a connection stop. This has implications for which routes undergo the consolidation process first: for example, if all the minor bus routes are processed first, then all their connecting stops with major bus routes will be deemed as class A stops, so none of these stops on the major routes will be able to be removed. Thus, it was important that the most significant routes undergo consolidation first. Significance was determined first be route type: the 10-minute-max frequent network was first, followed by the express routes, shuttles, and locals. Within types, the order was determined by the highest to lowest weekly ridership figures. Because stops were continually removed through the process, the class of each stop for each route was calculated immediately before the route underwent consolidation, rather than all being calculated before the whole process began.
+42 | Stewart / Bus-stop consolidation
+
+Savings calculations and short routes Many routes run multiple trajectories in the same direction; that is, some buses on a route will run the full route, while others will only run part of it ("short routes"). This adds a complication to the calculation of frequencies and savings, as short routes are not part of a full route cycle. To simplify the savings calculations, only the most frequently run trajectories in the morning peak were used. Fortunately, during the morning peak, most routes tend to rely on a single trajectory for each direction; as such, only 4.2% of total trips were removed from the savings calculations. Including these removed trips in future calculations would result in greater savings than have been shown in this study.
+Stewart / Bus-stop consolidation | 43
+
+Findings & Discussion
+
+System savings overview
+
+The main results from the system-level analysis are shown in Table 16. The average increase in stop spacing is 74 metres; this means that the average increase in walking distance is 37 metres, which is an insignificant increase. As well, the decline in service area at the system level is only 1%. Given the potential cost savings, particularly from removal of 42 buses, this seems like a reasonable trade-off.
+
+Number of stops removed Average for each route* System-wide
+Stop spacing Average increase* Average new spacing Average new spacing (excluding spacings over 1000m) Average number of stops within catchment areas
+Service area Average decrease for each route* System-wide decrease
+Runtime savings (AM peak)** Average decrease per route* Total operating time saved Average decrease in headway*
+Bus removal (AM peak)** Routes from which a bus can be removed
+Table 16: Summary of main system-level findings *Histograms of these variables can be found in the appendix. **Short routes were excluded from these calculations
+
+14 (19%) 1977 (23%)
+74 metres (24%) 510 metres 350 metres 3.75
+2.6% 1.06%
+1.2 minutes 109 hours (4.5 days) 19 seconds
+42
+
+Different results were observed between regular, express, and frequent bus services. Generally, the express routes saw the fewest number of removed stops, since they typically have wider spacing than the regular and frequent routes. As such, the express routes also have the lowest increases in stop spacing and the lowest decreases in service area. As for decreases in runtime and headway, the frequent routes perform the best. This is expected: high frequency routes typically have high passenger activity at each stop, which means that more time will be saved per stop removed. See Table 17.
+
+44 | Stewart / Bus-stop consolidation
+
+ROUTE TYPE
+
+Regular
+
+Express
+
+Frequent
+
+ALL
+
+Stops cut
+
+Number
+
+15.4 6.2 16.9 13.9
+
+Percentage
+
+20.8%
+
+10.9%
+
+20.4%
+
+18.9%
+
+Increase in stop spacing
+
+Metres
+
+77.0 74.4 67.5 73.9
+
+Percentage
+
+27.1%
+
+11.7%
+
+27.0%
+
+24.4%
+
+Decrease in service area
+
+Square Kilometres
+
+0.20
+
+0.11
+
+0.23
+
+0.19
+
+Percentage
+
+2.8%
+
+1.3%
+
+2.9%
+
+2.6%
+
+Decrease in runtime
+
+Minutes
+
+1.2 0.5 2.2 1.2
+
+Percentage
+
+1.8%
+
+0.7%
+
+2.9%
+
+1.8%
+
+Decrease in headway
+
+Seconds
+
+23.1 5.7 14.9 18.6
+
+Percentage
+
+1.8%
+
+0.6%
+
+2.8%
+
+1.8%
+
+Table 17: Consolidation results by bus service type. Figures here are averages for each route in each category.
+
+For determining which routes a bus can be removed from, the previously explained method of calculating the change in headway after a bus is removed was used (see the Savings Calculations section of the Methodology). Table 18 shows these routes, 42 in total, sorted by average change in headway after a bus is removed. The red cells indicate headway decreases; the orange cells indicate increases less than 5%; the yellow cells indicate increases less than 10%. The consecutive half-hour periods where the headway increase is less than 5% are emphasized in bold text. For each route, these consecutive periods represent a length of time greater than, or approximately equal, to the route's average cycle time. For example, route 80's cycle time of 73 minutes spans three half-hour periods; this is less than the four consecutive periods (4  30 minutes =120 minutes) which are emphasized in bold text for this route.
+
+Stewart / Bus-stop consolidation | 45
+
+Route
+
+Average cycle time
+
+6:306:59
+
+Increase in headway with one less bus 7:007:29 7:307:59 8:008:29 8:308:59 9:009:29
+
+18 96 -3% -2% -4% -3% -4% 2%
+
+139 88
+
+-4%
+
+-1%
+
+-2%
+
+2%
+
+0%
+
+-4%
+
+121 99
+
+-3%
+
+0%
+
+0%
+
+-1%
+
+0%
+
+-1%
+
+33 101
+
+-4%
+
+-3%
+
+-4%
+
+3%
+
+5%
+
+0%
+
+141 83
+
+-1%
+
+3%
+
+-4%
+
+4%
+
+-3%
+
+-2%
+
+69 115
+
+1%
+
+2% -2% 0%
+
+2% -3%
+
+24 96 6% -3% 2% -2% 0% -2%
+
+161 93
+
+1%
+
+0%
+
+0%
+
+0%
+
+1%
+
+1%
+
+51 103
+
+5%
+
+2%
+
+1% -2% -1% 1%
+
+435 149
+
+2%
+
+2%
+
+1%
+
+1%
+
+1%
+
+1%
+
+197 70
+
+4%
+
+5%
+
+-4% -3% -2%
+
+9%
+
+193 92
+
+8%
+
+6%
+
+0% -3% 2% -1%
+
+189 78 0% -2% 0% 9% 7% 1%
+
+55 86
+
+10%
+
+0%
+
+1%
+
+-1%
+
+5%
+
+2%
+
+80 73
+
+12%
+
+9%
+
+0% -1% -1% 1%
+
+165 63
+
+12%
+
+6%
+
+3%
+
+2% -3% 0%
+
+73 22
+
+3% 3% 3%
+
+67 79
+
+7%
+
+0%
+
+2%
+
+2% -1% 11%
+
+45 86
+
+6%
+
+1%
+
+4%
+
+2%
+
+4%
+
+7%
+
+48 91
+
+-2%
+
+0%
+
+2%
+
+4%
+
+2% 20%
+
+90 89
+
+11%
+
+1%
+
+-2%
+
+1%
+
+3% 13%
+
+460 137
+
+5%
+
+4%
+
+3%
+
+0% 11% 4%
+
+113 64
+
+2%
+
+0%
+
+7%
+
+1% 16% 0%
+
+171 75
+
+4%
+
+2%
+
+3%
+
+6%
+
+9%
+
+4%
+
+136 60
+
+18%
+
+6%
+
+3%
+
+0%
+
+9%
+
+8%
+
+406 23 21% 10% 10%
+
+2%
+
+0%
+
+187 68
+
+10%
+
+17%
+
+15%
+
+-2%
+
+-3%
+
+15%
+
+103 45
+
+7%
+
+10% 0%
+
+3% 19% 28%
+
+30 84
+
+41%
+
+1%
+
+3%
+
+-1% 42% -1%
+
+68 114
+
+-2%
+
+5%
+
+1%
+
+2% 25% 85%
+
+131 27 8% 76% 3% 12% 3%
+
+170 45 26% -3% 3% 25% 17% 79%
+
+207 50
+
+84%
+
+0%
+
+0%
+
+-2% 81%
+
+1%
+
+106 26 10% 34% 79%
+
+-3% 82%
+
+2%
+
+78 48 70% 73%
+
+0%
+
+3%
+
+-1% 95%
+
+102 47 42% 62%
+
+1%
+
+3% 72% 67%
+
+108 48
+
+47%
+
+1%
+
+-1% 95% 68% 73%
+
+14 43 81% 95% 91%
+
+4%
+
+3% 90%
+
+Table 18: The 42 routes from which a bus can be removed
+
+AM peak average
+-2% -1% -1% -1% 0% 0% 0% 0% 1% 1% 2% 2% 2% 3% 3% 3% 3% 3% 4% 4% 4% 4% 4% 5% 7% 8% 9% 11%
+14%
+19% 21% 24% 27% 34% 40% 41% 47% 61%
+
+46 | Stewart / Bus-stop consolidation
+
+Redundancy reduction
+Another benefit from the consolidation was the reduction in service-coverage redundancy:
+
+Figure 15: Reduction in service-coverage redundancy
+
+Stewart / Bus-stop consolidation | 47
+
+Figure 15 shows the number of service areas overlapping each 100-by-100 metre grid cell on the island of Montral, before and after removing stops. By removing the stops identified in this study, the number of heavily overlapped areas--those in yellow, orange and red, representing wasteful redundancy--decline considerably.
+
+Change in travel time
+
+An estimation of the impact on passenger travel times is given in Table 19. After considering changes to walking, waiting, and in-vehicle time, it was found that, on average, there is virtually no difference in overall travel times at the system-level; in fact, there is a modest decrease. It can thus be said, that passengers, on average, will see negligible differences, let alone negative impacts, on their travel times. As mentioned previously though, it will be necessary to perform more refined analysis using data from the origindestination survey to accurately measure travel-time changes; this will allow impacts to individuals to be better quantified, and to determine how many people will be affected.
+
+Change
+
+Walking time
+
+Average increase in stop spacing
+
+74 metres
+
+Average increase in walking distance
+
+37 metres
+
+Average walking-time increase
+
+27 seconds
+
+Waiting time
+
+Average AM-peak headway decrease
+
+19 seconds
+
+Average wait-time savings
+
+10 seconds
+
+In-vehicle time
+
+Average AM-peak runtime savings
+
+36 seconds
+
+Average in-vehicle time savings
+
+18 seconds
+
+Total change, no buses removed
+
+Total change in trip travel time
+
+-1 second
+
+Total perceived change in travel time
+
++6 seconds
+
+Table 19: Average change in passenger travel time at the system level
+
+48 | Stewart / Bus-stop consolidation
+
+Conclusions
+For this paper, a new methodology for bus-stop consolidation was developed. The overall goal was to overcome the drawbacks of current methodologies--that is, to create a process that was not only simple to understand, but also one that was effective, socially responsible, and adaptable to any bus route.
+The methodology was first tested on one bus route in Montral, the 161, and then was automated using Python scripts for all routes operated by La Socit de transport de Montral (STM). Nearly 2000 stops were identified as candidates for removal, representing almost a quarter of all stops in the system. The runtime savings that would result from removing these stops could save as much as 109 hours of operating time during the morning peaks, and additionally, as many as 42 bus routes could operate at existing frequencies with one less bus.
+The ultimate question for any stop-consolidation scheme is whether the operating cost savings will come at the expense of passengers. This study concludes that passengers will not be inconvenienced in any significant fashion. On average, walking times will increase by a mere 27 seconds, the entirety of which will be offset by decreases in waiting and in-vehicle time. Additionally, the overall decline in system coverage is just 1%. The impact of the proposed stop removal on passengers is thus minimal.
+Future research
+There are several directions for future research leading from the results of this paper. The first is a more detailed analysis of the consolidation's effect on passengers, using data from the origin-destination survey. Given that stop removal can be met with considerable resistance from citizens, it is of utmost importance to understand what the real impact of widespread stop removal will be; this will allow the methodology to be adjusted in order to minimize negative outcomes, and also to educate the public with accurate information.
+Second, for the routes that stand to benefit the most from consolidation, more detailed studies should be undertaken. The methodology presented here is a first step to understanding potential benefits of stopremoval, but it is certainly not the last one: on-the-ground studies must be carried out to see what details have been missed, and what other factors needs to be taken into consideration. Some factors that this study did not consider include the presence of traffic lights at stops and the position of stops at intersections (far side / near side). Also, any future calculations of runtime savings should take short routes into account.
+Stewart / Bus-stop consolidation | 49
+
+Third, the methodology described here can be applied to Montral's express-bus network, using larger service areas. Many of the city's express routes have relatively narrow stop spacing compared to express routes in other cities; that is, many of them are not "limited-stop" services. The application of this paper's methodology would allow these routes to be converted to limited-stop services, thus making them run much faster and thereby better distinguishing the express network from the local network. A more extensive network of limited-stop buses would attract more riders, and the reduced runtimes would save STM on operating costs. Lastly, pilot consolidation projects can be run on one or more routes. Such pilot projects would be inexpensive, as the only major requirement would be to temporarily close selected stops.
+Closing remarks
+What is the purpose of an urban bus network? Is it to be a social service, competing only with walking and cycling as a means of traveling through a city? Is it to be used exclusively by students, the poor, and the physical impaired--that is, by people who don't have the option to use a "real" transportation option like a car? This attitude is as commonplace as it is harmful. As long as buses are seen in this condescending way, we will continue to surrender our streets, our cities, and our lives to private automobiles. However, if we start thinking of buses as the convenient, quick, and comfortable transportation option that they can be, then we will move closer to making them so. The idea of removing bus stops is often met with hostility. But the truth is that bus stop consolidation is one step towards creating the higher-quality bus service that is increasingly imperative in today's cities. And if the price to pay for such better service is that we all walk an extra block or two, then this author, personally, will be voting with his feet.
+50 | Stewart / Bus-stop consolidation
+
+Appendix
+
+System savings figures: Distributions
+All the charts in this section are histograms. The horizontal axis represents ranges of values, while the vertical axis is a count of how many data points fall into each of these ranges. These histograms are all based on the most frequently run route trajectories in each direction; this is, short routes are not included.
+
+Stops removed per route
+
+Average Standard deviation 10th percentile 20th percentile 50th percentile (median) 80th percentile 90th percentile
+
+13.9 9.0 3.0 5.0
+14.0
+20.0 26.0
+
+Number of stops removed per route
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+18.9% 7.9% 6.8%
+12.6%
+20.5%
+25.3% 27.6%
+
+Percentage of stops removed per route
+
+Stewart / Bus-stop consolidation | 51
+
+Increase in stop spacing
+Increase in average stop spacing per route, in metres Percentage increase in average stop spacing per route
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+73.9 38.4 29.7 48.3
+71.5
+100.6 115.5
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+24.4% 11.8%
+6.5% 14.6%
+25.3%
+34.8% 38.2%
+
+52 | Stewart / Bus-stop consolidation
+
+Decrease in service coverage
+Decrease in service coverage per route, in square kilometres Percentage decrease in service coverage per route
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+0.19 0.14 0.02 0.07
+0.16
+0.28 0.39
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+2.6% 1.6% 0.4% 1.1%
+2.4%
+3.7% 4.8%
+
+Stewart / Bus-stop consolidation | 53
+
+Decrease in runtime per route
+Decrease in runtime per route, in minutes Percentage decrease in runtime per route
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+1.22 0.95 0.09 0.27
+1.06
+2.04 2.48
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+1.8% 1.2% 0.2% 0.6%
+1.7%
+3.0% 3.5%
+
+54 | Stewart / Bus-stop consolidation
+
+Decrease in headway per route
+Decrease in headway per route, in seconds Percentage decrease in headway per route
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+18.62 13.03
+2.21 6.87
+17.14
+27.73 36.01
+
+Average
+Standard deviation
+10th percentile
+20th percentile 50th percentile (median) 80th percentile
+90th percentile
+
+1.8% 1.2% 0.2% 0.6%
+1.7%
+2.9% 3.5%
+
+Stewart / Bus-stop consolidation | 55
+
+References
+BCTransit (2010). Infrastructure Design Guidelines. Benn, H. (1995). Synthesis of transit practice 10: Bus route evaluation standards, Transportation Research
+Board. Browning, R. C., et al. (2006). "Effects of obesity and sex on the energetic cost and preferred speed of
+walking." Journal of Applied Physiology 100(2): 390-398. Chiraphadhanakul, V. and C. Barnhart (2013). "Incremental bus service design: Combining limited-stop
+and local bus services." Public Transport 5: 53-78. CTA (2001). Chicago Transit Authority Service Standards. Dueker, K., et al. (2004). "Determinants of Bus Dwell Time." Journal of Public Transportation 7(1): 19. El-Geneidy, A. (2006). The use of advanced information technology in urban public transportation
+systems: An evaluation of bus stop consolidation. Urban Studies, Portland State University. Doctor of Philosophy. El-Geneidy, A., et al. (2014). "New evidence on walking distances to transit stops: identifying redundancies and gaps using variable service areas." Transportation 41: 193-210. El-Geneidy, A., et al. (2006). "The effects of bus stop consolidation on passenger activity and transit operations." Transportation Research Record 1971: 32-41. Fletcher, G. and A. El-Geneidy (2013). "The effects of fare payment types and crowding on dwell time: A fine-grained analysis." Transportation Research Record. Furth, P. G. and A. B. Rahbee (2000). "Optimal bus stop spacing through dynamic programming and geographic modeling." Transportation Research Record: Journal of the Transportation Research Board 1731(1): 15-22. Gaudry, M. J., et al. (1989). "Value of time sensitivity to model specification." Transportation Research Part B: Methodological 23(2): 151-158. Gordon, R. (2010). Muni may reduce stops to increase speed, save cash. San Francisco Gate. San Francisco. Howe, A. (2011). "Principles of bus service planning."
+56 | Stewart / Bus-stop consolidation
+
+Ibeas, ., et al. (2010). "Optimizing bus stop spacing in urban areas." Transportation research part E: logistics and transportation review 46(3): 446-458.
+Kehoe, O. (2004). Effects of bus stop consolidation on transit speed and reliability: A test case. Civil Engineering, University of Washington. Master of Science.
+Kittleson & Associates, I. (2003). 2nd Edition transit capacity and quality of service. Orlando, FL, Transportation Research Board.
+Koffman, J. (1990). Automatic passenger counting data: Better schedules improve on-time performance. Fifth International Workshop on Computer-Aided Scheduling of Public Transport. Montreal.
+Levinson, H. (1983). "Analyzing transit travel time performance." Transportation Research Record 915: 1-6. Mamun, S. and N. Lownes (2014). Access and connectivity: Tradeoffs in transit stop location.
+Tranportation Research Board Annual Meeting 2014. Washington DC. Marchal, M. (2012). La STM paie-t-elle le juste prix pour les bus hybrides? Mtro. Montral. MTA (2000). System-wide service standards, MTA New York City Transit & MTA Bus Company. Riga, A. (2013). Replacing popular airport bus "can't be justified". West Island Gazette. Montreal. SFMTA (2010). Transit Effectiveness Project Implementation Strategy, San Francisco Municipal
+Transportation Agency. Stewart, C. and A. El-Geneidy (2014). All Aboard at All Doors: Route Selection and Running Time Savings
+Estimation for Multi-scenario All-Door Bus Boarding. Transportation Research Board 93rd Annual Meeting. Ttreault, P. R. and A. M. El-Geneidy (2010). "Estimating bus run times for new limited-stop service using archived AVL and APC data." Transportation Research Part A: Policy and Practice 44(6): 390-402. Translink (2012). Transit-oriented communities: A primer on key concepts. Trimet (2002). Bus stop guidelines 2002, Tri-County Metropolitan District of Oregon. TTC (2014). Improving pedestrian safety and customer journey times: Transit stops. Toronto, Toronto Transit Commission. Walker, J. (2008). "Purpose-driven public transport: creating a clear conversation about public transport goals." Journal of Transport Geography 16(6): 436-442.
+Stewart / Bus-stop consolidation | 57
+
+Walker, J. (2012). Human transit: How clearer thinking about public transit can enrich our communities and our lives. Washington, DC, Island Press.
+Wirasinghe, S. and N. S. Ghoneim (1981). "Spacing of bus-stops for many to many travel demand." Transportation Science 15(3): 210-221.
+WMATA (2009). Design and placement of transit stops, Washington Metropolitan Area Transit Authority.
+58 | Stewart / Bus-stop consolidation
+
+2 | Stewart / Bus-stop consolidation
+
+
