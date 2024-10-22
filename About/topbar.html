@@ -1,120 +1,236 @@
-<script>			
-	$( document ).ready(function() 
-	{	var agent = navigator.userAgent.toLowerCase();		
-		
-		// special event handlers for touch screens
-		if (agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1 || agent.indexOf("android") != -1)  
-		{	$(".popupItem a").on('mouseover touchstart click', (function(event)
-				{	window.location.assign(this);
-				}
-			));		
-			
-			$(".popupSubheading a").on('mouseover touchstart click', (function(event)
-				{	window.location.assign(this);
-				}
-			));
-		}
-	});
-	
-	function showMenu(id)
-	{							
-		hideAllMenus();
-		document.getElementById("popupMenu" + id).style.display = "block";
-						
-	}
-	
-	function hideAllMenus()
-	{	for (i = 1; i <= 4; i++)					
-			document.getElementById("popupMenu" + i).style.display = "none";
-	}
-	
-	function hideMenu(id)
-	{	
-		document.getElementById("popupMenu" + id).style.display = "none";
-	}
-</script>
-
-<div class="title">
-	<a href="http://tram.mcgill.ca">Transportation Research at McGill</a>
-</div>
-
-<div class="menu">					
-	<div class="menuItem" onmouseover="showMenu(1)" onmouseout="hideMenu(1)">
-		Research
-		<div id="popupMenu1">
-			<div class="popupHeadingWrapper">
-				<div class="popupHeading">Research</div>
-			</div>
-			<div class="popupWrapper wrapper1">
-				<div class="popupSubheading">Publications</div>  <!-- NEEDS REDIRECT -->
-				<div class="popupItem"><a href="Research/publicTransit.html">Public Transit Planning &amp; Operations</a></div>
-				<div class="popupItem"><a href="Research/performanceMeasuresAccessibility.html">Performance Measures &amp; Accessibility</a></div>
-				<div class="popupItem"><a href="Research/cyclingWalking.html">Cycling &amp; Walking</a></div>
-				<div class="popupItem"><a href="Research/travelBehaviour.html">Travel Behaviour</a></div>
-				<div class="popupItem"><a href="Research/other.html">Other</a></div>
-				<div class="popupSubheading"><a href="Research/projects.html">Projects</a></div>
-				<div class="popupSubheading"><a href="Research/reports.html">Reports</a></div>
-				<div class="popupSubheading"><a href="Research/surveys.html">Surveys</a></div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="menuItem" onmouseover="showMenu(2)" onmouseout="hideMenu(2)">
-		Teaching
-		<div id="popupMenu2">
-			<div class="popupHeadingWrapper">
-				<div class="popupHeading">Teaching</div>
-			</div>
-			<div class="popupWrapper wrapper2">
-				<div class="popupSubheading">Courses</div>  <!-- NEEDS REDIRECT -->
-				<div class="popupItem"><a href="Teaching/URBP619/URBP619.html">Land Use & Transportation</a></div>
-				<div class="popupItem"><a href="Teaching/URBP504/URBP504.html">Active Transportation</a></div>
-				<div class="popupItem"><a href="Teaching/publicTransport/publicTransport.html">Public Transport</a></div>
-				<div class="popupItem"><a href="Teaching/URBP620/URBP620.html">Transportation Economics</a></div>
-				<div class="popupItem"><a href="Teaching/advancedGIS/gis.html">Advanced GIS</a></div>
-				<div class="popupItem"><a href="Teaching/seminar/current.html">Transportation Seminar</a></div>
-				<div class="popupSubheading">Graduate-Student Projects</div>
-				<div class="popupItem"><a href="Teaching/srp/srp.html">Supervised Research Projects</a></div>
-				<div class="popupItem"><a href="Teaching/PhD/PhD.html">PhD Dissertations</a></div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="menuItem" onmouseover="showMenu(3)" onmouseout="hideMenu(3)">
-		Data &amp; Multimedia
-		<div id="popupMenu3">
-			<div class="popupHeadingWrapper">
-				<div class="popupHeading">Data &amp; Multimedia</div>  <!-- NEEDS REDIRECT -->
-			</div>
-			<div class="popupWrapper wrapper3">
-				<div class="popupSubheading"><a href="Multimedia/gisdata.html">GIS Data</a></div>			<!-- NEEDS REDIRECT -->
-				<div class="popupSubheading"><a href="Multimedia/movies.html">Movies</a></div>
-				<div class="popupSubheading"><a href="Multimedia/posters.html">Conference Posters</a></div>			
-			</div>
-		</div>
-	</div>
-	
-	<div class="menuItem" onmouseover="showMenu(4)" onmouseout="hideMenu(4)">
-		About
-		<div id="popupMenu4">
-			<div class="popupHeadingWrapper">
-				<div class="popupHeading">About</div>
-			</div>
-			<div class="popupWrapper wrapper4">
-				<div class="popupSubheading"><a href="About/about.html">About TRAM</a></div>	<!-- NEEDS REDIRECT -->
-				<div class="popupSubheading"><a href="About/members.html">Members</a></div> <!-- NEEDS REDIRECT -->
-				<div class="popupSubheading"><a href="About/alumni.html">Alumni</a></div> <!-- NEEDS REDIRECT -->
-				<div class="popupSubheading"><a href="About/jobs.html">Jobs</a></div> <!-- NEEDS REDIRECT -->
-				<div class="popupSubheading"><a href="About/photos.html">Team photos</a></div> <!-- NEEDS REDIRECT -->
-				<div class="popupSubheading"><a href="About/contact.html">Contact</a></div> <!-- NEEDS REDIRECT -->
-			</div>
-		</div>
-	</div>	
-	
-	<div>
-		<input type="text" class="searchBox" value="Search" onblur="if (this.value == '') this.value = 'Search';" onfocus="if (this.value == 'Search') this.value = '';" />
-	</div>
-	<div>
-		<input type="image" src="/images/searchButton.png" class="searchButton" />
-	</div>
-</div>
+<script>			
+
+	$( document ).ready(function() 
+
+	{	var agent = navigator.userAgent.toLowerCase();		
+
+		
+
+		// special event handlers for touch screens
+
+		if (agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1 || agent.indexOf("android") != -1)  
+
+		{	$(".popupItem a").on('mouseover touchstart click', (function(event)
+
+				{	window.location.assign(this);
+
+				}
+
+			));		
+
+			
+
+			$(".popupSubheading a").on('mouseover touchstart click', (function(event)
+
+				{	window.location.assign(this);
+
+				}
+
+			));
+
+		}
+
+	});
+
+	
+
+	function showMenu(id)
+
+	{							
+
+		hideAllMenus();
+
+		document.getElementById("popupMenu" + id).style.display = "block";
+
+						
+
+	}
+
+	
+
+	function hideAllMenus()
+
+	{	for (i = 1; i <= 4; i++)					
+
+			document.getElementById("popupMenu" + i).style.display = "none";
+
+	}
+
+	
+
+	function hideMenu(id)
+
+	{	
+
+		document.getElementById("popupMenu" + id).style.display = "none";
+
+	}
+
+</script>
+
+
+
+<div class="title">
+
+	<a href="http://tram.mcgill.ca">Transportation Research at McGill</a>
+
+</div>
+
+
+
+<div class="menu">					
+
+	<div class="menuItem" onmouseover="showMenu(1)" onmouseout="hideMenu(1)">
+
+		Research
+
+		<div id="popupMenu1">
+
+			<div class="popupHeadingWrapper">
+
+				<div class="popupHeading">Research</div>
+
+			</div>
+
+			<div class="popupWrapper wrapper1">
+
+				<div class="popupSubheading">Publications</div>  <!-- NEEDS REDIRECT -->
+
+				<div class="popupItem"><a href="Research/publicTransit.html">Public Transit Planning &amp; Operations</a></div>
+
+				<div class="popupItem"><a href="Research/performanceMeasuresAccessibility.html">Performance Measures &amp; Accessibility</a></div>
+
+				<div class="popupItem"><a href="Research/cyclingWalking.html">Cycling &amp; Walking</a></div>
+
+				<div class="popupItem"><a href="Research/travelBehaviour.html">Travel Behaviour</a></div>
+
+				<div class="popupItem"><a href="Research/other.html">Other</a></div>
+
+				<div class="popupSubheading"><a href="Research/projects.html">Projects</a></div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="menuItem" onmouseover="showMenu(2)" onmouseout="hideMenu(2)">
+
+		Teaching
+
+		<div id="popupMenu2">
+
+			<div class="popupHeadingWrapper">
+
+				<div class="popupHeading">Teaching</div>
+
+			</div>
+
+			<div class="popupWrapper wrapper2">
+
+				<div class="popupSubheading">Courses</div>  <!-- NEEDS REDIRECT -->
+
+				<div class="popupItem"><a href="Teaching/URBP619/URBP619.html">Land Use & Transportation</a></div>
+
+				<div class="popupItem"><a href="Teaching/URBP504/URBP504.html">Active Transportation</a></div>
+
+				<div class="popupItem"><a href="Teaching/publicTransport/publicTransport.html">Public Transport</a></div>
+
+				<div class="popupItem"><a href="Teaching/URBP620/URBP620.html">Transportation Economics</a></div>
+
+				<div class="popupItem"><a href="Teaching/advancedGIS/gis.html">Advanced GIS</a></div>
+
+				<div class="popupItem"><a href="Teaching/seminar/current.html">Transportation Seminar</a></div>
+
+				<div class="popupSubheading">Graduate-Student Projects</div>
+
+				<div class="popupItem"><a href="Teaching/srp/srp.html">Supervised Research Projects</a></div>
+
+				<div class="popupItem"><a href="Teaching/PhD/PhD.html">PhD Dissertations</a></div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="menuItem" onmouseover="showMenu(3)" onmouseout="hideMenu(3)">
+
+		Data &amp; Multimedia
+
+		<div id="popupMenu3">
+
+			<div class="popupHeadingWrapper">
+
+				<div class="popupHeading">Data &amp; Multimedia</div>  <!-- NEEDS REDIRECT -->
+
+			</div>
+
+			<div class="popupWrapper wrapper3">
+
+				<div class="popupSubheading"><a href="Multimedia/gisdata.html">GIS Data</a></div>			<!-- NEEDS REDIRECT -->
+
+				<div class="popupSubheading"><a href="Multimedia/movies.html">Movies</a></div>
+
+				<div class="popupSubheading"><a href="Multimedia/posters.html">Conference Posters</a></div>			
+
+			</div>
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="menuItem" onmouseover="showMenu(4)" onmouseout="hideMenu(4)">
+
+		About
+
+		<div id="popupMenu4">
+
+			<div class="popupHeadingWrapper">
+
+				<div class="popupHeading">About</div>
+
+			</div>
+
+			<div class="popupWrapper wrapper4">
+
+				<div class="popupSubheading"><a href="About/about.html">About TRAM</a></div>	<!-- NEEDS REDIRECT -->
+
+				<div class="popupSubheading"><a href="About/members.html">Members</a></div> <!-- NEEDS REDIRECT -->
+
+				<div class="popupSubheading"><a href="About/alumni.html">Alumni</a></div> <!-- NEEDS REDIRECT -->
+
+				<div class="popupSubheading"><a href="About/jobs.html">Jobs</a></div> <!-- NEEDS REDIRECT -->
+
+				<div class="popupSubheading"><a href="About/photos.html">Team photos</a></div> <!-- NEEDS REDIRECT -->
+
+				<div class="popupSubheading"><a href="About/contact.html">Contact</a></div> <!-- NEEDS REDIRECT -->
+
+			</div>
+
+		</div>
+
+	</div>	
+
+	
+
+	<div>
+
+		<input type="text" class="searchBox" value="Search" onblur="if (this.value == '') this.value = 'Search';" onfocus="if (this.value == 'Search') this.value = '';" />
+
+	</div>
+
+	<div>
+
+		<input type="image" src="/images/searchButton.png" class="searchButton" />
+
+	</div>
+
+</div>
+
