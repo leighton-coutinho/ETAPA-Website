@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>	
+		<title>TRAM: Transportation Research at McGill</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" href="/reset.css" media="screen,projection" type="text/css" />
+		<link rel="stylesheet" type="text/css" media="screen and (min-device-width:1025px)" href="/style-large-screen.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width:1024px)" href="/style-mobile.css">
+		<link rel="shortcut icon" href="/images/tramIcon.ico">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>								
+		<script>
+			// loads the menu and footer from topbar.html and footer.html
+			$(document).ready(function(e) {$('#topbarContent').load('/topbar.html');});
+			$(document).ready(function(e) {$('#footerContent').load('/footer.html');});
+		</script>
+
+		<!-- Google Analytics code -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-54231741-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		
+	</head>
+	<body>		
+		
+		<div class="sidebarLeft">&nbsp;</div>
+		
+		<div class="main">
+		
+			<!-- menu content will be loaded from topbar.html -->
+			<div id='topbarContent' class="topbar"></div>	
+			
+			<!------------------------------- end of topbar ------------------------------------>
+			
+			<div class="content">
+			
+				<div class="pageHeader"><strong>Projects</strong> | The Streamlined Life Cycle Assessment of Natural Gas - Greenhouse Gases (SLiNG-GHG) </div>
+				
+                <div class="section">
+                    <div class="paragraph">
+                        <strong>Background</strong>
+                    </div>
+                    <div class="paragraph">
+                    Life cycle assessment (LCA) is a technique for estimating the potential environmental impacts of a product or service over all or part of its life cycle, including procurement of raw materials, manufacturing activities, use of the product, and the end-of-life disposal.
+                    </div>
+                    
+                    <div class="paragraph">
+                    An LCA exclusively investigating GHG emissions associated with a product yields a carbon footprint. Similarly, the sum of GHG emissions and GHG removals of one or more selected process(es) in a product system expressed as CO2 equivalents and based on the selected stages or processes within the life cycle gives a partial carbon footprint.
+                    </div>
+                    
+                    <div class="paragraph">
+                    Considering the complexities of existing comprehensive process-based LCA models, the Streamlined Life Cycle Assessment of Natural Gas – Greenhouse Gases (SLiNG-GHG) model was developed to facilitate broader use by various stakeholders by utilizing publicly available data sources compatible with LCA, coupled with expert judgement by subject-matter experts in (1) the natural gas upstream and midstream (including LNG), and (2) LCA.
+                    </div>
+                    
+                    <div class="paragraph">
+                    The model enables users who have limited life cycle modeling experience to develop their own screening level LCA (cradle-to-gate) estimates of GHG emissions for a variety of U.S. specific natural gas supply chains.
+                    </div>
+                    
+                    <div class="paragraph">
+                    To this end, it employs a simplified, partial carbon footprint layout beginning with production for three boundaries or “gates” along the natural gas supply chain:
+                    </div>
+                    <ul>
+                        <li>Interstate transmission</li>
+                        <li>Local distribution</li>
+                        <li>LNG delivery via ocean vessels</li>
+                    </ul>
+
+                    
+                    <div class="paragraph">
+                    This open-source model was developed in line with the scope of a study by the U.S. National Petroleum Council (NPC), but with the option for users to input their own data. It does not include emissions from operations past the three “gates” such as regasification or end-use consumption; however, it may be adjusted in the future to include additional unit processes.
+                    </div>
+                    <div class="paragraph">
+                        <img src="/images/ETAPA/sling-ghg-img1.png" alt="Placeholder for visual content" />
+                    </div>
+                    
+
+                    <div class="paragraph">
+                        The default values used for each model input are chosen as a part of the NPC GHG study, but they can also be completely customized to meet users’ specifications.
+                    </div>
+                    
+                    <div class="paragraph">
+                        The users should understand the limitations of such a streamlined model and while it may suit the needs of many users, some may want to consider a more comprehensive LCA model to meet their end goals. Moreover, the model should also not be used in place of an applicable jurisdiction-specific legally required model.
+                    </div>
+                    
+                    <div class="paragraph">
+                        <strong>Download</strong>
+                    </div>
+                    
+                    <div class="paragraph">
+                        The instructions for downloading the model are straightforward:
+                        <ul>
+                            <li>The model can be downloaded on the website from here.</li>
+                            <li>The folder contains two files – the SLiNG-GHG model itself (in excel workbook format) and the user manual for the model (in PDF format).</li>
+                            <li>Upon downloading the archived file, both files can be extracted on the user’s desired destination.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="paragraph">
+                        The user can then run the model by following the instructions from the manual. A concise set of instructions for operating the model can be found on the Model operation - Instructions section.
+                    </div>
+                    
+                    <div class="paragraph">
+                        <strong>Model operation - Instructions</strong>
+                    </div>
+                    
+                    <div class="paragraph">
+                        The SLiNG-GHG model is constructed on an Excel workbook format. The workbook consists of eight spreadsheets:
+                        <ul>
+                            <li>SLiNG-GHG – Inputs & Formulae</li>
+                            <li>Presets Data</li>
+                            <li>Sensitivity KMIs Data</li>
+                            <li>Preset Model</li>
+                            <li>User-controlled Model</li>
+                            <li>Sensitivity Testing</li>
+                            <li>Preset – Inefficient Flaring</li>
+                            <li>User – Inefficient Flaring</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="paragraph">
+                        Some of these sheets contain the interactive model whereas others contain data sets and background calculations for the model. Sheets number 4, 5, and 6 contain three different versions of the model, each offering different levels of autonomy and interaction with the user. The instructions for running each model version are described below - each involves keeping an existing assumption (the base case/U.S average) or changing to an alternative.
+                    </div>
+                    <div class="paragraph">
+                    <strong>Preset Model</strong>
+                    </div>
+                    <div class="paragraph">
+                        This version of the model is a case study of scenarios used in the NPC GHG study. It offers a range of preset scenarios for different supply chains and future pathways as modeled in the aforementioned study.
+                    </div>
+                    
+                    <div class="paragraph">
+                        To start with, set the GWP time horizon to 100 years or 20 years using the drop-down menu located above the conversion factors table. This automatically updates the GWP value field above it to the corresponding IPCC AR5 value.
+                    </div>
+                    
+                    <div class="paragraph">
+                        Next, choose the desired pathway or supply chain preset using the next drop-down menu. This automatically updates the input values and accordingly generates the outputs. It is to be noted that to select supply chains, the pathway must be set to “baseline” since all the supply chains are modeled based on the present scenario.
+                    </div>
+                    
+                    <div class="paragraph">
+                        Users can then check the stage-wise results in the outputs section and scroll further down to check the aggregated life cycle results. These results are also visually represented in the form of pie-charts and stacked bars.
+                    </div>
+
+                    <div class="paragraph">
+                    <strong>User-controlled Model</strong>
+                    </div>
+                    <div class="paragraph">
+                        The user-controlled version is the most interactive version of the model, offering the user complete autonomy to set input values.
+                    </div>
+                    
+                    <div class="paragraph">
+                        To start with, set the GWP time horizon and the GWP value – users are not restricted to use only the IPCC AR5 values in this version but can input their own values.
+                    </div>
+                    
+                    <div class="paragraph">
+                        Unlike the preset model, all the input fields are editable in this version. Hence, users are independent to input their own values for all parameters including constants such as molecular weight and heating value.
+                    </div>
+                    
+                    <div class="paragraph">
+                        Once users are finished inputting their desired values, they can check all the outputs in the same way as the previous sheet.
+                    </div>
+                    
+                    <div class="paragraph">
+                    <strong>Sensitivity Testing</strong>
+                    </div>
+                    <div class="paragraph">
+                        The sensitivity testing of the model allows the user to check for the most impactful parameters and perform their own sensitivity analysis.
+                    </div>
+                    
+                    <div class="paragraph">
+                        Set both the desired GWP time horizon and the value – same as the user-controlled model.
+                    </div>
+                    
+                    <div class="paragraph">
+                        Vary the sensitivity parameters (highlighted in pink color) using their respective drop-down menus. Other inputs are protected from editing since the purpose of this sheet is to only ascertain the impact of those parameters which have ranges reported in the literature.
+                    </div>
+                    
+                    <div class="paragraph">
+                        It is recommended to vary one parameter at a time while fixing the others at their baseline values to study its individual impact.
+                    </div>
+                    
+                    <div class="paragraph">
+                        <strong>Harmonization dashboard</strong>
+                    </div>
+                    
+                    <div class="paragraph">
+                        Harmonization is a form of meta-analysis applied to LCAs to achieve a higher degree of consistency, and thus comparability, for results than how they were originally published (e.g., via the modification of published LCA results to ensure consistent systems boundaries, modeling assumptions, etc.). It is based on the approaches developed by the National Renewable Energy Laboratory (NREL) for electricity generation technologies [1] [2], including two studies on natural gas-fired electricity generation [3] [4].
+                    </div>
+                    
+                    <div class="paragraph">
+                        The harmonization performed herein updates these prior studies by focusing on publications between October 2016 and October 2022. Simply put, harmonization does not assume the prior published results are incorrect; rather, it adjusts legitimate differences in methods for improved consistency and comparability, which allows for more robust understanding of the central tendency of prior estimates of life cycle GHG emissions.
+                    </div>
+                    
+                    <div class="paragraph">
+                        Consistency relates to both the numerator and denominator of the carbon intensity (i.e., g CO2e as numerator and MJ natural gas delivered to end of gate as denominator). Within the numerator, the study ensured consistency in which emission sources are included (system boundary) as well as the global warming potential (GWP) employed to translate masses of emissions of different greenhouse gases to CO2 equivalents. For the denominator, harmonization was applied again to system boundary, here specifically to the stagewise losses of natural gas (from both emission and use of the gas through each supply chain stage), and conversion of various normalization units employed in different studies.
+                    </div>
+                    
+                    <div class="paragraph">
+                        The interactive dashboard below displays the results from the harmonization, walking the user through different aspects of the process.
+                    </div>
+                
+                    <div style="overflow: hidden; width: 100%; height: 500px;">
+                        <iframe id="example1" 
+                                src="https://etapa-mcgill.shinyapps.io/harmonization_ETAPA/" 
+                                style="border: none; width: 120%; height: 1000px; transform: scale(0.73); transform-origin: 0 0;" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+
+                    <div class="paragraph">
+                        <strong>SLiNG-GHG dashboard</strong>
+                    </div>
+
+                    <div class="paragraph">
+                        The SLiNG-GHG model was developed using the decision logic outlined in the figure.
+                    </div>
+
+                    <div class="paragraph">
+                        <img src="/images/ETAPA/sling-ghg-img1.png" alt="Placeholder for visual content" />
+                    </div>
+
+                    <div class="paragraph">
+                        The literature screened during harmonization was reviewed to identify studies that undertook some kind of quantified analysis to identify parameters that most significantly influence life cycle GHG emissions, including contribution analyses, sensitivity analyses, and uncertainty analyses. Results of these various analyses were synthesized and combined with judgment of the industry, NGO, and academic experts within the NPC study team yielding approximately 70 key model inputs that represent 22 unique sources of GHG emissions (unit processes). Material balance equations were then constructed to form the basis of the streamlined LCA model, utilizing the key model inputs to estimate flows of gas and other hydrocarbon products as well as emissions. Other key principles, such as energy-based co-product allocation, were also followed in the model development.
+                    </div>
+                    
+                    <div class="paragraph">
+                        After the model was developed, it was run using a number of use cases including those for the NPC study. A reference case of the model was assumed to represent the U.S national average, deriving the most appropriate values for the inputs from both the screened literature and expert judgment. The results of this baseline run were then compared with results from the harmonization process as well as results from other notable full-scale LCA models as a step towards validation.
+                    </div>
+                    
+                    <div class="paragraph">
+                        The dashboard below allows users to study and interpret the model results, and even compare them with other models or literature estimates (through harmonization). It is to be noted that these results are not exhaustive of the model itself – the graphics just provide an interactive medium for displaying the results from selected runs of the model. The model, however, is not restricted to these runs alone and allows users to input their own values as well.
+                    </div>
+                    
+                    <div style="overflow: hidden; width: 100%; height: 500px;">
+                        <iframe id="example1" 
+                                src="https://etapa-mcgill.shinyapps.io/SLiNG_GHG_Main_ETAPA/" 
+                                style="border: none; width: 120%; height: 1000px; transform: scale(0.73); transform-origin: 0 0;" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                    
+                    <div class="paragraph">
+                        <strong>SLiNG-GHG model: NPC use case</strong>
+                    </div>
+                    
+                    <div class="paragraph">
+                        The SLiNG-GHG model was developed by McGill University in collaboration with the U.S, National Renewable Energy Laboratory as a part of the NPC study for the <strong>U.S. Department of Energy</strong>. To this end, the model was used to run several scenarios based on the study’s scope, which included future pathways and selected geographical supply chains within the U.S. These scenarios constitute the presets under the “Preset Model” sheet in the SLiNG-GHG model. The input values used for these scenarios were provided by the concerned industry professionals. Thus, the scenarios are only a use case of the model for the NPC study, using assumptions and inputs defined by the study participants. They only serve to demonstrate the capacity of the model to run different data sets depending on user needs. 
+                    </div>
+
+                    <div class="paragraph">
+                        Users interested in studying this use case can use the interactive dashboard below to explore the results generated for different scenarios, but can also download the model and test additional model inputs.
+                    </div>
+
+                    <div style="overflow: hidden; width: 100%; height: 500px;">
+                        <iframe id="example1" 
+                                src="https://etapa-mcgill.shinyapps.io/SLiNG_GHG_Use_Case_ETAPA/" 
+                                style="border: none; width: 120%; height: 1000px; transform: scale(0.73); transform-origin: 0 0;" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                </div>
+				
+				
+			</div>
+			
+			<!------------------------------- end of content ------------------------------------>
+			
+			<!-- footer content will be loaded from footer.html -->
+			<div id='footerContent' class="footer"></div>
+			
+			<!------------------------------- end of footer ------------------------------------>
+			
+			<div class="credits">
+				Website designed and coded by Colin J Stewart</a>
+			</div>
+			
+		</div>
+		
+		<div class="sidebarRight">&nbsp;</div>
+	</body>
+</html>
