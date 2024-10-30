@@ -1669,55 +1669,39 @@ input.gsc-input
 
 
 
-.logos
-
-{
-
-	width: 100%;
-
-	background-color: white;
-
-	padding: 15px 0 10px 0;
-
+.logos {
+    width: 100%;
+    background-color: white;
+    padding: 15px 0 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
-
-
-.logoWrap
-
-{
-
-	width: 25%;
-
-	text-align: center;
-
+.logoWrap {
+    width: 25%;
+    text-align: center;
 }
 
-
-
-.logo
-
-{
-
+.logo {
+    max-height: 40px; /* Adjust as necessary */
+    width: auto;
+    transform: scale(1.2); /* Increase the scale to zoom in */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
 }
 
-
-
-.credits
-
-{	background-color: #555;
-
-	color: white;
-
-	font-size: 8pt;
-
-	text-align: right;
-
-	padding: 10px 10px 10px 0;
-
-	width: 99%;
-
+.logo:hover {
+    transform: scale(1.5); /* Optional: slightly larger scale on hover */
 }
+
+.credits {
+    background-color: #555;
+    color: white;
+    font-size: 8pt;
+    text-align: right;
+    padding: 10px 10px 10px 0;
+    width: 99%;
+}
+
 
 
 

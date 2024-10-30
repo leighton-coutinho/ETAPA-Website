@@ -1586,54 +1586,29 @@ input.gsc-input
 
 }
 
-
-
-.logos
-
-{
-
-	width: 100%;
-
-	background-color: white;
-
-	padding: 15px 0 10px 0;
-
+.logos {
+    width: 100%;
+    background-color: white;
+    padding: 15px 0 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
-
-
-.logoWrap
-
-{
-
-	width: 25%;
-
-	text-align: center;
-
+.logoWrap {
+    width: 25%;
+    text-align: center;
 }
 
-
-
-.logo
-
-{
-
+.logo {
+    max-height: 40px; /* Adjust height as desired */
+    width: auto; /* Maintains aspect ratio */
 }
 
-
-
-.credits
-
-{	background-color: #555;
-
-	color: white;
-
-	font-size: 8pt;
-
-	text-align: right;
-
-	padding: 10px 10px 10px 0;
-
-	width: 99%;
-
+.credits {
+    background-color: #555;
+    color: white;
+    font-size: 8pt;
+    text-align: right;
+    padding: 10px 10px 10px 0;
+    width: 99%;
 }
