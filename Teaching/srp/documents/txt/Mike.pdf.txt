@@ -1,1163 +1,0 @@
-Falling Up and Staying High: Commute Transit Mode Share Trends in Montreal
-Age Groups and Birth Cohorts
-A Supervised Research Project in two parts
-Prepared by Michael Grimsrud In partial fulfillment of the requirements for the degree of a Master's of Urban Planning McGill School of Urban Planning
-April 2013
-Supervisor: Ahmed El-Geneidy
-  
-
-  
-
-ACKNOWLEDGEMENTS
-Thanks first and foremost to my supervisor, professor Ahmed El-Geneidy, for always being available for assistance and guidance and for pushing me to develop a diverse skillset but finish on time. Thanks also to Naveen Eluru for timely reading and helpful feedback, to Daniel Bergeron and AMT for access to Montreal Origin-Destination survey data analyzed in this paper (2003 and 2008), and to Mr. Pierre Tremblay from the Quebec Ministry of transport for providing the 1998 Montreal Origin-Destination survey. The Natural Sciences and Engineering Research Council of Canada provided funding for the first chapter of this research, also much appreciated. I would also like to acknowledge the members of TRAM research group, especially Ehab Diab for ongoing technical advice, Vincent Chakour for translation, Kevin Manaugh for early conceptual input, and Cynthia Jacques for editing Chapter 1. Thanks also to Edwin Horton and Julien Surprenant-Legault for their insights into changes in the Montreal region in the past fifteen years, and to Sbastien Gagn for the same and for bus schedule access. Last but not least, thanks to the four anonymous reviewers for their helpful comments on the first chapter and to Shaina for her support and patience.
-iii     
-
-PREFACE
-Automobiles are the dominant transportation mode in North America and elsewhere - dominant to the point where over 90% of commutes in many cities use private automobiles and where parking and road infrastructure consume vast enough amounts of land to affect population density and the viability of other transport modes. Recently, automobile dependency has been growing, with each generation driving more than that preceding, a trend currently prominent in developing countries.
-Also increasing has been awareness among scientists, policy-makers, and segments of the general public that rampant automobile use contributes to a number of serious problems. Environmental issues, such as climate change, air and water pollution; dependency on limited petroleum resources; health problems such as obesity and cardiovascular disease; inequitable job and service accessibility; and excessive road congestion and maintenance bills partially result from automobile reliance. Consequentially, there is interest in fostering mode shift to sustainable modes such as walking, cycling and public transportation, especially during peak periods where congestion and resulting environmental and economic impacts are most severe.
-Such mode shift might already be happening. Very recently, in the last decade or so, a new trend has been detected. Younger generations are using public transportation more and automobiles less compared to previous youths at similar ages. This research paper looks for such a trend in Montreal and goes on to ask whether increased transit use will hold as youths age (or will they `grow out of it'), and what factors might explain observed trends, for the purposes of informing Montreal policy and directing future research toward further transit mode share increases. The first chapter, which offers a cursory examination of commute transit mode share in the whole Montreal region 1998-2008 and robust review of relevant literature, was presented at the 92nd Transportation Research Board Annual Meeting and published in Transportation as
-iv     
-
-Grimsrud, M., & El-Geneidy, A. (2013). Transit to eternal youth: Lifecycle and generational trends in Greater Montreal public transport mode share. The second chapter offers a more detailed statistical analysis of commute trends over the same period for the Island of Montreal, controling for and examining effects of service level, home and destination location, and other observed changes.
-v     
-
-ABSTRACT 1
-Young people appear to be using public transit more than their predecessors, reversing 20th Century trends, but the importance of such findings depends on whether high transit use persists as these riders age. This paper examines whether transit mode share for commuting trips is increasing; socio-economic and geographic trends are also explored to attempt to determine whether these trends are likely to continue. The study uses repeated cross-sectional origin-destination surveys of Greater Montreal (1998, 2003 and 2008). Over 45,000 home-to-work and home-to-school trips are studied for each survey year. A general lifecycle pattern of decreasing transit share with age is apparent within cohorts until individuals reach their early 30s, followed by decades of stability. This pattern appears to hold in recent years, but with higher youth use rates, and it is argued that the higher use will continue as current younger cohorts mature. Suburbanization by those in their early 30s is evident and, along with household composition changes, appears to explain much of the final within-cohort mode share declines before equilibrium. Transit providers might see lasting ridership gains, as those currently in their early 30s and younger replace lower-use cohorts in the workforce, provided service provision keeps pace. Addressing the needs of young people, whose mode choices are comparatively unsettled, should be a priority for transit agencies to ensure higher transit usage in the future.
-Keywords: Public transport  mode share  generation  cohort  lifecycle  Montreal
-Les jeunes semblent utiliser le transport en commun plus que leurs prdcesseurs, renversant ainsi la tendance du 20e sicle. Il demeure toutefois important de savoir si cette hausse d'utilisation chez les jeunes persistera malgr leur vieillissement. Cet article se penche sur les changements de la part modale du transport en commun pour les dplacements quotidiens ainsi que les tendances socio-conomiques et gographiques, afin de dterminer la susceptibilit que ces tendances se maintiennent. Cette tude se base sur les donnes des enqutes de dplacements du Grand Montral (1998, 2003 et 2008). Plus de 45 000 dplacements domicile-travail et domicile-cole sont analyss pour chaque anne d'enqute. Nous notons une diminution de la part modale du transport collectif propre au groupe d'ge jusqu' 30 ans, suivie par plusieurs dcennies de stabilit. Malgr une augmentation de la part modale des jeunes, cette tendance semble se maintenir, et il est possible que cette augmentation persiste avec le vieillissement de cette cohorte. La suburbanisation des individus en dbut de trentaine ainsi que les changements de la composition de leurs mnages sont des facteurs pouvant expliquer en grande partie cette baisse de part modale avant d'atteindre la stabilit. Les agences de transport peuvent augmenter leur achalandage  long terme, puisque les individus prsentement gs de 30 ans et moins remplacent les cohortes plus ges au travail, qui sont moins disposes  utiliser le transport collectif. La priorit des agences de transport collectif devrait tre d'adresser les besoins des jeunes, puisque leurs choix modaux demeurent relativement incertains, assurant ainsi une augmentation d'achalandage  long terme.
-Mots Cls: Transport collectif  choix modal  gnration  cohorte  cycle de vie  Montral
-vi     
-
-ABSTRACT 2
-Public transit mode share for young people appears to be growing in the 21st Century in the US and elsewhere, and higher than previous mode shares appear likely to continue, increasing overall transit demand as today's youths age into traditionally lower transit-use lifecycle stages. This paper tests and supports the latter claim through application of a number of binomial logistic regression models, controlling for socioeconomic, household composition, location and service level factors. Analysis draws from over 10,000 home-based work and school commute trips from each of Montreal's 1998, 2003, and 2008 origin-destination surveys. One large factor in Montreal's increased youth transit usage has been the 1997 introduction of graduated driver's licensing, which appears to have a substantial lasting licensure damper effect only on men. Controlling for effects of variables other than survey period and age group or birth cohort, recent young age groups show higher transit use than did their predecessors. Moreover, a plateauing of transit mode share within birth cohorts is seen to begin earlier in life than expected. This suggests not only continuance of higher than previous transit use, but also further potential for mode share improvements if challenges from lifecycle changes, such as school-to-work transition, can be identified and addressed.
-Keywords: Public transport  mode share  logit  cohort  lifecycle  Montreal
-La part modale du transport collectif semble augmenter chez les jeunes individus en ce 21e sicle, une tendance qui semble se maintenir. Ainsi, la demande de transport en commun augmenterait alors que les jeunes individus vieillissent et se rendent  un stade de vie ou l'utilisation de transport collectif est gnralement moins rpandue. Cette hypothse est teste et supporte  travers une multitude de rgressions binaires logit tout en contrlant les facteurs socioconomiques, les niveaux de service et la composition des mnages. L'analyse est effectue  partir de plus de 10 000 dplacements domiciletravail et domicile-cole tirs des donnes des enqutes de dplacements du Grand Montral (1998, 2003 et 2008). Un facteur important expliquant l'augmentation de la part modale du transport en commun chez les jeunes  Montral est l'implantation en 1997 du permis de conduire progressif, qui semble avoir un effet considrable et durable, notamment chez les hommes. Contrlant l'effet des variables de l'ge  travers les enqutes, les rcentes cohortes de jeunes individus ont une part modale suprieure  leurs prdcesseurs. De plus, le plateau de la part modale parmi les diffrentes cohortes est atteint plus tt dans la vie que prvu. Cela suggre non seulement une perptuation d'une utilisation suprieure de transport en commun, mais aussi un potentiel pour l'amlioration de sa part modale puisque des dfis, tels que la transition cole-travail, peuvent tre identifis et abords adquatement.
-Mots Cls: Transport collectif part modale  logit  cohorte  cycle de vie  Montral
-vii     
-
-TABLE OF CONTENTS
-ACKNOWLEDGEMENTS............................................................................................iii PREFACE.................................................................................................................iv ABSTRACT 1............................................................................................................vi ABSTRACT 2............................................................................................................vii TABLE OF CONTENTS.............................................................................................viii LIST OF FIGURES......................................................................................................ix LIST OF TABLES.......................................................................................................x LIST OF APPENDICES................................................................................................xi Chapter 1....................................................................................................................
-1 - INTRODUCTION..............................................................................................1 2 - LITERATURE REVIEW......................................................................................3 3 - STUDY CONTEXT............................................................................................6 4 - DATA...........................................................................................................10 5 - METHODOLOGY............................................................................................13 6 - RESULTS......................................................................................................14 7 - DISCUSSION AND CONCLUSIONS....................................................................22 Chapter 2.................................................................................................................... 1 - INTRODUCTION.............................................................................................26 2 - LITERATURE REVIEW....................................................................................27 3 - STUDY CONTEXT...........................................................................................29 4  DATA AND METHODOLOGY...........................................................................30 5 - ANALYSIS.....................................................................................................41 6 - DISCUSSION AND CONCLUSIONS....................................................................48 AFTERWORD..........................................................................................................52 REFERENCES...........................................................................................................53 APPENDICES............................................................................................................58
-viii     
-
-LIST OF FIGURES
-FIGURE 1: CONTEXT AND HOME LOCATION ZONES.......................................................6 FIGURE 2: TRANSIT COMMUTE MODE SHARE.............................................................15 FIGURE 3: TRANSIT COMMUTE MODE SHARE BY HOUSEHOLD CHARACTERISTICS.........18 FIGURE 4: TRANSIT COMMUTE MODE SHARE BY HOME LOCATION..............................20 FIGURE 5: ISLAND OF MONTREAL CONTEXT..............................................................30 FIGURE 6: OBSERVED AND PREDICTED ISLAND OF MONTREAL TRANSIT MODE SHARE..45
-ix     
-
-LIST OF TABLES
-TABLE 1: TRIP COUNTS BY MODE..............................................................................12 TABLE 2: DESCRIPTIVE STATISTICS 1........................................................................35 TABLE 3: DESCRIPTIVE STATISTICS 2........................................................................40 TABLE 4: FULL COMMUTE TRANSIT MODE SHARE LOGIT MODEL.................................42 TABLE 5: PERIOD EFFECTS ON COMMUTE TRANSIT MODE SHARE FROM 16 AGE OR COHORT GROUP LOGIT MODELS...............................................................................44 TABLE 6: SELECT TRANSIT MODE SHARE COVARIATES FROM 24 AGE GROUP/PERIOD LOGIT MODELS.......................................................................................................46
-     
-x     
-
-LIST OF APPENDICES
-APPENDIX 1: MORNING PEAK TRANSIT NETWORK......................................................57 APPENDIX 2: HOME AND WORK/SCHOOL LOCATIONS 1998..........................................58 APPENDIX 3: HOME AND WORK/SCHOOL LOCATIONS 2003...........................................59 APPENDIX 4: HOME AND WORK/SCHOOL LOCATIONS 2008..........................................60 APPENDIX 5: DRIVER'S LICENSURE BY AGE, GENDER, YEAR........................................61 APPENDIX 6: MONTREAL ISLAND AND REGION HOME-BASED COMMUTE TRANSIT MODE SHARE (OF ALL MODES)........................................................................................................................62
-xi     
-
-Chapter I
-xii     
-
-1 - INTRODUCTION
-According to the National Household Travel Survey data, people in the US aged 16 to 34 are substantially reducing their automobile use and increasing use of public transit (Davis, Dutzik, & Baxandall, 2012). From 2001 to 2009, this age group decreased in size by 2%, but made 15% fewer driving trips, travelled 40% more passenger-miles using transit, and 23% fewer [private] vehicle-miles per capita (Davis et al., 2012). This is a wide group, both spatially (spanning diverse regions of the US), and demographically (notably including both teens on the cusp of driver's licensure and adults likely to have children of their own). Some of these reported changes in transportation outcomes might be attributable to (possibly temporary) demographic or spatial shifts. The apparent magnitude of change, however, begs further investigation.
-Can a similar shift be seen under more controlled circumstances - in a single metropolitan region, at a scale where context can be better observed, and within smaller, more homogenous age groups? If such change is happening, will the transportation behavior of today's young commuters continue, or will they adopt the behaviors of their predecessors as they mature? Kuhnimhof, Buehler, Wirtz, and Kalinowska (2012) find a similar change for general trips (particularly for males), explained as stemming in part from urbanization, municipal livability policies, and transport-related prices, but note uncertainty about its permanence.
-While cumulatively including both finer scales of analysis and discussion of stability, most existing literature on age-specific mode share changes over time, as well as literature exploring changes by individuals or groups as they age, are centered on automobile use or, more often, ownership. This can be (although not necessarily) highly negatively correlated with transit use. They often use household, rather than individual-level data, tied to age of the household head, which can misrepresent children's emergent driving as increased use by their middle-aged parents. Most importantly, few published studies on these
-   1  
-
-topics use recent enough data to speak to the shift that Davis et al. (2012) and Kuhnimhof et al. (2012) describe, and, instead, capture the opposite 20th century trend of increasing automobile use.
-Hoping to fill this gap in the transportation literature, this study examines recent age-specific, individuallevel, mode share data at the regional scale (where service decisions are made), comparing 1998, 2003 and 2008 Greater Montreal work and school commutes, as recorded in respective cross-sectional origindestination surveys provided by Agence Metropolitaine de Transport (AMT) (1998, 2003, 2008). Expecting similar findings to those of the aforementioned studies and aiming to address the issue of continuance of high transit use as commuters age, this study seeks to answer two key questions:
-1) Has transit mode share for home-based work and school trips increased from 1998 to 2008 between successive groups of young people aged 20-24, 25-29, and 30-34?
-2) Is transit mode share for home-based work and school trips stable within five-year birth cohort groups as they age through their 30s, 40s and 50s, between 1998 and 2008?
-If both of the above research questions test positively, it is suggested that future transit demand of people in their 30s to 50s will be higher than the ridership seen today, perhaps increasing total ridership considerably.
-This paper proceeds with the following structure: Section 2 reviews previous research. Sections 3, 4 and 5 briefly describe the study area, the data and the employed methodology. Section 6 presents results of the analyses for overall trends and tested significance, followed by household structure- and home location-controlled findings. The paper concludes with suggestions for future research directions and policy implications.
-   2  
-
-2 - LITERATURE REVIEW
-Several decades of study have produced a substantial body of literature on factors affecting mode choice, many of which can be grouped into socioeconomic characteristics, mode-specific travel costs, and origindestination spatial characteristics (Cervero & Kockelman, 1997; Limtanakool & Dijst, 2006). Some authors add attitudes to the list (Handy, Cao, & Mokhtarian, 2005; Kitamura, Mokhtarian, & Laidet, 1997), some even try to explain and nullify apparent spatial influences (Bagley & Mokhtarian, 2002). Often overlooked is the importance of inertia (Simma & Axhausen, 2003; Thogersen, 2006), an omission Thogersen (2006) attributes to typical cross-sectional study designs.
-Mode choice through life Employing panel, retrospective survey, or repeated cross-sectional designs, several studies conducted in recent years have explored variations through time, by individuals, households or larger groups, in mode choice or mobility tool ownership (Dargay & Hanly, 2003; Matas & Raymond, 2008; Nolan, 2010; Simma & Axhausen, 2003; Thakuriah, Menchu, & Tang, 2010). Mobility tool ownership studies are usually limited to automobiles (Garling & Axhausen, 2003), but it can be a reasonable behavior indicator (Beige, 2008; Thogersen, 2006), and appears to be more commonly studied than actual mode choice, perhaps owing to data availability.
-Such studies tend to suggest a sizeable degree of mode choice consistency. This is not surprising, considering the large investment involved in ownership and use of mobility tools, especially automobiles. Mode share change is found to occur, however, with disaggregated data. Nolan (2010) notes that over a fifth of Irish households changed automobile availability at some point over a 7-year period. Dargay and Hanly (2007) found 4.2% of commuters annually leaving automobiles and 5.2% adopting them in England between 1991 and 2000. Beige (2008) calculates 3% individual annual mobility tool change in the Zurich region from 1985 to 2004.
-   3  
-
-Mode share changes are not evenly distributed. Dargay and Hanly (2003) find them at almost three times the average frequency when respondents also change both home and work locations. Beige (2008) notes that moves and mobility tool changes are both heavily concentrated between the ages of 20 and 35 years, and that age is negatively related to moves in the literature. Family or household structure changes are also related to mode shift (Nolan, 2010; Scheiner & Holz-Rau, 2012). Intuitively, having children impacts home location, feature preferences, and time availability, often resulting in increased preference for automobiles. Coupling and other household structure changes can also impact mode choice, affecting available income and home location choices. Thakuriah Tang, and Menchu (2009) situate much of the changes in the US within the 18-24 age group, progressing in that time from 80%-30% living with parents, near 0% to almost 30% with children, and about 7% to 40% married.
-Switch frequency has also been found to not be even across modes. Automobile use is more consistent than the use of other modes (Beige, 2008; Dargay & Hanly, 2003, 2007; Simma & Axhausen, 2003), perhaps due to much higher initial costs, as well as the age or lifecycle point where automobiles are acquired and persistence of habits. Dargay (2007) finds automobile use declining with income less rapidly among older individuals than its increase among youth. Nolan (2010) and Matas and Raymond (2008) show similar patterns. Simma and Axhausen (2003) conclude that automobile ownership is a condition not easily reversed, even through major life changes. In a Montreal context, Morency and Chapleau (2008) show a high degree of consistency of access to automobiles within older adult cohorts over a 15year period. Summarizing interdisciplinary literature, Bush (2005) adds that preferences and habits formed during late adolescence and early adulthood tend to persist through later life.
-Automobile commute mode share rises and then plateaus before trailing off late in life due to timing of major changes, directionality of mode shift through life (transit to automobile), relative impressionability at different ages and habit. The trend is presumably opposite for transit use. Beige (2008) shows
-   4  
-
-individual car ownership roughly stable between the ages of 35 and 55, earlier onset than household-level studies suggest (Dargay, 2007), and more consistent with the above explanations.
-Generation Several studies discuss mode share or tool ownership within like age groups in a given place at different points in time (Beige, 2008; Bush, 2005; Dargay, 2007; Matas & Raymond, 2008; Thakuriah et al., 2010), generally showing or suggesting recent increases in automobile use among young adults. As with differences between age groups, Dargay and Hanly (2007) explain this general trend toward car ownership and use across subsequent survey periods in terms of rising income and falling automobile purchase prices outweighing rising gasoline prices. Thakuriah et al. (2010), comparing US 18-24 yearolds in 2006 to those in two previous generations, agree and add suburbanization as another explanatory factor. Many regions have seen outward expansion during the last several decades, and whether or not this independently influences mode choice, impacts on population density would affect potential transit efficiency.
-Beige (2008), using stratified Zurich region longitudinal data from 1985 to 2004, shows that the youngest group (born 1980-89) owns much fewer vehicles than did those born 1970-79. Beige (2008) does not elaborate on this plotted information, and ownership rates for recent women aged 15-25 are not clearly lower than previously. She also found that only 45% of commensurate men own vehicles, compared to 60% for the previous birth group at the same grouped age. As with Davis et al. (2012), Beige's chosen age groups might be problematic in including people with a wide variety of life course situations and automobile ownership opportunity, but Beige's data do at least suggest a possible recent reversal of the previous trend toward increasing automobile use between generations.
-   5  
-
-3 - STUDY CONTEXT
-This study examines mode share changes, specifically those for transit, in Greater Montreal (Fig. 1). Montreal is the largest city in Quebec, with a metropolitan area population of 3,635,571 in the 2006 census, up modestly from 3,349,742 in 1996 (Statistics Canada, 2010a). It has several employment hubs other than the CBD, but they are all fairly central in the region (Coffey & Shearmur, 2001). Recent growth, however, has been more pronounced in more peripheral areas (Collin, Dagenais, & Poitras, 2003). Based on locational variables alone, one might expect transit mode share to have held steady or decreased over time.
-Figure 1: Context and home location zones
-   6  
-
-Since 1970, Montreal has experienced extensive telephone Origin-Destination (O-D) surveys roughly every five years covering the entire Metropolitan region (Agence Metropolitaine de Transport (AMT), 2012a). Individuals are not tracked survey-to-survey. It is possible that the respondents sampled for one year differ in relevant ways from those taken in this study to represent the same people in another year. However, the high count of trips studied for each year (over 45,000) serves to minimize sampling error.
-The populations that the samples represent can also change due to migration. According to Statistics Canada (2010a), between 1996 and 2001 around 56.7% of people in Montreal's Census Metropolitan Area (CMA  a slightly larger territory encompassing the study region) did not move house, and 58.8% the following 5 years, leaving sizeable minorities that did. Only 1.0% and 1.1% respectively, however, moved from a different province or territory, and 3.6% and 4.8% from out of country. No readily available data capture moves from points in the province outside the CMA, but based on the international and interprovincial numbers, the study population should be broadly similar between surveys.
-The increase in recent immigration is nonetheless notable as a possible modifier of age groups as indicators of life stages. Schneider (2006) notes immigrants as being more likely than others to live in dense urban areas and Turcotte (2008) observes immigrants in Canada as being less likely to own their homes (curiously opposite to observed trends from 30 years prior). Beige (2008) finds that renters are much more likely to move than owners, which can have mode shift implications. Perhaps more significantly, the average age of Canadian mothers at first birth rose from 28.6 in 1998 to 29.3 in 2008, and the 2008 Quebec figure is identical (1998 unavailable) (Human Resources and Skills Development Canada, 2012). Average ages for new fathers, from 1995 to 2006, increased from 27.8 to 29.1 nationwide (Beaupre, Dryburgh, & Wendt, 2010). These trends suggest that an age group surveyed in 2008 might be less advanced in terms of life stage markers than the same age group surveyed in 1998.
-   7  
-
-Home ownership, however, increased in Greater Montreal from 48.6% to 53.4% from 1996 to 2006 (Statistics Canada, 2010a). The unemployment rates also decreased. Estimates for the entire potential workforce for each survey year, with the 18-25-year-old demographic in brackets, are given as: 1998 - 9.7 (16.6); 2003  9.5 (14); 2008  7.4 (12.8) (Statistics Canada, 2012a). Without the appropriate age-specific rates, these figures are less useful than they otherwise might be for informing discussion of age groups as life stage proxies, but if anything they indicate earlier life stage transition, counter to the immigration and childbirth trends above.
-Other potentially noteworthy changes or events that have occurred in the region include the introduction of graduated drivers' licensing in 1997 (Simpson, 2003), reduced transit fare for students 18 to 25 in 2002, the 2007 extension of the metro system (subway) into Laval (the largest neighbouring municipality to Montreal proper), and improved transit integration through the introduction of smart cards in early 2008 (Societe de transport de Montreal (STM), 2012). Other changes to bus, metro system, and commuter rail routes and frequencies might also have impacted ridership appreciably in specific subregions. Substantial transit investments took place between 2004 and 2008, which contradicts with budget cuts in the public transit financing that took place in the 1990s (Urban Transportation Task Force, 2009).
-Gasoline prices also rose, averaging CAD $0.563 per litre in 1998, $0.767 in 2003 and $1.188 in 2008 (Statistics Canada, 2010b). The increase in 2008 was sharp and in 2009 the price declined to $0.977 per litre, before slowly returning to recent near-peak heights. Dargay (2007) and Goodwin et al. find fuel price changes to be much less influential to automobile ownership than vehicle purchase price and income, and concludes that increases in fuel prices would have to be quite large to produce a significant effect on automobile use. Sperling et al. (2009) agree, adding that to spur significant change, high fuel prices would also have to be sustained for several years to overcome effects of consumer scepticism, existing housing locations and vehicle investments. This is evidenced in annual US gasoline sales declining for the first time in 3 decades in 2008 after steady increase and doubling of real prices 2003-
-   8  
-
-2008 (Sperling et al., 2009). The increase in 2008 was sharp and in 2009 the price declined to $0.977 in Montreal, before slowly returning upward (Statistics Canada, 2010b). Bi-weekly measures show that the 2008 price peaked much higher, near $1.50 per liter in Montreal, which might have affected commuting habits, although it declined beginning in July to near the annual average at the time of the O-D survey months later (Regie de l'energie Quebec, 2009). Overall transit ridership, without even accounting for population growth, decreased in the US and Canada by 3% from 2008 to 2009 with cheaper gasoline. By 2011, even as fuel prices rose again, it was still 2% lower than in 2008, (Dickens, 2012a), perhaps indicating that consumers suspect it will again decline. Montreal, however, appears to have experienced slight ridership, and possibly mode share, growth since 2008. Total transit ridership levels in Montreal in 2008 are not available to compare to subsequent totals, but in October 2009 ridership was only 2% lower than that in 2008 and October 2011 was 3% higher than October 2008. Annual AMT ridership (mostly commuter trains) is recorded and increased 7% between 2008 and 2011 (Dickens, 2010, 2012b). Apparently there was a gasoline price effect on ridership, but in Montreal its magnitude is unclear.
-While gasoline prices rose between study periods, so too did transit prices. Transit in the Montreal region has multiple providers and multiple prices. Appropriately detailed consumer price indices are not available at the regional level, but the region constitutes nearly half the population of the province of Quebec, in which public transportation costs rose slightly faster than private transportation costs between study periods (Statistics Canada, 2012b). However, absolute private automobile costs are often much higher for commuters than are corresponding transit fares so comparable relative growth figures might hide unaffordable private vehicle cost increases.
-   9  
-
-4 - DATA
-Data were obtained from O-D surveys from 1998, 2003, and 2008, conducted in the fall of each year and containing 417,950, 329,353 and 354,914 total trips respectively, reported each year by samples of approximately 5% of region residents (Agence Metropolitaine de Transport (AMT), 1998, 2003, 2008). The territory that is sampled, by a group local of transportation authorities, has evolved between survey years and generally exceeds the reaches of the metropolitan area. For consistency, observations with trip origins or destinations located outside of Greater Montreal were removed using ArcGIS software.
-This study focuses exclusively on work and school commute trips because, at least for regular commuters, they are more consistent, more diurnally concentrated and important for peak service provision (D Levinson & Krizek, 2008) and are more likely to influence other trips than vice-versa (Shearmur, 2006). For this reason, observations for purposes other than work and school trips were removed from this analysis.
-Commuters under the age of 20 were excluded from this analysis because their travel outcomes are difficult to attribute and their inclusion would be problematic for studying the other commuters (explained below). The earliest age at which individuals can legally drive automobiles in Quebec is 16, but with graduated licensing and the purchase costs, many people who would choose automobile commuting cannot do so at age 16. Also, very young adults, as Thakurriah et al. point out (2009), mostly live with parents so their mode choices might be heavily influenced by location and mobility tool decisions made by others. Moreover, changes among adults in their 20s to 50s, particularly those approaching or attaining possible mode share stability, are of interest in this study. Five-year age groups were used to match the five-year intervals between subsequent O-D surveys. Age brackets must all be equal if they are to be staggered through surveys to represent birth cohorts, and 34 is the terminal age in the group Davis et al. (2012) claim to be changing travel behavior. It is possible that choosing to start
-   10  
-
-groups at 20, rather than 18 or 16, might have appreciable effects on results beyond the youngest groups, but it ensures consistency with other research and ease of communication (early 20s, late 20s etc.).
-Likewise, commuters aged 60 and over were excluded from this analysis, due to the need for five-year groupings, and also because retirement often begins somewhere between 60 and 65. Furthermore, commuting might not be as important for home location and general trip outcomes for this age group as for other groups, and those who do commute might disproportionately have certain job types or health status that is unrepresentative of the population. Finally, commute trip counts for people over this age were low and reduced opportunities for sub-regionally disaggregated investigation.
-Lastly, and after a round of initial investigation, commutes originating at a location other than the respondent's place of residence were excluded to minimize the effect on mode choice that factors such as having to drop children off at school, for example, might generate. Therefore, only home-based trips were examined. This had little effect on means and excluded only about 15% of trips. The final count for the total number of trips included for analysis was 144,610, including 53,739 trips from 1998, 45,822 trips from 2003, and 45,049 trips from 2008. The notable drop in 2003 might be attributable to an increasing proportion of the population living outside the standardized boundaries for this study. Importantly, 2003 trip counts averaged 2.3 trips per person per day, the same as in all survey years since 1987 (Morency & Chapleau, 2008).
-The O-D survey is designed to account for multiple modes for each trip, using any combination of 17 possible modes. These 17 mode categories were grouped into transit, automobile (including driver and passenger), park-and-ride, walk or bike, and other. `Other' includes interregional transport, motorcycles, and taxicabs, and was by far the smallest group in all years. Park-and-ride, a combination of transit and automobile, was kept separate, being of similar apparent magnitude to walk/bike, and having infrastructure and other implications distinct from each constituent category. Singular categories were
-   11  
-
-assigned using an algorithm assigning `other', `park-and-ride', `automobile', `transit, and `walk/bike', in that order, where, should criteria be met to satisfy one it would be assigned. If not, the next, leaving walk/bikeassigned trips as only those including no other mode. This method allows for distinct groups and eliminates potential bias in determining how to classify trips that include both public and private transport. Trip counts and percentage by mode for each year are listed in Table 1. Table 1: Trip counts by mode
-Noticeably, percentages of total annual trips decline for young groups and increase for older groups between survey periods. This in part reflects demographic trends (Statistics Canada, 2012d), and effects of cell phone only households (Trepanier, Chapleau, & Morency, 2008).
-   12  
-
-5 - METHODOLOGY
-Initial analysis consisted of plotting transit shares of age groups at each year and by birth year group, and testing for difference between years for age groups and for birth year groups with Pearson's chi-square test using statistical software. Transit mode shares were also plotted separately for four household structure groups (single and multiple 20+ years old with and without children under age 16), and four residence sub-regions (refer to Fig. 1). Gender was also examined, with transit mode share consistently about 5% higher for women than men, but the trends were similar across genders through these time periods, so males and females were not analyzed separately in depth.
-The geographical zones chosen are intended to differentiate between areas based on urban/suburban character and transit accessibility, while following political boundaries and AMT groupings for communication and data assimilation purposes. The four residence sub-regions are: (1) downtown (Montreal's Ville Marie borough, roughly commensurate with the AMT's Montral Centre-ville TAZ composite zone); (2) mid-Montreal, including AMT's Montral centre zone plus the highly accessible Verdun borough near downtown; (3) inner suburbs, including West Montreal (excluding Verdun), East Montreal, Laval and some of the South Shore (Longueuil and surroundings), each of which contains its own notable employment center (Coffey & Shearmur, 2001); and (4) outer suburbs, consisting of the North Shore and the remaining South Shore municipalities.
-The birth cohorts represented in the various household structures and sub-regional graphs cannot be viewed the same as those in the aggregated analysis. Couples aged 20-24 with no children in 1998 might not remain in the same situation as 25-29-year-olds in 2003. Likewise, 40-44-year-old downtown residents in one survey year might be largely different people than 45-49-year-olds there in the next, making the term `cohort' more loosely applied in this analysis than with the more aggregate data. Because sample populations in each situation change membership, statistical significance of cohort trends within
-   13  
-
-household structures and home locations might be misleading and therefor was not tested. That said, household structure and spatial factors might account for much of the variation observed, so mode share changes or consistency within these groups merit attention, and population shifts between groups can potentially be inferred by comparison to overall patterns.
-6 - RESULTS
-General Trends Figure 2 shows 1998, 2003 and 2008 transit mode share for home-based work and school commuting trips by age (five-year group center), period and birth cohort. Solid lines follow birth cohorts between years and dotted lines connect data points for age groups in a single year. As expected, the general pattern is a decline in transit share with age until the 30s or 40s, at which point transit share becomes relatively stable. Transit share increases overall from 1998 to 2003 and from 2003 to 2008. The patterns of change between these two periods are very different, however, with the more recent transition applying somewhat universally, and the previous transition largely limited to the youngest groups. Conditions in 2008, such as the gasoline price spike, might somewhat exaggerate lasting population change. It is interesting that the youngest age group in 2008, unlike the others, is not appreciably different than that in 2003. Perhaps there is a point after which further increase in ridership is difficult.
-   14  
-
-Figure 2: Transit commute mode share
-While there is decline across both inter-survey time periods until cohorts reach their early 30s, thereafter cohorts' transit shares appear not to change  or even to increase if 2008 data is taken at face value. Transit use for those born in 1963 and earlier appears to be remarkably consistent from 1998-2003 at about 15%, before 2008 increases that curiously appear stronger with age after the early 40s. Setting aside 2008 increases, it appears that these cohorts share a similar stable long-term transit share. Stable transit shares appear to be emerging for younger cohorts too, although at a higher use level. Transit use for those individuals born between 1964 and 1968 seems to be holding at about 17%. Those born between 1969 and 1973 reach their early 30s (which appears to be the age of stability onset) in 2003, with about 21% transit use, and people born five years later at the same age use transit for 27% of commutes. Those born 1983 and earlier appear to be changing their mode share with a very similar pattern to those born five years prior, but from a higher starting rate, as was the case for several preceding birth cohorts. At this time, however, data are not available for this cohort past their late 20s, which is a volatile age, so forecasting its long-term transit use at rates beyond those of people recently in their early 30s might be imprudent. The graph in Figure 2 does suggest that future home-based commuter transit use by those born since 1969 is likely to remain above 21%, much higher than the 15% share for preceding commuting
-   15  
-
-groups. Chi-square analyses confirm the variation within age groups, especially young age groups, between survey years. These analyses also confirm stability in transit mode share over time within specific cohorts.
-The 2008 O-D survey observations increase variation in older groups along both age and birth year axes, but no significant difference is detected between 1998, 2003 and 2008 transit mode shares in 1969-1973 or 1964-1968 birth cohorts, nor in those born 1944-1948, who do not appear in the 2008 survey as commuters under 60. Even within the younger groups, there is more variation within age groups than within cohorts, as reflected in the higher commensurate Chi-square scores. The early 40s age group has been remarkably stable over the course of the three O-D surveys examined in this analysis (owing to diminutive 2008 increase) but like all other age groups it has seen change. The resulting p-value (which indicates the likelihood of observed differences between years being due to sampling error) of 0.000 for this age group, is much smaller than the 0.190, 0.764, and 0.738 p-values of the aforementioned (19641973 and 1948-1948) birth cohorts. Birth cohort groups entering their early 40s do so having experienced less change than that seen within this age group. The most recently surveyed cohort to have arrived in their early 40s (i.e., those born 1964-1968), after members have shown stable transit use for a decade, uses transit at this age more than did preceding cohorts. The cohort due to reach its early 40s next, born 1969-1973, has shown a much lower likelihood of change in the past ten years than has the age group they will represent in 2013. While prediction is difficult, there appears to be a higher likelihood that the 1969-1973 cohort will continue near its current use levels than that it will adopt that of its predecessors.
-Household Type Figure 3 shows transit mode share for commuters of four household types: multiple and single commuter, with and without children. Certainly many individuals move between these groups in time. This movement is reflected in the relative weights of each on the aggregated (Fig. 2) pattern. Overall transit use for those in their late 20s for each year closely resembles the same in multiple-commuter
-   16  
-
-households without children but in the late 30s, groups with children more closely resemble the average as a growing share of people have had children.
-Transit mode shares are generally much lower for those individuals with children than for those without. Similarly, transit mode shares are generally much lower for those individuals who live with other commuters than for those who do not, especially when no children are present. Individuals without children also show a more linear pattern of decrease than those with children, declining gradually with age before stabilizing, similar to the general pattern shown in Figure 2. The continued decline into and beyond the 30s for childless groups, approaching levels comparable to those with children, is more pronounced for individuals in multiple-commuter households. This trend for childless groups might indicate the inclusion of expecting parents and those whose children have recently left (but whose location and transit habits remain). Therefore, it might not be the case that individuals living in multiplecommuter childless households tend to continue to decrease transit use later in life, but rather that those with children, as they age, maintain their habits even after their children leave home. Individuals from childless, single-commuter households might be less likely to have recently had children move out than their multiple-commuter counterparts, providing an explanation for this group's comparative intra-cohort mid-life stability. Interestingly, older age groups with children appear to increase transit use, possibly reflecting reduced time demands of older children.
-   17  
-
-(A) Households with multiple commuters and one or more children; (B) Households with single commuter and one or more children; (C) Households with multiple commuters and no children; (D) Households with single commuter and no children Figure 3: Transit commute mode share by household characteristics
-On the whole, after considering movement between household situations represented by the graphs in Figure 3, they do not refute the post-30s mode stability thesis explained in the previous section of this paper despite patterns shown in each specific case in Figure 3.
-The youngest cohorts decrease their transit use as they age in each case, especially individuals living with children; however, there is no clear increase or decrease in transit use during the transition from late 20s
-   18  
-
-to early 30s age ranges, unlike in the fully aggregated data presented in Figure 2, suggesting that family situation plays a major role in mode choice at this stage in life and a sizeable number of people are moving between household types. For the late 20s and early 30s age groups, within-age group transit shares increase in all four cases (although young single-commuters with children show mixed results depending on survey years), but there is much more variation for those without children. Factors causing the general increase in transit use among youth between successive cohorts do not have a uniform effect; young lone commuters of similar age in households with children each year show less change than do individuals from commensurate multiple-commuter households, and still less than individuals without children. The reasons for this outcome is not clear  perhaps young single-commuter households with children tend to have single incomes and locate disproportionately in places with poor transit access to maximize space and security at minimum cost. Also conspicuous is the divide between young individuals from single- and multiple-commuter households without children. Transit use rates for single commuters at most young ages and years are about 5% higher than their counterparts. This might, as mentioned above, in part reflect location and lifestyle preferences of persons expecting children in the future, or increased ability to buy homes (while still only relatively affordable peripheral ones) with multiple incomes. What is clear is that household situation is related to commute mode choice, including that of young adults, and the degree to which recent changes can be seen varies greatly between household types.
-Home Location Figure 4 shows transit mode share for commuters of four home location areas: downtown, midMontreal, inner suburbs and outer suburbs, mapped in Figure 1. Like with household structure, subregional variation in transit use is apparent, as are population shifts between these groupings that can be seen by comparing area-specific values to their aggregated analogues.
-Transit use patterns and shares in inner suburbs resemble those of the region as a whole (Fig. 2), although young people's use of transit is lower. Outer suburbs show a remarkably region-like pattern, but with
-   19  
-
-much smaller values (1-15% depending on age and period, compared to 13-44%). Downtown and midMontreal transit use is much higher. Mid-Montreal use is 23-61% and downtown 19-56%, owing to frequent walking and biking. The pattern for downtown is rather erratic, as walking and biking reach over 40% for some groups. Mid-Montreal's pattern generally resembles the region's, although with higher rates.
-(A) Downtown; (B) Mid-Montreal; (C) Inner Suburbs; (D) Outer Suburbs Figure 4: Transit commute mode share by home location The differences between transit mode shares in these four zones are massive and understandably so; it is difficult to service sparse, outlying areas with efficient transit. Even where that is not the case, cheaper peripheral land makes for cheaper parking, as well as a higher likelihood of nearby jobs and services
-   20  
-
-(however many there might be) that cater to automobiles. It is interesting to note that, other than downtown, the patterns of change, by period, age, or cohort, are quite similar in shape to each other and to those of the cumulative region. This suggests that factors influencing mode share changes, both from a lifecycle perspective and inter-`generationally', apply region-wide. Magnitudes of change within age groups vary from one zone to the next, being somewhat commensurate with its level of previous use, likely reflecting service provision challenges and mode choice inertia. One notable exception to this unexpected change pattern (not magnitude) regularity across zones is seen in late youth. Aside from midMontreal between 2003 and 2008, all zones differ from the regional pattern in that cohorts passing from their late 20s to early 30s either increase or maintain fairly consistent transit use. This indicates that a sizeable number of Montrealers move from relatively central to relatively peripheral areas at this time in life and this transition is reflected in, if not impacting, their transportation decisions. Complementary work by Morency and Chapleau, studying the same region 1987  2003, shows average home distances from the CBD increasing with age between these groups in every survey year (Morency & Chapleau, 2008).
-Cohorts of individuals over 35 have recently, between 2003 and 2008, been increasing transit use after stable levels between 1998 and 2003. Mode shares for 1998 and 2003 are similar for all groups born before 1964, spanning their late 30s to late 50s. If the data were available, one would expect to see the same in their early 30s. This tight pattern and 2008 deviation are also noticeable in both disaggregated suburban zones (outer suburbs viewed at a different scale), and to a slightly lesser extent mid-Montreal, which might support a gasoline price spike explanation. The two intervals' patterns of change are curiously less distinct in household composition groupings (Fig. 3), perhaps due to trends in household makeup, such as children moving out, happening concurrently.
-   21  
-
-7 - DISCUSSION AND CONCLUSIONS
-Even if viewing 2008 figures with caution, it can be seen that recent cohorts of young people are using transit more than those in past years, although they are decreasing use as they age, related in part (and by their late 20s very much) to residential location and household situation changes. By their early 30s, cohort transit use remains much higher than cohorts' at the same age in earlier surveys, and appears to hold, both generally and within sub-regions, as they age into their late 30s and beyond.
-The literature, sparse as it may be, suggests a similar life course mode choice pattern, or a reciprocal pattern for automobiles, as well as explanations. Mode choice consistency, maintained by habit, vehicle availability, and attitudes and preferences formed to a large degree early in life, is tempered by key events. Home and work location changes, household composition changes, and automobile access changes are disproportionately frequent in late teens and early adulthood (ages 16-35). Birth cohorts by their early 30s have established transportation preferences, opportunity to drive, and some degree of location and family stability; therefore, after reaching this age range, widespread mode shift is both unobserved and unexpected. High transit use rates observed among Greater Montrealers currently in their early 30s are expected to continue as they replace older, lower-use birth cohort commuters.
-Transit agencies aiming to increase ridership should work on attracting the younger generations more. This study shows a drop in use by the younger generations as they age, yet they end up with higher transit mode share compared to the older generations at the same age who had lower transit mode share when they were younger. After cohorts reach ages in the early 30s, mode share changes as they age are minimal. Such changes are shown to not even be statistically significant for either birth cohort passing into their late 30s. Similarly, people aging from their early to late 50s between 1998 and 2003, who are not represented in the transit-heavy 2008 data, show no significant change. Transit mode shares also appear stable for the remaining cohorts over 35, controversial 2008 growth aside. Accordingly transit
-   22  
-
-agencies should adopt policies that can attract younger commuters and increase ridership through providing services that meets their taste in terms of reliability, speed and information. An increase in ridership levels among cohorts of younger riders is expected to be easier and will remain for longer periods compared to the older cohorts.
-While increases in transit use, particularly among youth, are evident in the data, the causes of such changes are not clear. The introduction of graduated licensing mentioned previously, which increased the time and training needed to get a license and the restrictions on new drivers, would have had a more pronounce impact on surveys after 1998. Similarly, the 2002 introduction of reduced transit fares for students 18-25 likely had a pronounced impact on this price-sensitive population segment  and Montreal has a high student population. It is tempting to theorize that changes in attitudes or technological improvements also play key and lasting roles. In 2004 the Quebec provincial government added sustainable development focus to the public school curriculum (Ministre de l'education loisir et sport, 2004), and other government programs have aimed to increase awareness in the general public (Transports Canada, 2010a, 2010b). Ruud and Nordbakke (2005) have shown that young people increasingly use transit without preparation, possibly due to increasingly available real-time transit information and route-finding applications.
-The precise influences of such developments, however, are difficult to quantify as pertinent data are not available and several potentially influential variables were not controlled for. Relevant socioeconomic data generally are not available for specific age groups (for instance income is recorded in the survey but at the household rather than individual level and is not available for all survey years). The period around 2008 was a turbulent economic time worldwide, but unemployment should not profoundly impact a study limited to commuters, and it seems to have declined slightly at any rate. Parking cost and availability have been found to be extremely important to mode choice (Chung, 1997; Kuzmyak, Evans, & Pratt, 2010; Marsden, 2006), and parking fees, as well as traffic calming measures, are increasingly being used in the
-   23  
-
-city (City of Montreal, 2003). Incorporating parking information for each period, and commensurate transit networks, might also explain some of the change. Unfortunately such data were not readily available for this paper. Nonetheless, transit demand in Montreal appears likely to grow, even if socioeconomic or infrastructural influences have had substantial effects and policy reversals in time undo such conditions. Many of today's youth will enter their mode-stable years with high transit use rates and presumably display some of the consistency in transit use seen in other generations.
-In addition to incorporating variables mentioned above, future research might include additional survey years if and when they become available. The 2013 O-D survey results will support or refute suggested changes and consistencies herein. Data for 1993 could speak to the observed life stage mode choice patterns. Similar studies in other cities would be interesting; however, Montreal's high transit service level and density, by North American standards, might make comparison difficult. Where time and money permit, a panel or retrospective study, including attitudinal questions, might be more effective for explaining the apparent burgeoning demand for transit, being able to temporally link cause and effect in individuals. Repeated cross-sectional studies such as this one, that can use more readily available data, might be more efficient for detection.
-Transit use requires provision to address demand. Study shortcomings temper the accuracy of the suggested magnitude of mature adult commute transit share gains, seemingly around 40% (not accounting for the city's aging demographic composition); metro, train or bus overcrowding and other service issues might also lead to more modest actual growth. Provision must keep up with demand, and cursory examination suggests that the latter will grow in all broadly defined zones outside downtown  and presumably downtown as a destination. Greater spatial precision  identifying specific routes, corridors or neighborhoods for targeted investment  might be manageably and meaningfully attained by examining the travel and location patterns of 30-34 year-olds, those entering what appears to be a long period of steady mode choices.
-   24  
-
-Chapter II
-   25  
-
-1 - INTRODUCTION
-  
-Not only is transit ridership growing and automobile use declining among young people in places such as the US (Davis et al., 2012) and Germany (Kuhnimhof et al., 2012), but also it appears that much of this change is likely to hold as currently young people progress through lifecycle changes (Grimsrud & ElGeneidy, 2013). Grimsrud and El-Geneidy (2013) examine commute mode share of birth cohorts in Greater Montreal, Canada from 1998 to 2008. They find a general pattern of decreasing transit mode share with age until a long plateau is reached at about the early 30s. They also document increasing transit use among young people of similar ages between successive survey years, who continue to reduce use as they age, but to a substantially higher plateau than that of former aging youth, which suggests that policy aimed at establishing transit habits early in life can lead to overall ridership gains.
-Grimsrud and El-Geneidy's (2013) analysis is somewhat limited, however - while it does include comparisons of trends for different household and rough home location groups, it is mainly based on summary statistics and does not simultaneously control for other important variables. Observed mode share changes could in fact be responses to unmeasured changes in level of service, home or destination locations relative to network features, work versus school trips or other factors  developments which might not continue along the same trajectory. They also observe an upswing in transit use among older cohorts in 2008, contrary to the plateau thesis, that they suggest reflects somewhat temporary effects of a gasoline price spike, but that conversely might result from service level or other physical changes  or indicate mode choice-influencing evolution of values even among mature commuters.
-This paper reexamines 1998, 2003, and 2008 Montreal home-based work and school commute mode share, now constrained to trips beginning and ending on the Island of Montreal, on which historical network information is available for inclusion as control variables in binary logistic regression models. It asks whether commute transit mode share has increased for people aged 20-34, whether birth cohorts
-   26  
-
-show stable mode shares through their 30s-50s, whether any observed 2008 transit use spike can be explained by service level and other tested factors, and whether there are noteworthy differences or trends between age groups and years in factors that influence transit mode share. If the first two questions test positively, it will support Grimsrud and El-Geneidy's (2013) calls for further policy targeting youths and increased overall transit provision to meet expected future demand. The third and fourth questions aim to enrich understanding of potentially uneven and evolving relationships between groups' mode choices and underlying factors.
-This paper is structured as follows: Sections 2 and 3 introduce pertinent literature and study context; section 4 describes the data, methodology and variables included in models and analysis as well as summary statistics; section 5 presents analysis results; and the paper concludes with policy implications and future research directions.
-2 - LITERATURE REVIEW
-While a number of studies examine mode share or automobile ownership, a common proxy, by age group in different years (Beige, 2008; Bush, 2005; Dargay, 2007; Matas & Raymond, 2008; Thakuriah et al., 2010), most find recent automobile increases among young adults. Dargay and Hanly (2007) and Thakuriah et al. (2010), find car ownership rising as increasing incomes and decreasing purchase prices outweigh modest changes in gasoline price, the latter authors additionally citing effects of suburbanization, a commonplace phenomenon over the past decades. Few studies, however, use recent enough data to speak to current trends introduced by Davis et al. (2012) and Kuhnimhof et al. (2012). Beige (2008), using stratified 1985-2004 Zurich region longitudinal data, shows people of the same age born more recently generally owning more cars than those born earlier; conversely, the youngest male group, born 1980-89, owns substantially fewer at the same age as those born 1970-79. Emerging evidence
-   27  
-
-that young people might be starting to drive less than previous generations, however, does not guarantee the same choices later in life.
-Transport mode choice inertia does make some intuitive sense. Automobiles have large sunk costs that can dwarf those of individual trips. Transit passes can be seen similarly to some degree. Changing modes also might require learning new routes or procedures, as well as overcoming perceived threats or inconveniences. More generally, preferences and habits that form in young adulthood or earlier are thought to hold through life (Bush, 2005). Habit is one of the factors most consistently found significant in a systematic review of 76 mode choice papers (De Witte, Hollevoet, Dobruszkes, Hubert, & Macharis, 2013), but is rarely studied (De Witte et al., 2013; Simma & Axhausen, 2003; Thogersen, 2006), owing perhaps to the frequent use of cross-sectional study designs (Thogersen, 2006).
-Some studies, using repeated cross-sectional, panel, or retrospective survey designs, have examined mode choice or automobile ownership changes among individuals, households, or groups (Dargay & Hanly, 2003; Matas & Raymond, 2008; Nolan, 2010; Simma & Axhausen, 2003; Thakuriah et al., 2010). Dargay and Hanly (2003) find mode changes to occur with almost three times the average frequency when both home and work locations also change. Beige (2008) finds both moves and mobility tool changes to be heavily concentrated between the ages of 20 and 35. Household structure changes like coupling and having children can also impact mode choice, affecting time and money availability and home feature priorities including mode-relevant location. Thakuriah Tang, and Menchu (2009) show these changes occurring mostly between the ages of 18-24 in the US, during which time about 50% of people move out from their parents' homes, 33% marry, and 30% have children. With relatively late onset as well as high upfront cost, automobile use is particularly consistent once begun (Beige, 2008; Dargay & Hanly, 2003, 2007; Simma & Axhausen, 2003). Beige (2008), using individual-level data rather than the more typical household-level data indexed by head-of-household age (which can misattribute effects of maturing children), shows fairly stable car ownership from about age 35 to 55.
-   28  
-
-A rough life-course automobile use trend appears from the literature to include a rise with increased income and responsibilities during a period of major life changes and flexible tastes, perhaps into the 30s, followed by a long plateau and slow decline later in life. Transit being the main competing mode at most distances, at least in bicycle-resistant North America, its use trend is presumably opposite. If higher than previous youth transit rates hold as birth cohorts enter the plateau years, if there is such a mode choice plateau, it is reasonable to expect rates to remain high, provided high rates are not merely responses to temporary contextual conditions.
-3 - STUDY CONTEXT
-Montreal is Canada's second-largest city, with a modestly growing 2011 island population (including the city proper and several small nearby municipalities) of 1,886,481 (Statistics Canada, 2013). At 3,779.1 people per square kilometer, (Statistics Canada, 2013), it has high population density by North American standards and a relatively extensive transit network as seen in Figure 1. Developments between or near survey periods likely to affect morning peak commute mode choice include graduated drivers' licensing introduction in 1997 (Simpson, 2003), student transit fare reduction for 18-25-year-olds in 2002, added bus routes, and perhaps smart card introduction in 2008 (Societe de transport de Montreal (STM), 2012). However, regional home ownership increased from 48.6% in 1996 to 53.4% in 2006 (Statistics Canada, 2010a) and regional unemployment decreased (9.7% 1998, 9.5% 2003, 7.4% 2008) (Statistics Canada, 2012a), potentially favoring car usage.
-Average transit prices for the province increased by a higher percentage between study periods than did automobile use prices (Statistics Canada, 2012b), but less in absolute terms, and gasoline prices spiked to nearly $1.50 per liter shortly before the 2008 survey (Regie de l'energie Quebec, 2009), perhaps affecting commuting habits. Similar to trends elsewhere in North America after gasoline settled, October 2009 total transit ridership in Montreal was 2% lower than in October 2008's (Dickens, 2012b).
-   29  
-
-Figure 5: Island of Montreal context
-4 - DATA AND METHODOLOGY
-Initial analysis involved inspecting changes in summary statistics, followed by testing for significant differences in transit (versus automobile) mode share between five-year age groups in each survey year, using a binary logistic regression model that controlled for variables listed below. Additional modeling was also performed and is introduced at the end of this section.
-   30  
-
-The primary data sources for this study are 1998, 2003, and 2008 Montreal region O-D surveys, conducted by telephone in the fall of each year by a group of local transportation authorities, sampling approximately 5% of region residents (Agence Metropolitaine de Transport (AMT), 2012a). From over 300,000 trips per year, Grimsrud and El-Geneidy (2013) included 53,739  45,049 per year, after standardizing the area boundary between years, and keeping only home-to-work and home-to-school commutes by those aged 20-59. This study further filters cases to those beginning and ending on the Island of Montreal (outside of which historical bus route data was unavailable), beginning during the 6:30 to 9:30 am peak (Diab & El-Geneidy, 2012), and includes a maximum of one randomly chosen trip per household, for a total of 37,523 trips. Trips from census tracts for which income figures could not be determined, that caused unresolved transport network modeling errors, or that involved persons with unclear driver's licensure status, were also excluded, yielding 37,114 trips. To improve model fit, trips involving neither transit nor automobiles, and those involving both, were also excluded, for a usable sample of 32,189 home-based commute trips. Summary statistics are given in Tables 2 and 3 after discussions of variables summarized on each table.
-Use of transit, as opposed to automobile, is the dependent variable for all logit models in this study, and is measured at the individual trip level. The primary explanatory variables of interest are those capturing changes in time and with age and aging, to which socioeconomic, trip, level of service and location control covariates are added. Effort was made to generate a wide variety of potential control variables, and to represent as many distinct themes as possible that are frequently found important in the literature. Variables were then dropped from sets shown in a correlation matrix to be overly correlated, at a 50% (or -50%) threshold with one exception mentioned below. Inclusion decisions were based primarily on strength of bivariate relationship to mode choice, logical and literature-supported fit, and frequency of over-correlation with other variables. Control covariates found insignificant at the 95% confidence interval level in the main model were removed from all models, but those found insignificant only in restricted membership models, introduced at the end of this section, were allowed to remain to facilitate
-   31  
-
-inter-model comparisons. Age group/period variables in the main model were similarly kept regardless of tested significance to allow inter-variable comparisons.
-Age, cohort, period Twenty-four dummy variables were generated, one for each possible combination of eight five-year age groups and three survey periods. The other twenty-three were compared to the 1998 55-59-year-old reference group. This produced the same model power as using separate sets of seven (plus reference) age groups and two (plus reference) survey periods. Age-period-cohort time variables suffer from perfect linearity and cannot easily be modeled together (Mason, Mason, Winsborough, & Poole, 1973). Here, the twenty-three other age group/cohort/period points are first left as such and directly compared to the reference group, to give an initial impression of the dataset before breaking it into separately examined age and cohort groups outlined at the end of this section. Theoretically, age, period, and cohort effects can be meaningfully examined together in a single model if one substitutes one or more other continuous variables for age, period, or cohort groups (O'Brien, 2000; Bush, 2005), but if said variable(s) inadequately represent variation at the substituted time scale, the problem of misattribution remains. Lacking sufficiently comprehensive data and knowledge of the survey region, and suspecting that important but otherwise unmeasured influences are present at each time scale, a choice was made to separately examine, test, and compare apparent age group and cohort trends.
-Socioeconomic variables Female dummy Gender is commonly included in mode share studies. While De Witte et al. (2013) find it to be significant in less than half of these, females show substantially and consistently higher transit use in Greater Montreal than males in all survey periods (Grimsrud & El-Geneidy, 2013), and likely behave similarly in the constituent Island of Montreal study region.
-   32  
-
-School trip dummy As Montreal's 20-24-year-old student population exceeds that of workers, distinction between work and school commutes might be important. Kim and Ulfarsson (2008), controlling for age and other factors, find school trips significantly more likely than work trips to use transit, and the same is expected here.
-No license dummy A driver's license is a legal prerequisite to driving, so it is expected to have a negative effect on transit use, as noted by Cervero and Kockelman (1997), and its absence to have a sizeable positive effect. However, even after limiting analysis to car vs. transit users, a proportion of commuters with licenses are expected to take transit and some without licenses are expected to carpool.
-Cars per license Household number of automobiles per licensed driver is logically more telling than similar measures like cars per adult as used by Sweet & Chen (2011). It has slightly less bivariate correlation with transit use in this dataset than does household car count, but the latter distorts household population variable effects.
-Children under 5 Children add responsibilities for at least some adult household members and are expected to reduce available time, often favoring automobiles over transit. Trip chaining, notably including taking children to school, is beyond the scope of this study, and thus the effects of children are undoubtedly downplayed here. Nonetheless, and while older children are too strongly correlated with other control variables for inclusion, the presence of children younger than five years old is expected to have an independent negative effect on transit use as seen elsewhere (Cervero & Kockelman, 1997).
-   33  
-
-Commuters Again relating to the wider region findings of Grimsrud and El-Geneidy (2013), number of commuters (as defined by sample inclusion criteria) per household is expected to negatively relate to transit use, if only for the increased carpool potential after accounting for location and automobile access variables.
-Income While this study attempts to minimize data aggregation, an exception is made for average income of individuals aged 15 and over per census tract (inflation-adjusted to 2013 Canadian dollars). Of variables included in over a fifth of mode choice studies, income is the second-most consistently found significant (after car availability) (De Witte et al., 2013), but such information is not available in the 1998 OriginDestination (O-D) survey, so census tract income data was used in lieu (Statistics Canada, 2012c). The nearest census years were 1996, 2001 and 2006. Three sets of approximate income figures were derived for each of 1998, 2003 and 2008 assuming constant annual growth rates, using each pair of census years as reference points. From the three sets of income figures, the figure based on the nearest two census years for which data is available was selected for each census tract in each survey year, keeping the calculated income levels as accurate as possible while allowing for data to be unavailable for some census tracts in some years. Trips from census tracts without two income reference years were excluded from analysis.
-   34  
-
-Table 2: Descriptive statistics 1
-
-Age 20-24 25-29 30-34 35-39 40-44 45-49 50-54 55-59 Total
-
-Year 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008
-
-n 1556 1305 918 1571 1536 1176 1706 1296 1282 1838 1376 1243 1825 1497 1442 1459 1387 1506 1219 1185 1503 640 736 987 11814 10318 10057
-
-Survey share 13.17% 12.65% 9.13% 13.30% 14.89% 11.69% 14.44% 12.56% 12.75% 15.56% 13.34% 12.36% 15.45% 14.51% 14.34% 12.35% 13.44% 14.97% 10.32% 11.48% 14.94% 5.42% 7.13% 9.81% 100.00% 100.00% 100.00%
-
-Transit use
-61.89% 70.57% 72.22% 41.57% 49.67% 61.99% 35.87% 39.66% 50.08% 33.19% 34.30% 45.78% 32.38% 32.00% 37.59% 32.21% 30.43% 34.99% 28.06% 31.14% 39.92% 25.31% 28.13% 38.70% 37.27% 40.19% 46.28%
-
-Female 52.19% 57.01% 54.90% 51.56% 51.50% 53.40% 46.42% 46.84% 46.65% 47.66% 48.91% 50.84% 51.95% 51.30% 54.92% 50.72% 53.50% 54.45% 52.58% 57.22% 57.09% 47.19% 54.08% 58.26% 50.12% 52.35% 53.76%
-
-Dummy School
-trip 47.81% 52.72% 58.71% 14.45% 16.41% 17.26%
-7.03% 8.95% 11.08%
-4.79% 6.25% 6.28%
-3.67% 4.28% 4.85%
-2.60% 2.24% 1.66%
-1.39% 0.76% 1.00% 0.94% 1.22% 0.91% 11.06% 12.16% 10.75%
-
-No license 25.32% 32.95% 33.99% 15.72% 17.64% 21.09% 12.19% 15.74% 15.52% 12.13% 14.03% 14.16% 12.82% 11.29% 10.89% 12.61% 11.75% 10.16% 12.55% 12.24% 13.84% 10.31% 10.33% 14.39% 14.47% 16.00% 15.86%
-
-Cars per license
-0.53 0.51 0.58 0.67 0.61 0.58 0.71 0.69 0.65 0.75 0.73 0.73 0.71 0.76 0.76 0.70 0.75 0.75 0.73 0.73 0.72 0.76 0.74 0.69 0.69 0.69 0.69
-
-Household Children
-<5 0.04 0.04 0.04 0.18 0.13 0.12
-0.36 0.33 0.34
-0.32 0.27 0.37
-0.13 0.16 0.18
-0.04 0.05 0.05
-0.01 0.02 0.02 0.01 0.00 0.01 0.16 0.13 0.14
-
-Commuters 2.19 2.21 2.39 1.80 1.82 1.95 1.67 1.63 1.73 1.60 1.61 1.66 1.65 1.64 1.68 1.78 1.75 1.74 1.82 1.83 1.81 1.67 1.71 1.66 1.77 1.78 1.81
-
-Census tract
-Income $33,468.87 $34,924.55 $38,478.22 $33,708.11 $34,518.35 $35,152.58 $35,302.21 $36,103.50 $36,465.97 $36,606.54 $37,740.60 $38,475.28 $37,278.77 $39,039.73 $39,804.75 $37,912.42 $39,775.72 $41,063.56 $39,780.51 $40,802.45 $40,705.49 $39,604.79 $41,963.14 $41,749.71 $36,374.54 $37,814.02 $39,063.74
-
-   35  
-
-As evident from Table 2, transit morning peak commute mode share increased over both intervals between surveys, from a low of 37.27% to a high of 46.28%, despite lower-use older groups constituting increasing shares of the samples. Most of the growth between 1998 and 2003 was from individuals in their early 30s and younger, while 2008 figures reflected growth for all age groups. Females steadily increased in sample share, from near parity to over 53%. School (versus work) commutes became increasingly popular among younger age groups, but declined overall in 2008 as older groups increased in size. Increases in share of people without licenses, similarly, are seen in young groups but less so overall.
-Large licensure drops are evident for those in their early 20s in 2003 and to a lesser extent those in their late 20s in 2008. This suggests that some damper effects from the 1997 graduated licensure introduction (which would not have applied to many already in their 20s in 1998) last through lifecycle changes. Not pictured, this second licensure drop is almost exclusively male. For men, who at most age groups and years show approximately 10% higher licensure rates than women, reduction seems to be holding, while women's already relatively low rates seem only to be temporarily affected. In 2008, 19.5% of men and 22.5% of women in their late 20s reported having no license, compared to 12.8% and 22.3% in 2003.
-Household variables, including number of cars per licensed driver, number of young children, and number of commuters, do not show dramatic overall changes, but the average number of young children appears to have dropped among people in their late 20s by 2003 and stayed down in 2008, possibly facilitating transit use. However, small increases in the average number of commuters per household and in income figures are seen for most age groups, especially younger groups, over both periods.
-Trip, level of service and location Travel time (hours) Trip times were estimated for each pair of origins and destinations using multimodal networks assembled by the researcher (walk, bus, metro, commuter rail). A fastest route, using whichever combination of the
-   36  
-
-aforementioned modes yielded the minimum time, was calculated for each pair in ArcGIS. Best route selection did not include waiting and transfer times, due to data limitations discussed below, but the resulting trip time variable nonetheless correlated more strongly with transit use than did road network distance, and the trip time calculation method was the same for the entire dataset.
-The street network on the Island of Montreal was assumed not to have changed substantially between survey periods, but traffic speeds were assumed to have changed, so lacking detailed historical traffic information, driving time was not included as a variable. This unfortunately precluded drive versus transit time comparisons as used by Limtanakool and Djist (2006) or Shalaby (1998). Transit network times are expected to show some negative correlation with transit use, as automobiles can often offer faster, more direct access for peripheral areas far from major employment hubs. Walking speed was input as 5km/hr, slightly lower than average walking speed for non-senior adults (Knoblauch, Pietrucha, & Nizburg, 1996), to account for intersection delays. No new metro stations appeared on the island during either interval, but one commuter rail line was added in 2001 (Agence Metropolitaine de Transport (AMT), 2012b). Commuter train trip times were taken from official schedules, averaging each direction's morning peak hours total time over the length of track in the study region and deriving speeds and times for each possible leg. Metro times were similarly calculated, but based on averages of each direction's first and last morning peak period train given in Google Maps. Metro and commuter train speeds were assumed not to have changed significantly between survey periods, being separated from the road network.
-Historical bus route locations and times were estimated using September schedules for each survey year supplied by STM, the transit authority serving the Island of Montreal, filtered only to include routes operating during the morning peak period, and a 2007 STM bus route shapefile. These schedules only offer departure times from a small and changing selection of stops per route (often 4-6), and full historical stop location information was unavailable. Bus access and egress was thus modeled to be possible at all route-street intersections  while this brings some inaccuracy, bus stops are frequent in Montreal so there
-   37  
-
-should be minimal impact on results and effects from this error are not expected to differ significantly between age groups or survey periods. Routes were assumed not to have changed course between years if schedules listed similar stop location names on schedules (although later years tended to name a larger share of points per route). Routes not shown on the shapefile were drawn in, with all named points located using Google Maps. Routes not listed for a previous time period were removed from its shapefile. Google Maps automobile and public transport directions were used to estimate connecting paths between points, mimicking current routes between like points and/or minimizing road travel time and route complexity as appropriate. Without precise stop times and locations for each year, it was not possible to determine trip wait and transfer times for inclusion in networks. Bus speed was calculated the same way as commuter rail speed. Destinations were examined, as well as home locations, as they might often play a larger role in mode choice (Chen, Gong, & Paaswell, 2008; Limtanakool & Dijst, 2006), and variables were kept commensurate between the two location types to allow direct comparison.
-Distance to downtown (km) was measured from each location using the street network, defined as the intersection of St. Catherine Street and McGill College Avenue, with both home and work/school distances expected to be significantly and negatively correlated with transit use. Other location variables thought pertinent to mode choice were calculated using 500 Euclidian meter buffers around each home and destination. Network distance buffers might be preferable, but are more difficult to compute for such a large dataset. The 500m buffers approximate 600 network meters (David Levinson & El-Geneidy, 2009), a larger boundary than traditionally used, but one thought to more accurately describe user sensibilities in Montreal, where the 85th percentile of distances walked to bus stops was found to be 550m and 660m to homes and destinations, respectively (El-Geneidy, Tetreault, & Surprenant-Legault, 2010).
-Average bus wait times for nearby buses during peak periods were calculated for each home and destination location by halving headway for more frequent routes and assigning `8 minutes' for those with headways exceeding 15 minutes. While there is variety among users (Fan & Machemehi, 2009), after
-   38  
-
-about 15 minutes headway, users often consult schedules rather than just showing up at bus stops to wait on average half the headway time (Hall, 2001). Average wait time of nearby buses, while not as precise as wait time of buses actually used in a trip, acts primarily as its surrogate, while also suggesting neighborhood demand and density, a mode choice factor often found significant (De Witte et al., 2013). An increase in wait time is expected to correspond to a decrease in transit use.
-Nearby home and destination bus route count, metro stop count and commuter rail stop count similarly indicate level of service and neighborhood character. Destination metro count and destination distance to downtown constitute the only pair of variables kept that exceed 50% correlation (-60%). While metro stations are not found at extreme distances from downtown, many places without nearby metro stations are more central than others with, and the two variables are conceptually distinct. All route and station count variables are expected to vary positively with transit use, perhaps with destination variables exerting more influence than their home counterparts.
-Table 3 summarizes trip, level of service and location variables. Average travel time shows little difference between age groups or years. Average distance to downtown for Island of Montreal commuters, both from home and from work/school, has decreased over both intervals overall and for most groups, contrary to the wider regional trend (Collin et al., 2003). Similarly, nearby bus route and metro stop counts have increased from 1998 to 2003 and from 2003 to 2008. No new metro stops were built on the Island of Montreal, so corresponding figures indicate increased housing density near existing metro stations. Age-specific figures show younger groups' homes and destinations especially close to metro stations, although less so for the youngest in 2008, possibly reflecting rising prices. Unlike metro stations, bus routes were added, with 285 morning peak routes in 1998, 306 in 2003, and 320 in 2008 derived from Societe de transport de Montral schedules (2013). Average wait time is the single variable type on this chart showing overall change likely undesirable for transit use. Interestingly, as with income, service and location variable changes are gradual, spread fairly equally between the two intervals, and do not offer explanations for the population-wide jump in transit use in 2008 seen on Table 2.
-   39  
-
-Table 3: Descriptive statistics 2
-
-Age 20-24 25-29 30-34 35-39 40-44 45-49 50-54 55-59 Total
-
-Year 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008 1998 2003 2008
-
-Travel time hr
-0.44 0.43 0.47 0.44 0.44 0.42 0.46 0.46 0.44 0.47 0.48 0.45 0.49 0.47 0.47 0.47 0.47 0.47 0.45 0.46 0.47 0.44 0.45 0.46 0.46 0.46 0.46
-
-To downtown km
-
-Home Destination
-
-10.30
-
-6.96
-
-9.82 6.20
-
-11.21
-
-6.35
-
-10.20
-
-7.97
-
-9.65 7.14
-
-9.20 6.58
-
-11.22
-
-7.95
-
-10.50
-
-7.63
-
-9.45 6.80
-
-12.12
-
-8.37
-
-11.80
-
-7.78
-
-10.22
-
-7.43
-
-12.82
-
-8.39
-
-12.54
-
-8.27
-
-11.55
-
-8.07
-
-12.17
-
-8.03
-
-12.71
-
-8.08
-
-12.02
-
-7.97
-
-12.47
-
-8.59
-
-12.05
-
-8.03
-
-11.57
-
-7.46
-
-12.64
-
-8.80
-
-12.47
-
-8.61
-
-11.62
-
-7.73
-
-11.67
-
-8.08
-
-11.37
-
-7.67
-
-10.89
-
-7.36
-
-Bus route count Home Destination 8.47 10.33 8.70 11.13 8.68 12.33 8.53 10.18 8.55 11.30 9.47 12.61 8.22 10.21 8.72 11.49 9.10 12.60 7.57 10.24 7.93 11.53 8.78 12.67 7.56 10.02 7.55 11.27 8.56 12.35 7.70 9.95 7.59 11.48 8.29 12.44 7.45 9.93 7.81 11.23 8.37 12.48 7.25 9.77 7.81 11.12 8.27 12.44 7.89 10.11 8.10 11.33 8.68 12.49
-
-Average bus wait min Home Destination 6.25 6.19 6.37 6.21 6.64 6.47 6.20 6.34 6.43 6.36 6.57 6.59 6.26 6.33 6.41 6.49 6.57 6.65 6.29 6.37 6.53 6.49 6.59 6.65 6.39 6.35 6.55 6.49 6.68 6.69 6.33 6.25 6.60 6.49 6.75 6.69 6.35 6.30 6.60 6.44 6.73 6.68 6.33 6.26 6.54 6.45 6.75 6.67 6.30 6.31 6.50 6.43 6.66 6.64
-
-Metro stop count Home Destination 0.37 1.01 0.37 1.12 0.29 1.10 0.29 0.81 0.35 0.91 0.40 1.02 0.27 0.77 0.30 0.77 0.31 0.91 0.20 0.74 0.24 0.79 0.28 0.84 0.19 0.74 0.21 0.80 0.23 0.80 0.21 0.76 0.21 0.80 0.20 0.74 0.18 0.69 0.23 0.82 0.23 0.86 0.16 0.68 0.17 0.70 0.22 0.81 0.24 0.78 0.26 0.85 0.27 0.87
-
-Commuter rail stop Home Destination 0.04 0.09 0.04 0.09 0.04 0.09 0.05 0.13 0.04 0.13 0.03 0.13 0.04 0.16 0.05 0.13 0.04 0.13 0.04 0.14 0.05 0.15 0.04 0.16 0.05 0.13 0.04 0.13 0.05 0.13 0.04 0.14 0.04 0.13 0.04 0.15 0.03 0.13 0.03 0.13 0.03 0.14 0.05 0.12 0.05 0.12 0.04 0.14 0.04 0.13 0.04 0.13 0.04 0.14
-
-   40  
-
-Absent Conspicuously absent are price, parking, and socio-psychological variables. Exact prices paid for transit by Montrealers cannot be determined from O-D survey data due to multiple fare type options. Moreover, for the vast majority of the system (excluding commuter rail) prices are spatially invariant so differences in price would correlate too perfectly to survey period. Similarly, without date of interview data, gasoline price numbers would be the same for all participants in a given year and effects could not be distinguished from other period effects. Pricing information must then been excluded despite the potentially massive influence of a 2008 gasoline price spike. Parking availability and price data were not readily available but could theoretically improve models. Individuals' perceptions, experiences, habits etcetera cannot be determined from the O-D surveys used but are thought to be highly important mode choice determinants as outlined in the literature review section.
-Additional models To more precisely test trends within the eight age groups and eight birth cohorts (appearing in more than one survey) over time, 16 additional logit models were constructed with the same control variables. Transit ridership for each age group/period set was predicted in Stata for each dummy variable combination (eg. male student with no driver's license), using mean continuous variable values of each age group/period. Predictions were compiled into a single predicted transit use chart in Microsoft Excel, weighing dummy combinations by their relative representation at each age group/period. Investigating a patterned discrepancy between actual and predicted values, 24 additional logit models  one for each age group/period  were constructed and examined to compare control variable effects between age group/periods.
-5 - ANALYSIS
-Table 4 shows results from the full commute transit mode share logit model, including all age
-   41  
-
-group/period combinations. All control variables are significant at the 99% confidence interval and nearly all show the expected signs. The exception is travel time  it has a negative bivariate correlation with transit use, but is positively related after accounting for other factors, and might reflect distance-invariant transit price versus distance-variant automobile fuel cost. Its effect tested as significant either way, but slight enough that the modeled unit had to be hours, rather than minutes, to produce a useful odds ratio. Not having a driver's license, and household automobile count per licensed driver, not surprisingly, show the greatest impacts, with odds ratios of 14.66 and 0.06 respectively.
-
-Table 4: Full commute transit mode share logit model
-
-Parameter Dummy: Household: Census tract: Modeled trip: Home:
-Destination:
-Age @ year dummy:
-
-Female
-School trip
-No license
-Cars per license
-Children < 5
-Commuters
-Income (000 CAD)
-Travel time (hr)
-Distance to downtown (km)
-Bus route count
-Average bus wait (min)
-Metro stop count
-Commuter rail stop count
-Distance to downtown (km)
-Bus route count
-Average bus wait (min)
-Metro stop count
-Commuter rail stop count
-20-24 years old in 1998
-25-29 years old in 1998
-30-34 years old in 1998 35-39 years old in 1998 40-44 years old in 1998 45-49 years old in 1998 50-54 years old in 1998 20-24 years old in 2003 25-29 years old in 2003 30-34 years old in 2003 35-39 years old in 2003 40-44 years old in 2003
-
-Coefficient
-0.28*** 0.82***
-2.69*** -2.89*** -0.22***
--0.18*** -0.01*** 0.33***
--0.02*** 0.02*** -0.05***
-0.18*** 0.41*** -0.10***
-0.04*** -0.07*** 0.33***
-0.15*** 0.80*** 0.38***
-0.40*** 0.35** 0.20 0.16 0.05
-1.08*** 0.60*** 0.37***
-0.20 0.28**
-
-   42  
-
-t-stat
-8.51 13.69
-46.48 -60.08
--5.42
--7.78 -11.61
-3.71
--4.85 4.67 -3.22
-5.79 5.18 -24.19
-11.62 -3.85 17.09
-3.59 5.64 2.72
-2.89 2.54 1.46 1.17 0.37 7.29 4.29 2.60 1.38 1.99
-
-Odds ratio
-1.32 2.27
-14.66 0.06 0.80
-0.84 0.99 1.39
-0.98 1.02 0.95
-1.20 1.51 0.91
-1.04 0.93 1.39
-1.17 2.23 1.46
-1.49 1.41 1.22 1.18 1.06 2.95 1.82 1.45 1.22 1.32
-
-45-49 years old in 2003
-
-50-54 years old in 2003
-
-55-59 years old in 2003
-
-20-24 years old in 2008
-
-25-29 years old in 2008
-
-30-34 years old in 2008
-
-35-39 years old in 2008
-
-40-44 years old in 2008
-
-45-49 years old in 2008
-
-50-54 years old in 2008
-
-55-59 years old in 2008
-
-Constant:
-
--2 Log likelihood: 24685.64 Cox & Snell pseudo R2: 0.444
-
-n: 32189
-
-0.13 0.94
-
-1.14
-
-0.14 0.94
-
-1.15
-
-0.11 0.70
-
-1.12
-
-1.36***
-
-8.50
-
-3.91
-
-1.17***
-
-8.02
-
-3.23
-
-0.82***
-
-5.73
-
-2.27
-
-0.94***
-
-6.58
-
-2.57
-
-0.61***
-
-4.29
-
-1.83
-
-0.47***
-
-3.38
-
-1.61
-
-0.56***
-
-4.04
-
-1.76
-
-0.44***
-
-2.94
-
-1.55
-
-1.79***
-
-9.29
-
-5.99
-
-Significance: *90% **95% ***99%
-
-Dependent variable: Transit mode share
-
-Even after accounting for age, level of service differences and other variables, the odds of school trips being made by transit are over twice as for work trips, a statistically significant impact. Somewhat less dramatic but also statistically significant, females have higher odds of taking transit compared to males and each additional child or commuter in a household decreases the odds of taking transit by about 20% or 16% respectively. Income has a negative and statistically significant effect. A $1000 increase corresponds to a 1% odds decrease in using transit. With the exception of commuter rail stop count, destination variables have greater effects on transit odds than do commensurate home variables, though all are statistically significant. Home commuter rail stop count appears at first to be the most important of all location variables, but with an average count of 0.04, a unitary increase is essentially the difference between having one or not. Conversely, multiple metro stops (and even more so bus routes) often exist near a location, moderating the apparent impact of each.
-
-Compared to the 1998 55-59-year-old reference class, the group with the lowest transit use, most other 1998 and 2003 groups in their late 30s and older are not shown to be significantly different at the 90% confidence level, and none at the 99% level, generally supporting the plateauing use claim made by Grimsrud and El-Geneidy (2013). Age groups up to the early 30s in the same years, and all 2008 groups, show significantly higher transit use. Including the entire sample and comparing each age group/year to
-
-   43  
-
-that with the lowest use, while providing a convenient overview of control and policy variable effects, does not, however, provide direct answers to the questions of change or stability over time within age groups and birth cohorts.
-
-Table 5 shows survey year effects, as odds ratios, and Cox & Snell pseudo R-squared values of eight age group-specific logit models and eight birth cohort-specific logit models. Each model uses the same dependent variable (transit use) and control variables as those given in Table 3. Survey year effects for 1998 and 2008 are compared to the 2003 reference group for each age group-specific model. The 2003 age groups are also compared to other years within birth cohorts. Here 1998 20-24-year-olds, 2003 25-29year-olds and 2008 30-34-year-olds are examined in a single model. The birth cohort aged 20-24 in 2003 is too young in 1998 for inclusion and the 2003 55-59-year-olds are too old in 2008. As with the full model, the odds of choosing transit significantly increase for all age groups and all but the youngest birth cohort (that ages from early to late 20s) from 2003-2008. Significant transit use increase from 1998 to 2003 is limited to early and late 20s age groups, who even after controlling for licensure changes might be particularly affected by improved way-finding and other IT improvements, as well as an emerging sustainability focus in provincial school curricula (Ministre de l'education loisir et sport, 2004) and popular media.
-
-Table 5: Period effects on commute transit mode share from 16 age or cohort group logit models
-
-Age group 2003
-
-Same age group transit mode share logits
-
-Odds ratio
-
-Cox & Snell
-
-1998
-
-2008
-
-n
-
-pseudo R2
-
-20-24 0.76** 1.29** 3779
-
-25-29 0.78** 1.81*** 4283
-
-30-34 1.01
-
-1.52*** 4284
-
-35-39 1.19
-
-2.19*** 4457
-
-40-44 0.93
-
-1.39*** 4764
-
-45-49 1.02
-
-1.44*** 4352
-
-50-54 0.94
-
-1.46*** 3907
-
-55-59 0.93
-
-1.33*
-
-2363
-
-Dependent variable: Transit mode share
-
-0.369 0.462 0.415 0.443 0.427 0.411 0.389 0.428
-
-Same birth cohort transit mode share logits
-
-Odds ratio
-
-Cox & Snell
-
-1998
-
-2008
-
-n
-
-pseudo R2
-
-(-5yrs) (+5yrs)
-
-n/a 1.17 2481 0.41
-
-1.11 1.29** 4374
-
-0.419
-
-1.02 1.74*** 4110
-
-0.428
-
-1.22* 1.54*** 4524
-
-0.422
-
-1.09 1.22* 4841
-
-0.43
-
-1.05 1.57*** 4715
-
-0.415
-
-1.04 1.30** 3631
-
-0.422
-
-1.04 n/a
-
-1955
-
-0.392
-
-Significance:  *90%  **95%  ***99%
-
-   44  
-
-As Grimsrud and El-Geneidy (2013) supposed, decreases in transit mode share as people age from their late 20s to early 30s 1998-2003 is not significant after controlling for other factors  many in this cohort appeared to move to more peripheral areas and start families. Less expectedly, transit use decline is also not seen in those aging from their early to late 20s 1998-2003. One further model (not pictured), omitting school trip type and young children variables, finds the odds of taking transit for those in their early 20s in 1998 to be 1.39 times as high as for 2003 persons in their late 20s, significant at the 99% confidence level. That changes in commute destination type and family situation affect young people's mode choices, however, is perhaps less interesting than is the earliness of within-birth cohort mode choice stability onset after controlling for these and other changes. That the subsequent birth cohort also shows insignificant change from the early 20s (2003) to late 20s (2008) is less surprising, given competing effects from early lifecycle progression and the as of yet unexplained 2008 transit use surge. Figure 6 compares observed Island of Montreal transit (versus car) commute mode share to that predicted using results from the full logit model, as detailed in the Methodology section. The x-axis represents age group center, solid lines represent birth cohorts, and dotted lines tie together data from each survey year. The graphs are very similar in terms of line directionality, but the predicted values show more variation than do the actual values, with higher highs and lower lows. Apparently location, service and socioeconomic control variables do not act equally at all age groups and years.
-   45  
-
-Figure 6: Observed and predicted Island of Montreal transit mode share Table 6 shows select results from 24 logit models, one for each age group/year, using the same variables as above. Pictured are the odds ratios and significance levels of those variables most consistently significant in the models, and those with strikingly patterned inconsistencies.
-   46  
-
-Table 6: Odds ratios for choosing public transport over automobiles: Select covariates from 24 age group/period logit models
-
-Female School trip
-
-Age Year dummy dummy
-
-20-24 1998 1.60*** 2.56***
-
-2003 1.16
-
-1.86***
-
-2008 1.13
-
-3.16***
-
-25-29 1998 1.33* 2.28***
-
-2003 1.24
-
-1.91***
-
-2008 1.25
-
-1.97***
-
-30-34 1998 1.19
-
-2.24***
-
-2003 1.31* 2.03**
-
-2008 1.13
-
-2.91***
-
-35-39 1998 1.79*** 2.57***
-
-2003 1.21
-
-2.86***
-
-2008 1.05
-
-2.15**
-
-40-44 1998 1.70*** 1.60
-
-2003 1.42** 1.60
-
-2008 1.09
-
-3.35***
-
-45-49 1998 1.73*** 1.26
-
-2003 1.12
-
-1.78
-
-2008 1.06
-
-2.74*
-
-50-54 1998 2.43*** 4.71*
-
-2003 1.46** 4.40*
-
-2008 1.30* 2.00
-
-55-59 1998 1.79** 0.62
-
-2003 1.61* 3.71
-
-2008 1.21
-
-0.75
-
-Dependent variable: Transit mode share
-
-No license dummy 15.06*** 14.49*** 7.56*** 19.10*** 16.09*** 15.79*** 19.42*** 17.52*** 10.81*** 28.25*** 13.10*** 18.66*** 26.04*** 18.51*** 13.98*** 13.12*** 10.71*** 21.12*** 8.02*** 14.22*** 17.88*** 11.04*** 20.87*** 13.82***
-
-Household Cars / license
-0.05*** 0.06*** 0.36*** 0.04*** 0.04*** 0.05*** 0.03*** 0.08*** 0.16*** 0.01*** 0.03*** 0.10*** 0.03*** 0.03*** 0.10*** 0.03*** 0.03*** 0.12*** 0.06*** 0.04*** 0.15*** 0.04*** 0.02*** 0.05***
-
-Destination to downtown km 0.94*** 0.94*** 0.95** 0.89*** 0.92*** 0.90*** 0.93*** 0.88*** 0.90*** 0.91*** 0.91*** 0.90*** 0.89*** 0.88*** 0.88*** 0.90*** 0.90*** 0.90*** 0.89*** 0.90*** 0.87*** 0.85*** 0.91*** 0.90***
-
-Destination bus routes 1.02 1.02 1.00 1.04** 1.02 1.02 1.05*** 1.03 1.03* 1.03* 1.03 1.06*** 1.05*** 1.04** 1.02* 1.06*** 1.05*** 1.04*** 1.06*** 1.03* 1.05*** 1.06* 1.07*** 1.05**
-
-Destination
-
-Cox & Snell
-
-metro stops n
-
-pseudo R2
-
-1.31***
-
-1556
-
-0.412
-
-1.62***
-
-1305
-
-0.387
-
-1.43***
-
-918 0.290
-
-1.23**
-
-1571
-
-0.457
-
-1.58***
-
-1536
-
-0.460
-
-1.42***
-
-1176
-
-0.432
-
-1.56***
-
-1706
-
-0.436
-
-1.28**
-
-1296
-
-0.418
-
-1.54***
-
-1282
-
-0.387
-
-1.52***
-
-1838
-
-0.462
-
-1.37***
-
-1376
-
-0.449
-
-1.55***
-
-1243
-
-0.415
-
-1.20**
-
-1825
-
-0.449
-
-1.41***
-
-1497
-
-0.440
-
-1.36***
-
-1442
-
-0.402
-
-1.35***
-
-1459
-
-0.433
-
-1.37***
-
-1387
-
-0.416
-
-1.70***
-
-1506
-
-0.405
-
-1.18*
-
-1219
-
-0.376
-
-1.38***
-
-1185
-
-0.396
-
-1.26***
-
-1503
-
-0.394
-
-1.15 640 0.384
-
-1.74***
-
-736 0.438
-
-1.45***
-
-987 0.442
-
-Significance: *90% **95% ***99%
-
-   47  
-
-Female gender appears to increase odds of taking transit in all cases, but this is becoming less significant over time, from nearly all age groups in 1998 to only 50-54-year-olds in 2008 (and there only at the 90% confidence level). School commutes, as opposed to work, have a stronger and more stable effect, but are rarely significant for older groups (probably due to small sub-samples). Driver's licensure is massively important for all age groups in all years. Household cars per license, while similarly consistent in significance and always showing a strong negative association with transit use, is clearly diminishing in importance, especially between 2003 and 2008. For most age groups, the effect of an additional car per licensed driver drops several fold during this interval  people with cars are not using them to get to work and/or carpooling is increasing.
-With the exception of commuter rail station count (not pictured), destination variables were more consistently significant than their origin counterparts. Aside from automobile access-related variables, the only other variable always significant at the 95% confidence level is distance from destination to downtown, which seems to be somewhat less important for the youngest age group but otherwise shows no compelling pattern. Number of metro stops near destination, almost always significant, too shows no striking trends. Parking data was not available for this study, but it seems fair to assume that parking pricing and availability would correspond in some way spatially to density and competition. That the importance of these two variables does not spike in 2008 suggests that possible changes in parking policy, as influential as it can be to mode share generally (De Witte et al., 2013) and in Montreal, would explain little of the 2008 transit use growth seen across all age groups and most birth cohorts. Nor, recalling summary statistics (Table 3), would gradual location and service level changes. That is not to say that local agencies are not making valuable improvements to service, however  the number of bus routes near destinations is consistently significant for older riders, and has been increasing (if gradually) between 1998 and 2008.
-   48  
-
-6 - DISCUSSION AND CONCLUSIONS
-Transit mode share is increasing among young age groups; is not explained by tested socioeconomic, household composition, level of service, automobile access, and location variables; and is remarkably consistent over the life-course taking these into account. After applying this variety of controls, transit mode share is up substantially for commuters in their 20s and there is no change within any birth cohorts between 1998 and 2003 significant at the 95% confidence level. It is clear from summary statistics that the youngest birth cohorts use transit less as they age, but this happens concurrently with other significant changes, such as school versus work destination type, presence of young children, and access to transport alternatives. The recently elevated youth transit commute mode share rates, underlying intra-cohort consistency, and early-life concentration of changes in many important variables (Beige, 2008; Thakuriah et al., 2009), suggest increases in overall future transit use or demand.
-Regarding the population-wide 2008 transit use increase, this paper rules out sudden substantial changes in various transit service level indicators or home and destination locations as main explanatory factors, and it suggests that any parking policy changes have not had a pronounced 2008 effect. It thus supports the notion that 2008 transit mode share gains observed in older cohorts are likely temporary responses to a shocking gasoline price change, rather than a sign of new lasting behaviors in mature commuters. It cannot prove this point, however, as it cannot disentangle effects of known (and unknown) spatially invariant factors specific to the 2008 survey, notably the gasoline price spike and improved information technology. Future work with existing surveys might be able to address this to some degree, if survey interview date information can be made available, although there might be some attribution difficulties associated with timing, as long-term fuel-price-to-use elasticities tend to be higher than short-term (Goodwin, Dargay, & Hanly, 2004). Another survey is to be conducted later this year, the results of which can address the 2008 question and validate or challenge this paper's findings.
-   49  
-
-Results herein support Grimsrud and El-Geneidy's (2013) novel but limited summary statistics-based findings that high recent youth transit use is likely to lead to high overall use, declining some with age but to higher rates than previous generations'. Unlike the aforementioned study, the current study controlled for a wide variety of covariates, some of which lacked historical data outside the Island of Montreal, so said surrounding area had to be excluded from analysis. This omission might also have reduced the magnitude of observed and expected change, as the island already has very high transit ridership. However, being able to distinguish effects of changing contextual factors both strengthens the claim and allows inspection of such elements.
-Measured factors that appear to have had some of the largest effects on mode share trends include declining driver's licensure rates, declining importance of vehicle ownership, growing numbers of young people in school, decreasing distances between destinations and downtown and improved destination metro access. Municipal policies facilitating increased employment density in central transit-, especially metro-friendly locations, might bring further commute trip transit share gains. The declining, if always massive, importance of automobile access 2003-2008 and the somewhat stable access rates themselves suggest that a growing number of kept automobiles are not used for commutes. They presumably are kept with reason. Some of the many 2008 transit riders might see the situation as temporary and maintain vehicles for future use. Also, trends in mode share for shopping and other types of trips, as well as relevant factors and policies, might differ from those for peak hour commutes.
-Graduated licensing, primarily intended to increase road safety, also requires increased effort and time to qualify for a license, and many who might eventually qualify do not attain licenses when they are able. Particularly for men, drops to licensure rates are found to hold over time; as such graduated licensing appears to be a powerful tool for influencing mode shares and could perhaps be made more stringent for increased effect given sufficient transit alternatives. This gender discrepancy merits further research, as
-   50  
-
-might the diminishing significance gender appears to have on transit mode choice, even among groups not yet noticeably affected by graduated licensing.
-Also worth additional investigation, school trips are much more likely than work trips to be by transit for individuals of the same age. The increasing numbers of young people pursuing higher education is not the sole determinant of increased youth use rates, but the eventual switch from school to work with age does involve a substantial reduction in transit use, even after accounting for possible service level and other differences. It is unclear how this relates to changes in income, which was only crudely accounted for herein (by census tract average), opportunities to productively use time on transit, item transport needs, company culture, or other factors. One known difference between young workers and young students is transit price, with students 25 and younger eligible for reduced rates. STM might consider including young workers, to improve youth ridership retention through this important life-course transition, and recover income through higher ridership down the road.
-Other cities have different circumstances, particularly in terms of population density and extent of existing infrastructure, but many have similar repeated cross-sectional transport survey datasets that can and perhaps should be examined by cohort, as well as age group and other factors. Some have robust panel data that might provide additional insights. Given that increases seen among youths (Davis et al., 2012; Kuhnimhof et al., 2012), and lifecycle patterns and habits (Simma & Axhausen, 2003) are not unique to Montreal, comparable studies elsewhere might similarly find reason to expect increased future transit demand and to prioritize maintaining high transit use as current and future young people age.
-   51  
-
-AFTERWORD
-Although the automobile remains the leading commute transport mode in Montreal as in North America generally, the studies presented above show evidence of recent changes in the Montreal region. Beyond an increase in transit use among young people as noted elsewhere, it appears here that despite some decline with age, young people will mature as more frequent transit users than those come before.
-Chapter 1 captures this rough trend and relates it to previous studies on mode choice over life-course patterns, which do not detect the recent generational shift largely due to data age. Chapter 2 applies more rigorous testing to support Chapter 1's findings, if at a slightly smaller scale, and augments them by detailing other relevant trends and their apparent effects. Some such notable changes include the introduction of graduated licensing, an increase in postsecondary education, and an increased destination concentration near downtown and transit. It also supports Chapter 1's interpretation of very high 2008 transit use rates, as being perhaps temporarily effected by a gasoline price spike, by ruling out effects of level of service and other types of variables as key determinants.
-The growing body of groups and individuals interested in bringing about a mode shift away from automobiles should take interest in the fact that it appears already to have started; the same might choose to look at ways to facilitate continued transit use by young high use groups as they age, rather than or in addition to attempting to change long-held mode choice patterns. Interestingly, while climate change has recently risen to prominence in policy debates so too has population aging  more obvious but seldom discussed is the fact that populations aren't just aging on average or at the top end but throughout. Every member of every population ages, taking with him or her habits, preferences, priorities, and investments from the past that strongly influence future mode choices. Transport and city planners might thus consider incorporating birth cohorts, even if humbly cobbled together from repeated cross-sectional datasets, into
-future mode share models.    
-   52  
-
-REFERENCES
-Agence   Metropolitaine   de   Transport   (AMT).   (1998).   Fichier   de   dplacements   des   personnes  dans  la  rgion  de  Montral  Enqute  Origine-Destination  1998.  
-Agence   Metropolitaine   de   Transport   (AMT).   (2003).   Fichier   de   dplacements   des   personnes   dans   la   rgion   de   Montral   Enqute   Origine-Destination   2003,   version   03.b  priode  automne.  
-Agence   Metropolitaine   de   Transport   (AMT).   (2008).   Fichier   de   dplacements   des   personnes   dans   la   rgion   de   Montral   Enqute   Origine-Destination   2008,   version   2.a.2  priode  automne.  
-Agence   Metropolitaine   de   Transport   (AMT).   (2012a).   AMT   -   origin-destination   survey     Retrieved   20   January,   2012,   from   http://www.amt.qc.ca/corp_template.aspx?id=686&LangType=1033  
-Agence   Metropolitaine   de   Transport   (AMT).   (2012b).   Programme   Triennal   D'immobilisations   2012/2013/2014      Retrieved   22   February,   2013,   from   http://www.amt.qc.ca/uploadedfiles/amt/site_corpo/nouvelles_et_publications/PT I_2012-13-14.pdf  
-Bagley,  M.,  &  Mokhtarian,  P.  (2002).  The  impact  of  residential  neighborhood  type  on  travel   behavior:   A   structural   equations   modeling   approach.   Annuls   of   Regional   Science,   36(2),  279297.    
-Beaupre,  P.,  Dryburgh,  H.,  &  Wendt,  M.  (2010).  Making  fathers  "count"    Retrieved  April  13,   2012,   from   http://www.statcan.gc.ca/pub/11-008-x/2010002/article/11165- eng.htm#n15  
-Beige,   S.   (2008).   Long-term   and   mid-term   mobility   decisions   during   the   life   course.   (Dissertation),  Institut  fr  Verkehrsplanung  und  Transportsysteme,  Zrich.        
-Bush,   S.   (2005).   Forecasting  65+  travel:  An  integration  of  cohort  analysis  and  travel  demand   modeling.   Paper   presented   at   the   Annual   meeting   of   the   Transportation   Research   Board.   http://18.7.29.232/bitstream/handle/1721.1/29941/52770123.pdf?sequence=1  
-Cervero,   R.,   &   Kockelman,   K.   (1997).   Travel   demand   and   the   3D's:   Density,   diversity,   and   design.  Transportation  Research  Part  D  2(3),  199-219.    
-Chen,   C.,   Gong,   H.,   &   Paaswell,   R.   (2008).   Role   of   the   built   environment   on   mode   choice   decisions:  additional  evidence  on  the  impact  of  density.  Transportation,  35(3),  285- 299.    
-Chung,   K.   (1997,   May   30).   Estimating   the   effects   of   employment,   development   level,   and   parking   availability   on   CTA   rapid   transit   ridership:   From   1976   to   1995   in   Chicago.   Paper  presented  at  the  Metropolitan  Conference  on  Public  Transportation  Research,   University  of  Illinois,  Chicago.  
-City   of   Montreal.   (2003).   Montreal   master   plan.      Retrieved   from   http://ville.montreal.qc.ca/portal/page?_dad=portal&_pageid=2762,3099972&_sch ema=PORTAL.  
-Coffey,   W.,   &   Shearmur,   R.   (2001).   The   identification   of   employment   centres   in   Canadian   metropolitan  areas:  the  example  of  Montreal,  1996.  The  Canadian  Geographer,  45(3),   371-386.    
-   53  
-
-Collin,  J.,  Dagenais,  M.,  &  Poitras,  C.  (2003).  From  city  to  city-region:  Historical  perspective   on  the  contentious  definition  of  the  Montral  Metropolitan  area.  Canadian  Journal  of   Urban  Research,  12(1),  16-34.    
-Dargay,   J.   (2007).   The   effect   of   prices   and   income   on   car   travel   in   the   UK.   Transportation   Research  Part  A,  41(10),  949960.    
-Dargay,   J.,   &   Hanly,   M.   (2003).   Travel   to   work:   an   investigation   based   on   the   british   household  panel  survey  Paper   presented   at   the   NECTAR   Conference   No.   7,   Umea   ,   Sweden.    
-Dargay,  J.,  &  Hanly,  M.  (2007).  Volatility  of  car  ownership,  commuting  mode  and  time  in  the   UK.  Transportation  Research:  Part  A,  41(10),  934948.    
-Davis,   B.,   Dutzik,   T.,   &   Baxandall,   P.   (2012).   Transportation   and   the   new   generation:   Why   young  people  are  driving  less  and  what  it  means  for  transportation  policy:  Frontier   Group,  U.S.  PIRG  Education  Fund.  
-De  Witte,  A.,  Hollevoet,  J.,  Dobruszkes,  F.,  Hubert,  M.,  &  Macharis,  C.  (2013).  Linking  modal   choice   to   motility:   A   comprehensive   review.   Transportation   Research   Part   A,   49,   329-341.    
-Diab,   E.,   &   El-Geneidy,   A.   (2012).   Understanding   the   impacts   of   a   combination   of   service   improvement   strategies   on   bus   running   time   and   passenger's   perception.   Transportation  Research:  Part  A,  46(3),  614-625.    
-Dickens,  M.  (2010).  Public  transportation  ridership  report:    Fourth  quarter  2009  (pp.  1-34).   Washington:  American  Public  Transportation  Association.  
-Dickens,   M.   (2012a).   APTA   ridership   by   mode   and   quarter   1990   -   present.   Washington:   American  Public  Transportation  Association.  
-Dickens,   M.   (2012b).   Public   transportation   ridership   report:      Fourth   quarter   2011   (pp.   1- 31).  Washington:  American  Public  Transportation  Association.  
-El-Geneidy,   A.,   Tetreault,   P.,   &   Surprenant-Legault,   J.   (2010).   Pedestrian   access   to   transit:   Identifying   redundancies   and   gaps   using   a   variable   service   area   analysis.   Paper   presented  at  the  89th  Transportation  Research  Board  Annual  Meeting,  Washington   D.C.,  USA.    
-Fan,   W.,   &   Machemehi,   R.   (2009).   Do   transit   users   just   wait   for   buses   or   wait   with   strategies?  Transportation  Research  Record(2111),  169-176.    
-Garling,   T.,   &   Axhausen,   K.   (2003).   Introduction:   Habitual   travel   choice.   Transportation,   30(1),  111.    
-Goodwin,  P.,  Dargay,  J.,  &  Hanly,  M.  (2004).  Elasticities  of  road  traffic  and  fuel  consumption   with  espect  to  price  and  income:  A  review.  Transport  Reviews,  24(3),  275292.    
-Grimsrud,  M.,  &  El-Geneidy,  A.  (2013).  Transit  to  eternal  youth:  Lifecycle  and  generational   trends   in   Greater   Montreal   public   transport   mode   share.   Transportation.   doi:   10.1007/s11116-013-9454-9  
-Hall,  R.  (2001).  Passenger  waiting  time  and  information  acquisition  using  automatic  vehicle   location  for  verification.  Transportation  Planning  and  Technology,  24,  249-269.    
-Handy,   S.,   Cao,   X.,   &   Mokhtarian,   P.   (2005).   Correlation   or   causality   between   the   built   environment   and   travel   behavior?   Evidence   from   Northern   California.   Transportation  Research:  Part  D,  10(6),  427-444.    
-Human   Resources   and   Skills   Development   Canada.   (2012).   Family   life      age   of   mothers   at   first   birth      Retrieved   April   13,   2012,   from   http://www4.hrsdc.gc.ca/.3ndic.1t.4r@- eng.jsp?iid=75  
-   54  
-
-Kim,   S.,   &   Ufarsson,   G.   (2008).   Curbing   automobile   use   for   sustainable   transportation:   analysis  of  mode  choice  on  short  home-baesd  trips.  Transportation,  35(6),  723-737.    
-Kitamura,  R.,  Mokhtarian,  P.,  &  Laidet,  L.  (1997).  A  micro-analysis  of  land  use  and  travel  in   five  neighborhoods  in  the  San  Francisco  Bay  area.  Transportation,  24(2),  125-158.    
-Knoblauch,   R.,   Pietrucha,   M.,   &   Nizburg,   M.   (1996).   Field   studies   of   pedestrian   walking   speed  and  start-up  time.  Transportation  Research  Record(1538),  27-38.    
-Kuhnimhof,  T.,  Buehler,  R.,  Wirtz,  M.,  &  Kalinowska,  D.  (2012).  Travel  trends  among  young   adults  in  Germany:  increasing  multimodality  and  declining  car  use  for  men.  Journal   of  Transport  Geography,  24,  443-450.    
-Kuzmyak,   J.,   Evans,   J.,   &   Pratt,   R.   (2010).   Chapter   19      Employer   and   institutional   TDM   strategies   TCRP   report   95:   Traveler   response   to   transportation   system   changes.   Washington:  Transportation  Research  Board.  
-Levinson,   D.,   &   El-Geneidy,   A.   (2009).   The   minimum   circuity   frontier   and   the   journey   to   work.  Regional  Science  and  Urban  Economics,  39,  732-738.    
-Levinson,   D.,   &   Krizek,   K.   (2008).   Planning   for   place   and   plexus:      Metropolitan   land   use   and   transport.  New  York:  Routledge.  
-Limtanakool,  N.,  &  Dijst,  M.  (2006).  The  influence  of  socioeconomic  characteristics,  land  use   and   travel   time   in   consideration   on   mod   choice   for   medium-   and   longer-distance   trips.  Journal  of  Transport  Geography  14(5),  327-341.    
-Marsden,   G.   (2006).   The   evidence   base   for   parking   policies      a   review.   Transport   Policy,   13(6),  447-457.    
-Mason,  K.,  Mason,  W.,  Winsborough,  H.,  &  Poole,  W.  (1973).  Some  methodological  issues  in   cohort  analysis  of  archival  data.  American  Sociological  Review,  38,  843-861.    
-Matas,   A.,   &   Raymond,   J.   (2008).   Changes   in   the   structure   of   car   ownership   in   Spain.   Transportation  Research:  Part  A,  42(1),  187202.    
-Ministre   de   l'education   loisir   et   sport.   (2004).   Reform   du   curriculum:   Les   disciplines   retenues   dans   le   curriculum   et   leur   distribution   dans   la   grille-matire      Retrieved   October  12,  2012,  from  http://www.mels.gouv.qc.ca/reforme/curricu/ecole04.htm  
-Morency,   C.,   &   Chapleau,   R.   (2008).   Age   and   its   relation   with   home   location,   household   structure   and   travel   behaviors:   15   years   of   observation.   Paper   presented   at   the   87th   Annual  Meeting  of  the  Transportation  Research  Board,  Washington,  D.C.  
-Nolan,  A.  (2010).  A  dynamic  analysis  of  household  car  ownership.  Transportation  Research:   Part  A,  44(6),  446455.    
-O'Brien,   R.   (2000).   Age   period   cohort   characteristic   models.   Social   Science   Research,   29,   123-139.    
-Regie   de   l'energie   Quebec.   (2009).   volution   des   prix   de   dtail   de   l'essence   ordinaire   en   2008    Rgion  de  Montral.  Quebec:  Regie  de  l'energie  Quebec.  
-Ruud,   A.,   &   Nordbakke,   S.   (2005).   Decreasing   driving   license   rates   among   young   people.   Paper  presented  at  the  European  Transport  Conference,  Strasbourg,  France.  
-Scheiner,  J.  (2006).  Housing  mobility  and  travel  behaviour:  A  process-oriented  approach  to   spatial  mobility  evidence  from  a  new  research  field  in  Germany.  Journal  of  Transport   Geography,  14(4),  289-298.    
-Scheiner,  J.,  &  Holz-Rau,  C.  (2012).  Changes  in  travel  mode  use  after  residential  relocation:   A   contribution   to   mobility   biographies.   Transportation,   DOI:   10.1007/s11116-012- 9417-6.    
-   55  
-
-Shalaby,   A.   (1998).   Investigating   the   role   of   relative   level-of-service   characteristics   in  
-
-explaining   mode   split   for   the   work   trip.   Transportation   and   Planning   Technology,  
-
-22(2),  125-148.    
-
-Shearmur,  R.  (2006).  Travel  from  home:  An  economic  geography  of  commuting  distances  in  
-
-Montral.  Urban  Geography,  27(4),  330-359.    
-
-Simma,  A.,  &  Axhausen,  K.  (2003).  Commitments  and  modal  usage:  Analysis  of  German  and  
-
-Dutch  panels.  Transportation  Research  Record(1854),  22-31.    
-
-Simpson,   H.   (2003).   The   evolution   and   effectiveness   of   graduated   licensing.   Journal   of  
-
-Safety  Research,  34(1),  2534.    
-
-Societe   de   transport   de   Montreal   (STM).   (2012).   Important   dates   in   STM's   history    
-
-Retrieved  May  16,  2012,  from  http://www.stm.info/english/en-bref/a-dates.htm  
-
-Societe  de  transport  de  Montreal  (STM).  (2013).  Bus  schedules:  September  1998,  2003,  2008.    
-
-Sperling,   D.,   Gordon,   D.,   &   Schwarzenegger,   A.   (2009).   Two   billion   cars:   Driving   toward  
-
-sustainability.  Cary,  NC,  USA  Oxford  University  Press    
-
-Statistics  Canada.  (2010a).  2006  census:    census  trends    selected  trend  data  for  Montreal  
-
-(CMA),   2006,   2001   and   1996   censuses      Retrieved   April   13,   2012,   from  
-
-http://www12.statcan.ca/census-recensement/2006/dp-pd/92-596/P1-
-
-2.cfm?Lang=eng&T=CMA&PRCODE=24&GEOCODE=462&GEOLVL=CMA&TID=0    
-
-Statistics   Canada.   (2010b,   2010-10-27).   Gasoline   prices,   selected   cities,   1995   to   2009    
-
-Retrieved   May   15,   2012,   from   http://www.statcan.gc.ca/pub/11-402-
-
-x/2010000/chap/ener/tbl/tbl03-eng.htm  
-
-Statistics   Canada.   (2012a).   CANSIM   table   282-0110:   Labour   force   survey   estimates   (LFS),  
-
-by   census   metropolitan   area   based   on   2006   census   boundaries,   sex   and   age   group,  
-
-from  http://www5.statcan.gc.ca/cansim/a05?lang=eng&id=2820110  
-
-Statistics   Canada.   (2012b).   CANSIM   table   326-0020   consumer   price   index,   2009   basket,  
-
-from  http://www5.statcan.gc.ca/cansim/a05?lang=eng&id=3260020  
-
-Statistics   Canada.   (2012c).   CHASS   Canadian   Census   Analyser:   Profile   of   Census   Tracts    
-
-Retrieved  February  25,  2013,  from  http://dc.chass.utoronto.ca/census/ct.html  
-
-Statistics   Canada.   (2012d).   Table   051-0046   estimates   of   population   by   metropolitan   area,  
-
-sex,   and   age   group   for   July   1,   based   on   the   standard   geographical   classification  
-
-(SGC)  
-
-2006,  
-
-from  
-
-http://www5.statcan.gc.ca/cansim/a26?lang=eng&retrLang=eng&id=0510046&pa
-
-Ser=&pattern=&stByVal=1&p1=1&p2=-1&tabMode=dataTable&csid=  
-
-Statistics  Canada.  (2013).  Census  Profile:  Montreal    Retrieved  February  12,  2013  
-
-Sweet,  M.,  &  Chen,  M.  (2011).  Does  regional  travel  time  unreliability  influence  mode  choice?  
-
-Transportation,  38(4),  635-642.    
-
-Thakuriah,   P.,   Menchu,   S.,   &   Tang,   L.   (2010).   Car   ownership   among   young   adults:  
-
-Generational   and   period-specific   perspective.   Transportation   Research  
-
-Record(2156),  1-8.    
-
-Thakuriah,   P.,   Tang,   L.,   &   Menchu,   S.   (2009).   Young   women's   transportation   and   labor  
-
-market   experiences.   Paper   presented   at   the   4th   TRB   international   conference   on  
-
-women's  issues  in  transportation,  Irvine.    
-
-Thogersen,   J.   (2006).   Understanding   repetitive   travel   mode   choices   in   a   stable   context:   A  
-
-panel  study  approach.  Transportation  Research  Part  A,  40(8),  621638.    
-
-   56  
-
-Transports   Canada.   (2010a).   En   ville,   sans   ma   voiture      Retrieved   October,   12,   2012,   from   http://www.tc.gc.ca/fra/programmes/environnement-pdtu-envillesansmavoiture- 959.htm  
-Transports  Canada.  (2010b).  Sensibilisation  et  ducation    Retrieved  October,12,  2012,  from   http://www.tc.gc.ca/fra/programmes/environnement-pdtu- etudesdecassensibilisation-1072.htm  
-Trepanier,   M.,   Chapleau,   R.,   &   Morency,   C.   (2008).   Tools   and   methods   for   a   transportation   household  survey.  URISA  Journal,  20(1),  35-43.    
-Tucotte,  M.  (2008).  Canadian  social  trends:  Young  people's  access  to  home  ownership,  from   http://www.statcan.gc.ca/pub/11-008-x/2007005/10314-eng.htm  
-Urban   Transportation   Task   Force.   (2009).   Urban  transit  in  Canada:  Taking  stock  of  recent   progress.   Council   of   Deputy   Ministers   Responsible   for   Transportation   and   Highway   Safety.  
-  
-   57  
-
-APPENDICES
-
-Appendix 1: Morning peak transit network
-  
-
-58  
-
-Appendix 2: Home and work/school locations 1998
-  
-
-59  
-
-Appendix 3: Home and work/school locations 2003
-  
-
-60  
-
-Appendix 4: Home and work/school locations 2008
-  
-
-61  
-
-Appendix 5: Driver's licensure by age, gender, year
-   62  
-
-80%   70%   60%   50%   40%   30%   20%   10%  
-0%   20   25   30   35   40   45   50   55   60  
-80%   70%   60%   50%   40%   30%   20%   10%  
-0%   20   25   30   35   40   45   50   55   60   Five-year  age  group  
-Appendix 6: Montreal Island and Region home-based commute transit mode share (of all modes)
-   63  
-
-
