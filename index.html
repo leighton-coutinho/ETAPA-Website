@@ -118,47 +118,52 @@
 		
 	</head>
 	<body>		
-	
-		<div class="main">
-		
-			<!-- menu content will be loaded from topbar.html -->
-			<div id='topbarContent' class="topbar"></div>	
-			
-			<!------------------------------- end of topbar ------------------------------------>
-			
-			<div class="contentHomePage">
-				<section id="hero" class="hero">
-					<img src="/images/ETAPA/ETAPA_group-shot-1.jpg" alt="Group Photo" class="hero-image">
-				</section>
+		<div class="main-wrapper">
+			<div class="main">
+				
+				<!-- menu content will be loaded from topbar.html -->
+				<div id='topbarContent' class="topbar"></div>	
+				
+				<!------------------------------- end of topbar ------------------------------------>
+				
+				<div class="contentHomePage">
+					<section id="hero" class="hero">
+						<img src="/images/ETAPA/ETAPA_group-shot-1.jpg" alt="Group Photo" class="hero-image">
+					</section>
+					<section id="about-research" class="about-research">
+						<div class="about-research-content">
+							<h2>About Our Group & Current Research Projects</h2>
+							<p>We develop novel LCA methods to understand the changing regional and temporal patterns of energy infrastructure and the subsequent environmental outcomes.</p>
+							<div class="slider">
+								<div class="slider-card slider-card"><img src="/images/ETAPA/Cluster117.gif" alt="Research Project 1"></div>
+								<div class="slider-card slider-card"><img src="/images/ETAPA/land-req.jpg" alt="Research Project 2"></div>
+								<div class="slider-card slider-card"><img src="/images/ETAPA/gas.jpg" alt="Research Project 3"></div>
+							</div>
+						</div>
+					</section>
+				</div>
+				
+				<!------------------------------- end of content ------------------------------------>
+				
+				<!-- footer content will be loaded from footer.html -->
+				<div id='footerContent' class="footer"></div>
+				
+				<!------------------------------- end of footer ------------------------------------>
 
-				<section id="about" class="about">
-					<div class="about-content">
-						<h2>About Our Group</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-					</div>
-				</section>
-			</div>
-			
-			<!------------------------------- end of content ------------------------------------>
-			
-			<!-- footer content will be loaded from footer.html -->
-			<div id='footerContent' class="footer"></div>
-			
-			<!------------------------------- end of footer ------------------------------------>
-
-<!--			<div class="credits fixed">  -->
-<!--				Website designed and coded by <a href="http://www.colinjstewart.com">Colin J Stewart</a>  -->
-<!--			</div>			  -->
-			<script>
-				document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-					anchor.addEventListener('click', function (e) {
-						e.preventDefault();
-						document.querySelector(this.getAttribute('href')).scrollIntoView({
-							behavior: 'smooth'
+	<!--			<div class="credits fixed">  -->
+	<!--				Website designed and coded by <a href="http://www.colinjstewart.com">Colin J Stewart</a>  -->
+	<!--			</div>			  -->
+				<script>
+					document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+						anchor.addEventListener('click', function (e) {
+							e.preventDefault();
+							document.querySelector(this.getAttribute('href')).scrollIntoView({
+								behavior: 'smooth'
+							});
 						});
 					});
-				});
-			</script>
+				</script>
+			</div>
 		</div>
 	</body>
 </html>
