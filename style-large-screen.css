@@ -30,7 +30,7 @@ lightgreen: #5A978F
 	color: #fff;
 	padding: 20px;
 	text-align: center;
-	width: 100%; /* Ensure full width */
+	max-width: 1250px;
 }
 .footer-basic p {
 	margin: 0;
@@ -75,7 +75,7 @@ lightgreen: #5A978F
     background-color: #f4f4f4; /* Light background for contrast */
 }
 .about-research-content {
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 .about-research-content h2 {
@@ -135,7 +135,7 @@ body {
     background-color: #f4f4f4;
 }
 .main {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 20px;
     font-size: 16px;
@@ -599,13 +599,13 @@ td {
 
 .content, .contentHomePage, .contentTeamPhotos
 {
-	width: 100%;
+	max-width: 1250px;
 	clear: both;
 	background-color: white; 	
 }
 
 .contentHomePage {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 20px;
 }
