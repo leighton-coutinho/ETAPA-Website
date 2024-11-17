@@ -63,22 +63,6 @@ lightgreen: #5A978F
 	font-size: 24px;
 	font-weight: bold;
 }
-.nav ul {
-	list-style: none;
-	display: flex;
-	gap: 20px;
-	margin: 0;
-	padding: 0;
-}
-.nav ul li a {
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 16px;
-	transition: color 0.3s;
-}
-.nav ul li a:hover {
-	color: #75B3A4;
-}
 
 .about-research {
     height: 100vh; /* Full viewport height */
@@ -159,184 +143,78 @@ body {
     box-sizing: border-box;
 }
 
-
-div 
-
-{ 	float: left; 
-
-}			
-
-
-
-input 
-
-{ 
-
-	float: left; 
-
-}		
-
-
-
 strong
-
 {
-
 	font-family: 'Arial Black', Gadget, Arial, Helvetica, sans-serif;
-
 	font-weight: bold;
-
 }
-
-
 
 em
-
-{	font-weight: bold;
-
+{	
+	font-weight: bold;
 	font-style: normal;
-
 }
-
-
 
 ul 
-
-{	margin: 0 0 25px 50px;
-
+{	
+	margin: 0 0 25px 50px;
 	display: block;
-
 	float: left;
-
 	clear: both;
-
 	list-style-type: square;
-
 	color: #DD8143;
-
 }
-
-
 
 ul.black
-
-{	color: black;
-
+{	
+	color: black;
 }
-
 
 
 ul.blackSearch
 
-{	color: black;
-
+{	
+	color: black;
 	margin-left: 30px;
-
 }
-
-
 
 li
-
 {	font-size: 10pt;
-
 	line-height: 20pt;
-
 	clear: both;
-
 	float: left;	
-
 }
-
-
 
 li span
-
-{	color: black;
-
+{	
+	color: black;
 }
-
-
-
-sup
-
-{	font-size: 7pt;
-
-}
-
-
 
 a
-
 {	color: #DD8143;
-
 	text-decoration: none;
-
 }
-
-
 
 a:link
-
 {
-
 	text-decoration: none;
-
 }
-
-
 
 a:visited
-
 {
-
 	text-decoration: none;
-
 }
 
-
-
 a:hover
-
 {
-
 	text-decoration: underline;	
-
 }	
-
-
 
 a:active
 
 {
-
 	text-decoration: none;
-
 }
-
-
-
-.sidebarLeft 
-
-{ 	width: 50%; 
-
-	margin-right: -500px; 
-
-}
-
-
-
-.sidebarRight 
-
-{ 	float: right; 
-
-	width: 50%; 
-
-	margin-left: -500px; 
-
-}
-
-
 
 
 .paragraph
@@ -351,253 +229,116 @@ a:active
 
 }
 
-
-
 .paragraphNarrow
-
-{	width: 82%;
-
+{	
+	width: 82%;
 	padding: 0 0 20px 0;	
-
 	line-height: 16pt; 	
-
 }
-
-
 
 .paragraphSeparate
-
-{	width: 89.5%;
-
+{	
+	width: 89.5%;
 	padding: 20px 0 20px 0;	
-
 	line-height: 16pt; 
-
 	clear: both;
-
 }
-
-
 
 .paragraph img
 
-{	width: 855px;
-
+{	
+	width: 855px;
 	margin: 30px 0 -10px 0;
-
 }
-
-
 
 .note 
-
-{	clear: both;
-
+{	
+	clear: both;
 	padding: 20px 0 0 0;
-
 	width: 89.5%;
-
 	line-height: 16pt;
-
 }
-
-
-
-.links, .links2
-
-{	clear: both;
-
-	line-height: 16pt;	
-
-	width: 90%;
-
-}
-
 
 
 .links
-
-{	padding: 20px 0 0 0;
-
+{	
+	clear: both;
+	line-height: 16pt;	
+	width: 90%;
+	padding: 20px 0 0 0;
 }
-
-
-
-.links2 a
-
-{	display: block;
-
-	float: left;		
-
-	padding: 0 30px 0 0;
-
-}
-
-
 
 .publication, .reading, .report
-
-{	width: 96%;
-
+{	
+	width: 96%;
 	padding: 5px 0 20px 0px;	
-
 	line-height: 16pt; 
-
 	clear: both;
-
 }
 
 
 
 .publication a, .presentation a
-
-{	color: #2D5D5F;
-
+{	
+	color: #2D5D5F;
 	font-size: 11pt;
-
 	font-weight: bold;
-
 }
-
-
 
 .publication em, .reading em, .presentation em
-
-{	font-size: 11pt;
-
+{	
+	font-size: 11pt;
 }
-
-
 
 .report em
-
-{	font-weight: bold;
-
+{	
+	font-weight: bold;
 }
-
-
 
 .researchCategory
-
-{	/*font-style: italic;
-
+{	
+	/*font-style: italic;
 	font-weight: bold;*/
-
 	font-family: 'Arial Black', Gadget, Arial, Helvetica, sans-serif;
-
 	font-size: 12pt;
-
 }
-
-
 
 .presentationBox
-
-{	width: 96%;
-
+{	
+	width: 96%;
 	padding: 5px 0 25px 0px;	
-
 	line-height: 16pt; 
-
 	clear: both;
-
 }
-
-
 
 .presentation
-
-{	padding: 0 0 0 20px;
-
+{	
+	padding: 0 0 0 20px;
 	width: 85%;
-
 }
-
-
 
 .date
-
-{	width: 10%;
-
+{	
+	width: 10%;
 }
-
-
 
 .presentation strong
 
-{	font-weight: bold;
-
+{	
+	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
-
 }
-
-
 
 .poster
-
-{	margin: 10px 0 30px 0;
-
+{	
+	margin: 10px 0 30px 0;
 	padding: 0 20px;
-
 }
-
-
 
 .poster img
-
-{	width: 820px;
-
+{	
+	width: 820px;
 }
-
-
-
-.movie
-
-{	width: 100%;
-
-}
-
-
-
-.movie a
-
-{	display: block;
-
-	float: left;
-
-	margin: 0 45px 20px 0;
-
-}
-
-
-
-.movie ul
-
-{	width: 45%;
-
-	clear: none;
-
-	margin: 0 0 70px -20px;
-
-}
-
-
-
-.movie ul li
-
-{	margin: 0 0 15px 0;
-
-}
-
-
-
-.movie img
-
-{	width: 380px;
-
-}
-
-
 
 ul.news li
 
@@ -605,19 +346,11 @@ ul.news li
 
 }
 
-
-
-
-
-
-
 /***********************************************************************************************************/
 
 /***********************************        NAVIGATION BAR        ******************************************/
 
 /***********************************************************************************************************/
-
-
 
 .mobile-topbar
 
@@ -625,76 +358,42 @@ ul.news li
 
 }
 
-
-
 .title 
 
-{ 	height: 56px; 
-
+{ 	
+	height: 56px; 
 	line-height: 56px; 
-
 	color: white; 
-
 	font-size: 13pt; 
-
 	font-family: 'Arial Black', Gadget, sans-serif; 
-
 	font-weight: bold;
-
 	background-color: #2D5D5F; 
-
 	/*padding: 0 20px; */
-
 	width: 38%;
-
 	text-align: center;
-
 }
-
-
 
 .topbar a
-
-{	color: white;
-
+{	
+	color: white;
 }
-
-
 
 #menu 
-
-{ 	height: 56px; 
-
+{ 	
+	height: 56px; 
 	background-color: #5A978F; 
-
-	/*padding: 0 10px; */
-
-	/*padding: 0 0 0 0px;*/
-
 	width: 60%;
-
 	margin: 0 1.5% 0 0.5%;
-
 }
 
-
-
 .menuItem 
-
-{ 	line-height: 58px; 
-
+{ 	
+	line-height: 58px; 
 	color: white; 
-
 	font-size: 11pt;
-
 	font-weight: bold; 
-
 	padding: 0 8px 0 16px; 
-
-	
-
 	position: relative;  /* for the popup menus */	
-
 }
 
 
@@ -702,9 +401,8 @@ ul.news li
 /*** these four classes fix a weird Chrome bug ***/
 
 #menuItem1
-
-{	width: 72px;
-
+{	
+	width: 72px;
 }
 
 
@@ -734,173 +432,11 @@ ul.news li
 /***  -------------------------------------  ***/
 
 
-
-.searchBox 
-
-{ 	background-color: #CCD2DB; 
-
-	font-size: 9pt; 
-
-	font-style: italic; 
-
-	border: none; 
-
-	width: 75px; 
-
-	height: 19px; 
-
-	padding: 2px 2px 2px 3px; 
-
-	margin: 17px 0 17px 15px; 
-
-}
-
-
-
-.searchButton 
-
-{ 	height: 23px; 
-
-	border: none; 
-
-	/*margin: 17px 15px 17px 0; */
-
-	margin: 17px 0 17px 0;
-
-}
-
-
-
-.backToTop
-
-{	text-align: right;
-
-	width: 100%;
-
-}
-
-
-
-.searchResult
-
-{	clear: both;
-
-	margin-bottom: 30px;
-
-	line-height: 16pt;
-
-}
-
-
-
-.searchResult em
-
-{	font-weight: bold;
-
-	background-color: yellow;
-
-}
-
-
-
-.searchResult a
-
-{	font-size: 11pt;
-
-	font-weight: bold;
-
-	color: #2D5D5F;
-
-}
-
-
-
 #blackScreen 
 
 {   display: none;
 
 }
-
-
-
-/**************************** GOOGLE SEARCH ************************************/
-
-
-
-.googleSearch
-
-{	width: 150px;  /* works! */
-
-}
-
-
-
-.gsc-input 
-
-{	width: 160px;  
-
-	margin: 0 !important;
-
-	padding: 0 !important;
-
-	font-size: 9pt !important;
-
-}
-
- 
-
- .googleSearchButton
-
- {	width: 160px;
-
- }
-
-
-
-.cse input.gsc-search-button, input.gsc-search-button 
-
-{  
-
-	width: 12px !important;
-
-	height: 12px !important;
-
-	border-style: solid !important;
-
-	border-color: #2D5D5F !important;
-
-	border-width: 6px 7px 8px 7px !important;
-
-	
-
-	width: 80px;
-
-	margin: 2px 0 0 0 !important;
-
-	padding: 1px 0 0 0 !important;
-
-}
-
-/*
-
-td.gsc-clear-button 
-
-{
-
-	display: none !important;
-
-	padding: 2px 0 0 0 !important;
-
-	margin: 0 !important;
-
-	color: white !important;
-
-	background-color: white !important;
-
-}*/
-
-
-
 
 
 table, td, th {
@@ -917,133 +453,6 @@ td {
 
 }
 
-
-
-table.gsc-search-box td.gsc-input {
-
-    padding: 2px 0 0 0 !important;
-
-}
-
-
-
-input.gsc-input 
-
-{   
-
-	padding: 2px 0 0 0 !important;
-
-}
-
-
-
-.gs-title
-
- {
-
-	text-decoration: none !important;
-
-	clear: both;
-
-	border-style: none !important;	
-
-	font-weight: bold !important;
-
-}
-
- 
-
-.gs-title b, .gs-snippet b 
-
- {
-
-	font-weight: bold;
-
-	/*font-family: 'Arial Black', Gadget, Arial, Helvetica, sans-serif;*/
-
-	text-decoration: none !important;
-
-	border-style: none !important;	
-
-	background-color: #fff917 !important;
-
-}
-
-
-
-.gs-title a 
-
- {
-
-	font-size: 16px;
-
-	/*font-weight: bold;*/
-
-	text-decoration: none !important;
-
-	border-style: none !important;	
-
-}
-
-
-
-.gs-title a:link
-
-{	text-decoration: none;
-
-}
-
-
-
-.gs-title a:visted
-
-{	text-decoration: none;
-
-}
-
-
-
-.gs-title a:hover
-
-{	text-decoration: underline !important;
-
-}
-
-
-
-.gs-title a:active
-
-{	text-decoration: none;
-
-}
-
-
-
-.gsc-url-top, .gsc-url-bottom 
-
-{
-
-	clear: both;
-
-}
-
-/*
-
-.gs-snippet
-
-{	margin: 25px;
-
-	padding: 25px;
-
-}*/
-
-
-
-.gs-branding, .gsc-branding
-
-{	display: none;
-
-}
 
  
 /*********************************** POPUP MENU ***********************************************/
@@ -1065,15 +474,10 @@ input.gsc-input
 
 
 .popupHeadingWrapper
-
 {
-
 	height: 56px;
-
 	top: 0px; 	
-
 	box-shadow: 0 5px 5px black;
-
 }
 
 
@@ -1081,141 +485,83 @@ input.gsc-input
 .popupWrapper
 
 {
-
-	top: 56px;	
-
+	top: 56px;
 	font-size: 10pt;	
-
 	font-weight: normal;
-
 	background-color: #417C78;	
-
 	box-shadow: 0 5px 5px black;
-
 }
-
-
 
 #popupMenu1
 
-{	display: none; 
-
+{	
+	display: none; 
 	-webkit-user-select: none; 
-
 	-webkit-touch-callout: none;
-
 }
-
-
 
 #popupMenu2
-
-{	display: none; 
-
+{	
+	display: none; 
 	-webkit-user-select: none; 
-
 	-webkit-touch-callout: none;
-
 }
-
-
 
 #popupMenu3
-
-{	display: none; 
-
+{	
+	display: none; 
 	-webkit-user-select: none; 
-
 	-webkit-touch-callout: none;
-
 }
-
-
 
 #popupMenu4
-
-{	display: none; 
-
+{	
+	display: none; 
 	-webkit-user-select: none; 
-
 	-webkit-touch-callout: none;
-
 }
-
-
 
 .wrapper1
 
-{	width: 280px;
-
+{	
+	width: 280px;
 }
-
-
 
 .wrapper2
-
-{	width: 290px;	
-
+{	
+	width: 290px;	
 }
-
-
 
 .wrapper3
-
-{	width: 157px;	
-
+{	
+	width: 157px;	
 }
-
-
 
 .wrapper4
-
-{	width: 120px;	
-
+{	
+	width: 120px;	
 }
-
-
 
 .popupHeading, .popupSubheading, .popupItem
-
 {
-
 	/*clear: both; 	*/
-
 	float: none;
-
 }
-
-
 
 .popupHeading
-
-{	background-color: #417C78;
-
+{	
+	background-color: #417C78;
 	line-height: 58px; 	
-
 	padding: 0 12px 0 16px;
-
 	height: 56px;	
-
 }
 
-
-
 .popupSubheading
-
 {
-
 	background-color: #417C78;
-
 	padding: 10px 15px;
-
 	line-height: 10pt;
-
 	/*width: 8;*/
-
-	
-
 }
 
 
@@ -1223,15 +569,9 @@ input.gsc-input
 .popupItem
 
 {
-
 	background-color: #5A978F;	
-
 	padding: 10px 15px 10px 30px;
-
 	line-height: 10pt;
-
-	/*width: 82%;*/
-
 }
 
 
@@ -1246,20 +586,12 @@ input.gsc-input
 /***********************************************************************************************************/
 
 
-
 .content, .contentHomePage, .contentTeamPhotos
-
 {
-
 	width: 100%;
-
 	clear: both;
-
 	background-color: white; 	
-
 }
-
-
 
 .contentHomePage {
     max-width: 1200px;
@@ -1267,92 +599,53 @@ input.gsc-input
     padding: 20px;
 }
 
-
-
 .content
-
-{	padding: 40px 50px;
-
-    
-
+{	
+	padding: 40px 50px;
 }
-
-
 
 .contentTeamPhotos
-
-{	height: 700px;
-
+{	
+	height: 700px;
 	padding: 0px 50px 40px 50px;
-
     margin-top: -10px;
-
 }
-
-
 
 .pageHeader
-
 {	
-
 	width: 89.5%;
-
 	font-size: 14pt;
-
 	color: black;
-
 	border-bottom: solid 4px #DD8143;
-
 	clear: both;
-
 	/*margin-bottom: 30px;*/
-
 }
-
-
 
 .pageSubheader
 
-{	width: 100%;
-
+{	
+	width: 100%;
 	font-size: 11pt;
-
 	color: black;
-
 	border-bottom: solid 2px #DD8143;
-
 	clear: both;
-
 	margin-bottom: 20px;
-
 }
-
-
 
 .pageSubSubheader
-
-{	width: 50%;
-
+{	
+	width: 50%;
 	font-size: 11pt;
-
 	color: black;
-
 	border-bottom: solid 2px #DD8143;
-
 	clear: both;
-
 	margin: 20px 0;
-
-	
-
 }
-
-
 
 .imageBox
 
-{	padding: 10px 32px;
-
+{	
+	padding: 10px 32px;
 }
 
 .imageBox img {
@@ -1375,23 +668,19 @@ input.gsc-input
 
 
 .contactBox
-
-{	width: 400px;
-
+{	
+	width: 400px;
 	padding: 20px 0;	
-
 	line-height: 16pt; 	
-
 }
 
 
 
 .contactImage
 
-{	width: 89.5%;
-
+{	
+	width: 89.5%;
 	margin: 10px 0 0 0;
-
 }
 
 
@@ -1402,285 +691,103 @@ input.gsc-input
 
 .section
 
-{	margin-top: 30px;
-
+{	
+	margin-top: 30px;
 	font-size: 10pt;
-
 	width: 89.5%;
-
 }
 
 
 
 .members
 
-{	margin-bottom: 20px;
-
+{	
+	margin-bottom: 20px;
 }
 
 
 
 .profilePictureBox
 
-{	padding: 3px 25px 0 0;	
-
+{	
+	padding: 3px 25px 0 0;	
 	width: 120px;
-
 }
 
 
 
 .profilePictureBoxBig
 
-{	padding: 3px 25px 0 0;	
-
+{	
+	padding: 3px 25px 0 0;	
 	width: 125px;
-
 }
 
 
 
 .profilePicture
 
-{	border: solid 1px #2D5D5F;
-
+{	
+	border: solid 1px #2D5D5F;
 	width: 100%;	
-
 }
-
-
 
 .personalWebsite
 
-{	text-align: center;
-
+{	
+	text-align: center;
 	width: 100%;
-
 }
-
-
 
 .personalWebsite a
-
-{	color: #DD8143;
-
+{	
+	color: #DD8143;
 	font-size: 8pt;	
-
 }
-
-
 
 .personalWebsite a:link, .personalWebsite a:visited, .personalWebsite a:active
-
-{	text-decoration: none;
-
+{	
+	text-decoration: none;
 }
-
-
 
 .personalWebsite a:hover
-
-{	text-decoration: underline;
+{	
+	text-decoration: underline;
 
 }
-
-
 
 .credentialsBox1
-
-{	width: 32%;	
-
+{	
+	width: 32%;	
 	padding: 0 30px 20px 0;	
-
 }
-
-
 
 .credentialsBox2
 
-{	width: 42%;	
-
+{	
+	width: 42%;	
 	padding: 0 30px 20px 0;	
-
 }
-
-
 
 .credentialsBox3, .credentialsBox4
 
-{	width: 75%;	
-
+{	
+	width: 75%;	
 	padding: 0 30px 20px 0;	
-
 }
-
-
 
 .credentials
 
-{	clear:both;
-
+{	
+	clear:both;
 	line-height: 14pt; 	
-
 }
-
-
 
 .sectionBreak
 
-{   display: none;  /* mobile only */
-
+{   
+	display: none;  /* mobile only */
 }
-
-
-
-/***************************************   SLIDE SHOW   ***********************************************/
-
-
-
-.slideshowText
-
-{
-
-	width: 285px;
-
-}
-
-
-
-.slideshowCaption
-
-{	height: 52px;
-
-	margin: 0 4px 4px 0;
-
-	background-color: #5A978F;
-
-	padding: 30px; 
-	color: white;
-
-	font-size: 11pt;
-
-}
-
-#slideshowCaption2 {
-    padding-right: 80px; /* Adjust this value if padding is the issue */
-}
-
-
-
-.slideshowCaption a
-
-{	color: white;
-
-}
-
-
-
-.firstCaption
-
-{	
-
-	background-color: #2D5D5F;	
-
-}
-
-
-
-.slideshow  
-
-{ 
-
-	position:relative; 	
-
-    /*
-
-    clear: both;
-
-    margin: 40px 0 0 0;
-
-	/*
-
-	height:0px; 
-
-	width:0px; */
-
-}
-
-
-
-.slideshowImage
-
-{
-
-	/*height: 420px;*/
-
-	height: 460px;
-
-	position:absolute; 
-
-	left:0; 
-
-	top:0; 
-
-	display:block;
-
-}
-
-
-
-.slideshowImage2
-
-{	
-
-	width: 860px;
-
-	position:absolute; 
-
-	left:0; 
-
-	top: 0; 
-
-	display:block;
-
-}
-
-
-
-#slideshowImage1  { z-index: 4; }
-
-#slideshowImage2  { z-index: 3; }
-
-#slideshowImage3  { z-index: 2; }
-
-#slideshowImage4  { z-index: 1; }
-
-
-
-.slideshowControls
-
-{	position: relative;
-
-	left: -30px;
-
-	top: 645px;
-
-	background-color: white;
-
-	clear: both;
-
-	padding: 5px 0 0px 30px;
-
-}
-
-
-
-.slideshowControls img
-
-{	height: 16px;
-
-}
-
 
 
 #fullScreenSlideShowStarter, #fullScreenSlideShowWrapper  /* mobile only */
@@ -1752,43 +859,6 @@ input.gsc-input
 
 /***********************************************************************************************************/
 
-
-
-
-.blueStripe1 
-
-{
-
-	width: 100%;
-
-	background-color: #2D5D5F;
-
-	height: 20px;
-
-	clear: both;
-
-}
-
-
-
-
-
-.blueStripe2
-
-{
-
-	width: 100%;
-
-	background-color: #5A978F;
-
-	height: 20px;
-
-	clear: both;
-
-}
-
-
-
 .logos {
     width: 100%;
     background-color: white;
@@ -1821,8 +891,5 @@ input.gsc-input
     padding: 10px 10px 10px 0;
     width: 99%;
 }
-
-
-
 
 } /* closes media query */
