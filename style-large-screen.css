@@ -352,6 +352,15 @@ ul.news li
 
 /***********************************************************************************************************/
 
+.topbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #2D5D5F;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 .mobile-topbar
 
 {   display: none;
@@ -363,6 +372,7 @@ ul.news li
 { 	
 	height: 56px; 
 	line-height: 56px; 
+	padding: 10px 20px;
 	color: white; 
 	font-size: 13pt; 
 	font-family: 'Arial Black', Gadget, sans-serif; 
@@ -378,25 +388,24 @@ ul.news li
 	color: white;
 }
 
-#menu 
-{ 	
-	height: 56px; 
-	background-color: #5A978F; 
-	width: 60%;
-	margin: 0 1.5% 0 0.5%;
+#menu {
+    margin-left: auto; /* This pushes the menu to the right */
+    display: flex;
+    gap: 20px; /* Space between the menu items */
+    padding: 10px 0;
 }
 
-.menuItem 
-{ 	
-	line-height: 58px; 
-	color: white; 
-	font-size: 11pt;
-	font-weight: bold; 
-	padding: 0 8px 0 16px; 
-	position: relative;  /* for the popup menus */	
+.menuItem {
+    position: relative;
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 0 8px 0 16px;
 }
 
-
+.menuHeading {
+    cursor: pointer;
+}
 
 /*** these four classes fix a weird Chrome bug ***/
 
@@ -456,7 +465,22 @@ td {
 
  
 /*********************************** POPUP MENU ***********************************************/
+.popupMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #417C78;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
 
+.menuItem[data-state="visible"] .popupMenu {
+    display: block;
+    opacity: 1;
+}
 
 
 .popupHeadingWrapper, .popupWrapper
