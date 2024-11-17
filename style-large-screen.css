@@ -89,32 +89,74 @@ lightgreen: #5A978F
     color: #333;
     margin-bottom: 40px;
 }
-.slider {
-    display: flex;
-    gap: 20px;overflow-x: auto;
-    padding: 20px 0;
-    scroll-behavior: smooth;
-}
 
-.slider-card {
-    width: 320px;      /* Define a consistent width for all cards */
-    height: 180px;     /* Define a consistent height for all cards */
-    flex: 1;
+/* Slideshow Container */
+.slideshow-container {
+    max-width: 1250px;
+    position: relative;
+    margin: auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;   /* Center the image vertically within the card */
-    justify-content: center;  /* Center the image horizontally within the card */
-    background-color: #fff;   /* Background for the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Custom styling for each slider-card */
-.slider-card img {
-    width: 100%;           /* Adjust to fit the card's width */
-    height: auto;          /* Adjust the height proportionally to avoid cutoff */
-    object-fit: contain;   /* Ensure no part of the image is cropped */
+/* Slide Elements */
+.mySlides {
+    display: none;
 }
+
+/* Slide Images */
+.mySlides img {
+    width: 600px; /* Scaled up from 320px */
+    height: 450px; /* Scaled up from 180px */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Previous and Next Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjusted background for better visibility */
+    z-index: 10; /* Ensure arrows are above other elements */
+}
+
+/* Positioning for Next Arrow */
+.next {
+    right: 10px; /* Adjusts spacing from the right edge */
+    border-radius: 3px 0 0 3px;
+}
+
+/* Positioning for Previous Arrow */
+.prev {
+    left: 10px; /* Adjusts spacing from the left edge */
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover Effect */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption Text */
+.caption {
+    color: #2D5D5F; /* Color matches the "About Our Group & Current Research Projects" heading */
+    font-size: 20px;
+	font-weight: bolder;
+    padding: 10px 0;
+    text-align: center;
+}
+
 
 .hero {
 	position: relative;
@@ -231,7 +273,7 @@ a:active
 
 .paragraphNarrow
 {	
-	width: 82%;
+	width: 75%;
 	padding: 0 0 20px 0;	
 	line-height: 16pt; 	
 }

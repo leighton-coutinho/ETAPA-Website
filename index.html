@@ -39,13 +39,31 @@
                 <div class="about-research-content">
                     <h2>About Our Group & Current Research Projects</h2>
                     <p>We develop novel LCA methods to understand the changing regional and temporal patterns of energy infrastructure and the subsequent environmental outcomes.</p>
-                    <div class="slider">
-                        <div class="slider-card"><img src="/images/ETAPA/Cluster117.gif" alt="Research Project 1"></div>
-                        <div class="slider-card"><img src="/images/ETAPA/land-req.jpg" alt="Research Project 2"></div>
-                        <div class="slider-card"><img src="/images/ETAPA/gas.jpg" alt="Research Project 3"></div>
+                    <div class="slideshow-container">
+            
+                        <!-- Slides -->
+                        <div class="mySlides fade">
+                            <img src="/images/ETAPA/Cluster117.gif" style="width:100%" alt="Research Project 1">
+                            <div class="caption">Caption One</div>
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <img src="/images/ETAPA/land-req.jpg" style="width:100%" alt="Research Project 2">
+                            <div class="caption">Storage and net zero energy</div>
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <img src="/images/ETAPA/gas.jpg" style="width:100%" alt="Research Project 3">
+                            <div class="caption">SLiNG-GHG</div>
+                        </div>
+            
+                        <!-- Navigation Arrows -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
                     </div>
                 </div>
-            </section>
+            </section>            
         </div>
 
         <!------------------------------- end of content ------------------------------------>
@@ -67,5 +85,26 @@
         </script>
     </div>
 </div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
+
 </body>
 </html>
