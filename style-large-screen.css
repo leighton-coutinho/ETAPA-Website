@@ -639,13 +639,6 @@ td {
 /***********************************************************************************************************/
 
 
-.content, .contentHomePage, .contentTeamPhotos
-{
-	max-width: 1250px;
-	clear: both;
-	background-color: white; 	
-}
-
 .contentHomePage {
     max-width: 1250px;
     margin: 0 auto;
@@ -944,5 +937,32 @@ td {
     padding: 10px 10px 10px 0;
     width: 99%;
 }
+
+.profileContainer {
+    display: flex;
+    align-items: flex-start;  /* Aligns the text at the top of the image */
+    gap: 20px;  /* Space between the image and text */
+    margin-bottom: 20px;  /* Adds space below each member section */
+}
+
+.profilePictureBox {
+    flex: 0 0 auto;  /* Image takes up only as much space as needed */
+    width: 120px;  /* Ensure the width remains fixed */
+}
+
+.paragraphNarrow {
+    flex: 1;  /* Allow the text to take up the remaining space */
+    width: auto;  /* Allow flexible width */
+    padding: 0;  /* Remove padding to align with image properly */
+    line-height: 1.6;  /* Increase line-height for better readability */
+}
+
+.content, .contentHomePage, .contentTeamPhotos {
+    max-width: 1250px;
+    clear: both;
+    background-color: white;
+    padding-bottom: 120px; /* Added to give space between content and footer */
+}
+
 
 } /* closes media query */
