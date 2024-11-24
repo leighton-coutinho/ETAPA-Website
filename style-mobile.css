@@ -38,1049 +38,976 @@ To change colors for the google search you need to go to the google search setup
 
    
 
-.footer-basic {
-	background-color: #2D5D5F;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-	max-width: 1250px;
-}
-.footer-basic p {
-	margin: 0;
-	font-size: 14px;
-}
-.footer-links {
-	margin-top: 10px;
-}
-.footer-links a {
-	color: #fff;
-	margin: 0 15px;
-	text-decoration: none;
-	font-size: 14px;
-}
-.footer-links a:hover {
-	text-decoration: underline;
-}
 
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #2D5D5F;
-	padding: 20px;
-	color: #ffffff;
-}
-.logo a {
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 24px;
-	font-weight: bold;
-}
-
-.about-research {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4; /* Light background for contrast */
-}
-.about-research-content {
-    max-width: 1250px;
-    margin: 0 auto;
-}
-.about-research-content h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #2D5D5F; /* Consistent with website color palette */
-}
-.about-research-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-/* Slideshow Container */
-.slideshow-container {
-    max-width: 1250px;
-    position: relative;
-    margin: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Slide Elements */
-.mySlides {
-    display: none;
-}
-
-/* Slide Images */
-.mySlides img {
-    width: 600px; /* Scaled up from 320px */
-    height: 450px; /* Scaled up from 180px */
-    display: block;
-    margin: 0 auto; /* Center the image */
-}
-
-/* Previous and Next Arrows */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjusted background for better visibility */
-    z-index: 10; /* Ensure arrows are above other elements */
-}
-
-/* Positioning for Next Arrow */
-.next {
-    right: 10px; /* Adjusts spacing from the right edge */
-    border-radius: 3px 0 0 3px;
-}
-
-/* Positioning for Previous Arrow */
-.prev {
-    left: 10px; /* Adjusts spacing from the left edge */
-    border-radius: 3px 0 0 3px;
-}
-
-/* Hover Effect */
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption Text */
-.caption {
-    font-size: 4vw;  /* Increase size on smaller screens for readability */
-    padding: 8px;
-}
-
-
-.hero {
-	position: relative;
-	width: 100%;
-	height: 100vh; /* Full viewport height */
-	overflow: hidden;
-}
-.hero-image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-.main {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 16px;
-    background-color: #ffffff;
-    box-sizing: border-box;
-}
-
-strong
-{
-	font-family: 'Arial Black', Gadget, Arial, Helvetica, sans-serif;
-	font-weight: bold;
-}
-
-em
-{	
-	font-weight: bold;
-	font-style: normal;
-}
-
-ul 
-{	
-	margin: 0 0 25px 50px;
-	display: block;
-	float: left;
-	clear: both;
-	list-style-type: square;
-	color: #DD8143;
-}
-
-ul.black
-{	
-	color: black;
-}
-
-
-ul.blackSearch
-
-{	
-	color: black;
-	margin-left: 30px;
-}
-
-li
-{	font-size: 10pt;
-	line-height: 20pt;
-	clear: both;
-	float: left;	
-}
-
-li span
-{	
-	color: black;
-}
-
-a
-{	color: #DD8143;
-	text-decoration: none;
-}
-
-a:link
-{
-	text-decoration: none;
-}
-
-a:visited
-{
-	text-decoration: none;
-}
-
-a:hover
-{
-	text-decoration: underline;	
-}	
-
-a:active
-
-{
-	text-decoration: none;
-}
-
-
-.paragraph
-
-{	width: 100%;
-
-	padding: 0 0 20px 0;	
-
-	line-height: 16pt; 
-
-	clear: both;
-
-}
-
-.paragraphNarrow
-{	
-	width: 75%;
-	padding: 0 0 20px 0;	
-	line-height: 16pt; 	
-}
-
-.paragraphSeparate
-{	
-	width: 89.5%;
-	padding: 20px 0 20px 0;	
-	line-height: 16pt; 
-	clear: both;
-}
-
-.paragraph img
-
-{	
-	width: 855px;
-	margin: 30px 0 -10px 0;
-}
-
-.note 
-{	
-	clear: both;
-	padding: 20px 0 0 0;
-	width: 89.5%;
-	line-height: 16pt;
-}
-
-
-.links
-{	
-	clear: both;
-	line-height: 16pt;	
-	width: 90%;
-	padding: 20px 0 0 0;
-}
-
-.publication, .reading, .report
-{	
-	width: 96%;
-	padding: 5px 0 20px 0px;	
-	line-height: 16pt; 
-	clear: both;
-}
-
-
-
-.publication a, .presentation a
-{	
-	color: #2D5D5F;
-	font-size: 11pt;
-	font-weight: bold;
-}
-
-.publication em, .reading em, .presentation em
-{	
-	font-size: 11pt;
-}
-
-.report em
-{	
-	font-weight: bold;
-}
-
-.researchCategory
-{	
-	/*font-style: italic;
-	font-weight: bold;*/
-	font-family: 'Arial Black', Gadget, Arial, Helvetica, sans-serif;
-	font-size: 12pt;
-}
-
-.presentationBox
-{	
-	width: 96%;
-	padding: 5px 0 25px 0px;	
-	line-height: 16pt; 
-	clear: both;
-}
-
-.presentation
-{	
-	padding: 0 0 0 20px;
-	width: 85%;
-}
-
-.date
-{	
-	width: 10%;
-}
-
-.presentation strong
-
-{	
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.poster
-{	
-	margin: 10px 0 30px 0;
-	padding: 0 20px;
-}
-
-.poster img
-{	
-	width: 820px;
-}
-
-ul.news li
-
-{	margin: 8px 0 8px 0;
-
-}
-
-/***********************************************************************************************************/
-
-/***********************************        NAVIGATION BAR        ******************************************/
-
-/***********************************************************************************************************/
-
-.topbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: #2D5D5F;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.mobile-topbar
-
-{   display: none;
-
-}
-
-.title 
-
-{ 	
-	height: 56px; 
-	line-height: 56px; 
-	padding: 10px 20px;
-	color: white; 
-	font-size: 13pt; 
-	font-family: 'Arial Black', Gadget, sans-serif; 
-	font-weight: bold;
-	background-color: #2D5D5F; 
-	/*padding: 0 20px; */
-	width: 38%;
-	text-align: center;
-}
-
-.topbar a
-{	
-	color: white;
-}
-
-#menu {
-    margin-left: auto; /* This pushes the menu to the right */
-    display: flex;
-    gap: 20px; /* Space between the menu items */
-    padding: 10px 0;
-}
-
-.menuItem {
-    position: relative;
-    color: white;
-    font-size: 11pt;
-    font-weight: bold;
-    padding: 0 8px 0 16px;
-}
-
-.menuHeading {
-	width: 100%;
-	padding: 8px 16px;
-	font-weight: bold;
-	color: #ffffff;
-	cursor: pointer;
-	background-color: #2D5D5F;
-}
-
-.menuHeading:hover {
-	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-/*** these four classes fix a weird Chrome bug ***/
-
-#menuItem1
-{	
-	width: 72px;
-}
-
-
-
-#menuItem2
-
-{	width: 70px;
-
-}
-
-
-
-#menuItem3
-
-{	width: 135px;
-
-}
-
-
-
-#menuItem4
-
-{	width: 47px;
-
-}
-
-/***  -------------------------------------  ***/
-
-
-#blackScreen 
-
-{   display: none;
-
-}
-
-
-table, td, th {
-
-    border: none;
-
-}
-
-
-
-td {
-
-    padding: 0;
-
-}
-
-
- 
-/*********************************** POPUP MENU ***********************************************/
-.popupMenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #417C78;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-}
-
-.menuItem[data-state="visible"] .popupMenu {
-    display: block;
-    opacity: 1;
-}
-
-
-.popupWrapper
-{	
-	padding: 10px 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional for a better dropdown effect */
-}
-
-
-
-
-.popupWrapper
-{
-	top: 56px;
-	font-size: 10pt;	
-	font-weight: normal;
-	background-color: #417C78;	
-	box-shadow: 0 5px 5px black;
-}
-
-#popupMenu1
-
-{	
-	display: none; 
-	-webkit-user-select: none; 
-	-webkit-touch-callout: none;
-}
-
-#popupMenu2
-{	
-	display: none; 
-	-webkit-user-select: none; 
-	-webkit-touch-callout: none;
-}
-
-#popupMenu3
-{	
-	display: none; 
-	-webkit-user-select: none; 
-	-webkit-touch-callout: none;
-}
-
-#popupMenu4
-{	
-	display: none; 
-	-webkit-user-select: none; 
-	-webkit-touch-callout: none;
-}
-
-.wrapper1
-
-{	
-	width: 280px;
-}
-
-.wrapper2
-{	
-	width: 290px;	
-}
-
-.wrapper3
-{	
-	width: 157px;	
-}
-
-.wrapper4
-{	
-	width: 120px;	
-}
-
-.popupItem
-{
-	/*clear: both; 	*/
-	float: none;
-}
-
-
-.popupSubheading
-{
-	font-weight: bold;
-    color: white;
-    padding: 10px 0; /* Adjust padding to align with the menu heading */
-    margin-top: 10px; /* Adds spacing between sections */
-}
-
-
-
-.popupItem
-
-{
-	background-color: #5A978F;	
-	padding: 10px 15px 10px 30px;
-	line-height: 10pt;
-}
-
-
-
-
-
-
-/***********************************************************************************************************/
-
-/***********************************        CONTENT               ******************************************/
-
-/***********************************************************************************************************/
-
-
-.contentHomePage {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.content
-{	
-	padding: 40px 50px;
-}
-
-.contentTeamPhotos
-{	
-	height: 700px;
-	padding: 0px 50px 40px 50px;
-    margin-top: -10px;
-}
-
-.pageHeader
-{	
-	width: 89.5%;
-	font-size: 14pt;
-	color: black;
-	border-bottom: solid 4px #DD8143;
-	clear: both;
-	/*margin-bottom: 30px;*/
-}
-
-.pageSubheader
-
-{	
-	width: 100%;
-	font-size: 11pt;
-	color: black;
-	border-bottom: solid 2px #DD8143;
-	clear: both;
-	margin-bottom: 20px;
-}
-
-.pageSubSubheader
-{	
-	width: 50%;
-	font-size: 11pt;
-	color: black;
-	border-bottom: solid 2px #DD8143;
-	clear: both;
-	margin: 20px 0;
-}
-
-.imageBox
-
-{	
-	padding: 10px 32px;
-}
-
-.imageBox img {
-    width: 150px; /* Set a fixed width */
-    height: 80px; /* Set a fixed height */
-    object-fit: contain; /* This ensures the images scale properly within the fixed dimensions */
-    display: block;
-    margin: 0 auto;
-}
-
-
-.sponsor-container {
-    display: flex;
-    justify-content: space-around; /* Spread logos evenly */
-    align-items: center; /* Align logos vertically */
-    padding: 20px;
-    background-color: #f7f7f7; /* Slight background color to match the provided style */
-}
-
-
-
-.contactBox
-{	
-	width: 400px;
-	padding: 20px 0;	
-	line-height: 16pt; 	
-}
-
-
-
-.contactImage
-
-{	
-	width: 89.5%;
-	margin: 10px 0 0 0;
-}
-
-
-
-/******************************************   MEMBERS PAGE   ******************************************/
-
-
-
-.section
-
-{	
-	margin-top: 30px;
-	font-size: 10pt;
-	width: 89.5%;
-}
-
-
-
-.members
-
-{	
-	margin-bottom: 20px;
-}
-
-
-
-.profilePictureBox
-
-{	
-	padding: 3px 25px 0 0;	
-	width: 120px;
-}
-
-
-
-.profilePictureBoxBig
-
-{	
-	padding: 3px 25px 0 0;	
-	width: 125px;
-}
-
-
-
-.profilePicture
-
-{	
-	border: solid 1px #2D5D5F;
-	width: 100%;	
-}
-
-.personalWebsite
-
-{	
-	text-align: center;
-	width: 100%;
-}
-
-.personalWebsite a
-{	
-	color: #DD8143;
-	font-size: 8pt;	
-}
-
-.personalWebsite a:link, .personalWebsite a:visited, .personalWebsite a:active
-{	
-	text-decoration: none;
-}
-
-.personalWebsite a:hover
-{	
-	text-decoration: underline;
-
-}
-
-.credentialsBox1
-{	
-	width: 32%;	
-	padding: 0 30px 20px 0;	
-}
-
-.credentialsBox2
-
-{	
-	width: 42%;	
-	padding: 0 30px 20px 0;	
-}
-
-.credentialsBox3, .credentialsBox4
-
-{	
-	width: 75%;	
-	padding: 0 30px 20px 0;	
-}
-
-.credentials
-
-{	
-	clear:both;
-	line-height: 14pt; 	
-}
-
-.sectionBreak
-
-{   
-	display: none;  /* mobile only */
-}
-
-
-#fullScreenSlideShowStarter, #fullScreenSlideShowWrapper  /* mobile only */
-
-{   display: none;
-
-}
-
-.collaborators-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.collaborators-columns {
-    display: flex;
-    justify-content: space-between;
-}
-
-.collaborators-columns ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.collaborators-columns li {
-    margin-bottom: 5px;
-}
-
-.collaborators-columns a {
-    color: #1d6aa8;
-    text-decoration: none;
-}
-
-.collaborators-columns a:hover {
-    text-decoration: underline;
-}
-
-.sub-sections {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.sub-sections h4 {
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.sub-sections ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.sub-sections a {
-    color: #1d6aa8;
-    text-decoration: none;
-}
-
-.sub-sections a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-/***********************************************************************************************************/
-
-/***********************************        FOOTER                ******************************************/
-
-/***********************************************************************************************************/
-
-.logos {
-    width: 100%;
-    background-color: white;
-    padding: 15px 0 10px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.logoWrap {
-    width: 25%;
-    text-align: center;
-}
-
-.logo {
-    max-height: 40px; /* Adjust as necessary */
-    width: auto;
-    transform: scale(1.2); /* Increase the scale to zoom in */
-    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
-}
-
-.logo:hover {
-    transform: scale(1.5); /* Optional: slightly larger scale on hover */
-}
-
-.credits {
-    background-color: #555;
-    color: white;
-    font-size: 8pt;
-    text-align: right;
-    padding: 10px 10px 10px 0;
-    width: 99%;
-}
-
-.profileContainer {
-    display: flex;
-    align-items: flex-start;  /* Aligns the text at the top of the image */
-    gap: 20px;  /* Space between the image and text */
-    margin-bottom: 20px;  /* Adds space below each member section */
-}
-
-.profilePictureBox {
-    flex: 0 0 auto;  /* Image takes up only as much space as needed */
-    width: 120px;  /* Ensure the width remains fixed */
-}
-
-.paragraphNarrow {
-    flex: 1;  /* Allow the text to take up the remaining space */
-    width: auto;  /* Allow flexible width */
-    padding: 0;  /* Remove padding to align with image properly */
-    line-height: 1.6;  /* Increase line-height for better readability */
-}
-
-.content, .contentHomePage, .contentTeamPhotos {
-    max-width: 1250px;
-    clear: both;
-    background-color: white;
-    padding-bottom: 120px; /* Added to give space between content and footer */
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Top bar styling for mobile */
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2D5D5F;
-    padding: 10px;
-    position: relative;
-    z-index: 1000;
-}
-
-.title {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#hamburger {
-    display: block;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    background: url('/images/hamburger-inactive.png') no-repeat center;
-    background-size: contain;
-}
-
-#menu {
-    display: none;
-    flex-direction: column;
-    background-color: #2D5D5F;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    left: 0;
-    padding: 10px 0;
-    z-index: 999;
-}
-
-.menuItem {
-    padding: 15px;
-    border-top: 1px solid #3A6D6F;
-}
-
-.menuItem .menuHeading {
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
-
-#blackScreen {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 500;
-}
-
-/* Responsive images */
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
-.profilePictureBox {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* General layout adjustments for small screens */
-.paragraphNarrow {
-    padding: 0 10px;
-    line-height: 1.5;
-    font-size: 16px;
-}
-
-.section {
-    padding: 20px 10px;
-}
-
-.pageSubheader {
-    font-size: 22px;
-    padding: 5px 0;
-    text-align: center;
-}
-
-/* Footer adjustments */
-.footer {
-    background-color: #2D5D5F;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-
+    .footer-basic {
+        background-color: #2D5D5F;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        max-width: 1250px;
+    }
+    .footer-basic p {
+        margin: 0;
+        font-size: 14px;
+    }
+    .footer-links {
+        margin-top: 10px;
+    }
+    .footer-links a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2D5D5F;
+        padding: 20px;
+        color: #ffffff;
+    }
+    .logo a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .about-research {
+        height: auto; /* Remove fixed height */
+        padding: 20px;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about-research-content {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .about-research-content h2 {
+        font-size: 2.5vw; /* Adjust the size based on viewport width for scalability */
+        color: #2D5D5F;
+    }
+    
+    .about-research-content p {
+        font-size: 1.5vw; /* Adjust the paragraph font size for smaller screens */
+        line-height: 1.5;
+    }
+    
+    /* Slideshow container styling */
+    .slideshow-container {
+        width: 100%;
+        max-width: 90%;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Slide Elements */
+    .mySlides {
+        display: none;
+    }
+    
+    /* Slide Images */
+    .mySlides img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+    }
+    
+    /* Navigation Arrows */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        padding: 8px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+    
+    .next {
+        right: 0;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Caption Text */
+    .caption {
+        color: #2D5D5F;
+        font-size: 1.5vw; /* Scale caption text with viewport */
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .slideshow-container {
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .hero-section {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;  /* Centers content vertically */
+        justify-content: flex-start;  /* Align text close to the top left */
+        overflow: hidden;
+    }
+    
+    .hero-image {
+        width: 100%;
+        height: auto;  /* Full viewport height for a more impactful look */
+        object-fit: cover;
+        filter: brightness(70%);  /* Darkens the image to improve text readability */
+    }
+    
+    .hero-text {
+        position: absolute;
+        top: 20%;  /* Adjusted to fit well visually */
+        left: 5%;  /* Keeps text close to the left */
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 3vw;  /* Dynamic sizing based on viewport */
+        color: #ffffff;  /* Keeps the text white for contrast */
+        font-weight: bold;
+        line-height: 1.2;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  /* Adding shadow to improve readability */
+        max-width: 50%;
+        z-index: 10;  /* Ensures text stays on top of the image */
+    }
+    
+    /* Optional: Add a subtle overlay directly on the hero section */
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);  /* Dark overlay */
+        z-index: 5;  /* Ensures it stays behind the text but above the image */
+    }
+    
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .main {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 16px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+    
+    strong
+    {
+        font-family: 'Arial Black', Gadget, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    em
+    {	
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    ul 
+    {	
+        margin: 0 0 25px 50px;
+        display: block;
+        float: left;
+        clear: both;
+        list-style-type: square;
+        color: #DD8143;
+    }
+    
+    ul.black
+    {	
+        color: black;
+    }
+    
+    
+    ul.blackSearch
+    
+    {	
+        color: black;
+        margin-left: 30px;
+    }
+    
+    li
+    {	font-size: 10pt;
+        line-height: 20pt;
+        clear: both;
+        float: left;	
+    }
+    
+    li span
+    {	
+        color: black;
+    }
+    
+    a
+    {	color: #DD8143;
+        text-decoration: none;
+    }
+    
+    a:link
+    {
+        text-decoration: none;
+    }
+    
+    a:visited
+    {
+        text-decoration: none;
+    }
+    
+    a:hover
+    {
+        text-decoration: underline;	
+    }	
+    
+    a:active
+    
+    {
+        text-decoration: none;
+    }
+    
+    
+    .paragraph
+    
+    {	width: 100%;
+    
+        padding: 0 0 20px 0;	
+    
+        line-height: 16pt; 
+    
+        clear: both;
+    
+    }
+    
+    .paragraphNarrow
+    {	
+        width: 75%;
+        padding: 0 0 20px 0;	
+        line-height: 16pt; 	
+    }
+    
+    .paragraphSeparate
+    {	
+        width: 89.5%;
+        padding: 20px 0 20px 0;	
+        line-height: 16pt; 
+        clear: both;
+    }
+    
+    .paragraph img
+    
+    {	
+        width: 855px;
+        margin: 30px 0 -10px 0;
+    }
+    
+    .note 
+    {	
+        clear: both;
+        padding: 20px 0 0 0;
+        width: 89.5%;
+        line-height: 16pt;
+    }
+    
+    
+    .links
+    {	
+        clear: both;
+        line-height: 16pt;	
+        width: 90%;
+        padding: 20px 0 0 0;
+    }
+    
+    .publication, .reading, .report
+    {	
+        width: 96%;
+        padding: 5px 0 20px 0px;	
+        line-height: 16pt; 
+        clear: both;
+    }
+    
+    
+    
+    .publication a, .presentation a
+    {	
+        color: #2D5D5F;
+        font-size: 11pt;
+        font-weight: bold;
+    }
+    
+    .publication em, .reading em, .presentation em
+    {	
+        font-size: 11pt;
+    }
+    
+    .report em
+    {	
+        font-weight: bold;
+    }
+    
+    .researchCategory
+    {	
+        /*font-style: italic;
+        font-weight: bold;*/
+        font-family: 'Arial Black', Gadget, Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+    }
+    
+    .presentationBox
+    {	
+        width: 96%;
+        padding: 5px 0 25px 0px;	
+        line-height: 16pt; 
+        clear: both;
+    }
+    
+    .presentation
+    {	
+        padding: 0 0 0 20px;
+        width: 85%;
+    }
+    
+    .date
+    {	
+        width: 10%;
+    }
+    
+    .presentation strong
+    
+    {	
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .poster
+    {	
+        margin: 10px 0 30px 0;
+        padding: 0 20px;
+    }
+    
+    .poster img
+    {	
+        width: 820px;
+    }
+    
+    ul.news li
+    
+    {	margin: 8px 0 8px 0;
+    
+    }
+    
+    /***********************************************************************************************************/
+    
+    /***********************************        NAVIGATION BAR        ******************************************/
+    
+    /***********************************************************************************************************/
+    
+    .topbar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #2D5D5F;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    .mobile-topbar
+    
+    {   display: none;
+    
+    }
+    
+    .title 
+    
+    { 	
+        height: 56px; 
+        line-height: 56px; 
+        padding: 10px 20px;
+        color: white; 
+        font-size: 13pt; 
+        font-family: 'Arial Black', Gadget, sans-serif; 
+        font-weight: bold;
+        background-color: #2D5D5F; 
+        /*padding: 0 20px; */
+        width: 38%;
+        text-align: center;
+    }
+    
+    .topbar a
+    {	
+        color: white;
+    }
+    
+    #menu {
+        margin-left: auto; /* This pushes the menu to the right */
+        display: flex;
+        gap: 20px; /* Space between the menu items */
+        padding: 10px 0;
+    }
+    
+    .menuItem {
+        position: relative;
+        color: white;
+        font-size: 11pt;
+        font-weight: bold;
+        padding: 0 8px 0 16px;
+    }
+    
+    .menuHeading {
+        width: 100%;
+        padding: 8px 16px;
+        font-weight: bold;
+        color: #ffffff;
+        cursor: pointer;
+        background-color: #2D5D5F;
+    }
+    
+    .menuHeading:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /*** these four classes fix a weird Chrome bug ***/
+    
+    #menuItem1
+    {	
+        width: 72px;
+    }
+    
+    
+    
+    #menuItem2
+    
+    {	width: 70px;
+    
+    }
+    
+    
+    
+    #menuItem3
+    
+    {	width: 135px;
+    
+    }
+    
+    
+    
+    #menuItem4
+    
+    {	width: 47px;
+    
+    }
+    
+    /***  -------------------------------------  ***/
+    
+    
+    #blackScreen 
+    
+    {   display: none;
+    
+    }
+    
+    
+    table, td, th {
+    
+        border: none;
+    
+    }
+    
+    
+    
+    td {
+    
+        padding: 0;
+    
+    }
+    
+    
+     
+    /*********************************** POPUP MENU ***********************************************/
+    .popupMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #417C78;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+    
+    .menuItem[data-state="visible"] .popupMenu {
+        display: block;
+        opacity: 1;
+    }
+    
+    
+    .popupWrapper
+    {	
+        padding: 10px 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional for a better dropdown effect */
+    }
+    
+    
+    
+    
+    .popupWrapper
+    {
+        top: 56px;
+        font-size: 10pt;	
+        font-weight: normal;
+        background-color: #417C78;	
+        box-shadow: 0 5px 5px black;
+    }
+    
+    #popupMenu1
+    
+    {	
+        display: none; 
+        -webkit-user-select: none; 
+        -webkit-touch-callout: none;
+    }
+    
+    #popupMenu2
+    {	
+        display: none; 
+        -webkit-user-select: none; 
+        -webkit-touch-callout: none;
+    }
+    
+    #popupMenu3
+    {	
+        display: none; 
+        -webkit-user-select: none; 
+        -webkit-touch-callout: none;
+    }
+    
+    #popupMenu4
+    {	
+        display: none; 
+        -webkit-user-select: none; 
+        -webkit-touch-callout: none;
+    }
+    
+    .wrapper1
+    
+    {	
+        width: 280px;
+    }
+    
+    .wrapper2
+    {	
+        width: 290px;	
+    }
+    
+    .wrapper3
+    {	
+        width: 157px;	
+    }
+    
+    .wrapper4
+    {	
+        width: 120px;	
+    }
+    
+    .popupItem
+    {
+        /*clear: both; 	*/
+        float: none;
+    }
+    
+    
+    .popupSubheading
+    {
+        font-weight: bold;
+        color: white;
+        padding: 10px 0; /* Adjust padding to align with the menu heading */
+        margin-top: 10px; /* Adds spacing between sections */
+    }
+    
+    
+    
+    .popupItem
+    
+    {
+        background-color: #5A978F;	
+        padding: 10px 15px 10px 30px;
+        line-height: 10pt;
+    }
+    
+    
+    
+    
+    
+    
+    /***********************************************************************************************************/
+    
+    /***********************************        CONTENT               ******************************************/
+    
+    /***********************************************************************************************************/
+    
+    
+    .contentHomePage {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .content
+    {	
+        padding: 40px 50px;
+    }
+    
+    .contentTeamPhotos
+    {	
+        height: 700px;
+        padding: 0px 50px 40px 50px;
+        margin-top: -10px;
+    }
+    
+    .pageHeader
+    {	
+        width: 89.5%;
+        font-size: 14pt;
+        color: black;
+        border-bottom: solid 4px #DD8143;
+        clear: both;
+        /*margin-bottom: 30px;*/
+    }
+    
+    .pageSubheader
+    
+    {	
+        width: 100%;
+        font-size: 11pt;
+        color: black;
+        border-bottom: solid 2px #DD8143;
+        clear: both;
+        margin-bottom: 20px;
+    }
+    
+    .pageSubSubheader
+    {	
+        width: 50%;
+        font-size: 11pt;
+        color: black;
+        border-bottom: solid 2px #DD8143;
+        clear: both;
+        margin: 20px 0;
+    }
+    
+    .imageBox
+    
+    {	
+        padding: 10px 32px;
+    }
+    
+    .imageBox img {
+        width: 150px; /* Set a fixed width */
+        height: 80px; /* Set a fixed height */
+        object-fit: contain; /* This ensures the images scale properly within the fixed dimensions */
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+    .sponsor-container {
+        display: flex;
+        justify-content: space-around; /* Spread logos evenly */
+        align-items: center; /* Align logos vertically */
+        padding: 20px;
+        background-color: #f7f7f7; /* Slight background color to match the provided style */
+    }
+    
+    
+    
+    .contactBox
+    {	
+        width: 400px;
+        padding: 20px 0;	
+        line-height: 16pt; 	
+    }
+    
+    
+    
+    .contactImage
+    
+    {	
+        width: 89.5%;
+        margin: 10px 0 0 0;
+    }
+    
+    
+    
+    /******************************************   MEMBERS PAGE   ******************************************/
+    
+    
+    
+    .section
+    
+    {	
+        margin-top: 30px;
+        font-size: 10pt;
+        width: 89.5%;
+    }
+    
+    
+    
+    .members
+    
+    {	
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    .profilePictureBox
+    
+    {	
+        padding: 3px 25px 0 0;	
+        width: 120px;
+    }
+    
+    
+    
+    .profilePictureBoxBig
+    
+    {	
+        padding: 3px 25px 0 0;	
+        width: 125px;
+    }
+    
+    
+    
+    .profilePicture
+    
+    {	
+        border: solid 1px #2D5D5F;
+        width: 100%;	
+    }
+    
+    .personalWebsite
+    
+    {	
+        text-align: center;
+        width: 100%;
+    }
+    
+    .personalWebsite a
+    {	
+        color: #DD8143;
+        font-size: 8pt;	
+    }
+    
+    .personalWebsite a:link, .personalWebsite a:visited, .personalWebsite a:active
+    {	
+        text-decoration: none;
+    }
+    
+    .personalWebsite a:hover
+    {	
+        text-decoration: underline;
+    
+    }
+    
+    .credentialsBox1
+    {	
+        width: 32%;	
+        padding: 0 30px 20px 0;	
+    }
+    
+    .credentialsBox2
+    
+    {	
+        width: 42%;	
+        padding: 0 30px 20px 0;	
+    }
+    
+    .credentialsBox3, .credentialsBox4
+    
+    {	
+        width: 75%;	
+        padding: 0 30px 20px 0;	
+    }
+    
+    .credentials
+    
+    {	
+        clear:both;
+        line-height: 14pt; 	
+    }
+    
+    .sectionBreak
+    
+    {   
+        display: none;  /* mobile only */
+    }
+    
+    
+    #fullScreenSlideShowStarter, #fullScreenSlideShowWrapper  /* mobile only */
+    
+    {   display: none;
+    
+    }
+    
+    .collaborators-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .collaborators-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .collaborators-columns ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+    
+    .collaborators-columns li {
+        margin-bottom: 5px;
+    }
+    
+    .collaborators-columns a {
+        color: #1d6aa8;
+        text-decoration: none;
+    }
+    
+    .collaborators-columns a:hover {
+        text-decoration: underline;
+    }
+    
+    .sub-sections {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    
+    .sub-sections h4 {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    
+    .sub-sections ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+    
+    .sub-sections a {
+        color: #1d6aa8;
+        text-decoration: none;
+    }
+    
+    .sub-sections a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    
+    
+    /***********************************************************************************************************/
+    
+    /***********************************        FOOTER                ******************************************/
+    
+    /***********************************************************************************************************/
+    
+    .logos {
+        width: 100%;
+        background-color: white;
+        padding: 15px 0 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logoWrap {
+        width: 25%;
+        text-align: center;
+    }
+    
+    .logo {
+        max-height: 40px; /* Adjust as necessary */
+        width: auto;
+        transform: scale(1.2); /* Increase the scale to zoom in */
+        transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    }
+    
+    .logo:hover {
+        transform: scale(1.5); /* Optional: slightly larger scale on hover */
+    }
+    
+    .credits {
+        background-color: #555;
+        color: white;
+        font-size: 8pt;
+        text-align: right;
+        padding: 10px 10px 10px 0;
+        width: 99%;
+    }
+    
+    .profileContainer {
+        display: flex;
+        align-items: flex-start;  /* Aligns the text at the top of the image */
+        gap: 20px;  /* Space between the image and text */
+        margin-bottom: 20px;  /* Adds space below each member section */
+    }
+    
+    .profilePictureBox {
+        flex: 0 0 auto;  /* Image takes up only as much space as needed */
+        width: 120px;  /* Ensure the width remains fixed */
+    }
+    
+    .paragraphNarrow {
+        flex: 1;  /* Allow the text to take up the remaining space */
+        width: auto;  /* Allow flexible width */
+        padding: 0;  /* Remove padding to align with image properly */
+        line-height: 1.6;  /* Increase line-height for better readability */
+    }
+    
+    .content, .contentHomePage, .contentTeamPhotos {
+        max-width: 1250px;
+        clear: both;
+        background-color: white;
+        padding-bottom: 120px; /* Added to give space between content and footer */
+    }
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------------------------------------- */
@@ -1163,15 +1090,15 @@ img {
 }
 
 .about-research-content h2 {
-    font-size: 6vw;
+    font-size: 3vw;
 }
 
 .about-research-content p {
-    font-size: 4.5vw;
+    font-size: 2vw;
 }
 
 .caption {
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 .prev, .next {
