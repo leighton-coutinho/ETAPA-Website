@@ -19,11 +19,17 @@ light blue: #75B3A4
 lightgreen: #5A978F
 */
 
-
-
 @media (min-device-width:1025px)
 
 {
+
+#hamburger {
+	display: none;
+}
+
+#menu {
+	display: flex !important; /* Ensure the full menu is visible by default */
+}
 
 .footer-basic {
 	background-color: #2D5D5F;
@@ -493,14 +499,14 @@ ul.news li
 
 #menuItem1
 {	
-	width: 72px;
+	width: 135px;
 }
 
 
 
 #menuItem2
 
-{	width: 70px;
+{	width: 135px;
 
 }
 
@@ -516,8 +522,7 @@ ul.news li
 
 #menuItem4
 
-{	width: 47px;
-
+{	width: 135px;
 }
 
 /***  -------------------------------------  ***/
@@ -548,15 +553,15 @@ td {
  
 /*********************************** POPUP MENU ***********************************************/
 .popupMenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #417C78;
+    position: absolute; /* Position relative to its parent .menuItem */
+    top: 0;
+    left: 100%; /* Align the popup menu to the right of the menu heading */
+    background-color: #417C78; /* Keeps the background for better contrast */
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
+    z-index: 1000; /* Ensures it appears above all other elements */
+    width: 200px; /* Adjust width as needed */
+    opacity: 1; /* Set visibility */
+    display: none; /* Hide by default */
 }
 
 .menuItem[data-state="visible"] .popupMenu {

@@ -36,9 +36,6 @@ To change colors for the google search you need to go to the google search setup
 
 {
 
-   
-
-
     .footer-basic {
         background-color: #2D5D5F;
         color: #fff;
@@ -198,7 +195,7 @@ To change colors for the google search you need to go to the google search setup
         line-height: 1.2;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  /* Adding shadow to improve readability */
         max-width: 50%;
-        z-index: 10;  /* Ensures text stays on top of the image */
+        z-index: 9;  /* Ensures text stays on top of the image */
     }
     
     /* Optional: Add a subtle overlay directly on the hero section */
@@ -448,11 +445,6 @@ To change colors for the google search you need to go to the google search setup
         box-sizing: border-box;
     }
     
-    .mobile-topbar
-    
-    {   display: none;
-    
-    }
     
     .title 
     
@@ -468,73 +460,34 @@ To change colors for the google search you need to go to the google search setup
         /*padding: 0 20px; */
         width: 38%;
         text-align: center;
+        z-index: 12;
     }
     
     .topbar a
     {	
         color: white;
     }
-    
+
+
     #menu {
+        display: none; /* Initially hidden */
+        position: absolute; /* Fixed to overlay over content */
         margin-left: auto; /* This pushes the menu to the right */
-        display: flex;
-        gap: 20px; /* Space between the menu items */
-        padding: 10px 0;
+        top: 0; 
+        left: 0;
+        width: 100%; /* Full screen width */
+        background-color: #2D5D5F; /* Dark background for contrast */
+        z-index: 10; /* Ensure it appears above other elements */
+        transition: all 0.3s ease-in-out;
+        padding-top: 15vh; /* Add space to avoid overlapping with top bar */
     }
     
     .menuItem {
-        position: relative;
         color: white;
-        font-size: 11pt;
-        font-weight: bold;
-        padding: 0 8px 0 16px;
+        text-align: left;
+        position: relative;
     }
     
-    .menuHeading {
-        width: 100%;
-        padding: 8px 16px;
-        font-weight: bold;
-        color: #ffffff;
-        cursor: pointer;
-        background-color: #2D5D5F;
-    }
-    
-    .menuHeading:hover {
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    /*** these four classes fix a weird Chrome bug ***/
-    
-    #menuItem1
-    {	
-        width: 72px;
-    }
-    
-    
-    
-    #menuItem2
-    
-    {	width: 70px;
-    
-    }
-    
-    
-    
-    #menuItem3
-    
-    {	width: 135px;
-    
-    }
-    
-    
-    
-    #menuItem4
-    
-    {	width: 47px;
-    
-    }
-    
-    /***  -------------------------------------  ***/
     
     
     #blackScreen 
@@ -563,14 +516,15 @@ To change colors for the google search you need to go to the google search setup
     /*********************************** POPUP MENU ***********************************************/
     .popupMenu {
         display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
+        position: absolute; /* Ensure it is absolutely positioned within .menuItem */
+        top: 100%; /* Align it with the top of the .menuItem */
+        left: 0; /* Align it to the right side of the .menuItem */
         background-color: #417C78;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
         z-index: 1000;
         transition: opacity 0.3s ease-in-out;
         opacity: 0;
+        width: 100%;
     }
     
     .menuItem[data-state="visible"] .popupMenu {
@@ -626,26 +580,6 @@ To change colors for the google search you need to go to the google search setup
         -webkit-touch-callout: none;
     }
     
-    .wrapper1
-    
-    {	
-        width: 280px;
-    }
-    
-    .wrapper2
-    {	
-        width: 290px;	
-    }
-    
-    .wrapper3
-    {	
-        width: 157px;	
-    }
-    
-    .wrapper4
-    {	
-        width: 120px;	
-    }
     
     .popupItem
     {
@@ -1012,31 +946,6 @@ To change colors for the google search you need to go to the google search setup
 
 /* ----------------------------------------------------------------------------------------------------- */
 
-
-
-}  /* closes media query */
-
-/* Media queries for mobile-specific styles */
-@media (max-width: 768px) {
-    /* Show the hamburger icon and hide menu items initially */
-    #hamburger {
-        display: block;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .menuItem {
-        text-align: center;
-        padding: 15px;
-    }
-
-    .topbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     /* Ensure images scale properly */
     img {
         width: 100%;
@@ -1055,53 +964,82 @@ To change colors for the google search you need to go to the google search setup
     .footer {
         font-size: 14px;
     }
-}
 
-/* Menu toggle for mobile */
-@media (max-width: 768px) {
     #hamburger {
+        display: block;
+        width: 10%;
+        height: 100%;
         cursor: pointer;
+        content: url("/images/hamburger-inactive.png");
+        z-index: 11; /* Ensure it appears above other elements */
     }
+
 
     #hamburger-active {
         content: url("/images/hamburger-active.png");
+        z-index: 11; /* Ensure it appears above other elements */
     }
 
     #hamburger-inactive {
         content: url("/images/hamburger-inactive.png");
+        z-index: 11; /* Ensure it appears above other elements */
     }
 
     #menu[data-state="visible"] {
         display: flex;
     }
 
+    #
+
     #blackScreen[data-state="visible"] {
         display: block;
     }
-}
 
-/* Smooth transition for the menu */
-#menu {
-    transition: all 0.3s ease-in-out;
-}
+    /* Smooth transition for the menu */
+    #menu {
+        transition: all 0.3s ease-in-out;
+    }
 
-#blackScreen {
-    transition: all 0.3s ease-in-out;
-}
+    #blackScreen {
+        transition: all 0.3s ease-in-out;
+    }
 
-.about-research-content h2 {
-    font-size: 3vw;
-}
+    .about-research-content h2 {
+        font-size: 3vw;
+    }
 
-.about-research-content p {
-    font-size: 2vw;
-}
+    .about-research-content p {
+        font-size: 2vw;
+    }
 
-.caption {
-    font-size: 2vw;
-}
+    .caption {
+        font-size: 2vw;
+    }
 
-.prev, .next {
-    font-size: 16px; /* Slightly reduce arrow size */
-    padding: 6px;
-}
+    .prev, .next {
+        font-size: 16px; /* Slightly reduce arrow size */
+        padding: 6px;
+    }
+
+
+    .title {
+        font-size: 20px;
+    }
+
+    .menuHeading {
+        width: 100%;
+        padding: 15px;
+        font-weight: bold;
+        color: #ffffff;
+        cursor: pointer;
+        background-color: #2D5D5F;
+        border-bottom: 1px solid #4B6E89; /* Optional for clear separation */
+    }
+    
+    .menuHeading:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+}  /* closes media query */
+
+
