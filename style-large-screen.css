@@ -65,38 +65,37 @@ lightgreen: #5A978F
 }
 
 .about-research {
-    height: 100vh; /* Full viewport height */
+    height: auto; /* Remove fixed height */
+    padding: 20px;
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4; /* Light background for contrast */
 }
 
 .about-research-content {
-    max-width: 90%;  /* Decrease max-width to give more breathing room on smaller screens */
+    max-width: 90%;
     margin: 0 auto;
     padding: 10px;
 }
 
 .about-research-content h2 {
-    font-size: 2.5vw; /* Decrease based on viewport size */
-	color: #2D5D5F;
+    font-size: 2.5vw; /* Adjust the size based on viewport width for scalability */
+    color: #2D5D5F;
 }
 
 .about-research-content p {
-    font-size: 1.5vw; /* Adjust line height and size for better readability */
-    line-height: 1.4;
+    font-size: 1.5vw; /* Adjust the paragraph font size for smaller screens */
+    line-height: 1.5;
 }
 
-/* Slideshow Container */
+/* Slideshow container styling */
 .slideshow-container {
-    width: 100%; /* Full width to adapt to the container */
-    max-width: 1250px; /* Keeps it at max width for larger screens */
+    width: 100%;
+    max-width: 90%;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -109,23 +108,22 @@ lightgreen: #5A978F
 
 /* Slide Images */
 .mySlides img {
-    width: 100%; /* Allow images to take full container width */
+    width: 100%;
     height: auto; /* Maintain aspect ratio */
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
 }
 
-/* Previous and Next Arrows */
+/* Navigation Arrows */
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Centers the arrows vertically */
+    transform: translateY(-50%);
     width: auto;
-    padding: 16px;
+    padding: 8px;
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -134,13 +132,11 @@ lightgreen: #5A978F
 }
 
 .next {
-    right: 0; /* Position to the far right */
-    border-radius: 3px 0 0 3px;
+    right: 0;
 }
 
 .prev {
-    left: 0; /* Position to the far left */
-    border-radius: 3px 0 0 3px;
+    left: 0;
 }
 
 .prev:hover, .next:hover {
@@ -149,49 +145,58 @@ lightgreen: #5A978F
 
 /* Caption Text */
 .caption {
-    color: #2D5D5F; /* Matches the color scheme */
-    font-size: 1.5rem; /* Font size scaled based on screen size */
+    color: #2D5D5F;
+    font-size: 1.5vw; /* Scale caption text with viewport */
     padding: 10px 0;
     text-align: center;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .caption {
-        font-size: 1rem; /* Reduce caption size on smaller screens */
-    }
-
-    .prev, .next {
-        font-size: 20px; /* Slightly reduce arrow size */
-    }
+.slideshow-container {
+    transition: width 0.3s ease-in-out;
 }
-
 
 .hero-section {
     position: relative;
     width: 100%;
-    height: auto; /* Adjust as needed */
+    height: auto;
+    display: flex;
+    align-items: center;  /* Centers content vertically */
+    justify-content: flex-start;  /* Align text close to the top left */
+    overflow: hidden;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .hero-image {
     width: 100%;
-    height: auto;
+    height: auto;  /* Full viewport height for a more impactful look */
     object-fit: cover;
+    filter: brightness(70%);  /* Darkens the image to improve text readability */
 }
 
 .hero-text {
     position: absolute;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    width: 80%; /* Adjusted to fit well in smaller viewports */
-    top: 15%; /* Use percentage instead of a fixed pixel value */
-    left: 10%; /* Use percentage instead of a fixed pixel value */
-    color: #90b9ba; /* White text for contrast */
-    font-size: 2vw;  /* Use viewport-based font sizing for scalability */
+    top: 20%;  /* Adjusted to fit well visually */
+    left: 5%;  /* Keeps text close to the left */
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 3vw;  /* Dynamic sizing based on viewport */
+    color: #ffffff;  /* Keeps the text white for contrast */
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(137, 23, 23, 0.7);  /* Adding shadow to improve readability */
-    z-index: 10;  /* Ensure it stays on top of the image */
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  /* Adding shadow to improve readability */
+    max-width: 50%;
+    z-index: 10;  /* Ensures text stays on top of the image */
+}
+
+/* Optional: Add a subtle overlay directly on the hero section */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);  /* Dark overlay */
+    z-index: 5;  /* Ensures it stays behind the text but above the image */
 }
 
 
