@@ -42,20 +42,25 @@ To change colors for the google search you need to go to the google search setup
         padding: 20px;
         text-align: center;
         max-width: 1250px;
+        margin: 0 auto;  /* Ensure the footer is centered as well */
     }
+    
     .footer-basic p {
         margin: 0;
         font-size: 14px;
     }
+    
     .footer-links {
         margin-top: 10px;
     }
+    
     .footer-links a {
         color: #fff;
         margin: 0 15px;
         text-decoration: none;
         font-size: 14px;
     }
+    
     .footer-links a:hover {
         text-decoration: underline;
     }
@@ -627,6 +632,7 @@ To change colors for the google search you need to go to the google search setup
     .content
     {	
         padding: 40px 50px;
+        padding-bottom: 20vh;
     }
     
     .contentTeamPhotos
@@ -749,13 +755,6 @@ To change colors for the google search you need to go to the google search setup
     }
     
     
-    
-    .profilePicture
-    
-    {	
-        border: solid 1px #2D5D5F;
-        width: 100%;	
-    }
     
     .personalWebsite
     
@@ -918,31 +917,33 @@ To change colors for the google search you need to go to the google search setup
     }
     
     .profileContainer {
-        display: flex;
-        align-items: flex-start;  /* Aligns the text at the top of the image */
-        gap: 20px;  /* Space between the image and text */
-        margin-bottom: 20px;  /* Adds space below each member section */
+        display: block; /* Switch to block to allow for text wrapping */
+        margin-bottom: 20px; /* Adds space below each member section */
     }
     
     .profilePictureBox {
-        flex: 0 0 auto;  /* Image takes up only as much space as needed */
-        width: 120px;  /* Ensure the width remains fixed */
+        float: left; /* Floats the image to the left */
+        margin-right: 20px; /* Adds space between the image and text */
+        width: 120px; /* Fixed width */
+    }
+    
+    .profilePicture {
+        width: 100%; /* Ensure the profile image takes up the entire box */
+        height: auto; /* Maintain the aspect ratio */
     }
     
     .paragraphNarrow {
-        flex: 1;  /* Allow the text to take up the remaining space */
-        width: auto;  /* Allow flexible width */
-        padding: 0;  /* Remove padding to align with image properly */
-        line-height: 1.6;  /* Increase line-height for better readability */
+        overflow: hidden; /* Prevents text from wrapping below the floated image */
+        line-height: 1.6; /* Increase line-height for better readability */
+        padding-top: 10px; /* Optional: Add some space between the top and text */
     }
     
     .content, .contentHomePage, .contentTeamPhotos {
+        flex: 1;
         max-width: 1250px;
         clear: both;
         background-color: white;
-        padding-bottom: 120px; /* Added to give space between content and footer */
     }
-/* ----------------------------------------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------------------------------------- */
 
