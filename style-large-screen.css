@@ -499,14 +499,14 @@ ul.news li
 
 #menuItem1
 {	
-	width: 135px;
+	width: 72px;
 }
 
 
 
 #menuItem2
 
-{	width: 135px;
+{	width: 70px;
 
 }
 
@@ -521,8 +521,8 @@ ul.news li
 
 
 #menuItem4
-
-{	width: 135px;
+{	
+	width: 47px;
 }
 
 /***  -------------------------------------  ***/
@@ -553,15 +553,15 @@ td {
  
 /*********************************** POPUP MENU ***********************************************/
 .popupMenu {
-    position: absolute; /* Position relative to its parent .menuItem */
-    top: 0;
-    left: 100%; /* Align the popup menu to the right of the menu heading */
-    background-color: #417C78; /* Keeps the background for better contrast */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #417C78;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensures it appears above all other elements */
-    width: 200px; /* Adjust width as needed */
-    opacity: 1; /* Set visibility */
-    display: none; /* Hide by default */
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
 }
 
 .menuItem[data-state="visible"] .popupMenu {
